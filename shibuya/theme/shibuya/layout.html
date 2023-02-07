@@ -1,0 +1,21 @@
+{%- set lang_attr = 'en' if language == None else (language | replace('_', '-')) -%}
+<!DOCTYPE html>
+<html lang="{{ lang_attr }}">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {%- block htmltitle -%}
+    <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
+  {% endblock %}
+  {%- if favicon -%}
+    <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>
+  {%- endif %}
+  {%- if theme_canonical_url -%}
+    <link rel="canonical" href="{{ theme_canonical_url }}{{ pagename }}.html"/>
+  {%- endif -%}
+</head>
+<body>
+  {% block body %}{% endblock %}
+</body>
+</html>

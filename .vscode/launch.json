@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Sphinx serve",
+      "type": "python",
+      "request": "launch",
+      "program": "serve.py",
+      "console": "integratedTerminal"
+    }
+  ]
+}
