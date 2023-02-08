@@ -1,8 +1,8 @@
 [project]
-name = "sphinx-shibuya"
+name = "shibuya"
 description = "A clean, responsive, and customisable Sphinx documentation theme with light/dark mode."
 dynamic = ["version"]
-readme = "README.rst"
+readme = "README.md"
 
 requires-python = ">=3.7"
 dependencies = [
@@ -34,3 +34,10 @@ classifiers = [
 
 [project.urls]
 GitHub = "https://github.com/lepture/shibuya"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+version = {attr = "shibuya.__version__"}

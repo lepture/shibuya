@@ -1,7 +1,12 @@
 {
   "name": "shibuya",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esbuild static/index.js --bundle --outfile=shibuya/theme/shibuya/static/shibuya.js",
+    "dev": "npm run build -- --watch"
+  },
   "devDependencies": {
+    "esbuild": "^0.17.6",
     "tailwindcss": "^3.2.4"
   }
 }

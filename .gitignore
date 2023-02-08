@@ -21,5 +21,6 @@ docs/_build
 
 .env
 .astro/
+package-lock.json
 node_modules/
 npm-debug.log*

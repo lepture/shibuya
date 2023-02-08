@@ -1,0 +1,33 @@
+{%- macro declare_css_vars(sys_vars, user_vars) -%}
+  {%- if user_vars -%}
+    {%- for name in sys_vars -%}
+      {%- if name in user_vars -%}
+        {{ name }}:{{user_vars[name]}};
+      {%- else -%}
+        {{ name }}:{{sys_vars[name]}};
+      {%- endif -%}
+    {%- endfor -%}
+  {%- else -%}
+    {%- for name in sys_vars -%}
+      {{ name }}:{{sys_vars[name]}};
+    {%- endfor -%}
+  {%- endif -%}
+{%- endmacro -%}
+
+<style>
+:root {
+  {{ declare_css_vars(shibuya_base_css_variables, theme_base_css_variables) }}
+  {{ declare_css_vars(shibuya_light_css_variables, theme_light_css_variables) }}
+}
+@media not print {
+  @media (prefers-color-scheme: dark) {
+    {{ declare_css_vars(shibuya_dark_css_variables, theme_light_css_variables) }}
+  }
+  html[data-theme="light"] {
+    {{ declare_css_vars(shibuya_light_css_variables, theme_light_css_variables) }}
+  }
+  html[data-theme="dark"] {
+    {{ declare_css_vars(shibuya_dark_css_variables, theme_light_css_variables) }}
+  }
+}
+</style>
