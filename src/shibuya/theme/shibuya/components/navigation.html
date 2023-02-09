@@ -1,0 +1,28 @@
+<div class="navigation flex">
+  {% if prev -%}
+  <div class="navigation-prev">
+    <a href="{{ prev.link }}">
+      <i class="i-arrow"></i>
+      <div class="page-info">
+        <span>{{ _("Previous") }}</span>
+        {% if prev.link == pathto(root_doc) %}
+        <div class="title">{{ _("Home") }}</div>
+        {% else %}
+        <div class="title">{{ prev.title }}</div>
+        {% endif %}
+      </div>
+    </a>
+  </div>
+  {%- endif %}
+  {% if next -%}
+  <div class="navigation-next">
+    <a href="{{ next.link }}">
+      <div class="page-info">
+        <span>{{ _("Next") }}</span>
+        <div class="title">{{ next.title }}</div>
+      </div>
+      <i class="i-arrow"></i>
+    </a>
+  </div>
+  {%- endif %}
+</div>

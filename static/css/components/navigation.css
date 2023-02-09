@@ -1,0 +1,47 @@
+.navigation {
+  gap: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--sy-c-divider);
+}
+
+.navigation .i-arrow {
+  --icon-url:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m9 5 7 7-7 7'/%3E%3C/svg%3E");
+  mask: var(--icon-url) no-repeat;
+  mask-size: 100% 100%;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  background-color: currentColor;
+}
+
+.navigation > div {
+  width: 100%;
+}
+
+.navigation a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.navigation-prev .i-arrow {
+  transform: rotate(180deg);
+}
+
+.navigation-next {
+  text-align: right;
+}
+
+.navigation-next a {
+  justify-content: end;
+}
+
+.navigation .page-info {
+  padding: 0 8px;
+}
+
+.navigation .page-info > span {
+  font-size: 0.8rem;
+  @apply text-gray-500;
+}
