@@ -7,6 +7,8 @@ BASE_CSS_VARIABLES = """
 --sy-c-divider: rgba(var(--sy-rc-text), 0.1);
 --sy-c-divider-weak: rgba(var(--sy-rc-text), 0.05);
 --sy-s-navbar-height: 4rem;
+--sy-c-foot-text: #ccc;
+--sy-c-foot-bg: #000;
 """
 
 LIGHT_CSS_VARIABLES = """

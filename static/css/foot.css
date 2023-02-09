@@ -1,0 +1,19 @@
+.sy-foot {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  color: var(--sy-c-foot-text);
+  background-color: var(--sy-c-foot-bg);
+}
+
+.sy-foot-inner {
+  padding-left: max(env(safe-area-inset-right), 1.5rem);
+  padding-right: max(env(safe-area-inset-right), 1.5rem);
+}
+
+.sy-foot-copyright {
+  font-size: 0.84rem;
+}
+
+.sy-foot-copyright a {
+  font-weight: 500;
+}

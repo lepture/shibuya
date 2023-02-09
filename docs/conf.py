@@ -1,6 +1,6 @@
 
 project = "Shibuya"
-copyright = "2023, Hsiaoming Yang"
+copyright = "Copyright &copy; 2023, Hsiaoming Yang"
 author = "Hsiaoming Yang"
 
 html_theme = "shibuya"

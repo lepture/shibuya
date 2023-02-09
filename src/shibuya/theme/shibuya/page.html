@@ -24,12 +24,14 @@
       {%- endif %}
     </div>
   </aside>
-  <main class="sy-main w-full flex flex-col break-words justify-between">
-    <article class="yue w-full min-w-0 max-w-6xl px-6 pt-6 pb-6 md:px-12">
-      {% block content %}{{ body }}{% endblock %}
-    </article>
-    <div class="w-full min-w-0 max-w-6xl px-6 pb-6 md:px-12">
-      {% include "components/navigation.html" %}
+  <main class="sy-main w-full overflow-hidden">
+    <div class="flex flex-col break-words justify-between">
+      <article class="yue min-w-0 max-w-6xl px-6 pt-6 pb-6 md:px-12">
+        {% block content %}{{ body }}{% endblock %}
+      </article>
+      <div class="min-w-0 max-w-6xl px-6 pb-6 md:px-12">
+        {% include "components/navigation.html" %}
+      </div>
     </div>
   </main>
 </div>

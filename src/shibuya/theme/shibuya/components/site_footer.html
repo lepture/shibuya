@@ -1,0 +1,21 @@
+<footer class="sy-foot">
+  <div class="sy-foot-inner sy-container">
+    {% include "partials/footer.html" %}
+    <div class="sy-foot-reserved md:flex justify-between">
+      <div class="sy-foot-copyright">
+        {%- if show_copyright -%}
+          <p>{{ copyright }}</p>
+        {% endif %}
+        <p>
+          {{ _("Made with") }}
+          {% if show_sphinx %}
+          <a href="https://www.sphinx-doc.org/">Sphinx</a> and
+          {% endif %}
+          <a href="https://shibuya.lepture.com">Shibuya theme</a>.
+        </p>
+      </div>
+      <div class="sy-foot-socials">
+      </div>
+    </div>
+  </div>
+</footer>
