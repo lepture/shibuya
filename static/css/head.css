@@ -1,0 +1,71 @@
+.sy-head {
+  position: sticky;
+  top: 0;
+  height: var(--sy-s-navbar-height);
+  background-color: transparent;
+  z-index: 20;
+}
+
+.sy-head-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(12px);
+  background-color: rgba(var(--sy-rc-bg), .85);
+  box-shadow: rgba(0, 0, 0, 0) 0px;
+  z-index: -1;
+
+  --tw-shadow: 0 2px 4px rgba(0,0,0,.02),0 1px 0 rgba(0,0,0,.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent), var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
+}
+
+.sy-head-inner {
+  display: flex;
+  padding-left: max(env(safe-area-inset-right), 1.5rem);
+  padding-right: max(env(safe-area-inset-right), 1.5rem);
+  justify-content: space-between;
+  align-items: center;
+  height: var(--sy-s-navbar-height);
+}
+
+.sy-head-brand img {
+  height: 1.8rem;
+}
+
+.sy-head-brand .dark-logo {
+  display: none;
+}
+
+.dark .sy-head-brand .dark-logo {
+  display: inline;
+}
+
+.dark .sy-head-brand .light-logo {
+  display: none;
+}
+
+.sy-head-brand img + strong {
+  display: none;
+}
+
+.sy-head-version {
+  margin-left: 8px;
+}
+
+.sy-head-version button {
+  background: rgba(var(--sy-rc-text), 0.08);
+  padding: 1px 8px;
+}
+
+.sy-head-nav a {
+  padding: .5rem;
+  font-size: .95rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.sy-head-nav a:hover {
+  color: rgba(var(--sy-rc-link), 0.8);
+}

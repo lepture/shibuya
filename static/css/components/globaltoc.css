@@ -1,0 +1,45 @@
+.globaltoc .caption {
+  font-size: 0.8rem;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  border-top: 1px solid var(--sy-c-divider);
+}
+
+.globaltoc > p.caption:first-of-type {
+  padding-top: 0;
+  border-top: none;
+}
+
+.globaltoc .caption + ul {
+  margin-bottom: 1.5rem;
+}
+
+.globaltoc li {
+  margin: 0.6rem 0;
+}
+
+.globaltoc > ul > li > ul {
+  margin-left: 0.2rem;
+  border-left: 1px solid var(--sy-c-divider-weak);
+  font-size: 0.96rem;
+}
+
+.globaltoc li.toctree-l2 {
+  padding-left: 0.9rem;
+  margin-left: -1px;
+  border-left: 1px solid transparent;
+}
+
+.globaltoc li.toctree-l2.current {
+  border-color: rgba(var(--sy-rc-link), 0.8);
+}
+
+.globaltoc > ul a.current {
+  font-weight: 500;
+  color: rgba(var(--sy-rc-link), 0.8);
+}
+
+.globaltoc > ul a:hover {
+  color: rgba(var(--sy-rc-link), 1);
+}

@@ -1,4 +1,18 @@
-Shibuya for Sphinx
-==================
+Shibuya
+=======
 
-haha
+**Shibuya** is a clean, responsive and customisable Sphinx theme with
+modern design.
+
+
+.. toctree::
+    :caption: Getting started
+
+    install
+    customisation/index
+    writing/index
+
+.. toctree::
+    :caption: Development
+
+    contributing/index

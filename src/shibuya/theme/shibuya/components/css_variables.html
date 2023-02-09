@@ -23,10 +23,10 @@
   @media (prefers-color-scheme: dark) {
     {{ declare_css_vars(shibuya_dark_css_variables, theme_light_css_variables) }}
   }
-  html[data-theme="light"] {
+  html.light {
     {{ declare_css_vars(shibuya_light_css_variables, theme_light_css_variables) }}
   }
-  html[data-theme="dark"] {
+  html.dark {
     {{ declare_css_vars(shibuya_dark_css_variables, theme_light_css_variables) }}
   }
 }

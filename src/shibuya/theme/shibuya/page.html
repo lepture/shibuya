@@ -1,5 +1,33 @@
 {% extends "layout.html" %}
 
 {% block body %}
-  {% block content %}{{ body }}{% endblock %}
+<div class="sy-page sy-container flex mx-auto">
+  <aside class="sy-sidebar md:w-64 md:sticky md:shrink-0 md:top-16">
+    <div class="sy-sidebar-inner">
+      <div class="md:hidden"></div>
+      <div class="sy-sidebar-scroller p-6">
+        <div class="globaltoc">
+          {{ toctree(collapse=False, titles_only=True, includehidden=True) }}
+        </div>
+      </div>
+      <div class="sy-sidebar-bottom mx-6 flex items-center">
+        {% include "components/theme_select.html" %}
+      </div>
+    </div>
+  </aside>
+  <aside class="sy-toc px-4 w-64 shrink-0 order-last hidden xl:block">
+    <div class="sy-toc-inner top-16 sticky pr-4 pt-6">
+      {%- if sidebars %}
+        {%- for sidebartemplate in sidebars %}
+          {%- include sidebartemplate %}
+        {%- endfor %}
+      {%- endif %}
+    </div>
+  </aside>
+  <main class="sy-main w-full flex justify-center break-words">
+    <article class="prose dark:prose-invert w-full min-w-0 max-w-6xl px-6 pt-6 md:px-12">
+      {% block content %}{{ body }}{% endblock %}
+    </article>
+  </main>
+</div>
 {% endblock %}

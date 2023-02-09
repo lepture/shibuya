@@ -15,9 +15,13 @@ THEME_PATH = (Path(__file__).parent / "theme" / "shibuya").resolve()
 
 def _html_page_context(app, pagename: str, templatename: str, context: Dict[str, Any], doctree):
     assert isinstance(app.builder, StandaloneHTMLBuilder)
+    print(context)
     context["shibuya_base_css_variables"] = css_to_dict(BASE_CSS_VARIABLES)
     context["shibuya_light_css_variables"] = css_to_dict(LIGHT_CSS_VARIABLES)
     context["shibuya_dark_css_variables"] = css_to_dict(DARK_CSS_VARIABLES)
+
+    if 'script_files' in context:
+        context['script_files'].append('_static/shibuya.js')
 
 
 def setup(app):

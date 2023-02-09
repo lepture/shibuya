@@ -1,0 +1,34 @@
+.sy-sidebar {
+  --sy-s-bottom-height: 52px;
+}
+
+@media (max-width: 767px) {
+  .sy-sidebar {
+    position: fixed;
+    z-index: 15;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(var(--sy-rc-bg), .98);
+    transform: translateY(-100%);
+  }
+}
+
+@media (min-width: 768px) {
+  .sy-sidebar-scroller {
+    height: calc(100vh - var(--sy-s-navbar-height) - var(--sy-s-bottom-height));
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-gutter: stable;
+  }
+}
+
+.sy-sidebar-bottom {
+  position: sticky;
+  bottom: 0;
+  height: var(--sy-s-bottom-height);
+  border-top: 1px solid var(--sy-c-divider);
+
+  --tw-shadow: 0 -12px 16px #fff;
+  box-shadow: var(--tw-ring-offset-shadow,0 0 transparent),var(--tw-ring-shadow,0 0 transparent),var(--tw-shadow);
+}

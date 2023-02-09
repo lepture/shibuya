@@ -1,0 +1,31 @@
+<div class="sy-head">
+  <div class="sy-head-blur"></div>
+  <div class="sy-head-inner sy-container mx-auto">
+    <div class="sy-head-brand flex items-center">
+      <a href="{{ theme_logo_target }}">
+        {%- if theme_light_logo -%}
+          <img class="light-logo" src="{{ theme_light_logo }}" alt="{{ project }}" />
+        {%- endif -%}
+        {%- if theme_dark_logo -%}
+          <img class="dark-logo" src="{{ theme_dark_logo }}" alt="{{ project }}" />
+        {%- endif -%}
+        <strong>{{ project }}</strong>
+      </a>
+      <div class="sy-head-version">
+        <button class="text-xs font-semibold rounded-full">latest</button>
+      </div>
+    </div>
+    <nav class="sy-head-nav flex gap-2">
+      {%- if theme_nav_links %}
+        {%- for link in theme_nav_links -%}
+          <a class="hidden md:inline-block" href="{{ link.url }}">{{ link.title }}</a>
+        {%- endfor -%}
+      {%- endif -%}
+      <button class="md:hidden hamburger" aria-label="Menu" type="button">
+        <span class="hamburger_1"></span>
+        <span class="hamburger_2"></span>
+        <span class="hamburger_3"></span>
+      </button>
+    </nav>
+  </div>
+</div>

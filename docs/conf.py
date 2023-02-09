@@ -12,10 +12,14 @@ html_theme_options = {
     "light_logo": "https://typlog.com/assets/logo-black.svg",
     "dark_logo": "https://typlog.com/assets/logo-white.svg",
 
-    "head_links": [
+    "nav_links": [
         {
-            "name": "Documentation",
-            "url": "/"
+            "title": "Pricing",
+            "url": "/pricing.html"
+        },
+        {
+            "title": "About",
+            "url": "/about.html"
         },
     ]
 }

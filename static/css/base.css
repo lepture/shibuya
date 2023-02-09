@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html.light {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--sy-f-text);
+  color: var(--sy-c-text);
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--sy-c-heading);
+}
+
+strong, em {
+  color: var(--sy-c-bold);
+}
+
+.sy-container {
+  max-width: 90rem;
+}
+
+.sy-deprecated {
+  padding: .8rem;
+  font-size: .85rem;
+  background-color: rgba(255, 221, 0, 0.1);
+  border-radius: 6px;
+}
