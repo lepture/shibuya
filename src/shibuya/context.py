@@ -11,6 +11,7 @@ BASE_CSS_VARIABLES = """
 
 LIGHT_CSS_VARIABLES = """
 --sy-rc-bg: 255, 255, 255;
+--sy-rc-bg-pre: 235, 244, 255;
 --sy-rc-text: 0, 0, 0;
 --sy-c-bg: #fff;
 --sy-c-bg-weak: #f9f9f9;

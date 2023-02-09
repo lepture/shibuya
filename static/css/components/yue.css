@@ -1,0 +1,380 @@
+.yue {
+  --yue-body: var(--sy-c-text);
+  --yue-headings: var(--sy-c-heading);
+  --yue-links: #111827;
+  --yue-bold: var(--sy-c-bold);
+  --yue-counters: #6b7280;
+  --yue-bullets: #d1d5db;
+  --yue-hr: #e5e7eb;
+  --yue-quotes: #111827;
+  --yue-quote-borders: #e5e7eb;
+  --yue-captions: #6b7280;
+  --yue-code: #111827;
+  --yue-th-borders: #d1d5db;
+  --yue-td-borders: #e5e7eb;
+}
+html.dark .yue {
+  --yue-body: #d1d5db;
+  --yue-headings: #fff;
+  --yue-links: #fff;
+  --yue-bold: #fff;
+  --yue-counters: #9ca3af;
+  --yue-bullets: #4b5563;
+  --yue-hr: #374151;
+  --yue-quotes: #f3f4f6;
+  --yue-quote-borders: #374151;
+  --yue-captions: #9ca3af;
+  --yue-code: #fff;
+  --yue-th-borders: #4b5563;
+  --yue-td-borders: #374151;
+}
+
+.yue {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--yue-body);
+}
+
+.yue p {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+.yue a {
+  color: var(--yue-links);
+  text-decoration: underline;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(var(--sy-rc-link), 0.8);
+}
+
+.yue a:hover {
+  border-bottom: 2px solid var(--sy-c-link);
+}
+
+.yue strong {
+  color: var(--yue-bold);
+  font-weight: 600;
+}
+
+.yue a strong {
+  color: inherit;
+}
+
+.yue blockquote strong {
+  color: inherit;
+}
+
+.yue thead th strong {
+  color: inherit;
+}
+
+.yue ol {
+  list-style-type: decimal;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  padding-left: 1.625em;
+}
+
+.yue ol[type="A"] {
+  list-style-type: upper-alpha;
+}
+
+.yue ol[type="a"] {
+  list-style-type: lower-alpha;
+}
+
+.yue ol[type="A" s] {
+  list-style-type: upper-alpha;
+}
+
+.yue ol[type="a" s] {
+  list-style-type: lower-alpha;
+}
+
+.yue ol[type="I"] {
+  list-style-type: upper-roman;
+}
+
+.yue ol[type="i"] {
+  list-style-type: lower-roman;
+}
+
+.yue ol[type="I" s] {
+  list-style-type: upper-roman;
+}
+
+.yue ol[type="i" s] {
+  list-style-type: lower-roman;
+}
+
+.yue ol[type="1"] {
+  list-style-type: decimal;
+}
+
+.yue ul {
+  list-style-type: disc;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  padding-left: 1.625em;
+}
+
+.yue ol > li::marker {
+  font-weight: 400;
+  color: var(--yue-counters);
+}
+
+.yue ul > li::marker {
+  color: var(--yue-bullets);
+}
+
+.yue hr {
+  border-color: var(--yue-hr);
+  border-top-width: 1px;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.yue blockquote {
+  font-weight: 500;
+  font-style: italic;
+  color: var(--yue-quotes);
+  border-left-width: 0.25rem;
+  border-left-color: var(--yue-quote-borders);
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
+  padding-left: 1em;
+}
+
+.yue blockquote p:first-of-type::before {
+  content: open-quote;
+}
+
+.yue blockquote p:last-of-type::after {
+  content: close-quote;
+}
+
+.yue h1 {
+  color: var(--yue-headings);
+  font-weight: 800;
+  font-size: 2.25em;
+  margin-top: 0;
+  margin-bottom: 0.8888889em;
+  line-height: 1.1111111;
+}
+
+.yue h1 strong {
+  font-weight: 900;
+  color: inherit;
+}
+
+.yue h2 {
+  color: var(--yue-headings);
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  line-height: 1.3333333;
+}
+
+.yue h2 strong {
+  font-weight: 800;
+  color: inherit;
+}
+
+.yue h3 {
+  color: var(--yue-headings);
+  font-weight: 600;
+  font-size: 1.25em;
+  margin-top: 1.6em;
+  margin-bottom: 0.6em;
+  line-height: 1.6;
+}
+
+.yue h3 strong {
+  font-weight: 700;
+  color: inherit;
+}
+
+.yue h4 {
+  color: var(--yue-headings);
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  line-height: 1.5;
+}
+
+.yue h4 strong {
+  font-weight: 700;
+  color: inherit;
+}
+
+.yue img {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.yue figure > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.yue figcaption {
+  color: var(--yue-captions);
+  font-size: 0.875em;
+  line-height: 1.4285714;
+  margin-top: 0.8571429em;
+}
+
+.yue code {
+  color: var(--yue-code);
+  font-weight: 600;
+  font-size: 0.875em;
+}
+
+.yue a code {
+  color: inherit;
+}
+
+.yue h1 code {
+  color: inherit;
+}
+
+.yue h2 code {
+  color: inherit;
+  font-size: 0.875em;
+}
+
+.yue h3 code {
+  color: inherit;
+  font-size: 0.9em;
+}
+
+.yue h4 code {
+  color: inherit;
+}
+
+.yue blockquote code {
+  color: inherit;
+}
+
+.yue thead th code {
+  color: inherit;
+}
+
+.yue table {
+  width: 100%;
+  table-layout: auto;
+  text-align: left;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 0.875em;
+  line-height: 1.7142857;
+}
+
+.yue thead {
+  border-bottom-width: 1px;
+  border-bottom-color: var(--yue-th-borders);
+}
+
+.yue thead th {
+  color: var(--yue-headings);
+  font-weight: 600;
+  vertical-align: bottom;
+  padding-right: 0.5714286em;
+  padding-bottom: 0.5714286em;
+  padding-left: 0.5714286em;
+}
+
+.yue tbody tr {
+  border-bottom-width: 1px;
+  border-bottom-color: var(--yue-td-borders);
+}
+
+.yue tbody tr:last-child {
+  border-bottom-width: 0;
+}
+
+.yue tbody td {
+  vertical-align: baseline;
+}
+
+.yue tfoot {
+  border-top-width: 1px;
+  border-top-color: var(--yue-th-borders);
+}
+
+.yue tfoot td {
+  vertical-align: top;
+}
+
+.yue video {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.yue figure {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.yue li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.yue ol > li {
+  padding-left: 0.375em;
+}
+
+.yue ul > li {
+  padding-left: 0.375em;
+}
+
+.yue ul ul, ul ol, ol ul, ol ol {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+.yue hr + * {
+  margin-top: 0;
+}
+
+.yue h2 + * {
+  margin-top: 0;
+}
+
+.yue h3 + * {
+  margin-top: 0;
+}
+
+.yue h4 + * {
+  margin-top: 0;
+}
+
+.yue thead th:first-child {
+  padding-left: 0;
+}
+
+.yue thead th:last-child {
+  padding-right: 0;
+}
+
+.yue tbody td, tfoot td {
+  padding-top: 0.5714286em;
+  padding-right: 0.5714286em;
+  padding-bottom: 0.5714286em;
+  padding-left: 0.5714286em;
+}
+
+.yue tbody td:first-child, tfoot td:first-child {
+  padding-left: 0;
+}
+
+.yue tbody td:last-child, tfoot td:last-child {
+  padding-right: 0;
+}
+
+.yue section > div {
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,33 @@
+.yue li > code,
+.yue p > code {
+  padding-left: 2px;
+  padding-right: 2px;
+  border-radius: 3px;
+  background-color: var(--syntax-attention-bg);
+}
+
+.highlight > pre {
+  line-height: 1.48;
+  padding: 1rem;
+  font-size: 0.96rem;
+  background-color: rgba(var(--sy-rc-bg-pre), 0.65);
+  border-radius: 6px;
+}
+
+.highlight .linenos {
+  user-select: none;
+  margin-right: 10px;
+  opacity: 0.6;
+}
+
+.code-block-caption {
+  font-size: 0.84rem;
+  background-color: rgba(var(--sy-rc-bg-pre), 1);
+  padding: 0.4rem 1rem;
+  border-radius: 6px 6px 0 0;
+}
+
+.code-block-caption + div > .highlight > pre {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

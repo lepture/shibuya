@@ -1,0 +1,3 @@
+.yue section {
+  scroll-margin-top: calc(var(--sy-s-navbar-height) + 40px);
+}

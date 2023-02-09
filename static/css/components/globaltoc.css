@@ -1,8 +1,9 @@
 .globaltoc .caption {
   font-size: 0.8rem;
+  font-weight: 500;
   letter-spacing: 0.4px;
   text-transform: uppercase;
-  padding: 1rem 0;
+  padding: .8rem 0;
   border-top: 1px solid var(--sy-c-divider);
 }
 
@@ -13,6 +14,10 @@
 
 .globaltoc .caption + ul {
   margin-bottom: 1.5rem;
+}
+
+.globaltoc ul + .caption {
+  margin-top: 3rem;
 }
 
 .globaltoc li {
