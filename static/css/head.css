@@ -6,6 +6,13 @@
   z-index: 20;
 }
 
+@media print {
+  .sy-head {
+    position: static;
+    border-bottom: 1px solid var(--sy-c-divider);
+  }
+}
+
 .sy-head-blur {
   position: absolute;
   top: 0;

@@ -15,7 +15,7 @@
         <button class="text-xs font-semibold rounded-full">latest</button>
       </div>
     </div>
-    <nav class="sy-head-nav flex gap-2">
+    <nav class="sy-head-nav flex gap-2 print:hidden">
       {%- if theme_nav_links %}
         {%- for link in theme_nav_links -%}
           <a class="hidden md:inline-block" href="{{ link.url }}">{{ link.title }}</a>

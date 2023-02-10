@@ -10,6 +10,11 @@ html.dark {
   color-scheme: dark;
 }
 
+::selection {
+  color: rgba(var(--sy-rc-theme), 1);
+  background-color: rgba(var(--sy-rc-theme), 0.2);
+}
+
 body {
   font-family: var(--sy-f-text);
   color: var(--sy-c-text);

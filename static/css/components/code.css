@@ -33,3 +33,12 @@
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+@media print {
+  .code-block-caption {
+    font-weight: 600;
+  }
+  .code-block-caption + div > .highlight > pre {
+    padding-top: 0;
+  }
+}
