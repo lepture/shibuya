@@ -1,4 +1,5 @@
 .sy-foot {
+  border-top: 1px solid var(--sy-c-foot-divider);
   padding-top: 1.5rem;
   padding-bottom: 1rem;
   color: var(--sy-c-foot-text);

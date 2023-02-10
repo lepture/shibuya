@@ -11,7 +11,7 @@
   line-height: 1.48;
   padding: 1rem;
   font-size: 0.96rem;
-  background-color: var(--sy-c-bg-pre);
+  background-color: var(--sy-c-pre-bg);
   border-radius: 6px;
   overflow: auto;
 }
@@ -24,7 +24,7 @@
 
 .code-block-caption {
   font-size: 0.84rem;
-  background-color: var(--sy-c-bg-cap);
+  background-color: var(--sy-c-cap-bg);
   padding: 0.4rem 1rem;
   border-radius: 6px 6px 0 0;
 }

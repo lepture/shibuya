@@ -14,6 +14,7 @@ BASE_CSS_VARIABLES = """
 LIGHT_CSS_VARIABLES = """
 --sy-rc-theme: 143, 118, 214;
 --sy-rc-bg: 255, 255, 255;
+--sy-rc-invert: 0, 0, 0;
 --sy-rc-text: 0, 0, 0;
 --sy-c-bg: #fff;
 --sy-c-bg-weak: #f9f9f9;
@@ -21,27 +22,29 @@ LIGHT_CSS_VARIABLES = """
 --sy-c-text-weak: #6b7280;
 --sy-c-heading: #111827;
 --sy-c-bold: #111827;
---sy-c-bg-pre: rgba(var(--sy-rc-theme), 0.06);
---sy-c-bg-cap: rgba(var(--sy-rc-theme), 0.1);
+--sy-c-pre-bg: rgba(var(--sy-rc-theme), 0.06);
+--sy-c-cap-bg: rgba(var(--sy-rc-theme), 0.1);
 --sy-c-foot-text: #232226;
---sy-c-foot-bg: #f1f1f1;
+--sy-c-foot-bg: #fafafa;
+--sy-c-foot-divider: #f0f0f0;
 """
 
 DARK_CSS_VARIABLES = """
 --sy-rc-theme: 143, 118, 214;
 --sy-rc-bg: 18, 18, 18;
---sy-rc-bg-pre: 23, 29, 36;
+--sy-rc-invert: 255, 255, 255;
 --sy-rc-text: 255, 255, 255;
---sy-c-bg: rgba(var(--sy-rc-bg), 0.86);
+--sy-c-bg: #121212;
 --sy-c-bg-weak: #243144;
 --sy-c-text: #d1d5db;
 --sy-c-text-weak: #8d91a7;
 --sy-c-heading: #fff;
 --sy-c-bold: #fff;
---sy-c-bg-pre: rgba(var(--sy-rc-theme), 0.06);
---sy-c-bg-cap: rgba(var(--sy-rc-theme), 0.1);
+--sy-c-pre-bg: rgba(var(--sy-rc-theme), 0.06);
+--sy-c-cap-bg: rgba(var(--sy-rc-theme), 0.1);
 --sy-c-foot-text: #eee;
 --sy-c-foot-bg: #000;
+--sy-c-foot-divider: #000;
 """
 
 def css_to_dict(text: str):
