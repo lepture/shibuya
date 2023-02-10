@@ -1,0 +1,38 @@
+.theme-selector select {
+  appearance: none;
+  padding: 4px 2rem;
+  background-color: var(--sy-c-bg);
+  color: var(--sy-c-text);
+}
+
+.theme-selector i.theme {
+  --icon-url: var(--i-laptop-url);
+}
+
+html[data-theme="light"] .theme-selector i.theme {
+  --icon-url: var(--i-sun-url);
+}
+
+html[data-theme="dark"] .theme-selector i.theme {
+  --icon-url: var(--i-moon-url);
+}
+
+.theme-selector i.arrows {
+  --icon-url: var(--i-arrows-url);
+}
+
+.theme-selector-inner {
+  position: relative;
+}
+
+.theme-selector-icon {
+  position: absolute;
+  top: 2px;
+  left: 0.5rem;
+}
+
+.theme-selector-arrows {
+  position: absolute;
+  top: 2px;
+  right: 0.5rem;
+}

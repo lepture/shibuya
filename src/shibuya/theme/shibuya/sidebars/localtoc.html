@@ -1,6 +1,6 @@
 {%- if display_toc %}
   <div class="localtoc">
     <h3>{{ _('Table of Contents') }}</h3>
-    {{ toc }}
+    {{ render_toc(toc) }}
   </div>
 {%- endif %}

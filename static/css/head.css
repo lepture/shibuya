@@ -34,18 +34,6 @@
   height: 1.8rem;
 }
 
-.sy-head-brand .dark-logo {
-  display: none;
-}
-
-.dark .sy-head-brand .dark-logo {
-  display: inline;
-}
-
-.dark .sy-head-brand .light-logo {
-  display: none;
-}
-
 .sy-head-brand img + strong {
   display: none;
 }
@@ -68,4 +56,24 @@
 
 .sy-head-nav a:hover {
   color: rgba(var(--sy-rc-link), 0.8);
+}
+
+.sy-head-brand .dark-logo {
+  display: none;
+}
+
+.dark .sy-head-brand .dark-logo {
+  display: inline;
+}
+
+.dark .sy-head-brand .light-logo {
+  display: none;
+}
+
+.light .sy-head-brand .light-logo {
+  display: inline;
+}
+
+.light .sy-head-brand .dark-logo {
+  display: none;
 }

@@ -1,16 +1,17 @@
 .yue li > code,
 .yue p > code {
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
   border-radius: 3px;
-  background-color: var(--syntax-attention-bg);
+  font-weight: 500;
+  background-color: rgba(var(--sy-rc-theme), 0.05);
 }
 
 .highlight > pre {
   line-height: 1.48;
   padding: 1rem;
   font-size: 0.96rem;
-  background-color: rgba(var(--sy-rc-bg-pre), 0.65);
+  background-color: var(--sy-c-bg-pre);
   border-radius: 6px;
   overflow: auto;
 }
@@ -23,7 +24,7 @@
 
 .code-block-caption {
   font-size: 0.84rem;
-  background-color: rgba(var(--sy-rc-bg-pre), 1);
+  background-color: var(--sy-c-bg-cap);
   padding: 0.4rem 1rem;
   border-radius: 6px 6px 0 0;
 }

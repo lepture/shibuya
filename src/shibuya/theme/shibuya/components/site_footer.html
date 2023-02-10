@@ -1,7 +1,7 @@
 <footer class="sy-foot">
-  <div class="sy-foot-inner sy-container">
+  <div class="sy-foot-inner sy-container mx-auto">
     {% include "partials/footer.html" %}
-    <div class="sy-foot-reserved md:flex justify-between">
+    <div class="sy-foot-reserved md:flex justify-between items-center">
       <div class="sy-foot-copyright">
         {%- if show_copyright -%}
           <p>{{ copyright }}</p>
@@ -15,6 +15,18 @@
         </p>
       </div>
       <div class="sy-foot-socials">
+        {%- if theme_github_url %}
+          <a href="{{ theme_github_url }}" aria-label="GitHub"><i class="i-icon github"></i></a>
+        {%- endif %}
+        {%- if theme_twitter_url %}
+          <a href="{{ theme_twitter_url }}" aria-label="Twitter"><i class="i-icon twitter"></i></a>
+        {%- endif %}
+        {%- if theme_mastodon_url %}
+          <a href="{{ theme_mastodon_url }}" aria-label="Mastodon"><i class="i-icon mastodon"></i></a>
+        {%- endif %}
+        {%- if theme_discord_url %}
+          <a href="{{ theme_discord_url }}" aria-label="Discord"><i class="i-icon discord"></i></a>
+        {%- endif %}
       </div>
     </div>
   </div>

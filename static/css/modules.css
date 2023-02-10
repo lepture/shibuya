@@ -3,7 +3,7 @@
 @import "./components/localtoc.css";
 @import "./components/sphinx.css";
 @import "./components/navigation.css";
+@import "./components/theme-selector.css";
 @import "./components/yue.css";
 @import "./components/code.css";
 @import "./components/syntax.css";
-@import "./components/highlight.css";

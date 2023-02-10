@@ -33,3 +33,14 @@ strong, em {
   background-color: rgba(255, 221, 0, 0.1);
   border-radius: 6px;
 }
+
+.i-icon {
+  mask: var(--icon-url) no-repeat;
+  mask-size: 100% 100%;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  background-color: currentColor;
+}

@@ -28,9 +28,9 @@ html.light {
   --syntax-markup-ignored-text: #eaeef2;
   --syntax-markup-ignored-bg: #0550ae;
   --syntax-meta-diff-range: #8250df;
-  --syntax-attention-bg: #fff8c5;
+  --syntax-highlight-bg: rgba(var(--sy-rc-theme), 0.1);
+  --syntax-special-bg: rgba(var(--sy-rc-theme), 0.1);
 }
-.dark-code,
 html.dark {
   --syntax-default: #c9d1d9;
   --syntax-meta: #6e7781;
@@ -60,5 +60,6 @@ html.dark {
   --syntax-markup-ignored-text: #c9d1d9;
   --syntax-markup-ignored-bg: #1158c7;
   --syntax-meta-diff-range: #d2a8ff;
-  --syntax-attention-bg: rgba(255, 248, 197, 0.18);
+  --syntax-highlight-bg: rgba(var(--sy-rc-theme), 0.1);
+  --syntax-special-bg: rgba(var(--sy-rc-theme), 0.1);
 }

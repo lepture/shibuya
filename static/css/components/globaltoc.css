@@ -42,9 +42,9 @@
 
 .globaltoc > ul a.current {
   font-weight: 500;
-  color: rgba(var(--sy-rc-link), 0.8);
+  color: var(--sy-c-link);
 }
 
 .globaltoc > ul a:hover {
-  color: rgba(var(--sy-rc-link), 1);
+  color: rgba(var(--sy-rc-link), 0.8);
 }

@@ -6,20 +6,16 @@
   margin-bottom: 1rem;
 }
 
-.localtoc > ul > li > a {
-  display: none;
-}
-
-.localtoc > ul > li > ul li {
+.localtoc > ul li {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
-.localtoc > ul > li > ul li.active > a{
+.localtoc > ul li.active > a{
   font-weight: 500;
   color: var(--sy-c-link);
 }
 
-.localtoc > ul > li > ul > li > ul {
+.localtoc > ul > li > ul {
   padding-left: 0.8rem;
 }

@@ -12,6 +12,9 @@ html_theme_options = {
     "light_logo": "https://typlog.com/assets/logo-black.svg",
     "dark_logo": "https://typlog.com/assets/logo-white.svg",
 
+    "twitter_url": "https://twitter.com/lepture",
+    "github_url": "https://github.com/lepture/shibuya",
+
     "nav_links": [
         {
             "title": "Pricing",

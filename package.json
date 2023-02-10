@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "build:js": "esbuild static/index.js --bundle --outfile=src/shibuya/theme/shibuya/static/shibuya.js",
-    "build:css": "npx tailwindcss -i ./static/index.css -o src/shibuya/theme/shibuya/static/basic.css",
+    "build:css": "npx tailwindcss -i ./static/index.css -o src/shibuya/theme/shibuya/static/shibuya.css",
     "dev:js": "npm run build:js -- --watch",
     "dev:css": "npm run build:css -- --watch"
   },

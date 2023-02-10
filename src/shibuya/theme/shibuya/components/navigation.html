@@ -2,7 +2,7 @@
   {% if prev -%}
   <div class="navigation-prev">
     <a href="{{ prev.link }}">
-      <i class="i-arrow"></i>
+      <i class="i-icon chevron"></i>
       <div class="page-info">
         <span>{{ _("Previous") }}</span>
         {% if prev.link == pathto(root_doc) %}
@@ -21,7 +21,7 @@
         <span>{{ _("Next") }}</span>
         <div class="title">{{ next.title }}</div>
       </div>
-      <i class="i-arrow"></i>
+      <i class="i-icon chevron"></i>
     </a>
   </div>
   {%- endif %}
