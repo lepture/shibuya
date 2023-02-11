@@ -2,67 +2,192 @@
 html.light {
   --admonition-bg-opacity: 0.03;
   --admonition-head-opacity: 0.08;
+  --admonition-border-opacity: 1;
 }
 html.dark {
-  --admonition-bg-opacity: 0.1;
-  --admonition-head-opacity: 0.3;
+  --admonition-bg-opacity: 0.08;
+  --admonition-head-opacity: 0.15;
+  --admonition-border-opacity: 0.8;
+}
+
+:root {
+  --attention-icon: var(--i-alert-url);
+  --attention-color: 247, 89, 171;
+  --caution-icon: var(--i-zap-url);
+  --caution-color: 247, 186, 42;
+  --danger-icon: var(--i-skull-url);
+  --danger-color: 255, 92, 47;
+  --error-icon: var(--i-error-url);
+  --error-color: 255, 92, 47;
+  --hint-icon: var(--i-bell-url);
+  --hint-color: 0, 200, 80;
+  --important-icon: var(--i-flame-url);
+  --important-color: 179, 127, 235;
+  --note-icon: var(--i-calendar-url);
+  --note-color: 3, 169, 244;
+  --tip-icon: var(--i-award-url);
+  --tip-color: 0, 200, 80;
+  --warning-icon: var(--i-zap-url);
+  --warning-color: 255, 145, 0;
+  --seealso-icon: var(--i-link-url);
+  --seealso-color: 60, 140, 255;
+  --versionadded-color: 0, 200, 80;
+  --versionchanged-color: 247, 186, 42;
+  --deprecated-color: 255, 92, 47;
 }
 
 .admonition {
+  --admonition-color: var(--sy-rc-theme);
+  --admonition-icon: var(--i-bell-url);
   position: relative;
-  padding: 0 18px 18px;
-  margin: 2em 0;
-  border-left: 4px solid rgb(var(--admonition-color));
+  padding: 0 16px 0.8rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid rgba(var(--admonition-color), var(--admonition-border-opacity));
   background-color: rgba(var(--admonition-color), var(--admonition-bg-opacity));
 }
+
 .admonition:before {
   position: absolute;
-  content: '#';
-  top: 8px;
+  content: '';
+  top: 6px;
+  left: -12px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: rgb(var(--admonition-color));
+}
+
+.admonition p.admonition-title {
+  position: relative;
+  margin: 0 -16px 0.8rem -19px;
+  padding: 4px 18px;
+  font-size: .85rem;
+  font-weight: 600;
+  line-height: 1.72;
+  color: rgb(var(--admonition-color));
+  background-color: rgba(var(--admonition-color), var(--admonition-head-opacity));
+}
+
+.admonition-title:before {
+  position: absolute;
+  content: '';
+  top: 10px;
+  left: -5px;
+  mask: var(--admonition-icon) no-repeat;
+  mask-size: 100% 100%;
+  font-style: normal;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+}
+
+.admonition.attention {
+  --admonition-icon: var(--attention-icon);
+  --admonition-color: var(--attention-color);
+}
+
+.admonition.caution {
+  --admonition-icon: var(--caution-icon);
+  --admonition-color: var(--caution-color);
+}
+
+.admonition.danger {
+  --admonition-icon: var(--danger-icon);
+  --admonition-color: var(--danger-color);
+}
+
+.admonition.error {
+  --admonition-icon: var(--error-icon);
+  --admonition-color: var(--error-color);
+}
+
+.admonition.hint {
+  --admonition-icon: var(--hint-icon);
+  --admonition-color: var(--hint-color);
+}
+
+.admonition.important {
+  --admonition-icon: var(--important-icon);
+  --admonition-color: var(--important-color);
+}
+
+.admonition.note {
+  --admonition-icon: var(--note-icon);
+  --admonition-color: var(--note-color);
+}
+
+.admonition.tip {
+  --admonition-icon: var(--tip-icon);
+  --admonition-color: var(--tip-color);
+}
+
+.admonition.warning {
+  --admonition-icon: var(--warning-icon);
+  --admonition-color: var(--warning-color);
+}
+
+.admonition.seealso {
+  --admonition-icon: var(--seealso-icon);
+  --admonition-color: var(--seealso-color);
+}
+
+.admonition p.admonition-title + p {
+  margin-top: 0;
+}
+
+.admonition > :last-child {
+  margin-bottom: 0;
+}
+
+
+/* versioning directives */
+span.versionmodified {
+  color: var(--sy-c-bold);
+  font-weight: 600;
+}
+div.versionadded,
+div.versionchanged,
+div.deprecated {
+  --version-color: var(--sy-rc-theme);
+  position: relative;
+  padding: 6px 1rem;
+  margin: 1rem 0;
+  border-left: 4px solid rgba(var(--version-color), 1);
+  background-color: rgba(var(--version-color), 0.08);
+  line-height: 1.72;
+}
+
+div.versionadded:before,
+div.versionchanged:before,
+div.deprecated:before {
+  position: absolute;
+  content: var(--version-icon);
+  top: 10px;
   left: -12px;
   color: #fff;
   width: 20px;
   height: 20px;
   border-radius: 100%;
-  background-color: rgb(var(--admonition-color));
+  background-color: rgba(var(--version-color), 1);
   text-align: center;
-  font: normal bold 14px/20px "Helvetica Neue",Arial,sans-serif;
+  font: normal bold 14px/20px var(--sy-f-mono);
 }
-.admonition-title {
-  margin: 0 -18px 18px -19px;
-  padding: 6px 18px;
-  font-size: .8em;
-  font-weight: 700;
-  color: rgb(var(--admonition-color));
-  background-color: rgba(var(--admonition-color), var(--admonition-head-opacity));
+
+div.versionadded {
+  --version-color: var(--versionadded-color);
+  --version-icon: '#';
 }
-.admonition p:last-of-type {
-  margin-bottom: 0;
+div.versionchanged {
+  --version-color: var(--versionchanged-color);
+  --version-icon: '%';
 }
-.admonition.attention {
-  --admonition-color: 247, 89, 171;
+div.deprecated {
+  --version-color: var(--deprecated-color);
+  --version-icon: '!';
 }
-.admonition.tip,
-.admonition.hint {
-  --admonition-color: 0, 200, 80;
-}
-.admonition.tip:before {
-  content: '?';
-}
-.admonition.danger,
-.admonition.error {
-  --admonition-color: 255, 92, 47;
-}
-.admonition.danger:before,
-.admonition.error:before {
-  content: '!';
-}
-.admonition.note {
-  --admonition-color: 3, 169, 244;
-}
-.admonition.caution {
-  --admonition-color: 247, 186, 42;
-}
-.admonition.important {
-  --admonition-color: 179, 127, 235;
+div.versionadded > p,
+div.versionchanged > p,
+div.deprecated > p {
+  margin: 0;
 }

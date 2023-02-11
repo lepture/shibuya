@@ -4,6 +4,7 @@ BASE_CSS_VARIABLES = """
 --sy-f-cjk: PingFang SC, Hiragino Sans GB, Droid Sans Fallback, Microsoft YaHei;
 --sy-f-heading: var(--sy-f-latin), var(--sy-f-cjk), sans-serif;
 --sy-f-text: var(--sy-f-latin), var(--sy-f-cjk), sans-serif;
+--sy-f-mono: Menlo, Monaco, Consolas, "Courier New", monospace;
 --sy-c-divider: rgba(var(--sy-rc-text), 0.1);
 --sy-c-divider-weak: rgba(var(--sy-rc-text), 0.05);
 --sy-s-navbar-height: 4rem;

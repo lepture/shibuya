@@ -3,6 +3,11 @@ project = "Shibuya"
 copyright = "Copyright &copy; 2023, Hsiaoming Yang"
 author = "Hsiaoming Yang"
 
+extensions = [
+    "sphinx.ext.extlinks",
+    "sphinx.ext.todo",
+]
+
 html_theme = "shibuya"
 html_baseurl = "https://shibuya.lepture.com"
 html_logo = "https://typlog.com/assets/logo-black.svg"

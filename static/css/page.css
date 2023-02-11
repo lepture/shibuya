@@ -45,11 +45,11 @@
   transition: transform .25s ease;
 }
 
-.pagetoc[open] summary > .chevron {
+.pagetoc details[open] summary > .chevron {
   transform: rotate(-90deg);
 }
 
-.pagetoc > ul {
+.pagetoc details > ul {
   font-size: 0.95rem;
   padding-top: 0.5rem;
   padding-left: 1rem;
