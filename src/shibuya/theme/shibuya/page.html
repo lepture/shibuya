@@ -1,10 +1,17 @@
 {% extends "layout.html" %}
 
+{%- set has_mobile_nav = True -%}
+
 {% block body %}
 <div class="sy-page sy-container flex mx-auto">
   <aside id="m-navbar" class="sy-sidebar md:w-64 md:shrink-0 print:hidden">
     <div class="sy-sidebar-inner md:sticky md:top-16">
-      <div class="md:hidden"></div>
+      <div class="md:hidden pt-6 px-6">
+        {%- include "components/searchbox.html" %}
+      </div>
+      <div class="md:hidden pt-3 px-6">
+        {%- include "components/nav_links.html" %}
+      </div>
       <div class="sy-sidebar-scroller p-6">
         <div class="globaltoc">
           {{ toctree(collapse=False, titles_only=True, includehidden=True) }}
@@ -26,19 +33,8 @@
   </aside>
   <main class="sy-main w-full max-sm:max-w-full print:pt-6">
     <div class="flex flex-col break-words justify-between">
-      {%- if display_toc %}
-      <div class="pagetoc localtoc sticky xl:hidden print:hidden">
-        <details class="px-3 max-md:px-6">
-          <summary>
-            <strong>{{ _('Table of Contents') }}</strong>
-            <i class="i-icon chevron"></i>
-          </summary>
-          {{ render_toc(toc) }}
-        </details>
-      </div>
-      {%- endif %}
-      <div class="min-w-0 max-w-6xl px-6 pb-6 md:pt-6 xl:px-12">
-        <article class="yue">
+      <div class="min-w-0 max-w-6xl px-6 pb-6 pt-6 xl:px-12">
+        <article class="yue" role="main">
           {% block content %}{{ body }}{% endblock %}
         </article>
       </div>

@@ -1,9 +1,3 @@
-import Gumshoe from "gumshoejs"
-
-new Gumshoe(".localtoc a", {
-  nested: true
-})
-
 function handleHash () {
   const selector = '.localtoc a[href="' + location.hash + '"]'
   const el = document.querySelector(selector);

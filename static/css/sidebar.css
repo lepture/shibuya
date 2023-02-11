@@ -2,6 +2,10 @@
   --sy-s-bottom-height: 52px;
 }
 
+.sy-sidebar li {
+  margin: 0.6rem 0;
+}
+
 @media (max-width: 767px) {
   .sy-sidebar {
     position: fixed;

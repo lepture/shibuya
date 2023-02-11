@@ -1,6 +1,7 @@
 @import "./components/hamburger.css";
 @import "./components/globaltoc.css";
 @import "./components/localtoc.css";
+@import "./components/searchbox.css";
 @import "./components/sphinx.css";
 @import "./components/navigation.css";
 @import "./components/theme-selector.css";

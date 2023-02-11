@@ -1,0 +1,7 @@
+{%- if theme_nav_links %}
+<ul>
+  {%- for link in theme_nav_links -%}
+    <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+  {%- endfor -%}
+</ul>
+{%- endif -%}

@@ -79,6 +79,10 @@
   padding: 1px 8px;
 }
 
+.sy-head-nav > ul > li {
+  display: inline-block;
+}
+
 .sy-head-nav a {
   padding: .5rem;
   font-size: .95rem;
