@@ -38,47 +38,49 @@ Here is an example of the ``note`` admonition:
 ``attention``
 ~~~~~~~~~~~~~
 
-.. attention:: Python 2 is no longer maintained.
+.. attention:: Shibuya is a well designed Sphinx theme.
 
 ``caution``
 ~~~~~~~~~~~~~
 
-.. caution:: Python 2 is no longer maintained.
+.. caution:: Livereload_ is using tornado for the server.
+
+.. _Livereload: https://github.com/lepture/python-livereload
 
 ``danger``
 ~~~~~~~~~~~~~
 
-.. danger:: Python 2 is no longer maintained.
+.. danger:: A non-sustainable project is no trustworthy to use.
 
 ``error``
 ~~~~~~~~~~~~~
 
-.. error:: Python 2 is no longer maintained.
+.. error:: One can not be divided by zero.
 
 ``hint``
 ~~~~~~~~~~~~~
 
-.. hint:: Python 2 is no longer maintained.
+.. hint:: Authlib_ helps you build an OpenID Connect server.
 
 ``important``
 ~~~~~~~~~~~~~
 
-.. important:: Python 2 is no longer maintained.
+.. important:: I sometimes write blog posts on https://lepture.com
 
 ``note``
 ~~~~~~~~~~~~~
 
-.. note:: Python 2 is no longer maintained.
+.. note:: Typlog_ is created by me.
 
 ``tip``
 ~~~~~~~~~~~~~
 
-.. tip:: Python 2 is no longer maintained.
+.. tip:: Become a sponsor to keep this project sustainable.
 
 ``warning``
 ~~~~~~~~~~~~~
 
-.. warning:: Python 2 is no longer maintained.
+.. warning:: Do not ask your own questions in GitHub issues.
 
 
 Generic admonition
@@ -154,6 +156,14 @@ Here lists the directives added by Sphinx which looks like admonitions.
 The ``todo`` admonition is enabled by ``sphinx.ext.todo``, please add
 this extension in the ``conf.py`` file.
 
+.. code-block:: python
+   :caption: conf.py
+
+   extensions = [
+       "sphinx.ext.todo",
+   ]
+   todo_include_todos = True
+
 .. todo::
 
    Fix this UI issue later.
@@ -162,37 +172,101 @@ this extension in the ``conf.py`` file.
 Versions directives
 -------------------
 
+Here lists the version related directives. These directives are not
+admonitions, but in Shibuya theme, they look like admonitions.
+
 ``versionadded``
 ~~~~~~~~~~~~~~~~
 
-.. versionadded:: v2
+.. container:: demo
 
-   Built-in reST renderer is added in Mistune_.
+   .. code-block:: none
+      :caption: versionadded
+      :class: demo-code
+
+      .. versionadded:: v1
+         Built-in reST renderer is added in Mistune.
+
+   .. container:: demo-result
+
+      .. versionadded:: v1
+         Built-in reST renderer is added in Mistune_.
 
 ``versionchanged``
 ~~~~~~~~~~~~~~~~~~
 
-.. versionchanged:: v2
+.. container:: demo
 
-   Built-in reST renderer is added in Mistune_.
+   .. code-block:: none
+      :caption: versionchanged
+      :class: demo-code
+
+      .. versionchanged:: v2
+         The ``jose`` module is moved out of Authlib.
+
+   .. container:: demo-result
+
+      .. versionchanged:: v2
+         The ``jose`` module is moved out of Authlib_.
 
 ``deprecated``
 ~~~~~~~~~~~~~~
 
-.. deprecated:: v2
+.. container:: demo
 
-   Built-in reST renderer is added in Mistune_.
+   .. code-block:: none
+      :caption: deprecated
+      :class: demo-code
 
+      .. deprecated:: 2.7
+         This version is no longer maintained, please upgrade to v3.
 
-Nested admonitions
-------------------
+   .. container:: demo-result
+
+      .. deprecated:: 2.7
+         This version is no longer maintained, please upgrade to v3.
+
+Nesting admonitions
+-------------------
+
+It is possible to add admonitions into admonitions. Take an example:
+
+.. code-block:: none
+
+   .. note::
+
+      An admonition can contain another admonition.
+
+      .. warning::
+
+         But is is not a really good idea.
+
+         .. danger::
+
+            It's distracting.
+
+        It can also be confusing.
+
+      And it looks pretty weird.
 
 .. note::
 
-   Here is the note
+  An admonition can contain another admonition.
 
-   .. tip:: Here is a tip
+  .. warning::
+
+    But is is not a really good idea.
+
+    .. danger::
+
+      It's distracting.
+
+    It can also be confusing.
+
+  And it looks pretty weird.
 
 
+
+.. _Authlib: https://authlib.org
 .. _Mistune: https://mistune.lepture.com
 .. _Typlog: https://typlog.com

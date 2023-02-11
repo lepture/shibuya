@@ -7,6 +7,7 @@ extensions = [
     "sphinx.ext.extlinks",
     "sphinx.ext.todo",
 ]
+todo_include_todos = True
 
 html_theme = "shibuya"
 html_baseurl = "https://shibuya.lepture.com"
