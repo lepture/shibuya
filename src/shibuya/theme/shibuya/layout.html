@@ -42,6 +42,7 @@
       {%- endif %}
     {% endfor -%}
     {% include "components/css_variables.html" with context %}
+    {% include "partials/webfonts.html" %}
     {% block theme_styles %}{% endblock %}
   {%- endblock -%}
   {% block extrahead %}{% endblock %}
@@ -49,6 +50,7 @@
 </head>
 <body>
   <div class="document">
+    {%- include "partials/banner.html" -%}
     {%- block header -%}
       {% include "components/site_header.html" with context %}
     {%- endblock -%}

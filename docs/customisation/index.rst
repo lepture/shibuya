@@ -2,7 +2,16 @@ Configuration
 =============
 
 
-.. toctree::
+``html_theme_options``
+----------------------
 
-    css
+
+.. toctree::
+    :hidden:
+
+    logos
+    colors
+    fonts
+    navbar
+    sidebar
     markdown

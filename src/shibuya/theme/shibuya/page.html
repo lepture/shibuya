@@ -24,11 +24,11 @@
       {%- endif %}
     </div>
   </aside>
-  <main class="sy-main max-sm:max-w-full print:pt-6">
+  <main class="sy-main w-full max-sm:max-w-full print:pt-6">
     <div class="flex flex-col break-words justify-between">
       {%- if display_toc %}
       <div class="pagetoc localtoc sticky xl:hidden print:hidden">
-        <details class="max-md:px-6">
+        <details class="px-3 max-md:px-6">
           <summary>
             <strong>{{ _('Table of Contents') }}</strong>
             <i class="i-icon chevron"></i>
@@ -37,7 +37,7 @@
         </details>
       </div>
       {%- endif %}
-      <div class="min-w-0 max-w-6xl px-6 pb-6 xl:pt-6 xl:px-12">
+      <div class="min-w-0 max-w-6xl px-6 pb-6 md:pt-6 xl:px-12">
         <article class="yue">
           {% block content %}{{ body }}{% endblock %}
         </article>

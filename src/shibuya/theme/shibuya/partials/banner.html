@@ -1,0 +1,11 @@
+{%- if theme_announcement -%}
+  <div class="banner">
+    <style>:root{--sy-s-banner-height:4rem}</style>
+    <div class="banner-inner">
+      <p>{{ theme_announcement }}</p>
+      <button class="banner-close" aria-label="Close banner">
+        <i class="i-icon close"></i>
+      </button>
+    </div>
+  </div>
+{%- endif %}

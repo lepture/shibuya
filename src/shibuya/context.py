@@ -1,13 +1,14 @@
 BASE_CSS_VARIABLES = """
 --sy-f-sys: -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Droid Sans, Helvetica Neue;
---sy-f-latin: Inter, var(--sy-f-sys);
 --sy-f-cjk: PingFang SC, Hiragino Sans GB, Droid Sans Fallback, Microsoft YaHei;
---sy-f-heading: var(--sy-f-latin), var(--sy-f-cjk), sans-serif;
---sy-f-text: var(--sy-f-latin), var(--sy-f-cjk), sans-serif;
+--sy-f-heading: var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
+--sy-f-text: var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
 --sy-f-mono: Menlo, Monaco, Consolas, "Courier New", monospace;
 --sy-c-divider: rgba(var(--sy-rc-text), 0.1);
 --sy-c-divider-weak: rgba(var(--sy-rc-text), 0.05);
+--sy-s-banner-height: 0rem;
 --sy-s-navbar-height: 4rem;
+--sy-s-offset-top: calc(var(--sy-s-navbar-height) + var(--sy-s-banner-height));
 --sy-rc-link: var(--sy-rc-theme);
 --sy-c-link: rgb(var(--sy-rc-theme));
 """

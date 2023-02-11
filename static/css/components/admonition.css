@@ -17,7 +17,7 @@ html.dark {
   --caution-color: 247, 186, 42;
   --danger-icon: var(--i-skull-url);
   --danger-color: 255, 92, 47;
-  --error-icon: var(--i-error-url);
+  --error-icon: var(--i-close-url);
   --error-color: 255, 92, 47;
   --hint-icon: var(--i-bell-url);
   --hint-color: 0, 200, 80;

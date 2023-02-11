@@ -1,6 +1,31 @@
+.banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--sy-s-banner-height);
+  display: flex;
+  align-items: center;
+  color: var(--sy-c-banner, white);
+  background-color: var(--sy-c-banner-bg, rgba(var(--sy-rc-theme), 1));
+  z-index: 20;
+}
+
+.banner-inner {
+  width: 100%;
+  text-align: center;
+}
+
+.banner-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  --icon-url: var(--i-close-url);
+}
+
 .sy-head {
   position: sticky;
-  top: 0;
+  top: var(--sy-s-banner-height);
   height: var(--sy-s-navbar-height);
   background-color: transparent;
   z-index: 20;

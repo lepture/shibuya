@@ -6,17 +6,17 @@
 }
 
 .yue section {
-  scroll-margin-top: calc(var(--sy-s-navbar-height) + 80px);
+  scroll-margin-top: calc(var(--sy-s-offset-top) + 80px);
 }
 
 @media (min-width: 1280px) {
   .yue section {
-    scroll-margin-top: calc(var(--sy-s-navbar-height) + 20px);
+    scroll-margin-top: calc(var(--sy-s-offset-top) + 20px);
   }
 }
 
 .pagetoc {
-  top: var(--sy-s-navbar-height);
+  top: var(--sy-s-offset-top);
   background-color: var(--sy-c-bg);
   padding: 1rem 0;
   margin-bottom: 1.5rem;
