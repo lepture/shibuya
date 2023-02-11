@@ -6,4 +6,5 @@ Writing Guide
 
     markup
     code
+    admonition
     meta

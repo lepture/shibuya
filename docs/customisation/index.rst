@@ -5,3 +5,4 @@ Configuration
 .. toctree::
 
     css
+    markdown

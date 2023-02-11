@@ -1,2 +1,2 @@
-Common Markups
+Using Markdown
 ==============

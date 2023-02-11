@@ -336,6 +336,10 @@ html.dark .yue {
   margin-bottom: 0.75em;
 }
 
+.yue ul.simple p {
+  margin: 0;
+}
+
 .yue hr + * {
   margin-top: 0;
 }
