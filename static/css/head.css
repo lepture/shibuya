@@ -20,7 +20,6 @@
   position: absolute;
   top: 1rem;
   right: 1rem;
-  --icon-url: var(--i-close-url);
 }
 
 .sy-head {

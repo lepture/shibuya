@@ -20,3 +20,23 @@
   --i-twitter-url:url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M23.953 4.57a10 10 0 0 1-2.825.775 4.958 4.958 0 0 0 2.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 0 0-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 0 0-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 0 1-2.228-.616v.06a4.923 4.923 0 0 0 3.946 4.827 4.996 4.996 0 0 1-2.212.085 4.936 4.936 0 0 0 4.604 3.417 9.867 9.867 0 0 1-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 0 0 7.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0 0 24 4.59z'/%3E%3C/svg%3E");
   --i-zap-url:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M13 2 3 14h9l-1 8 10-12h-9l1-8z'/%3E%3C/svg%3E");
 }
+.i-icon.alert{--icon-url:var(--i-alert-url)}
+.i-icon.arrows{--icon-url:var(--i-arrows-url)}
+.i-icon.award{--icon-url:var(--i-award-url)}
+.i-icon.bell{--icon-url:var(--i-bell-url)}
+.i-icon.calendar{--icon-url:var(--i-calendar-url)}
+.i-icon.check{--icon-url:var(--i-check-url)}
+.i-icon.chevron{--icon-url:var(--i-chevron-url)}
+.i-icon.close{--icon-url:var(--i-close-url)}
+.i-icon.discord{--icon-url:var(--i-discord-url)}
+.i-icon.flame{--icon-url:var(--i-flame-url)}
+.i-icon.github{--icon-url:var(--i-github-url)}
+.i-icon.help{--icon-url:var(--i-help-url)}
+.i-icon.laptop{--icon-url:var(--i-laptop-url)}
+.i-icon.link{--icon-url:var(--i-link-url)}
+.i-icon.mastodon{--icon-url:var(--i-mastodon-url)}
+.i-icon.moon{--icon-url:var(--i-moon-url)}
+.i-icon.skull{--icon-url:var(--i-skull-url)}
+.i-icon.sun{--icon-url:var(--i-sun-url)}
+.i-icon.twitter{--icon-url:var(--i-twitter-url)}
+.i-icon.zap{--icon-url:var(--i-zap-url)}

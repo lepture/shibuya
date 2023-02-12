@@ -4,10 +4,6 @@
   border-top: 1px solid var(--sy-c-divider);
 }
 
-.navigation i.chevron {
-  --icon-url: var(--i-chevron-url);
-}
-
 .navigation > div {
   width: 100%;
 }

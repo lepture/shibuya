@@ -27,19 +27,3 @@
 .sy-foot-socials a + a {
   margin-left: 0.5rem;
 }
-
-.sy-foot-socials .twitter {
-  --icon-url: var(--i-twitter-url);
-}
-
-.sy-foot-socials .github {
-  --icon-url: var(--i-github-url);
-}
-
-.sy-foot-socials .discord {
-  --icon-url: var(--i-discord-url);
-}
-
-.sy-foot-socials .mastodon {
-  --icon-url: var(--i-mastodon-url);
-}

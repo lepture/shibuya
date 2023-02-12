@@ -17,10 +17,6 @@ html[data-theme="dark"] .theme-selector i.theme {
   --icon-url: var(--i-moon-url);
 }
 
-.theme-selector i.arrows {
-  --icon-url: var(--i-arrows-url);
-}
-
 .theme-selector-inner {
   position: relative;
 }

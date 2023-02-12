@@ -2,10 +2,12 @@ const fs = require('fs')
 const path = require('path')
 
 function buildIcons (iconsDir, output) {
+  const icons = []
   let css = ':root {\n'
   fs.readdirSync(iconsDir).forEach(name => {
     if (/\.svg$/.test(name)) {
       const key = name.replace(/\.svg$/, '')
+      icons.push(key)
       let svg = fs.readFileSync(path.resolve(iconsDir, name), 'utf8')
       svg = svg.replace(/#000/g, 'currentColor')
       const url = `url("data:image/svg+xml;utf8,${encodeSvgForCss(svg)}")`
@@ -13,6 +15,9 @@ function buildIcons (iconsDir, output) {
     }
   })
   css += '}\n'
+  icons.forEach(key => {
+    css += `.i-icon.${key}{--icon-url:var(--i-${key}-url)}\n`
+  })
   fs.writeFileSync(output, css)
 }
 

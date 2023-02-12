@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html {% if language is not none %} lang="{{ language }}"{% endif %}>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {%- block htmltitle -%}
+    <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
+  {% endblock %}
+  {%- block linktags %}
+    {%- if hasdoc('about') -%}
+      <link rel="author" title="{{ _('About these documents') }}" href="{{ pathto('about') }}" />
+    {%- endif -%}
+    {%- if hasdoc('genindex') -%}
+      <link rel="index" title="{{ _('Index') }}" href="{{ pathto('genindex') }}" />
+    {%- endif -%}
+    {%- if hasdoc('search') -%}
+      <link rel="search" title="{{ _('Search') }}" href="{{ pathto('search') }}" />
+    {%- endif -%}
+    {%- if hasdoc('copyright') -%}
+      <link rel="copyright" title="{{ _('Copyright') }}" href="{{ pathto('copyright') }}" />
+    {%- endif -%}
+    {%- if next -%}
+      <link rel="next" title="{{ next.title|striptags|e }}" href="{{ next.link|e }}" />
+    {%- endif -%}
+    {%- if prev -%}
+      <link rel="prev" title="{{ prev.title|striptags|e }}" href="{{ prev.link|e }}" />
+    {%- endif -%}
+    {%- if pageurl %}
+    <link rel="canonical" href="{{ pageurl|e }}" />
+    {%- endif %}
+  {%- endblock linktags %}
+  {%- if favicon_url -%}
+    <link rel="shortcut icon" href="{{ favicon_url|e }}"/>
+  {%- endif %}
+
+  {%- block styles -%}
+    {%- for css in css_files -%}
+      {% if css|attr("filename") -%}
+        {{ css_tag(css) }}
+      {%- else -%}
+        <link rel="stylesheet" href="{{ pathto(css, 1)|e }}" type="text/css" />
+      {%- endif %}
+    {% endfor -%}
+    {% include "components/css_variables.html" with context %}
+    {% include "partials/webfonts.html" %}
+    {% block theme_styles %}{% endblock %}
+  {%- endblock -%}
+  {% block extrahead %}{% endblock %}
+  {% include "partials/meta_head.html" %}
+</head>
+<body>
+  {%- block document -%}
+  <div class="document">
+    {%- include "partials/banner.html" -%}
+    {%- block header -%}
+      {% include "components/site_header.html" with context %}
+    {%- endblock -%}
+
+    {% block body %}{% endblock %}
+
+    {%- block footer -%}
+      {% include "components/site_footer.html" with context %}
+    {%- endblock -%}
+  </div>
+  {%- endblock -%}
+
+  {%- block scripts -%}
+    {%- for js in script_files %}
+      {{ js_tag(js) }}
+    {%- endfor %}
+    {% block theme_scripts %}{% endblock %}
+  {%- endblock %}
+</body>
+</html>
