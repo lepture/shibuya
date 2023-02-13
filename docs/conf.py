@@ -1,5 +1,6 @@
 
 project = "Shibuya"
+release = "1.0.0"
 copyright = "Copyright &copy; 2023, Hsiaoming Yang"
 author = "Hsiaoming Yang"
 

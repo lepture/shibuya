@@ -4,6 +4,7 @@
   width: 16px;
   height: 14px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .hamburger > span {

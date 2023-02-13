@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 
 {% block body %}
+{% if display_toc and toc %}
+<input class="hidden" id="__toc" type="checkbox">
+<label class="sy-overlay" for="__toc"></label>
+{%- endif -%}
 <div class="sy-page sy-container flex mx-auto">
   <aside id="m-navbar" class="sy-sidebar md:w-64 md:shrink-0 print:hidden">
     <div class="sy-sidebar-inner md:sticky md:top-16">
@@ -20,7 +24,7 @@
       </div>
     </div>
   </aside>
-  <aside id="m-toc" class="sy-toc px-4 w-64 shrink-0 order-last fixed xl:static">
+  <aside class="sy-toc px-4 w-64 shrink-0 order-last">
     <div class="sy-toc-inner xl:top-16 xl:sticky px-4 xl:pl-0 pt-6">
       {%- if sidebars %}
         {%- for sidebartemplate in sidebars %}

@@ -19,7 +19,7 @@
         <strong>{{ project }}</strong>
       </a>
       <div class="sy-head-version">
-        <button class="text-xs font-semibold rounded-full">latest</button>
+        <button class="text-xs font-semibold rounded-full">{{ release }}</button>
       </div>
     </div>
     <div class="sy-head-actions flex gap-2 items-center print:hidden">
@@ -30,11 +30,11 @@
         {%- include "components/searchbox.html" %}
       </div>
       {% if display_toc and toc %}
-        <button class=":hidden hamburger js-menu" aria-label="Table of Contents" type="button" aria-controls="m-toc" aria-expanded="false">
+        <label class="xl:hidden hamburger" for="__toc" aria-label="Table of Contents">
           <span class="hamburger_1"></span>
           <span class="hamburger_2"></span>
           <span class="hamburger_3"></span>
-        </button>
+        </label>
       {%- endif %}
     </div>
   </div>
