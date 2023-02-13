@@ -336,10 +336,6 @@ html.dark .yue {
   margin-bottom: 0.75em;
 }
 
-.yue ul.simple p {
-  margin: 0;
-}
-
 .yue hr + * {
   margin-top: 0;
 }
@@ -381,4 +377,8 @@ html.dark .yue {
 
 .yue section > div {
   margin-bottom: 2rem;
+}
+
+ul.simple > li > p {
+  margin: 0;
 }

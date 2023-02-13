@@ -7,4 +7,5 @@ Writing Guide
     markup
     code
     admonition
+    api
     meta

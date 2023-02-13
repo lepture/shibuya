@@ -1,0 +1,11 @@
+.yue button.copybtn {
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+}
+
+.yue button.copybtn > svg {
+  width: 1.4rem;
+  height: 1.4rem;
+}

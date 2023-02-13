@@ -99,11 +99,10 @@ This is how it looks with Shibuya theme:
 
     import mistune
 
-    def render_markdown(text: str) -> str:
-        """A simple function to render text in markdown format."""
-        return mistune.html(text)
-
-    render_markdown("Hello **Shibuya**.")
+    class Shibuya:
+        def render_markdown(self, text: str) -> str:
+            """A simple function to render text in markdown format."""
+            return mistune.html(text)
 
 If both ``caption`` and ``linenos`` options are added:
 
@@ -113,12 +112,10 @@ If both ``caption`` and ``linenos`` options are added:
 
     import mistune
 
-    def render_markdown(text: str) -> str:
-        """A simple function to render text in markdown format."""
-        return mistune.html(text)
-
-    render_markdown("Hello **Shibuya**.")
-
+    class Shibuya:
+        def render_markdown(self, text: str) -> str:
+            """A simple function to render text in markdown format."""
+            return mistune.html(text)
 
 Emphasize lines
 ~~~~~~~~~~~~~~~

@@ -15,3 +15,79 @@ h6:hover a.headerlink {
 .yue .toctree-wrapper a {
   border-bottom: none;
 }
+
+/* -- API references begin -- */
+dt.sig {
+  font-size: 0.92rem;
+  padding: .25rem .5rem .25rem 3rem;
+  text-indent: -2.4rem;
+  border-radius: 6px;
+}
+
+dt.sig:hover {
+  background: var(--sy-c-bg-weak);
+}
+
+dt.sig + dd {
+  font-size: 0.92rem;
+  margin-left: 2rem;
+}
+
+dt.sig > em.property:first-child {
+  color: var(--syntax-keyword);
+}
+
+dl.field-list dd {
+  margin-left: 1.8rem;
+}
+
+dl.field-list a {
+  font-weight: 400;
+}
+
+dt.sig + dd > div {
+  margin-bottom: 1rem;
+}
+
+dt.sig + dd dt {
+  text-transform: uppercase;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--sy-c-bold);
+}
+
+em.property,
+em.sig-param {
+  font-style: normal;
+}
+
+em.sig-param {
+  color: var(--sy-c-text-weak);
+}
+
+span.sig-prename,
+span.sig-name {
+  color: var(--syntax-constant);
+}
+
+span.sig-name {
+  font-weight: 600;
+}
+
+span.sig-paren,
+span.pre {
+  font-family: var(--sy-f-mono);
+}
+
+dd > p:first-child {
+  margin-top: 0;
+}
+
+/* -- extra -- */
+.hlist td {
+  vertical-align: top;
+}
+
+p.centered {
+  text-align: center;
+}

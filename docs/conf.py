@@ -5,8 +5,11 @@ copyright = "Copyright &copy; 2023, Hsiaoming Yang"
 author = "Hsiaoming Yang"
 
 extensions = [
+    "sphinx.ext.autodoc",
+    "sphinx.ext.intersphinx",
     "sphinx.ext.extlinks",
     "sphinx.ext.todo",
+    "sphinx_copybutton",
 ]
 todo_include_todos = True
 
