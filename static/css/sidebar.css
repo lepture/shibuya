@@ -6,27 +6,6 @@
   margin: 0.6rem 0;
 }
 
-@media (max-width: 767px) {
-  .sy-sidebar {
-    position: fixed;
-    z-index: 15;
-    top: calc(var(--sy-s-offset-top) - 1px);
-    bottom: 0;
-    width: 100%;
-    height: calc(100vh - var(---sy-s-offset-top));
-    overflow: auto;
-    background: rgba(var(--sy-rc-bg), .98);
-    transform: translateY(-100%);
-    transition: transform .2s ease;
-  }
-  body[data-expanded-m-navbar="true"] {
-    overflow: hidden;
-  }
-  body[data-expanded-m-navbar="true"] .sy-sidebar {
-    transform: translateY(0);
-  }
-}
-
 @media (min-width: 768px) {
   .sy-sidebar-scroller {
     height: calc(100vh - var(--sy-s-offset-top) - var(--sy-s-bottom-height));

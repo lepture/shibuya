@@ -7,6 +7,17 @@
     {% include "components/site_header.html" with context %}
   {%- endblock -%}
 
+  <aside id="m-navbar" class="md:hidden">
+    {%- block mobile_navbar -%}
+      <div class="pt-6 px-6">
+        {%- include "components/searchbox.html" %}
+      </div>
+      <div class="pt-3 px-6">
+        {%- include "components/nav_links.html" %}
+      </div>
+    {%- endblock %}
+  </aside>
+
   <div class="sy-container mx-auto">
     <main class="sy-content mx-auto pt-12 px-6 xl:px-12 break-words">
       <article class="yue" role="main">

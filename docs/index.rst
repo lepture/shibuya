@@ -7,6 +7,7 @@ modern design.
 
 .. toctree::
     :caption: Getting started
+    :hidden:
 
     install
     customisation/index
@@ -14,5 +15,6 @@ modern design.
 
 .. toctree::
     :caption: Development
+    :hidden:
 
     contributing/index

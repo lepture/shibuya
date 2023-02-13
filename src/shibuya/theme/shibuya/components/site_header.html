@@ -1,7 +1,14 @@
 <div class="sy-head">
   <div class="sy-head-blur"></div>
   <div class="sy-head-inner sy-container mx-auto">
-    <div class="sy-head-brand flex items-center">
+    <div class="md:hidden flex items-center">
+      <button class="hamburger js-menu mr-3" aria-label="Menu" type="button" aria-controls="m-navbar" aria-expanded="false">
+        <span class="hamburger_1"></span>
+        <span class="hamburger_2 -translate-x-2"></span>
+        <span class="hamburger_3 -translate-x-1"></span>
+      </button>
+    </div>
+    <div class="sy-head-brand flex items-center justify-center">
       <a href="{{ theme_logo_target }}">
         {%- if theme_light_logo -%}
           <img class="light-logo" src="{{ theme_light_logo }}" alt="{{ project }}" />
@@ -22,8 +29,8 @@
       <div class="hidden md:block">
         {%- include "components/searchbox.html" %}
       </div>
-      {%- if has_mobile_nav %}
-        <button class="md:hidden hamburger js-menu" aria-label="Menu" type="button" aria-controls="m-navbar" aria-expanded="false">
+      {% if display_toc and toc %}
+        <button class=":hidden hamburger js-menu" aria-label="Table of Contents" type="button" aria-controls="m-toc" aria-expanded="false">
           <span class="hamburger_1"></span>
           <span class="hamburger_2"></span>
           <span class="hamburger_3"></span>

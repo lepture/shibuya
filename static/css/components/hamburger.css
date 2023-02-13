@@ -6,43 +6,38 @@
   overflow: hidden;
 }
 
-.hamburger>span {
+.hamburger > span {
   position: absolute;
   width: 16px;
   height: 2px;
+  left: 0;
   background-color: var(--sy-c-text);
   transition: top .25s, transform .25s;
 }
 
 .hamburger_1 {
   top: 0;
-  left: 0;
-  transform: translate(0);
 }
 
 .hamburger_2 {
   top: 6px;
-  left: 0;
-  transform: translate(8px);
 }
 
 .hamburger_3 {
   top: 12px;
-  left: 0;
-  transform: translate(4px);
 }
 
-button[aria-expanded=true] .hamburger_1 {
+button.hamburger[aria-expanded=true] .hamburger_1 {
   top: 6px;
   transform: translate(0) rotate(225deg);
 }
 
-button[aria-expanded=true] .hamburger_2 {
+button.hamburger[aria-expanded=true] .hamburger_2 {
   top: 6px;
   transform: translate(18px);
 }
 
-button[aria-expanded=true] .hamburger_3 {
+button.hamburger[aria-expanded=true] .hamburger_3 {
   top: 6px;
   transform: translate(0) rotate(135deg);
 }
