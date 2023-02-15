@@ -37,7 +37,7 @@ DARK_CSS_VARIABLES = """
 --sy-rc-invert: 255, 255, 255;
 --sy-rc-text: 255, 255, 255;
 --sy-c-bg: #121212;
---sy-c-bg-weak: #243144;
+--sy-c-bg-weak: #212833;
 --sy-c-text: #d1d5db;
 --sy-c-text-weak: #8d91a7;
 --sy-c-heading: #fff;

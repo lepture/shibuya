@@ -7,11 +7,9 @@
 }
 
 @media (min-width: 768px) {
-  .sy-sidebar-scroller {
+  .sy-sidebar .sy-scrollbar {
     height: calc(100vh - var(--sy-s-offset-top) - var(--sy-s-bottom-height));
-    overflow-y: auto;
     overflow-x: hidden;
-    scrollbar-gutter: stable;
   }
 }
 

@@ -24,6 +24,12 @@ dt.sig {
   border-radius: 6px;
 }
 
+dt.sig:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
 dt.sig:hover {
   background: var(--sy-c-bg-weak);
 }
@@ -49,9 +55,9 @@ dt.sig + dd > div {
   margin-bottom: 1rem;
 }
 
-dt.sig + dd dt {
+dt.sig + dd > dl.field-list > dt {
   text-transform: uppercase;
-  font-size: 0.86rem;
+  font-size: 0.76rem;
   font-weight: 600;
   color: var(--sy-c-bold);
 }
@@ -67,16 +73,31 @@ em.sig-param {
 
 span.sig-prename,
 span.sig-name {
-  color: var(--syntax-constant);
+  color: var(--syntax-property);
 }
 
 span.sig-name {
   font-weight: 600;
 }
 
+span.sig-return-icon {
+  color: var(--sy-c-text-weak);
+}
+
+span.sig-return-typehint,
+span.sig-return-typehint > a {
+  color: var(--syntax-constant);
+}
+
 span.sig-paren,
 span.pre {
   font-family: var(--sy-f-mono);
+}
+
+span.viewcode-back,
+span.viewcode-link {
+  float: right;
+  text-align: right;
 }
 
 dd > p:first-child {

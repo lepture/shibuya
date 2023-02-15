@@ -18,3 +18,4 @@ modern design.
     :hidden:
 
     contributing/index
+    alternatives

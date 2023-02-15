@@ -2,10 +2,9 @@ API Documentation
 =================
 
 
-.. autoclass:: urllib3.util.Retry
-    :members:
+.. autofunction:: sphinx.versioning.merge_doctrees
     :noindex:
 
-.. autoclass:: urllib3.util.Timeout
+.. autoclass:: sphinx.application.Sphinx
     :members:
     :noindex:

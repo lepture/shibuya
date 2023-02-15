@@ -69,15 +69,6 @@
   display: none;
 }
 
-.sy-head-version {
-  margin-left: 8px;
-}
-
-.sy-head-version button {
-  background: rgba(var(--sy-rc-text), 0.08);
-  padding: 1px 8px;
-}
-
 .sy-head-nav > ul > li {
   display: inline-block;
 }

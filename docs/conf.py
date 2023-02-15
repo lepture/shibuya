@@ -9,9 +9,15 @@ extensions = [
     "sphinx.ext.intersphinx",
     "sphinx.ext.extlinks",
     "sphinx.ext.todo",
+    "sphinx.ext.viewcode",
     "sphinx_copybutton",
 ]
 todo_include_todos = True
+
+intersphinx_mapping = {
+    "python": ("https://docs.python.org/3", None),
+    "sphinx": ("https://www.sphinx-doc.org/en/master", None),
+}
 
 html_theme = "shibuya"
 html_baseurl = "https://shibuya.lepture.com"

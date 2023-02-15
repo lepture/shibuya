@@ -32,7 +32,7 @@
     padding-bottom: 1rem;
     overflow: auto;
     background: var(--sy-c-bg);
-    transform: translateX(100%);
+    transform: translateX(110%);
     transition: transform .2s ease;
     --tw-shadow: -12px 0 16px rgba(var(--sy-rc-bg), 0.16);
     box-shadow: var(--tw-ring-offset-shadow,0 0 transparent),var(--tw-ring-shadow,0 0 transparent),var(--tw-shadow);
@@ -63,8 +63,17 @@
 
 @media (min-width: 768px) {
   .sy-main {
-    width: calc(100vw - 16rem);
+    width: calc(100% - 16rem);
     max-width: 52rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .sy-main {
+    width: calc(100% - 32rem);
+  }
+  .sy-toc .sy-scrollbar {
+    max-height: calc(100vh - var(--sy-s-offset-top) - env(safe-area-inset-bottom));
   }
 }
 

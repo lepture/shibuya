@@ -4,7 +4,7 @@
 <div class="document">
   {%- include "partials/banner.html" -%}
   {%- block header -%}
-    {% include "components/site_header.html" with context %}
+    {% include "components/header.html" with context %}
   {%- endblock -%}
 
   <aside id="m-navbar" class="md:hidden">
@@ -27,7 +27,7 @@
   </div>
 
   {%- block footer -%}
-    {% include "components/site_footer.html" with context %}
+    {% include "components/footer.html" with context %}
   {%- endblock -%}
 </div>
 {%- endblock -%}

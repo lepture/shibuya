@@ -1,11 +1,85 @@
+/* sphinx-copybutton */
 .yue button.copybtn {
   align-items: center;
   justify-content: center;
   background-color: transparent;
   border: none;
+  color: var(--sy-c-text);
 }
 
 .yue button.copybtn > svg {
   width: 1.4rem;
   height: 1.4rem;
+}
+
+.yue .highlight button.copybtn:hover {
+  background-color: transparent;
+  color: var(--sy-c-text-weak);
+}
+
+.yue .o-tooltip--left:after {
+  background-color: transparent;
+  color: var(--sy-c-text);
+}
+
+/* ethical ads on rtd */
+#ethical-ad-placement .ethical-sidebar {
+  background-color: var(--sy-c-bg-weak);
+  border: none;
+  padding: 0.8rem;
+}
+
+#ethical-ad-placement .ethical-text a {
+  color: var(--sy-c-text) !important;
+}
+
+/* carbonads */
+#carbonads {
+  margin: 1rem 0;
+  position: relative;
+  display: block;
+  background-color: var(--sy-c-bg-weak);
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 0.8rem 1.6rem;
+}
+.carbon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.carbon-text {
+  display: block;
+  margin: 0.5rem 0;
+  line-height: 1.42;
+  font-size: 0.78rem;
+  text-align: center;
+}
+.carbon-text:hover {
+  color: var(--sy-c-link);
+}
+.carbon-poweredby {
+  position: absolute;
+  right: 0.8rem;
+  bottom: 0.5rem;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+}
+.carbon-poweredby:hover {
+  text-decoration: underline;
+}
+
+.sy-main #carbonads {
+  max-width: 380px;
+  padding: 1rem;
+}
+
+.sy-main .carbon-wrap {
+  flex-direction: row;
+}
+
+.sy-main .carbon-text {
+  text-align: left;
+  margin-left: 1rem;
 }

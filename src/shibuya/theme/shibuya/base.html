@@ -41,25 +41,25 @@
         <link rel="stylesheet" href="{{ pathto(css, 1)|e }}" type="text/css" />
       {%- endif %}
     {% endfor -%}
-    {% include "components/css_variables.html" with context %}
+    {% include "components/variables.html" with context %}
     {% include "partials/webfonts.html" %}
     {% block theme_styles %}{% endblock %}
   {%- endblock -%}
-  {% block extrahead %}{% endblock %}
-  {% include "partials/meta_head.html" %}
+  {%- block extrahead %}{% endblock -%}
+  {%- include "partials/extra-head.html" -%}
 </head>
 <body>
   {%- block document -%}
   <div class="document">
     {%- include "partials/banner.html" -%}
     {%- block header -%}
-      {% include "components/site_header.html" with context %}
+      {% include "components/header.html" with context %}
     {%- endblock -%}
 
     {% block body %}{% endblock %}
 
     {%- block footer -%}
-      {% include "components/site_footer.html" with context %}
+      {% include "components/footer.html" with context %}
     {%- endblock -%}
   </div>
   {%- endblock -%}

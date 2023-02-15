@@ -14,7 +14,7 @@
       <div class="md:hidden pt-3 px-6">
         {%- include "components/nav_links.html" %}
       </div>
-      <div class="sy-sidebar-scroller p-6">
+      <div class="sy-scrollbar p-6">
         <div class="globaltoc">
           {{ toctree(collapse=False, titles_only=True, includehidden=True) }}
         </div>
@@ -24,8 +24,8 @@
       </div>
     </div>
   </aside>
-  <aside class="sy-toc px-4 w-64 shrink-0 order-last">
-    <div class="sy-toc-inner xl:top-16 xl:sticky px-4 xl:pl-0 pt-6">
+  <aside class="sy-toc pb-3 w-64 shrink-0 order-last">
+    <div class="sy-scrollbar px-6 xl:top-16 xl:sticky xl:pl-0 pt-6 pb-4">
       {%- if sidebars %}
         {%- for sidebartemplate in sidebars %}
           {%- include sidebartemplate %}
@@ -39,6 +39,7 @@
         <article class="yue" role="main">
           {% block content %}{{ body }}{% endblock %}
         </article>
+        {% include "partials/comment.html" %}
       </div>
       <div class="min-w-0 max-w-6xl px-6 pb-6 xl:pt-6 xl:px-12">
         {% include "components/navigation.html" %}
