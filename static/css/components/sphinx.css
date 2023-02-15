@@ -16,6 +16,18 @@ h6:hover a.headerlink {
   border-bottom: none;
 }
 
+.yue .align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.yue figure.align-center img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* -- API references begin -- */
 dt.sig {
   font-size: 0.92rem;

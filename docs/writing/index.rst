@@ -7,5 +7,6 @@ Writing Guide
     markup
     code
     admonition
+    media
     api
     meta
