@@ -39,10 +39,11 @@
         <article class="yue" role="main">
           {% block content %}{{ body }}{% endblock %}
         </article>
-        {% include "partials/comment.html" %}
+        {% include "partials/article-bottom.html" %}
       </div>
       <div class="min-w-0 max-w-6xl px-6 pb-6 xl:pt-6 xl:px-12">
         {% include "components/navigation.html" %}
+        {% include "partials/page-bottom.html" %}
       </div>
     </div>
   </main>
