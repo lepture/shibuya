@@ -7,8 +7,7 @@
   --yue-bullets: #d1d5db;
   --yue-hr: #e5e7eb;
   --yue-quote: #111827;
-  --yue-quote-border: #e5e7eb;
-  --yue-quote-bg: var(--sy-c-bg-weak);
+  --yue-quote-border: #cfd3db;
   --yue-caption: #6b7280;
   --yue-code: #111827;
   --yue-th-border: #d1d5db;
@@ -140,7 +139,6 @@ html.dark .yue {
   color: var(--yue-quote);
   border-left-width: 0.25rem;
   border-left-color: var(--yue-quote-border);
-  background-color: var(--yue-quote-bg);
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
   padding-left: 1rem;
