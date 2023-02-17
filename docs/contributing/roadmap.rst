@@ -15,6 +15,14 @@ Make it perfect look on RTD, which means I'll design on:
 - Ethical Ads
 - Versions display
 
+Good to have
+------------
+
+These good things will be added in the future:
+
+- Edit this page link
+- GitHub stars and forks
+
 Design for other extensions
 ---------------------------
 
