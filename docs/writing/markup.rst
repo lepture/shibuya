@@ -34,6 +34,12 @@ Block quote
     If you are familiar with Markdown, blockquote in reStructuredText
     looks like indented code in Markdown.
 
+It is also possible to add attribution to the quote:
+
+    "It is my business to know things.  That is my trade."
+
+    -- Sherlock Holmes
+
 Lists
 -----
 
@@ -75,12 +81,11 @@ Definition lists
 .. code-block:: rst
 
    Term
-      The definition of the term
+      The definition of the term.
+   Apple
+      A kind of fruit, not a company.
 
 Term
-   The definition of term
-
-Tables
-------
-
-And we can also create tables in reStructuredText.
+   The definition of term.
+Apple
+   A kind of fruit, not a company.

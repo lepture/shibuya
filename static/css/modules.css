@@ -8,5 +8,7 @@
 @import "./components/yue.css";
 @import "./components/admonition.css";
 @import "./components/code.css";
+@import "./components/table.css";
+@import "./components/api-doc.css";
 @import "./components/syntax.css";
 @import "./components/external.css";

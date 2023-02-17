@@ -6,6 +6,7 @@ Writing Guide
 
     markup
     code
+    table
     admonition
     media
     api

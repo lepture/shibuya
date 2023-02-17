@@ -1,3 +1,8 @@
+dl.simple > dd > p,
+ul.simple > li > p {
+  margin: 0;
+}
+
 a.headerlink {
   visibility: hidden;
   margin-left: 6px;
@@ -26,94 +31,6 @@ h6:hover a.headerlink {
 .yue figure.align-center img {
   margin-left: auto;
   margin-right: auto;
-}
-
-/* -- API references begin -- */
-dt.sig {
-  font-size: 0.92rem;
-  padding: .25rem .5rem .25rem 3rem;
-  text-indent: -2.4rem;
-  border-radius: 6px;
-}
-
-dt.sig:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-dt.sig:hover {
-  background: var(--sy-c-bg-weak);
-}
-
-dt.sig + dd {
-  font-size: 0.92rem;
-  margin-left: 2rem;
-}
-
-dt.sig > em.property:first-child {
-  color: var(--syntax-keyword);
-}
-
-dl.field-list dd {
-  margin-left: 1.8rem;
-}
-
-dl.field-list a {
-  font-weight: 400;
-}
-
-dt.sig + dd > div {
-  margin-bottom: 1rem;
-}
-
-dt.sig + dd > dl.field-list > dt {
-  text-transform: uppercase;
-  font-size: 0.76rem;
-  font-weight: 600;
-  color: var(--sy-c-bold);
-}
-
-em.property,
-em.sig-param {
-  font-style: normal;
-}
-
-em.sig-param {
-  color: var(--sy-c-text-weak);
-}
-
-span.sig-prename,
-span.sig-name {
-  color: var(--syntax-property);
-}
-
-span.sig-name {
-  font-weight: 600;
-}
-
-span.sig-return-icon {
-  color: var(--sy-c-text-weak);
-}
-
-span.sig-return-typehint,
-span.sig-return-typehint > a {
-  color: var(--syntax-constant);
-}
-
-span.sig-paren,
-span.pre {
-  font-family: var(--sy-f-mono);
-}
-
-span.viewcode-back,
-span.viewcode-link {
-  float: right;
-  text-align: right;
-}
-
-dd > p:first-child {
-  margin-top: 0;
 }
 
 /* -- extra -- */

@@ -8,8 +8,11 @@ from .context import (
     DARK_CSS_VARIABLES,
     css_to_dict,
 )
+from ._sphinx import WrapperPostTransform
 
 __version__ = '1.0.0'
+
+shibuya_version = __version__
 
 THEME_PATH = (Path(__file__).parent / "theme" / "shibuya").resolve()
 
@@ -27,14 +30,20 @@ def _html_page_context(app, pagename: str, templatename: str, context: Dict[str,
     context["shibuya_dark_css_variables"] = css_to_dict(DARK_CSS_VARIABLES)
     context['render_toc'] = _render_toc
 
-    # TODO: add versions
     if 'script_files' in context:
-        context['script_files'].append('_static/shibuya.js')
+        script_files = context['script_files']
+        script_files.append(f'_static/shibuya.js?v={shibuya_version}')
+        context['script_files'] = script_files
+
+    if 'css_files' in context:
+        css_files = [f'{name}?v={shibuya_version}' for name in context['css_files']]
+        context['css_files'] = css_files
 
 
 def setup(app):
     """Entry point for sphinx theming."""
     app.add_html_theme("shibuya", str(THEME_PATH))
+    app.add_post_transform(WrapperPostTransform)
     app.connect("html-page-context", _html_page_context)
     return {
         "parallel_read_safe": True,

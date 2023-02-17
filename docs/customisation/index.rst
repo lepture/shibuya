@@ -12,6 +12,7 @@ Configuration
     logos
     colors
     fonts
+    icons
     navbar
     sidebar
     markdown
