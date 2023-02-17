@@ -24,6 +24,7 @@
 
 /* ethical ads on rtd */
 #ethical-ad-placement .ethical-sidebar {
+  position: relative;
   background-color: var(--sy-c-bg-weak);
   border: none;
   padding: 0.8rem;
@@ -31,6 +32,30 @@
 
 #ethical-ad-placement .ethical-text a {
   color: var(--sy-c-text) !important;
+}
+
+.sy-main #ethical-ad-placement .ethical-sidebar {
+  margin-left: 0;
+  max-width: 380px;
+}
+
+.sy-main #ethical-ad-placement .ethical-image-link {
+  flex-shrink: 0;
+  margin-right: 0.4rem;
+}
+
+.sy-main #ethical-ad-placement .ethical-content {
+  display: flex;
+}
+
+.sy-main #ethical-ad-placement .ethical-text {
+  margin-top: 0;
+}
+
+.sy-main #ethical-ad-placement .ethical-callout {
+  position: absolute;
+  right: 0.4rem;
+  bottom: 0.4rem;
 }
 
 /* carbonads */
