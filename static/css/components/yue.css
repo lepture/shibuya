@@ -1,8 +1,8 @@
 .yue {
   --yue-c-text: var(--sy-c-text);
   --yue-c-heading: var(--sy-c-heading);
-  --yue-c-link: #111827;
   --yue-c-bold: var(--sy-c-bold);
+  --yue-c-link: #111827;
   --yue-c-ol-marker: #6b7280;
   --yue-c-ul-marker: #d1d5db;
   --yue-c-hr: #e5e7eb;
@@ -13,12 +13,10 @@
   --yue-c-th-bg: #eff3f8;
   --yue-c-th-border: #d1d5db;
   --yue-c-td-border: #e5e7eb;
+  --yue-c-highlight-bg: #fff4c3;
 }
 html.dark .yue {
-  --yue-c-text: #d1d5db;
-  --yue-c-heading: #fff;
   --yue-c-link: #fff;
-  --yue-c-bold: #fff;
   --yue-c-ol-marker: #9ca3af;
   --yue-c-ul-marker: #4b5563;
   --yue-c-hr: #374151;
@@ -26,9 +24,10 @@ html.dark .yue {
   --yue-c-quote-border: #374151;
   --yue-c-caption: #9ca3af;
   --yue-c-code: #fff;
-  --yue-c-th-bg: #4b5563;
+  --yue-c-th-bg: #24282e;
   --yue-c-th-border: #4b5563;
   --yue-c-td-border: #374151;
+  --yue-c-highlight-bg: #8a7214;
 }
 
 .yue {
@@ -324,7 +323,7 @@ html.dark .yue {
 .yue thead th {
   color: var(--yue-c-heading);
   font-weight: 600;
-  vertical-align: bottom;
+  vertical-align: middle;
   text-align: center;
 }
 
@@ -338,7 +337,7 @@ html.dark .yue {
 }
 
 .yue tbody td {
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 .yue tfoot {
@@ -370,4 +369,8 @@ html.dark .yue {
 
 .yue dd > p:first-child {
   margin-top: 0;
+}
+
+.yue section:target > h2 {
+  background-color: var(--yue-c-highlight-bg);
 }

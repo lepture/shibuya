@@ -41,3 +41,27 @@
 .yue .table-wrapper thead + tbody tr:first-child {
   border-top-width: 0;
 }
+
+.table-wrapper {
+  overflow-x: auto;
+  scrollbar-gutter: stable;
+}
+
+.table-wrapper::-webkit-scrollbar {
+  height: .75rem;
+  width: .75rem;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.table-wrapper:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.2);
+  background-clip: content-box;
+  border: 3px solid transparent;
+}

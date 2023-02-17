@@ -1,6 +1,9 @@
 Alternatives
 ============
 
+Here are some other nice themes. If you don't like Shibuya,
+you might like these.
+
 Furo
 ----
 

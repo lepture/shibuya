@@ -23,6 +23,11 @@ html_theme = "shibuya"
 html_baseurl = "https://shibuya.lepture.com"
 html_logo = "https://typlog.com/assets/logo-black.svg"
 
+html_copy_source = False
+html_show_sourcelink = False
+
+# html_link_suffix = ""
+
 html_theme_options = {
     "logo_target": "/",
     "light_logo": "https://typlog.com/assets/logo-black.svg",
@@ -33,12 +38,12 @@ html_theme_options = {
 
     "nav_links": [
         {
-            "title": "Pricing",
-            "url": "/pricing.html"
+            "title": "Sponsors",
+            "url": "/sponsors"
         },
         {
             "title": "About",
-            "url": "/about.html"
+            "url": "/about"
         },
     ]
 }

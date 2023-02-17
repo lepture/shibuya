@@ -184,12 +184,12 @@ admonitions, but in Shibuya theme, they look like admonitions.
       :caption: versionadded
       :class: demo-code
 
-      .. versionadded:: v1
+      .. versionadded:: v3
          Built-in reST renderer is added in Mistune.
 
    .. container:: demo-result
 
-      .. versionadded:: v1
+      .. versionadded:: v3
          Built-in reST renderer is added in Mistune_.
 
 ``versionchanged``
