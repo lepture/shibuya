@@ -21,7 +21,8 @@ intersphinx_mapping = {
 
 html_theme = "shibuya"
 html_baseurl = "https://shibuya.lepture.com"
-html_logo = "https://typlog.com/assets/logo-black.svg"
+
+html_static_path = ["_static"]
 
 html_copy_source = False
 html_show_sourcelink = False
@@ -30,8 +31,8 @@ html_show_sourcelink = False
 
 html_theme_options = {
     "logo_target": "/",
-    "light_logo": "https://typlog.com/assets/logo-black.svg",
-    "dark_logo": "https://typlog.com/assets/logo-white.svg",
+    "light_logo": "/_static/logo-light.svg",
+    "dark_logo": "/_static/logo-dark.svg",
 
     "twitter_url": "https://twitter.com/lepture",
     "github_url": "https://github.com/lepture/shibuya",
