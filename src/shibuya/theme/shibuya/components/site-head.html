@@ -21,13 +21,13 @@
     </div>
     <div class="sy-head-actions flex gap-2 items-center print:hidden">
       <nav class="sy-head-nav hidden md:block">
-        {%- include "components/nav_links.html" %}
+        {%- include "components/nav-links.html" %}
       </nav>
       <div class="hidden md:block">
         {%- include "components/searchbox.html" %}
       </div>
       {% if display_toc and toc %}
-        <label class="xl:hidden flex items-center cursor-pointer" for="__toc" aria-label="Table of Contents">
+        <label class="xl:hidden flex items-center cursor-pointer" for="__rside" aria-label="Table of Contents">
           <i class="i-icon outdent"></i>
         </label>
       {%- endif %}

@@ -4,7 +4,7 @@
 <div class="document">
   {%- include "partials/banner.html" -%}
   {%- block header -%}
-    {% include "components/header.html" with context %}
+    {% include "components/site-head.html" with context %}
   {%- endblock -%}
 
   <aside id="m-navbar" class="md:hidden">
@@ -13,7 +13,7 @@
         {%- include "components/searchbox.html" %}
       </div>
       <div class="pt-3 px-6">
-        {%- include "components/nav_links.html" %}
+        {%- include "components/nav-links.html" %}
       </div>
     {%- endblock %}
   </aside>
@@ -27,7 +27,7 @@
   </div>
 
   {%- block footer -%}
-    {% include "components/footer.html" with context %}
+    {% include "components/site-foot.html" with context %}
   {%- endblock -%}
 </div>
 {%- endblock -%}

@@ -1,19 +1,19 @@
-.sy-sidebar {
+.sy-lside {
   --sy-s-bottom-height: 52px;
 }
 
-.sy-sidebar li {
+.sy-lside li {
   margin: 0.6rem 0;
 }
 
 @media (min-width: 768px) {
-  .sy-sidebar .sy-scrollbar {
+  .sy-lside .sy-scrollbar {
     height: calc(100vh - var(--sy-s-offset-top) - var(--sy-s-bottom-height));
     overflow-x: hidden;
   }
 }
 
-.sy-sidebar-bottom {
+.sy-lside-bottom {
   position: sticky;
   bottom: 0;
   height: var(--sy-s-bottom-height);

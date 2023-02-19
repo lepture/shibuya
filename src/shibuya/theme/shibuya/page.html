@@ -2,29 +2,30 @@
 
 {% block body %}
 {% if display_toc and toc %}
-<input class="hidden" id="__toc" type="checkbox">
-<label class="sy-overlay" for="__toc"></label>
+<input class="hidden" id="__rside" type="checkbox">
+<label class="sy-overlay" for="__rside"></label>
 {%- endif -%}
 <div class="sy-page sy-container flex mx-auto">
-  <aside id="m-navbar" class="sy-sidebar md:w-64 md:shrink-0 print:hidden">
-    <div class="sy-sidebar-inner md:sticky md:top-16">
+  <aside id="m-navbar" class="sy-lside md:w-64 md:shrink-0 print:hidden">
+    <div class="sy-lside-inner md:sticky md:top-16">
       <div class="md:hidden pt-6 px-6">
         {%- include "components/searchbox2.html" %}
       </div>
       <div class="md:hidden pt-3 px-6">
-        {%- include "components/nav_links.html" %}
+        {%- include "components/nav-links.html" %}
       </div>
       <div class="sy-scrollbar p-6">
+        {%- include "partials/sidebar-links.html" %}
         <div class="globaltoc">
           {{ toctree(collapse=False, titles_only=True, includehidden=True) }}
         </div>
       </div>
-      <div class="sy-sidebar-bottom mx-6 flex items-center">
+      <div class="sy-lside-bottom mx-6 flex items-center">
         {% include "components/theme_select.html" %}
       </div>
     </div>
   </aside>
-  <aside class="sy-toc pb-3 w-64 shrink-0 order-last">
+  <aside class="sy-rside pb-3 w-64 shrink-0 order-last">
     <div class="sy-scrollbar px-6 xl:top-16 xl:sticky xl:pl-0 pt-6 pb-4">
       {%- if sidebars %}
         {%- for sidebartemplate in sidebars %}
