@@ -1,7 +1,11 @@
 {%- if theme_nav_links %}
 <ul>
   {%- for link in theme_nav_links -%}
-    <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+    {%- if link.url.startswith(('https://', 'http://')) -%}
+      <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+    {%- else %}
+      <li><a href="{{ pathto(link.url) }}">{{ link.title }}</a></li>
+    {%- endif -%}
   {%- endfor -%}
 </ul>
 {%- endif -%}

@@ -45,9 +45,7 @@
   height: 100%;
   backdrop-filter: blur(12px);
   background-color: rgba(var(--sy-rc-bg), .85);
-  box-shadow: rgba(var(--sy-rc-invert), 0) 0px;
   z-index: -1;
-
   --tw-shadow: 0 2px 4px rgba(var(--sy-rc-invert), .02), 0 1px 0 rgba(var(--sy-rc-invert), .06);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent), var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
 }

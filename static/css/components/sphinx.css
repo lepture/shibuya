@@ -1,12 +1,14 @@
-dl.simple > dd > p,
-ul.simple > li > p {
+.yue dl.simple > dd > p,
+.yue ul.simple > li > p {
   margin: 0;
 }
 
-a.headerlink {
+.yue a.headerlink {
   visibility: hidden;
   margin-left: 6px;
   color: rgba(var(--sy-rc-text), 0.6);
+  font-weight: 300;
+  font-family: var(--sy-f-mono);
 }
 
 h2:hover a.headerlink,

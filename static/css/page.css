@@ -88,6 +88,6 @@
 }
 
 .sy-content {
-  max-width: 52rem;
+  max-width: 64rem;
   min-height: calc(100vh - var(--sy-s-offset-top));
 }

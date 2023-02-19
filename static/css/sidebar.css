@@ -10,10 +10,26 @@
   margin-bottom: 2rem;
 }
 
-.sy-lside .sidebar-links svg {
+.sy-lside .sidebar-links span {
   display: inline-block;
-  width: 1.2rem;
-  height: 1.2rem;
+  vertical-align: middle;
+}
+
+.sy-lside .sidebar-links .icon {
+  padding: 0.1rem;
+  border-radius: 6px;
+  border: 1px solid var(--sy-c-divider);
+  margin-right: 0.4rem;
+  opacity: 0.8;
+}
+
+.sy-lside .sidebar-links svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.sy-lside .sidebar-links a:hover .icon {
+  opacity: 1;
 }
 
 @media (min-width: 768px) {
