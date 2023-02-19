@@ -6,6 +6,16 @@
   margin: 0.6rem 0;
 }
 
+.sy-lside .sidebar-links {
+  margin-bottom: 2rem;
+}
+
+.sy-lside .sidebar-links svg {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
 @media (min-width: 768px) {
   .sy-lside .sy-scrollbar {
     height: calc(100vh - var(--sy-s-offset-top) - var(--sy-s-bottom-height));

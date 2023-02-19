@@ -19,10 +19,11 @@ intersphinx_mapping = {
     "sphinx": ("https://www.sphinx-doc.org/en/master", None),
 }
 
+templates_path = ["_templates"]
+html_static_path = ["_static"]
+
 html_theme = "shibuya"
 html_baseurl = "https://shibuya.lepture.com"
-
-html_static_path = ["_static"]
 
 html_copy_source = False
 html_show_sourcelink = False
