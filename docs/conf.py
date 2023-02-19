@@ -28,6 +28,10 @@ html_baseurl = "https://shibuya.lepture.com"
 html_copy_source = False
 html_show_sourcelink = False
 
+html_additional_pages = {
+    "branding": "branding.html",
+}
+
 # html_link_suffix = ""
 
 html_theme_options = {
@@ -44,8 +48,8 @@ html_theme_options = {
             "url": "/sponsors"
         },
         {
-            "title": "About",
-            "url": "/about"
+            "title": "Branding",
+            "url": "/branding"
         },
     ]
 }

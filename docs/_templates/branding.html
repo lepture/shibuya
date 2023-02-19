@@ -1,0 +1,99 @@
+{% extends "layout.html" %}
+
+{%- block htmltitle -%}
+    <title>Branding{{ titlesuffix }}</title>
+  {% endblock %}
+
+{% block theme_styles %}
+<style>
+  h1.headline {
+    margin: 4rem 0 6rem;
+    text-align: center;
+    font-size: 3.2rem;
+  }
+  .brand-logo {
+    margin: 2rem 0;
+  }
+  .brand-logo > a,
+  .brand-icon > a {
+    display: block;
+    border-radius: 6px;
+    border: 1px solid var(--sy-c-divider);
+    padding: 1rem 3rem;
+  }
+  .brand-logo > a:hover,
+  .brand-icon > a:hover {
+    border: 1px solid rgb(var(--sy-rc-theme));
+  }
+  .brand-logo img,
+  .brand-icon img {
+    width: 100%;
+  }
+  .brand-logos h1,
+  .brand-icons h1 {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+  }
+  .brand-logos h1:before,
+  .brand-icons h1:before {
+    content: "";
+    position: absolute;
+    top: .5em;
+    bottom: -2px;
+    left: -10px;
+    width: 3.4em;
+    z-index: -1;
+    background: rgb(var(--sy-rc-theme));
+    opacity: .3;
+    transform: skew(-35deg);
+    transition: opacity .2s ease;
+    border-radius: 3px 8px 10px 6px;
+  }
+  .brand-logos h2,
+  .brand-icons h2 {
+    margin: 0 0 2rem;
+    color: var(--sy-c-text-weak);
+    font-family: var(--sy-f-text);
+    font-weight: 300;
+  }
+  .brand-icons {
+    padding: 4rem 0;
+  }
+</style>
+{% endblock %}
+
+{% block body %}
+<h1 class="headline">Logos & Branding</h1>
+<section class="brand-logos">
+  <h1>Logos</h1>
+  <h2>Get our logos with <strong>Shibuya</strong> text.</h2>
+  <div class="brand-logo">
+    <a href="/_static/logo-light.svg" download>
+      <img src="/_static/logo-light.svg">
+    </a>
+  </div>
+  <div class="brand-logo">
+    <a style="background:#000" href="/_static/logo-dark.svg" download>
+      <img src="/_static/logo-dark.svg">
+    </a>
+  </div>
+</section>
+<section class="brand-icons">
+  <h1>Icons</h1>
+  <h2>Get our squared icons.</h2>
+  <div class="flex" style="gap:1rem">
+    <div class="brand-icon">
+      <a href="/_static/icon-light.svg" download>
+        <img src="/_static/icon-light.svg">
+      </a>
+    </div>
+    <div class="brand-icon">
+      <a style="background:#000" href="/_static/icon-dark.svg" download>
+        <img src="/_static/icon-dark.svg">
+      </a>
+    </div>
+  </div>
+</section>
+{% endblock %}
