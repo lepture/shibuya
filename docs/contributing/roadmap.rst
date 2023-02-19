@@ -1,9 +1,9 @@
 Roadmap
 =======
 
-Shibuya will be my (lepture_) default Sphinx theme for my Python projects. It is
-far from perfect now. I have many plans on this theme. Here lists some goals in
-my mind.
+Shibuya will be my (lepture_) default Sphinx theme for my Python projects.
+It is still far from perfect. I have many plans for this theme. Here are
+some goals I have in mind.
 
 .. _lepture: https://github.com/lepture
 
@@ -12,23 +12,25 @@ Perfect on RTD
 
 Make it perfect look on RTD, which means I'll design on:
 
-- Ethical Ads
-- Versions display
+- **DONE**: Ethical Ads
+- Pretty versions display
 
 Good to have
 ------------
 
 These good things will be added in the future:
 
+- Perfect code highlight style
 - Edit this page link
 - GitHub stars and forks
+- Scroll to top
 
 Design for other extensions
 ---------------------------
 
 Make sure it works well with other extensions. Currently integrated with:
 
-- `sphinx-copybutton <https://sphinx-copybutton.readthedocs.io/>`_
+- **DONE**: `sphinx-copybutton <https://sphinx-copybutton.readthedocs.io/>`_
 
 Instant search
 --------------

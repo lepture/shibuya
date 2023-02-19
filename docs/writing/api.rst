@@ -5,6 +5,6 @@ API Documentation
 .. autofunction:: sphinx.versioning.merge_doctrees
     :noindex:
 
-.. autoclass:: sphinx.application.Sphinx
+.. autoclass:: urllib3.util.Timeout
     :members:
     :noindex:

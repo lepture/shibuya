@@ -10,4 +10,3 @@ Writing Guide
     admonition
     media
     api
-    meta

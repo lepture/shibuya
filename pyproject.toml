@@ -1,5 +1,5 @@
 [project]
-name = "shibuya"
+name = "Shibuya"
 description = "A clean, responsive, and customisable Sphinx documentation theme with light/dark mode."
 dynamic = ["version"]
 readme = "README.md"
@@ -17,7 +17,7 @@ classifiers = [
     "Framework :: Sphinx",
     "Framework :: Sphinx :: Theme",
     "Development Status :: 5 - Production/Stable",
-    "License :: OSI Approved :: MIT License",
+    "License :: OSI Approved :: BSD License",
     "Environment :: Web Environment",
     "Intended Audience :: Developers",
     "Programming Language :: Python :: 3",

@@ -1,8 +1,7 @@
 Shibuya
 =======
 
-**Shibuya** is a clean, responsive and customisable Sphinx theme with
-modern design.
+**Shibuya** is a clean, responsive and customisable Sphinx theme with modern design.
 
 
 .. toctree::
@@ -19,3 +18,5 @@ modern design.
 
     contributing/index
     alternatives
+    stability
+    changelog
