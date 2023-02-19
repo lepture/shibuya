@@ -1,9 +1,11 @@
 .globaltoc .caption {
-  font-size: 0.8rem;
+  font-size: 0.86rem;
   font-weight: 500;
-  letter-spacing: 0.4px;
+  font-family: var(--sy-f-heading);
+  color: var(--sy-c-text-weak);
   text-transform: uppercase;
-  padding: .8rem 0;
+  letter-spacing: 0.4px;
+  padding: .8rem 0 0.4rem;
   border-top: 1px solid var(--sy-c-divider);
 }
 

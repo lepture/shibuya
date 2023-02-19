@@ -1,4 +1,5 @@
 from docutils import nodes
+from sphinx import addnodes
 from sphinx.transforms.post_transforms import SphinxPostTransform
 
 
@@ -13,6 +14,10 @@ class WrapperPostTransform(SphinxPostTransform):
 
         elements = self.document.findall(nodes.math_block)
         self._wrap(elements, 'math-wrapper')
+
+        elements = self.document.findall(addnodes.toctree)
+        for el in elements:
+            el['titlesonly'] = True
 
     @staticmethod
     def _wrap(elements, classname: str):

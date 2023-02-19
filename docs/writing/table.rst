@@ -33,7 +33,7 @@ And it can be a little complex with multiple headers:
 .. code-block:: rst
 
     =====  =====  ======
-      Inputs     Output
+       Inputs     Output
     ------------  ------
       A      B    A or B
     =====  =====  ======

@@ -6,7 +6,6 @@ Shibuya
 
 .. toctree::
     :caption: Getting started
-    :hidden:
 
     install
     customisation/index

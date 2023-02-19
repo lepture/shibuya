@@ -13,7 +13,8 @@
   background: var(--sy-c-bg-weak);
 }
 
-.searchbox kbd {
+.searchbox kbd,
+.searchbox button {
   position: absolute;
   font-size: 0.68rem;
   font-weight: 600;
