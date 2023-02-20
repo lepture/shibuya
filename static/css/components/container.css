@@ -1,0 +1,13 @@
+.demo {
+  border: 1px solid var(--sy-c-divider);
+  border-radius: 6px;
+}
+
+.demo-code .highlight > pre {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.demo-result {
+  padding: 1rem;
+}

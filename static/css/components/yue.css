@@ -88,40 +88,28 @@ html.dark .yue {
   padding-left: 1.625em;
 }
 
-.yue ol[type="A"] {
-  list-style-type: upper-alpha;
-}
-
-.yue ol[type="a"] {
-  list-style-type: lower-alpha;
-}
-
-.yue ol[type="A" s] {
-  list-style-type: upper-alpha;
-}
-
-.yue ol[type="a" s] {
-  list-style-type: lower-alpha;
-}
-
-.yue ol[type="I"] {
-  list-style-type: upper-roman;
-}
-
-.yue ol[type="i"] {
-  list-style-type: lower-roman;
-}
-
-.yue ol[type="I" s] {
-  list-style-type: upper-roman;
-}
-
-.yue ol[type="i" s] {
-  list-style-type: lower-roman;
-}
-
 .yue ol[type="1"] {
   list-style-type: decimal;
+}
+
+.yue ol[type="A"],
+.yue ol.upperalpha {
+  list-style-type: upper-alpha;
+}
+
+.yue ol[type="a"],
+.yue ol.loweralpha {
+  list-style-type: lower-alpha;
+}
+
+.yue ol[type="I"],
+.yue ol.upperroman {
+  list-style-type: upper-roman;
+}
+
+.yue ol[type="i"],
+.yue ol.lowerroman {
+  list-style-type: lower-roman;
 }
 
 .yue ul {

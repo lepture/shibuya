@@ -42,6 +42,10 @@
   border-top-width: 0;
 }
 
+.yue table.hlist td {
+  vertical-align: top;
+}
+
 .table-wrapper {
   overflow-x: auto;
   scrollbar-gutter: stable;

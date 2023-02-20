@@ -7,6 +7,7 @@
 @import "./components/theme-selector.css";
 @import "./components/yue.css";
 @import "./components/admonition.css";
+@import "./components/container.css";
 @import "./components/code.css";
 @import "./components/table.css";
 @import "./components/api-doc.css";
