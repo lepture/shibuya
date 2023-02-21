@@ -14,7 +14,7 @@
 }
 
 .navigation a:hover {
-  color: var(--sy-c-link);
+  color: rgba(var(--sy-rc-invert), 1);
 }
 
 .navigation-prev i.chevron {

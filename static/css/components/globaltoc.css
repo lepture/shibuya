@@ -39,7 +39,7 @@
 }
 
 .globaltoc li.toctree-l2.current {
-  border-color: rgba(var(--sy-rc-link), 0.8);
+  border-color: rgba(var(--sy-rc-link), 1);
 }
 
 .globaltoc > ul a.current {
@@ -48,5 +48,5 @@
 }
 
 .globaltoc > ul a:hover {
-  color: rgba(var(--sy-rc-link), 0.8);
+  color: var(--sy-c-text-strong);
 }

@@ -165,7 +165,7 @@
 }
 
 .sy-head-nav a:hover {
-  color: rgba(var(--sy-rc-link), 0.8);
+  color: rgba(var(--sy-rc-invert), 1);
 }
 
 .sy-head-brand .dark-logo {

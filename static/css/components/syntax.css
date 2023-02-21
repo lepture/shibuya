@@ -28,8 +28,8 @@ html.light {
   --syntax-markup-ignored-text: #eaeef2;
   --syntax-markup-ignored-bg: #0550ae;
   --syntax-meta-diff-range: #8250df;
-  --syntax-highlight-bg: rgba(var(--sy-rc-theme), 0.1);
-  --syntax-special-bg: rgba(var(--sy-rc-theme), 0.1);
+  --syntax-highlight-bg: #eee4ff;
+  --syntax-special-bg: #dccafa;
 }
 html.dark {
   --syntax-default: #c9d1d9;
@@ -60,6 +60,6 @@ html.dark {
   --syntax-markup-ignored-text: #c9d1d9;
   --syntax-markup-ignored-bg: #1158c7;
   --syntax-meta-diff-range: #d2a8ff;
-  --syntax-highlight-bg: rgba(var(--sy-rc-theme), 0.1);
-  --syntax-special-bg: rgba(var(--sy-rc-theme), 0.1);
+  --syntax-highlight-bg: #423551;
+  --syntax-special-bg: #4f425d;
 }

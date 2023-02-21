@@ -11,6 +11,10 @@
   margin-bottom: 0.36rem;
 }
 
+.localtoc > ul li > a:hover {
+  color: var(--sy-c-text-strong);
+}
+
 .localtoc > ul li.active > a {
   font-weight: 500;
   color: var(--sy-c-link);
