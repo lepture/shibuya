@@ -35,6 +35,28 @@ h6:hover a.headerlink {
   margin-right: auto;
 }
 
+a.footnote-reference {
+  font-size: 0.65rem;
+  vertical-align: top;
+}
+
+aside.footnote > span,
+div.citation > span {
+  float: left;
+  font-weight: 500;
+  padding-right: .25rem;
+}
+aside.footnote > p,
+div.citation > p {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  margin-left: 2rem;
+}
+
+.yue kbd:not(.compound) {
+  font-size: 0.86rem;
+}
+
 /* -- extra -- */
 .hlist td {
   vertical-align: top;

@@ -21,20 +21,6 @@ An inline code is surrounded by double ``backticks``::
 
     An inline code is surrounded by double ``backticks``
 
-Subscript and Superscript
--------------------------
-
-A :sub:`subscript` and :sup:`superscript` can be written with:
-
-.. code-block:: rst
-
-   :sub:`text in subscript`
-
-   :sup:`text in superscript`
-
-- A subscript looks like :sub:`text in subscript`
-- A superscript looks like :sup:`text in superscript`
-
 Links
 -----
 
@@ -54,8 +40,34 @@ general, it is just a link_.
 
 .. _link: https://shibuya.lepture.com/
 
+
+Interpreted Text
+----------------
+
+Interpreted text is text that is meant to be related, indexed,
+linked, summarized, or otherwise processed. It is usually used
+together with a **role**:
+
+.. code-block:: none
+
+    :{role}:`interpreted text`
+
+Subscript and Superscript
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A :sub:`subscript` and :sup:`superscript` can be written with:
+
+.. code-block:: rst
+
+   :sub:`text in subscript`
+
+   :sup:`text in superscript`
+
+- A subscript looks like :sub:`text in subscript`
+- A superscript looks like :sup:`text in superscript`
+
 Abbreviations
--------------
+~~~~~~~~~~~~~
 
 .. code-block:: rst
 
@@ -65,6 +77,17 @@ Abbreviations
 You can also include abbreviations like
 :abbr:`HTML (Hyper Text Markup Language)`.
 
+Keyboard
+~~~~~~~~
+
+.. code-block:: rst
+
+   :kbd:`Tab` means indent, :kbd:`Shift-Tab` means outdent.
+   :kbd:`⌘+⇧+P` is power shortcuts in vscode.
+
+
+:kbd:`Tab` means indent, :kbd:`Shift-Tab` means outdent.
+:kbd:`⌘+⇧+P` is power shortcuts in vscode.
 
 
 Block quote
@@ -97,3 +120,65 @@ Bellow is a ``<hr>`` tag:
 It is created by::
 
     ----
+
+
+Footnotes
+---------
+
+There are four ways to create a footnote item:
+
+.. code-block:: none
+
+   a whole decimal number consisting of one or more digits, like [1]_
+
+   a single "#" will create auto-numbered footnotes [#]_
+
+   a "#" followed by a simple reference name [#note]_
+
+   a single "*"  will create auto-symbol footnotes [*]_
+
+   .. [1] footnote for ``[1]``
+   .. [#] footnote for ``[#]``
+   .. [#note] footnote for ``[#note]``
+   .. [*] footnote for ``[*]``
+
+
+a whole decimal number consisting of one or more digits, like [1]_
+
+a single "#" will create auto-numbered footnotes [#]_
+
+a "#" followed by a simple reference name [#note]_
+
+a single "*"  will create auto-symbol footnotes [*]_
+
+Citations
+---------
+
+Citations are identical to footnotes except that they use only non-numeric
+labels such as ``[note]`` or ``[GVR2001]``.
+
+.. code-block:: rst
+
+   Here is a citation reference: [CIT2002]_.
+
+   .. [CIT2002] This is the citation.  It's just like a footnote,
+      except the label is textual.
+
+Here is a citation reference: [CIT2002]_.
+
+Reference
+---------
+
+Footnotes
+~~~~~~~~~
+
+.. [1] footnote for ``[1]``
+.. [#] footnote for ``[#]``
+.. [#note] footnote for ``[#note]``
+.. [*] footnote for ``[*]``
+
+Citations
+~~~~~~~~~
+
+.. [CIT2002] This is the citation.  It's just like a footnote,
+   except the label is textual.
