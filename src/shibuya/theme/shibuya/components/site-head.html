@@ -1,3 +1,13 @@
+{%- macro render_logo(src, classname) -%}
+  {% if src and src.startswith(('https://', 'http://')) %}
+    <img class="{{ classname }}" src="{{ src }}" alt="{{ project }}" />
+  {% elif src %}
+    <img class="{{ classname }}" src="{{ pathto(src, 1) }}" alt="{{ project }}" />
+  {% elif logo_url %}
+    <img class="{{ classname }}" src="{{ logo_url }}" alt="{{ project }}" />
+  {% endif %}
+{%- endmacro %}
+
 <div class="sy-head">
   <div class="sy-head-blur"></div>
   <div class="sy-head-inner sy-container mx-auto">
@@ -9,13 +19,9 @@
       </button>
     </div>
     <div class="sy-head-brand flex items-center justify-center">
-      <a href="{{ theme_logo_target }}">
-        {%- if theme_light_logo -%}
-          <img class="light-logo" src="{{ theme_light_logo }}" alt="{{ project }}" />
-        {%- endif -%}
-        {%- if theme_dark_logo -%}
-          <img class="dark-logo" src="{{ theme_dark_logo }}" alt="{{ project }}" />
-        {%- endif -%}
+      <a href="{% if theme_logo_target %}{{ theme_logo_target }}{% else %}{{ pathto(root_doc) }}{% endif %}">
+        {{ render_logo(theme_light_logo, 'light-logo') }}
+        {{ render_logo(theme_dark_logo, 'dark-logo') }}
         <strong>{{ project }}</strong>
       </a>
       {%- if current_version %}

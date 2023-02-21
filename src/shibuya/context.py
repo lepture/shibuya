@@ -39,9 +39,9 @@ DARK_CSS_VARIABLES = """
 --sy-rc-text: 255, 255, 255;
 --sy-c-bg: #121212;
 --sy-c-bg-weak: #212833;
---sy-c-text: #d1d5db;
---sy-c-text-weak: #8d91a7;
---sy-c-text-strong: #f1f1f1;
+--sy-c-text: #a9b9cc;
+--sy-c-text-weak: #77889f;
+--sy-c-text-strong: #d9ebfd;
 --sy-c-heading: #fff;
 --sy-c-bold: #fff;
 --sy-c-pre-bg: rgba(var(--sy-rc-theme), 0.06);
