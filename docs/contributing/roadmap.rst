@@ -13,7 +13,7 @@ Perfect on RTD
 Make it perfect look on RTD, which means I'll design on:
 
 - **DONE**: Ethical Ads
-- Pretty versions display
+- **DONE**: Pretty versions display
 
 Good to have
 ------------

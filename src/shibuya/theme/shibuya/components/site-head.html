@@ -18,6 +18,16 @@
         {%- endif -%}
         <strong>{{ project }}</strong>
       </a>
+      {%- if current_version %}
+        <div class="rst-versions">
+          <label for="__versions">
+            <span>{{ current_version }}</span>
+            <i class="i-icon chevron"></i>
+          </label>
+          <input class="hidden" id="__versions" type="checkbox">
+          <div class="rst-other-versions"></div>
+        </div>
+      {%- endif -%}
     </div>
     <div class="sy-head-actions flex gap-2 items-center print:hidden">
       <nav class="sy-head-nav hidden md:block">

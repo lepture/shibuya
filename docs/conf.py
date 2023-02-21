@@ -53,3 +53,23 @@ html_theme_options = {
         },
     ]
 }
+
+html_context = {}
+
+DEBUG_RTD = False
+
+if DEBUG_RTD:
+    html_css_files = [
+        "https://assets.readthedocs.org/static/css/readthedocs-doc-embed.css",
+        "https://assets.readthedocs.org/static/css/badge_only.css",
+    ]
+    html_js_files = [
+        "https://docs.authlib.org/en/latest/_static/jquery.js",
+        "rtd-dummy.js",
+        (
+            "https://assets.readthedocs.org/static/javascript/readthedocs-doc-embed.js",
+            {"async": "async"},
+        ),
+    ]
+    html_context["READTHEDOCS"] = True
+    html_context["current_version"] = "latest"

@@ -22,6 +22,7 @@ LIGHT_CSS_VARIABLES = """
 --sy-c-bg-weak: #f9f9f9;
 --sy-c-text: #374151;
 --sy-c-text-weak: #6b7280;
+--sy-c-text-strong: #111;
 --sy-c-heading: #111827;
 --sy-c-bold: #111827;
 --sy-c-pre-bg: rgba(var(--sy-rc-theme), 0.06);
@@ -40,6 +41,7 @@ DARK_CSS_VARIABLES = """
 --sy-c-bg-weak: #212833;
 --sy-c-text: #d1d5db;
 --sy-c-text-weak: #8d91a7;
+--sy-c-text-strong: #f1f1f1;
 --sy-c-heading: #fff;
 --sy-c-bold: #fff;
 --sy-c-pre-bg: rgba(var(--sy-rc-theme), 0.06);
