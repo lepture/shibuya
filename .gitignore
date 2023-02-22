@@ -19,10 +19,7 @@ docs/_build
 .venv/
 .coverage
 
-.env
-.astro/
-package-lock.json
 node_modules/
 npm-debug.log*
 
-src/shibuya/theme/shibuya/static/
+src/shibuya/theme/shibuya/static/shibuya.*

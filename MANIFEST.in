@@ -1,0 +1,6 @@
+include LICENSE
+recursive-include src/shibuya *.js
+recursive-include src/shibuya *.css
+recursive-include src/shibuya *.html
+recursive-include src/shibuya *.conf
+prune build

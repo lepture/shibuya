@@ -1,3 +1,4 @@
+import os
 
 project = "Shibuya"
 release = "1.0.0"
@@ -32,8 +33,10 @@ html_additional_pages = {
     "branding": "branding.html",
 }
 
-# html_link_suffix = ""
+if os.getenv("TRIM_HTML_SUFFIX"):
+    html_link_suffix = ""
 
+html_favicon = "_static/icon-light.svg"
 # html_logo = "_static/logo-light.svg"
 
 html_theme_options = {

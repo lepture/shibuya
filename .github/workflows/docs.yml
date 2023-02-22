@@ -46,6 +46,8 @@ jobs:
 
     - name: build docs
       run: sphinx-build docs _site
+      env:
+        TRIM_HTML_SUFFIX: true
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v1
