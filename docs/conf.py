@@ -46,10 +46,6 @@ html_theme_options = {
 
     "nav_links": [
         {
-            "title": "Sponsors",
-            "url": "/sponsors"
-        },
-        {
             "title": "Branding",
             "url": "/branding"
         },

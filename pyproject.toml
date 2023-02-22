@@ -24,6 +24,7 @@ classifiers = [
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
     "Operating System :: OS Independent",
     "Topic :: Documentation",
     "Topic :: Software Development :: Documentation",
@@ -33,7 +34,9 @@ classifiers = [
 "sphinx.html_themes" = {shibuya = "shibuya"}
 
 [project.urls]
-GitHub = "https://github.com/lepture/shibuya"
+Source = "https://github.com/lepture/shibuya"
+Documentation = "https://shibuya.lepture.com/"
+Sponsors = "https://github.com/sponsors/lepture"
 
 [build-system]
 requires = ["setuptools"]
