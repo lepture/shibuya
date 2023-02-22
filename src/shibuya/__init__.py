@@ -23,12 +23,26 @@ def _render_toc(toc: str):
     return toc
 
 
+def _normalize_pageurl_dirhtml(pageurl: str):
+    if pageurl.endswith('/index.html'):
+        return re.sub(r'index\.html$', '', pageurl)
+    elif pageurl.endswith('.html'):
+        return re.sub(r'\.html$', '/', pageurl)
+    return pageurl
+
+
 def _html_page_context(app, pagename: str, templatename: str, context: Dict[str, Any], doctree):
     assert isinstance(app.builder, StandaloneHTMLBuilder)
     context["shibuya_base_css_variables"] = css_to_dict(BASE_CSS_VARIABLES)
     context["shibuya_light_css_variables"] = css_to_dict(LIGHT_CSS_VARIABLES)
     context["shibuya_dark_css_variables"] = css_to_dict(DARK_CSS_VARIABLES)
     context['render_toc'] = _render_toc
+
+    # fixing pageurl, need to submit a PR to sphinx
+    if 'pageurl' in context:
+        pageurl = context['pageurl']
+        if app.builder.name == 'dirhtml':
+            context['pageurl'] = _normalize_pageurl_dirhtml(pageurl)
 
     if 'script_files' in context:
         script_files = context['script_files']

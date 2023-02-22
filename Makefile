@@ -1,2 +1,2 @@
 build-docs:
-	sphinx-build docs build/_html -a
+	sphinx-build docs build/_html -a -b dirhtml
