@@ -1,6 +1,8 @@
 Writing Guide
 =============
 
+Learn the syntax of reStructuredText and examine how it is formatted.
+
 .. toctree::
 
     markup

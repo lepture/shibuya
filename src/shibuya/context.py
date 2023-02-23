@@ -9,6 +9,7 @@ BASE_CSS_VARIABLES = """
 --sy-f-mono: Menlo, Monaco, Consolas, "Courier New", monospace;
 --sy-c-divider: rgba(var(--sy-rc-text), 0.1);
 --sy-c-divider-weak: rgba(var(--sy-rc-text), 0.05);
+--sy-c-border: rgba(var(--sy-rc-text), 0.14);
 --sy-s-banner-height: 0rem;
 --sy-s-navbar-height: 4rem;
 --sy-s-offset-top: calc(var(--sy-s-navbar-height) + var(--sy-s-banner-height));

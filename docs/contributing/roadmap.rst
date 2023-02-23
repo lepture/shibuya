@@ -31,6 +31,7 @@ Design for other extensions
 Make sure it works well with other extensions. Currently integrated with:
 
 - **DONE**: `sphinx-copybutton <https://sphinx-copybutton.readthedocs.io/>`_
+- **WIP**: `sphinx-design <https://sphinx-design.readthedocs.io/>`_
 
 Instant search
 --------------

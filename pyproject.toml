@@ -1,5 +1,5 @@
 [project]
-name = "Shibuya"
+name = "shibuya"
 description = "A clean, responsive, and customisable Sphinx documentation theme with light/dark mode."
 dynamic = ["version"]
 readme = "README.md"

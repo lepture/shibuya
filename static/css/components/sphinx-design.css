@@ -1,0 +1,80 @@
+/* tweak the style of sphinx-design extension */
+.yue {
+  --sd-color-primary: rgb(var(--sy-rc-theme));
+  --sd-color-success: rgb(0, 200, 80);
+  --sd-color-warning: rgb(255, 145, 0);
+  --sd-color-danger: rgb(255, 92, 47);
+  --sd-color-card-border-hover: var(--sy-c-border);
+  --sd-color-card-border: var(--sy-c-divider);
+  --sd-color-tabs-label-inactive: var(--sy-c-bold);
+  --sd-color-tabs-label-active: var(--sd-color-primary);
+  --sd-color-tabs-underline-active: var(--sd-color-primary);
+}
+
+.light .yue {
+  --sd-color-shadow: #f3f4f6;
+}
+
+.dark .yue {
+  --sd-color-shadow: #010409;
+}
+
+.yue .sd-container-fluid {
+  padding: 0.5rem;
+}
+
+.yue .sd-row {
+  --sd-gutter-x: 1rem;
+  --sd-gutter-y: 1rem;
+}
+
+.yue .sd-row-cols-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.yue .sd-row-cols-2 > .sd-col {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.yue .sd-card-hover:hover {
+  transform: scale(1);
+}
+
+.yue .sd-card-hover:hover .sd-card-title {
+  color: var(--sy-c-link);
+}
+
+.yue .sd-card a,
+.yue .sd-card a:hover {
+  border-bottom: 0;
+}
+
+
+@media (max-width: 880px) {
+  .yue .sd-row-cols-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* tabs */
+.yue .sd-tab-set > label {
+  padding: 1rem 0.25rem 0.5rem;
+  font-size: 0.84rem;
+  font-weight: 500;
+}
+
+.yue .sd-tab-set > label ~ label {
+  margin-left: 1rem;
+}
+
+.yue .sd-tab-content {
+  padding: 0;
+  box-shadow: 0 -0.0625rem var(--sy-c-divider);
+}
+.yue .sd-tab-content .highlight pre {
+  border-radius: 0;
+}

@@ -9,21 +9,38 @@ It is the default documentation generator for Python projects.
 ``pip install``
 ---------------
 
-If you are familiar with Python, you can install **Shibuya** theme easily with ``pip``.
+Shibuya is conveniently available as a Python package on PyPI and can be easily
+installed using pip.
 
-.. code-block:: shell
+.. tab-set::
 
-    pip install Shibuya
+    .. tab-item:: Latest
+
+        .. code-block:: shell
+
+            pip install shibuya
+
+    .. tab-item:: Development
+
+        .. code-block:: shell
+
+            pip install "shibuya @ git+https://github.com/lepture/shibuya"
+
+.. hint::
+   If you're new to Sphinx, we recommend reading the
+   `official tutorial <https://www.sphinx-doc.org/en/master/tutorial/>`_
+   for a solid understanding of the platform and its features.
+
 
 requirements.txt
 ----------------
 
-If you are tracking dependencies in ``requirements.txt``, you may have another
-requirements file for docs, maybe it is called ``requirements-docs.txt``, then
-you can track ``Shibuya`` in this file.
+If you're tracking dependencies in ``requirements.txt``, you can create a separate
+requirements file for your documentation, such as ``requirements-docs.txt``, and
+add ``shibuya`` to that file to ensure it is included in your documentation build.
 
-conf.py
--------
+Using this theme
+----------------
 
 Update Sphinx configuration file ``conf.py``:
 

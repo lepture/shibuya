@@ -18,12 +18,12 @@
   position: absolute;
   font-size: 0.68rem;
   font-weight: 600;
-  font-family: var(--sy-f-text);
+  font-family: var(--sy-f-mono);
   padding: 2px 6px;
   margin: 6px;
   right: 0;
   border-radius: 3px;
-  border: 1px solid var(--sy-c-divider);
+  border: 1px solid var(--sy-c-border);
   background-color: var(--sy-c-bg);
   opacity: 1;
   transition: opacity 0.2s ease;
