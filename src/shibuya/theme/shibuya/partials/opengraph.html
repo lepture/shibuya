@@ -1,0 +1,15 @@
+{%- if pageurl %}
+<meta property="og:url" content="{{ pageurl|e }}"/>
+{%- endif %}
+<meta property="og:title" content="{{ title|striptags|e }}"/>
+{%- if logo_url and logo_url.startswith('https://') %}
+<meta property="og:image" content="{{ logo_url|e }}"/>
+{%- endif %}
+{%- if meta and meta.description %}
+<meta name="description" content="{{ meta.description|e }}"/>
+<meta property="og:description" content="{{ meta.description|e }}"/>
+{%- endif %}
+<meta name="twitter:card" content="summary"/>
+{%- if theme_twitter_username %}
+<meta name="twitter:creator" content="@lepture"/>
+{%- endif %}

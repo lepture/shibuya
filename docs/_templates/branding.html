@@ -33,29 +33,17 @@
   .brand-icons h1 {
     position: relative;
     text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 0.6px;
-  }
-  .brand-logos h1:before,
-  .brand-icons h1:before {
-    content: "";
-    position: absolute;
-    top: .5em;
-    bottom: -2px;
-    left: -10px;
-    width: 3.4em;
-    z-index: -1;
-    background: rgb(var(--sy-rc-theme));
-    opacity: .3;
-    transform: skew(-35deg);
-    transition: opacity .2s ease;
-    border-radius: 3px 8px 10px 6px;
+    font-weight: 900;
+    font-size: 2rem;
+    font-family: var(--sy-f-sys), sans-serif;
+    letter-spacing: 0.2px;
   }
   .brand-logos h2,
   .brand-icons h2 {
     margin: 0 0 2rem;
     color: var(--sy-c-text-weak);
     font-family: var(--sy-f-text);
+    font-size: 1.5rem;
     font-weight: 300;
   }
   .brand-icons {
@@ -70,7 +58,7 @@
   <h1>Logos</h1>
   <h2>Get our logos with <strong>Shibuya</strong> text.</h2>
   <div class="brand-logo">
-    <a href="/_static/logo-light.svg" download>
+    <a style="background:#fff" href="/_static/logo-light.svg" download>
       <img src="/_static/logo-light.svg">
     </a>
   </div>
@@ -85,7 +73,7 @@
   <h2>Get our squared icons.</h2>
   <div class="flex" style="gap:1rem">
     <div class="brand-icon">
-      <a href="/_static/icon-light.svg" download>
+      <a style="background:#fff" href="/_static/icon-light.svg" download>
         <img src="/_static/icon-light.svg">
       </a>
     </div>

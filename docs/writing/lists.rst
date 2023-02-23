@@ -1,5 +1,9 @@
+:description: Markup of lists in Sphinx, and how it looks like in Shibuya.
+
 Lists
 =====
+
+There are several kinds of lists in Sphinx (reStructuredText, or rst).
 
 Bullet list
 -----------

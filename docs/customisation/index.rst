@@ -7,7 +7,6 @@ Configuration
 
 
 .. toctree::
-    :hidden:
 
     logos
     colors

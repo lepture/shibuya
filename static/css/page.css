@@ -44,7 +44,7 @@
     left: 0;
     width: 0;
     height: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(var(--sy-rc-invert), 0.24);
     opacity: 0;
     transition: width 0 .25s, height 0 .25s, opacity .25s;
   }

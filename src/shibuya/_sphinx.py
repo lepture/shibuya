@@ -1,6 +1,7 @@
 from docutils import nodes
 from sphinx import addnodes
 from sphinx.transforms.post_transforms import SphinxPostTransform
+from pygments.formatters.html import HtmlFormatter
 
 
 class WrapperPostTransform(SphinxPostTransform):
@@ -26,3 +27,9 @@ class WrapperPostTransform(SphinxPostTransform):
             new_node.update_all_atts(node)
             node.parent.replace(node, new_node)
             new_node.append(node)
+
+
+class WrapLineFormatter(HtmlFormatter):
+    def __init__(self, **options):
+        options.setdefault('linespans', 1)
+        super().__init__(**options)

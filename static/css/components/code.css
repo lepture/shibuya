@@ -8,6 +8,7 @@
 }
 
 .highlight > pre {
+  display: grid;
   line-height: 1.48;
   padding: 1rem;
   font-size: 0.96rem;

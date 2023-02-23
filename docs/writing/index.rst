@@ -2,7 +2,6 @@ Writing Guide
 =============
 
 .. toctree::
-    :hidden:
 
     markup
     lists

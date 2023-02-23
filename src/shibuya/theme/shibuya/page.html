@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% block extrahead %}
+  {% include "partials/opengraph.html" %}
+{% endblock %}
+
 {% block body %}
 {% if display_toc and toc %}
 <input class="hidden" id="__rside" type="checkbox">

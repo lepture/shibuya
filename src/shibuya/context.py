@@ -1,3 +1,6 @@
+import re
+
+
 BASE_CSS_VARIABLES = """
 --sy-f-sys: -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Droid Sans, Helvetica Neue;
 --sy-f-cjk: PingFang SC, Hiragino Sans GB, Droid Sans Fallback, Microsoft YaHei;
@@ -25,8 +28,8 @@ LIGHT_CSS_VARIABLES = """
 --sy-c-text-strong: #111;
 --sy-c-heading: #111827;
 --sy-c-bold: #111827;
---sy-c-pre-bg: rgba(var(--sy-rc-theme), 0.06);
---sy-c-cap-bg: rgba(var(--sy-rc-theme), 0.1);
+--sy-c-pre-bg: rgba(143, 118, 214, 0.06);
+--sy-c-cap-bg: rgba(143, 118, 214, 0.1);
 --sy-c-foot-text: #232226;
 --sy-c-foot-bg: #fafafa;
 --sy-c-foot-divider: #f0f0f0;
@@ -44,8 +47,8 @@ DARK_CSS_VARIABLES = """
 --sy-c-text-strong: #d9ebfd;
 --sy-c-heading: #fff;
 --sy-c-bold: #fff;
---sy-c-pre-bg: rgba(var(--sy-rc-theme), 0.06);
---sy-c-cap-bg: rgba(var(--sy-rc-theme), 0.1);
+--sy-c-pre-bg: rgba(143, 118, 214, 0.16);
+--sy-c-cap-bg: rgba(143, 118, 214, 0.24);
 --sy-c-foot-text: #eee;
 --sy-c-foot-bg: #000;
 --sy-c-foot-divider: #000;
@@ -60,3 +63,17 @@ def css_to_dict(text: str):
         key, value = line.split(':')
         css_vars[key.strip()] = value.strip()
     return css_vars
+
+
+def normalize_pageurl(pageurl: str, builder: str):
+    if pageurl.endswith('/index.html'):
+        return re.sub(r'index\.html$', '', pageurl)
+    if builder == 'dirhtml' and pageurl.endswith('.html'):
+        return re.sub(r'\.html$', '/', pageurl)
+    return pageurl
+
+
+def normalize_toc(toc: str):
+    toc = re.sub(r'^<ul>\n<li>.*?</a>', '', toc)
+    toc = re.sub(r'</li>\n</ul>$', '', toc)
+    return toc

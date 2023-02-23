@@ -44,7 +44,7 @@ html_theme_options = {
     "light_logo": "_static/logo-light.svg",
     "dark_logo": "_static/logo-dark.svg",
 
-    "twitter_url": "https://twitter.com/lepture",
+    "twitter_username": "lepture",
     "github_url": "https://github.com/lepture/shibuya",
 
     "nav_links": [

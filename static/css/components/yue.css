@@ -69,13 +69,6 @@ html.dark .yue {
   color: inherit;
 }
 
-.yue blockquote .attribution {
-  font-size: 0.85em;
-}
-[lang="en"] .yue blockquote .attribution {
-  font-style: italic;
-}
-
 .yue thead th strong {
   color: inherit;
 }
@@ -155,6 +148,16 @@ html.dark .yue {
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
   padding-left: 1rem;
+}
+
+.yue blockquote .attribution {
+  font-size: 0.85em;
+  font-style: italic;
+}
+[lang^="zh"] .yue blockquote .attribution,
+[lang="ko"] .yue blockquote .attribution,
+[lang="ja"] .yue blockquote .attribution {
+  font-style: normal;
 }
 
 .yue h1 {

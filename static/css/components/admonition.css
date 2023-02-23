@@ -25,13 +25,13 @@ html.dark {
   --important-color: 179, 127, 235;
   --note-icon: var(--i-calendar-url);
   --note-color: 3, 169, 244;
-  --tip-icon: var(--i-award-url);
+  --tip-icon: var(--i-rocket-url);
   --tip-color: 0, 200, 80;
   --warning-icon: var(--i-zap-url);
   --warning-color: 255, 145, 0;
   --seealso-icon: var(--i-link-url);
   --seealso-color: 60, 140, 255;
-  --todo-icon: var(--i-check-url);
+  --todo-icon: var(--i-bookmark-url);
   --todo-color: 220, 150, 0;
   --versionadded-color: 0, 200, 80;
   --versionchanged-color: 247, 186, 42;

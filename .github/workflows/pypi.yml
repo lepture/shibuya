@@ -1,4 +1,4 @@
-name: release to pypi
+name: Release theme to PyPI
 
 on:
   push:
