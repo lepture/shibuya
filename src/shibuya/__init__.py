@@ -12,7 +12,7 @@ from .context import (
 )
 from ._sphinx import WrapperPostTransform, WrapLineFormatter
 
-__version__ = '1.0.0'
+__version__ = '2023.2.23a1'
 
 shibuya_version = __version__
 
