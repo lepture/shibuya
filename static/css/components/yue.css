@@ -13,6 +13,7 @@
   --yue-c-quote-border: #cfd3db;
   --yue-c-caption: #6b7280;
   --yue-c-code: #111827;
+  --yue-c-code-bg: #fff4d4;
   --yue-c-th-bg: #eff3f8;
   --yue-c-th-border: #d1d5db;
   --yue-c-td-border: #e5e7eb;
@@ -27,6 +28,7 @@ html.dark .yue {
   --yue-c-quote-border: #374151;
   --yue-c-caption: #9ca3af;
   --yue-c-code: #fff;
+  --yue-c-code-bg: #312f29;
   --yue-c-th-bg: #24282e;
   --yue-c-th-border: #4b5563;
   --yue-c-td-border: #374151;
@@ -250,6 +252,15 @@ html.dark .yue {
 
 .yue h2 code {
   font-size: 0.875em;
+}
+
+.yue li > code,
+.yue p > code {
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 3px;
+  font-weight: 500;
+  background-color: var(--yue-c-code-bg);
 }
 
 .yue h3 code {

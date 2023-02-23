@@ -14,17 +14,17 @@ installed using pip.
 
 .. tab-set::
 
-    .. tab-item:: Latest
+    .. tab-item:: Stable
 
         .. code-block:: shell
 
             pip install shibuya
 
-    .. tab-item:: Development
+    .. tab-item:: Include pre-releases
 
         .. code-block:: shell
 
-            pip install "shibuya @ git+https://github.com/lepture/shibuya"
+            pip install --pre shibuya
 
 .. hint::
    If you're new to Sphinx, we recommend reading the
@@ -41,6 +41,7 @@ add ``shibuya`` to that file to ensure it is included in your documentation buil
 
 Using this theme
 ----------------
+
 
 Update Sphinx configuration file ``conf.py``:
 
