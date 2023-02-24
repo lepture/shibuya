@@ -1,15 +1,34 @@
+<meta property="og:type" content="website"/>
+
 {%- if pageurl %}
 <meta property="og:url" content="{{ pageurl|e }}"/>
-{%- endif %}
+{% endif -%}
+
 <meta property="og:title" content="{{ title|striptags|e }}"/>
-{%- if logo_url and logo_url.startswith('https://') %}
+
+{%- if meta and meta.cover -%}
+<meta name="twitter:card" content="summary_large_image"/>
+{%- else %}
+<meta name="twitter:card" content="summary"/>
+{%- endif -%}
+
+{%- if meta and meta.cover -%}
+<meta property="og:image" content="{{ meta.cover|e }}"/>
+{%- elif theme_image_url %}
+<meta property="og:image" content="{{ theme_image_url|e }}"/>
+{%- elif logo_url and logo_url.startswith('https://') %}
 <meta property="og:image" content="{{ logo_url|e }}"/>
 {%- endif %}
+
 {%- if meta and meta.description %}
 <meta name="description" content="{{ meta.description|e }}"/>
 <meta property="og:description" content="{{ meta.description|e }}"/>
 {%- endif %}
-<meta name="twitter:card" content="summary"/>
-{%- if theme_twitter_username %}
-<meta name="twitter:creator" content="@lepture"/>
+
+{%- if theme_twitter_creator %}
+<meta name="twitter:creator" content="@{{ theme_twitter_creator }}"/>
+{%- endif %}
+
+{%- if theme_twitter_site %}
+<meta name="twitter:site" content="@{{ theme_twitter_site }}"/>
 {%- endif %}
