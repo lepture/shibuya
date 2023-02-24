@@ -1,5 +1,5 @@
 @media (max-width: 767px) {
-  #m-navbar {
+  #lside {
     position: fixed;
     z-index: 15;
     top: calc(var(--sy-s-offset-top) - 1px);
@@ -11,10 +11,12 @@
     transform: translateY(-100%);
     transition: transform .2s ease;
   }
-  body[data-expanded-m-navbar="true"] {
+
+  body[data-expanded-lside="true"] {
     overflow: hidden;
   }
-  body[data-expanded-m-navbar="true"] #m-navbar {
+
+  #lside._expanded {
     transform: translateY(0);
   }
 }
@@ -28,7 +30,7 @@
     bottom: 0;
     width: 20rem;
     max-width: 100%;
-    padding-top: 1rem;
+    padding-top: 2rem;
     padding-bottom: 1rem;
     overflow: auto;
     background: var(--sy-c-bg);
@@ -38,7 +40,24 @@
     box-shadow: var(--tw-ring-offset-shadow,0 0 transparent),var(--tw-ring-shadow,0 0 transparent),var(--tw-shadow);
   }
 
-  #__rside + label {
+  #rside._expanded {
+    transform: translateX(0);
+  }
+
+  .rside-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: 1px solid var(--sy-c-divider);
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+  }
+
+  .rside-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -49,15 +68,11 @@
     transition: width 0 .25s, height 0 .25s, opacity .25s;
   }
 
-  #__rside:checked + label {
+  #rside._expanded + .rside-overlay {
     width: 100%;
     height: 100%;
     opacity: 1;
     z-index: 22;
-  }
-
-  #__rside:checked ~ .sy-page .sy-rside {
-    transform: translateX(0);
   }
 }
 
@@ -77,12 +92,14 @@
   }
 }
 
-.yue section {
+.yue section,
+.yue .viewcode-block {
   scroll-margin-top: calc(var(--sy-s-offset-top) + 80px);
 }
 
 @media (min-width: 1280px) {
-  .yue section {
+  .yue section,
+  .yue .viewcode-block {
     scroll-margin-top: calc(var(--sy-s-offset-top) + 20px);
   }
 }

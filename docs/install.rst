@@ -6,8 +6,8 @@ It is the default documentation generator for Python projects.
 
 .. _Sphinx: https://www.sphinx-doc.org/
 
-``pip install``
----------------
+pip install
+-----------
 
 Shibuya is conveniently available as a Python package on PyPI and can be easily
 installed using pip.

@@ -14,8 +14,8 @@
 
 {%- if meta and meta.cover -%}
 <meta property="og:image" content="{{ meta.cover|e }}"/>
-{%- elif theme_image_url %}
-<meta property="og:image" content="{{ theme_image_url|e }}"/>
+{%- elif theme_og_image_url %}
+<meta property="og:image" content="{{ theme_og_image_url|e }}"/>
 {%- elif logo_url and logo_url.startswith('https://') %}
 <meta property="og:image" content="{{ logo_url|e }}"/>
 {%- endif %}

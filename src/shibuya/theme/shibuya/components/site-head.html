@@ -1,24 +1,24 @@
 {%- macro render_logo(src, classname) -%}
-  {% if src and src.startswith(('https://', 'http://')) %}
+  {%- if src and src.startswith(('https://', 'http://')) -%}
     <img class="{{ classname }}" src="{{ src }}" alt="{{ project }}" />
-  {% elif src %}
+  {%- elif src -%}
     <img class="{{ classname }}" src="{{ pathto(src, 1) }}" alt="{{ project }}" />
-  {% elif logo_url %}
+  {%- elif logo_url -%}
     <img class="{{ classname }}" src="{{ logo_url }}" alt="{{ project }}" />
-  {% endif %}
-{%- endmacro %}
+  {%- endif -%}
+{%- endmacro -%}
 
 <div class="sy-head">
   <div class="sy-head-blur"></div>
   <div class="sy-head-inner sy-container mx-auto">
-    <div class="md:hidden flex items-center">
-      <button class="hamburger js-menu mr-3" aria-label="Menu" type="button" aria-controls="m-navbar" aria-expanded="false">
-        <span class="hamburger_1"></span>
-        <span class="hamburger_2 -translate-x-2"></span>
-        <span class="hamburger_3 -translate-x-1"></span>
-      </button>
-    </div>
-    <div class="sy-head-brand flex items-center justify-center">
+    <div class="sy-head-brand flex items-center">
+      <div class="md:hidden flex items-center">
+        <button class="hamburger js-menu mr-3" aria-label="Menu" type="button" aria-controls="lside" aria-expanded="false">
+          <span class="hamburger_1"></span>
+          <span class="hamburger_2 -translate-x-2"></span>
+          <span class="hamburger_3 -translate-x-1"></span>
+        </button>
+      </div>
       <a href="{% if theme_logo_target %}{{ theme_logo_target }}{% else %}{{ pathto(root_doc) }}{% endif %}">
         {{ render_logo(theme_light_logo, 'light-logo') }}
         {{ render_logo(theme_dark_logo, 'dark-logo') }}
@@ -42,10 +42,10 @@
       <div class="hidden md:block">
         {%- include "components/searchbox.html" %}
       </div>
-      {% if display_toc and toc %}
-        <label class="xl:hidden flex items-center cursor-pointer text-xl" for="__rside" aria-label="Table of Contents">
+      {% if display_toc %}
+        <button class="js-menu xl:hidden text-xl" aria-label="Menu" type="button" aria-controls="rside" aria-expanded="false">
           <i class="i-icon outdent"></i>
-        </label>
+        </button>
       {%- endif %}
     </div>
   </div>

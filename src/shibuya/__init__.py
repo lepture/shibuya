@@ -33,17 +33,14 @@ def _html_page_context(app: Sphinx, pagename: str, templatename: str, context: D
     if 'toc' in context:
         context['toc'] = normalize_toc(context['toc'])
 
-    if 'script_files' in context:
-        script_files = context['script_files']
-        script_files.append(f'_static/shibuya.js?v={shibuya_version}')
-        context['script_files'] = script_files
-
+    # add version on css files
     if 'css_files' in context:
         css_files = [f'{name}?v={shibuya_version}' for name in context['css_files']]
         context['css_files'] = css_files
 
 
 def _initialize_builder(app: Sphinx):
+    app.add_js_file(f'shibuya.js?v={shibuya_version}')
     app.builder.highlighter.formatter = WrapLineFormatter
 
 

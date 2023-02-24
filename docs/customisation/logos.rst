@@ -2,8 +2,8 @@ Logos
 =====
 
 
-Same logo for light and dark mode
----------------------------------
+Same logo
+---------
 
 Shibuya will use ``html_logo`` configuration for both light and dark mode.
 Adding the ``html_logo`` variable in ``conf.py``.
@@ -12,8 +12,8 @@ Adding the ``html_logo`` variable in ``conf.py``.
 
     html_logo = "_static/logo-light.svg"
 
-Different logos for light and dark mode
----------------------------------------
+Different logos
+---------------
 
 .. code-block::
 
@@ -24,11 +24,20 @@ Different logos for light and dark mode
     }
 
 
-Link logo to a different target
--------------------------------
+Link to the logo
+----------------
 
 .. code-block::
 
     html_theme_options = {
         "logo_target": "https://example.com",
+    }
+
+Open Graph Image
+----------------
+
+.. code-block::
+
+    html_theme_options = {
+        "og_image_url": "https://example.com/icon.png",
     }

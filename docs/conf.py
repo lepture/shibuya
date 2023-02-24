@@ -1,7 +1,6 @@
 import os
 
 project = "Shibuya"
-release = "1.0.0"
 copyright = "Copyright &copy; 2023, Hsiaoming Yang"
 author = "Hsiaoming Yang"
 
@@ -24,6 +23,7 @@ intersphinx_mapping = {
 templates_path = ["_templates"]
 html_static_path = ["_static"]
 
+html_title = "Shibuya"
 html_theme = "shibuya"
 html_baseurl = "https://shibuya.lepture.com"
 
@@ -45,7 +45,9 @@ html_theme_options = {
     "light_logo": "_static/logo-light.svg",
     "dark_logo": "_static/logo-dark.svg",
 
-    "twitter_username": "lepture",
+    "twitter_creator": "lepture",
+    "twitter_site": "lepture",
+
     "github_url": "https://github.com/lepture/shibuya",
 
     "nav_links": [

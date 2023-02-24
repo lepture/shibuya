@@ -1,16 +1,12 @@
 {% extends "base.html" %}
 
-{% block extrahead %}
+{%- block extrahead -%}
   {% include "partials/opengraph.html" %}
-{% endblock %}
+{%- endblock -%}
 
 {% block body %}
-{% if display_toc and toc %}
-<input class="hidden" id="__rside" type="checkbox">
-<label class="sy-overlay" for="__rside"></label>
-{%- endif -%}
 <div class="sy-page sy-container flex mx-auto">
-  <aside id="m-navbar" class="sy-lside md:w-64 md:shrink-0 print:hidden">
+  <aside id="lside" class="sy-lside md:w-64 md:shrink-0 print:hidden">
     <div class="sy-lside-inner md:sticky md:top-16">
       <div class="md:hidden pt-6 px-6">
         {%- include "components/searchbox2.html" %}
@@ -29,7 +25,10 @@
       </div>
     </div>
   </aside>
-  <aside class="sy-rside pb-3 w-64 shrink-0 order-last">
+  <aside id="rside" class="sy-rside pb-3 w-64 shrink-0 order-last">
+    <button class="rside-close js-menu xl:hidden" aria-label="Close Table of Contents" type="button" aria-controls="rside" aria-expanded="false">
+      <i class="i-icon close"></i>
+    </button>
     <div class="sy-scrollbar px-6 xl:top-16 xl:sticky xl:pl-0 pt-6 pb-4">
       {%- if sidebars %}
         {%- for sidebartemplate in sidebars %}
@@ -38,6 +37,7 @@
       {%- endif %}
     </div>
   </aside>
+  <div class="rside-overlay js-menu" aria-label="Close Table of Contents" type="button" aria-controls="rside" aria-expanded="false"></div>
   <main class="sy-main w-full max-sm:max-w-full print:pt-6">
     <div class="flex flex-col break-words justify-between">
       <div class="min-w-0 max-w-6xl px-6 pb-6 pt-6 xl:px-12">
