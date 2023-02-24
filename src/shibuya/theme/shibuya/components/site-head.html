@@ -42,8 +42,11 @@
       <div class="hidden md:block">
         {%- include "components/searchbox.html" %}
       </div>
+      <button class="js-theme theme-switch ml-1" data-aria-light="{{ _('Switch to dark mode') }}" data-aria-dark="{{ _('Switch to light mode') }}">
+        <i class="i-icon theme-icon"></i>
+      </button>
       {% if display_toc %}
-        <button class="js-menu xl:hidden text-xl" aria-label="Menu" type="button" aria-controls="rside" aria-expanded="false">
+        <button class="js-menu xl:hidden text-xl ml-1" aria-label="Show table of contents" type="button" aria-controls="rside" aria-expanded="false">
           <i class="i-icon outdent"></i>
         </button>
       {%- endif %}

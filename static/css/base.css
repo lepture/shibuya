@@ -74,3 +74,10 @@ strong, em {
   font-style: normal;
   background-color: currentColor;
 }
+
+.theme-switch .theme-icon {
+  --icon-url: var(--i-sun-url);
+}
+html.dark .theme-switch .theme-icon {
+  --icon-url: var(--i-moon-url);
+}

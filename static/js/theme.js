@@ -1,32 +1,29 @@
 const defaultToDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
 
+// set default theme
+const root = document.documentElement
 
-function setTheme (value) {
-  const root = document.documentElement
-  let toAdd = value
-  let toRemove
-
-  if (value === 'dark') {
-    toRemove = 'light'
-  } else if (value === 'light') {
-    toRemove = 'dark'
-  } else {
-    toAdd = defaultToDark ? 'dark' : 'light'
-    toRemove = defaultToDark ? 'light' : 'dark'
-  }
+function toggleTheme () {
+  const isDark = root.classList.contains('dark')
+  const toRemove = isDark ? 'dark' : 'light'
   root.classList.remove(toRemove)
-  root.classList.add(toAdd)
-  sessionStorage['_theme'] = value
-  root.dataset['theme'] = value || 'system'
+
+  const theme = isDark ? 'light' : 'dark'
+  setTheme(theme)
+  sessionStorage['_theme'] = theme
 }
 
-const theme = sessionStorage['_theme'] || ''
-setTheme(theme)
+const el = document.querySelector('.js-theme')
 
-const el = document.getElementById('theme-select')
+function setTheme (theme) {
+  root.classList.add(theme)
+  const label = el.getAttribute('data-aria-' + theme)
+  el.setAttribute('aria-label', label)
+}
+
 if (el) {
-  el.value = theme
-  el.addEventListener('change', () => {
-    setTheme(el.value)
-  })
+  const defaultTheme = defaultToDark ? 'dark': 'light'
+  const theme = sessionStorage['_theme'] || defaultTheme
+  setTheme(theme)
+  el.addEventListener('click', toggleTheme)
 }
