@@ -10,7 +10,10 @@ from .context import (
     normalize_pageurl,
     normalize_toc,
 )
-from ._sphinx import WrapperPostTransform, WrapLineFormatter
+from ._sphinx import (
+    WrapperPostTransform,
+    WrapLineFormatter,
+)
 
 __version__ = '2023.2.23a1'
 

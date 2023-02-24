@@ -22,6 +22,7 @@ intersphinx_mapping = {
 
 templates_path = ["_templates"]
 html_static_path = ["_static"]
+html_extra_path = ["_public"]
 
 html_title = "Shibuya"
 html_theme = "shibuya"
@@ -38,13 +39,13 @@ if os.getenv("TRIM_HTML_SUFFIX"):
     html_link_suffix = ""
 
 html_favicon = "_static/icon-light.svg"
-# html_logo = "_static/logo-light.svg"
 
 html_theme_options = {
     "logo_target": "/",
     "light_logo": "_static/logo-light.svg",
     "dark_logo": "_static/logo-dark.svg",
 
+    "og_image_url": "https://shibuya.lepture.com/icon.png",
     "twitter_creator": "lepture",
     "twitter_site": "lepture",
 

@@ -1,10 +1,10 @@
 {%- macro render_logo(src, classname) -%}
   {%- if src and src.startswith(('https://', 'http://')) -%}
-    <img class="{{ classname }}" src="{{ src }}" alt="{{ project }}" />
+    <img class="{{ classname }}" src="{{ src }}" alt="{{ project }}" height="28" />
   {%- elif src -%}
-    <img class="{{ classname }}" src="{{ pathto(src, 1) }}" alt="{{ project }}" />
+    <img class="{{ classname }}" src="{{ pathto(src, 1) }}" alt="{{ project }}" height="28" />
   {%- elif logo_url -%}
-    <img class="{{ classname }}" src="{{ logo_url }}" alt="{{ project }}" />
+    <img class="{{ classname }}" src="{{ logo_url }}" alt="{{ project }}" height="28" />
   {%- endif -%}
 {%- endmacro -%}
 
