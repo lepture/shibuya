@@ -67,6 +67,8 @@ def css_to_dict(text: str):
 
 
 def normalize_pageurl(pageurl: str, builder: str):
+    if pageurl is None:
+        return pageurl
     if pageurl.endswith('/index.html'):
         return re.sub(r'index\.html$', '', pageurl)
     if builder == 'dirhtml' and pageurl.endswith('.html'):
