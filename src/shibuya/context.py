@@ -13,7 +13,6 @@ BASE_CSS_VARIABLES = """
 --sy-s-banner-height: 0rem;
 --sy-s-navbar-height: 4rem;
 --sy-s-offset-top: calc(var(--sy-s-navbar-height) + var(--sy-s-banner-height));
---sy-rc-link: var(--sy-rc-theme);
 --sy-c-link: rgb(var(--sy-rc-theme));
 """
 

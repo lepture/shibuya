@@ -4,7 +4,7 @@
   --yue-c-bold: var(--sy-c-bold);
   --yue-c-link-1: var(--sy-c-text);
   --yue-c-link-2: #111827;
-  --yue-c-link-border-1: rgba(var(--sy-rc-link), 0.8);
+  --yue-c-link-border-1: rgba(var(--sy-rc-theme), 0.8);
   --yue-c-link-border-2: var(--sy-c-link);
   --yue-c-ol-marker: #6b7280;
   --yue-c-ul-marker: #d1d5db;

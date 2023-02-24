@@ -39,7 +39,7 @@
 }
 
 .globaltoc li.toctree-l2.current {
-  border-color: rgba(var(--sy-rc-link), 1);
+  border-color: var(--sy-c-link);
 }
 
 .globaltoc > ul a.current {
