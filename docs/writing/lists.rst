@@ -48,31 +48,51 @@ If you inspect the HTML in your browser, you will find there are always
 Numbered list
 -------------
 
-A. Item with ``A.``
+A text block which begins with a number, a letter or a roman numeral,
+followed by a period ``.``, right bracket ``)`` or surrounded by brackets
+``( )``, is an ordered (numbered, enumerated) list item.
 
-a. Item with ``a.``
+.. code-block:: rst
 
-I. Item with ``I.``
+   1. numbers
 
-i. Item with ``i.``
+   A. upper-case letters
+      and it goes over many lines
 
-.. code-block::
+      with two paragraphs and all!
 
-    1. Item 1 initial text.
+   a. lower-case letters
 
-       a) Item 1a.
-       b) Item 1b.
+      3. with a sub-list starting at a different number
+      4. make sure the numbers are in the correct sequence though!
 
-    2. a) Item 2a.
-       b) Item 2b.
+   I. upper-case roman numerals
 
-1. Item 1 initial text.
+   i. lower-case roman numerals
 
-   a) Item 1a.
-   b) Item 1b.
+   (1) numbers again
 
-2. a) Item 2a.
-   b) Item 2b.
+   1) and again
+
+1. numbers
+
+A. upper-case letters
+   and it goes over many lines
+
+   with two paragraphs and all!
+
+a. lower-case letters
+
+   3. with a sub-list starting at a different number
+   4. make sure the numbers are in the correct sequence though!
+
+I. upper-case roman numerals
+
+i. lower-case roman numerals
+
+(1) numbers again
+
+1) and again
 
 Nested lists
 ------------

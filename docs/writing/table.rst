@@ -93,6 +93,18 @@ Table Directive
 There is also a `table directive <https://docutils.sourceforge.io/docs/ref/rst/directives.html#table>`_,
 which can wrap the above tables with many options.
 
+.. code-block:: rst
+
+  .. table:: Truth table for "not"
+     :widths: auto
+
+     =====  =====
+       A    not A
+     =====  =====
+     False  True
+     True   False
+     =====  =====
+
 .. table:: Truth table for "not"
    :widths: auto
 

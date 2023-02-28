@@ -1,9 +1,18 @@
 Configuration
 =============
 
+Shibuya theme offers many ``html_theme_options`` for you to customize your
+documentation.
 
-``html_theme_options``
-----------------------
+Theme options
+-------------
+
+Templates structure
+-------------------
+
+
+In detail
+---------
 
 
 .. toctree::

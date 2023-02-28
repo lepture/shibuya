@@ -3,7 +3,6 @@
 @import "./components/localtoc.css";
 @import "./components/searchbox.css";
 @import "./components/sphinx.css";
-@import "./components/sphinx-design.css";
 @import "./components/navigation.css";
 @import "./components/yue.css";
 @import "./components/admonition.css";
@@ -13,3 +12,6 @@
 @import "./components/api-doc.css";
 @import "./components/syntax.css";
 @import "./components/external.css";
+
+@import "./extensions/sphinx-design.css";
+@import "./extensions/sphinx-tabs.css";

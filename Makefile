@@ -1,5 +1,5 @@
 build-docs:
-	sphinx-build docs build/_html -a -b dirhtml
+	sphinx-build docs build/_html -b dirhtml
 
 build-icons:
 	node scripts/genicons.js

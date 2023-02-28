@@ -1,8 +1,20 @@
+====
 Math
 ====
 
 
+Inline math
+-----------
+
+Here is an equation:
+:math:`(a + b)^2 = a^2 + 2ab + b^2`.
+
+
+Block math
+----------
+
 .. math::
+   :label: block math label
 
    (a + b)^2 = a^2 + 2ab + b^2
 

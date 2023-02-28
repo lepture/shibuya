@@ -39,14 +39,13 @@ If you're tracking dependencies in ``requirements.txt``, you can create a separa
 requirements file for your documentation, such as ``requirements-docs.txt``, and
 add ``shibuya`` to that file to ensure it is included in your documentation build.
 
-Using this theme
-----------------
+Using shibuya theme
+-------------------
 
+Don't forget to update your Sphinx documentation configuration file ``conf.py``:
 
-Update Sphinx configuration file ``conf.py``:
-
-.. code-block::
+.. code-block:: python
 
     html_theme = "shibuya"
 
-Your documentation should be using Shibuya theme now.
+Your documentation should be using **Shibuya** theme now.
