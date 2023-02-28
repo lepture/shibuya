@@ -78,6 +78,15 @@ strong, em {
 .theme-switch .theme-icon {
   --icon-url: var(--i-sun-url);
 }
+
 html.dark .theme-switch .theme-icon {
   --icon-url: var(--i-moon-url);
+}
+
+html.light .light-hidden {
+  display: none;
+}
+
+html.dark .dark-hidden {
+  display: none;
 }

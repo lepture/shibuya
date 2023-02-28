@@ -1,0 +1,45 @@
+.sphinx-tabs [role="tablist"] {
+  border-color: var(--sy-c-divider);
+}
+
+.yue .sphinx-tabs-tab {
+  color: var(--sy-c-text);
+  line-height: inherit;
+  padding: 1rem 0.25rem 0.5rem;
+  font-size: 0.84rem;
+  font-weight: 500;
+  border: none;
+  border-bottom: 0.125rem solid transparent;
+}
+
+.yue .sphinx-tabs-tab:hover {
+  color: var(--sd-color-tabs-label-hover);
+  border-color: var(--sd-color-tabs-underline-hover);
+}
+
+.yue .sphinx-tabs-tab[aria-selected="true"] {
+  border: none;
+  border-bottom: 0.125rem solid var(--sd-color-tabs-underline-active);
+  color: var(--sd-color-tabs-label-active);
+  background-color: transparent;
+}
+
+.yue .sphinx-tabs-tab + .sphinx-tabs-tab {
+  margin-left: 1rem;
+}
+
+.yue .sphinx-tabs-panel {
+  border: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.yue .sphinx-tabs-panel.code-tab {
+  padding: 0;
+}
+
+.yue .sphinx-tabs-panel.code-tab .highlight pre {
+  border-radius: 0;
+}
