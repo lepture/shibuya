@@ -35,6 +35,21 @@
   border-top-right-radius: 0;
 }
 
+@media (max-width: 767px) {
+  .yue section > .notranslate > .highlight,
+  .yue section > .literal-block-wrapper {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+  .yue section > .notranslate > .highlight > pre,
+  .yue section > .literal-block-wrapper .code-block-caption {
+    border-radius: 0;
+  }
+  .yue section > .literal-block-wrapper .code-block-caption + div > .highlight > pre {
+    border-radius: 0;
+  }
+}
+
 @media print {
   .code-block-caption {
     font-weight: 600;
