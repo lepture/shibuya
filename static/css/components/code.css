@@ -25,6 +25,7 @@
 
 .code-block-caption {
   font-size: 0.84rem;
+  font-weight: 500;
   background-color: var(--sy-c-cap-bg);
   padding: 0.4rem 1rem;
   border-radius: 6px 6px 0 0;
@@ -44,9 +45,13 @@
   .yue section > .notranslate > .highlight > pre,
   .yue section > .literal-block-wrapper .code-block-caption {
     border-radius: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
   .yue section > .literal-block-wrapper .code-block-caption + div > .highlight > pre {
     border-radius: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 
