@@ -6,7 +6,7 @@ permissions:
 on:
   push:
     tags:
-    - v*
+    - 20*
 
 jobs:
   build:
