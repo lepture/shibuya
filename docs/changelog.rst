@@ -3,6 +3,13 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2023.3.1
+--------
+
+- Fix margins for "kbd"
+- Add style for sphinx-tabs
+- Improve style for code blocks
+
 
 2023.2.25a2
 -----------

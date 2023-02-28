@@ -44,7 +44,7 @@ pip install shibuya
 
 Add shibuya theme to your Sphinx `conf.py:
 
-```
+```python
 html_theme = "shibuya"
 ```
 
