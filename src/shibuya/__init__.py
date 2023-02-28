@@ -15,11 +15,17 @@ from ._sphinx import (
     WrapLineFormatter,
 )
 
-__version__ = '2023.2.25a2'
+__version__ = "2023.2.25a2"
 
 shibuya_version = __version__
 
 THEME_PATH = (Path(__file__).parent / "theme" / "shibuya").resolve()
+
+
+def _add_version(name: str):
+    if name.startswith("shibuya."):
+        return name + "?v=" + shibuya_version
+    return name
 
 
 def _html_page_context(app: Sphinx, pagename: str, templatename: str, context: Dict[str, Any], doctree):
@@ -29,21 +35,21 @@ def _html_page_context(app: Sphinx, pagename: str, templatename: str, context: D
     context["shibuya_dark_css_variables"] = css_to_dict(DARK_CSS_VARIABLES)
 
     # fixing pageurl, need to submit a PR to sphinx
-    if 'pageurl' in context:
-        pageurl = context['pageurl']
-        context['pageurl'] = normalize_pageurl(pageurl, app.builder.name)
+    if "pageurl" in context:
+        pageurl = context["pageurl"]
+        context["pageurl"] = normalize_pageurl(pageurl, app.builder.name)
 
-    if 'toc' in context:
-        context['toc'] = normalize_toc(context['toc'])
+    if "toc" in context:
+        context["toc"] = normalize_toc(context['toc'])
 
     # add version on css files
-    if 'css_files' in context:
-        css_files = [f'{name}?v={shibuya_version}' for name in context['css_files']]
-        context['css_files'] = css_files
+    if "css_files" in context:
+        css_files = [_add_version(name) for name in context['css_files']]
+        context["css_files"] = css_files
 
 
 def _initialize_builder(app: Sphinx):
-    app.add_js_file(f'shibuya.js?v={shibuya_version}')
+    app.add_js_file(_add_version("shibuya.js"))
     app.builder.highlighter.formatter = WrapLineFormatter
 
 
@@ -51,7 +57,7 @@ def setup(app: Sphinx):
     """Entry point for sphinx theming."""
     app.add_html_theme("shibuya", str(THEME_PATH))
     app.add_post_transform(WrapperPostTransform)
-    app.connect('builder-inited', _initialize_builder)
+    app.connect("builder-inited", _initialize_builder)
     app.connect("html-page-context", _html_page_context)
     return {
         "parallel_read_safe": True,
