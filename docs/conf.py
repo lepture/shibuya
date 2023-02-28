@@ -53,8 +53,12 @@ html_theme_options = {
 
     "nav_links": [
         {
+            "title": "GitHub",
+            "url": "https://github.com/lepture/shibuya"
+        },
+        {
             "title": "Branding",
-            "url": "/branding"
+            "url": "/branding/"
         },
     ]
 }
