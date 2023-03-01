@@ -11,6 +11,10 @@
   font-family: var(--sy-f-mono);
 }
 
+.yue .math a.headerlink {
+  visibility: visible;
+}
+
 h2:hover a.headerlink,
 h3:hover a.headerlink,
 h4:hover a.headerlink,

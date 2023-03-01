@@ -11,6 +11,7 @@
   --yue-c-hr: #e5e7eb;
   --yue-c-quote: #111827;
   --yue-c-quote-border: #cfd3db;
+  --yue-c-quote-symbol: rgba(var(--sy-rc-theme), 1);
   --yue-c-caption: #6b7280;
   --yue-c-code: #111827;
   --yue-c-code-bg: #fff4d4;

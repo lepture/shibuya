@@ -1,0 +1,58 @@
+pre.literal-block {
+  line-height: 1.48;
+  padding: 1rem;
+  font-size: 0.96rem;
+  background-color: var(--sy-c-pre-bg);
+  border-radius: 6px;
+  overflow: auto;
+}
+
+.highlight,
+.literal-block-wrapper {
+  --margin: 1rem;
+  --radius: 6px;
+}
+
+.highlight > pre {
+  display: grid;
+  line-height: 1.48;
+  padding: var(--margin);
+  font-size: 0.96rem;
+  background-color: var(--sy-c-pre-bg);
+  border-radius: var(--radius);
+  overflow: auto;
+}
+
+.highlight .linenos {
+  display: inline-block;
+  box-shadow: -0.05rem 0 rgba(var(--sy-rc-invert), 0.2) inset;
+  user-select: none;
+  margin-right: .8rem;
+  padding-right: .8rem;
+  opacity: 0.6;
+}
+
+.highlight .hll {
+  margin-left: calc(0rem - var(--margin));
+  margin-right: calc(0rem - var(--margin));
+  padding: 0 var(--margin);
+}
+
+.code-block-caption {
+  font-size: 0.84rem;
+  font-weight: 600;
+  background-color: var(--sy-c-cap-bg);
+  padding: 0.4rem var(--margin);
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.code-block-caption + div > .highlight > pre {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+@media print {
+  .code-block-caption + div > .highlight > pre {
+    padding-top: 0;
+  }
+}

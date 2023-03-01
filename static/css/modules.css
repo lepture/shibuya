@@ -2,16 +2,18 @@
 @import "./components/globaltoc.css";
 @import "./components/localtoc.css";
 @import "./components/searchbox.css";
-@import "./components/sphinx.css";
 @import "./components/navigation.css";
-@import "./components/yue.css";
-@import "./components/admonition.css";
 @import "./components/container.css";
-@import "./components/code.css";
-@import "./components/table.css";
-@import "./components/api-doc.css";
-@import "./components/syntax.css";
 @import "./components/external.css";
+
+@import "./contents/yue.css";
+@import "./contents/sphinx.css";
+@import "./contents/admonition.css";
+@import "./contents/quote.css";
+@import "./contents/code.css";
+@import "./contents/table.css";
+@import "./contents/api-doc.css";
+@import "./contents/syntax.css";
 
 @import "./extensions/sphinx-design.css";
 @import "./extensions/sphinx-tabs.css";

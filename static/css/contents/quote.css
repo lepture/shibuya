@@ -1,0 +1,32 @@
+.yue blockquote.epigraph {
+  padding: 1rem 2.4rem;
+  border-left: 0;
+  text-align: center;
+}
+
+.yue blockquote.highlights {
+  border-left-width: 4px;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  background-color: var(--sy-c-bg-weak);
+}
+
+.yue blockquote.pull-quote {
+  position: relative;
+  font-size: 1.24rem;
+  padding: 2.4rem 3.6rem 1.2rem;
+  border-left: 0;
+}
+
+.yue blockquote.pull-quote:before {
+  content: '\201c';
+  position: absolute;
+  top: 0;
+  left: 0.5rem;
+  color: var(--yue-c-quote-symbol);
+  font: bold 4rem/1 "Times New Roman", Georgia, Palatino, Times, serif;
+}
+
+.yue blockquote.pull-quote .attribution {
+  text-align: right;
+}
