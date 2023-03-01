@@ -89,27 +89,6 @@ Keyboard
 :kbd:`Tab` means indent, :kbd:`Shift-Tab` means outdent.
 :kbd:`⌘+⇧+P` is power shortcuts in vscode.
 
-
-Block quote
------------
-
-    If you are familiar with Markdown, blockquote in reStructuredText
-    looks like indented code in Markdown.
-
-It is also possible to add attribution to the quote:
-
-    I have no special talent. I am only passionately curious.
-
-    -- Albert Einstein
-
-.. code-block:: rst
-
-    It is also possible to add attribution to the quote:
-
-        I have no special talent. I am only passionately curious.
-
-        -- Albert Einstein
-
 Thematic break
 --------------
 

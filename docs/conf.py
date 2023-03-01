@@ -1,8 +1,12 @@
 import os
+import shibuya
 
 project = "Shibuya"
 copyright = "Copyright &copy; 2023, Hsiaoming Yang"
 author = "Hsiaoming Yang"
+
+version = shibuya.shibuya_version
+release = version
 
 extensions = [
     "sphinx.ext.autodoc",

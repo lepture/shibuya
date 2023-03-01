@@ -181,3 +181,26 @@ Here is an example:
     import mistune
 
     mistune.html("Hello **Shibuya**")
+
+``parsed-literal`` directive
+----------------------------
+
+The `parsed-literal`_ is a built-in directive in reStructuredText. It constructs
+a literal block where the text is parsed for inline markup.
+
+For example:
+
+.. code-block:: rst
+
+  .. parsed-literal::
+
+     $ pip install shibuya==\ |version|
+
+
+.. _`parsed-literal`: https://docutils.sourceforge.io/docs/ref/rst/directives.html#parsed-literal
+
+Above markup will turn into:
+
+.. parsed-literal::
+
+    $ pip install shibuya==\ |version|
