@@ -1,7 +1,7 @@
 :root,
 html.light {
   --syntax-default: #24292f;
-  --syntax-meta: #d4d4d4;
+  --syntax-meta: #a6a2ae;
   --syntax-comment: #6e7781;
   --syntax-constant: #0550ae;
   --syntax-entity: #268bd2;

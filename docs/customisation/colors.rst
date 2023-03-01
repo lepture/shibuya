@@ -6,7 +6,7 @@ Shibuya supports a wide range of customizations to colors via CSS variables.
 By using CSS variables, you can easily modify the colors used in your documentation
 without needing to manually edit CSS files.
 
-Variable Name conventions
+Variable Name Conventions
 -------------------------
 
 Our naming conventions for Shibuya theme-related CSS variables are as follows:
