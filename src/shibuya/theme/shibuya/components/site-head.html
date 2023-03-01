@@ -24,16 +24,7 @@
         {{ render_logo(theme_dark_logo, 'dark-logo') }}
         <strong>{{ project }}</strong>
       </a>
-      {%- if current_version %}
-        <div class="rst-versions">
-          <label for="__versions">
-            <span>{{ current_version }}</span>
-            <i class="i-icon chevron"></i>
-          </label>
-          <input class="hidden" id="__versions" type="checkbox">
-          <div class="rst-other-versions"></div>
-        </div>
-      {%- endif -%}
+      {% include "components/nav-versions.html" %}
     </div>
     <div class="sy-head-actions flex gap-2 items-center print:hidden">
       <nav class="sy-head-nav hidden md:block">
@@ -42,11 +33,16 @@
       <div class="hidden md:block">
         {%- include "components/searchbox.html" %}
       </div>
-      <button class="js-theme theme-switch ml-1" data-aria-light="{{ _('Switch to dark mode') }}" data-aria-dark="{{ _('Switch to light mode') }}">
+      {%- if theme_github_url %}
+        <a class="flex items-center ml-1" href="{{ theme_github_url }}" aria-label="GitHub">
+          <i class="i-icon github"></i>
+        </a>
+      {%- endif %}
+      <button class="js-theme theme-switch flex items-center ml-1" data-aria-light="{{ _('Switch to dark mode') }}" data-aria-dark="{{ _('Switch to light mode') }}">
         <i class="i-icon theme-icon"></i>
       </button>
       {% if display_toc %}
-        <button class="js-menu xl:hidden text-xl ml-1" aria-label="Show table of contents" type="button" aria-controls="rside" aria-expanded="false">
+        <button class="js-menu xl:hidden flex items-center ml-1" aria-label="Show table of contents" type="button" aria-controls="rside" aria-expanded="false">
           <i class="i-icon outdent"></i>
         </button>
       {%- endif %}

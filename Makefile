@@ -3,3 +3,6 @@ build-docs:
 
 build-icons:
 	node scripts/genicons.js
+
+build-static:
+	npm run build

@@ -1,0 +1,10 @@
+{%- if current_version %}
+  <div class="rst-versions">
+    <label for="__versions">
+      <span>{{ current_version }}</span>
+      <i class="i-icon chevron"></i>
+    </label>
+    <input class="hidden" id="__versions" type="checkbox">
+    <div class="rst-other-versions"></div>
+  </div>
+{%- endif -%}

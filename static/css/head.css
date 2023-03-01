@@ -168,6 +168,10 @@
   color: rgba(var(--sy-rc-invert), 1);
 }
 
+.sy-head-actions .i-icon {
+  font-size: 1.25rem;
+}
+
 .sy-head-brand .dark-logo {
   display: none;
 }
