@@ -58,7 +58,7 @@ html_theme_options = {
     "nav_links": [
         {
             "title": "Branding",
-            "url": "/branding/"
+            "url": "/branding"
         },
     ]
 }
