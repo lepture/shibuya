@@ -50,6 +50,7 @@ def _html_page_context(app: Sphinx, pagename: str, templatename: str, context: D
 
 def _initialize_builder(app: Sphinx):
     app.add_js_file(_add_version("shibuya.js"))
+    app.add_css_file(_add_version("print.css"), media='print')
     app.builder.highlighter.formatter = WrapLineFormatter
 
 
