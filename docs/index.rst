@@ -51,22 +51,22 @@ Explore the following sections to discover more about our theme and its features
 
 .. grid:: 2
 
-    .. grid-item-card::  Tutorial
+    .. grid-item-card:: Tutorial
         :link: /install/
 
         If you're new to Python and Sphinx, this is a great place to start.
 
-    .. grid-item-card::  Customisation
+    .. grid-item-card:: Customisation
         :link: /customisation/
 
         Tailor configurations to meet your specific requirements with customizable settings.
 
-    .. grid-item-card::  References
+    .. grid-item-card:: References
         :link: /writing/
 
         Learn the syntax of reStructuredText and examine how it is formatted.
 
-    .. grid-item-card::  Contributing
+    .. grid-item-card:: Contributing
         :link: /contributing/
 
         Your contributions can make a meaningful impact and help drive the project forward!
