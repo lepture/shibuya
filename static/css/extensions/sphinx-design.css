@@ -20,6 +20,7 @@
 }
 
 .yue .sd-container-fluid {
+  margin-top: 2rem;
   padding: 0.5rem;
 }
 
@@ -32,6 +33,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
+}
+
+.yue .sd-row-cols-1 > .sd-col {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .yue .sd-row-cols-2 > .sd-col {
