@@ -86,3 +86,9 @@
 .yue .sd-tab-content .highlight pre {
   border-radius: 0;
 }
+
+@media (print) {
+  .yue .sd-card {
+    page-break-inside: avoid;
+  }
+}
