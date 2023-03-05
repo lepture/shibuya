@@ -1,6 +1,7 @@
+:description: How to customize colors for your documentation website?
+
 Colors
 ======
-
 
 Shibuya supports a wide range of customizations to colors via CSS variables.
 By using CSS variables, you can easily modify the colors used in your documentation
@@ -73,8 +74,6 @@ Variable Name              Description
 ``--sy-c-text-strong``    Strong text color
 ``--sy-c-heading``        Heading text color
 ``--sy-c-bold``           Bold text color
-``--sy-c-pre-bg``         Background color for code blocks
-``--sy-c-cap-bg``         Background color for caption
 ``--sy-c-foot-text``      Footer text color
 ``--sy-c-foot-bg``        Footer background color
 ``--sy-c-foot-divider``   Footer divider color

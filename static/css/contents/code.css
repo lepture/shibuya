@@ -2,7 +2,7 @@ pre.literal-block {
   line-height: 1.48;
   padding: 1rem;
   font-size: 0.96rem;
-  background-color: var(--sy-c-pre-bg);
+  background-color: var(--syntax-pre-bg);
   border-radius: 6px;
   overflow: auto;
 }
@@ -18,7 +18,7 @@ pre.literal-block {
   line-height: 1.48;
   padding: var(--margin);
   font-size: 0.96rem;
-  background-color: var(--sy-c-pre-bg);
+  background-color: var(--syntax-pre-bg);
   border-radius: var(--radius);
   overflow: auto;
 }
@@ -41,7 +41,8 @@ pre.literal-block {
 .code-block-caption {
   font-size: 0.84rem;
   font-weight: 600;
-  background-color: var(--sy-c-cap-bg);
+  color: var(--syntax-text);
+  background-color: var(--syntax-cap-bg);
   padding: 0.4rem var(--margin);
   border-radius: var(--radius) var(--radius) 0 0;
 }

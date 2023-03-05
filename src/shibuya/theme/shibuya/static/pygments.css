@@ -1,4 +1,4 @@
-.highlight { color: var(--syntax-default); background-color: transparent }
+.highlight { color: var(--syntax-text); background-color: transparent }
 .highlight .hll { display: block; background-color: var(--syntax-highlight-bg) }
 .highlight .c { color: var(--syntax-comment) } /* Comment */
 .highlight .err { color: var(--syntax-invalid-illegal-text); background-color: var(--syntax-invalid-illegal-bg) } /* Error */

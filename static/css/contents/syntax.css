@@ -1,6 +1,8 @@
 :root,
 html.light {
-  --syntax-default: #24292f;
+  --syntax-pre-bg: #f3f1fa;
+  --syntax-cap-bg: #eae7f7;
+  --syntax-text: #24292f;
   --syntax-meta: #a6a2ae;
   --syntax-comment: #6e7781;
   --syntax-constant: #0550ae;
@@ -31,8 +33,12 @@ html.light {
   --syntax-highlight-bg: #eee4ff;
   --syntax-special-bg: #dccafa;
 }
-html.dark {
-  --syntax-default: #c9d1d9;
+
+html.dark,
+.dark-code {
+  --syntax-pre-bg: #2c283b;
+  --syntax-cap-bg: #342f47;
+  --syntax-text: #c9d1d9;
   --syntax-meta: #6e7781;
   --syntax-comment: #8b949e;
   --syntax-constant: #79c0ff;

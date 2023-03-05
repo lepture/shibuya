@@ -204,3 +204,14 @@ Above markup will turn into:
 .. parsed-literal::
 
     $ pip install shibuya==\ |version|
+
+
+Dark code
+---------
+
+.. code-block:: python
+    :class: dark-code
+
+    html_theme_options = {
+        "dark_code": True
+    }

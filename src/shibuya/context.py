@@ -28,8 +28,6 @@ LIGHT_CSS_VARIABLES = """
 --sy-c-text-strong: #111;
 --sy-c-heading: #111827;
 --sy-c-bold: #111827;
---sy-c-pre-bg: rgba(143, 118, 214, 0.1);
---sy-c-cap-bg: rgba(143, 118, 214, 0.18);
 --sy-c-foot-text: #232226;
 --sy-c-foot-bg: #fafafa;
 --sy-c-foot-divider: #f0f0f0;
@@ -47,8 +45,6 @@ DARK_CSS_VARIABLES = """
 --sy-c-text-strong: #d9ebfd;
 --sy-c-heading: #fff;
 --sy-c-bold: #fff;
---sy-c-pre-bg: rgba(143, 118, 214, 0.20);
---sy-c-cap-bg: rgba(143, 118, 214, 0.28);
 --sy-c-foot-text: #eee;
 --sy-c-foot-bg: #000;
 --sy-c-foot-divider: #000;
