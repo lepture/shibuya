@@ -14,4 +14,5 @@ Learn the syntax of reStructuredText and examine how it is formatted.
     math
     media
     api
+    meta
     extensions

@@ -1,3 +1,5 @@
+:description: Guide on customizing the appearance and functionality of your documentation website.
+
 Configuration
 =============
 

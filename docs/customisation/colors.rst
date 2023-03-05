@@ -7,6 +7,25 @@ Shibuya supports a wide range of customizations to colors via CSS variables.
 By using CSS variables, you can easily modify the colors used in your documentation
 without needing to manually edit CSS files.
 
+.. _global-dark-code:
+
+Dark code
+---------
+
+By default, code blocks in light theme will be decorated with a light background.
+But it is possible to use the **dark code mode** in the light mode. To turn all
+code blocks into dark mode, you can update ``dark_code`` in ``html_theme_options``:
+
+.. code-block:: python
+    :class: dark-code
+
+    html_theme_options = {
+        "dark_code": True,
+    }
+
+There is also a :ref:`page level <page-dark-code>` configuration via ``:dark_code:``
+meta tag. If you don't want to enable it for the whole site, you can use the meta tag.
+
 Variable Name Conventions
 -------------------------
 

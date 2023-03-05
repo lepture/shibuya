@@ -205,9 +205,19 @@ Above markup will turn into:
 
     $ pip install shibuya==\ |version|
 
+.. _block-dark-code:
 
 Dark code
 ---------
+
+Dark code block can be defined with a class ``dark-code``::
+
+  .. code-block:: python
+     :class: dark-code
+
+     html_theme_options = {
+         "dark_code": True
+     }
 
 .. code-block:: python
     :class: dark-code
@@ -215,3 +225,8 @@ Dark code
     html_theme_options = {
         "dark_code": True
     }
+
+It is also possible to enable **dark code mode** for :ref:`the whole page <page-dark-code>`.
+You can even enable **dark code mode** for :ref:`the whole site <global-dark-code>`.
+
+.. important:: This ``:class:`` option does not work well together with caption.

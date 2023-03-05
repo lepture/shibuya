@@ -1,3 +1,6 @@
+:description: Customize the elements that appear in the right sidebar of
+              your documentation pages.
+
 Sidebar Elements
 ================
 

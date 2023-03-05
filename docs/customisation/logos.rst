@@ -1,3 +1,5 @@
+:description: Add a logo to promote your brand and make your website more recognizable.
+
 Logos
 =====
 
