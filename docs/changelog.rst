@@ -3,6 +3,15 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+
+2023.3.5
+--------
+
+- Add dark code mode
+- Improve style for print media
+- Improve style for sphinx-design
+
+
 2023.3.2
 --------
 
