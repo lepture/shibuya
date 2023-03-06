@@ -23,7 +23,7 @@ THEME_PATH = (Path(__file__).parent / "theme" / "shibuya").resolve()
 
 
 def _add_version(name: str):
-    if name.startswith("shibuya."):
+    if name.endswith(("shibuya.css", "print.css", "pygments.css")):
         return name + "?v=" + shibuya_version
     return name
 
