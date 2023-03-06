@@ -66,7 +66,7 @@ html_theme_options = {
 html_context = {
     "source_type": "github",
     "source_user": "lepture",
-    "source_repo": "lepture/shibuya",
+    "source_repo": "shibuya",
 }
 
 DEBUG_RTD = False
