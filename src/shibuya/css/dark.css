@@ -1,0 +1,16 @@
+:root {
+  --sy-rc-theme: 143, 118, 214;
+  --sy-rc-bg: 18, 18, 18;
+  --sy-rc-invert: 255, 255, 255;
+  --sy-rc-text: 255, 255, 255;
+  --sy-c-bg: #121212;
+  --sy-c-bg-weak: #212833;
+  --sy-c-text: #a9b9cc;
+  --sy-c-text-weak: #77889f;
+  --sy-c-text-strong: #d9ebfd;
+  --sy-c-heading: #fff;
+  --sy-c-bold: #fff;
+  --sy-c-foot-text: #eee;
+  --sy-c-foot-bg: #000;
+  --sy-c-foot-divider: #000;
+}

@@ -3,9 +3,6 @@ from pathlib import Path
 from sphinx.application import Sphinx
 from sphinx.builders.html import StandaloneHTMLBuilder
 from .context import (
-    BASE_CSS_VARIABLES,
-    LIGHT_CSS_VARIABLES,
-    DARK_CSS_VARIABLES,
     css_to_dict,
     normalize_pageurl,
     normalize_toc,
@@ -23,16 +20,11 @@ THEME_PATH = (Path(__file__).parent / "theme" / "shibuya").resolve()
 
 
 def _add_version(name: str):
-    if name.endswith(("shibuya.css", "print.css", "pygments.css")):
-        return name + "?v=" + shibuya_version
-    return name
+    return name + "?v=" + shibuya_version
 
 
 def _html_page_context(app: Sphinx, pagename: str, templatename: str, context: Dict[str, Any], doctree):
     assert isinstance(app.builder, StandaloneHTMLBuilder)
-    context["shibuya_base_css_variables"] = css_to_dict(BASE_CSS_VARIABLES)
-    context["shibuya_light_css_variables"] = css_to_dict(LIGHT_CSS_VARIABLES)
-    context["shibuya_dark_css_variables"] = css_to_dict(DARK_CSS_VARIABLES)
 
     # fixing pageurl, need to submit a PR to sphinx
     if "pageurl" in context:
@@ -42,15 +34,25 @@ def _html_page_context(app: Sphinx, pagename: str, templatename: str, context: D
     if "toc" in context:
         context["toc"] = normalize_toc(context['toc'])
 
-    # add version on css files
-    if "css_files" in context:
-        css_files = [_add_version(name) for name in context['css_files']]
-        context["css_files"] = css_files
-
 
 def _initialize_builder(app: Sphinx):
+    css_files = []
+    for filename in app.builder.css_files:
+        if filename.endswith(("shibuya.css", "pygments.css")):
+            css_files.append(_add_version(filename))
+        else:
+            css_files.append(filename)
+    app.builder.css_files = css_files
+
     app.add_js_file(_add_version("shibuya.js"))
     app.add_css_file(_add_version("print.css"), media='print')
+
+    app.config.html_context.update({
+        "shibuya_base_css_variables": css_to_dict("base.css"),
+        "shibuya_light_css_variables": css_to_dict("light.css"),
+        "shibuya_dark_css_variables": css_to_dict("dark.css"),
+    })
+
     app.builder.highlighter.formatter = WrapLineFormatter
 
 
