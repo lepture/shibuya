@@ -1,0 +1,23 @@
+{%- if source_type and source_user and source_repo and source_type in ("github", "gitlab") -%}
+
+{%- if source_type == "github" -%}
+  {% set source_url = "https://github.com/{}/{}".format(source_user, source_repo) %}
+{%- else -%}
+  {% set source_url = "https://gitlab.com/{}/{}".format(source_user, source_repo) %}
+{%- endif -%}
+
+<a class="js-repo-stats repo-stats flex items-center" href="{{ source_url }}"
+  data-type="{{ source_type }}" data-user="{{ source_user }}" data-repo="{{ source_repo }}">
+  <span class="w-8 flex items-center justify-around shrink-0">
+    <i class="i-icon {{ source_type }}"></i>
+  </span>
+  <span class="repo-stars flex items-center px-2">
+    <i class="i-icon star"></i>
+    <strong class="js-repo-stars ml-1">00</strong>
+  </span>
+  <span class="repo-forks flex items-center px-2">
+    <i class="i-icon git-fork"></i>
+    <strong class="js-repo-forks ml-1">00</strong>
+  </span>
+</a>
+{% endif %}

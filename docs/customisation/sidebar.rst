@@ -57,3 +57,7 @@ the ``html_sidebars`` list.
 
 Built-in elements
 -----------------
+
+
+Edit this page
+--------------

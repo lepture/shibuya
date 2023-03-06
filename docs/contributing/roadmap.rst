@@ -21,7 +21,7 @@ Good to have
 These good things will be added in the future:
 
 - Perfect code highlight style
-- Edit this page link
+- **DONE**: Edit this page link
 - GitHub stars and forks
 - Scroll to top
 
