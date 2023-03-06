@@ -1,0 +1,11 @@
+{%- if page_source_suffix -%}
+
+{% set editurl = edit_source_link(pagename + page_source_suffix) %}
+
+{%- if editurl -%}
+<div class="edit-this-page">
+  <a href="{{ editurl }}">{{ _("Edit this page") }}</a>
+</div>
+{%- endif -%}
+
+{%- endif -%}

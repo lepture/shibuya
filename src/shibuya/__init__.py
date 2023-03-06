@@ -6,6 +6,7 @@ from .context import (
     css_to_dict,
     normalize_pageurl,
     normalize_toc,
+    create_edit_source_link,
 )
 from ._sphinx import (
     WrapperPostTransform,
@@ -47,10 +48,12 @@ def _initialize_builder(app: Sphinx):
     app.add_js_file(_add_version("shibuya.js"))
     app.add_css_file(_add_version("print.css"), media='print')
 
+    edit_source_link = create_edit_source_link(app.config.html_context)
     app.config.html_context.update({
         "shibuya_base_css_variables": css_to_dict("base.css"),
         "shibuya_light_css_variables": css_to_dict("light.css"),
         "shibuya_dark_css_variables": css_to_dict("dark.css"),
+        "edit_source_link": edit_source_link,
     })
 
     app.builder.highlighter.formatter = WrapLineFormatter

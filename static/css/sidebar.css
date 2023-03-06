@@ -28,6 +28,26 @@
   opacity: 1;
 }
 
+.edit-this-page {
+  border-top: 1px solid var(--sy-c-divider);
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.edit-this-page a {
+  color: var(--sy-c-text-weak);
+}
+
+.edit-this-page a:hover {
+  color: var(--sy-c-text);
+}
+
+.edit-this-page a:after {
+  content: " →";
+}
+
 @media (min-width: 768px) {
   .sy-lside .sy-scrollbar {
     height: calc(100vh - var(--sy-s-offset-top));

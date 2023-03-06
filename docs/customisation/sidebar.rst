@@ -20,7 +20,7 @@ These templates are:
    :caption: Default sidebar templates
 
    sidebars/localtoc.html
-   sidebars/editlink.html
+   sidebars/edit-this-page.html
    sidebars/ethical-ads.html
 
 You can include additional templates in the sidebar by adding them to the
