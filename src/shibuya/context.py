@@ -38,6 +38,7 @@ def create_edit_source_link(context: Dict[str, Any]):
     source_user = context.get("source_user")
     source_repo = context.get("source_repo")
     source_docs_path = context.get("source_docs_path", "docs")
+    source_edit_template = context.get("source_edit_template")
 
     # extract context from readthe docs
     if not source_type and "readthedocs" in context:
@@ -49,13 +50,25 @@ def create_edit_source_link(context: Dict[str, Any]):
             source_repo = source.get("repo")
             source_docs_path = source.get("conf_py_path")
 
-    def edit_source_link(filename: str):
+            # add source context
+            context["source_type"] = source_type
+            context["source_user"] = source_user
+            context["source_repo"] = source_repo
+            context["source_docs_path"] = source_docs_path
+
+    def edit_source_link(filename: str) -> str:
+        if source_edit_template:
+            return source_edit_template.format(filename)
+
         if not source_user or not source_repo:
             return
 
-        # TODO: add more source types
         if source_type == "github":
             return f"https://github.com/{source_user}/{source_repo}/edit/master/{source_docs_path}/{filename}"
+        elif source_type == "gitlab":
+            return f"https://gitlab.com/{source_user}/{source_repo}/-/blob/master/{source_docs_path}/{filename}"
+        elif source_type == "bitbucket":
+            return  f"https://bitbucket.org/{source_user}/{source_repo}/src/master/{source_docs_path}/{filename}"
 
     return edit_source_link
 
