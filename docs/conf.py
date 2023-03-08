@@ -71,17 +71,18 @@ html_theme_options = {
     ]
 }
 
-html_context = {
-    "source_type": "github",
-    "source_user": "lepture",
-    "source_repo": "shibuya",
-}
-
 if "READTHEDOCS" in os.environ:
     html_theme_options["announcement"] = (
         "This documentation is hosted on Read the Docs only for testing. Please use "
         "<a href='https://shibuya.lepture.com/'>the main documentation</a> instead."
     )
+else:
+    html_context = {
+        "source_type": "github",
+        "source_user": "lepture",
+        "source_repo": "shibuya",
+    }
+
 
 DEBUG_RTD = False
 

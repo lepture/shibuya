@@ -35,26 +35,13 @@ def normalize_toc(toc: str):
 
 def create_edit_source_link(context: Dict[str, Any]):
     source_type = context.get("source_type")
+    if not source_type:
+        source_type = _normalize_readthedocs_context(context)
+
     source_user = context.get("source_user")
     source_repo = context.get("source_repo")
     source_docs_path = context.get("source_docs_path", "docs")
     source_edit_template = context.get("source_edit_template")
-
-    # extract context from readthe docs
-    if not source_type and "readthedocs" in context:
-        readthedocs = context["readthedocs"]
-        source = _get_readthedocs_vcs(readthedocs)
-        if source:
-            source_type = source.get("type")
-            source_user = source.get("user")
-            source_repo = source.get("repo")
-            source_docs_path = source.get("conf_py_path")
-
-            # add source context
-            context["source_type"] = source_type
-            context["source_user"] = source_user
-            context["source_repo"] = source_repo
-            context["source_docs_path"] = source_docs_path
 
     def edit_source_link(filename: str) -> str:
         if source_edit_template:
@@ -73,10 +60,18 @@ def create_edit_source_link(context: Dict[str, Any]):
     return edit_source_link
 
 
-def _get_readthedocs_vcs(data: Dict[str, Any]):
-    if isinstance(readthedocs, dict) and "v1" in readthedocs:
-        readthedocs = readthedocs["v1"]
-        if isinstance(readthedocs, dict) and "vcs" in readthedocs:
-            source = readthedocs["vcs"]
-            if isinstance(source, dict):
-                return source
+def _normalize_readthedocs_context(context: Dict[str, Any]):
+    if context.get("display_github"):
+        source_type = "github"
+    elif context.get("display_gitlab"):
+        source_type = "gitlab"
+    elif context.get("display_bitbucket"):
+        source_type = "bitbucket"
+    else:
+        return
+
+    context["source_type"] = source_type
+    context["source_user"] = context.get(f"{source_type}_user")
+    context["source_repo"] = context.get(f"{source_type}_repo")
+    context["source_docs_path"] = context.get("conf_py_path")
+    return source_type
