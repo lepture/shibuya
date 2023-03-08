@@ -1,9 +1,9 @@
-.banner {
-  position: fixed;
+.announcement {
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
-  height: var(--sy-s-banner-height);
+  padding: 0.8rem 2rem;
   display: flex;
   align-items: center;
   color: var(--sy-c-banner, white);
@@ -11,14 +11,22 @@
   z-index: 20;
 }
 
-.banner-inner {
+.announcement a {
+  text-decoration: underline;
+}
+
+.announcement ::selection {
+  color: var(--sy-c-banner, white);
+}
+
+.announcement-inner {
   width: 100%;
   text-align: center;
 }
 
-.banner-close {
+.announcement-close {
   position: absolute;
-  top: 1rem;
+  top: 0.8rem;
   right: 1rem;
 }
 

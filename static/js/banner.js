@@ -1,8 +1,19 @@
-const close = document.querySelector('.banner-close')
+const wrapper = document.querySelector('.announcement')
+const close = document.querySelector('.announcement-close')
 
-if (close) {
+if (wrapper) {
+  const style = document.createElement("style")
+  document.head.appendChild(style)
+
+  function resize() {
+    style.textContent = `:root{--sy-s-banner-height:${wrapper.clientHeight}px}`
+  }
+
   close.addEventListener('click', () => {
-    const banner = document.querySelector('.banner')
-    banner.parentNode.removeChild(banner)
+    wrapper.parentNode.removeChild(wrapper)
+    document.head.removeChild(style)
   })
+
+  resize()
+  window.addEventListener("resize", resize)
 }
