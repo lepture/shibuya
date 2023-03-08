@@ -48,5 +48,5 @@
 }
 
 .globaltoc > ul a:hover {
-  color: var(--sy-c-text-strong);
+  color: var(--sy-c-bold);
 }

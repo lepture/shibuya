@@ -12,7 +12,7 @@
 }
 
 .localtoc > ul li > a:hover {
-  color: var(--sy-c-text-strong);
+  color: var(--sy-c-bold);
 }
 
 .localtoc > ul li.active > a {

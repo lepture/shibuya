@@ -90,7 +90,6 @@ Variable Name              Description
 ``--sy-c-bg-weak``        Weak background color for elements
 ``--sy-c-text``           Default text color
 ``--sy-c-text-weak``      Weak text color
-``--sy-c-text-strong``    Strong text color
 ``--sy-c-heading``        Heading text color
 ``--sy-c-bold``           Bold text color
 ``--sy-c-foot-text``      Footer text color
