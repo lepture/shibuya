@@ -4,6 +4,15 @@ html.light {
   --admonition-head-opacity: 0.08;
   --admonition-border-opacity: 1;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --admonition-bg-opacity: 0.08;
+    --admonition-head-opacity: 0.15;
+    --admonition-border-opacity: 0.8;
+  }
+}
+
 html.dark {
   --admonition-bg-opacity: 0.08;
   --admonition-head-opacity: 0.15;

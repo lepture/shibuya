@@ -34,6 +34,43 @@ html.light {
   --syntax-special-bg: #dccafa;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --syntax-pre-bg: #2c283b;
+    --syntax-cap-bg: #342f47;
+    --syntax-text: #c9d1d9;
+    --syntax-meta: #6e7781;
+    --syntax-comment: #8b949e;
+    --syntax-constant: #79c0ff;
+    --syntax-entity: #47b0fa;
+    --syntax-property: #d2a8ff;
+    --syntax-definition: #c9d1d9;
+    --syntax-tag: #7ee787;
+    --syntax-builtin: #ffd34c;
+    --syntax-keyword: #ff7b72;
+    --syntax-exception: #da473c;
+    --syntax-string: #a5d6ff;
+    --syntax-regexp: #ef954e;
+    --syntax-variable: #ffa657;
+    --syntax-invalid-illegal-text: #f0f6fc;
+    --syntax-invalid-illegal-bg: #8e1519;
+    --syntax-markup-heading: #1f6feb;
+    --syntax-markup-italic: #c9d1d9;
+    --syntax-markup-bold: #c9d1d9;
+    --syntax-markup-deleted-text: #ffdcd7;
+    --syntax-markup-deleted-bg: #67060c;
+    --syntax-markup-inserted-text: #aff5b4;
+    --syntax-markup-inserted-bg: #033a16;
+    --syntax-markup-changed-text: #ffdfb6;
+    --syntax-markup-changed-bg: #5a1e02;
+    --syntax-markup-ignored-text: #c9d1d9;
+    --syntax-markup-ignored-bg: #1158c7;
+    --syntax-meta-diff-range: #d2a8ff;
+    --syntax-highlight-bg: #423551;
+    --syntax-special-bg: #4f425d;
+  }
+}
+
 html.dark,
 .dark-code {
   --syntax-pre-bg: #2c283b;

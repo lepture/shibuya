@@ -42,6 +42,15 @@
     <link rel="canonical" href="{{ pageurl|e }}" />
     {%- endif %}
   {%- endblock linktags %}
+  <script>
+    const isDarkTheme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const sessionTheme = sessionStorage['_theme']
+    if (sessionTheme) {
+      document.documentElement.classList.add(sessionTheme)
+    } else if (isDarkTheme) {
+      document.documentElement.classList.add('dark')
+    }
+  </script>
 
   {%- if favicon_url -%}
     <link rel="shortcut icon" href="{{ favicon_url|e }}"/>
