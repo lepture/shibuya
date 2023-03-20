@@ -20,6 +20,7 @@ These templates are:
    :caption: Default sidebar templates
 
    sidebars/localtoc.html
+   sidebars/repo-stats.html
    sidebars/edit-this-page.html
    sidebars/ethical-ads.html
 
@@ -55,9 +56,47 @@ the ``html_sidebars`` list.
 
         templates_path = ["_templates"]
 
-Built-in elements
------------------
-
 
 Edit this page
 --------------
+
+Add an "Edit This Page" link to your documentation website with just a few lines of
+configuration. Simply add the following to your Sphinx ``conf.py`` file:
+
+.. code-block:: python
+
+    html_context = {
+        "source_type": "github|gitlab|bitbucket",
+        "source_user": "<username>",
+        "source_repo": "<repository>",
+    }
+
+With this configuration, Shibuya will automatically include an "Edit This Page" link in
+the right sidebar of your documentation pages, allowing visitors to easily edit the page
+on GitHub, GitLab or Bitbucket.
+
+.. note::
+  If you are using Read the Docs to host your documentation, you don't need to add the
+  ``html_context`` configuration since this feature is automatically enabled.
+
+Source code statistics
+----------------------
+
+Display statistics about your source code repository on your documentation website with
+just a few lines of configuration. Simply add the following to your Sphinx ``conf.py`` file:
+
+.. code-block:: python
+
+    html_context = {
+        "source_type": "github|gitlab",
+        "source_user": "<username>",
+        "source_repo": "<repository>",
+    }
+
+.. note::
+  If you are using Read the Docs to host your documentation, you don't need to add the
+  ``html_context`` configuration since this feature is automatically enabled.
+
+With this configuration, Shibuya will automatically display your GitHub/Gitlab repository
+statistics in the right sidebar of your documentation pages, including the number of
+stars, and forks.

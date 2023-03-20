@@ -39,14 +39,6 @@ html_additional_pages = {
     "branding": "branding.html",
 }
 
-html_sidebars = {
-    "**": [
-        "sidebars/localtoc.html",
-        "sidebars/repo-stats.html",
-        "sidebars/edit-this-page.html",
-    ]
-}
-
 if os.getenv("TRIM_HTML_SUFFIX"):
     html_link_suffix = ""
 
