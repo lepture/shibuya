@@ -3,6 +3,12 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2023.3.19
+---------
+
+- Enable ``repo-stats`` sidebar by default
+- Improve colors for dark mode
+
 2023.3.11
 ---------
 
