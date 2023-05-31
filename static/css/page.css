@@ -94,14 +94,7 @@
 
 .yue section,
 .yue .viewcode-block {
-  scroll-margin-top: calc(var(--sy-s-offset-top) + 80px);
-}
-
-@media (min-width: 1280px) {
-  .yue section,
-  .yue .viewcode-block {
-    scroll-margin-top: calc(var(--sy-s-offset-top) + 20px);
-  }
+  scroll-margin-top: calc(var(--sy-s-offset-top) + 24px);
 }
 
 .sy-content {
