@@ -51,7 +51,7 @@ def create_edit_source_link(context: Dict[str, Any]):
             return
 
         if source_type == "github":
-            return f"https://github.com/{source_user}/{source_repo}/edit/master/{source_docs_path}/{filename}"
+            return f"https://github.com/{source_user}/{source_repo}/blob/master/{source_docs_path}/{filename}"
         elif source_type == "gitlab":
             return f"https://gitlab.com/{source_user}/{source_repo}/-/blob/master/{source_docs_path}/{filename}"
         elif source_type == "bitbucket":

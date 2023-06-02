@@ -1,6 +1,5 @@
 {
   "name": "shibuya",
-  "version": "1.0.0",
   "private": true,
   "scripts": {
     "build:js": "esbuild static/index.js --bundle --outfile=src/shibuya/theme/shibuya/static/shibuya.js",
