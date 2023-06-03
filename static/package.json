@@ -2,8 +2,8 @@
   "name": "shibuya",
   "private": true,
   "scripts": {
-    "build:js": "esbuild static/index.js --bundle --outfile=src/shibuya/theme/shibuya/static/shibuya.js",
-    "build:css": "npx tailwindcss -i ./static/index.css -o src/shibuya/theme/shibuya/static/shibuya.css",
+    "build:js": "esbuild index.js --bundle --outfile=../src/shibuya/theme/shibuya/static/shibuya.js",
+    "build:css": "npx tailwindcss -i index.css -o ../src/shibuya/theme/shibuya/static/shibuya.css",
     "build": "npm run build:js -- --minify && npm run build:css -- --minify",
     "dev:js": "npm run build:js -- --watch",
     "dev:css": "npm run build:css -- --watch"

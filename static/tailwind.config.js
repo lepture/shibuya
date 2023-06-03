@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ['class'],
-  content: ["./src/shibuya/theme/**/*.html"],
+  content: ["../src/shibuya/theme/**/*.html"],
   theme: {
     extend: {}
   },

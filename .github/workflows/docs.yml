@@ -28,7 +28,10 @@ jobs:
         node-version: 18
 
     - run: npm ci
+      working-directory: static
+
     - run: npm run build
+      working-directory: static
 
     - uses: actions/setup-python@v4
       with:
