@@ -100,3 +100,16 @@ just a few lines of configuration. Simply add the following to your Sphinx ``con
 With this configuration, Shibuya will automatically display your GitHub/Gitlab repository
 statistics in the right sidebar of your documentation pages, including the number of
 stars, and forks.
+
+
+Ethical Ads
+-----------
+
+Use your own **Ethical Ads** publisher ID:
+
+.. code-block:: python
+
+    html_theme_options = {
+        # ...
+        "ethical_ads_publisher": "your-publisher-id",
+    }
