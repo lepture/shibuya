@@ -60,23 +60,15 @@
   height: var(--sy-s-navbar-height);
 }
 
-.sy-head-brand img {
-  height: 28px;
-}
-
-.sy-head-brand img + strong {
-  display: none;
-}
-
-.sy-head-brand > .rst-versions {
+.sy-head-actions > .rst-versions {
+  display: block;
   position: relative;
-  margin-left: 1rem;
   width: auto;
   background: transparent;
   color: var(--sy-c-text);
 }
 
-.sy-head-brand > .rst-versions > label {
+.sy-head-actions > .rst-versions > label {
   display: inline-block;
   cursor: pointer;
   font-size: 0.86rem;
@@ -87,63 +79,86 @@
   padding: 0.24rem 1rem;
 }
 
-.sy-head-brand > .rst-versions > label:hover {
+.sy-head-actions > .rst-versions > label:hover {
   background-color: rgba(var(--sy-rc-invert), .08);
 }
 
-.sy-head-brand > .rst-versions > label .i-icon {
+.sy-head-actions > .rst-versions > label .i-icon {
   transform: rotate(90deg);
 }
 
-.sy-head-brand input + .rst-other-versions {
+.sy-head-actions input + .rst-other-versions {
   position: absolute;
   display: none;
   padding: 0;
-  top: 2rem;
+  top: 2.4rem;
   width: 300px;
   background-color: var(--sy-c-bg);
   border-radius: 6px;
   box-shadow: 0 0 3px rgba(var(--sy-rc-invert), 0.1), 0 0 2px rgba(var(--sy-rc-invert), 0.2) inset;
 }
 
-.sy-head-brand input:checked + .rst-other-versions {
+@media (max-width: 767px) {
+  .sy-head-actions input + .rst-other-versions {
+    right: -4rem;
+  }
+}
+
+.sy-head-actions input:checked + .rst-other-versions {
   display: block;
 }
 
-.sy-head-brand .injected .rst-versions {
+.sy-head-actions .rst-other-versions > ul > li + li {
+  border-top: 1px solid var(--sy-c-divider);
+}
+
+.sy-head-actions .rst-other-versions > ul > li > a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: var(--sy-c-text);
+}
+
+.sy-head-actions .rst-other-versions > ul > li > a:hover {
+  color: var(--sy-c-link);
+  background: var(--sy-c-bg-weak);
+}
+
+.sy-head-actions .injected .rst-versions {
   position: static;
   color: var(--sy-c-text);
   background-color: transparent;
 }
 
-.sy-head-brand .injected .rst-versions a {
+.sy-head-actions .injected .rst-versions a {
   color: var(--sy-c-text) !important;
 }
 
-.sy-head-brand .injected .rst-versions a:hover {
+.sy-head-actions .injected .rst-versions a:hover {
   color: var(--sy-c-link) !important;
 }
 
-.sy-head-brand .injected .rst-current-version {
+.sy-head-actions .injected .rst-current-version {
   display: none !important;
   border-radius: 6px;
 }
 
-.sy-head-brand .injected .rst-other-versions {
+.sy-head-actions .injected .rst-other-versions {
   display: block;
 }
 
-.sy-head-brand .injected .rst-other-versions dt {
-  font-size: 0.72rem;
+.sy-head-actions .injected .rst-other-versions dt {
+  font-size: 0.68rem;
+  font-weight: 500;
+  text-transform: uppercase;
   letter-spacing: 0.2px;
   color: var(--sy-c-text-weak);
 }
 
-.sy-head-brand .injected .rst-other-versions hr {
+.sy-head-actions .injected .rst-other-versions hr {
   border-color: var(--sy-c-divider);
 }
 
-.sy-head-brand .injected form.wy-form input {
+.sy-head-actions .injected form.wy-form input {
   appearance: none;
   width: 100%;
   padding: 6px 12px;
@@ -154,23 +169,16 @@
   background: var(--sy-c-bg-weak);
 }
 
-.sy-head-nav > ul > li {
-  display: inline-block;
-}
-
-.sy-head-nav a {
-  padding: .5rem;
-  font-size: .95rem;
-  font-weight: 500;
-  white-space: nowrap;
-}
-
-.sy-head-nav a:hover {
-  color: rgba(var(--sy-rc-invert), 1);
-}
-
 .sy-head-actions .i-icon {
   font-size: 1.25rem;
+}
+
+.sy-head-brand img {
+  height: 28px;
+}
+
+.sy-head-brand img + strong {
+  display: none;
 }
 
 .sy-head-brand .dark-logo {
@@ -191,4 +199,45 @@
 
 .light .sy-head-brand .dark-logo {
   display: none;
+}
+
+.sy-head-nav .link {
+  display: inline-block;
+}
+
+.sy-head-nav a {
+  padding: .5rem;
+  font-size: .95rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.sy-head-nav a:hover {
+  color: rgba(var(--sy-rc-invert), 1);
+}
+
+.sy-head-nav .link i.chevron {
+  transform: rotate(90deg);
+}
+
+.sy-head-nav .link > ul {
+  position: absolute;
+  height: 0;
+  visibility: hidden;
+  background-color: var(--sy-c-bg);
+  top: var(--sy-s-offset-top);
+  margin-top: -10px;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 12px 32px rgba(var(--sy-rc-invert), .1), 0 2px 6px rgba(var(--sy-rc-invert), .08);
+  z-index: 9;
+}
+
+.sy-head-nav .link > ul._expanded {
+  height: auto;
+  visibility: visible;
+}
+
+.sy-head-nav .link > ul > li {
+  padding: 0.2rem 0;
 }

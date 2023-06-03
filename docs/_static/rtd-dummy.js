@@ -1,8 +1,10 @@
 var READTHEDOCS_DATA = {
-  project: "authlib",
+  project: "mistune",
   version: "latest",
   language: "en",
+  api_host: "https://readthedocs.org",
   proxied_api_host: "https://readthedocs.org",
+  theme: "shibuya",
   features: {
     docsearch_disabled: true,
   },

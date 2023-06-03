@@ -1,4 +1,5 @@
 {%- extends "base.html" -%}
+{%- from "components/nav-links.html" import renderNavLinks with context -%}
 
 {%- block document -%}
 <div class="document">
@@ -12,9 +13,11 @@
       <div class="pt-6 px-6">
         {%- include "components/searchbox.html" %}
       </div>
+      {%- if theme_nav_links -%}
       <div class="pt-3 px-6">
-        {%- include "components/nav-links.html" %}
+        {{ renderNavLinks(theme_nav_links, False) }}
       </div>
+      {%- endif -%}
     {%- endblock %}
   </aside>
 

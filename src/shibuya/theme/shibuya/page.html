@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{%- from "components/nav-links.html" import renderNavLinks with context -%}
 
 {%- block extrahead -%}
   {% include "partials/opengraph.html" %}
@@ -16,11 +17,15 @@
 <div class="sy-page sy-container flex mx-auto">
   <aside id="lside" class="sy-lside md:w-64 md:shrink-0 print:hidden">
     <div class="sy-lside-inner md:sticky">
-      <div class="md:hidden pt-6 px-6">
-        {%- include "components/searchbox2.html" %}
-      </div>
-      <div class="md:hidden pt-3 px-6">
-        {%- include "components/nav-links.html" %}
+      <div class="sy-lside-top md:hidden pt-3 pb-3 px-6">
+        <div class="pt-3">
+          {%- include "components/page-searchbox.html" %}
+        </div>
+        {%- if theme_nav_links -%}
+        <div class="pt-3">
+          {{ renderNavLinks(theme_nav_links, False) }}
+        </div>
+        {%- endif -%}
       </div>
       <div class="sy-scrollbar p-6">
         {%- include "partials/sidebar-links.html" %}

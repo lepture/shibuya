@@ -1,5 +1,27 @@
+.sy-lside-top {
+  background: var(--sy-c-bg-weak);
+  border-bottom: 1px solid var(--sy-c-divider);
+}
+
+.sy-lside-top .searchbox input {
+  border: 1px solid var(--sy-c-divider);
+}
+
 .sy-lside li {
   margin: 0.6rem 0;
+}
+
+.sy-lside li.link > span {
+  font-size: 0.86rem;
+  font-weight: 500;
+  font-family: var(--sy-f-heading);
+  color: var(--sy-c-text-weak);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.sy-lside li.link > ul {
+  margin-left: 1rem;
 }
 
 .sy-lside .sidebar-links {

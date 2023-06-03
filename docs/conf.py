@@ -57,6 +57,24 @@ html_theme_options = {
 
     "nav_links": [
         {
+            "id": "NavExamples",
+            "title": "Examples",
+            "children": [
+                {
+                    "title": "Admonitions",
+                    "url": "writing/admonition",
+                },
+                {
+                    "title": "Code Blocks",
+                    "url": "writing/code",
+                },
+                {
+                    "title": "Autodoc",
+                    "url": "writing/api",
+                },
+            ]
+        },
+        {
             "title": "Branding",
             "url": "/branding"
         },
@@ -93,3 +111,12 @@ if DEBUG_RTD:
     ]
     html_context["READTHEDOCS"] = True
     html_context["current_version"] = "latest"
+    html_context["versions"] = [
+        ("latest", "/en/latest/"),
+        ("stable", "/en/stable/"),
+        ("v3", "/en/v3/"),
+        ("v2.0.5", "/en/v2.0.5/"),
+        ("v2.0.4", "/en/v2.0.4/"),
+        ("v2", "/en/v2/"),
+        ("v0.8.4", "/en/v0.8.4/"),
+    ]

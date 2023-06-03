@@ -1,11 +1,33 @@
-{%- if theme_nav_links %}
+{% macro expandURL(url) %}
+{%- if url.startswith(('https://', 'http://')) -%}
+{{ url }}
+{%- else -%}
+{{ pathto(url) }}
+{%- endif -%}
+{% endmacro %}
+
+{% macro renderNavLinks(links, controls=True) %}
 <ul>
-  {%- for link in theme_nav_links -%}
-    {%- if link.url.startswith(('https://', 'http://')) -%}
-      <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+  {%- for link in links -%}
+    {%- if link.children %}
+      <li class="link">
+        {%- if controls -%}
+          <button type="button" class="js-menu" aria-expanded="false" aria-controls="{{ link.id }}">
+            <span>{{ link.title }}</span>
+            <i class="i-icon chevron"></i>
+          </button>
+        {%- else -%}
+          <span>{{ link.title }}</span>
+        {%- endif -%}
+        <ul {% if controls %}id="{{ link.id }}"{% endif %}>
+          {% for item in link.children %}
+            <li><a href="{{ expandURL(item.url) }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </li>
     {%- else %}
-      <li><a href="{{ pathto(link.url) }}">{{ link.title }}</a></li>
+      <li class="link"><a href="{{ expandURL(link.url) }}">{{ link.title }}</a></li>
     {%- endif -%}
   {%- endfor -%}
 </ul>
-{%- endif -%}
+{% endmacro %}
