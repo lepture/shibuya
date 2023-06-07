@@ -8,16 +8,20 @@
     {% include "components/site-head.html" with context %}
   {%- endblock -%}
 
-  <aside id="lside" class="md:hidden">
+  <aside id="lside" class="sy-lside md:hidden">
     {%- block mobile_navbar -%}
-      <div class="pt-6 px-6">
-        {%- include "components/searchbox.html" %}
+    <div class="sy-lside-inner md:sticky">
+      <div class="sy-lside-top pt-3 pb-3 px-6">
+        <div class="pt-3">
+          {%- include "components/page-searchbox.html" %}
+        </div>
+        {%- if theme_nav_links -%}
+        <div class="pt-3">
+          {{ renderNavLinks(theme_nav_links) }}
+        </div>
+        {%- endif -%}
       </div>
-      {%- if theme_nav_links -%}
-      <div class="pt-3 px-6">
-        {{ renderNavLinks(theme_nav_links) }}
-      </div>
-      {%- endif -%}
+    </div>
     {%- endblock %}
   </aside>
 
