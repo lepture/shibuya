@@ -20,9 +20,9 @@ Good to have
 
 These good things will be added in the future:
 
-- Perfect code highlight style
+- **WIP**: Perfect code highlight style
 - **DONE**: Edit this page link
-- GitHub stars and forks
+- **DONE**: GitHub stars and forks
 - Scroll to top
 
 Design for other extensions
@@ -32,7 +32,7 @@ Make sure it works well with other extensions. Currently integrated with:
 
 - **DONE**: `sphinx-copybutton <https://sphinx-copybutton.readthedocs.io/>`_
 - **DONE**: `sphinx-tabs <https://sphinx-tabs.readthedocs.io/>`_
-- **WIP**: `sphinx-design <https://sphinx-design.readthedocs.io/>`_
+- **DONE**: `sphinx-design <https://sphinx-design.readthedocs.io/>`_
 
 Instant search
 --------------

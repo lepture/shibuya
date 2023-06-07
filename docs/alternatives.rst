@@ -22,3 +22,12 @@ Sphinx documentation tool.
 - Author: Jeremy Maitin-Shepard
 - Source: https://github.com/jbms/sphinx-immaterial/
 - Website: https://jbms.github.io/sphinx-immaterial/
+
+PyData
+------
+
+A clean, Bootstrap-based Sphinx theme by and for the PyData community.
+
+- Auhtor: PyData
+- Source: https://github.com/pydata/pydata-sphinx-theme
+- Website: https://pydata-sphinx-theme.readthedocs.io/
