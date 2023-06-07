@@ -222,7 +222,15 @@
   border-radius: 6px;
 }
 
+.sy-head-nav .link i.external-link {
+  font-size: 68%;
+  opacity: 0.6;
+  color: var(--sy-c-text-weak);
+  margin-left: 2px;
+}
+
 .sy-head-nav .link i.chevron {
+  opacity: 0.6;
   transform: rotate(90deg);
 }
 

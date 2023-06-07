@@ -36,7 +36,13 @@
         </ul>
       </li>
     {%- else %}
-      <li class="link"><a href="{{ expandURL(link.url) }}">{{ link.title }}</a></li>
+      {%- if link.url.startswith(('https://', 'http://')) -%}
+        <li class="link">
+          <a href="{{ link.url }}"><span>{{ link.title }}</span><i class="i-icon external-link"></i></a>
+        </li>
+      {%- else -%}
+        <li class="link"><a href="{{ pathto(link.url) }}">{{ link.title }}</a></li>
+      {%- endif -%}
     {%- endif -%}
   {%- endfor -%}
 </ul>
