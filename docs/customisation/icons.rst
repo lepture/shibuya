@@ -1,4 +1,4 @@
 Icons
 =====
 
-Shibuya theme is icons from `Lucid <https://lucide.dev/>`_
+Shibuya theme is using a subset of `Lucid <https://lucide.dev/>`_ icons.

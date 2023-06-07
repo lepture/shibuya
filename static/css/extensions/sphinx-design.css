@@ -92,3 +92,7 @@
     page-break-inside: avoid;
   }
 }
+
+.yue a.sd-text-wrap {
+  border-bottom: 0;
+}
