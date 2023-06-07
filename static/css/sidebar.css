@@ -20,8 +20,16 @@
   letter-spacing: 0.4px;
 }
 
+.sy-lside li.link .i-icon {
+  display: none;
+}
+
 .sy-lside li.link > ul {
   margin-left: 1rem;
+}
+
+.sy-lside li.link > ul small {
+  display: none;
 }
 
 .sy-lside .sidebar-links {

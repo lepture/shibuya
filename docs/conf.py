@@ -57,20 +57,23 @@ html_theme_options = {
 
     "nav_links": [
         {
-            "id": "NavExamples",
             "title": "Examples",
+            "url": "writing",
             "children": [
                 {
                     "title": "Admonitions",
                     "url": "writing/admonition",
+                    "summary": "Bring the attention of readers",
                 },
                 {
                     "title": "Code Blocks",
                     "url": "writing/code",
+                    "summary": "Display code with highlights",
                 },
                 {
                     "title": "Autodoc",
                     "url": "writing/api",
+                    "summary": "API documentation automatically"
                 },
             ]
         },
