@@ -3,6 +3,15 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2023.6.7
+--------
+
+- Fix ``scroll-margin-top`` for sections
+- Change "edit this page" link
+- Add an option to use your own Ethical Ads publisher ID
+- Update navbar links style
+- Add navbar children links
+
 2023.3.19
 ---------
 
