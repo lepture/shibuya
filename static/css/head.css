@@ -206,6 +206,7 @@
   height: var(--sy-s-navbar-height);
 }
 
+.sy-head-nav button,
 .sy-head-nav a {
   padding: .5rem;
   font-size: .95rem;
