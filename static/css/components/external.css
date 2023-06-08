@@ -68,6 +68,13 @@
   border-radius: 8px;
   padding: 0.8rem 0.8rem 1.6rem;
 }
+#carbonads a {
+  border: 0;
+  font-weight: 400;
+}
+#carbonads img {
+  margin: 0;
+}
 .carbon-wrap {
   display: flex;
   align-items: center;
@@ -102,9 +109,12 @@
 
 .sy-main .carbon-wrap {
   flex-direction: row;
+  align-items: flex-start;
 }
 
 .sy-main .carbon-text {
   text-align: left;
+  margin-top: 0;
   margin-left: 1rem;
+  font-size: 0.86rem;
 }

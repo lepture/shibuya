@@ -22,6 +22,7 @@ These templates are:
    sidebars/localtoc.html
    sidebars/repo-stats.html
    sidebars/edit-this-page.html
+   sidebars/carbon-ads.html
    sidebars/ethical-ads.html
 
 You can include additional templates in the sidebar by adding them to the
@@ -101,11 +102,26 @@ With this configuration, Shibuya will automatically display your GitHub/Gitlab r
 statistics in the right sidebar of your documentation pages, including the number of
 stars, and forks.
 
+Carbon Ads
+----------
+
+Shibuya has built-in native support for `Carbon Ads <https://www.carbonads.net/>`_. By defining
+the Carbon Ads credentials in ``conf.py``, Shibuya theme will display ads on the sidebar.
+
+.. code-block:: python
+
+    html_theme_options = {
+        # ...
+        "carbon_ads_code": "your-carbon-code",
+        "carbon_ads_placement": "your-carbon-placement",
+    }
+
 
 Ethical Ads
 -----------
 
-Use your own **Ethical Ads** publisher ID:
+When using Read the Docs to host your documentation, Ethical Ads will be injected automatically.
+The default publisher for **Ethical Ads** is ``readthedocs``, you can also use your own publisher:
 
 .. code-block:: python
 

@@ -58,6 +58,9 @@ html_theme_options = {
     "twitter_url": "https://twitter.com/lepture",
     "github_url": "https://github.com/lepture/shibuya",
 
+    "carbon_ads_code": "CE7DKK3W",
+    "carbon_ads_placement": "shibuya",
+
     "nav_links": [
         {
             "title": "Examples",

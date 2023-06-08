@@ -48,7 +48,6 @@ html.dark .yue {
 
 .yue a {
   color: var(--yue-c-link-1);
-  text-decoration: underline;
   font-weight: 500;
   text-decoration: none;
   border-bottom: 1px solid var(--yue-c-link-border-1);
