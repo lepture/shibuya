@@ -3,6 +3,14 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2023.6.8
+--------
+
+- Add external-link icon for external nav links
+- Add highlight background color for search results
+- Fix search results page nav links for mobile devices
+- Add native built-in carbon ads
+
 2023.6.7
 --------
 
