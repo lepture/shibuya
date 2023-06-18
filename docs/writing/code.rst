@@ -1,3 +1,5 @@
+:description: Well designed code highlights on Shibuya Sphinx theme.
+
 Code Blocks
 ===========
 

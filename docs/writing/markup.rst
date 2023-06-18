@@ -1,3 +1,5 @@
+:description: General markups and how it looks like on Shibuya Sphinx theme.
+
 Markups
 =======
 

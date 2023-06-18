@@ -1,3 +1,5 @@
+:description: Stability policy for Shibuya Sphinx theme updates and releases.
+
 Stability Policy
 ================
 

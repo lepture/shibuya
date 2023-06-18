@@ -1,3 +1,5 @@
+:description: How API documentation looks like on Shibuya Sphinx theme.
+
 API Documentation
 =================
 

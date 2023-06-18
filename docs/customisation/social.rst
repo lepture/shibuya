@@ -1,3 +1,5 @@
+:description: Adding social networks of GitHub, Twitter, and etc. on your website.
+
 Social Network
 ==============
 

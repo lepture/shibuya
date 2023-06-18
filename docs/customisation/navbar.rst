@@ -1,3 +1,5 @@
+:description: How to add links on navbar for your documentation website?
+
 .. _nav-links:
 
 Navbar Links

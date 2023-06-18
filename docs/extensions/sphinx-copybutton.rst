@@ -1,3 +1,5 @@
+:description: Sphinx copybutton works well with Shibuya Sphinx theme.
+
 .. _sphinx-copybutton:
 
 sphinx-copybutton

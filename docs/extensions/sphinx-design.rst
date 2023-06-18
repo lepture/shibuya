@@ -1,3 +1,5 @@
+:description: Sphinx design extension looks awesome on Shibuya Sphinx theme.
+
 .. _sphinx-design:
 
 sphinx-design

@@ -1,3 +1,5 @@
+:description: Here is the guide on how to install Shibuya Sphinx theme.
+
 Installation
 ============
 

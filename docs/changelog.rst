@@ -1,3 +1,5 @@
+:description: Here lists the releases notes of Shibuya Sphinx theme.
+
 Changelog
 =========
 

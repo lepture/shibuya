@@ -1,3 +1,5 @@
+:description: Other Sphinx themes that you would like to use.
+
 Alternatives
 ============
 

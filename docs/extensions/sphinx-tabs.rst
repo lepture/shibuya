@@ -1,3 +1,5 @@
+:description: Shibuya theme looks pretty for sphinx-tabs extension.
+
 .. _sphinx-tabs:
 
 sphinx-tabs

@@ -1,4 +1,4 @@
-:description: Markup of lists in Sphinx, and how it looks like in Shibuya.
+:description: Markup of lists in Sphinx, and how it looks like on Shibuya.
 
 Lists
 =====

@@ -1,4 +1,5 @@
-====
+:description: Shibuya sphinx theme displays math pretty well.
+
 Math
 ====
 

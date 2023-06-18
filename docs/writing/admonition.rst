@@ -1,3 +1,5 @@
+:description: Admonitions are a great way to bring the attention of readers.
+
 Admonitions
 ===========
 
