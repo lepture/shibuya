@@ -3,6 +3,13 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2023.6.18
+---------
+
+- Fix edit this page link
+- Fix nav links style
+- Update style for :ref:`sphinx-jupyter`
+
 2023.6.8
 --------
 

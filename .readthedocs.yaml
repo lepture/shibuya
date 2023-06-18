@@ -9,6 +9,7 @@ build:
       - pip install shibuya
 
 sphinx:
+  builder: dirhtml
   configuration: docs/conf.py
 
 python:
