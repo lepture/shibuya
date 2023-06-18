@@ -4,6 +4,23 @@ Jupyter Sphinx
 Jupyter-sphinx is a Sphinx extension that executes embedded code
 in a Jupyter kernel, and embeds outputs of that code in the document.
 
+Install
+-------
+
+.. code-block:: bash
+
+    pip install jupyter-sphinx
+
+Then, add the extension to your ``conf.py``:
+
+.. code-block:: python
+    :caption: conf.py
+
+    extensions = [
+        # ...
+        "jupyter_sphinx",
+    ]
+
 
 Usage
 -----

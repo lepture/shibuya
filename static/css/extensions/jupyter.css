@@ -43,5 +43,48 @@
 }
 
 .yue .jupyter_container .stderr {
-  background-color: var(--syntax-markup-deleted-bg);
+  background-color: var(--stderr-bg);
+}
+
+html.light .stderr {
+  --stderr-bg: #ff8d8d;
+}
+
+html.dark .stderr {
+  --stderr-bg: #e02323;
+}
+
+html.light .jupyter_container .cell_output {
+  --syntax-pre-bg: #f3f1fa;
+  --syntax-cap-bg: #eae7f7;
+  --syntax-text: #24292f;
+  --syntax-meta: #a6a2ae;
+  --syntax-comment: #6e7781;
+  --syntax-constant: #0550ae;
+  --syntax-entity: #268bd2;
+  --syntax-property: #8250df;
+  --syntax-definition: #24292f;
+  --syntax-tag: #085;
+  --syntax-builtin: #b58900;
+  --syntax-keyword: #cf222e;
+  --syntax-exception: #e6212e;
+  --syntax-string: #0a3069;
+  --syntax-regexp: #e40;
+  --syntax-variable: #a4480f;
+  --syntax-invalid-illegal-text: #f6f8fa;
+  --syntax-invalid-illegal-bg: #82071e;
+  --syntax-markup-heading: #0550ae;
+  --syntax-markup-italic: #24292f;
+  --syntax-markup-bold: #24292f;
+  --syntax-markup-deleted-text: #82071e;
+  --syntax-markup-deleted-bg: #FFEBE9;
+  --syntax-markup-inserted-text: #116329;
+  --syntax-markup-inserted-bg: #dafbe1;
+  --syntax-markup-changed-text: #953800;
+  --syntax-markup-changed-bg: #ffd8b5;
+  --syntax-markup-ignored-text: #eaeef2;
+  --syntax-markup-ignored-bg: #0550ae;
+  --syntax-meta-diff-range: #8250df;
+  --syntax-highlight-bg: #eee4ff;
+  --syntax-special-bg: #dccafa;
 }

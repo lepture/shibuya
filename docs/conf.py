@@ -16,6 +16,7 @@ extensions = [
     "sphinx.ext.viewcode",
     "sphinx_copybutton",
     "sphinx_design",
+    "jupyter_sphinx",
 ]
 todo_include_todos = True
 
