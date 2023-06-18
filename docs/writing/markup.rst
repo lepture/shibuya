@@ -24,7 +24,7 @@ An inline code is surrounded by double ``backticks``::
 Links
 -----
 
-.. code-block:: rst
+.. code-block:: ReST
   :caption: links
   :class: demo-code
 
@@ -57,7 +57,7 @@ Subscript and Superscript
 
 A :sub:`subscript` and :sup:`superscript` can be written with:
 
-.. code-block:: rst
+.. code-block:: ReST
 
    :sub:`text in subscript`
 
@@ -69,7 +69,7 @@ A :sub:`subscript` and :sup:`superscript` can be written with:
 Abbreviations
 ~~~~~~~~~~~~~
 
-.. code-block:: rst
+.. code-block:: ReST
 
   You can also include abbreviations like
   :abbr:`HTML (Hyper Text Markup Language)`.
@@ -80,7 +80,7 @@ You can also include abbreviations like
 Keyboard
 ~~~~~~~~
 
-.. code-block:: rst
+.. code-block:: ReST
 
    :kbd:`Tab` means indent, :kbd:`Shift-Tab` means outdent.
    :kbd:`⌘+⇧+P` is power shortcuts in vscode.
@@ -136,7 +136,7 @@ Citations
 Citations are identical to footnotes except that they use only non-numeric
 labels such as ``[note]`` or ``[GVR2001]``.
 
-.. code-block:: rst
+.. code-block:: ReST
 
    Here is a citation reference: [CIT2002]_.
 

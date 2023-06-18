@@ -80,6 +80,15 @@ Explore the following sections to discover more about our theme and its features
     writing/index
 
 .. toctree::
+    :caption: Extensions
+    :hidden:
+
+    extensions/sphinx-copybutton
+    extensions/sphinx-design
+    extensions/sphinx-tabs
+    extensions/jupyter-sphinx
+
+.. toctree::
     :caption: Development
     :hidden:
 

@@ -78,6 +78,9 @@ html.dark {
   line-height: 1.72;
   color: rgb(var(--color-rgb));
   background-color: rgba(var(--color-rgb), var(--admonition-head-opacity));
+
+  --yue-c-code: rgb(var(--color-rgb));
+  --yue-c-bold: rgb(var(--color-rgb));
 }
 
 .admonition-title:before {

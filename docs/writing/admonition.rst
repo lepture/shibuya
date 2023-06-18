@@ -14,7 +14,7 @@ syntax in reST accepts no arguments, and most of the time no options:
 
 .. _`admonitions in reST`: https://docutils.sourceforge.io/docs/ref/rst/directives.html#admonitions
 
-.. code-block:: rst
+.. code-block:: ReST
 
     .. admonition-name::
        content in admonition

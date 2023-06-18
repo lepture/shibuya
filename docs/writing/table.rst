@@ -8,7 +8,7 @@ Simple Table
 
 Very simple tables can be created with the syntax bellow:
 
-.. code-block:: rst
+.. code-block:: ReST
 
     =====  =====  ======
       A      B    A or B
@@ -30,7 +30,7 @@ True   True   True
 
 And it can be a little complex with multiple headers:
 
-.. code-block:: rst
+.. code-block:: ReST
 
     =====  =====  ======
        Inputs     Output
@@ -61,7 +61,7 @@ Grid Table
 The `grid table <https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#grid-tables>`_
 syntax can create more complex tables:
 
-.. code-block:: rst
+.. code-block:: ReST
 
   +------------+------------+-----------+
   | Header 1   | Header 2   | Header 3  |
@@ -93,7 +93,7 @@ Table Directive
 There is also a `table directive <https://docutils.sourceforge.io/docs/ref/rst/directives.html#table>`_,
 which can wrap the above tables with many options.
 
-.. code-block:: rst
+.. code-block:: ReST
 
   .. table:: Truth table for "not"
      :widths: auto
@@ -120,7 +120,7 @@ CSV Table
 
 You can also use a ``csv-table`` directive to create tables:
 
-.. code-block:: rst
+.. code-block:: ReST
 
     .. csv-table:: Frozen Delights!
       :header: "Treat", "Quantity", "Description"
@@ -145,7 +145,7 @@ List Table
 
 Or with a ``list-table`` directive:
 
-.. code-block:: rst
+.. code-block:: ReST
 
     .. list-table:: Frozen Delights!
       :widths: 15 10 30

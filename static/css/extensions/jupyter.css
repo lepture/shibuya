@@ -1,0 +1,47 @@
+.yue .jupyter_container {
+  background-color: var(--sy-c-bg);
+  border: 3px solid var(--sy-c-border);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: none;
+}
+
+.document .yue .jupyter_container div[class^="highlight"] {
+  padding: 0;
+}
+
+.yue .jupyter_container div.cell_input {
+  background-color: var(--syntax-pre-bg);
+  border: 0;
+  border-radius: 0;
+}
+
+.yue .jupyter_container div.code_cell pre {
+  padding: 0;
+}
+
+.jupyter_container div.cell_output > .thebelab-output,
+.jupyter_container div.cell_output > .output,
+.jupyter_container div.cell_output > .stderr,
+.jupyter_container div.cell_output > .widget-subarea {
+  padding: 0.5rem;
+}
+
+/* reset code block style */
+.jupyter_container div.code_cell .highlight > pre {
+  padding: 1rem;
+}
+
+.jupyter_container div.code_cell  .highlight .hll {
+  margin-left: -1rem;
+  margin-right: -1rem;
+  padding: 0 1rem;
+}
+
+.jupyter_container div.code_cell .highlight .linenos {
+  margin-right: 0.8rem;
+}
+
+.yue .jupyter_container .stderr {
+  background-color: var(--syntax-markup-deleted-bg);
+}

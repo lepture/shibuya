@@ -190,7 +190,7 @@ a literal block where the text is parsed for inline markup.
 
 For example:
 
-.. code-block:: rst
+.. code-block:: ReST
 
   .. parsed-literal::
 

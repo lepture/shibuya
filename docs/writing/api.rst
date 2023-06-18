@@ -3,7 +3,7 @@ API Documentation
 
 Here is an example of ``autofunction``, ``autoclass`` directives.
 
-.. code-block:: rst
+.. code-block:: ReST
 
     .. autofunction:: sphinx.versioning.merge_doctrees
         :noindex:
