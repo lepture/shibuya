@@ -83,6 +83,10 @@ html.dark {
   --yue-c-bold: rgb(var(--color-rgb));
 }
 
+.admonition p.admonition-title svg {
+  display: inline-block;
+}
+
 .admonition-title:before {
   position: absolute;
   content: '';

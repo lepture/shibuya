@@ -17,6 +17,7 @@ extensions = [
     "sphinx_copybutton",
     "sphinx_design",
     "jupyter_sphinx",
+    "sphinx_togglebutton",
 ]
 todo_include_todos = True
 
