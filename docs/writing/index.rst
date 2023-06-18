@@ -15,4 +15,3 @@ Learn the syntax of reStructuredText and examine how it is formatted.
     media
     api
     meta
-    extensions

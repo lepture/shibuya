@@ -12,19 +12,9 @@ pip install
 Shibuya is conveniently available as a Python package on PyPI and can be easily
 installed using pip.
 
-.. tab-set::
+.. code-block:: shell
 
-    .. tab-item:: Stable
-
-        .. code-block:: shell
-
-            pip install shibuya
-
-    .. tab-item:: Include pre-releases
-
-        .. code-block:: shell
-
-            pip install --pre shibuya
+    pip install shibuya
 
 .. hint::
    If you're new to Sphinx, we recommend reading the
