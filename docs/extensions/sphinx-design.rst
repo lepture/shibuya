@@ -1,7 +1,14 @@
+.. _sphinx-design:
+
 sphinx-design
 =============
 
 ``sphinx-design`` extension add many components for Sphinx documentation.
+
+**Documentation**: https://sphinx-design.readthedocs.io/
+
+Install
+-------
 
 .. code-block:: bash
 
@@ -16,8 +23,6 @@ Then, add the extension to your ``conf.py``:
         # ...
         "sphinx_design",
     ]
-
-**Documentation**: https://sphinx-design.readthedocs.io/
 
 Examples
 --------

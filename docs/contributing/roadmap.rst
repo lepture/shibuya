@@ -12,27 +12,28 @@ Perfect on RTD
 
 Make it perfect look on RTD, which means I'll design on:
 
-- **DONE**: Ethical Ads
-- **DONE**: Pretty versions display
+- :bdg-success:`DONE` Ethical Ads
+- :bdg-success:`DONE` Pretty versions display
 
 Good to have
 ------------
 
 These good things will be added in the future:
 
-- **WIP**: Perfect code highlight style
-- **DONE**: Edit this page link
-- **DONE**: GitHub stars and forks
-- Scroll to top
+- :bdg-info:`WIP` Perfect code highlight style
+- :bdg-success:`DONE` Edit this page link
+- :bdg-success:`DONE` GitHub stars and forks
+- :bdg-warning:`TODO` Scroll to top
 
 Design for other extensions
 ---------------------------
 
 Make sure it works well with other extensions. Currently integrated with:
 
-- **DONE**: `sphinx-copybutton <https://sphinx-copybutton.readthedocs.io/>`_
-- **DONE**: `sphinx-tabs <https://sphinx-tabs.readthedocs.io/>`_
-- **DONE**: `sphinx-design <https://sphinx-design.readthedocs.io/>`_
+- :bdg-success:`DONE` :ref:`sphinx-copybutton`
+- :bdg-success:`DONE` :ref:`sphinx-tabs`
+- :bdg-success:`DONE` :ref:`sphinx-design`
+- :bdg-success:`DONE` :ref:`sphinx-jupyter`
 
 Instant search
 --------------

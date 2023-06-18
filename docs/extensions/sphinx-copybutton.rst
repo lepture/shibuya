@@ -1,4 +1,6 @@
-Sphinx Copybutton
+.. _sphinx-copybutton:
+
+sphinx-copybutton
 =================
 
 Add a little “copy” button to the right of your code blocks. This extension

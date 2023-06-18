@@ -26,7 +26,27 @@ code blocks into dark mode, you can update ``dark_code`` in ``html_theme_options
 There is also a :ref:`page level <page-dark-code>` configuration via ``:dark_code:``
 meta tag. If you don't want to enable it for the whole site, you can use the meta tag.
 
-Variable Name Conventions
+Theme color
+-----------
+
+Shibuya theme comes with a default theme color of purple, which is defined with CSS
+variable of ``--sy-rc-theme``. You can update the theme color in ``conf.py``.
+
+.. code-block:: python
+    :caption: conf.py
+
+    html_theme_options = {
+        "light_css_variables": {
+          "--sy-rc-theme": "143, 118, 214",
+        },
+        "dark_css_variables": {
+          "--sy-rc-theme": "130, 80, 223",
+        },
+    }
+
+.. note:: Theme color is defined in **RGB** mode.
+
+Variable name conventions
 -------------------------
 
 Our naming conventions for Shibuya theme-related CSS variables are as follows:
@@ -48,18 +68,6 @@ Our naming conventions for Shibuya theme-related CSS variables are as follows:
 
 By following these naming conventions, you can easily identify and customize
 the CSS variables for your Shibuya-themed documentation.
-
-In conf.py, you have the ability to change the CSS variables for both
-light and dark modes::
-
-    html_theme_options = {
-        "light_css_variables": {
-          "--sy-rc-theme": "143, 118, 214",
-        },
-        "dark_css_variables": {
-          "--sy-rc-theme": "130, 80, 223",
-        },
-    }
 
 Available CSS Variables
 -----------------------

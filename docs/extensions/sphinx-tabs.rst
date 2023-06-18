@@ -1,8 +1,10 @@
+.. _sphinx-tabs:
+
 sphinx-tabs
 ===========
 
-`sphinx-tabs <https://github.com/executablebooks/sphinx-tabs>`_ is an extension
-maintained by Executable Books. This extension can create tabbed content.
+sphinx-tab is an extension maintained by Executable Books.
+This extension can create tabbed content.
 
 **Documentation**: https://sphinx-tabs.readthedocs.io/
 
@@ -23,7 +25,7 @@ Then, add the extension to your ``conf.py``:
         "sphinx_tabs.tabs",
     ]
 
-Markup Syntax
+Markup syntax
 -------------
 
 .. code-block:: none
