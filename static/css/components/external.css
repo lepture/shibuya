@@ -1,27 +1,3 @@
-/* sphinx-copybutton */
-.yue button.copybtn {
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  border: none;
-  color: var(--sy-c-text);
-}
-
-.yue button.copybtn > svg {
-  width: 1.4rem;
-  height: 1.4rem;
-}
-
-.yue .highlight button.copybtn:hover {
-  background-color: transparent;
-  color: var(--sy-c-text-weak);
-}
-
-.yue .o-tooltip--left:after {
-  background-color: transparent;
-  color: var(--sy-c-text);
-}
-
 /* ethical ads on rtd */
 #ethical-ad-placement .ethical-sidebar {
   position: relative;

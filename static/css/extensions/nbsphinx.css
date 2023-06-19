@@ -1,0 +1,7 @@
+.nbinput .highlight {
+  --radius: 1px;
+}
+
+.yue div.nbinput.container div.input_area {
+  border-color: var(--sy-c-border);
+}

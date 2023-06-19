@@ -88,6 +88,7 @@ Explore the following sections to discover more about our theme and its features
     extensions/sphinx-tabs
     extensions/jupyter-sphinx
     extensions/sphinx-togglebutton
+    extensions/nbsphinx
 
 .. toctree::
     :caption: Development

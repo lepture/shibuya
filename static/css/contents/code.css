@@ -14,7 +14,6 @@ pre.literal-block {
 }
 
 .highlight > pre {
-  display: grid;
   line-height: 1.48;
   padding: var(--margin);
   font-size: 0.96rem;
@@ -50,4 +49,8 @@ pre.literal-block {
 .code-block-caption + div > .highlight > pre {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+div[class^="highlight"] > .highlight > pre {
+  display: grid;
 }
