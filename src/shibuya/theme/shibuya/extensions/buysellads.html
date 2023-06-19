@@ -1,0 +1,24 @@
+<div class="bsa"></div>
+<script src="//m.servedby-buysellads.com/monetization.custom.js"></script>
+<script>
+(function() {
+  if (typeof _bsa !== 'undefined' && _bsa) {
+    _bsa.init('custom', '{{ buysellads_code }}', 'placement:{{ buysellads_placement }}', {
+      target: '.bsa',
+      id: 'bsa-bar',
+      template: `
+<a class="bsa-bar" style="background-color: ##backgroundColor##; color: ##textColor##" href="##link##" rel="sponsored noopener" target="_blank" title="##company## — ##tagline##">
+  <div class="bsa-main">
+    <img class="bsa-img" src="##logo##">
+    <div class="bsa-details" style="color: ##textColor##">
+      <span class="bsa-tagline">Sponsored by ##company##</span>
+      <span class="bsa-desc">##description##</span>
+    </div>
+    <span class="bsa-cta" style="color: ##ctaTextColor##; background-color: ##ctaBackgroundColor##;">##callToAction##</span>
+  </div>
+</a>
+`
+    });
+  }
+})();
+</script>
