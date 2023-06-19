@@ -34,6 +34,8 @@ Make sure it works well with other extensions. Currently integrated with:
 - :bdg-success:`DONE` :ref:`sphinx-tabs`
 - :bdg-success:`DONE` :ref:`sphinx-design`
 - :bdg-success:`DONE` :ref:`sphinx-jupyter`
+- :bdg-success:`DONE` :ref:`sphinx-togglebutton`
+- :bdg-success:`DONE` :ref:`nbsphinx`
 
 Instant search
 --------------
