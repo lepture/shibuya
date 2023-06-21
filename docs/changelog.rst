@@ -5,6 +5,14 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2023.6.21
+---------
+
+- Add support for ``sphinx-togglebutton`` extension
+- Add support for ``nbsphinx`` extension
+- Rename template ``partials/sidebar-links`` to ``partials/globaltoc-above``
+- Add template ``extensions/buysellads``
+
 2023.6.18
 ---------
 
