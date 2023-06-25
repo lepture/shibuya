@@ -1,3 +1,14 @@
+html.light {
+  --sig-property: var(--syntax-light-keyword);
+  --sig-name: var(--syntax-light-property);
+  --sig-typehint: var(--syntax-light-constant);
+}
+html.dark {
+  --sig-property: var(--syntax-dark-keyword);
+  --sig-name: var(--syntax-dark-property);
+  --sig-typehint: var(--syntax-dark-constant);
+}
+
 dt.sig {
   position: relative;
   font-size: 0.92rem;
@@ -22,7 +33,7 @@ dt.sig + dd {
 }
 
 dt.sig > em.property:first-child {
-  color: var(--syntax-keyword);
+  color: var(--sig-property);
 }
 
 dl.field-list a {
@@ -49,7 +60,7 @@ em.sig-param {
 
 span.sig-prename,
 span.sig-name {
-  color: var(--syntax-property);
+  color: var(--sig-name);
 }
 
 span.sig-name {
@@ -62,7 +73,7 @@ span.sig-return-icon {
 
 span.sig-return-typehint,
 span.sig-return-typehint > a {
-  color: var(--syntax-constant);
+  color: var(--sig-typehint);
 }
 
 span.sig-paren,
