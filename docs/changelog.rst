@@ -5,6 +5,14 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2023.6.25
+---------
+
+- Apply ``dark_css_variables`` in templates
+- Fix code block style in dark code mode for sphinx design
+- Fix colors for API docs in dark code mode
+- Fix stderr background for ``nbsphinx``
+
 2023.6.21
 ---------
 

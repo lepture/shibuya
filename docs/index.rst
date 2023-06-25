@@ -86,8 +86,8 @@ Explore the following sections to discover more about our theme and its features
     extensions/sphinx-copybutton
     extensions/sphinx-design
     extensions/sphinx-tabs
-    extensions/jupyter-sphinx
     extensions/sphinx-togglebutton
+    extensions/jupyter-sphinx
     extensions/nbsphinx
 
 .. toctree::
