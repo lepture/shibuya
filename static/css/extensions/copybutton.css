@@ -3,7 +3,7 @@
   justify-content: center;
   background-color: transparent;
   border: none;
-  color: var(--sy-c-text);
+  color: var(--syntax-text);
 }
 
 .yue button.copybtn > svg {
@@ -13,10 +13,10 @@
 
 .yue .highlight button.copybtn:hover {
   background-color: transparent;
-  color: var(--sy-c-text-weak);
+  color: var(--syntax-meta);
 }
 
 .yue .o-tooltip--left:after {
   background-color: transparent;
-  color: var(--sy-c-text);
+  color: var(--syntax-text);
 }
