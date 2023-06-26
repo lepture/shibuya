@@ -92,6 +92,7 @@ dt.sig > a.internal:before {
   white-space: pre;
 }
 
+/* viewcode */
 .viewcode-block {
   position: relative;
 }
@@ -100,4 +101,25 @@ dt.sig > a.internal:before {
   position: absolute;
   top: -1.5rem;
   font-size: 0.8rem;
+}
+
+/* modindex table */
+.yue .modindex-jumpbox {
+  border-top: 1px solid var(--sy-c-border);
+  border-bottom: 1px solid var(--sy-c-border);
+  padding: 2px 0.4rem;
+}
+
+.yue table.modindextable td:first-of-type {
+  width: 28px;
+}
+
+.yue table.modindextable img.toggler {
+  margin: 0;
+}
+
+.yue table.modindextable tr.cap {
+  font-size: 1.12rem;
+  background: var(--sy-c-bg-weak);
+  font-family: var(--sy-f-mono);
 }

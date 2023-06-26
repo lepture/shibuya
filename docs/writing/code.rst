@@ -164,25 +164,6 @@ used.
 
     mistune.html("Hello **Shibuya**")
 
-The ``code`` directive also accepts a ``number-lines`` option to show the
-code line numbers, it is the same with ``linenos`` in ``code-block`` directive.
-Here is an example:
-
-.. code-block:: none
-
-   .. code:: python
-      :number-lines:
-
-      import mistune
-
-      mistune.html("Hello **Shibuya**")
-
-.. code:: python
-    :number-lines:
-
-    import mistune
-
-    mistune.html("Hello **Shibuya**")
 
 ``parsed-literal`` directive
 ----------------------------
