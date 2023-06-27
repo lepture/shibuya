@@ -5,6 +5,12 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2023.6.27
+---------
+
+- Fix style of copybutton for dark code mode
+- Fix style for modindex page
+
 2023.6.25
 ---------
 
