@@ -86,6 +86,7 @@
 @media (min-width: 1280px) {
   .sy-main {
     width: calc(100% - 32rem);
+    max-width: none;
   }
   .sy-rside .sy-scrollbar {
     max-height: calc(100vh - var(--sy-s-offset-top) - env(safe-area-inset-bottom));
