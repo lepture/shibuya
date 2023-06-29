@@ -20,6 +20,6 @@
   color: var(--sy-c-link);
 }
 
-.localtoc > ul > li > ul {
+.localtoc > ul > li ul {
   padding-left: 0.8rem;
 }

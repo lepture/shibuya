@@ -1,5 +1,6 @@
 .yue dl.simple > dd > p,
-.yue ul.simple > li > p {
+.yue ul.simple > li > p,
+.yue ol.simple > li > p {
   margin: 0;
 }
 
