@@ -24,6 +24,7 @@ These good things will be added in the future:
 - :bdg-success:`DONE` Edit this page link
 - :bdg-success:`DONE` GitHub stars and forks
 - :bdg-warning:`TODO` Scroll to top
+- :bdg-warning:`TODO` Breadcrumbs
 
 Design for other extensions
 ---------------------------
