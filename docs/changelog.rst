@@ -5,6 +5,13 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2023.6.30
+---------
+
+- Fix normalize toc with ``xml.etree``
+- Fix local toc style
+- Fix style of main part for large screen
+
 2023.6.27
 ---------
 
