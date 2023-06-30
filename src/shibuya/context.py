@@ -1,6 +1,8 @@
 import re
 from typing import Dict, Any
 from pathlib import Path
+import xml.etree.ElementTree as ET
+
 
 CSS_PATH = Path(__file__).parent / "css"
 
@@ -28,8 +30,16 @@ def normalize_pageurl(pageurl: str, builder: str):
 
 
 def normalize_toc(toc: str):
-    toc = re.sub(r'^<ul>\n<li>.*?</a>', '', toc)
-    toc = re.sub(r'</li>\n</ul>$', '', toc)
+    if not toc:
+        return toc
+
+    root = ET.fromstring(toc)
+    if len(root) != 1:
+        return toc
+
+    child = root[0]
+    if len(child) == 2 and child[1].tag == "ul":
+        return ET.tostring(child[1]).decode("utf-8")
     return toc
 
 

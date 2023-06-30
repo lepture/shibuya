@@ -21,6 +21,7 @@ extensions = [
     "nbsphinx",
 ]
 todo_include_todos = True
+jupyter_sphinx_thebelab_config = "html"
 
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
