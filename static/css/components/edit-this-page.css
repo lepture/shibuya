@@ -1,0 +1,25 @@
+.edit-this-page {
+  border-top: 1px solid var(--sy-c-divider);
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.repo-stats + .edit-this-page {
+  border-top: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.edit-this-page a {
+  color: var(--sy-c-text-weak);
+}
+
+.edit-this-page a:hover {
+  color: var(--sy-c-text);
+}
+
+.edit-this-page a:after {
+  content: " →";
+}

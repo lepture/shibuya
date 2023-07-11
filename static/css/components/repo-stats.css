@@ -1,0 +1,20 @@
+.repo-stats {
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+  border-top: 1px solid var(--sy-c-divider);
+  border-bottom: 1px solid var(--sy-c-divider);
+}
+
+.repo-stats-count {
+  color: var(--sy-c-text-weak);
+}
+
+.repo-stats:hover .repo-stats-count {
+  color: var(--sy-c-text);
+}
+
+.repo-stats strong {
+  font-weight: 500;
+  font-family: var(--sy-f-mono);
+  color: inherit;
+}

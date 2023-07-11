@@ -23,6 +23,9 @@
           {{ toctree(collapse=False, titles_only=True, includehidden=True) }}
         </div>
       </div>
+      {% if READTHEDOCS %}
+      <div class="sy-lside-bottom px-6" id="readthedocs-embed-flyout"></div>
+      {% endif %}
     </div>
   </aside>
   <div class="lside-overlay js-menu" role="button" aria-label="Close left sidebar" aria-controls="lside" aria-expanded="false"></div>
@@ -42,7 +45,7 @@
   <main class="sy-main w-full max-sm:max-w-full print:pt-6">
     {% include "components/breadcrumbs.html" %}
     <div class="flex flex-col break-words justify-between">
-      <div class="min-w-0 max-w-6xl px-6 pb-6 pt-6 xl:px-12">
+      <div class="min-w-0 max-w-6xl px-6 pb-6 pt-8 xl:px-12">
         <article class="yue{% if dark_code %} dark-code{% endif %}" role="main">
           {% block content %}{{ body }}{% endblock %}
         </article>

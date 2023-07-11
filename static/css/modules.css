@@ -2,6 +2,8 @@
 @import "./components/search.css";
 @import "./components/container.css";
 @import "./components/external.css";
+@import "./components/repo-stats.css";
+@import "./components/edit-this-page.css";
 
 @import "./layout/head.css";
 @import "./layout/foot.css";

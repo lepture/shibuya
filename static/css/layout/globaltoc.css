@@ -1,3 +1,7 @@
+.globaltoc {
+  padding-bottom: 20px;
+}
+
 .globaltoc .caption {
   font-size: 0.86rem;
   font-weight: 500;

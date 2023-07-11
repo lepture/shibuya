@@ -1,107 +1,93 @@
-.sy-head-extra > .rst-versions {
-  position: relative;
-  width: auto;
-  background: transparent;
+.sy-lside {
+  --height: 42px;
+}
+
+.sy-lside-bottom {
+  position: sticky;
+  bottom: 0;
+  padding: 0;
+  border-top: 1px solid var(--sy-c-divider);
+  background-color: var(--sy-c-bg);
+  --tw-shadow: 0 -12px 16px var(--sy-c-bg);
+  box-shadow: var(--tw-ring-offset-shadow,0 0 transparent),var(--tw-ring-shadow,0 0 transparent),var(--tw-shadow);
+}
+
+.sy-lside .rst-versions {
+  position: static;
+  width: 100%;
+  background-color: var(--sy-c-bg-weak);
+  font-family: var(--sy-f-text);
+}
+
+.sy-lside .rst-versions a {
+  color: var(--sy-c-link);
+}
+
+.sy-lside .rst-versions .rst-current-version {
+  background-color: var(--sy-c-bg);
+  color: var(--sy-c-text);
+  padding: 0 1rem;
+  height: var(--height);
+  line-height: var(--height);
+}
+
+.sy-lside .rst-versions.rst-badge .rst-current-version {
+  text-align: left;
+  font-size: 0.94rem;
+  padding: 0 1rem;
+  height: var(--height);
+  line-height: var(--height);
+}
+
+.sy-lside .rst-versions .rst-current-version .fa {
   color: var(--sy-c-text);
 }
 
-.sy-head-extra > .rst-versions > label {
-  display: inline-block;
-  cursor: pointer;
+.sy-lside .rst-versions.rst-badge.shift-up .rst-current-version {
+  text-align: left;
+}
+.sy-lside .rst-versions.rst-badge.shift-up .rst-current-version .fa-book {
+  float: none
+}
+
+.sy-lside .rst-other-versions {
   font-size: 0.86rem;
-  font-weight: 500;
-  background-color: var(--sy-c-bg-weak);
-  border-radius: 2rem;
-  color: var(--sy-c-text-weak);
-  padding: 0.24rem 1rem;
-}
-
-.sy-head-extra > .rst-versions > label:hover {
-  background-color: rgba(var(--sy-rc-invert), .08);
-}
-
-.sy-head-extra > .rst-versions > label .i-icon {
-  transform: rotate(90deg);
-}
-
-.sy-head-extra input + .rst-other-versions {
-  position: absolute;
-  display: none;
-  padding: 0;
-  top: 2.4rem;
-  width: 300px;
-  background-color: var(--sy-c-bg);
-  border-radius: 6px;
-  box-shadow: 0 0 3px rgba(var(--sy-rc-invert), 0.1), 0 0 2px rgba(var(--sy-rc-invert), 0.2) inset;
-}
-
-@media (max-width: 767px) {
-  .sy-head-extra input + .rst-other-versions {
-    right: -4rem;
-  }
-}
-
-.sy-head-extra input:checked + .rst-other-versions {
-  display: block;
-}
-
-.sy-head-extra .rst-other-versions > ul > li + li {
   border-top: 1px solid var(--sy-c-divider);
 }
 
-.sy-head-extra .rst-other-versions > ul > li > a {
-  display: block;
-  padding: 0.5rem 1rem;
-  color: var(--sy-c-text);
-}
-
-.sy-head-extra .rst-other-versions > ul > li > a:hover {
-  color: var(--sy-c-link);
-  background: var(--sy-c-bg-weak);
-}
-
-.sy-head-extra .injected .rst-versions {
-  position: static;
-  color: var(--sy-c-text);
-  background-color: transparent;
-}
-
-.sy-head-extra .injected .rst-versions a {
-  color: var(--sy-c-text) !important;
-}
-
-.sy-head-extra .injected .rst-versions a:hover {
-  color: var(--sy-c-link) !important;
-}
-
-.sy-head-extra .injected .rst-current-version {
-  display: none !important;
-  border-radius: 6px;
-}
-
-.sy-head-extra .injected .rst-other-versions {
-  display: block;
-}
-
-.sy-head-extra .injected .rst-other-versions dt {
+.sy-lside .rst-other-versions dt {
   font-size: 0.68rem;
   font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.2px;
+  padding: 4px 6px;
   color: var(--sy-c-text-weak);
 }
 
-.sy-head-extra .injected .rst-other-versions hr {
-  border-color: var(--sy-c-divider);
+.sy-lside .rst-versions .rst-other-versions dd a {
+  color: var(--sy-c-text);
 }
 
-.sy-head-extra .injected form.wy-form input {
-  appearance: none;
+.sy-lside .rst-versions .rst-other-versions dd a:hover {
+  text-decoration: underline;
+  color: var(--sy-c-link);
+}
+
+.sy-lside .rst-versions input {
   width: 100%;
   padding: 6px 12px;
   font-size: 0.92rem;
   font-family: var(--sy-f-text);
   border-radius: 6px;
   outline: 0;
-  background: var(--sy-c-bg-weak);
+  background: var(--sy-c-bg);
+  border: 1px solid var(--sy-c-border);
+}
+
+.sy-lside .rst-versions .rst-other-versions hr {
+  border-color: var(--sy-c-divider);
+}
+
+@media (min-width: 90rem) {
+  .sy-lside .rst-versions {
+    background: var(--sy-c-bg);
+  }
 }

@@ -5,7 +5,7 @@
     top: var(--sy-s-offset-top);
     left: 0;
     bottom: 0;
-    width: 20rem;
+    width: 300px;
     max-width: 100%;
     height: calc(100vh - var(---sy-s-offset-top));
     overflow: auto;
