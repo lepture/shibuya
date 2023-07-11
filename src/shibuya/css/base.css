@@ -8,7 +8,7 @@
   --sy-c-divider-weak: rgba(var(--sy-rc-text), 0.05);
   --sy-c-border: rgba(var(--sy-rc-text), 0.14);
   --sy-s-banner-height: 0rem;
-  --sy-s-navbar-height: 4rem;
+  --sy-s-navbar-height: 56px;
   --sy-s-offset-top: calc(var(--sy-s-navbar-height) + var(--sy-s-banner-height));
   --sy-c-link: rgb(var(--sy-rc-theme));
 }

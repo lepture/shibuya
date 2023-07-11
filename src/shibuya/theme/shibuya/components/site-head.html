@@ -26,16 +26,18 @@
         {% include "components/nav-versions.html" %}
         {%- include "components/searchbox.html" %}
         {% include "components/nav-languages.html" %}
-        {%- if theme_github_url %}
-          <a class="flex items-center ml-1" href="{{ theme_github_url }}" aria-label="GitHub">
-            <i class="i-icon github"></i>
-          </a>
-        {%- endif %}
-        {%- if theme_discord_url %}
-          <a class="flex items-center ml-1" href="{{ theme_discord_url }}" aria-label="Discord">
-            <i class="i-icon discord"></i>
-          </a>
-        {%- endif %}
+        <div class="flex gap-2 items-center">
+          {%- if theme_github_url %}
+            <a class="flex items-center ml-1" href="{{ theme_github_url }}" aria-label="GitHub">
+              <i class="i-icon github"></i>
+            </a>
+          {%- endif %}
+          {%- if theme_discord_url %}
+            <a class="flex items-center ml-1" href="{{ theme_discord_url }}" aria-label="Discord">
+              <i class="i-icon discord"></i>
+            </a>
+          {%- endif %}
+        </div>
       </div>
     </div>
     <div class="sy-head-actions flex items-center ml-3 shrink-0 print:hidden">

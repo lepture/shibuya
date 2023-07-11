@@ -1,11 +1,10 @@
-{%- if current_version %}
-  <div class="rst-versions">
-    <label for="__versions">
+{%- if versions %}
+  <div class="nav-versions">
+    <button type="button" aria-label="Version">
       <span>{{ current_version }}</span>
       <i class="i-icon chevron"></i>
-    </label>
-    <input class="hidden" id="__versions" type="checkbox">
-    <div class="rst-other-versions">
+    </button>
+    <div class="nav-versions-choices">
       {%- if versions %}
       <ul>
         {%- for version in versions -%}

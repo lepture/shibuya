@@ -167,9 +167,9 @@
   }
 
   .sy-head-extra {
-    padding: 2rem 1.8rem 1rem;
+    flex-direction: column;
+    padding: 2rem 0 1rem;
     width: 100%;
-    justify-content: center;
   }
 }
 @media (min-width: 768px) {
