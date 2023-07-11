@@ -121,13 +121,13 @@ if DEBUG_RTD:
         "https://assets.readthedocs.org/static/css/badge_only.css",
     ]
     html_js_files = [
-        "https://docs.authlib.org/en/latest/_static/jquery.js",
         "rtd-dummy.js",
         (
             "https://assets.readthedocs.org/static/javascript/readthedocs-doc-embed.js",
             {"async": "async"},
         ),
     ]
+    html_theme_options["carbon_ads_code"] = None
     html_context["READTHEDOCS"] = True
     html_context["current_version"] = "latest"
     html_context["versions"] = [
@@ -138,4 +138,8 @@ if DEBUG_RTD:
         ("v2.0.4", "/en/v2.0.4/"),
         ("v2", "/en/v2/"),
         ("v0.8.4", "/en/v0.8.4/"),
+    ]
+    html_context["languages"] = [
+        ("/en/%s/", "English"),
+        ("/zh/%s/", "中文"),
     ]

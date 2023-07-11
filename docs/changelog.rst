@@ -5,6 +5,15 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2023.7.x
+---------
+
+- Fix style for genindex
+- Add breadcrumbs for small screen
+- Move TOC controllers to breadcrumbs block
+- Move RTD versions to left sidebar
+- Add multiple languages switcher
+
 2023.6.30
 ---------
 
