@@ -1,14 +1,16 @@
 @media (max-width: 767px) {
   #lside {
     position: fixed;
-    z-index: 15;
-    top: calc(var(--sy-s-offset-top) - 1px);
+    z-index: 18;
+    top: var(--sy-s-offset-top);
+    left: 0;
     bottom: 0;
-    width: 100%;
+    width: 20rem;
+    max-width: 100%;
     height: calc(100vh - var(---sy-s-offset-top));
     overflow: auto;
     background: rgba(var(--sy-rc-bg), .98);
-    transform: translateY(-100%);
+    transform: translateX(-100%);
     transition: transform .2s ease;
   }
 
@@ -17,7 +19,25 @@
   }
 
   #lside._expanded {
-    transform: translateY(0);
+    transform: translateX(0);
+  }
+
+  .lside-overlay {
+    position: fixed;
+    top: var(--sy-s-offset-top);
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: rgba(var(--sy-rc-invert), 0.24);
+    opacity: 0;
+    transition: width 0 .25s, height 0 .25s, opacity .25s;
+  }
+
+  #lside._expanded + .lside-overlay {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 16;
   }
 }
 

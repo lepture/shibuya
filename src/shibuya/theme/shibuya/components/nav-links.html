@@ -6,9 +6,8 @@
 {%- endif -%}
 {% endmacro %}
 
-{% macro renderNavLinks(links, show_summary=False) %}
 <ul>
-  {%- for link in links -%}
+  {%- for link in theme_nav_links -%}
     {%- if link.children %}
       <li class="link">
         {%- if link.url -%}
@@ -24,7 +23,7 @@
         {%- endif %}
         <ul>
           {% for item in link.children %}
-            {%- if item.summary and show_summary -%}
+            {%- if item.summary -%}
               <li><a href="{{ expandURL(item.url) }}">
                 <span>{{ item.title }}</span>
                 <small>{{ item.summary }}</small>
@@ -46,4 +45,3 @@
     {%- endif -%}
   {%- endfor -%}
 </ul>
-{% endmacro %}

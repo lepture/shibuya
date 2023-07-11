@@ -1,5 +1,3 @@
-{%- from "components/nav-links.html" import renderNavLinks with context -%}
-
 {%- macro render_logo(src, classname) -%}
   {%- if src and src.startswith(('https://', 'http://')) -%}
     <img class="{{ classname }}" src="{{ src }}" alt="{{ project }}" height="28" />
@@ -13,43 +11,43 @@
 <div class="sy-head">
   <div class="sy-head-blur"></div>
   <div class="sy-head-inner sy-container mx-auto">
-    <div class="sy-head-links flex items-center">
-      <div class="md:hidden flex items-center">
-        <button class="hamburger js-menu mr-3" aria-label="Menu" type="button" aria-controls="lside" aria-expanded="false">
+    <a class="sy-head-brand mr-4" href="{% if theme_logo_target %}{{ theme_logo_target }}{% else %}{{ pathto(root_doc) }}{% endif %}">
+      {{ render_logo(theme_light_logo, 'light-logo') }}
+      {{ render_logo(theme_dark_logo, 'dark-logo') }}
+      <strong>{{ project }}</strong>
+    </a>
+    <div class="sy-head-links" id="_sy_links">
+      <nav class="sy-head-nav">
+        {%- if theme_nav_links -%}
+          {% include "components/nav-links.html" %}
+        {%- endif -%}
+      </nav>
+      <div class="sy-head-extra flex gap-2 items-center print:hidden">
+        {% include "components/nav-versions.html" %}
+        {%- include "components/searchbox.html" %}
+        {%- if theme_github_url %}
+          <a class="flex items-center ml-1" href="{{ theme_github_url }}" aria-label="GitHub">
+            <i class="i-icon github"></i>
+          </a>
+        {%- endif %}
+        {%- if theme_discord_url %}
+          <a class="flex items-center ml-1" href="{{ theme_discord_url }}" aria-label="Discord">
+            <i class="i-icon discord"></i>
+          </a>
+        {%- endif %}
+      </div>
+    </div>
+    <div class="sy-head-actions flex items-center ml-3 shrink-0 print:hidden">
+      <button class="js-theme theme-switch flex items-center" data-aria-light="{{ _('Switch to dark mode') }}" data-aria-dark="{{ _('Switch to light mode') }}">
+        <i class="i-icon theme-icon"></i>
+      </button>
+      <div class="md:hidden flex items-center ml-3">
+        <button class="hamburger js-menu" aria-label="Menu" type="button" aria-controls="_sy_links" aria-expanded="false">
           <span class="hamburger_1"></span>
           <span class="hamburger_2 -translate-x-2"></span>
           <span class="hamburger_3 -translate-x-1"></span>
         </button>
       </div>
-      <a class="sy-head-brand" href="{% if theme_logo_target %}{{ theme_logo_target }}{% else %}{{ pathto(root_doc) }}{% endif %}">
-        {{ render_logo(theme_light_logo, 'light-logo') }}
-        {{ render_logo(theme_dark_logo, 'dark-logo') }}
-        <strong>{{ project }}</strong>
-      </a>
-      {%- if theme_nav_links -%}
-      <nav class="sy-head-nav ml-4 hidden md:block">
-        {{ renderNavLinks(theme_nav_links, True) }}
-      </nav>
-      {%- endif -%}
-    </div>
-    <div class="sy-head-actions flex gap-2 items-center print:hidden">
-      {% include "components/nav-versions.html" %}
-      <div class="hidden md:block">
-        {%- include "components/searchbox.html" %}
-      </div>
-      {%- if theme_github_url %}
-        <a class="flex items-center ml-1" href="{{ theme_github_url }}" aria-label="GitHub">
-          <i class="i-icon github"></i>
-        </a>
-      {%- endif %}
-      <button class="js-theme theme-switch flex items-center ml-1" data-aria-light="{{ _('Switch to dark mode') }}" data-aria-dark="{{ _('Switch to light mode') }}">
-        <i class="i-icon theme-icon"></i>
-      </button>
-      {% if display_toc %}
-        <button class="js-menu xl:hidden flex items-center ml-1" aria-label="Show table of contents" type="button" aria-controls="rside" aria-expanded="false">
-          <i class="i-icon outdent"></i>
-        </button>
-      {%- endif %}
     </div>
   </div>
 </div>

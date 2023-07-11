@@ -1,12 +1,3 @@
-.sy-lside-top {
-  background: var(--sy-c-bg-weak);
-  border-bottom: 1px solid var(--sy-c-divider);
-}
-
-.sy-lside-top .searchbox input {
-  border: 1px solid var(--sy-c-divider);
-}
-
 .sy-lside li {
   margin: 0.6rem 0;
 }

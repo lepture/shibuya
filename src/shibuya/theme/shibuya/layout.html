@@ -1,5 +1,4 @@
 {%- extends "base.html" -%}
-{%- from "components/nav-links.html" import renderNavLinks with context -%}
 
 {%- block document -%}
 <div class="document">
@@ -7,23 +6,6 @@
   {%- block header -%}
     {% include "components/site-head.html" with context %}
   {%- endblock -%}
-
-  <aside id="lside" class="sy-lside md:hidden">
-    {%- block mobile_navbar -%}
-    <div class="sy-lside-inner md:sticky">
-      <div class="sy-lside-top pt-3 pb-3 px-6">
-        <div class="pt-3">
-          {%- include "components/page-searchbox.html" %}
-        </div>
-        {%- if theme_nav_links -%}
-        <div class="pt-3">
-          {{ renderNavLinks(theme_nav_links) }}
-        </div>
-        {%- endif -%}
-      </div>
-    </div>
-    {%- endblock %}
-  </aside>
 
   <div class="sy-container mx-auto body">
     <main class="sy-content mx-auto pt-12 px-6 xl:px-12 break-words">

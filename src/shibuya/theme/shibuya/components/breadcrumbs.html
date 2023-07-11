@@ -1,0 +1,28 @@
+<div class="sy-breadcrumbs" role="navigation">
+  <div class="sy-breadcrumbs-inner flex items-center">
+    <div class="md:hidden mr-3">
+      <button class="js-menu" aria-label="Menu" type="button" aria-controls="lside" aria-expanded="false">
+        <i class="i-icon menu"></i>
+      </button>
+    </div>
+    <ul class="flex-1">
+      {% block breadcrumbs %}
+      {% if project == title %}
+      <li><a href="{{ pathto(master_doc) }}">{{ project }}</a></li>
+      {% else %}
+      <li><a href="{{ pathto(master_doc) }}">{{ project }}</a><span>&#x2044;</span></li>
+      {% for doc in parents %}
+      <li><a href="{{ doc.link|e }}">{{ doc.title }}</a><span>&#x2044;</span></li>
+      {% endfor %}
+      <li><a href="">{{ title }}</a></li>
+      {% endif %}
+      {% endblock %}
+    </ul>
+    <div class="xl:hidden ml-1">
+      <button class="js-menu" aria-label="Show table of contents" type="button" aria-controls="rside"
+        aria-expanded="false">
+        <i class="i-icon outdent"></i>
+      </button>
+    </div>
+  </div>
+</div>

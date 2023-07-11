@@ -17,16 +17,6 @@
 <div class="sy-page sy-container flex mx-auto">
   <aside id="lside" class="sy-lside md:w-64 md:shrink-0 print:hidden">
     <div class="sy-lside-inner md:sticky">
-      <div class="sy-lside-top md:hidden pt-3 pb-3 px-6">
-        <div class="pt-3">
-          {%- include "components/page-searchbox.html" %}
-        </div>
-        {%- if theme_nav_links -%}
-        <div class="pt-3">
-          {{ renderNavLinks(theme_nav_links) }}
-        </div>
-        {%- endif -%}
-      </div>
       <div class="sy-scrollbar p-6">
         {%- include "partials/globaltoc-above.html" %}
         <div class="globaltoc">
@@ -35,6 +25,7 @@
       </div>
     </div>
   </aside>
+  <div class="lside-overlay js-menu" role="button" aria-label="Close left sidebar" aria-controls="lside" aria-expanded="false"></div>
   <aside id="rside" class="sy-rside pb-3 w-64 shrink-0 order-last">
     <button class="rside-close js-menu xl:hidden" aria-label="Close Table of Contents" type="button" aria-controls="rside" aria-expanded="false">
       <i class="i-icon close"></i>
@@ -49,6 +40,7 @@
   </aside>
   <div class="rside-overlay js-menu" role="button" aria-label="Close Table of Contents" aria-controls="rside" aria-expanded="false"></div>
   <main class="sy-main w-full max-sm:max-w-full print:pt-6">
+    {% include "components/breadcrumbs.html" %}
     <div class="flex flex-col break-words justify-between">
       <div class="min-w-0 max-w-6xl px-6 pb-6 pt-6 xl:px-12">
         <article class="yue{% if dark_code %} dark-code{% endif %}" role="main">
