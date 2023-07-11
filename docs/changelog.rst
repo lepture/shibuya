@@ -5,7 +5,7 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
-2023.7.x
+2023.7.11
 ---------
 
 - Fix style for genindex
