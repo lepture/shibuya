@@ -1,11 +1,17 @@
 @import "./components/hamburger.css";
-@import "./components/breadcrumbs.css";
-@import "./components/globaltoc.css";
-@import "./components/localtoc.css";
 @import "./components/search.css";
-@import "./components/navigation.css";
 @import "./components/container.css";
 @import "./components/external.css";
+
+@import "./layout/head.css";
+@import "./layout/foot.css";
+@import "./layout/sidebar.css";
+@import "./layout/page.css";
+@import "./layout/head-nav.css";
+@import "./layout/breadcrumbs.css";
+@import "./layout/globaltoc.css";
+@import "./layout/localtoc.css";
+@import "./layout/navigation.css";
 
 @import "./contents/yue.css";
 @import "./contents/sphinx.css";

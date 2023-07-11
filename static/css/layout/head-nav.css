@@ -1,0 +1,30 @@
+.nav-languages {
+  position: relative;
+  width: auto;
+  background: transparent;
+  color: var(--sy-c-text);
+}
+
+.nav-languages button {
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: 0;
+}
+
+.nav-languages-choices {
+  position: absolute;
+  visibility: hidden;
+  padding: 0;
+  top: 1rem;
+  right: 0;
+  width: 200px;
+  background-color: var(--sy-c-bg);
+  border-radius: 6px;
+  box-shadow: 0 0 3px rgba(var(--sy-rc-invert), 0.1), 0 0 2px rgba(var(--sy-rc-invert), 0.2) inset;
+}
+
+.nav-languages:hover .nav-languages-choices {
+  visibility: visible;
+}
