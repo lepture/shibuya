@@ -97,3 +97,33 @@ div.citation > p {
 p.centered {
   text-align: center;
 }
+
+/* index table */
+.yue .genindex-jumpbox,
+.yue .modindex-jumpbox {
+  border-top: 1px solid var(--sy-c-border);
+  border-bottom: 1px solid var(--sy-c-border);
+  padding: 2px 0.4rem;
+}
+
+.yue table.modindextable td:first-of-type {
+  width: 28px;
+}
+
+.yue table.modindextable img.toggler {
+  margin: 0;
+}
+
+.yue table.modindextable tr.cap {
+  font-size: 1.12rem;
+  background: var(--sy-c-bg-weak);
+  font-family: var(--sy-f-mono);
+}
+
+.yue h2 + table.indextable {
+  margin-top: 0;
+}
+
+.yue table.indextable ul {
+  margin-top: 0;
+}
