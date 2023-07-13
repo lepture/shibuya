@@ -49,3 +49,14 @@ Mastodon
     html_theme_options = {
       "mastodon_url": "https://mas.to/@trumpet"
     }
+
+
+YouTube
+-------
+
+.. code-block:: python
+
+    html_theme_options = {
+      "youtube_url": "https://youtube.com/@username"
+    }
+
