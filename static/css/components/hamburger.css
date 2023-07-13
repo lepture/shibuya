@@ -28,17 +28,17 @@
   top: 12px;
 }
 
-button.hamburger[aria-expanded=true] .hamburger_1 {
+button[aria-expanded=true] .hamburger .hamburger_1 {
   top: 6px;
   transform: translate(0) rotate(225deg);
 }
 
-button.hamburger[aria-expanded=true] .hamburger_2 {
+button[aria-expanded=true] .hamburger .hamburger_2 {
   top: 6px;
   transform: translate(18px);
 }
 
-button.hamburger[aria-expanded=true] .hamburger_3 {
+button[aria-expanded=true] .hamburger .hamburger_3 {
   top: 6px;
   transform: translate(0) rotate(135deg);
 }

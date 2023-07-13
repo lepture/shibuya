@@ -1,3 +1,12 @@
+.yue * {
+  scroll-margin-top: calc(var(--sy-s-offset-top) + 68px);
+}
+
+.sy-content {
+  max-width: 64rem;
+  min-height: calc(100vh - var(--sy-s-offset-top));
+}
+
 @media (max-width: 767px) {
   #lside {
     position: fixed;
@@ -12,10 +21,6 @@
     background: rgba(var(--sy-rc-bg), .98);
     transform: translateX(-100%);
     transition: transform .2s ease;
-  }
-
-  body[data-expanded-lside="true"] {
-    overflow: hidden;
   }
 
   #lside._expanded {
@@ -66,15 +71,14 @@
 
   .rside-close {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
-    border: 1px solid var(--sy-c-divider);
-    width: 1.5rem;
-    height: 1.5rem;
+    top: 16px;
+    right: 16px;
+    width: 2rem;
+    height: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 100%;
+    font-size: 1.4rem;
   }
 
   .rside-overlay {
@@ -98,27 +102,20 @@
 
 @media (min-width: 768px) {
   .sy-main {
-    width: calc(100% - 16rem);
+    width: calc(100% - 18rem);
     max-width: 52rem;
   }
 }
 
 @media (min-width: 1280px) {
   .sy-main {
-    width: calc(100% - 32rem);
+    width: calc(100% - 34rem);
     max-width: none;
   }
   .sy-rside .sy-scrollbar {
     max-height: calc(100vh - var(--sy-s-offset-top) - env(safe-area-inset-bottom));
   }
-}
-
-.yue section,
-.yue .viewcode-block {
-  scroll-margin-top: calc(var(--sy-s-offset-top) + 24px);
-}
-
-.sy-content {
-  max-width: 64rem;
-  min-height: calc(100vh - var(--sy-s-offset-top));
+  .yue * {
+    scroll-margin-top: calc(var(--sy-s-offset-top) + 24px);
+  }
 }

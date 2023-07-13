@@ -1,19 +1,20 @@
 .yue {
+  --yue-c-black: #111827;
   --yue-c-text: var(--sy-c-text);
   --yue-c-heading: var(--sy-c-heading);
   --yue-c-bold: var(--sy-c-bold);
   --yue-c-link-1: var(--sy-c-text);
-  --yue-c-link-2: #111827;
+  --yue-c-link-2: var(--yue-c-black);
   --yue-c-link-border-1: rgba(var(--sy-rc-theme), 0.8);
-  --yue-c-link-border-2: var(--sy-c-link);
+  --yue-c-link-border-2: rgb(var(--sy-rc-theme));
   --yue-c-ol-marker: #6b7280;
   --yue-c-ul-marker: #d1d5db;
   --yue-c-hr: #e5e7eb;
-  --yue-c-quote: #111827;
+  --yue-c-quote: var(--yue-c-black);
   --yue-c-quote-border: #cfd3db;
   --yue-c-quote-symbol: rgba(var(--sy-rc-theme), 1);
   --yue-c-caption: #6b7280;
-  --yue-c-code: #111827;
+  --yue-c-code: var(--yue-c-black);
   --yue-c-code-bg: #fff4d4;
   --yue-c-th-bg: #eff3f8;
   --yue-c-th-border: #d1d5db;
@@ -329,7 +330,6 @@ html.dark .yue {
   color: var(--yue-c-heading);
   font-weight: 600;
   vertical-align: middle;
-  text-align: center;
 }
 
 .yue tbody tr {

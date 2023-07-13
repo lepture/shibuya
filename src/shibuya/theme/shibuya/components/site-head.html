@@ -16,41 +16,41 @@
       {{ render_logo(theme_dark_logo, 'dark-logo') }}
       <strong>{{ project }}</strong>
     </a>
-    <div class="sy-head-links" id="_sy_links">
+    <div class="sy-head-links" id="NavLinks">
       <nav class="sy-head-nav">
         {%- if theme_nav_links -%}
           {% include "components/nav-links.html" %}
         {%- endif -%}
       </nav>
-      <div class="sy-head-extra flex gap-2 items-center print:hidden">
-        {% include "components/nav-versions.html" %}
+      <div class="sy-head-extra flex items-center print:hidden">
         {%- include "components/searchbox.html" %}
+        {% include "components/nav-versions.html" %}
         {% include "components/nav-languages.html" %}
-        <div class="flex gap-2 items-center">
+        <div class="sy-head-social flex items-center">
           {%- if theme_github_url %}
-            <a class="flex items-center ml-1" href="{{ theme_github_url }}" aria-label="GitHub">
+            <a class="flex items-center" href="{{ theme_github_url }}" aria-label="GitHub">
               <i class="i-icon github"></i>
             </a>
           {%- endif %}
           {%- if theme_discord_url %}
-            <a class="flex items-center ml-1" href="{{ theme_discord_url }}" aria-label="Discord">
+            <a class="flex items-center" href="{{ theme_discord_url }}" aria-label="Discord">
               <i class="i-icon discord"></i>
             </a>
           {%- endif %}
         </div>
       </div>
     </div>
-    <div class="sy-head-actions flex items-center ml-3 shrink-0 print:hidden">
+    <div class="sy-head-actions flex items-center shrink-0 print:hidden">
       <button class="js-theme theme-switch flex items-center" data-aria-light="{{ _('Switch to dark mode') }}" data-aria-dark="{{ _('Switch to light mode') }}">
         <i class="i-icon theme-icon"></i>
       </button>
-      <div class="md:hidden flex items-center ml-3">
-        <button class="hamburger js-menu" aria-label="Menu" type="button" aria-controls="_sy_links" aria-expanded="false">
+      <button class="md:hidden flex items-center js-menu" aria-label="Menu" type="button" aria-controls="NavLinks" aria-expanded="false">
+        <div class="hamburger">
           <span class="hamburger_1"></span>
           <span class="hamburger_2 -translate-x-2"></span>
           <span class="hamburger_3 -translate-x-1"></span>
-        </button>
-      </div>
+        </div>
+      </button>
     </div>
   </div>
 </div>

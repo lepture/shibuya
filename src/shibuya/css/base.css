@@ -11,4 +11,5 @@
   --sy-s-navbar-height: 56px;
   --sy-s-offset-top: calc(var(--sy-s-navbar-height) + var(--sy-s-banner-height));
   --sy-c-link: rgb(var(--sy-rc-theme));
+  --sy-c-link-weak: rgba(var(--sy-rc-theme), 0.86);
 }
