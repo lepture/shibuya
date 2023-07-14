@@ -9,7 +9,7 @@
     "dev:css": "npm run build:css -- --watch"
   },
   "devDependencies": {
-    "esbuild": "^0.17.6",
+    "esbuild": "^0.18.12",
     "tailwindcss": "^3.2.4"
   }
 }

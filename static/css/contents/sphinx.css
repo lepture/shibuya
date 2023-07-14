@@ -1,3 +1,13 @@
+.yue p.lead {
+  font-size: 1.2rem;
+  color: var(--sy-c-text-weak);
+  margin-bottom: 0;
+}
+
+.yue p.lead + hr {
+  margin-top: 1rem;
+}
+
 .yue dl.simple > dd > p,
 .yue ul.simple > li > p,
 .yue ol.simple > li > p {
@@ -9,13 +19,25 @@
   margin-left: 6px;
   color: rgba(var(--sy-rc-text), 0.6);
   font-weight: 300;
+  font-size: 58%;
   font-family: var(--sy-f-mono);
+
+  --icon-url: var(--i-link-url);
+  mask: var(--icon-url) no-repeat;
+  mask-size: 100% 100%;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  background-color: currentColor;
 }
 
 .yue .math a.headerlink {
   visibility: visible;
 }
 
+h1:hover a.headerlink,
 h2:hover a.headerlink,
 h3:hover a.headerlink,
 h4:hover a.headerlink,

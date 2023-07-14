@@ -10,10 +10,11 @@
       {% if project == title %}
       <li><a href="{{ pathto(master_doc) }}">{{ project }}</a></li>
       {% else %}
+      <li><a href="{{ pathto(master_doc) }}">{{ project }}</a><span>/</span></li>
       {% for doc in parents %}
-      <li><a href="{{ doc.link|e }}">{{ doc.title }}</a><span>&#x2044;</span></li>
+      <li><a href="{{ doc.link|e }}">{{ doc.title }}</a><span>/</span></li>
       {% endfor %}
-      <li><span>{{ title }}</span></li>
+      <li><strong>{{ title }}</strong></li>
       {% endif %}
       {% endblock %}
     </ul>

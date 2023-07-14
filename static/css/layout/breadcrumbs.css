@@ -24,11 +24,16 @@
 }
 
 .sy-breadcrumbs ul a {
-  font-weight: 500;
+  color: var(--sy-c-text-weak);
+}
+
+.sy-breadcrumbs ul a:hover {
+  color: var(--sy-c-bold);
 }
 
 .sy-breadcrumbs ul a + span {
   padding: 0 0.4rem;
+  font-weight: 300;
   color: var(--sy-c-text-weak);
 }
 
