@@ -3,6 +3,12 @@
 Installation
 ============
 
+.. rst-class:: lead
+
+   Install the **shibuya** theme as a Python package.
+
+----
+
 Shibuya is a theme for Sphinx_, a popular static site generator for documentation.
 It is the default documentation generator for Python projects.
 

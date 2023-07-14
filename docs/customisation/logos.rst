@@ -3,6 +3,12 @@
 Logos
 =====
 
+.. rst-class:: lead
+
+    Add a logo to promote your brand and make your website more recognizable.
+
+----
+
 Your logo is an important element of your product's branding and identity.
 Shibuya theme supports both light and dark modes, so it's important to make
 sure that your logo works well in both modes.
