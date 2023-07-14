@@ -68,7 +68,7 @@
   .nav-languages button,
   .nav-versions button {
     padding: 0 0.5rem;
-    border-right: 1px solid var(--sy-c-border);
+    border-right: 1px solid var(--sy-c-divider-weak);
   }
 
   .nav-versions-choices,
@@ -77,12 +77,14 @@
     visibility: hidden;
     padding: 0;
     top: 3rem;
-    right: -1rem;
-    width: 200px;
+    right: -0.6rem;
+    min-width: 120px;
+    box-sizing: border-box;
     background-color: var(--sy-c-bg);
     border-radius: 6px;
     overflow: hidden;
-    box-shadow: 0 0 3px rgba(var(--sy-rc-invert), 0.1), 0 0 2px rgba(var(--sy-rc-invert), 0.2) inset;
+    padding: 0.8rem 1rem;
+    box-shadow: 0 12px 32px rgba(var(--sy-rc-invert), .1), 0 2px 6px rgba(var(--sy-rc-invert), .08);
   }
 
   .nav-versions:hover .nav-versions-choices,
@@ -90,15 +92,15 @@
     visibility: visible;
   }
 
-  .nav-versions li+li,
-  .nav-languages li+li {
-    border-top: 1px solid var(--sy-c-divider);
+  .nav-versions li,
+  .nav-languages li {
+    padding: 0.1rem 0;
   }
 
   .nav-versions a,
   .nav-languages a {
     display: block;
-    padding: 0.42rem 1rem;
+    padding: 0.2rem 0.6rem;
     color: var(--sy-c-text);
   }
 
@@ -106,5 +108,6 @@
   .nav-languages a:hover {
     color: var(--sy-c-link);
     background: var(--sy-c-bg-weak);
+    border-radius: 6px;
   }
 }
