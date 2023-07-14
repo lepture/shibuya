@@ -5,6 +5,14 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2023.7.14
+---------
+
+- Add YouTube link
+- Improve style for versions and languages
+- Improve breadcrumbs style
+- Add expand and collapse global TOC
+
 2023.7.11
 ---------
 
