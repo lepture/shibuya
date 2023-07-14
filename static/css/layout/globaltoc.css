@@ -54,3 +54,41 @@
 .globaltoc > ul a:hover {
   color: var(--sy-c-link-weak);
 }
+
+
+.globaltoc li.toctree-l1 {
+  position: relative;
+}
+
+.globaltoc li.toctree-l1 > button {
+  position: absolute;
+  top: 0.2rem;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 3px;
+}
+
+.globaltoc li.toctree-l1 > button:hover {
+  background-color: var(--sy-c-bg-weak);
+}
+
+.globaltoc li.toctree-l1 > ul {
+  display: none;
+}
+
+.globaltoc li.toctree-l1.current > ul {
+  display: block;
+}
+
+.globaltoc li.toctree-l1 > button .chevron {
+  transform: rotate(0deg);
+  transition: transform 0.2s ease;
+}
+
+.globaltoc li.toctree-l1.current > button .chevron {
+  transform: rotate(90deg);
+}
