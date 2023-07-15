@@ -102,6 +102,7 @@
     display: block;
     padding: 0.2rem 0.6rem;
     color: var(--sy-c-text);
+    white-space: nowrap;
   }
 
   .nav-versions a:hover,

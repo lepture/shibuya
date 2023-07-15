@@ -4,3 +4,7 @@ import "./js/theme"
 import "./js/toc"
 import "./js/repo-stats"
 import "./js/carbon"
+
+if (/windows/i.test(navigator.userAgent)) {
+  document.body.classList.add('win')
+}
