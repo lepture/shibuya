@@ -6,7 +6,7 @@
   </button>
   <div class="nav-languages-choices">
     <ul>
-      {%- for link, name in languages -%}
+      {%- for name, link in languages -%}
         <li><a href="{{ link.replace("%s", pagename) }}">{{ name }}</a></li>
       {%- endfor -%}
     </ul>
