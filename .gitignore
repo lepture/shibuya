@@ -22,4 +22,5 @@ docs/_build
 node_modules/
 npm-debug.log*
 
+*.mo
 src/shibuya/theme/shibuya/static/shibuya.*

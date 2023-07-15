@@ -17,7 +17,8 @@ __version__ = "2023.7.15"
 
 shibuya_version = __version__
 
-THEME_PATH = (Path(__file__).parent / "theme" / "shibuya").resolve()
+ROOT_PATH = Path(__file__).parent
+THEME_PATH = (ROOT_PATH / "theme" / "shibuya").resolve()
 
 
 def _add_version(name: str):
@@ -76,6 +77,7 @@ def setup(app: Sphinx):
     app.add_post_transform(WrapperPostTransform)
     app.connect("builder-inited", _initialize_builder)
     app.connect("html-page-context", _html_page_context)
+    app.add_message_catalog("sphinx", ROOT_PATH / "locale")
     return {
         "parallel_read_safe": True,
         "parallel_write_safe": True,

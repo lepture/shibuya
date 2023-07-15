@@ -1,0 +1,60 @@
+# Translations template for PROJECT.
+# Copyright (C) 2023 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-07-15 18:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: src/shibuya/theme/shibuya/components/nav-languages.html:4
+msgid "Translations"
+msgstr ""
+
+#: src/shibuya/theme/shibuya/components/nav-versions.html:3
+#: src/shibuya/theme/shibuya/components/nav-versions.html:4
+msgid "Versions"
+msgstr ""
+
+#: src/shibuya/theme/shibuya/components/navigation.html:7
+msgid "Previous"
+msgstr ""
+
+#: src/shibuya/theme/shibuya/components/navigation.html:9
+msgid "Home"
+msgstr ""
+
+#: src/shibuya/theme/shibuya/components/navigation.html:21
+msgid "Next"
+msgstr ""
+
+#: src/shibuya/theme/shibuya/components/searchbox.html:2
+msgid "Search"
+msgstr ""
+
+#: src/shibuya/theme/shibuya/components/site-head.html:44
+msgid "Switch to dark mode"
+msgstr ""
+
+#: src/shibuya/theme/shibuya/components/site-head.html:44
+msgid "Switch to light mode"
+msgstr ""
+
+#: src/shibuya/theme/shibuya/sidebars/edit-this-page.html:7
+msgid "Edit this page"
+msgstr ""
+
+#: src/shibuya/theme/shibuya/sidebars/localtoc.html:3
+msgid "On this page"
+msgstr ""
+

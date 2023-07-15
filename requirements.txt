@@ -4,3 +4,4 @@ sphinx-design==0.4.1
 jupyter-sphinx==0.4.0
 sphinx-togglebutton==0.3.2
 nbsphinx==0.9.2
+Babel
