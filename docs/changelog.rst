@@ -5,6 +5,11 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2023.7.15
+---------
+
+- Change multiple languages configuration
+
 2023.7.14
 ---------
 
