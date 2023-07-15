@@ -6,6 +6,15 @@
   margin-bottom: 1rem;
 }
 
+html[lang="zh"] .localtoc > h3,
+html[lang="zh-TW"] .localtoc > h3,
+html[lang="ja"] .localtoc > h3,
+html[lang="ko"] .localtoc > h3 {
+  letter-spacing: 0;
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
 .localtoc > ul li {
   margin-top: 0.36rem;
   margin-bottom: 0.36rem;
