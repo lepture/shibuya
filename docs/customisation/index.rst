@@ -82,5 +82,6 @@ footer, navbar, and sidebar.
     social
     fonts
     sidebar
+    languages
     icons
     markdown
