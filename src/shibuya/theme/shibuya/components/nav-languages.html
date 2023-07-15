@@ -6,8 +6,8 @@
   </button>
   <div class="nav-languages-choices">
     <ul>
-      {%- for name, link in languages -%}
-        <li><a href="{{ link.replace("%s", pagename) }}">{{ name }}</a></li>
+      {%- for item in languages -%}
+        <li><a href="{{ i18n_link(item[1]) }}">{{ item[0] }}</a></li>
       {%- endfor -%}
     </ul>
   </div>

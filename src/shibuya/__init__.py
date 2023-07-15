@@ -35,6 +35,17 @@ def _html_page_context(app: Sphinx, pagename: str, templatename: str, context: D
     if "toc" in context:
         context["toc"] = normalize_toc(context['toc'])
 
+    def create_i18n_link(pattern: str):
+        url = pattern.replace("%s", pagename)
+        if pagename == "index" or pagename.endswith("/index"):
+            if url.endswith("/index/"):
+                url = url.replace("/index/", "/")
+            elif url.endswith("/index.html"):
+                url = url.replace("/index.html", "/")
+        return url
+
+    context["i18n_link"] = create_i18n_link
+
 
 def _initialize_builder(app: Sphinx):
     css_files = []
