@@ -57,4 +57,4 @@ msgstr "編輯此頁面"
 
 #: src/shibuya/theme/shibuya/sidebars/localtoc.html:3
 msgid "On this page"
-msgstr "在此頁面上"
+msgstr "該頁內容"
