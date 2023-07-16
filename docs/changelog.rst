@@ -5,6 +5,13 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2023.7.16
+---------
+
+- Fix multiple languages links for index pages
+- Add ``hreflang`` links for SEO
+- Add locale data of theme templates
+
 2023.7.15
 ---------
 
