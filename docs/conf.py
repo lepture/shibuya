@@ -140,6 +140,6 @@ if DEBUG_RTD:
         ("v0.8.4", "/en/v0.8.4/"),
     ]
     html_context["languages"] = [
-        ("English", "/en/%s/", "en"),
-        ("中文", "/zh/%s/", "zh"),
+        ("🇺🇸 English", "/en/%s/", "en"),
+        ("🇨🇳 中文", "/zh/%s/", "zh"),
     ]
