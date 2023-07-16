@@ -17,9 +17,14 @@ pre.literal-block {
   line-height: 1.48;
   padding: var(--margin);
   font-size: 0.96rem;
+  font-family: var(--sy-f-mono);
   background-color: var(--syntax-pre-bg);
   border-radius: var(--radius);
   overflow: auto;
+}
+
+.win .highlight > pre {
+  font-family: "Twemoji Country Flags", var(--sy-f-mono);
 }
 
 .highlight .linenos {
