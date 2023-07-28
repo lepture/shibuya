@@ -1,6 +1,8 @@
 :root {
   --syntax-light-pre-bg: rgba(var(--sy-rc-theme), 0.1);
   --syntax-light-cap-bg: rgba(var(--sy-rc-theme), 0.2);
+  --syntax-light-highlight-bg: rgba(var(--sy-rc-theme), 0.2);
+
   --syntax-light-text: #24292f;
   --syntax-light-meta: #a6a2ae;
   --syntax-light-comment: #6e7781;
@@ -29,11 +31,12 @@
   --syntax-light-markup-ignored-text: #eaeef2;
   --syntax-light-markup-ignored-bg: #0550ae;
   --syntax-light-meta-diff-range: #8250df;
-  --syntax-light-highlight-bg: #eee4ff;
   --syntax-light-special-bg: #dccafa;
 
   --syntax-dark-pre-bg: rgba(var(--sy-rc-theme), 0.2);
   --syntax-dark-cap-bg: rgba(var(--sy-rc-theme), 0.1);
+  --syntax-dark-highlight-bg: rgba(var(--sy-rc-theme), 0.2);
+
   --syntax-dark-text: #c9d1d9;
   --syntax-dark-meta: #6e7781;
   --syntax-dark-comment: #8b949e;
@@ -62,7 +65,6 @@
   --syntax-dark-markup-ignored-text: #c9d1d9;
   --syntax-dark-markup-ignored-bg: #1158c7;
   --syntax-dark-meta-diff-range: #d2a8ff;
-  --syntax-dark-highlight-bg: #423551;
   --syntax-dark-special-bg: #4f425d;
 }
 
