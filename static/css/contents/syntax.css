@@ -72,6 +72,7 @@
 html.light {
   --syntax-pre-bg: var(--syntax-light-pre-bg);
   --syntax-cap-bg: var(--syntax-light-cap-bg);
+  --syntax-highlight-bg: var(--syntax-light-highlight-bg);
   --syntax-text: var(--syntax-light-text);
   --syntax-meta: var(--syntax-light-meta);
   --syntax-comment: var(--syntax-light-comment);
@@ -100,7 +101,6 @@ html.light {
   --syntax-markup-ignored-text: var(--syntax-light-markup-ignored-text);
   --syntax-markup-ignored-bg: var(--syntax-light-markup-ignored-bg);
   --syntax-meta-diff-range: var(--syntax-light-meta-diff-range);
-  --syntax-highlight-bg: var(--syntax-light-highlight-bg);
   --syntax-special-bg: var(--syntax-light-special-bg);
 }
 
@@ -108,6 +108,7 @@ html.light {
   :root {
     --syntax-pre-bg: var(--syntax-dark-pre-bg);
     --syntax-cap-bg: var(--syntax-dark-cap-bg);
+    --syntax-highlight-bg: var(--syntax-dark-highlight-bg);
     --syntax-text: var(--syntax-dark-text);
     --syntax-meta: var(--syntax-dark-meta);
     --syntax-comment: var(--syntax-dark-comment);
@@ -136,15 +137,14 @@ html.light {
     --syntax-markup-ignored-text: var(--syntax-dark-markup-ignored-text);
     --syntax-markup-ignored-bg: var(--syntax-dark-markup-ignored-bg);
     --syntax-meta-diff-range: var(--syntax-dark-meta-diff-range);
-    --syntax-highlight-bg: var(--syntax-dark-highlight-bg);
     --syntax-special-bg: var(--syntax-dark-special-bg);
   }
 }
 
-html.dark,
-.dark-code {
+html.dark {
   --syntax-pre-bg: var(--syntax-dark-pre-bg);
   --syntax-cap-bg: var(--syntax-dark-cap-bg);
+  --syntax-highlight-bg: var(--syntax-dark-highlight-bg);
   --syntax-text: var(--syntax-dark-text);
   --syntax-meta: var(--syntax-dark-meta);
   --syntax-comment: var(--syntax-dark-comment);
@@ -173,6 +173,40 @@ html.dark,
   --syntax-markup-ignored-text: var(--syntax-dark-markup-ignored-text);
   --syntax-markup-ignored-bg: var(--syntax-dark-markup-ignored-bg);
   --syntax-meta-diff-range: var(--syntax-dark-meta-diff-range);
-  --syntax-highlight-bg: var(--syntax-dark-highlight-bg);
+  --syntax-special-bg: var(--syntax-dark-special-bg);
+}
+
+.dark-code {
+  --syntax-pre-bg: #2c283b;
+  --syntax-cap-bg: #342f47;
+  --syntax-highlight-bg: #423551;
+  --syntax-text: var(--syntax-dark-text);
+  --syntax-meta: var(--syntax-dark-meta);
+  --syntax-comment: var(--syntax-dark-comment);
+  --syntax-constant: var(--syntax-dark-constant);
+  --syntax-entity: var(--syntax-dark-entity);
+  --syntax-property: var(--syntax-dark-property);
+  --syntax-definition: var(--syntax-dark-definition);
+  --syntax-tag: var(--syntax-dark-tag);
+  --syntax-builtin: var(--syntax-dark-builtin);
+  --syntax-keyword: var(--syntax-dark-keyword);
+  --syntax-exception: var(--syntax-dark-exception);
+  --syntax-string: var(--syntax-dark-string);
+  --syntax-regexp: var(--syntax-dark-regexp);
+  --syntax-variable: var(--syntax-dark-variable);
+  --syntax-invalid-illegal-text: var(--syntax-dark-invalid-illegal-text);
+  --syntax-invalid-illegal-bg: var(--syntax-dark-invalid-illegal-bg);
+  --syntax-markup-heading: var(--syntax-dark-markup-heading);
+  --syntax-markup-italic: var(--syntax-dark-markup-italic);
+  --syntax-markup-bold: var(--syntax-dark-markup-bold);
+  --syntax-markup-deleted-text: var(--syntax-dark-markup-deleted-text);
+  --syntax-markup-deleted-bg: var(--syntax-dark-markup-deleted-bg);
+  --syntax-markup-inserted-text: var(--syntax-dark-markup-inserted-text);
+  --syntax-markup-inserted-bg: var(--syntax-dark-markup-inserted-bg);
+  --syntax-markup-changed-text: var(--syntax-dark-markup-changed-text);
+  --syntax-markup-changed-bg: var(--syntax-dark-markup-changed-bg);
+  --syntax-markup-ignored-text: var(--syntax-dark-markup-ignored-text);
+  --syntax-markup-ignored-bg: var(--syntax-dark-markup-ignored-bg);
+  --syntax-meta-diff-range: var(--syntax-dark-meta-diff-range);
   --syntax-special-bg: var(--syntax-dark-special-bg);
 }
