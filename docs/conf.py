@@ -16,6 +16,7 @@ extensions = [
     "sphinx.ext.viewcode",
     "sphinx_copybutton",
     "sphinx_design",
+    "myst_parser",
     "jupyter_sphinx",
     "sphinx_togglebutton",
     "nbsphinx",
