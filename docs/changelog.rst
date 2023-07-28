@@ -5,6 +5,14 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2023.7.28
+---------
+
+- Remove current ``hreflang`` link
+- Fix nested TOC links, via :issue:`7`
+- Use theme color for code blocks, via :issue:`5`
+- Remove version parameter on assets URLs
+
 2023.7.16
 ---------
 

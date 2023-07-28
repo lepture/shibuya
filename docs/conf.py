@@ -26,6 +26,11 @@ jupyter_sphinx_thebelab_config = {
     'requestKernel': True,
 }
 
+extlinks = {
+    'pull': ('https://github.com/lepture/shibuya/pull/%s', 'pull request #%s'),
+    'issue': ('https://github.com/lepture/shibuya/issues/%s', 'issue #%s'),
+}
+
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 intersphinx_mapping = {
