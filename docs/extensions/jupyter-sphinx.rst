@@ -2,7 +2,7 @@
 
 .. _sphinx-jupyter:
 
-Jupyter Sphinx
+jupyter-sphinx
 ==============
 
 Jupyter-sphinx is a Sphinx extension that executes embedded code
