@@ -1,6 +1,6 @@
 :root {
-  --syntax-light-pre-bg: #f3f1fa;
-  --syntax-light-cap-bg: #eae7f7;
+  --syntax-light-pre-bg: rgba(var(--sy-rc-theme), 0.1);
+  --syntax-light-cap-bg: rgba(var(--sy-rc-theme), 0.2);
   --syntax-light-text: #24292f;
   --syntax-light-meta: #a6a2ae;
   --syntax-light-comment: #6e7781;
@@ -32,8 +32,8 @@
   --syntax-light-highlight-bg: #eee4ff;
   --syntax-light-special-bg: #dccafa;
 
-  --syntax-dark-pre-bg: #2c283b;
-  --syntax-dark-cap-bg: #342f47;
+  --syntax-dark-pre-bg: rgba(var(--sy-rc-theme), 0.2);
+  --syntax-dark-cap-bg: rgba(var(--sy-rc-theme), 0.1);
   --syntax-dark-text: #c9d1d9;
   --syntax-dark-meta: #6e7781;
   --syntax-dark-comment: #8b949e;
