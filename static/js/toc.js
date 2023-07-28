@@ -13,7 +13,7 @@ function handleHash () {
 handleHash()
 
 function addToggleToc () {
-  const sublist = document.querySelectorAll(".globaltoc .toctree-l1 ul")
+  const sublist = document.querySelectorAll(".globaltoc .toctree-l1 > ul")
   sublist.forEach(el => {
     const list = el.parentNode
     const link = el.previousSibling
