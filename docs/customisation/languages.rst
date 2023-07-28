@@ -1,6 +1,12 @@
 Languages
 =========
 
+.. rst-class:: lead
+
+    Embrace global audiences with multilingual support.
+
+----
+
 Shibuya supports multilingual documentation, allowing you to provide content
 in multiple languages. You can configure the supported languages by using the
 ``html_context`` option in your Sphinx configuration file (``conf.py``).

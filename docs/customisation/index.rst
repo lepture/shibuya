@@ -3,6 +3,12 @@
 Configuration
 =============
 
+.. rst-class:: lead
+
+    Customizing the appearance and functionality of your documentation website.
+
+----
+
 Shibuya provides various options for customizing the appearance and functionality of
 your documentation website. You can customize your website using Sphinx basic settings
 and Shibuya-specific options.

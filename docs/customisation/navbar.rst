@@ -5,6 +5,12 @@
 Navbar Links
 ============
 
+.. rst-class:: lead
+
+    Elevate navigation with custom navbar links.
+
+----
+
 The ``nav_links`` option allows you to add custom links to the navbar
 of your documentation with Shibuya theme. Each link consists of a title
 and a URL. Here is an example configuration code:
