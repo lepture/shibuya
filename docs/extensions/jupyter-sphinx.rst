@@ -27,6 +27,17 @@ Then, add the extension to your ``conf.py``:
         "jupyter_sphinx",
     ]
 
+If you encounter this error:
+
+.. code-block:: none
+
+    Unable to find kernel (exception: No such kernel named python3)
+
+Try to install ``ipykernel``:
+
+.. code-block:: bash
+
+    pip install ipykernel
 
 Usage
 -----
