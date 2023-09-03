@@ -30,10 +30,14 @@
   margin: 0.6rem 0;
 }
 
-.globaltoc > ul > li > ul {
+.globaltoc li > ul {
+  margin-left: 0.6rem;
+  font-size: 0.96rem;
+}
+
+.globaltoc li.toctree-l1 > ul {
   margin-left: 0.2rem;
   border-left: 1px solid var(--sy-c-divider-weak);
-  font-size: 0.96rem;
 }
 
 .globaltoc li.toctree-l2 {
@@ -55,12 +59,12 @@
   color: var(--sy-c-link-weak);
 }
 
-
-.globaltoc li.toctree-l1 {
+/* toc toggle */
+.globaltoc li {
   position: relative;
 }
 
-.globaltoc li.toctree-l1 > button {
+.globaltoc li > button {
   position: absolute;
   top: 0.2rem;
   right: 0;
@@ -72,23 +76,30 @@
   border-radius: 3px;
 }
 
-.globaltoc li.toctree-l1 > button:hover {
+.globaltoc li > button:hover {
   background-color: var(--sy-c-bg-weak);
 }
 
-.globaltoc li.toctree-l1 > ul {
-  display: none;
-}
-
-.globaltoc li.toctree-l1.current > ul {
+.globaltoc li.current > ul,
+.globaltoc li._expand > ul {
   display: block;
 }
 
-.globaltoc li.toctree-l1 > button .chevron {
+.globaltoc li > ul,
+.globaltoc li._collapse > ul {
+  display: none;
+}
+
+.globaltoc li > button .chevron {
   transform: rotate(0deg);
   transition: transform 0.2s ease;
 }
 
-.globaltoc li.toctree-l1.current > button .chevron {
+.globaltoc li.current > button .chevron,
+.globaltoc li._expand > button .chevron {
   transform: rotate(90deg);
+}
+
+.globaltoc li._collapse > button .chevron {
+  transform: rotate(0deg);
 }

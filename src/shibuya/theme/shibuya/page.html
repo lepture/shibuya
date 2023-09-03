@@ -25,8 +25,8 @@
     <div class="sy-lside-inner md:sticky">
       <div class="sy-scrollbar p-6">
         {%- include "partials/globaltoc-above.html" %}
-        <div class="globaltoc">
-          {{ toctree(collapse=False, titles_only=True, includehidden=True) }}
+        <div class="globaltoc" data-expand-depth="{{ theme_globaltoc_expand_depth }}">
+          {{ toctree(collapse=theme_toctree_collapse, titles_only=theme_toctree_titles_only, includehidden=theme_toctree_includehidden) }}
         </div>
       </div>
       {% if READTHEDOCS %}

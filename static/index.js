@@ -1,7 +1,8 @@
 import "./js/menu"
 import "./js/banner"
 import "./js/theme"
-import "./js/toc"
+import "./js/globaltoc"
+import "./js/localtoc"
 import "./js/repo-stats"
 import "./js/carbon"
 
