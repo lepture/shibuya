@@ -2,7 +2,7 @@
 
 .. _nav-links:
 
-Navbar Links
+Navbar links
 ============
 
 .. rst-class:: lead

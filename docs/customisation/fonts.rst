@@ -1,7 +1,13 @@
-:description: Adding a web font to match your branding.
+:description: Customize the fonts to match your branding.
 
-Web Fonts
-=========
+Fonts
+=====
+
+.. rst-class:: lead
+
+    Adding a web font to match your branding.
+
+----
 
 Shibuya theme is using the "Inter" font served by Google fonts for headings.
 If this font doesn't match your branding, you can change it through our

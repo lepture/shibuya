@@ -1,6 +1,6 @@
 :description: Adding social networks of GitHub, Twitter, and etc. on your website.
 
-Social Network
+Social network
 ==============
 
 .. rst-class:: lead
@@ -68,7 +68,7 @@ The Mastodon icon will be displayed only on the footer.
 YouTube
 -------
 
-The Mastodon icon will be displayed only on the footer.
+The YouTube icon will be displayed only on the footer.
 
 .. code-block:: python
 

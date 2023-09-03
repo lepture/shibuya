@@ -1,8 +1,16 @@
-Images and Videos
+Images and videos
 =================
+
+.. rst-class:: lead
+
+    Here are the examples of images and videos in Shibuya sphinx theme.
+
+-----
 
 Simple images
 -------------
+
+A simple image with ``image`` directive:
 
 .. container:: demo
 

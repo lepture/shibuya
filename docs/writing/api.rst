@@ -1,7 +1,7 @@
 :description: How API documentation looks like on Shibuya Sphinx theme.
 
-API Documentation
-=================
+API reference
+=============
 
 Here is an example of ``autofunction``, ``autoclass`` directives.
 

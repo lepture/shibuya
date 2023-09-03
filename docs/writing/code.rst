@@ -1,6 +1,6 @@
 :description: Well designed code highlights on Shibuya Sphinx theme.
 
-Code Blocks
+Code blocks
 ===========
 
 ``code-block`` directive
