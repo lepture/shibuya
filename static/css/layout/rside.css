@@ -1,0 +1,65 @@
+.sy-deprecated {
+  padding: .8rem;
+  font-size: .85rem;
+  background-color: rgba(255, 221, 0, 0.1);
+  border-radius: 6px;
+}
+
+.sy-deprecated a {
+  color: var(--sy-c-link);
+  text-decoration: underline;
+}
+
+.sy-deprecated a:hover {
+  color: var(--sy-c-link-weak);
+}
+
+.sy-rside-inner > div {
+  margin-bottom: 1rem;
+}
+
+.sy-rside-inner > div > h3 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+html[lang="zh"] .sy-rside-inner > div > h3,
+html[lang="zh-TW"] .sy-rside-inner > div > h3,
+html[lang="ja"] .sy-rside-inner > div > h3,
+html[lang="ko"] .sy-rside-inner > div > h3 {
+  letter-spacing: 0;
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.localtoc > ul li {
+  margin-top: 0.36rem;
+  margin-bottom: 0.36rem;
+}
+
+.localtoc > ul li > a:hover {
+  color: var(--sy-c-link-weak);
+}
+
+.localtoc > ul li.active > a {
+  font-weight: 500;
+  color: var(--sy-c-link);
+}
+
+.localtoc > ul > li ul {
+  padding-left: 0.8rem;
+}
+
+/* show source link */
+.sy-rside ul.this-page-menu {
+  margin-top: -0.6rem;
+}
+.sy-rside ul.this-page-menu a {
+  font-size: 0.96rem;
+}
+.sy-rside ul.this-page-menu a:hover {
+  color: var(--sy-c-link-weak);
+}

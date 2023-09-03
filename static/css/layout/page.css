@@ -7,10 +7,6 @@
   min-height: calc(100vh - var(--sy-s-offset-top) - 80px);
 }
 
-.sy-rside .sy-scrollbar > div {
-  margin-bottom: 1rem;
-}
-
 @media (max-width: 767px) {
   #lside {
     position: fixed;

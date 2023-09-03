@@ -43,13 +43,6 @@ strong, em {
   max-width: 90rem;
 }
 
-.sy-deprecated {
-  padding: .8rem;
-  font-size: .85rem;
-  background-color: rgba(255, 221, 0, 0.1);
-  border-radius: 6px;
-}
-
 .sy-scrollbar {
   overflow-y: auto;
   scrollbar-gutter: stable;
