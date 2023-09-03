@@ -1,9 +1,9 @@
-sphinx==6.2.1
+sphinx==7.1.2
 sphinx-copybutton==0.5.2
-sphinx-design==0.4.1
+sphinx-design==0.5.0
 ipykernel==6.25.1
 jupyter-sphinx==0.4.0
 sphinx-togglebutton==0.3.2
-nbsphinx==0.9.2
+nbsphinx==0.9.3
 myst-parser==2.0.0
 Babel
