@@ -6,6 +6,8 @@ Sidebar
 Shibuya allows you to customize the elements that appear in the sidebar of your
 documentation pages.
 
+.. _globaltoc:
+
 Global TOC
 ----------
 
