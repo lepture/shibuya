@@ -64,3 +64,19 @@ Disable web fonts
 Web fonts can sometime be a trouble, you may want to disable web fonts
 totally. This is super easy, just keep the partial ``webfonts.html``
 file to be empty.
+
+Fonts CSS variables
+-------------------
+
+You can configure the font family with CSS variables, below is a list of CSS variables
+that you can customize to change the fonts used in your documentation:
+
+========================  ===========================
+Variable Name              Description
+========================  ===========================
+``--sy-f-sys``            System font stack
+``--sy-f-cjk``            CJK font stack
+``--sy-f-heading``        Font stack for headings
+``--sy-f-text``           Font stack for body text
+``--sy-f-mono``           Monospace font stack
+========================  ===========================

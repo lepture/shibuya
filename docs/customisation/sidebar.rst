@@ -1,11 +1,33 @@
-:description: Customize the elements that appear in the right sidebar of
-              your documentation pages.
+:description: Customize the elements that appear in the sidebar of your documentation pages.
 
-Sidebar Elements
-================
+Sidebar
+=======
 
-Shibuya allows you to customize the elements that appear in the right
-sidebar of your documentation pages.
+Shibuya allows you to customize the elements that appear in the sidebar of your
+documentation pages.
+
+Global TOC
+----------
+
+The left sidebar contains the global table of contents tree of the documentation. It is
+collapsed by default. Developers can customize the collapse behavior via ``conf.py``:
+
+.. code-block:: python
+    :caption: conf.py
+
+    html_theme_options = {
+        "globaltoc_expand_depth": 1,
+    }
+
+The above configuration will only expand the first level of the global table of contents.
+
+Shibuya sphinx theme also provides other options to control the toctree_ function:
+
+- toctree_collapse: equals to ``collapse``, ``False`` by default.
+- toctree_titles_only: equals to ``titles_only``, ``True`` by default
+- toctree_includehidden: equals to ``includehidden``, ``True`` by default
+
+.. _toctree: https://www.sphinx-doc.org/en/master/development/templating.html#toctree
 
 Customize elements
 ------------------
