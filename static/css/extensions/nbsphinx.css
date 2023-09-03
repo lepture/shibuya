@@ -2,8 +2,8 @@
   --radius: 1px;
 }
 
-.yue div.nboutput.container div.prompt {
-  padding-top: 0;
+.yue div.nblast.container {
+  padding-top: 5px;
 }
 
 .yue div.nbinput.container div.input_area {
@@ -12,4 +12,8 @@
 
 .yue div.nboutput.container div.output_area.stderr {
   background-color: var(--stderr-bg);
+}
+
+.yue div.nboutput.container div.output_area > .math-wrapper > div.math {
+  padding-top: 0;
 }
