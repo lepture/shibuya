@@ -2,6 +2,10 @@
   --radius: 1px;
 }
 
+.yue div.nboutput.container div.prompt {
+  padding-top: 0;
+}
+
 .yue div.nbinput.container div.input_area {
   border-color: var(--sy-c-border);
 }
