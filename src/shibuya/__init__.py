@@ -5,7 +5,8 @@ from sphinx.builders.html import StandaloneHTMLBuilder
 from .context import (
     css_to_dict,
     normalize_pageurl,
-    normalize_toc,
+    normalize_localtoc,
+    normalize_globaltoc,
     create_edit_source_link,
 )
 from ._sphinx import (
@@ -30,7 +31,7 @@ def _html_page_context(app: Sphinx, pagename: str, templatename: str, context: D
         context["pageurl"] = normalize_pageurl(pageurl, app.builder.name)
 
     if "toc" in context:
-        context["toc"] = normalize_toc(context['toc'])
+        context["toc"] = normalize_localtoc(context['toc'])
 
     def create_i18n_link(pattern: str):
         url = pattern.replace("%s", pagename)
@@ -54,6 +55,7 @@ def _initialize_builder(app: Sphinx):
         "shibuya_light_css_variables": css_to_dict("light.css"),
         "shibuya_dark_css_variables": css_to_dict("dark.css"),
         "edit_source_link": edit_source_link,
+        "expandtoc": normalize_globaltoc,
     })
 
     app.builder.highlighter.formatter = WrapLineFormatter

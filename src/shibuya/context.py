@@ -29,7 +29,7 @@ def normalize_pageurl(pageurl: str, builder: str):
     return pageurl
 
 
-def normalize_toc(toc: str):
+def normalize_localtoc(toc: str):
     if not toc:
         return toc
 
@@ -41,6 +41,22 @@ def normalize_toc(toc: str):
     if len(child) == 2 and child[1].tag == "ul":
         return ET.tostring(child[1]).decode("utf-8")
     return toc
+
+
+def normalize_globaltoc(toc: str, depth: int = 0):
+    depth = int(depth)
+    if not toc or not depth:
+        return toc
+
+    root = ET.fromstring('<div>' + toc.strip() + '</div>')
+    for i in range(1, depth + 1):
+        elements = root.findall(f'.//li[@class="toctree-l{i}"]')
+        for el in elements:
+            _classname = el.get('class')
+            el.set('class', _classname + ' _expand')
+
+    result = ET.tostring(root).decode('utf-8')
+    return result[5:-6]
 
 
 def create_edit_source_link(context: Dict[str, Any]):
