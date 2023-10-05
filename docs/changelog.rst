@@ -5,6 +5,11 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2023.10.5
+---------
+
+- Fix deprecated links in relations.html and searchbox.html
+
 2023.9.3
 --------
 
