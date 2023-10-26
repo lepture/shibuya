@@ -127,6 +127,11 @@ p.centered {
   text-align: center;
 }
 
+.light .dark-only,
+.dark .light-only {
+  display: none;
+}
+
 /* index table */
 .yue .genindex-jumpbox,
 .yue .modindex-jumpbox {

@@ -37,6 +37,7 @@ Make sure it works well with other extensions. Currently integrated with:
 - :bdg-success:`DONE` :ref:`sphinx-jupyter`
 - :bdg-success:`DONE` :ref:`sphinx-togglebutton`
 - :bdg-success:`DONE` :ref:`nbsphinx`
+- :bdg-success:`DONE` :ref:`numpydoc`
 
 Instant search
 --------------
