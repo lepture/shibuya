@@ -102,3 +102,27 @@ dt.sig > a.internal:before {
   top: -1.5rem;
   font-size: 0.8rem;
 }
+
+.classifier {
+  font-style: oblique;
+  font-weight: 400;
+}
+
+.classifier:before {
+  font-style: normal;
+  margin-left: 0.1rem;
+  margin-right: 0.5rem;
+  content: ":";
+  display: inline-block;
+}
+
+/* autosummary table */
+.yue .table-wrapper table.autosummary td {
+  border: none;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.yue p.rubric + div.autosummary {
+  margin-top: 0;
+}
