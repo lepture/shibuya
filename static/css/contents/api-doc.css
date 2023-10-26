@@ -115,3 +115,14 @@ dt.sig > a.internal:before {
   content: ":";
   display: inline-block;
 }
+
+/* autosummary table */
+.yue .table-wrapper table.autosummary td {
+  border: none;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.yue p.rubric + div.autosummary {
+  margin-top: 0;
+}
