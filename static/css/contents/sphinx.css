@@ -8,6 +8,13 @@
   margin-top: 1rem;
 }
 
+.yue p.rubric {
+  color: var(--yue-c-heading);
+  font-weight: 600;
+  font-size: 1.25em;
+  margin-top: 2em;
+}
+
 .yue dl.simple > dd > p,
 .yue ul.simple > li > p,
 .yue ol.simple > li > p {

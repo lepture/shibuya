@@ -1,5 +1,9 @@
 import os
+import sys
 import shibuya
+
+# for example source
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "example_code"))
 
 project = "Shibuya"
 copyright = "Copyright &copy; 2023, Hsiaoming Yang"
@@ -14,14 +18,17 @@ extensions = [
     "sphinx.ext.extlinks",
     "sphinx.ext.todo",
     "sphinx.ext.viewcode",
+    "sphinx.ext.autosummary",
     "sphinx_copybutton",
     "sphinx_design",
     "myst_parser",
     "jupyter_sphinx",
     "sphinx_togglebutton",
     "nbsphinx",
+    "numpydoc",
 ]
 todo_include_todos = True
+autosummary_generate = True
 jupyter_sphinx_thebelab_config = {
     'requestKernel': True,
 }
@@ -36,6 +43,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 intersphinx_mapping = {
     "python": ("https://docs.python.org/3", None),
     "sphinx": ("https://www.sphinx-doc.org/en/master", None),
+    "numpy": ("https://numpy.org/devdocs/", None),
 }
 
 templates_path = ["_templates"]

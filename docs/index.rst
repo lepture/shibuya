@@ -89,6 +89,7 @@ Explore the following sections to discover more about our theme and its features
     extensions/sphinx-togglebutton
     extensions/jupyter-sphinx
     extensions/nbsphinx
+    extensions/numpydoc
 
 .. toctree::
     :caption: Development
