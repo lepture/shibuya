@@ -5,6 +5,15 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2023.10.26
+----------
+
+- Add ``gitlab_url`` and ``bitbucket_url``
+- Update Twitter icon to X icon
+- Integrate with numpydoc extension
+- Improve CSS for ``sphinx.ext.autosummary`` extension
+- Add ``light-only`` and ``dark-only`` class
+
 2023.10.5
 ---------
 
