@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html {% if language is not none %}lang="{{ language }}"{% endif %}>
+<html {% if language is not none %}lang="{{ language }}"{% endif %} data-accent-color="{{ theme_accent_color }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -71,7 +71,7 @@
   {%- block extrahead %}{% endblock -%}
   {%- include "partials/extra-head.html" -%}
 </head>
-<body data-accent-color="{{ theme_accent_color }}">
+<body>
   {%- block document -%}
   <div class="document">
     {%- include "partials/banner.html" -%}

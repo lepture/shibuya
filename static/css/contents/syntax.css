@@ -1,7 +1,7 @@
 :root {
-  --syntax-light-pre-bg: rgba(var(--sy-rc-theme), 0.1);
-  --syntax-light-cap-bg: rgba(var(--sy-rc-theme), 0.2);
-  --syntax-light-highlight-bg: rgba(var(--sy-rc-theme), 0.2);
+  --syntax-light-pre-bg: var(--accent-a2);
+  --syntax-light-cap-bg: var(--accent-3);
+  --syntax-light-highlight-bg: var(--accent-a3);
 
   --syntax-light-text: #24292f;
   --syntax-light-meta: #807c87;
@@ -33,9 +33,9 @@
   --syntax-light-meta-diff-range: #8250df;
   --syntax-light-special-bg: #dccafa;
 
-  --syntax-dark-pre-bg: rgba(var(--sy-rc-theme), 0.2);
-  --syntax-dark-cap-bg: rgba(var(--sy-rc-theme), 0.1);
-  --syntax-dark-highlight-bg: rgba(var(--sy-rc-theme), 0.2);
+  --syntax-dark-pre-bg: var(--accent-a2);
+  --syntax-dark-cap-bg: var(--accent-3);
+  --syntax-dark-highlight-bg: var(--accent-a3);
 
   --syntax-dark-text: #c9d1d9;
   --syntax-dark-meta: #6e7781;
