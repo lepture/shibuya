@@ -1,3 +1,5 @@
 @import "./css/base.css";
+@import "./css/colors.css";
+@import "./css/variables.css";
 @import "./css/icons.css";
 @import "./css/modules.css";

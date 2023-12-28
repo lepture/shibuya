@@ -1,0 +1,15 @@
+:root {
+  --sy-f-sys: -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Droid Sans, Helvetica Neue;
+  --sy-f-cjk: PingFang SC, Hiragino Sans GB, Droid Sans Fallback, Microsoft YaHei;
+  --sy-f-heading: var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
+  --sy-f-text: var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
+  --sy-f-mono: Menlo, Monaco, Consolas, "Courier New", monospace;
+  --sy-c-divider: rgba(var(--sy-rc-text), 0.1);
+  --sy-c-divider-weak: rgba(var(--sy-rc-text), 0.05);
+  --sy-c-border: rgba(var(--sy-rc-text), 0.14);
+  --sy-s-banner-height: 0rem;
+  --sy-s-navbar-height: 56px;
+  --sy-s-offset-top: calc(var(--sy-s-navbar-height) + var(--sy-s-banner-height));
+  --sy-c-link: rgb(var(--sy-rc-theme));
+  --sy-c-link-weak: rgba(var(--sy-rc-theme), 0.86);
+}

@@ -1,0 +1,74 @@
+@import '@radix-ui/colors/gray.css';
+@import '@radix-ui/colors/gray-dark.css';
+@import '@radix-ui/colors/gray-alpha.css';
+@import '@radix-ui/colors/gray-dark-alpha.css';
+
+@import '@radix-ui/colors/slate.css';
+@import '@radix-ui/colors/slate-dark.css';
+@import '@radix-ui/colors/slate-alpha.css';
+@import '@radix-ui/colors/slate-dark-alpha.css';
+
+@import '@radix-ui/colors/red.css';
+@import '@radix-ui/colors/red-dark.css';
+@import '@radix-ui/colors/red-alpha.css';
+@import '@radix-ui/colors/red-dark-alpha.css';
+
+@import '@radix-ui/colors/blue.css';
+@import '@radix-ui/colors/blue-dark.css';
+@import '@radix-ui/colors/blue-alpha.css';
+@import '@radix-ui/colors/blue-dark-alpha.css';
+
+@import '@radix-ui/colors/green.css';
+@import '@radix-ui/colors/green-dark.css';
+@import '@radix-ui/colors/green-alpha.css';
+@import '@radix-ui/colors/green-dark-alpha.css';
+
+@import '@radix-ui/colors/orange.css';
+@import '@radix-ui/colors/orange-dark.css';
+@import '@radix-ui/colors/orange-alpha.css';
+@import '@radix-ui/colors/orange-dark-alpha.css';
+
+@import '@radix-ui/colors/yellow.css';
+@import '@radix-ui/colors/yellow-dark.css';
+@import '@radix-ui/colors/yellow-alpha.css';
+@import '@radix-ui/colors/yellow-dark-alpha.css';
+
+@import '@radix-ui/colors/purple.css';
+@import '@radix-ui/colors/purple-dark.css';
+@import '@radix-ui/colors/purple-alpha.css';
+@import '@radix-ui/colors/purple-dark-alpha.css';
+
+@import '@radix-ui/colors/gold.css';
+@import '@radix-ui/colors/gold-dark.css';
+@import '@radix-ui/colors/gold-alpha.css';
+@import '@radix-ui/colors/gold-dark-alpha.css';
+
+@import '@radix-ui/colors/bronze.css';
+@import '@radix-ui/colors/bronze-dark.css';
+@import '@radix-ui/colors/bronze-alpha.css';
+@import '@radix-ui/colors/bronze-dark-alpha.css';
+
+@import '@radix-ui/colors/black-alpha.css';
+@import '@radix-ui/colors/white-alpha.css';
+
+:root {
+  --page-text-color: var(--gray-12);
+  --page-background-color: white;
+  --page-background-contrast: black;
+}
+
+html {
+  color: var(--page-text-color);
+  background-color: var(--page-background-color);
+}
+
+html.light {
+  color-scheme: light;
+  --page-background-color: white;
+}
+
+html.dark {
+  color-scheme: dark;
+  --page-background-color: var(--slate-1);
+  --page-background-contrast: var(--white-a10);
+}
