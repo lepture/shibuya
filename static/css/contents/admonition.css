@@ -1,61 +1,91 @@
-:root,
-html.light {
-  --admonition-bg-opacity: 0.03;
-  --admonition-head-opacity: 0.08;
-  --admonition-border-opacity: 1;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --admonition-bg-opacity: 0.08;
-    --admonition-head-opacity: 0.15;
-    --admonition-border-opacity: 0.8;
-  }
-}
-
-html.dark {
-  --admonition-bg-opacity: 0.08;
-  --admonition-head-opacity: 0.15;
-  --admonition-border-opacity: 0.8;
-}
-
 :root {
   --attention-icon: var(--i-alert-url);
-  --attention-color: 247, 89, 171;
+  --attention-1: var(--crimson-2);
+  --attention-2: var(--crimson-a3);
+  --attention-3: var(--crimson-9);
+  --attention-4: var(--crimson-10);
+
   --caution-icon: var(--i-zap-url);
-  --caution-color: 247, 186, 42;
+  --caution-1: var(--amber-2);
+  --caution-2: var(--amber-a3);
+  --caution-3: var(--amber-9);
+  --caution-4: var(--amber-11);
+
   --danger-icon: var(--i-skull-url);
-  --danger-color: 255, 92, 47;
+  --danger-1: var(--ruby-2);
+  --danger-2: var(--ruby-a3);
+  --danger-3: var(--ruby-9);
+  --danger-4: var(--ruby-10);
+
   --error-icon: var(--i-close-url);
-  --error-color: 255, 92, 47;
+  --error-1: var(--red-2);
+  --error-2: var(--red-a3);
+  --error-3: var(--red-9);
+  --error-4: var(--red-10);
+
   --hint-icon: var(--i-bell-url);
-  --hint-color: 0, 200, 80;
+  --hint-1: var(--green-2);
+  --hint-2: var(--green-a3);
+  --hint-3: var(--green-9);
+  --hint-4: var(--green-10);
+
   --important-icon: var(--i-flame-url);
-  --important-color: 179, 127, 235;
+  --important-1: var(--purple-2);
+  --important-2: var(--purple-a3);
+  --important-3: var(--purple-9);
+  --important-4: var(--purple-10);
+
   --note-icon: var(--i-calendar-url);
-  --note-color: 3, 169, 244;
+  --note-1: var(--blue-2);
+  --note-2: var(--blue-a3);
+  --note-3: var(--blue-9);
+  --note-4: var(--blue-10);
+
   --tip-icon: var(--i-rocket-url);
-  --tip-color: 0, 200, 80;
+  --tip-1: var(--green-2);
+  --tip-2: var(--green-a3);
+  --tip-3: var(--green-9);
+  --tip-4: var(--green-10);
+
   --warning-icon: var(--i-zap-url);
-  --warning-color: 255, 145, 0;
+  --warning-1: var(--orange-2);
+  --warning-2: var(--orange-a3);
+  --warning-3: var(--orange-9);
+  --warning-4: var(--orange-10);
+
   --seealso-icon: var(--i-link-url);
-  --seealso-color: 60, 140, 255;
+  --seealso-1: var(--indigo-2);
+  --seealso-2: var(--indigo-a3);
+  --seealso-3: var(--indigo-9);
+  --seealso-4: var(--indigo-10);
+
   --todo-icon: var(--i-bookmark-url);
-  --todo-color: 220, 150, 0;
-  --versionadded-color: 0, 200, 80;
-  --versionchanged-color: 247, 186, 42;
-  --deprecated-color: 255, 92, 47;
+  --todo-1: var(--bronze-2);
+  --todo-2: var(--bronze-a3);
+  --todo-3: var(--bronze-9);
+  --todo-4: var(--bronze-10);
+
+  --versionadded-1: var(--green-2);
+  --versionadded-2: var(--green-9);
+  --versionchanged-1: var(--amber-2);
+  --versionchanged-2: var(--amber-9);
+  --deprecated-1: var(--red-2);
+  --deprecated-2: var(--red-9);
 }
 
 .admonition {
-  --color-rgb: var(--sy-rc-theme);
   --icon-url: var(--i-bell-url);
+  --color-1: var(--accent-2);
+  --color-2: var(--accent-a3);
+  --color-3: var(--accent-9);
+  --color-4: var(--accent-10);
+
   position: relative;
   padding: 0 16px 0.8rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  border-left: 4px solid rgba(var(--color-rgb), var(--admonition-border-opacity));
-  background-color: rgba(var(--color-rgb), var(--admonition-bg-opacity));
+  border-left: 4px solid var(--color-3);
+  background-color: var(--color-1);
 }
 
 .admonition:before {
@@ -66,7 +96,7 @@ html.dark {
   width: 20px;
   height: 20px;
   border-radius: 100%;
-  background-color: rgb(var(--color-rgb));
+  background-color: var(--color-3);
 }
 
 .admonition p.admonition-title {
@@ -76,11 +106,11 @@ html.dark {
   font-size: .85rem;
   font-weight: 600;
   line-height: 1.72;
-  color: rgb(var(--color-rgb));
-  background-color: rgba(var(--color-rgb), var(--admonition-head-opacity));
+  color: var(--color-4);
+  background-color: var(--color-2);
 
-  --yue-c-code: rgb(var(--color-rgb));
-  --yue-c-bold: rgb(var(--color-rgb));
+  --yue-c-code: var(--color-4);
+  --yue-c-bold: var(--color-4);
 }
 
 .admonition p.admonition-title svg {
@@ -102,57 +132,90 @@ html.dark {
 
 .admonition.attention {
   --icon-url: var(--attention-icon);
-  --color-rgb: var(--attention-color);
+  --color-1: var(--attention-1);
+  --color-2: var(--attention-2);
+  --color-3: var(--attention-3);
+  --color-4: var(--attention-4);
 }
 
 .admonition.caution {
   --icon-url: var(--caution-icon);
-  --color-rgb: var(--caution-color);
+  --color-1: var(--caution-1);
+  --color-2: var(--caution-2);
+  --color-3: var(--caution-3);
+  --color-4: var(--caution-4);
 }
 
 .admonition.danger {
   --icon-url: var(--danger-icon);
-  --color-rgb: var(--danger-color);
+  --color-1: var(--danger-1);
+  --color-2: var(--danger-2);
+  --color-3: var(--danger-3);
+  --color-4: var(--danger-4);
 }
 
 .admonition.error {
   --icon-url: var(--error-icon);
-  --color-rgb: var(--error-color);
+  --color-1: var(--error-1);
+  --color-2: var(--error-2);
+  --color-3: var(--error-3);
+  --color-4: var(--error-4);
 }
 
 .admonition.hint {
   --icon-url: var(--hint-icon);
-  --color-rgb: var(--hint-color);
+  --color-1: var(--hint-1);
+  --color-2: var(--hint-2);
+  --color-3: var(--hint-3);
+  --color-4: var(--hint-4);
 }
 
 .admonition.important {
   --icon-url: var(--important-icon);
-  --color-rgb: var(--important-color);
+  --color-1: var(--important-1);
+  --color-2: var(--important-2);
+  --color-3: var(--important-3);
+  --color-4: var(--important-4);
 }
 
 .admonition.note {
   --icon-url: var(--note-icon);
-  --color-rgb: var(--note-color);
+  --color-1: var(--note-1);
+  --color-2: var(--note-2);
+  --color-3: var(--note-3);
+  --color-4: var(--note-4);
 }
 
 .admonition.tip {
   --icon-url: var(--tip-icon);
-  --color-rgb: var(--tip-color);
+  --color-1: var(--tip-1);
+  --color-2: var(--tip-2);
+  --color-3: var(--tip-3);
+  --color-4: var(--tip-4);
 }
 
 .admonition.warning {
   --icon-url: var(--warning-icon);
-  --color-rgb: var(--warning-color);
+  --color-1: var(--warning-1);
+  --color-2: var(--warning-2);
+  --color-3: var(--warning-3);
+  --color-4: var(--warning-4);
 }
 
 .admonition.seealso {
   --icon-url: var(--seealso-icon);
-  --color-rgb: var(--seealso-color);
+  --color-1: var(--seealso-1);
+  --color-2: var(--seealso-2);
+  --color-3: var(--seealso-3);
+  --color-4: var(--seealso-4);
 }
 
 .admonition.admonition-todo {
   --icon-url: var(--todo-icon);
-  --color-rgb: var(--todo-color);
+  --color-1: var(--todo-1);
+  --color-2: var(--todo-2);
+  --color-3: var(--todo-3);
+  --color-4: var(--todo-4);
 }
 
 .admonition p.admonition-title + p {
@@ -172,12 +235,13 @@ span.versionmodified {
 div.versionadded,
 div.versionchanged,
 div.deprecated {
-  --version-color: var(--sy-rc-theme);
+  --color-1: var(--accent-2);
+  --color-2: var(--accent-9);
   position: relative;
   padding: 6px 1rem;
   margin: 1rem 0;
-  border-left: 4px solid rgba(var(--version-color), 1);
-  background-color: rgba(var(--version-color), 0.08);
+  border-left: 4px solid var(--color-2);
+  background-color: var(--color-1);
   line-height: 1.72;
 }
 
@@ -192,21 +256,24 @@ div.deprecated:before {
   width: 20px;
   height: 20px;
   border-radius: 100%;
-  background-color: rgba(var(--version-color), 1);
+  background-color: var(--color-2);
   text-align: center;
   font: normal bold 14px/20px var(--sy-f-mono);
 }
 
 div.versionadded {
-  --version-color: var(--versionadded-color);
+  --color-1: var(--versionadded-1);
+  --color-2: var(--versionadded-2);
   --version-icon: '#';
 }
 div.versionchanged {
-  --version-color: var(--versionchanged-color);
+  --color-1: var(--versionchanged-1);
+  --color-2: var(--versionchanged-2);
   --version-icon: '%';
 }
 div.deprecated {
-  --version-color: var(--deprecated-color);
+  --color-1: var(--deprecated-1);
+  --color-2: var(--deprecated-2);
   --version-icon: '!';
 }
 div.versionadded > p,

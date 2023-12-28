@@ -71,7 +71,7 @@
   {%- block extrahead %}{% endblock -%}
   {%- include "partials/extra-head.html" -%}
 </head>
-<body>
+<body data-accent-color="{{ theme_accent_color }}">
   {%- block document -%}
   <div class="document">
     {%- include "partials/banner.html" -%}

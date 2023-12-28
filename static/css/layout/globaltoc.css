@@ -47,16 +47,16 @@
 }
 
 .globaltoc li.toctree-l2.current {
-  border-color: var(--sy-c-link);
+  border-color: var(--accent-9);
 }
 
 .globaltoc > ul a.current {
   font-weight: 500;
-  color: var(--sy-c-link);
+  color: var(--accent-9);
 }
 
 .globaltoc > ul a:hover {
-  color: var(--sy-c-link-weak);
+  color: var(--accent-11);
 }
 
 /* toc toggle */

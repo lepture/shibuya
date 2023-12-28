@@ -8,17 +8,9 @@
   src: url('https://cdn.jsdelivr.net/npm/country-flag-emoji-polyfill@0.1/dist/TwemojiCountryFlags.woff2') format('woff2');
 }
 
-html.light {
-  color-scheme: light;
-}
-
-html.dark {
-  color-scheme: dark;
-}
-
 ::selection {
-  color: rgba(var(--sy-rc-theme), 1);
-  background-color: rgba(var(--sy-rc-theme), 0.2);
+  color: var(--accent-11);
+  background-color: var(--accent-4);
 }
 
 body {
