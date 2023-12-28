@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   color: var(--sy-c-banner, white);
-  background-color: var(--sy-c-banner-bg, rgba(var(--sy-rc-theme), 1));
+  background-color: var(--sy-c-banner-bg, var(--accent-10));
   z-index: 20;
 }
 

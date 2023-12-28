@@ -23,6 +23,10 @@
   color: var(--sy-c-link);
 }
 
+.sy-lside .rst-versions a:hover {
+  color: var(--sy-c-link-strong);
+}
+
 .sy-lside .rst-versions .rst-current-version {
   background-color: var(--sy-c-bg);
   color: var(--sy-c-text);

@@ -1,7 +1,0 @@
-:root {
-  --sy-c-divider: rgba(var(--sy-rc-text), 0.1);
-  --sy-c-divider-weak: rgba(var(--sy-rc-text), 0.05);
-  --sy-c-border: rgba(var(--sy-rc-text), 0.14);
-  --sy-c-link: rgb(var(--sy-rc-theme));
-  --sy-c-link-weak: rgba(var(--sy-rc-theme), 0.86);
-}

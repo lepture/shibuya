@@ -43,15 +43,7 @@
 }
 
 .yue .jupyter_container .stderr {
-  background-color: var(--stderr-bg);
-}
-
-html.light .stderr {
-  --stderr-bg: #ff8d8d;
-}
-
-html.dark .stderr {
-  --stderr-bg: #e02323;
+  background-color: var(--red-6);
 }
 
 html.light .jupyter_container .cell_output {

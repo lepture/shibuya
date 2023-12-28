@@ -7,9 +7,11 @@
   --sd-color-shadow: var(--gray-1);
   --sd-color-card-border-hover: var(--sy-c-border);
   --sd-color-card-border: var(--sy-c-divider);
-  --sd-color-tabs-label-inactive: var(--sy-c-bold);
+  --sd-color-tabs-label-inactive: var(--sy-c-text-strong);
   --sd-color-tabs-label-active: var(--sd-color-primary);
   --sd-color-tabs-underline-active: var(--sd-color-primary);
+  --sd-color-tabs-label-hover: var(--accent-9);
+  --sd-color-tabs-underline-hover: var(--accent-9);
 }
 
 .yue .sd-container-fluid {

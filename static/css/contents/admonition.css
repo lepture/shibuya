@@ -229,7 +229,7 @@
 
 /* versioning directives */
 span.versionmodified {
-  color: var(--sy-c-bold);
+  color: var(--sy-c-text-strong);
   font-weight: 600;
 }
 div.versionadded,

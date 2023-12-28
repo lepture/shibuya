@@ -41,12 +41,12 @@ html[lang="ko"] .sy-rside-inner > div > h3 {
 }
 
 .localtoc > ul li > a:hover {
-  color: var(--sy-c-link-weak);
+  color: var(--sy-c-link);
 }
 
 .localtoc > ul li.active > a {
   font-weight: 500;
-  color: var(--sy-c-link);
+  color: var(--sy-c-link-strong);
 }
 
 .localtoc > ul > li ul {

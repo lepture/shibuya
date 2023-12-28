@@ -28,7 +28,7 @@
 }
 
 .sy-breadcrumbs ul a:hover {
-  color: var(--sy-c-bold);
+  color: var(--sy-c-text-strong);
 }
 
 .sy-breadcrumbs ul a + span {

@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5 {
 }
 
 strong, em {
-  color: var(--sy-c-bold);
+  color: var(--sy-c-text-strong);
 }
 
 .sy-container {
