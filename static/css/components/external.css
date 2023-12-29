@@ -10,6 +10,10 @@
   color: var(--sy-c-text) !important;
 }
 
+#ethical-ad-placement .ethical-text a:hover {
+  color: var(--sy-c-link-hover) !important;
+}
+
 .sy-main #ethical-ad-placement .ethical-sidebar {
   margin-left: 0;
   max-width: 380px;
