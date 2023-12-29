@@ -1,0 +1,14 @@
+.yue {
+  --xr-font-color0: var(--sy-c-heading);
+  --xr-font-color2: var(--sy-c-text);
+  --xr-font-color3: var(--sy-c-light);
+  --xr-border-color: var(--sy-c-border);
+  --xr-disabled-color: var(--gray-a6);
+  --xr-background-color: var(--sy-c-background);
+  --xr-background-color-row-even: var(--sy-c-background);
+  --xr-background-color-row-odd: var(--gray-2);
+}
+
+.yue .xr-array-data pre {
+  margin: 0;
+}
