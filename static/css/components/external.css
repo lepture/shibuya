@@ -75,6 +75,7 @@
 
 .carbon-poweredby {
   position: absolute;
+  opacity: 0.68;
   right: 0.8rem;
   bottom: 0.5rem;
   font-size: 0.68rem;

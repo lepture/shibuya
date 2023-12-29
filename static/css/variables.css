@@ -30,7 +30,7 @@
 
   /* colors for footer */
   --sy-c-foot-text: var(--sy-c-text);
-  --sy-c-foot-bg: var(--slate-2);
+  --sy-c-foot-background: var(--slate-2);
   --sy-c-foot-divider: var(--sy-c-divider);
 
   --sy-dropdown-shadow: 0 12px 32px var(--gray-a6), 0 2px 6px var(--gray-a4);
@@ -47,7 +47,7 @@ html.dark {
   --sy-c-background: var(--slate-1);
   --sy-c-overlay: var(--white-a2);
   --sy-c-background-contrast: var(--white-a10);
-  --sy-c-foot-bg: var(--black-a11);
+  --sy-c-foot-background: var(--black-a11);
   --sy-c-foot-divider: var(--black-a12);
 }
 

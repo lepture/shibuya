@@ -3,7 +3,7 @@
   padding-top: 1.5rem;
   padding-bottom: 1rem;
   color: var(--sy-c-foot-text);
-  background-color: var(--sy-c-foot-bg);
+  background-color: var(--sy-c-foot-background);
 }
 
 .sy-foot-inner {

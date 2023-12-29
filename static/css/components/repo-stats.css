@@ -10,7 +10,7 @@
 }
 
 .repo-stats:hover .repo-stats-count {
-  color: var(--sy-c-text);
+  color: var(--sy-c-link-hover);
 }
 
 .repo-stats strong {
