@@ -1,17 +1,63 @@
 /* tweak the style of sphinx-design extension */
 .yue {
-  --sd-color-primary: var(--accent-10);
-  --sd-color-success: var(--green-9);
-  --sd-color-warning: var(--orange-9);
-  --sd-color-danger: var(--red-9);
+  --sd-color-primary: var(--accent-a11);
+  --sd-color-secondary: var(--gold-a11);
+  --sd-color-success: var(--green-a11);
+  --sd-color-info: var(--blue-a11);
+  --sd-color-warning: var(--orange-a11);
+  --sd-color-danger: var(--red-a11);
+  --sd-color-light: var(--gray-3);
+  --sd-color-muted: var(--gray-9);
+  --sd-color-dark: var(--sage-12);
+  --sd-color-black: black;
+  --sd-color-white: white;
+
+  --sd-color-primary-highlight: var(--accent-a8);
+  --sd-color-secondary-highlight: var(--gold-a8);
+  --sd-color-success-highlight: var(--green-a8);
+  --sd-color-info-highlight: var(--blue-a8);
+  --sd-color-warning-highlight: var(--orange-a8);
+  --sd-color-danger-highlight: var(--red-a8);
+  --sd-color-light-highlight: var(--gray-4);
+  --sd-color-muted-highlight: var(--gray-11);
+  --sd-color-dark-highlight: var(--sage-12);
+  --sd-color-black-highlight: black;
+  --sd-color-white-highlight: #d9d9d9;
+
+  --sd-color-primary-text: var(--accent-9-contrast);
+  --sd-color-secondary-text: var(--gold-9-contrast);
+  --sd-color-success-text: var(--green-9-contrast);
+  --sd-color-info-text: var(--blue-9-contrast);
+  --sd-color-warning-text: var(--orange-9-contrast);
+  --sd-color-danger-text: var(--red-9-contrast);
+  --sd-color-light-text: #212529;
+  --sd-color-muted-text: #fff;
+  --sd-color-dark-text: #fff;
+  --sd-color-black-text: #fff;
+  --sd-color-white-text: #212529;
+
   --sd-color-shadow: var(--gray-1);
-  --sd-color-card-border-hover: var(--sy-c-border);
-  --sd-color-card-border: var(--sy-c-divider);
+  --sd-color-card-border: var(--sy-c-border);
+  --sd-color-card-border-hover: var(--accent-a9);
   --sd-color-tabs-label-inactive: var(--sy-c-bold);
   --sd-color-tabs-label-active: var(--sd-color-primary);
   --sd-color-tabs-underline-active: var(--sd-color-primary);
   --sd-color-tabs-label-hover: var(--accent-9);
   --sd-color-tabs-underline-hover: var(--accent-9);
+}
+
+.yue a.sd-badge,
+.yue a.sd-badge:hover {
+  border-bottom: 0;
+}
+
+.yue .sd-badge {
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+.yue .sd-btn {
+  border-color: var(--sy-c-border);
 }
 
 .yue .sd-container-fluid {
@@ -126,6 +172,6 @@
   }
 }
 
-.yue a.sd-text-wrap {
-  border-bottom: 0;
+.yue a.sd-text-wrap:hover {
+  border-bottom-width: 1px;
 }

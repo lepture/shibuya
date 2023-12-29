@@ -100,21 +100,27 @@ Badges
 
 :bdg:`plain badge`
 
-:bdg-primary:`primary`, :bdg-primary-line:`primary-line`
+:bdg-primary:`primary` :bdg-primary-line:`primary-line`
 
-:bdg-secondary:`secondary`, :bdg-secondary-line:`secondary-line`
+:bdg-secondary:`secondary` :bdg-secondary-line:`secondary-line`
 
-:bdg-success:`success`, :bdg-success-line:`success-line`
+:bdg-success:`success` :bdg-success-line:`success-line`
 
-:bdg-info:`info`, :bdg-info-line:`info-line`
+:bdg-info:`info` :bdg-info-line:`info-line`
 
-:bdg-warning:`warning`, :bdg-warning-line:`warning-line`
+:bdg-warning:`warning` :bdg-warning-line:`warning-line`
 
-:bdg-danger:`danger`, :bdg-danger-line:`danger-line`
+:bdg-danger:`danger` :bdg-danger-line:`danger-line`
 
-:bdg-light:`light`, :bdg-light-line:`light-line`
+:bdg-light:`light` :bdg-light-line:`light-line`
 
-:bdg-dark:`dark`, :bdg-dark-line:`dark-line`
+:bdg-muted:`muted` :bdg-muted-line:`muted-line`
+
+:bdg-dark:`dark` :bdg-dark-line:`dark-line`
+
+:bdg-black:`black` :bdg-black-line:`black-line`
+
+:bdg-white:`white` :bdg-white-line:`white-line`
 
 :bdg-link-primary:`https://example.com`
 

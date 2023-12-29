@@ -1,3 +1,4 @@
+/* xarray */
 .yue {
   --xr-font-color0: var(--sy-c-heading);
   --xr-font-color2: var(--sy-c-text);
@@ -11,4 +12,9 @@
 
 .yue .xr-array-data pre {
   margin: 0;
+}
+
+/* sphinx-togglebutton */
+.yue details.toggle-details summary {
+  border-left-color: var(--accent-a9);
 }
