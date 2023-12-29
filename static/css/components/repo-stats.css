@@ -1,16 +1,16 @@
 .repo-stats {
   margin-bottom: 1rem;
-  padding: 0.5rem 0;
-  border-top: 1px solid var(--sy-c-divider);
-  border-bottom: 1px solid var(--sy-c-divider);
+  padding: 0.5rem;
+  border: 1px solid var(--sy-c-divider);
+  border-radius: 6px;
+}
+
+.repo-stats:hover {
+  background-color: var(--sy-c-surface);
 }
 
 .repo-stats-count {
   color: var(--sy-c-light);
-}
-
-.repo-stats:hover .repo-stats-count {
-  color: var(--sy-c-link-hover);
 }
 
 .repo-stats strong {
