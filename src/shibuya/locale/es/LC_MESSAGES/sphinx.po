@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-07-15 18:32+0900\n"
+"POT-Creation-Date: 2023-12-29 21:17+0900\n"
 "PO-Revision-Date: 2023-07-15 18:34+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -43,13 +43,17 @@ msgstr "Siguiente"
 msgid "Search"
 msgstr "Buscar"
 
-#: src/shibuya/theme/shibuya/components/site-head.html:44
-msgid "Switch to dark mode"
+#: src/shibuya/theme/shibuya/components/site-head.html:53
+msgid "Switch to light color mode"
+msgstr "Cambiar a modo claro"
+
+#: src/shibuya/theme/shibuya/components/site-head.html:54
+msgid "Switch to dark color mode"
 msgstr "Cambiar a modo oscuro"
 
-#: src/shibuya/theme/shibuya/components/site-head.html:44
-msgid "Switch to light mode"
-msgstr "Cambiar a modo claro"
+#: src/shibuya/theme/shibuya/components/site-head.html:55
+msgid "Switch to auto color mode"
+msgstr "Cambiar a modo aŭtomata"
 
 #: src/shibuya/theme/shibuya/sidebars/edit-this-page.html:7
 msgid "Edit this page"
