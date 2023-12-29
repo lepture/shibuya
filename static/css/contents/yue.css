@@ -47,6 +47,11 @@
   border-bottom: 2px solid var(--yue-c-link-border-2);
 }
 
+.yue pre a,
+.yue pre a:hover {
+  border-bottom: none;
+}
+
 .yue strong {
   color: var(--yue-c-bold);
   font-weight: 600;

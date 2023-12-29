@@ -1,0 +1,49 @@
+.yue {
+  --sg-text-color: var(--sy-c-text);
+  --sg-background-color: var(--sy-c-background);
+  --sg-code-background-color: var(--syntax-pre-bg);
+  --sg-tr-hover-color: var(--accent-a3);
+  --sg-tr-odd-color: var(--sy-c-surface);
+
+  --sg-tooltip-foreground: var(--sy-c-background-contrast);
+  --sg-tooltip-background: var(--sy-c-background);
+  --sg-tooltip-border: var(--gray-7) transparent;
+  --sg-thumb-box-shadow-color: var(--gray-a4);
+  --sg-thumb-hover-border: var(--accent-a9);
+  --sg-script-out: var(--sy-c-light);
+  --sg-script-pre: var(--syntax-pre-bg);
+  --sg-pytb-foreground: var(--syntax-text);
+  --sg-pytb-background: var(--red-a2);
+  --sg-pytb-border-color: var(--red-a8);
+  --sg-download-a-background-color: var(--accent-a3);
+  --sg-download-a-background-image: none;
+  --sg-download-a-border-color: 1px solid var(--accent-a3);
+  --sg-download-a-color: var(--accent-a11);
+  --sg-download-a-hover-background-color: var(--accent-a4);
+  --sg-download-a-hover-box-shadow-1: transparent;
+  --sg-download-a-hover-box-shadow-2: transparent;
+}
+
+.yue .sphx-glr-thumbnails a {
+  border-bottom: 0;
+}
+
+.yue .sphx-glr-download a,
+.yue .sphx-glr-download a:hover {
+  border-bottom: 0;
+}
+
+.yue p.sphx-glr-signature a {
+  border-radius: 0;
+  border-bottom: 0;
+  text-decoration: underline;
+}
+
+.yue p.sphx-glr-signature a:hover {
+  color: var(--sy-c-link-hover);
+}
+
+.yue .sphx-glr-footer img {
+  display: inline;
+  margin: 0;
+}

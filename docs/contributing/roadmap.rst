@@ -20,7 +20,7 @@ Good to have
 
 These good things will be added in the future:
 
-- :bdg-info:`WIP` Perfect code highlight style
+- :bdg-success:`DONE` Perfect code highlight style
 - :bdg-success:`DONE` Edit this page link
 - :bdg-success:`DONE` GitHub stars and forks
 - :bdg-warning:`TODO` Scroll to top
@@ -38,6 +38,7 @@ Make sure it works well with other extensions. Currently integrated with:
 - :bdg-success:`DONE` :ref:`sphinx-togglebutton`
 - :bdg-success:`DONE` :ref:`nbsphinx`
 - :bdg-success:`DONE` :ref:`numpydoc`
+- :bdg-success:`DONE` ``sphinx-gallery``
 
 Instant search
 --------------
