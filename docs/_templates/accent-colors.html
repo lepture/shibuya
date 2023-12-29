@@ -79,7 +79,7 @@
 <style>
   .accent-color-picker {
     display: flex;
-    gap: 0.1rem;
+    gap: 0.25rem;
     flex-wrap: wrap;
   }
 
@@ -89,10 +89,20 @@
     min-width: 72px;
     background-color: var(--color);
   }
+
+  .accent-color-picker button.active {
+    border-radius: 6px;
+  }
+
+  .accent-color-picker button:hover {
+    opacity: 0.8;
+  }
 </style>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
+    const buttons = document.querySelectorAll('.accent-color-picker button');
+
     function updateCodeBlock (color) {
       const el = document.querySelector('#codecell0 .p + .s2');
       if (el) {
@@ -100,19 +110,30 @@
       }
     }
 
+    function updateActiveButton (color) {
+      buttons.forEach(function(button) {
+        if (button.getAttribute('title') === color) {
+          button.classList.add('active')
+        } else {
+          button.classList.remove('active')
+        }
+      })
+    }
+
     const accent = sessionStorage.getItem('accent-color');
     if (accent) {
       setTimeout(function() {
         updateCodeBlock(accent);
+        updateActiveButton(accent);
       });
     }
 
-    const buttons = document.querySelectorAll('.accent-color-picker button');
     buttons.forEach(function(button) {
       button.addEventListener('click', function () {
         const accent = button.getAttribute('title');
         document.documentElement.setAttribute('data-accent-color', accent);
         updateCodeBlock(accent);
+        updateActiveButton(accent);
         sessionStorage.setItem('accent-color', accent);
       });
     });

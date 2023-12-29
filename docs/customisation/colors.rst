@@ -13,10 +13,13 @@ Shibuya supports a wide range of customizations to colors via CSS variables.
 By using CSS variables, you can easily modify the colors used in your documentation
 without needing to manually edit CSS files.
 
+.. _accent-colors:
+
 Accent colors
 -------------
 
-Shibuya uses `Radix Colors <https://www.radix-ui.com/colors>`_ for accent colors.
+Shibuya provides pre-defined accent colors using `Radix Colors <https://www.radix-ui.com/colors>`_,
+you can choose from the colors bellow:
 
 .. code-block:: python
     :caption: conf.py
@@ -27,6 +30,8 @@ Shibuya uses `Radix Colors <https://www.radix-ui.com/colors>`_ for accent colors
 
 .. raw:: html
     :file: ../_templates/accent-colors.html
+
+.. hint:: Click each color block for previewing.
 
 .. _global-dark-code:
 
@@ -50,7 +55,7 @@ meta tag. If you don't want to enable it for the whole site, you can use the met
 Variable name conventions
 -------------------------
 
-.. deprecated:: 2024.1.10
+.. deprecated:: 2024.1.5
 
     The CSS variable ``--sy-rc-theme`` is removed.
 
@@ -73,48 +78,36 @@ Our naming conventions for Shibuya theme-related CSS variables are as follows:
 By following these naming conventions, you can easily identify and customize
 the CSS variables for your Shibuya-themed documentation.
 
-Available CSS Variables
------------------------
+Color variables
+---------------
 
 Below is a list of CSS variables that you can customize to change the colors used in
 your documentation:
 
-========================  ============================================================
-Variable Name              Description
-========================  ============================================================
-``--sy-f-sys``            System font stack
-``--sy-f-cjk``            CJK font stack
-``--sy-f-heading``        Font stack for headings
-``--sy-f-text``           Font stack for body text
-``--sy-f-mono``           Monospace font stack
-``--sy-s-banner-height``  Height of the banner
-``--sy-s-navbar-height``  Height of the navbar
-``--sy-s-offset-top``     Top offset
-``--sy-c-divider``        Divider color
-``--sy-c-divider-weak``   Weak divider color
-``--sy-c-border``         Border color
-``--sy-c-link``           Color for links
-``--sy-rc-theme``         Theme color in RGB
-``--sy-rc-bg``            Background color in RGB
-``--sy-rc-invert``        Inverted color in RGB
-``--sy-rc-text``          Text color in RGB
-``--sy-c-bg``             Background color for elements
-``--sy-c-bg-weak``        Weak background color for elements
-``--sy-c-text``           Default text color
-``--sy-c-text-weak``      Weak text color
-``--sy-c-heading``        Heading text color
-``--sy-c-bold``           Bold text color
-``--sy-c-foot-text``      Footer text color
-``--sy-c-foot-bg``        Footer background color
-``--sy-c-foot-divider``   Footer divider color
-========================  ============================================================
+==========================  ============================================================
+Variable Name               Description
+==========================  ============================================================
+``--sy-s-banner-height``    Height of the banner
+``--sy-s-navbar-height``    Height of the navbar
+``--sy-s-offset-top``       Top offset
+``--sy-c-divider``          Divider color
+``--sy-c-border``           Border color
+``--sy-c-link``             Color for links
+``--sy-c-text``             Default text color
+``--sy-c-light``            Light text color
+``--sy-c-bold``             Bold text color
+``--sy-c-heading``          Heading text color
+``--sy-c-background``       Background color for elements
+``--sy-c-foot-text``        Footer text color
+``--sy-c-foot-background``  Footer background color
+``--sy-c-foot-divider``     Footer divider color
+==========================  ============================================================
 
 
 Using a ``custom.css``
 ----------------------
 
-Besides the ``light_css_variables`` and ``dark_css_variables`` in ``html_theme_options``,
-you can also add a ``custom.css`` file to your document repository, and use CSS variables
+You can add a ``custom.css`` file to your document repository, and use CSS variables
 to define the colors you want to use.
 
 Create a new file called ``custom.css`` in the ``_static`` directory of your
@@ -128,18 +121,18 @@ This will tell Sphinx to include your custom.css file in the HTML output of your
 documentation.
 
 Once you have created the ``custom.css`` file and updated it in ``conf.py``, you can use
-CSS variables to define your desired colors. Here is an example of how to set the
-``--sy-rc-theme`` variable to a red RGB color:
+CSS variables to define your desired colors. Here is an example of how to set the footer
+background color with ``--sy-c-foot-background`` variable:
 
 .. code-block:: css
     :caption: custom.css
 
     html.light {
-      --sy-rc-theme: 245, 85, 153;
+      --sy-c-foot-background: #f0f0f0;
     }
 
     html.dark {
-      --sy-rc-theme: 222, 114, 160;
+      --sy-c-foot-background: black;
     }
 
 The CSS variables defined in the ``html.light`` block will be activated in

@@ -5,6 +5,14 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+In development
+--------------
+
+- **Breaking**: ``--sy-rc-theme`` CSS variable has been removed in favor of :ref:`accent-colors`.
+- **Breaking**: Several CSS variable names are changed.
+- **Breaking**: ``light_css_variables`` and ``dark_css_variables`` theme option has been removed.
+- **New**: Added many pre-defined :ref:`accent-colors`.
+
 2023.10.26
 ----------
 
