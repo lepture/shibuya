@@ -1,0 +1,120 @@
+<div class="accent-color-picker">
+  <button style="--color: var(--tomato-9)" title="tomato">
+    <span arial-label="tomato"></span>
+  </button>
+  <button style="--color: var(--red-9)" title="red">
+    <span arial-label="red"></span>
+  </button>
+  <button style="--color: var(--ruby-9)" title="ruby">
+    <span arial-label="ruby"></span>
+  </button>
+  <button style="--color: var(--crimson-9)" title="crimson">
+    <span arial-label="crimson"></span>
+  </button>
+  <button style="--color: var(--pink-9)" title="pink">
+    <span arial-label="pink"></span>
+  </button>
+  <button style="--color: var(--plum-9)" title="plum">
+    <span arial-label="plum"></span>
+  </button>
+  <button style="--color: var(--purple-9)" title="purple">
+    <span arial-label="purple"></span>
+  </button>
+  <button style="--color: var(--violet-9)" title="violet">
+    <span arial-label="violet"></span>
+  </button>
+  <button style="--color: var(--iris-9)" title="iris">
+    <span arial-label="iris"></span>
+  </button>
+  <button style="--color: var(--indigo-9)" title="indigo">
+    <span arial-label="indigo"></span>
+  </button>
+  <button style="--color: var(--blue-9)" title="blue">
+    <span arial-label="blue"></span>
+  </button>
+  <button style="--color: var(--cyan-9)" title="cyan">
+    <span arial-label="cyan"></span>
+  </button>
+  <button style="--color: var(--teal-9)" title="teal">
+    <span arial-label="teal"></span>
+  </button>
+  <button style="--color: var(--jade-9)" title="jade">
+    <span arial-label="jade"></span>
+  </button>
+  <button style="--color: var(--green-9)" title="green">
+    <span arial-label="green"></span>
+  </button>
+  <button style="--color: var(--grass-9)" title="grass">
+    <span arial-label="grass"></span>
+  </button>
+  <button style="--color: var(--bronze-9)" title="bronze">
+    <span arial-label="bronze"></span>
+  </button>
+  <button style="--color: var(--gold-9)" title="gold">
+    <span arial-label="gold"></span>
+  </button>
+  <button style="--color: var(--brown-9)" title="brown">
+    <span arial-label="brown"></span>
+  </button>
+  <button style="--color: var(--orange-9)" title="orange">
+    <span arial-label="orange"></span>
+  </button>
+  <button style="--color: var(--amber-9)" title="amber">
+    <span arial-label="amber"></span>
+  </button>
+  <button style="--color: var(--yellow-9)" title="yellow">
+    <span arial-label="yellow"></span>
+  </button>
+  <button style="--color: var(--lime-9)" title="lime">
+    <span arial-label="lime"></span>
+  </button>
+  <button style="--color: var(--mint-9)" title="mint">
+    <span arial-label="mint"></span>
+  </button>
+  <button style="--color: var(--sky-9)" title="sky">
+    <span arial-label="sky"></span>
+  </button>
+</div>
+
+<style>
+  .accent-color-picker {
+    display: flex;
+    gap: 0.1rem;
+    flex-wrap: wrap;
+  }
+
+  .accent-color-picker button {
+    display: flex;
+    min-height: 48px;
+    min-width: 72px;
+    background-color: var(--color);
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    function updateCodeBlock (color) {
+      const el = document.querySelector('#codecell0 .p + .s2');
+      if (el) {
+        el.textContent = '"' + color + '"';
+      }
+    }
+
+    const accent = sessionStorage.getItem('accent-color');
+    if (accent) {
+      setTimeout(function() {
+        updateCodeBlock(accent);
+      });
+    }
+
+    const buttons = document.querySelectorAll('.accent-color-picker button');
+    buttons.forEach(function(button) {
+      button.addEventListener('click', function () {
+        const accent = button.getAttribute('title');
+        document.documentElement.setAttribute('data-accent-color', accent);
+        updateCodeBlock(accent);
+        sessionStorage.setItem('accent-color', accent);
+      });
+    });
+  });
+</script>

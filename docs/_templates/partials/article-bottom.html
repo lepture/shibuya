@@ -1,1 +1,10 @@
 {% include "extensions/buysellads.html" %}
+
+<script>
+  (function() {
+    const accent = sessionStorage.getItem('accent-color');
+    if (accent) {
+      document.documentElement.setAttribute('data-accent-color', accent)
+    }
+  })();
+</script>

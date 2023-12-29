@@ -13,6 +13,21 @@ Shibuya supports a wide range of customizations to colors via CSS variables.
 By using CSS variables, you can easily modify the colors used in your documentation
 without needing to manually edit CSS files.
 
+Accent colors
+-------------
+
+Shibuya uses `Radix Colors <https://www.radix-ui.com/colors>`_ for accent colors.
+
+.. code-block:: python
+    :caption: conf.py
+
+    html_theme_options = {
+      "accent_color": "violet",
+    }
+
+.. raw:: html
+    :file: ../_templates/accent-colors.html
+
 .. _global-dark-code:
 
 Dark code
@@ -32,28 +47,12 @@ code blocks into dark mode, you can update ``dark_code`` in ``html_theme_options
 There is also a :ref:`page level <page-dark-code>` configuration via ``:dark_code:``
 meta tag. If you don't want to enable it for the whole site, you can use the meta tag.
 
-Theme color
------------
-
-Shibuya theme comes with a default theme color of purple, which is defined with CSS
-variable of ``--sy-rc-theme``. You can update the theme color in ``conf.py``.
-
-.. code-block:: python
-    :caption: conf.py
-
-    html_theme_options = {
-        "light_css_variables": {
-          "--sy-rc-theme": "143, 118, 214",
-        },
-        "dark_css_variables": {
-          "--sy-rc-theme": "130, 80, 223",
-        },
-    }
-
-.. note:: Theme color is defined in **RGB** mode.
-
 Variable name conventions
 -------------------------
+
+.. deprecated:: 2024.1.10
+
+    The CSS variable ``--sy-rc-theme`` is removed.
 
 Our naming conventions for Shibuya theme-related CSS variables are as follows:
 
@@ -64,7 +63,6 @@ Our naming conventions for Shibuya theme-related CSS variables are as follows:
   by one or more of the following segments:
 
   - ``-c``: This segment indicates that the CSS variable is used for color.
-  - ``-rc``: This segment indicates that the CSS variable is used for RGB color.
   - ``-s``: This segment indicates that the CSS variable is used for size.
   - ``-f``: This segment indicates that the CSS variable is used for font.
 
@@ -89,12 +87,12 @@ Variable Name              Description
 ``--sy-f-heading``        Font stack for headings
 ``--sy-f-text``           Font stack for body text
 ``--sy-f-mono``           Monospace font stack
-``--sy-c-divider``        Divider color
-``--sy-c-divider-weak``   Weak divider color
-``--sy-c-border``         Border color
 ``--sy-s-banner-height``  Height of the banner
 ``--sy-s-navbar-height``  Height of the navbar
 ``--sy-s-offset-top``     Top offset
+``--sy-c-divider``        Divider color
+``--sy-c-divider-weak``   Weak divider color
+``--sy-c-border``         Border color
 ``--sy-c-link``           Color for links
 ``--sy-rc-theme``         Theme color in RGB
 ``--sy-rc-bg``            Background color in RGB
