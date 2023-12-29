@@ -24,16 +24,16 @@
   --error-4: var(--red-10);
 
   --hint-icon: var(--i-bell-url);
-  --hint-1: var(--green-2);
-  --hint-2: var(--green-a3);
-  --hint-3: var(--green-9);
-  --hint-4: var(--green-10);
+  --hint-1: var(--cyan-2);
+  --hint-2: var(--cyan-a3);
+  --hint-3: var(--cyan-9);
+  --hint-4: var(--cyan-10);
 
   --important-icon: var(--i-flame-url);
-  --important-1: var(--purple-2);
-  --important-2: var(--purple-a3);
-  --important-3: var(--purple-9);
-  --important-4: var(--purple-10);
+  --important-1: var(--violet-2);
+  --important-2: var(--violet-a3);
+  --important-3: var(--violet-9);
+  --important-4: var(--violet-10);
 
   --note-icon: var(--i-calendar-url);
   --note-1: var(--blue-2);
@@ -54,10 +54,10 @@
   --warning-4: var(--orange-10);
 
   --seealso-icon: var(--i-link-url);
-  --seealso-1: var(--indigo-2);
-  --seealso-2: var(--indigo-a3);
-  --seealso-3: var(--indigo-9);
-  --seealso-4: var(--indigo-10);
+  --seealso-1: var(--gold-2);
+  --seealso-2: var(--gold-a3);
+  --seealso-3: var(--gold-9);
+  --seealso-4: var(--gold-10);
 
   --todo-icon: var(--i-bookmark-url);
   --todo-1: var(--bronze-2);
