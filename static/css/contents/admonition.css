@@ -1,84 +1,84 @@
 :root {
   --attention-icon: var(--i-alert-url);
-  --attention-1: var(--crimson-2);
+  --attention-1: var(--crimson-surface);
   --attention-2: var(--crimson-a3);
   --attention-3: var(--crimson-9);
-  --attention-4: var(--crimson-10);
+  --attention-4: var(--crimson-a11);
 
   --caution-icon: var(--i-zap-url);
-  --caution-1: var(--amber-2);
+  --caution-1: var(--amber-surface);
   --caution-2: var(--amber-a3);
   --caution-3: var(--amber-9);
   --caution-4: var(--amber-11);
 
   --danger-icon: var(--i-skull-url);
-  --danger-1: var(--ruby-2);
+  --danger-1: var(--ruby-surface);
   --danger-2: var(--ruby-a3);
   --danger-3: var(--ruby-9);
-  --danger-4: var(--ruby-10);
+  --danger-4: var(--ruby-a11);
 
   --error-icon: var(--i-close-url);
-  --error-1: var(--red-2);
+  --error-1: var(--red-surface);
   --error-2: var(--red-a3);
   --error-3: var(--red-9);
-  --error-4: var(--red-10);
+  --error-4: var(--red-a11);
 
   --hint-icon: var(--i-bell-url);
-  --hint-1: var(--cyan-2);
+  --hint-1: var(--cyan-surface);
   --hint-2: var(--cyan-a3);
   --hint-3: var(--cyan-9);
-  --hint-4: var(--cyan-10);
+  --hint-4: var(--cyan-a11);
 
   --important-icon: var(--i-flame-url);
-  --important-1: var(--violet-2);
+  --important-1: var(--violet-surface);
   --important-2: var(--violet-a3);
   --important-3: var(--violet-9);
-  --important-4: var(--violet-10);
+  --important-4: var(--violet-a11);
 
   --note-icon: var(--i-calendar-url);
-  --note-1: var(--blue-2);
+  --note-1: var(--blue-surface);
   --note-2: var(--blue-a3);
   --note-3: var(--blue-9);
-  --note-4: var(--blue-10);
+  --note-4: var(--blue-a11);
 
   --tip-icon: var(--i-rocket-url);
-  --tip-1: var(--green-2);
+  --tip-1: var(--green-surface);
   --tip-2: var(--green-a3);
   --tip-3: var(--green-9);
-  --tip-4: var(--green-10);
+  --tip-4: var(--green-a11);
 
   --warning-icon: var(--i-zap-url);
-  --warning-1: var(--orange-2);
+  --warning-1: var(--orange-surface);
   --warning-2: var(--orange-a3);
   --warning-3: var(--orange-9);
-  --warning-4: var(--orange-10);
+  --warning-4: var(--orange-a11);
 
   --seealso-icon: var(--i-link-url);
-  --seealso-1: var(--gold-2);
+  --seealso-1: var(--gold-surface);
   --seealso-2: var(--gold-a3);
   --seealso-3: var(--gold-9);
-  --seealso-4: var(--gold-10);
+  --seealso-4: var(--gold-a11);
 
   --todo-icon: var(--i-bookmark-url);
-  --todo-1: var(--bronze-2);
+  --todo-1: var(--bronze-surface);
   --todo-2: var(--bronze-a3);
   --todo-3: var(--bronze-9);
-  --todo-4: var(--bronze-10);
+  --todo-4: var(--bronze-a11);
 
-  --versionadded-1: var(--green-2);
+  --versionadded-1: var(--green-surface);
   --versionadded-2: var(--green-9);
-  --versionchanged-1: var(--amber-2);
+  --versionchanged-1: var(--amber-surface);
   --versionchanged-2: var(--amber-9);
-  --deprecated-1: var(--red-2);
+  --deprecated-1: var(--red-surface);
   --deprecated-2: var(--red-9);
 }
 
 .admonition {
   --icon-url: var(--i-bell-url);
-  --color-1: var(--accent-2);
+  --color-1: var(--color-surface-accent);
   --color-2: var(--accent-a3);
   --color-3: var(--accent-9);
-  --color-4: var(--accent-10);
+  --color-4: var(--accent-a11);
 
   position: relative;
   padding: 0 16px 0.8rem;
@@ -235,7 +235,7 @@ span.versionmodified {
 div.versionadded,
 div.versionchanged,
 div.deprecated {
-  --color-1: var(--accent-2);
+  --color-1: var(--accent-surface);
   --color-2: var(--accent-9);
   position: relative;
   padding: 6px 1rem;

@@ -2,6 +2,7 @@
   --syntax-pre-bg: var(--color-surface-accent);
   --syntax-cap-bg: var(--accent-3);
   --syntax-highlight-bg: var(--accent-a3);
+  --syntax-linenos-divider: var(--gray-a6);
 
   --syntax-light-text: #24292f;
   --syntax-light-meta: #807c87;
@@ -164,9 +165,10 @@ html.dark {
 }
 
 .dark-code {
-  --syntax-pre-bg: #2c283b;
-  --syntax-cap-bg: #342f47;
-  --syntax-highlight-bg: #423551;
+  --syntax-pre-bg: var(--black-a12);
+  --syntax-cap-bg: #1C2024;
+  --syntax-highlight-bg: var(--white-a2);
+  --syntax-linenos-divider: var(--white-a4);
   --syntax-text: var(--syntax-dark-text);
   --syntax-meta: var(--syntax-dark-meta);
   --syntax-comment: var(--syntax-dark-comment);

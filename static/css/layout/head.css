@@ -6,8 +6,8 @@
   padding: 0.8rem 2rem;
   display: flex;
   align-items: center;
-  color: var(--sy-c-banner, white);
-  background-color: var(--sy-c-banner-bg, var(--accent-10));
+  color: var(--sy-c-banner, var(--accent-9-contrast));
+  background-color: var(--sy-c-banner-bg, var(--accent-a11));
   z-index: 20;
 }
 
@@ -46,8 +46,8 @@
   height: 100%;
   backdrop-filter: blur(12px);
   background-color: var(--sand-a1);
-  z-index: -1;
   box-shadow: 0 0 var(--sy-c-background-contrast), 0 2px 4px var(--gray-a1), 0 1px 0 var(--sy-c-divider);
+  z-index: -1;
 }
 
 .sy-head-inner {
