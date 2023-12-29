@@ -1,29 +1,25 @@
-const defaultToDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-
-// set default theme
-const root = document.documentElement
-
-function toggleTheme () {
-  const isDark = root.classList.contains('dark')
-  const toRemove = isDark ? 'dark' : 'light'
-  root.classList.remove(toRemove)
-
-  const theme = isDark ? 'light' : 'dark'
-  setTheme(theme)
-  sessionStorage['_theme'] = theme
-}
+const COLOR_MODES = ['auto', 'light', 'dark']
+let index = COLOR_MODES.indexOf(sessionStorage['_theme'] || 'auto')
 
 const el = document.querySelector('.js-theme')
 
-function setTheme (theme) {
-  root.classList.add(theme)
-  const label = el.getAttribute('data-aria-' + theme)
+function rotateColorMode () {
+  index += 1
+  if (!COLOR_MODES[index]) {
+    index = 0
+  }
+  const mode = COLOR_MODES[index]
+  setColorMode(mode)
+  sessionStorage['_theme'] = mode
+  updateLabel(mode)
+}
+
+function updateLabel (mode) {
+  const label = el.getAttribute('data-aria-' + mode)
   el.setAttribute('aria-label', label)
 }
 
 if (el) {
-  const defaultTheme = defaultToDark ? 'dark': 'light'
-  const theme = sessionStorage['_theme'] || defaultTheme
-  setTheme(theme)
-  el.addEventListener('click', toggleTheme)
+  el.addEventListener('click', rotateColorMode)
+  updateLabel(COLOR_MODES[index] || 'auto')
 }

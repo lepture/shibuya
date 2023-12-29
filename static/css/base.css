@@ -70,11 +70,14 @@ strong, em {
   background-color: currentColor;
 }
 
-.theme-switch .theme-icon {
+.theme-switch .theme-icon,
+[data-color-mode="auto"] .theme-switch .theme-icon {
+  --icon-url: var(--i-laptop-url);
+}
+[data-color-mode="light"] .theme-switch .theme-icon {
   --icon-url: var(--i-sun-url);
 }
-
-html.dark .theme-switch .theme-icon {
+[data-color-mode="dark"] .theme-switch .theme-icon {
   --icon-url: var(--i-moon-url);
 }
 

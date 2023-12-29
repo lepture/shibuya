@@ -43,13 +43,8 @@
     {%- endif %}
   {%- endblock linktags %}
   <script>
-    const isDarkTheme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const sessionTheme = sessionStorage['_theme']
-    if (sessionTheme) {
-      document.documentElement.classList.add(sessionTheme)
-    } else if (isDarkTheme) {
-      document.documentElement.classList.add('dark')
-    }
+    function setColorMode(t){let e=document.documentElement;e.setAttribute("data-color-mode",t);let a=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,s=t;"auto"===t&&(s=a?"dark":"light"),"light"===s?(e.classList.remove("dark"),e.classList.add("light")):(e.classList.remove("light"),e.classList.add("dark"))}
+    setColorMode(sessionStorage._theme||"auto");
   </script>
 
   {%- if favicon_url -%}
