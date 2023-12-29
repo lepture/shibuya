@@ -7,15 +7,15 @@
   bottom: 0;
   padding: 0;
   border-top: 1px solid var(--sy-c-divider);
-  background-color: var(--sy-c-bg);
-  --tw-shadow: 0 -12px 16px var(--sy-c-bg);
+  background-color: var(--sy-c-background);
+  --tw-shadow: 0 -12px 16px var(--sy-c-background);
   box-shadow: var(--tw-ring-offset-shadow,0 0 transparent),var(--tw-ring-shadow,0 0 transparent),var(--tw-shadow);
 }
 
 .sy-lside .rst-versions {
   position: static;
   width: 100%;
-  background-color: var(--sy-c-bg-weak);
+  background-color: var(--sy-c-surface);
   font-family: var(--sy-f-text);
 }
 
@@ -24,11 +24,11 @@
 }
 
 .sy-lside .rst-versions a:hover {
-  color: var(--sy-c-link-strong);
+  color: var(--sy-c-link-hover);
 }
 
 .sy-lside .rst-versions .rst-current-version {
-  background-color: var(--sy-c-bg);
+  background-color: var(--sy-c-background);
   color: var(--sy-c-text);
   padding: 0 1rem;
   height: var(--height);
@@ -63,7 +63,7 @@
   font-size: 0.68rem;
   font-weight: 500;
   padding: 4px 6px;
-  color: var(--sy-c-text-weak);
+  color: var(--sy-c-light);
 }
 
 .sy-lside .rst-versions .rst-other-versions dd a {
@@ -72,7 +72,7 @@
 
 .sy-lside .rst-versions .rst-other-versions dd a:hover {
   text-decoration: underline;
-  color: var(--sy-c-link);
+  color: var(--sy-c-link-hover);
 }
 
 .sy-lside .rst-versions input {
@@ -82,7 +82,7 @@
   font-family: var(--sy-f-text);
   border-radius: 6px;
   outline: 0;
-  background: var(--sy-c-bg);
+  background: var(--sy-c-background);
   border: 1px solid var(--sy-c-border);
 }
 
@@ -92,6 +92,6 @@
 
 @media (min-width: 90rem) {
   .sy-lside .rst-versions {
-    background: var(--sy-c-bg);
+    background: var(--sy-c-background);
   }
 }

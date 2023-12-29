@@ -1,5 +1,5 @@
 .yue .jupyter_container {
-  background-color: var(--sy-c-bg);
+  background-color: var(--sy-c-background);
   border: 3px solid var(--sy-c-border);
   border-radius: 6px;
   overflow: hidden;
@@ -47,8 +47,9 @@
 }
 
 html.light .jupyter_container .cell_output {
-  --syntax-pre-bg: var(--syntax-light-pre-bg);
-  --syntax-cap-bg: var(--syntax-light-cap-bg);
+  --syntax-pre-bg: var(--color-surface-accent);
+  --syntax-cap-bg: var(--accent-3);
+  --syntax-highlight-bg: var(--accent-a3);
   --syntax-text: var(--syntax-light-text);
   --syntax-meta: var(--syntax-light-meta);
   --syntax-comment: var(--syntax-light-comment);

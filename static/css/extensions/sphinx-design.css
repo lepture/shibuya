@@ -7,7 +7,7 @@
   --sd-color-shadow: var(--gray-1);
   --sd-color-card-border-hover: var(--sy-c-border);
   --sd-color-card-border: var(--sy-c-divider);
-  --sd-color-tabs-label-inactive: var(--sy-c-text-strong);
+  --sd-color-tabs-label-inactive: var(--sy-c-bold);
   --sd-color-tabs-label-active: var(--sd-color-primary);
   --sd-color-tabs-underline-active: var(--sd-color-primary);
   --sd-color-tabs-label-hover: var(--accent-9);
@@ -48,7 +48,7 @@
 }
 
 .yue .sd-card-hover:hover .sd-card-title {
-  color: var(--sy-c-link);
+  color: var(--sy-c-link-hover);
 }
 
 .yue .sd-card a,
@@ -80,8 +80,9 @@
 }
 
 .light .sd-tab-content .highlight {
-  --syntax-pre-bg: var(--syntax-light-pre-bg);
-  --syntax-cap-bg: var(--syntax-light-cap-bg);
+  --syntax-pre-bg: var(--color-surface-accent);
+  --syntax-cap-bg: var(--accent-3);
+  --syntax-highlight-bg: var(--accent-a3);
   --syntax-text: var(--syntax-light-text);
   --syntax-meta: var(--syntax-light-meta);
   --syntax-comment: var(--syntax-light-comment);

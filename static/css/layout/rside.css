@@ -11,7 +11,7 @@
 }
 
 .sy-deprecated a:hover {
-  color: var(--sy-c-link-weak);
+  color: var(--sy-c-link-hover);
 }
 
 .sy-rside-inner > div {
@@ -41,12 +41,12 @@ html[lang="ko"] .sy-rside-inner > div > h3 {
 }
 
 .localtoc > ul li > a:hover {
-  color: var(--sy-c-link);
+  color: var(--sy-c-link-hover);
 }
 
 .localtoc > ul li.active > a {
   font-weight: 500;
-  color: var(--sy-c-link-strong);
+  color: var(--sy-c-link-active);
 }
 
 .localtoc > ul > li ul {
@@ -61,5 +61,5 @@ html[lang="ko"] .sy-rside-inner > div > h3 {
   font-size: 0.96rem;
 }
 .sy-rside ul.this-page-menu a:hover {
-  color: var(--sy-c-link-weak);
+  color: var(--sy-c-link-hover);
 }

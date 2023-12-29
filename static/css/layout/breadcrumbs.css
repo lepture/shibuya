@@ -1,7 +1,7 @@
 .sy-breadcrumbs {
   position: sticky;
   top: var(--sy-s-offset-top);
-  background-color: var(--sy-c-bg);
+  background-color: var(--sy-c-background);
   padding: 0 1.5rem;
   z-index: 5;
 }
@@ -24,17 +24,17 @@
 }
 
 .sy-breadcrumbs ul a {
-  color: var(--sy-c-text-weak);
+  color: var(--sy-c-light);
 }
 
 .sy-breadcrumbs ul a:hover {
-  color: var(--sy-c-text-strong);
+  color: var(--sy-c-bold);
 }
 
 .sy-breadcrumbs ul a + span {
   padding: 0 0.4rem;
   font-weight: 300;
-  color: var(--sy-c-text-weak);
+  color: var(--sy-c-light);
 }
 
 @media (min-width: 1280px) {

@@ -24,7 +24,7 @@ dt.sig:after {
 }
 
 dt.sig:hover {
-  background: var(--sy-c-bg-weak);
+  background: var(--sy-c-surface);
 }
 
 dt.sig + dd {
@@ -55,7 +55,7 @@ em.sig-param {
 }
 
 em.sig-param {
-  color: var(--sy-c-text-weak);
+  color: var(--sy-c-light);
 }
 
 span.sig-prename,
@@ -68,7 +68,7 @@ span.sig-name {
 }
 
 span.sig-return-icon {
-  color: var(--sy-c-text-weak);
+  color: var(--sy-c-light);
 }
 
 span.sig-return-typehint,
@@ -84,7 +84,7 @@ span.pre {
 dt.sig > a.internal {
   font-size: 0.82rem;
   border: 0;
-  color: var(--sy-c-text-weak);
+  color: var(--sy-c-light);
 }
 
 dt.sig > a.internal:before {

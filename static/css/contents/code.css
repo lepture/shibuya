@@ -29,7 +29,7 @@ pre.literal-block {
 
 .highlight .linenos {
   display: inline-block;
-  box-shadow: -0.05rem 0 rgba(var(--sy-rc-invert), 0.2) inset;
+  box-shadow: -0.05rem 0 var(--gray-a6) inset;
   user-select: none;
   margin-right: .8rem;
   padding-right: .8rem;

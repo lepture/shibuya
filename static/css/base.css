@@ -9,8 +9,8 @@
 }
 
 ::selection {
-  color: var(--accent-11);
-  background-color: var(--accent-4);
+  color: var(--accent-a11);
+  background-color: var(--accent-a3);
 }
 
 body {
@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5 {
 }
 
 strong, em {
-  color: var(--sy-c-text-strong);
+  color: var(--sy-c-bold);
 }
 
 .sy-container {
@@ -54,7 +54,7 @@ strong, em {
 }
 
 .sy-scrollbar:hover::-webkit-scrollbar-thumb {
-  background-color: rgba(155, 155, 155, 0.2);
+  background-color: var(--gray-a3);
   background-clip: content-box;
   border: 3px solid transparent;
 }

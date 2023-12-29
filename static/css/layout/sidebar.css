@@ -6,7 +6,7 @@
   font-size: 0.86rem;
   font-weight: 500;
   font-family: var(--sy-f-heading);
-  color: var(--sy-c-text-weak);
+  color: var(--sy-c-light);
   text-transform: uppercase;
   letter-spacing: 0.4px;
 }

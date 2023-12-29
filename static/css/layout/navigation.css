@@ -15,7 +15,7 @@
 }
 
 .navigation a:hover {
-  color: rgba(var(--sy-rc-invert), 1);
+  color: var(--sy-c-link-hover);
 }
 
 .navigation-prev i.chevron {
@@ -36,5 +36,5 @@
 
 .navigation .page-info > span {
   font-size: 0.8rem;
-  color: var(--sy-c-text-weak);
+  color: var(--sy-c-light);
 }

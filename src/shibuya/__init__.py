@@ -3,7 +3,6 @@ from pathlib import Path
 from sphinx.application import Sphinx
 from sphinx.builders.html import StandaloneHTMLBuilder
 from .context import (
-    css_to_dict,
     normalize_pageurl,
     normalize_localtoc,
     normalize_globaltoc,
@@ -51,8 +50,6 @@ def _initialize_builder(app: Sphinx):
 
     edit_source_link = create_edit_source_link(app.config.html_context)
     app.config.html_context.update({
-        "shibuya_light_css_variables": css_to_dict("light.css"),
-        "shibuya_dark_css_variables": css_to_dict("dark.css"),
         "edit_source_link": edit_source_link,
         "expandtoc": normalize_globaltoc,
     })

@@ -1,6 +1,6 @@
 .yue p.lead {
   font-size: 1.2rem;
-  color: var(--sy-c-text-weak);
+  color: var(--sy-c-light);
   margin-bottom: 0;
 }
 
@@ -24,7 +24,7 @@
 .yue a.headerlink {
   visibility: hidden;
   margin-left: 6px;
-  color: rgba(var(--sy-rc-text), 0.6);
+  color: var(--sy-c-light);
   font-weight: 300;
   font-size: 58%;
   font-family: var(--sy-f-mono);
@@ -61,7 +61,7 @@ h6:hover a.headerlink {
   font-size: 0.86rem;
   font-weight: 500;
   font-family: var(--sy-f-heading);
-  color: var(--sy-c-text-weak);
+  color: var(--sy-c-light);
   text-transform: uppercase;
   letter-spacing: 0.4px;
   padding: .8rem 0 0.4rem;
@@ -150,7 +150,7 @@ p.centered {
 
 .yue table.modindextable tr.cap {
   font-size: 1.12rem;
-  background: var(--sy-c-bg-weak);
+  background: var(--sy-c-surface);
   font-family: var(--sy-f-mono);
 }
 

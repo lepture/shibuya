@@ -10,7 +10,7 @@
   font-family: var(--sy-f-text);
   border-radius: 6px;
   outline: 0;
-  background: var(--sy-c-bg-weak);
+  background: var(--sy-c-surface);
 }
 
 .searchbox kbd,
@@ -24,7 +24,7 @@
   right: 0;
   border-radius: 3px;
   border: 1px solid var(--sy-c-border);
-  background-color: var(--sy-c-bg);
+  background-color: var(--sy-c-background);
   opacity: 1;
   transition: opacity 0.2s ease;
 }
@@ -47,7 +47,7 @@
   font-family: var(--sy-f-text);
   border-radius: 6px;
   outline: 0;
-  background: var(--sy-c-bg-weak);
+  background: var(--sy-c-surface);
 }
 
 .searchform input[name="q"] + button {
@@ -60,7 +60,7 @@
   right: 0;
   border-radius: 3px;
   border: 1px solid var(--sy-c-divider);
-  background-color: var(--sy-c-bg);
+  background-color: var(--sy-c-background);
   opacity: 1;
   transition: opacity 0.2s ease;
 }

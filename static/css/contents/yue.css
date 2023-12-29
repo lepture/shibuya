@@ -1,39 +1,27 @@
-.yue {
-  --yue-c-black: #111827;
+:root {
   --yue-c-text: var(--sy-c-text);
   --yue-c-heading: var(--sy-c-heading);
-  --yue-c-bold: var(--sy-c-text-strong);
+  --yue-c-bold: var(--sy-c-bold);
+
   --yue-c-link-1: var(--sy-c-text);
-  --yue-c-link-2: var(--yue-c-black);
+  --yue-c-link-2: var(--sy-c-bold);
   --yue-c-link-border-1: var(--sy-c-link);
-  --yue-c-link-border-2: var(--sy-c-link-strong);
-  --yue-c-ol-marker: #6b7280;
-  --yue-c-ul-marker: #d1d5db;
-  --yue-c-hr: #e5e7eb;
-  --yue-c-quote: var(--yue-c-black);
-  --yue-c-quote-border: #cfd3db;
+  --yue-c-link-border-2: var(--sy-c-link-active);
+
+  --yue-c-ol-marker: var(--gray-9);
+  --yue-c-ul-marker: var(--sage-a5);
+  --yue-c-hr: var(--sy-c-border);
+  --yue-c-quote: var(--sy-c-text);
+  --yue-c-quote-border: var(--accent-a4);
   --yue-c-quote-symbol: var(--accent-10);
-  --yue-c-caption: #6b7280;
-  --yue-c-code: var(--yue-c-black);
-  --yue-c-code-bg: #fff4d4;
-  --yue-c-th-bg: #eff3f8;
-  --yue-c-th-border: #d1d5db;
-  --yue-c-td-border: #e5e7eb;
-}
-html.dark .yue {
-  --yue-c-link-1: var(--sy-c-text);
-  --yue-c-link-2: #fff;
-  --yue-c-ol-marker: #9ca3af;
-  --yue-c-ul-marker: #4b5563;
-  --yue-c-hr: #374151;
-  --yue-c-quote: #f3f4f6;
-  --yue-c-quote-border: #374151;
-  --yue-c-caption: #9ca3af;
-  --yue-c-code: #fff;
-  --yue-c-code-bg: #312f29;
-  --yue-c-th-bg: #24282e;
-  --yue-c-th-border: #4b5563;
-  --yue-c-td-border: #374151;
+  --yue-c-caption: var(--sy-c-light);
+
+  --yue-c-code-text: var(--accent-a11);
+  --yue-c-code-background: var(--accent-a3);
+
+  --yue-c-th-bg: var(--color-surface-accent);
+  --yue-c-th-border: var(--gray-a5);
+  --yue-c-td-border: var(--gray-a4);
 }
 
 .yue {
@@ -236,7 +224,7 @@ html.dark .yue {
 }
 
 .yue code {
-  color: var(--yue-c-code);
+  color: var(--yue-c-code-text);
   font-weight: 600;
   font-size: 0.875em;
 }
@@ -257,11 +245,10 @@ html.dark .yue {
 
 .yue li > code,
 .yue p > code {
-  padding-left: 4px;
-  padding-right: 4px;
+  padding: 2px 4px;
   border-radius: 3px;
   font-weight: 500;
-  background-color: var(--yue-c-code-bg);
+  background-color: var(--yue-c-code-background);
 }
 
 .yue h3 code {

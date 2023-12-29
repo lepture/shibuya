@@ -1,7 +1,7 @@
 /* ethical ads on rtd */
 #ethical-ad-placement .ethical-sidebar {
   position: relative;
-  background-color: var(--sy-c-bg-weak);
+  background-color: var(--sy-c-surface);
   border: none;
   padding: 0.8rem;
 }
@@ -39,7 +39,7 @@
   margin: 1rem 0;
   position: relative;
   display: block;
-  background-color: var(--sy-c-bg-weak);
+  background-color: var(--sy-c-surface);
   border: none;
   border-radius: 8px;
   padding: 0.8rem 0.8rem 1.6rem;
@@ -70,7 +70,7 @@
 }
 
 .carbon-text:hover {
-  color: var(--sy-c-link);
+  color: var(--sy-c-link-hover);
 }
 
 .carbon-poweredby {

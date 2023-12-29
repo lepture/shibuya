@@ -12,14 +12,14 @@
   font-size: 0.72rem;
   font-weight: 400;
   transform: rotate(90deg);
-  color: var(--sy-c-text-weak);
+  color: var(--sy-c-light);
 }
 
 @media (max-width: 767px) {
   .nav-versions,
   .nav-languages {
     width: 100%;
-    background-color: var(--sy-c-bg-weak);
+    background-color: var(--sy-c-surface);
     border-radius: 6px;
     padding-bottom: 0.6rem;
     margin-bottom: 1rem;
@@ -30,7 +30,7 @@
     padding: 0.5rem 1rem;
     font-weight: 500;
     font-size: 0.76rem;
-    color: var(--sy-c-text-weak);
+    color: var(--sy-c-light);
   }
 
   .nav-versions button .i-icon,
@@ -68,7 +68,7 @@
   .nav-languages button,
   .nav-versions button {
     padding: 0 0.5rem;
-    border-right: 1px solid var(--sy-c-divider-weak);
+    border-right: 1px solid var(--gray-3);
   }
 
   .nav-versions-choices,
@@ -80,11 +80,11 @@
     right: -0.6rem;
     min-width: 120px;
     box-sizing: border-box;
-    background-color: var(--sy-c-bg);
+    background-color: var(--sy-c-background);
     border-radius: 6px;
     overflow: hidden;
     padding: 0.8rem 1rem;
-    box-shadow: 0 12px 32px rgba(var(--sy-rc-invert), .1), 0 2px 6px rgba(var(--sy-rc-invert), .08);
+    box-shadow: var(--sy-dropdown-shadow);
   }
 
   .nav-versions:hover .nav-versions-choices,
@@ -107,8 +107,8 @@
 
   .nav-versions a:hover,
   .nav-languages a:hover {
-    color: var(--sy-c-link);
-    background: var(--sy-c-bg-weak);
+    color: var(--sy-c-link-hover);
+    background: var(--sy-c-surface);
     border-radius: 6px;
   }
 }

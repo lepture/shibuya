@@ -8,7 +8,7 @@
   border-left-width: 4px;
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
-  background-color: var(--sy-c-bg-weak);
+  background-color: var(--sy-c-surface);
 }
 
 .yue blockquote.pull-quote {

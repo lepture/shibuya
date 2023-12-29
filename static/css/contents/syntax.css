@@ -1,7 +1,7 @@
 :root {
-  --syntax-light-pre-bg: var(--accent-a2);
-  --syntax-light-cap-bg: var(--accent-3);
-  --syntax-light-highlight-bg: var(--accent-a3);
+  --syntax-pre-bg: var(--color-surface-accent);
+  --syntax-cap-bg: var(--accent-3);
+  --syntax-highlight-bg: var(--accent-a3);
 
   --syntax-light-text: #24292f;
   --syntax-light-meta: #807c87;
@@ -32,10 +32,6 @@
   --syntax-light-markup-ignored-bg: #0550ae;
   --syntax-light-meta-diff-range: #8250df;
   --syntax-light-special-bg: #dccafa;
-
-  --syntax-dark-pre-bg: var(--accent-a2);
-  --syntax-dark-cap-bg: var(--accent-3);
-  --syntax-dark-highlight-bg: var(--accent-a3);
 
   --syntax-dark-text: #c9d1d9;
   --syntax-dark-meta: #6e7781;
@@ -70,9 +66,6 @@
 
 :root,
 html.light {
-  --syntax-pre-bg: var(--syntax-light-pre-bg);
-  --syntax-cap-bg: var(--syntax-light-cap-bg);
-  --syntax-highlight-bg: var(--syntax-light-highlight-bg);
   --syntax-text: var(--syntax-light-text);
   --syntax-meta: var(--syntax-light-meta);
   --syntax-comment: var(--syntax-light-comment);
@@ -106,9 +99,6 @@ html.light {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --syntax-pre-bg: var(--syntax-dark-pre-bg);
-    --syntax-cap-bg: var(--syntax-dark-cap-bg);
-    --syntax-highlight-bg: var(--syntax-dark-highlight-bg);
     --syntax-text: var(--syntax-dark-text);
     --syntax-meta: var(--syntax-dark-meta);
     --syntax-comment: var(--syntax-dark-comment);
@@ -142,9 +132,6 @@ html.light {
 }
 
 html.dark {
-  --syntax-pre-bg: var(--syntax-dark-pre-bg);
-  --syntax-cap-bg: var(--syntax-dark-cap-bg);
-  --syntax-highlight-bg: var(--syntax-dark-highlight-bg);
   --syntax-text: var(--syntax-dark-text);
   --syntax-meta: var(--syntax-dark-meta);
   --syntax-comment: var(--syntax-dark-comment);

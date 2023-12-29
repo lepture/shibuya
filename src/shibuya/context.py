@@ -1,22 +1,6 @@
 import re
 from typing import Dict, Any
-from pathlib import Path
 import xml.etree.ElementTree as ET
-
-
-CSS_PATH = Path(__file__).parent / "css"
-
-
-def css_to_dict(filename: str):
-    filepath = (CSS_PATH / filename).resolve()
-    rv = {}
-    with open(filepath, 'r') as f:
-        for line in f.readlines():
-            line = line.strip()
-            if line.startswith('--'):
-                key, value = line.split(':')
-                rv[key.strip()] = value.strip().rstrip(';')
-    return rv
 
 
 def normalize_pageurl(pageurl: str, builder: str):
