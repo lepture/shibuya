@@ -16,12 +16,11 @@
 }
 
 .announcement ::selection {
-  color: var(--sy-c-banner, white);
+  color: var(--sy-c-banner, var(--accent-9-contrast));
 }
 
 .announcement-inner {
   width: 100%;
-  text-align: center;
 }
 
 .announcement-close {
@@ -228,7 +227,7 @@
     height: 0;
     visibility: hidden;
     background-color: var(--sy-c-background);
-    top: var(--sy-s-offset-top);
+    top: var(--sy-s-navbar-height);
     margin-top: -10px;
     padding: 15px;
     border-radius: 6px;
