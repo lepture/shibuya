@@ -59,6 +59,19 @@
   color: var(--sy-c-link-hover);
 }
 
+.globaltoc a.external:after {
+  content: '';
+  mask: var(--i-external-link-url) no-repeat;
+  mask-size: 100% 100%;
+  width: 0.825rem;
+  height: 0.825rem;
+  margin-left: 0.2rem;
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  background-color: var(--sy-c-light);
+}
+
 /* toc toggle */
 .globaltoc li {
   position: relative;
