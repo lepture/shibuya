@@ -32,7 +32,7 @@ Examples
 Grid
 ~~~~
 
-.. grid:: 2
+.. grid:: 1 1 2 2
 
     .. grid-item-card:: Tutorial
         :link: /install/
@@ -57,10 +57,28 @@ Grid
 Card
 ~~~~~
 
+A full featured card:
+
 .. card:: Card Title
 
     Header
     ^^^
+    Card content
+    +++
+    Footer
+
+Card with header:
+
+.. card:: Card Title
+
+    Header
+    ^^^
+    Card content
+
+Card with footer:
+
+.. card:: Card Title
+
     Card content
     +++
     Footer
@@ -154,3 +172,49 @@ Octicon Icons
 - bell: :octicon:`bell`
 - book: :octicon:`book`
 - clock: :octicon:`clock`
+
+Only with Shibuya
+-----------------
+
+By adding a class of ``surface``, a card would be rendered:
+
+.. code-block:: none
+
+    .. grid:: 1 1 2 3
+        :class-row: surface
+
+.. grid:: 1 1 2 3
+    :class-row: surface
+
+    .. grid-item-card:: :octicon:`star` Beautiful Design
+
+        A visually stunning and modern design that makes your documentation
+        look professional and appealing.
+
+    .. grid-item-card:: :octicon:`zap` Responsive Layout
+
+        Look great on all devices, from desktops to smartphones, without
+        compromising on readability or functionality.
+
+    .. grid-item-card:: :octicon:`moon` Light/Dark Mode
+
+        Users can switch between light and dark modes according to their
+        preference.
+
+    .. grid-item-card:: :octicon:`paintbrush` Customizable Colors
+        :link: /customisation/colors/
+
+        Customize the colors to match your brand or personal preferences
+        with radix colors.
+
+    .. grid-item-card:: :octicon:`beaker` Jupyter Integration
+        :link: /extensions/nbsphinx/
+
+        Great CSS/UI for lots of Jupyter related extensions, enhance your
+        AI documentation.
+
+    .. grid-item-card:: :octicon:`browser` Multiple Layouts
+        :link: /writing/meta/#layout
+
+        Layouts of landing page, simple one page, and three-column
+        documentation page.

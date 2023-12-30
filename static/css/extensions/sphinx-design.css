@@ -167,6 +167,11 @@
   padding-right: 1.5rem;
 }
 
+.yue .surface .sd-card-header,
+.yue .surface .sd-card-footer {
+  border-color: var(--sy-c-border);
+}
+
 @media (print) {
   .yue .sd-card {
     page-break-inside: avoid;
