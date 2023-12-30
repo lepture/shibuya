@@ -13,6 +13,7 @@ In development
 - **Breaking**: ``light_css_variables`` and ``dark_css_variables`` theme option has been removed.
 - **New**: Added many pre-defined :ref:`accent-colors`.
 - **New**: Improve style for ``sphinx-gallery`` and ``xarray``, via :issue:`20`.
+- **New**: Added **simple** and **landing** layout templates.
 
 2023.10.26
 ----------

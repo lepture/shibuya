@@ -102,6 +102,11 @@ html_theme_options = {
                     "url": "writing/api",
                     "summary": "API documentation automatically"
                 },
+                {
+                    "title": "Jupyter Notebook",
+                    "url": "extensions/nbsphinx",
+                    "summary": "Rendering .ipynb files"
+                },
             ]
         },
         {
