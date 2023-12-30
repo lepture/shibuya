@@ -14,7 +14,7 @@ Shibuya
     `Docs </install/>`_
     `GitHub <https://github.com/lepture/shibuya>`_
 
-.. grid:: 1 2 2 3
+.. grid:: 1 1 2 3
     :class-row: surface
 
     .. grid-item-card:: :octicon:`star` Beautiful Design

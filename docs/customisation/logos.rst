@@ -64,6 +64,8 @@ the behavior of your logo link and direct users to the destination of your choic
     to :ref:`nav_links <nav-links>` to provide a link to your documentation
     and improve navigation.
 
+.. _og_image_url:
+
 Open Graph Image
 ----------------
 
@@ -82,3 +84,5 @@ shared on social media platforms.
 
   It's recommended to use a square image for best results, as rectangular images
   may be cropped when displayed on social media platforms.
+
+There are also page level :ref:`page-cover` and :ref:`page-image` meta tags.
