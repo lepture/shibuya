@@ -164,7 +164,7 @@ html.dark {
   --syntax-special-bg: var(--syntax-dark-special-bg);
 }
 
-.dark-code {
+.light .dark-code {
   --syntax-pre-bg: var(--black-a12);
   --syntax-cap-bg: #1C2024;
   --syntax-highlight-bg: var(--white-a2);
