@@ -1,5 +1,25 @@
+:description: Customize webpage with meta configuration.
+
 Meta tags
 =========
+
+Layout
+------
+
+Simple layout
+~~~~~~~~~~~~~
+
+.. code-block:: none
+
+   :layout: simple
+
+
+Landing layout
+~~~~~~~~~~~~~~
+
+.. code-block:: none
+
+   :layout: landing
 
 Description
 -----------

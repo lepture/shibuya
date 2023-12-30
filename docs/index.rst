@@ -45,6 +45,7 @@ Shibuya
         AI documentation.
 
     .. grid-item-card:: :octicon:`browser` Multiple Layouts
+        :link: /writing/meta/#layout
 
         Layouts of landing page, simple one page, and three-column
         documentation page.
