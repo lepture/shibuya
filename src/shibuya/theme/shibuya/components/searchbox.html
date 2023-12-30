@@ -1,4 +1,6 @@
-<form class="searchbox flex items-center" action="{{ pathto('search' )}}" method="get">
+{%- if pathto('search') != '#' %}
+<form class="searchbox flex items-center" action="{{ pathto('search') }}" method="get">
   <input type="text" name="q" placeholder="{{ _('Search') }}" />
   <kbd>/</kbd>
 </form>
+{%- endif %}
