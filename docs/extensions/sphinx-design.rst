@@ -29,33 +29,14 @@ Then, add the extension to your ``conf.py``:
 Examples
 --------
 
-Grid
-~~~~
+Single card
+~~~~~~~~~~~
 
-.. grid:: 1 1 2 2
+A simple card:
 
-    .. grid-item-card:: Tutorial
-        :link: /install/
+.. card:: Card Title
 
-        If you're new to Python and Sphinx, this is a great place to start.
-
-    .. grid-item-card:: Customisation
-        :link: /customisation/
-
-        Tailor configurations to meet your specific requirements with customizable settings.
-
-    .. grid-item-card:: References
-        :link: /writing/
-
-        Learn the syntax of reStructuredText and examine how it is formatted.
-
-    .. grid-item-card:: Contributing
-        :link: /contributing/
-
-        Your contributions can make a meaningful impact and help drive the project forward!
-
-Card
-~~~~~
+    Card content
 
 A full featured card:
 
@@ -82,6 +63,31 @@ Card with footer:
     Card content
     +++
     Footer
+
+Grid cards
+~~~~~~~~~~
+
+.. grid:: 1 1 2 2
+
+    .. grid-item-card:: Tutorial
+        :link: /install/
+
+        If you're new to Python and Sphinx, this is a great place to start.
+
+    .. grid-item-card:: Customisation
+        :link: /customisation/
+
+        Tailor configurations to meet your specific requirements with customizable settings.
+
+    .. grid-item-card:: References
+        :link: /writing/
+
+        Learn the syntax of reStructuredText and examine how it is formatted.
+
+    .. grid-item-card:: Contributing
+        :link: /contributing/
+
+        Your contributions can make a meaningful impact and help drive the project forward!
 
 Dropdown
 ~~~~~~~~
