@@ -19,6 +19,10 @@
   font-weight: 500;
 }
 
+.sy-foot-copyright a:hover {
+  text-decoration: underline;
+}
+
 .sy-foot-socials a {
   font-size: 1.4rem;
   color: var(--sy-c-foot-text);
