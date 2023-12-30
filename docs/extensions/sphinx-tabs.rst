@@ -98,9 +98,9 @@ How it looks like
 -----------------
 
 .. image:: /_static/screenshots/light-sphinx-tabs.png
-   :class: dark-hidden
+   :class: light-only
    :align: center
 
 .. image:: /_static/screenshots/dark-sphinx-tabs.png
-   :class: light-hidden
+   :class: dark-only
    :align: center
