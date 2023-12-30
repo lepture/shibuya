@@ -66,5 +66,45 @@
 }
 
 .search .highlighted {
-  background-color: var(--syntax-highlight-bg);
+  background-color: var(--accent-a4);
+}
+
+#search-results {
+  border-top: 1px solid var(--sy-c-border);
+}
+
+#search-results h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.725rem;
+}
+
+#search-results .search-summary {
+  font-weight: 500;
+  color: var(--sy-c-light);
+}
+
+#search-results ul.search {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  padding-top: 0.625rem;
+  padding-bottom: 2rem;
+}
+
+#search-results ul.search > li {
+  padding-left: 0;
+}
+
+#search-results ul.search > li + li {
+  padding-top: 1rem;
+  border-top: 1px solid var(--sy-c-divider);
+}
+
+#search-results ul.search li > a {
+  font-weight: 600;
+}
+
+#search-results ul.search p.context {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
 }
