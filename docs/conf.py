@@ -26,6 +26,7 @@ extensions = [
     "sphinx_togglebutton",
     "nbsphinx",
     "numpydoc",
+    "sphinx_sitemap",
 ]
 todo_include_todos = True
 autosummary_generate = True
@@ -52,7 +53,8 @@ html_extra_path = ["_public"]
 
 html_title = "Shibuya"
 html_theme = "shibuya"
-html_baseurl = "https://shibuya.lepture.com"
+html_baseurl = "https://shibuya.lepture.com/"
+sitemap_url_scheme = "{link}"
 
 html_copy_source = False
 html_show_sourcelink = False

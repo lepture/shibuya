@@ -1,4 +1,5 @@
 sphinx
+sphinx-sitemap
 sphinx-copybutton
 sphinx-design
 ipykernel
