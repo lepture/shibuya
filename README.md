@@ -2,8 +2,7 @@
 
 Make your documentation stand out with our modern, customizable theme.
 
-![preview](https://user-images.githubusercontent.com/290496/221235764-51feeca2-9bed-4c2c-8b74-e46bd82d608b.png)
-
+![preview](https://github.com/lepture/shibuya/assets/290496/c754e460-8684-4e61-9ae1-9dc4ed9593d0)
 
 ## Features
 
