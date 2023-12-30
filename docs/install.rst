@@ -43,7 +43,8 @@ Using shibuya theme
 Don't forget to update your Sphinx documentation configuration file ``conf.py``:
 
 .. code-block:: python
+   :caption: conf.py
 
-    html_theme = "shibuya"
+   html_theme = "shibuya"
 
 Your documentation should be using **Shibuya** theme now.

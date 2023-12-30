@@ -12,7 +12,7 @@ Design changes
 --------------
 
 Shibuya Theme may make minor design changes or add new features in each release.
-release. But the layout is fixed, it is divided into three parts:
+But the layout is fixed, it is divided into three parts:
 
 - **header**: designed to be compatible with most company or product homepages
 - **body**: left sidebar for document links, main content and right sidebar

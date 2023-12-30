@@ -1,0 +1,8 @@
+{%- extends "layout.html" -%}
+
+{% block body %}{{ body }}{% endblock %}
+
+{% block afterarticle %}
+{% include "partials/article-bottom.html" %}
+{% include "partials/page-bottom.html" %}
+{% endblock %}

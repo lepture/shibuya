@@ -1,5 +1,13 @@
 {%- extends "base.html" -%}
 
+{%- if meta and meta.dark_code == "true" -%}
+  {% set dark_code = True %}
+{%- elif theme_dark_code -%}
+  {% set dark_code = True %}
+{%- else -%}
+  {% set dark_code = False %}
+{%- endif -%}
+
 {%- block document -%}
 <div class="document">
   {%- include "partials/banner.html" -%}
@@ -9,9 +17,10 @@
 
   <div class="sy-container mx-auto body">
     <main class="sy-content mx-auto pt-12 px-6 xl:px-12 break-words">
-      <article class="yue" role="main">
+      <article class="yue{% if dark_code %} dark-code{% endif %}" role="main">
         {% block body %}{% endblock %}
       </article>
+      {% block afterarticle %}{% endblock %}
     </main>
   </div>
 

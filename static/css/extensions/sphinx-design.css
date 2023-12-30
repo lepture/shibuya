@@ -37,8 +37,10 @@
   --sd-color-white-text: #212529;
 
   --sd-color-shadow: var(--gray-1);
+
   --sd-color-card-border: var(--sy-c-border);
   --sd-color-card-border-hover: var(--accent-a9);
+
   --sd-color-tabs-label-inactive: var(--sy-c-bold);
   --sd-color-tabs-label-active: var(--sd-color-primary);
   --sd-color-tabs-underline-active: var(--sd-color-primary);
@@ -46,6 +48,13 @@
   --sd-color-tabs-underline-hover: var(--accent-9);
 }
 
+.yue .surface {
+  --sd-color-card-text: var(--sy-c-light);
+  --sd-color-card-border: transparent;
+  --sd-color-card-background: var(--sy-c-surface);
+}
+
+/* badge */
 .yue a.sd-badge,
 .yue a.sd-badge:hover {
   border-bottom: 0;
@@ -60,53 +69,15 @@
   border-color: var(--sy-c-border);
 }
 
+/* grid */
 .yue .sd-container-fluid {
   margin-top: 2rem;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
 }
 
 .yue .sd-row {
   --sd-gutter-x: 1rem;
   --sd-gutter-y: 1rem;
-}
-
-.yue .sd-row-cols-1 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 1rem;
-}
-
-.yue .sd-row-cols-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
-}
-
-.yue .sd-row-cols-1 > .sd-col,
-.yue .sd-row-cols-2 > .sd-col {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.yue .sd-card-hover:hover {
-  transform: scale(1);
-}
-
-.yue .sd-card-hover:hover .sd-card-title {
-  color: var(--sy-c-link-hover);
-}
-
-.yue .sd-card a,
-.yue .sd-card a:hover {
-  border-bottom: 0;
-}
-
-
-@media (max-width: 880px) {
-  .yue .sd-row-cols-2 {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* tabs */
@@ -165,6 +136,36 @@
   border-radius: 0;
 }
 
+/* card */
+.yue .sd-card-title {
+  color: var(--sy-c-text);
+}
+
+.yue .sd-card-title > svg {
+  position: relative;
+  top: -1px;
+  margin-right: 0.25rem;
+}
+
+.yue .sd-card-hover:hover {
+  transform: scale(1);
+}
+
+.yue .sd-card-hover:hover .sd-card-title {
+  color: var(--sy-c-link-hover);
+}
+
+.yue .sd-card a,
+.yue .sd-card a:hover {
+  border-bottom: 0;
+}
+
+.yue .surface .sd-card-header,
+.yue .surface .sd-card-body,
+.yue .surface .sd-card-footer {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
 
 @media (print) {
   .yue .sd-card {

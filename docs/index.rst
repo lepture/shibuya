@@ -1,75 +1,53 @@
+:layout: landing
 :description: Shibuya is a modern, responsive, customizable theme for Sphinx.
 
 Shibuya
 =======
 
-Make your documentation stand out with our modern, customizable theme.
-Shibuya theme works well with Sphinx documentation generator.
+.. rst-class:: lead
 
-Features
---------
+    Beautiful responsive theme for Sphinx documentation generator. Great supports
+    for Jupyter extensions.
 
-- **Beautiful Design:**
-  A visually stunning and modern design that makes your documentation
-  look professional and appealing.
-- **Responsive Layout:**
-  The theme is designed to look great on all devices, from desktops to
-  smartphones, without compromising on readability or functionality.
-- **Three-Column Layout:**
-  With a three-column layout, you can easily organize your content and make
-  it more accessible to your users.
-- **Light and Dark Mode:**
-  Users can switch between light and dark modes according to their
-  preference, making it easy to read in any lighting condition.
-- **Customizable Colors:**
-  You can easily customize the colors to match your brand or personal
-  preferences, making it unique to your documentation.
-- **SEO Optimized:**
-  Built-in support for Twitter Card and Open Graph, ensuring your
-  documentation looks great when shared on social media and is easily
-  discoverable by search engines
+.. container:: buttons
 
-If you're already familiar with Sphinx, start using our theme by
-installing it with:
+    `Docs </install/>`_
+    `GitHub <https://github.com/lepture/shibuya>`_
 
-.. code-block:: shell
+.. grid:: 1 2 2 3
+    :class-row: surface
 
-    pip install shibuya
+    .. grid-item-card:: :octicon:`star` Beautiful Design
 
-Don't forget to update the ``html_theme`` option in your ``conf.py`` file
-to ``shibuya`` to activate the new theme:
+        A visually stunning and modern design that makes your documentation
+        look professional and appealing.
 
-.. code-block:: python
-   :caption: conf.py
+    .. grid-item-card:: :octicon:`zap` Responsive Layout
 
-   html_theme = "shibuya"
+        Look great on all devices, from desktops to smartphones, without
+        compromising on readability or functionality.
 
-Next
-----
+    .. grid-item-card:: :octicon:`moon` Light/Dark Mode
 
-Explore the following sections to discover more about our theme and its features.
+        Users can switch between light and dark modes according to their
+        preference.
 
-.. grid:: 2
+    .. grid-item-card:: :octicon:`paintbrush` Customizable Colors
+        :link: /customisation/colors/
 
-    .. grid-item-card:: Tutorial
-        :link: /install/
+        Customize the colors to match your brand or personal preferences
+        with radix colors.
 
-        If you're new to Python and Sphinx, this is a great place to start.
+    .. grid-item-card:: :octicon:`beaker` Jupyter Integration
+        :link: /extensions/nbsphinx/
 
-    .. grid-item-card:: Customisation
-        :link: /customisation/
+        Great CSS/UI for lots of Jupyter related extensions, enhance your
+        AI documentation.
 
-        Tailor configurations to meet your specific requirements with customizable settings.
+    .. grid-item-card:: :octicon:`browser` Multiple Layouts
 
-    .. grid-item-card:: References
-        :link: /writing/
-
-        Learn the syntax of reStructuredText and examine how it is formatted.
-
-    .. grid-item-card:: Contributing
-        :link: /contributing/
-
-        Your contributions can make a meaningful impact and help drive the project forward!
+        Layouts of landing page, simple one page, and three-column
+        documentation page.
 
 .. toctree::
     :caption: Getting started

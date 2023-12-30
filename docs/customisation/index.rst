@@ -25,7 +25,7 @@ Additionally, Shibuya provides its own set of options that you can use to custom
 the appearance of your website. These options can be set using the ``html_theme_options``
 option in your Sphinx configuration file.
 
-.. grid:: 2
+.. grid:: 1 1 1 2
 
     .. grid-item-card:: Logos
         :link: /customisation/logos/

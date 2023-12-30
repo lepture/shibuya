@@ -13,6 +13,10 @@
     {% endif %}
   {%- endblock -%}
 
+  {%- if favicon_url -%}
+    <link rel="shortcut icon" href="{{ favicon_url|e }}"/>
+  {%- endif %}
+
   {%- block linktags %}
     {%- if hasdoc('about') -%}
       <link rel="author" title="{{ _('About these documents') }}" href="{{ pathto('about') }}" />
@@ -37,20 +41,20 @@
     {%- if prev -%}
       <link rel="prev" title="{{ prev.title|striptags|e }}" href="{{ prev.link|e }}" />
     {%- endif -%}
+  {%- endblock %}
 
-    {%- if pageurl %}
-    <link rel="canonical" href="{{ pageurl|e }}" />
+  {%- block canonicalurl %}
+    {%- if meta and meta.canonical_url -%}
+      <link rel="canonical" href="{{ meta.canonical_url|e }}" />
+    {%- elif pageurl %}
+      <link rel="canonical" href="{{ pageurl|e }}" />
     {%- endif %}
-  {%- endblock linktags %}
+  {%- endblock %}
+
   <script>
     function setColorMode(t){let e=document.documentElement;e.setAttribute("data-color-mode",t);let a=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,s=t;"auto"===t&&(s=a?"dark":"light"),"light"===s?(e.classList.remove("dark"),e.classList.add("light")):(e.classList.remove("light"),e.classList.add("dark"))}
     setColorMode(sessionStorage._theme||"auto");
   </script>
-
-  {%- if favicon_url -%}
-    <link rel="shortcut icon" href="{{ favicon_url|e }}"/>
-  {%- endif %}
-
   {%- block styles -%}
     {%- for css in css_files -%}
       {% if css|attr("filename") -%}
@@ -60,7 +64,7 @@
       {%- endif %}
     {% endfor -%}
     {% include "partials/webfonts.html" %}
-    {% block theme_styles %}{% endblock %}
+    {% block themestyles %}{% endblock %}
   {%- endblock -%}
   {%- block extrahead %}{% endblock -%}
   {%- include "partials/extra-head.html" -%}

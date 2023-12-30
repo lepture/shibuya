@@ -1,0 +1,51 @@
+{%- extends "layout.html" -%}
+
+{% block body %}{{ body }}{% endblock %}
+
+{% block themestyles %}
+<style>
+  .yue {
+    padding-bottom: 2rem;
+  }
+  .yue section:first-of-type h1 {
+    font-size: 4.2rem;
+    margin-top: 3.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .yue a.headerlink {
+    display: none;
+  }
+  .yue .buttons {
+    margin: 2rem 0 4.2rem;
+  }
+  .yue .buttons > p {
+    display: flex;
+    gap: 1rem;
+  }
+  .yue .buttons a {
+    display: inline-block;
+    padding: 0 2rem;
+    line-height: 2.6rem;
+    border-radius: 2.6rem;
+    border: 2px solid var(--sy-c-border);
+    font-weight: 600;
+    background-color: var(--sy-c-surface);
+    transition: all 0.2s ease;
+  }
+  .yue .buttons a:first-child {
+    color: var(--accent-9-contrast);
+    background-color: var(--accent-9);
+    border-color: var(--accent-9);
+  }
+  .yue .buttons a:hover {
+    color: var(--sy-c-bold);
+    border-color: var(--accent-11);
+    background-color: var(--sy-c-background);
+  }
+</style>
+{% endblock %}
+
+{% block afterarticle %}
+{% include "partials/page-bottom.html" %}
+{% endblock %}
