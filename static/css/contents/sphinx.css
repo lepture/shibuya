@@ -127,6 +127,8 @@ p.centered {
   text-align: center;
 }
 
+.light .light-hidden,
+.dark .dark-hidden,
 .light .dark-only,
 .dark .light-only {
   display: none;

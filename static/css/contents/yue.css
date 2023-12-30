@@ -221,11 +221,20 @@
   margin-bottom: 0;
 }
 
+.yue figure img {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .yue figcaption {
   color: var(--yue-c-caption);
   font-size: 0.875em;
   line-height: 1.4285714;
   margin-top: 0.8571429em;
+}
+
+.yue figcaption > p {
+  margin-top: 0;
 }
 
 .yue code {

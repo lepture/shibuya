@@ -11,3 +11,16 @@
 .demo-result {
   padding: 1rem;
 }
+
+.image-container {
+  border: 0.5rem solid var(--accent-a3);
+  border-radius: 6px;
+}
+
+.image-container > img {
+  border-radius: 4px;
+}
+
+.yue .image-container > img {
+  margin: 0;
+}
