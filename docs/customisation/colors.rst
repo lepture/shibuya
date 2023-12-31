@@ -55,7 +55,7 @@ meta tag. If you don't want to enable it for the whole site, you can use the met
 Variable name conventions
 -------------------------
 
-.. deprecated:: 2024.1.5
+.. deprecated:: 2024.1.1
 
     The CSS variable ``--sy-rc-theme`` is removed.
 
