@@ -152,6 +152,7 @@ Dropdown
 ~~~~~~~~
 
 .. dropdown:: Dropdown title
+    :icon: code
 
     Dropdown content
 

@@ -72,8 +72,21 @@ can use variables and functions defined in cells earlier in the document:
     a += 1
     print('second cell: a = {}'.format(a))
 
-Because jupyter-sphinx uses the machinery of ``nbconvert``, it is capable of rendering
-any rich output, for example LaTeX output:
+Because ``jupyter-sphinx`` uses the machinery of ``nbconvert``, it is capable of rendering any rich output, for example plots:
+
+.. jupyter-execute::
+
+    import numpy as np
+    from matplotlib import pyplot
+    %matplotlib inline
+
+    x = np.linspace(1E-3, 2 * np.pi)
+
+    pyplot.plot(x, np.sin(x) / x)
+    pyplot.plot(x, np.cos(x))
+    pyplot.grid()
+
+LaTeX output:
 
 .. jupyter-execute::
 

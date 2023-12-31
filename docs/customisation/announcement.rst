@@ -25,7 +25,7 @@ content in the ``conf.py`` announcement option.
 
 Here shows an example with ``announcement`` configuration.
 
-.. container:: image-container
+.. container:: image-1
 
     .. image:: /_static/screenshots/light-homepage.jpg
       :class: light-only
