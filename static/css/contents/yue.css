@@ -216,6 +216,11 @@
   margin-bottom: 2em;
 }
 
+.yue a > img {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .yue figure > * {
   margin-top: 0;
   margin-bottom: 0;

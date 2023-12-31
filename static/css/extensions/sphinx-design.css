@@ -7,7 +7,7 @@
   --sd-color-warning: var(--orange-a11);
   --sd-color-danger: var(--red-a11);
   --sd-color-light: var(--gray-3);
-  --sd-color-muted: var(--gray-9);
+  --sd-color-muted: var(--gray-8);
   --sd-color-dark: var(--sage-12);
   --sd-color-black: black;
   --sd-color-white: white;
@@ -67,17 +67,6 @@
 
 .yue .sd-btn {
   border-color: var(--sy-c-border);
-}
-
-/* grid */
-.yue .sd-container-fluid {
-  margin-top: 2rem;
-  padding: 0.5rem 0;
-}
-
-.yue .sd-row {
-  --sd-gutter-x: 1rem;
-  --sd-gutter-y: 1rem;
 }
 
 /* tabs */

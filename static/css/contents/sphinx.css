@@ -53,6 +53,7 @@ h6:hover a.headerlink {
   visibility: visible;
 }
 
+.yue a.image-reference,
 .yue .toctree-wrapper a {
   border-bottom: none;
 }

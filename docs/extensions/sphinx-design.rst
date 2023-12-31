@@ -64,10 +64,30 @@ Card with footer:
     +++
     Footer
 
+Grid items
+~~~~~~~~~~
+
+.. grid:: 1 2 3 3
+    :outline:
+
+    .. grid-item::
+
+        A
+
+    .. grid-item::
+
+        B
+
+    .. grid-item::
+
+        C
+
 Grid cards
 ~~~~~~~~~~
 
 .. grid:: 1 1 2 2
+    :padding: 0
+    :gutter: 2
 
     .. grid-item-card:: Tutorial
         :link: /install/
@@ -88,6 +108,45 @@ Grid cards
         :link: /contributing/
 
         Your contributions can make a meaningful impact and help drive the project forward!
+
+Nesting grids
+~~~~~~~~~~~~~
+
+.. grid:: 1 1 2 2
+    :padding: 0
+    :gutter: 1
+
+    .. grid-item::
+
+        .. grid:: 1 1 1 1
+            :gutter: 1
+
+            .. grid-item-card:: Item 1.1
+
+                Multi-line
+
+                content
+
+            .. grid-item-card:: Item 1.2
+
+                Content
+
+    .. grid-item::
+
+        .. grid:: 1 1 1 1
+            :gutter: 1
+
+            .. grid-item-card:: Item 2.1
+
+                Content
+
+            .. grid-item-card:: Item 2.2
+
+                Content
+
+            .. grid-item-card:: Item 2.3
+
+                Content
 
 Dropdown
 ~~~~~~~~
@@ -179,6 +238,18 @@ Octicon Icons
 - book: :octicon:`book`
 - clock: :octicon:`clock`
 
+Article Info
+------------
+
+.. article-info::
+    :avatar: https://sphinx-design.readthedocs.io/en/latest/_images/ebp-logo.png
+    :avatar-link: https://executablebooks.org/
+    :avatar-outline: muted
+    :author: Executable Books
+    :date: Jul 24, 2021
+    :read-time: 5 min read
+    :class-container: sd-p-2 sd-outline-muted sd-rounded-1
+
 Only with Shibuya
 -----------------
 
@@ -190,7 +261,9 @@ By adding a class of ``surface``, a card would be rendered:
         :class-row: surface
 
 .. grid:: 1 1 2 3
-    :class-row: surface
+    :gutter: 2
+    :padding: 0
+    :class-container: surface
 
     .. grid-item-card:: :octicon:`star` Beautiful Design
 

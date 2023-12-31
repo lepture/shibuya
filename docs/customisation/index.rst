@@ -26,6 +26,8 @@ the appearance of your website. These options can be set using the ``html_theme_
 option in your Sphinx configuration file.
 
 .. grid:: 1 1 1 2
+    :gutter: 2
+    :padding: 0
 
     .. grid-item-card:: Logos
         :link: /customisation/logos/
@@ -59,6 +61,8 @@ appearance of specific sections of your website. These templates include the hea
 footer, navbar, and sidebar.
 
 .. grid:: 1
+    :gutter: 2
+    :padding: 0
 
     .. grid-item-card:: Web Fonts
         :link: /customisation/fonts/
