@@ -6,9 +6,9 @@
   --sd-color-info: var(--blue-a11);
   --sd-color-warning: var(--orange-a11);
   --sd-color-danger: var(--red-a11);
-  --sd-color-light: var(--gray-3);
+  --sd-color-light: var(--sand-a2);
   --sd-color-muted: var(--gray-8);
-  --sd-color-dark: var(--sage-12);
+  --sd-color-dark: #212122;
   --sd-color-black: black;
   --sd-color-white: white;
 
@@ -20,7 +20,7 @@
   --sd-color-danger-highlight: var(--red-a8);
   --sd-color-light-highlight: var(--gray-4);
   --sd-color-muted-highlight: var(--gray-11);
-  --sd-color-dark-highlight: var(--sage-12);
+  --sd-color-dark-highlight: #121211;
   --sd-color-black-highlight: black;
   --sd-color-white-highlight: #d9d9d9;
 
@@ -30,7 +30,7 @@
   --sd-color-info-text: var(--blue-9-contrast);
   --sd-color-warning-text: var(--orange-9-contrast);
   --sd-color-danger-text: var(--red-9-contrast);
-  --sd-color-light-text: #212529;
+  --sd-color-light-text: var(--sy-c-text);
   --sd-color-muted-text: #fff;
   --sd-color-dark-text: #fff;
   --sd-color-black-text: #fff;

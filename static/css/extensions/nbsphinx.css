@@ -11,7 +11,8 @@
 }
 
 .yue div.nboutput.container div.output_area.stderr {
-  background-color: var(--red-6);
+  color: var(--red-a11);
+  background-color: var(--red-a3);
 }
 
 .yue div.nboutput.container div.output_area > .math-wrapper > div.math {

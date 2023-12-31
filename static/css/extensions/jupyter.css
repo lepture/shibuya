@@ -1,3 +1,10 @@
+.yue {
+  --jp-widgets-input-border-color: var(--gray-5);
+  --jp-widgets-input-focus-border-color: var(--gray-8);
+  --jp-widgets-slider-active-handle-color: var(--gray-4);
+  --jp-widgets-slider-handle-border-color: var(--sy-c-border);
+}
+
 .yue .jupyter_container {
   background-color: var(--sy-c-background);
   border: 3px solid var(--sy-c-border);
@@ -20,11 +27,24 @@
   padding: 0;
 }
 
-.jupyter_container div.cell_output > .thebelab-output,
-.jupyter_container div.cell_output > .output,
-.jupyter_container div.cell_output > .stderr,
-.jupyter_container div.cell_output > .widget-subarea {
+.jupyter_container div.cell_output .output,
+.jupyter_container div.cell_output .stderr,
+.jupyter_container div.cell_output .widget-subarea {
   padding: 0.5rem;
+}
+
+.jupyter_container div.cell_output .stderr .stderr {
+  padding: 0;
+}
+
+.widget-hslider .slider-container,
+.jupyter-widget-hslider .slider-container {
+  display: flex;
+  align-items: center;
+}
+.widget-slider .noUi-target,
+.jupyter-widget-slider .noUi-target {
+  width: 100%;
 }
 
 /* reset code block style */
@@ -43,7 +63,12 @@
 }
 
 .yue .jupyter_container .stderr {
-  background-color: var(--red-6);
+  color: var(--red-a11);
+  background-color: var(--red-a3);
+}
+
+.yue .jupyter_container .stderr .stderr {
+  background-color: transparent;
 }
 
 html.light .jupyter_container .cell_output {
