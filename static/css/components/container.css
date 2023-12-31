@@ -12,15 +12,22 @@
   padding: 1rem;
 }
 
-.image-container {
+.container.image-1 {
   border: 0.5rem solid var(--accent-a3);
   border-radius: 6px;
 }
 
-.image-container > img {
+.container.image-1 > img {
   border-radius: 4px;
+  margin: 0;
 }
 
-.yue .image-container > img {
+.container.image-2 {
+  border: 1px solid var(--sy-c-border);
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.container.image-2 > img {
   margin: 0;
 }
