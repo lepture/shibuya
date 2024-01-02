@@ -13,7 +13,7 @@ from ._sphinx import (
     WrapLineFormatter,
 )
 
-__version__ = "2024.1.1"
+__version__ = "2024.1.2"
 
 shibuya_version = __version__
 

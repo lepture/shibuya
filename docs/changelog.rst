@@ -5,6 +5,12 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2024.1.2
+--------
+
+- **Fix**: Add opengraph information for landing and simple layouts.
+- **Fix**: Move ``.buttons`` container into global css.
+
 2024.1.1
 --------
 
