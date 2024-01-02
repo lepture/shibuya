@@ -1,5 +1,9 @@
 {%- extends "layout.html" -%}
 
+{%- block extrahead %}
+  {% include "partials/opengraph.html" %}
+{%- endblock %}
+
 {% block body %}{{ body }}{% endblock %}
 
 {% block afterarticle %}
