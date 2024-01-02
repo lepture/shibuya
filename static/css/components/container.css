@@ -31,3 +31,31 @@
 .container.image-2 > img {
   margin: 0;
 }
+
+.container.buttons {
+  margin: 2rem 0 4.2rem;
+}
+.container.buttons > p {
+  display: flex;
+  gap: 1rem;
+}
+.container.buttons a {
+  display: inline-block;
+  padding: 0 2rem;
+  line-height: 2.6rem;
+  border-radius: 2.6rem;
+  border: 2px solid var(--sy-c-border);
+  font-weight: 600;
+  background-color: var(--sy-c-surface);
+  transition: all 0.2s ease;
+}
+.container.buttons a:first-child {
+  color: var(--accent-9-contrast);
+  background-color: var(--accent-9);
+  border-color: var(--accent-9);
+}
+.container.buttons a:hover {
+  color: var(--sy-c-bold);
+  border-color: var(--accent-11);
+  background-color: var(--sy-c-background);
+}
