@@ -69,3 +69,24 @@
   background-clip: content-box;
   border: 3px solid transparent;
 }
+
+/* ghost table */
+.yue table.ghost th,
+.yue table.ghost td {
+  border-left: 0;
+  border-right: 0;
+  padding: 0.75rem;
+  background-color: transparent;
+}
+.yue table.ghost th:last-child {
+  border-right: 0;
+}
+.yue table.ghost caption {
+  margin-bottom: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--yue-c-td-border);
+}
+.yue table.ghost thead tr:first-of-type {
+  border-top: 0;
+  border-bottom-width: 3px;
+}

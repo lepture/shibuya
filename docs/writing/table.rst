@@ -3,8 +3,11 @@ Tables
 
 There are many ways to create a table. Here are some of them.
 
-Simple Table
+Table fences
 ------------
+
+Simple Table
+~~~~~~~~~~~~
 
 Very simple tables can be created with the syntax bellow:
 
@@ -56,7 +59,7 @@ True   True   True
 
 
 Grid Table
-----------
+~~~~~~~~~~
 
 The `grid table <https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#grid-tables>`_
 syntax can create more complex tables:
@@ -87,8 +90,11 @@ syntax can create more complex tables:
 | body row 4 |            | - blocks. |
 +------------+------------+-----------+
 
-Table Directive
----------------
+Table directives
+----------------
+
+table
+~~~~~
 
 There is also a `table directive <https://docutils.sourceforge.io/docs/ref/rst/directives.html#table>`_,
 which can wrap the above tables with many options.
@@ -115,8 +121,8 @@ which can wrap the above tables with many options.
    True   False
    =====  =====
 
-CSV Table
----------
+csv-table
+~~~~~~~~~
 
 You can also use a ``csv-table`` directive to create tables:
 
@@ -140,8 +146,8 @@ You can also use a ``csv-table`` directive to create tables:
    crunchy, now would it?"
    "Gannet Ripple", 1.99, "On a stick!"
 
-List Table
-----------
+list-table
+~~~~~~~~~~
 
 Or with a ``list-table`` directive:
 
@@ -183,6 +189,34 @@ Or with a ``list-table`` directive:
      - 1.99
      - On a stick!
 
+ghost class
+~~~~~~~~~~~
+
+With ``:class: ghost`` option, you can use the "ghost" style of a table.
+
+.. code-block:: ReST
+
+    .. table::
+        :class: ghost
+        :widths: auto
+
+        =====  =====
+          A    not A
+        =====  =====
+        False  True
+        True   False
+        =====  =====
+
+.. table::
+   :class: ghost
+   :widths: auto
+
+   =====  =====
+     A    not A
+   =====  =====
+   False  True
+   True   False
+   =====  =====
 
 Responsive table
 ----------------
