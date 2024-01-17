@@ -5,19 +5,33 @@
         <i class="i-icon menu"></i>
       </button>
     </div>
-    <ul class="flex-1">
+    <ol class="flex-1" itemscope itemtype="https://schema.org/BreadcrumbList">
       {% block breadcrumbs %}
       {% if project == title %}
-      <li><a href="{{ pathto(root_doc) }}">{{ project }}</a></li>
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="{{ pathto(root_doc) }}"><span itemprop="name">{{ project }}</span></a>
+        <meta itemprop="position" content="1" />
+      </li>
       {% else %}
-      <li><a href="{{ pathto(root_doc) }}">{{ project }}</a><span>/</span></li>
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="{{ pathto(root_doc) }}"><span itemprop="name">{{ project }}</span></a>
+        <span>/</span>
+        <meta itemprop="position" content="1" />
+      </li>
       {% for doc in parents %}
-      <li><a href="{{ doc.link|e }}">{{ doc.title }}</a><span>/</span></li>
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="{{ doc.link|e }}"><span itemprop="name">{{ doc.title }}</span></a>
+        <span>/</span>
+        <meta itemprop="position" content="{{ loop.index + 1 }}" />
+      </li>
       {% endfor %}
-      <li><strong>{{ title }}</strong></li>
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <strong itemprop="name">{{ title }}</strong>
+        <meta itemprop="position" content="{{ parents|count + 2 }}" />
+      </li>
       {% endif %}
       {% endblock %}
-    </ul>
+    </ol>
     <div class="xl:hidden ml-1">
       <button class="js-menu" aria-label="Show table of contents" type="button" aria-controls="rside"
         aria-expanded="false">

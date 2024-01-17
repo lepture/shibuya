@@ -11,7 +11,7 @@
   border-bottom: 1px solid var(--sy-c-divider);
 }
 
-.sy-breadcrumbs ul {
+.sy-breadcrumbs ol {
   display: flex;
   font-size: 0.94rem;
   white-space: nowrap;
@@ -23,15 +23,15 @@
   align-items: center;
 }
 
-.sy-breadcrumbs ul a {
+.sy-breadcrumbs ol a {
   color: var(--sy-c-light);
 }
 
-.sy-breadcrumbs ul a:hover {
+.sy-breadcrumbs ol a:hover {
   color: var(--sy-c-bold);
 }
 
-.sy-breadcrumbs ul a + span {
+.sy-breadcrumbs ol a + span {
   padding: 0 0.4rem;
   font-weight: 300;
   color: var(--sy-c-light);
