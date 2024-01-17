@@ -5,6 +5,13 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2024.1.17
+---------
+
+**New**: Added "ghost" style tables.
+**New**: Improve SEO with BreadcrumbList schema.
+**Fix**: Change ``<img>`` style to ``inline``.
+
 2024.1.2
 --------
 
