@@ -123,6 +123,7 @@ html_theme_options = {
 }
 
 if "READTHEDOCS" in os.environ:
+    html_theme_options["carbon_ads_code"] = ""
     html_theme_options["announcement"] = (
         "This documentation is hosted on Read the Docs only for testing. Please use "
         "<a href='https://shibuya.lepture.com/'>the main documentation</a> instead."
