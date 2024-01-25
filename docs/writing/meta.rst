@@ -114,7 +114,7 @@ meta tag.
 
 .. code-block:: none
 
-   :cover: https://example.com/a-squared-image.png
+   :image: https://example.com/a-squared-image.png
 
    Page title
    ==========
