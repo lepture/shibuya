@@ -94,6 +94,7 @@ configuration. Simply add the following to your Sphinx ``conf.py`` file:
         "source_type": "github|gitlab|bitbucket",
         "source_user": "<username>",
         "source_repo": "<repository>",
+        "source_branch": "master",  # Optional
     }
 
 With this configuration, Shibuya will automatically include an "Edit This Page" link in

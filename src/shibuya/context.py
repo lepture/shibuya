@@ -51,6 +51,7 @@ def create_edit_source_link(context: Dict[str, Any]):
     source_user = context.get("source_user")
     source_repo = context.get("source_repo")
     source_docs_path = context.get("source_docs_path", "/docs/")
+    source_branch = context.get("source_branch", "master")
     source_edit_template = context.get("source_edit_template")
 
     def edit_source_link(filename: str) -> str:
@@ -61,11 +62,13 @@ def create_edit_source_link(context: Dict[str, Any]):
             return
 
         if source_type == "github":
-            return f"https://github.com/{source_user}/{source_repo}/blob/master{source_docs_path}{filename}"
+            url = f"https://github.com/{source_user}/{source_repo}/blob"
         elif source_type == "gitlab":
-            return f"https://gitlab.com/{source_user}/{source_repo}/-/blob/master{source_docs_path}{filename}"
+            url = f"https://gitlab.com/{source_user}/{source_repo}/-/blob"
         elif source_type == "bitbucket":
-            return  f"https://bitbucket.org/{source_user}/{source_repo}/src/master{source_docs_path}{filename}"
+            url = f"https://bitbucket.org/{source_user}/{source_repo}/src"
+
+        return f"{url}/{source_branch}{source_docs_path}{filename}"
 
     return edit_source_link
 
