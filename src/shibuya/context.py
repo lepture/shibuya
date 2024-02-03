@@ -51,7 +51,7 @@ def create_edit_source_link(context: Dict[str, Any]):
     source_user = context.get("source_user")
     source_repo = context.get("source_repo")
     source_docs_path = context.get("source_docs_path", "/docs/")
-    source_branch = context.get("source_branch", "master")
+    source_version = context.get("source_version", "master")
     source_edit_template = context.get("source_edit_template")
 
     def edit_source_link(filename: str) -> str:
@@ -68,7 +68,7 @@ def create_edit_source_link(context: Dict[str, Any]):
         elif source_type == "bitbucket":
             url = f"https://bitbucket.org/{source_user}/{source_repo}/src"
 
-        return f"{url}/{source_branch}{source_docs_path}{filename}"
+        return f"{url}/{source_version}{source_docs_path}{filename}"
 
     return edit_source_link
 
@@ -86,5 +86,6 @@ def _normalize_readthedocs_context(context: Dict[str, Any]):
     context["source_type"] = source_type
     context["source_user"] = context.get(f"{source_type}_user")
     context["source_repo"] = context.get(f"{source_type}_repo")
+    context["source_version"] = context.get(f"{source_type}_version")
     context["source_docs_path"] = context.get("conf_py_path")
     return source_type
