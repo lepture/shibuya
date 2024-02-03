@@ -95,6 +95,7 @@ configuration. Simply add the following to your Sphinx ``conf.py`` file:
         "source_user": "<username>",
         "source_repo": "<repository>",
         "source_branch": "master",  # Optional
+        "source_docs_path": "/docs/",  # Optional
     }
 
 With this configuration, Shibuya will automatically include an "Edit This Page" link in
