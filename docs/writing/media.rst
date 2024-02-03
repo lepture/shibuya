@@ -115,25 +115,25 @@ example below, it will show a dog in light mode and a cat in dark mode.
       :class: demo-code
 
       .. figure:: https://source.unsplash.com/daily?dog
+         :figclass: light-only
          :width: 800
-         :class: light-only
          :align: center
 
       .. figure:: https://source.unsplash.com/daily?cat
+         :figclass: dark-only
          :width: 800
-         :class: dark-only
          :align: center
 
    .. container:: demo-result
 
       .. figure:: https://source.unsplash.com/daily?dog
+         :figclass: light-only
          :width: 800
-         :class: light-only
          :align: center
 
       .. figure:: https://source.unsplash.com/daily?cat
+         :figclass: dark-only
          :width: 800
-         :class: dark-only
          :align: center
 
 .. _Unsplash: https://unsplash.com
