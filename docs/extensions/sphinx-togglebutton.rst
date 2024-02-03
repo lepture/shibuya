@@ -43,6 +43,15 @@ Usage
     This title was made into a dropdown admonition by adding ``:class: dropdown`` to it.
 
 
+.. admonition:: Benchmark
+    :class: dropdown
+
+    .. code-block:: python
+        :caption: bench.py
+
+        print("Hello, world!")
+
+
 ``toggle`` class
 ~~~~~~~~~~~~~~~~
 

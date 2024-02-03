@@ -1,6 +1,6 @@
 :root {
   --syntax-pre-bg: var(--accent-a2);
-  --syntax-cap-bg: var(--accent-3);
+  --syntax-cap-bg: var(--accent-a3);
   --syntax-highlight-bg: var(--accent-a3);
   --syntax-linenos-divider: var(--gray-a6);
 
