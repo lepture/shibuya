@@ -1,0 +1,7 @@
+{%- if languages %}
+{%- for item in languages %}
+  {%- if item[2] and item[2] != language %}
+    <link rel="alternate" hreflang="{{ item[2] }}" href="{{ i18n_link(item[1]) }}" />
+  {%- endif %}
+{%- endfor %}
+{% endif %}

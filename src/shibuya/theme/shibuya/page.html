@@ -1,7 +1,5 @@
-{%- if meta and meta.layout == "landing" -%}
-  {% extends 'layout/landing.html' %}
-{%- elif meta and meta.layout == "simple" -%}
-  {% extends 'layout/simple.html' %}
+{%- if meta and meta.layout -%}
+  {% extends 'layout/' + meta.layout + '.html' %}
 {% else %}
-  {% extends 'layout/default.html' %}
+  {% extends 'layout/' + theme_page_layout + '.html' %}
 {%- endif -%}
