@@ -5,6 +5,13 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2024.2.21
+---------
+
+**New**: Added ``source_version`` html context
+**New**: Added ``source_docs_path`` html context
+**Fix**: Improve code block caption background color
+
 2024.1.17
 ---------
 
