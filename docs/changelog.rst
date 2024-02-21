@@ -8,16 +8,16 @@ Shibuya uses date based release segments. For pre-releases, it follows :pep:`440
 2024.2.21
 ---------
 
-**New**: Added ``source_version`` html context
-**New**: Added ``source_docs_path`` html context
-**Fix**: Improve code block caption background color
+- **New**: Added ``source_version`` html context
+- **New**: Added ``source_docs_path`` html context
+- **Fix**: Improve code block caption background color
 
 2024.1.17
 ---------
 
-**New**: Added "ghost" style tables.
-**New**: Improve SEO with BreadcrumbList schema.
-**Fix**: Change ``<img>`` style to ``inline``.
+- **New**: Added "ghost" style tables.
+- **New**: Improve SEO with BreadcrumbList schema.
+- **Fix**: Change ``<img>`` style to ``inline``.
 
 2024.1.2
 --------
