@@ -18,3 +18,20 @@
 .yue div.nboutput.container div.output_area > .math-wrapper > div.math {
   padding-top: 0;
 }
+
+.yue .jp-RenderedHTMLCommon thead,
+.yue div.rendered_html thead {
+  border-color: var(--sy-c-border);
+}
+.yue .jp-RenderedHTMLCommon tbody tr,
+.yue div.rendered_html tbody tr {
+  color: var(--sy-c-text);
+}
+.yue .jp-RenderedHTMLCommon tbody tr:nth-child(odd),
+.yue div.rendered_html tbody tr:nth-child(odd) {
+  background-color: var(--sy-c-surface);
+}
+.yue .jp-RenderedHTMLCommon tbody tr:hover,
+.yue div.rendered_html tbody tr:hover {
+  background-color: var(--color-surface-accent);
+}
