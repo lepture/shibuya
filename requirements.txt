@@ -10,4 +10,5 @@ myst-parser
 numpy
 numpydoc
 matplotlib
+pandas
 Babel
