@@ -69,4 +69,9 @@ function createToggleButton (el) {
   return button
 }
 
+const currentLink = document.querySelector('.globaltoc a.current')
+if (currentLink && currentLink.scrollIntoViewIfNeeded) {
+  currentLink.scrollIntoViewIfNeeded()
+}
+
 addToggleToc()
