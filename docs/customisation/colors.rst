@@ -52,6 +52,22 @@ code blocks into dark mode, you can update ``dark_code`` in ``html_theme_options
 There is also a :ref:`page level <page-dark-code>` configuration via ``:dark_code:``
 meta tag. If you don't want to enable it for the whole site, you can use the meta tag.
 
+Color mode
+----------
+
+Shibuya theme provides both light and dark modes, allowing users to switch between
+them based on their preference. By default, the theme uses the "auto" mode, which
+respects the operating system's settings. However, you have the option to force the
+use of either light or dark mode by adjusting the settings in ``conf.py``:
+
+.. code-block:: python
+
+    html_theme_options = {
+        "color_mode": "dark",
+    }
+
+Choices are: ``auto``, ``light``, ``dark``.
+
 Variable name conventions
 -------------------------
 
