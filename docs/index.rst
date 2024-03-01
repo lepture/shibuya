@@ -14,6 +14,9 @@ Shibuya
     `Docs </install/>`_
     `GitHub <https://github.com/lepture/shibuya>`_
 
+.. raw:: html
+    :file: ./_templates/accent-colors.html
+
 .. grid:: 1 1 2 3
     :gutter: 2
     :padding: 0
@@ -47,7 +50,7 @@ Shibuya
         AI documentation.
 
     .. grid-item-card:: :octicon:`browser` Multiple Layouts
-        :link: /writing/meta/#layout
+        :link: /customisation/layouts/
 
         Layouts of landing page, simple one page, and three-column
         documentation page.

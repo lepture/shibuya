@@ -79,19 +79,30 @@
 <style>
   .accent-color-picker {
     display: flex;
-    gap: 0.25rem;
+    gap: 0.125rem;
     flex-wrap: wrap;
   }
 
   .accent-color-picker button {
     display: flex;
-    min-height: 48px;
-    min-width: 72px;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: 2px solid transparent;
+  }
+
+  .accent-color-picker span {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
     background-color: var(--color);
+    border-radius: 100%;
   }
 
   .accent-color-picker button.active {
-    border-radius: 6px;
+    border-color: var(--color);
   }
 
   .accent-color-picker button:hover {
