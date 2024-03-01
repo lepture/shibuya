@@ -5,6 +5,14 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2024.3.1
+--------
+
+- **New**: Added ``page_layout`` theme option
+- **New**: Added ``color_mode`` theme option
+- **New**: Added compact page layout
+- **Fix**: Improve style for ``nbsphinx`` tables
+
 2024.2.21
 ---------
 
