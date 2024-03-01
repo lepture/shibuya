@@ -1,6 +1,8 @@
 :description: Customize webpage with meta configuration.
 :dark_code: true
 
+.. _meta:
+
 Meta tags
 =========
 
@@ -20,45 +22,11 @@ features a three-column design:
 - the right sidebar holds the local table of contents,
 - and the center displays the main page content.
 
-Additional page layouts are also available.
-
-Simple layout
-~~~~~~~~~~~~~
-
-A ``simple`` layout exclusively displays the page content without
-any sidebars—ideal for generating single-page documentation.
-
-.. code-block:: none
-
-   :layout: simple
-
-
-Landing layout
-~~~~~~~~~~~~~~
-
-The ``landing`` layout is typically used for the home page
-(``index.rst``).
+Page layout can be configured with:
 
 .. code-block:: none
 
    :layout: landing
-
-.. hint::
-
-    Discover the appearance of the landing page by visiting the
-    `Shibuya theme's homepage </>`_. Source code can be found on
-    `GitHub (index.rst)`_.
-
-.. _`GitHub (index.rst)`: https://github.com/lepture/shibuya/blob/master/docs/index.rst
-
-This template offers a special container for buttons:
-
-.. code-block:: none
-
-    .. container:: buttons
-
-        `Docs </install/>`_
-        `GitHub <https://github.com/lepture/shibuya>`_
 
 Description
 -----------

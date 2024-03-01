@@ -217,6 +217,10 @@
   margin-bottom: 2em;
 }
 
+.yue img.rounded {
+  border-radius: .5rem;
+}
+
 .yue a > img {
   margin-top: 0;
   margin-bottom: 0;

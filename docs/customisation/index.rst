@@ -89,6 +89,7 @@ footer, navbar, and sidebar.
     logos
     colors
     navbar
+    layouts
     announcement
     social
     fonts
