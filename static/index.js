@@ -2,7 +2,7 @@ import "./js/menu"
 import "./js/banner"
 import "./js/theme"
 import "./js/globaltoc"
-import "./js/localtoc"
+import "./js/scroller"
 import "./js/repo-stats"
 import "./js/carbon"
 
