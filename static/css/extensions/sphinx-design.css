@@ -121,6 +121,7 @@
   --syntax-special-bg: var(--syntax-light-special-bg);
 }
 
+.yue .sd-tab-content .code-block-caption,
 .yue .sd-tab-content .highlight pre {
   border-radius: 0;
 }

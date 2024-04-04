@@ -13,6 +13,10 @@
   background-color: var(--accent-a3);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--sy-f-text);
   color: var(--sy-c-text);

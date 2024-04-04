@@ -40,6 +40,7 @@
   padding: 0;
 }
 
+.yue .sphinx-tabs-panel.code-tab .code-block-caption,
 .yue .sphinx-tabs-panel.code-tab .highlight pre {
   border-radius: 0;
 }
