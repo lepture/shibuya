@@ -35,6 +35,14 @@
   --sy-dropdown-shadow: 0 12px 32px var(--gray-a6), 0 2px 6px var(--gray-a4);
 }
 
+[data-accent-color='sky'],
+[data-accent-color='mint'],
+[data-accent-color='lime'],
+[data-accent-color='yellow'],
+[data-accent-color='amber'] {
+  --sy-c-link: var(--accent-a10);
+}
+
 html.light {
   color-scheme: light;
   --sy-c-background: white;

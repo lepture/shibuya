@@ -159,6 +159,8 @@ Dropdown
 Tabs
 ~~~~
 
+Directive ``tab-set``:
+
 .. tab-set::
 
     .. tab-item:: Label1
@@ -169,6 +171,8 @@ Tabs
 
         Content 2
 
+Directive ``tab-set-code``:
+
 .. tab-set-code::
 
     .. code-block:: python
@@ -178,6 +182,24 @@ Tabs
     .. code-block:: javascript
 
         a = 1;
+
+Directive ``tab-set`` with ``code-block``:
+
+.. tab-set::
+
+    .. tab-item:: Python
+
+      .. code-block:: python
+          :caption: a.py
+
+          foo = "str"
+
+    .. tab-item:: JavaScript
+
+      .. code-block:: javascript
+          :caption: b.js
+
+          a = 1;
 
 Badges
 ~~~~~~

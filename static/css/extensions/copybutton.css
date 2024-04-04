@@ -11,12 +11,24 @@
   height: 1.4rem;
 }
 
-.yue .highlight button.copybtn:hover {
-  background-color: transparent;
+.yue button.copybtn:hover {
   color: var(--syntax-meta);
 }
 
-.yue .o-tooltip--left:after {
+.yue .highlight button.copybtn:hover {
+  background-color: transparent;
+}
+
+.yue button.copybtn:after {
   background-color: transparent;
   color: var(--syntax-text);
+}
+
+.yue button.copybtn.success {
+  border-color: var(--green-a10);
+  color: var(--green-a10);
+}
+
+.yue button.copybtn.success:after {
+  color: var(--green-a10);
 }
