@@ -79,10 +79,12 @@
     top: 3rem;
     right: -0.6rem;
     min-width: 120px;
+    max-height: 60vh;
     box-sizing: border-box;
     background-color: var(--sy-c-background);
     border-radius: 6px;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     padding: 0.8rem 1rem;
     box-shadow: var(--sy-dropdown-shadow);
   }
