@@ -5,15 +5,14 @@
 
   --yue-c-link-1: var(--sy-c-text);
   --yue-c-link-2: var(--sy-c-bold);
-  --yue-c-link-border-1: var(--sy-c-link);
-  --yue-c-link-border-2: var(--sy-c-link-active);
+  --yue-c-link-border: var(--sy-c-link);
 
   --yue-c-ol-marker: var(--gray-9);
   --yue-c-ul-marker: var(--sage-a5);
   --yue-c-hr: var(--sy-c-border);
   --yue-c-quote: var(--sy-c-text);
-  --yue-c-quote-border: var(--accent-a4);
-  --yue-c-quote-symbol: var(--accent-10);
+  --yue-c-quote-border: var(--accent-a3);
+  --yue-c-quote-symbol: var(--accent-9);
   --yue-c-caption: var(--sy-c-light);
 
   --yue-c-code-text: var(--accent-a11);
@@ -39,12 +38,12 @@
   color: var(--yue-c-link-1);
   font-weight: 500;
   text-decoration: none;
-  border-bottom: 1px solid var(--yue-c-link-border-1);
+  border-bottom: 1px solid var(--yue-c-link-border);
 }
 
 .yue a:hover {
   color: var(--yue-c-link-2);
-  border-bottom: 2px solid var(--yue-c-link-border-2);
+  border-bottom-width: 2px;
 }
 
 .yue pre a,

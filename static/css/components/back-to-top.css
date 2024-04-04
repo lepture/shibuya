@@ -22,7 +22,7 @@
 
 .back-to-top:hover {
   color: var(--accent-9-contrast);
-  background: var(--accent-10);
+  background: var(--accent-9);
 }
 
 .back-to-top svg {

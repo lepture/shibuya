@@ -47,12 +47,12 @@
 }
 
 .globaltoc li.toctree-l2.current {
-  border-color: var(--sy-c-link-active);
+  border-color: var(--sy-c-link);
 }
 
 .globaltoc > ul a.current {
   font-weight: 500;
-  color: var(--sy-c-link-active);
+  color: var(--sy-c-link);
 }
 
 .globaltoc > ul a:hover {

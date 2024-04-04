@@ -235,8 +235,6 @@ span.versionmodified {
 div.versionadded,
 div.versionchanged,
 div.deprecated {
-  --color-1: var(--accent-surface);
-  --color-2: var(--accent-9);
   position: relative;
   padding: 6px 1rem;
   margin: 1rem 0;

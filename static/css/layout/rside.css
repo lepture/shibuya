@@ -46,7 +46,7 @@ html[lang="ko"] .sy-rside-inner > div > h3 {
 
 .localtoc > ul li.active > a {
   font-weight: 500;
-  color: var(--sy-c-link-active);
+  color: var(--sy-c-link);
 }
 
 .localtoc > ul > li ul {

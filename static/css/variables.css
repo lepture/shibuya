@@ -18,9 +18,8 @@
   --sy-c-heading: var(--sage-12);
 
   /* colors for link */
-  --sy-c-link: var(--accent-10);
-  --sy-c-link-hover: var(--accent-a9);
-  --sy-c-link-active: var(--accent-a11);
+  --sy-c-link: var(--accent-9);
+  --sy-c-link-hover: var(--accent-a11);
 
   /* colors for background */
   --sy-c-background: white;

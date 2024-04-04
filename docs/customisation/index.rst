@@ -87,6 +87,7 @@ footer, navbar, and sidebar.
     :hidden:
 
     logos
+    css
     colors
     navbar
     layouts

@@ -50,9 +50,11 @@ function onScroll () {
   }
 }
 
-backToTop.addEventListener('click', () => {
-  window.scrollTo(0, 0)
-})
+if (backToTop) {
+  backToTop.addEventListener('click', () => {
+    window.scrollTo(0, 0)
+  })
+}
 
 window.addEventListener('scroll', onScroll)
 window.addEventListener('DOMContentLoaded', () => {
