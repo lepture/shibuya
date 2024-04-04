@@ -5,6 +5,15 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2024.4.4
+--------
+
+- **New**: Auto highlight local TOC links
+- **New**: Added back to top button
+- **Fix**: Improve style for code blocks in tabs
+- **Fix**: Improve accent color definition
+- **Fix**: Improve style for copybutton
+
 2024.3.1
 --------
 
