@@ -27,12 +27,15 @@ extensions = [
     "nbsphinx",
     "numpydoc",
     "sphinx_sitemap",
+    "sphinxcontrib.mermaid",
 ]
 todo_include_todos = True
 autosummary_generate = True
 jupyter_sphinx_thebelab_config = {
     'requestKernel': True,
 }
+jupyter_sphinx_require_url = ''
+nbsphinx_requirejs_path = ''
 
 extlinks = {
     'pull': ('https://github.com/lepture/shibuya/pull/%s', 'pull request #%s'),

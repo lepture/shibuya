@@ -23,7 +23,7 @@ These good things will be added in the future:
 - :bdg-success:`DONE` Perfect code highlight style
 - :bdg-success:`DONE` Edit this page link
 - :bdg-success:`DONE` GitHub stars and forks
-- :bdg-warning:`TODO` Scroll to top
+- :bdg-success:`DONE` Back to top
 - :bdg-success:`DONE` Breadcrumbs
 
 Design for other extensions
@@ -39,6 +39,7 @@ Make sure it works well with other extensions. Currently integrated with:
 - :bdg-success:`DONE` :ref:`nbsphinx`
 - :bdg-success:`DONE` :ref:`numpydoc`
 - :bdg-success:`DONE` ``sphinx-gallery``
+- :bdg-success:`DONE` :ref:`sphinxcontrib-mermaid`
 
 Instant search
 --------------

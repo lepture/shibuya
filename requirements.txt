@@ -5,6 +5,7 @@ sphinx-design
 ipykernel
 jupyter-sphinx
 sphinx-togglebutton
+sphinxcontrib-mermaid
 nbsphinx
 myst-parser
 numpy

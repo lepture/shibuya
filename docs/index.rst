@@ -74,6 +74,7 @@ Shibuya
     extensions/jupyter-sphinx
     extensions/nbsphinx
     extensions/numpydoc
+    extensions/mermaid
 
 .. toctree::
     :caption: Development
