@@ -1,6 +1,8 @@
 let PREVIOUS_SCROLLY = 0
 let SCROLL_MARGIN_TOP = 200
+
 const allSections = document.querySelectorAll('.yue > section section[id]')
+const backToTop = document.querySelector('.back-to-top')
 
 function measureScrollMarginTop () {
   const element = document.querySelector('.yue > section')
@@ -36,14 +38,21 @@ function onScroll () {
     setActiveAnchor(lastSection.id)
   } else {
     trackLocalToc()
+  }
 
-    if (window.scrollY < PREVIOUS_SCROLLY) {
-      // scroll back to top
-    } else {
+  if (backToTop) {
+    if (window.scrollY && window.scrollY < PREVIOUS_SCROLLY) {
+      backToTop.setAttribute('data-visible', 'true')
+    } else if (backToTop.hasAttribute('data-visible')) {
+      backToTop.removeAttribute('data-visible')
     }
     PREVIOUS_SCROLLY = window.scrollY
   }
 }
+
+backToTop.addEventListener('click', () => {
+  window.scrollTo(0, 0)
+})
 
 window.addEventListener('scroll', onScroll)
 window.addEventListener('DOMContentLoaded', () => {

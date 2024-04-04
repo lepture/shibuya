@@ -1,14 +1,14 @@
 # Translations template for PROJECT.
-# Copyright (C) 2023 ORGANIZATION
+# Copyright (C) 2024 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-12-29 21:17+0900\n"
+"POT-Creation-Date: 2024-04-04 18:47+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,10 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.12.1\n"
+
+#: src/shibuya/theme/shibuya/components/back-to-top.html:5
+msgid "Back to top"
+msgstr ""
 
 #: src/shibuya/theme/shibuya/components/nav-languages.html:4
 msgid "Translations"
@@ -38,7 +42,7 @@ msgstr ""
 msgid "Next"
 msgstr ""
 
-#: src/shibuya/theme/shibuya/components/searchbox.html:2
+#: src/shibuya/theme/shibuya/components/searchbox.html:3
 msgid "Search"
 msgstr ""
 

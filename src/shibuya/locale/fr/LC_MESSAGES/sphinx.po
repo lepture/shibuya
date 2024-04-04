@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-12-29 21:17+0900\n"
+"POT-Creation-Date: 2024-04-04 18:47+0900\n"
 "PO-Revision-Date: 2023-07-15 18:34+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -17,6 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.12.1\n"
+
+#: src/shibuya/theme/shibuya/components/back-to-top.html:5
+msgid "Back to top"
+msgstr "Retour au sommet"
 
 #: src/shibuya/theme/shibuya/components/nav-languages.html:4
 msgid "Translations"
@@ -39,7 +43,7 @@ msgstr "Accueil"
 msgid "Next"
 msgstr "Suivant"
 
-#: src/shibuya/theme/shibuya/components/searchbox.html:2
+#: src/shibuya/theme/shibuya/components/searchbox.html:3
 msgid "Search"
 msgstr "Rechercher"
 

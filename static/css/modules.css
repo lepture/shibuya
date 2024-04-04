@@ -4,6 +4,7 @@
 @import "./components/external.css";
 @import "./components/repo-stats.css";
 @import "./components/edit-this-page.css";
+@import "./components/back-to-top.css";
 
 @import "./layout/head.css";
 @import "./layout/foot.css";
