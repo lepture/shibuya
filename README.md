@@ -8,17 +8,9 @@
 
 <br><br>
 
-<a href="https://pypi.python.org/pypi/shibuya">
-<img src="https://img.shields.io/pypi/v/shibuya?style=for-the-badge" alt="PyPI">
-</a>
-
-<a href="https://shibuya.lepture.com/">
-<img src="https://img.shields.io/badge/documentation-6E56CF?style=for-the-badge&logo=python&logoColor=white" alt="Documentation">
-</a>
-
-<a href="https://github.com/sponsors/lepture">
-<img src="https://img.shields.io/github/sponsors/lepture?color=E54666&style=for-the-badge" alt="GitHub Sponsors">
-</a>
+[![PyPi](https://img.shields.io/pypi/v/shibuya?style=for-the-badge)](https://pypi.python.org/pypi/shibuya)
+[![Documentation](https://img.shields.io/badge/documentation-6E56CF?style=for-the-badge&logo=python&logoColor=white)](https://shibuya.lepture.com/)
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/lepture?color=E54666&style=for-the-badge)](https://github.com/sponsors/lepture)
 
 </div>
 
