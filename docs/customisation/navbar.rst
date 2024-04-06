@@ -84,3 +84,20 @@ of the link:
             },
         ]
     }
+
+External link
+-------------
+
+You can add an extra ``external`` field to display an external link icon:
+
+.. code-block:: python
+
+    html_theme_options = {
+        "nav_links": [
+            {
+                "title": "Sponsor me",
+                "url": "https://github.com/sponsors/lepture",
+                "external": True,
+            },
+        ]
+    }

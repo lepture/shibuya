@@ -117,11 +117,12 @@ html_theme_options = {
         },
         {
             "title": "Branding",
-            "url": "branding"
+            "url": "branding",
         },
         {
             "title": "Sponsor me",
-            "url": "https://github.com/sponsors/lepture"
+            "url": "https://github.com/sponsors/lepture",
+            "external": True,
         },
     ]
 }
