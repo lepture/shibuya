@@ -6,7 +6,9 @@ const backToTop = document.querySelector('.back-to-top')
 
 function measureScrollMarginTop () {
   const element = document.querySelector('.yue > section')
-  SCROLL_MARGIN_TOP = element.computedStyleMap().get('scroll-margin-top').value
+  if (element) {
+    SCROLL_MARGIN_TOP = element.computedStyleMap().get('scroll-margin-top').value
+  }
 }
 
 function isInSection (section) {
@@ -35,7 +37,9 @@ function trackLocalToc () {
 function onScroll () {
   if ((window.innerHeight + Math.round(window.scrollY)) >= document.body.offsetHeight) {
     const lastSection = allSections[allSections.length - 1]
-    setActiveAnchor(lastSection.id)
+    if (lastSection) {
+      setActiveAnchor(lastSection.id)
+    }
   } else {
     trackLocalToc()
   }
