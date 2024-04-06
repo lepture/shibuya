@@ -6,10 +6,8 @@ Sidebar
 Shibuya allows you to customize the elements that appear in the sidebar of your
 documentation pages.
 
-.. _globaltoc:
-
-Global TOC
-----------
+Left sidebar
+------------
 
 The left sidebar contains the global table of contents tree of the documentation. It is
 collapsed by default. Developers can customize the collapse behavior via ``conf.py``:
@@ -31,8 +29,51 @@ Shibuya sphinx theme also provides other options to control the toctree_ functio
 
 .. _toctree: https://www.sphinx-doc.org/en/master/development/templating.html#toctree
 
-Customize elements
-------------------
+Discussion URL
+~~~~~~~~~~~~~~
+
+By default, the Shibuya theme includes a discussion link above the global TOC.
+If you specify a ``discussion_url`` in ``conf.py``, the discussion link will be
+added automatically. You can view an example of this in the documentation and
+observe its appearance.
+
+.. code-block:: python
+    :caption: conf.py
+
+    html_theme_options = {
+        "discussion_url": "https://github.com/lepture/shibuya/discussions",
+    }
+
+Above template
+~~~~~~~~~~~~~~
+
+However, if you wish to include additional links above the global TOC, you can
+create a ``partials/globaltoc-above.html`` template in your documentation templates
+folder.
+
+.. code-block:: html
+    :caption: docs/_templates/partials/globaltoc-above.html
+
+    <div class="sidebar-links">
+      <ul>
+        <li>
+          <a href="https://github.com/lepture/shibuya/discussions">
+            <span class="icon">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path fill="var(--accent-9)" fill-rule="evenodd" clip-rule="evenodd" d="M11 5a6 6 0 0 0-4.687 9.746c.215.27.315.62.231.954l-.514 2.058a1 1 0 0 0 1.485 1.1l2.848-1.71c.174-.104.374-.15.576-.148H13a6 6 0 0 0 0-12h-2Z"/>
+                <circle fill="white" cx="12" cy="11" r="1"/>
+                <circle fill="white" cx="9" cy="11" r="1"/>
+                <circle fill="white" cx="15" cy="11" r="1"/>
+              </svg>
+            </span>
+            <span class="text">Discussion</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+Right sidebar
+-------------
 
 By default, the right sidebar of documentation pages shows a table of
 contents for the page. Additionally, there are several default templates
@@ -83,7 +124,7 @@ the ``html_sidebars`` list.
 
 
 Edit this page
---------------
+~~~~~~~~~~~~~~
 
 Add an "Edit This Page" link to your documentation website with just a few lines of
 configuration. Simply add the following to your Sphinx ``conf.py`` file:
@@ -107,7 +148,7 @@ on GitHub, GitLab or Bitbucket.
   ``html_context`` configuration since this feature is automatically enabled.
 
 Source code statistics
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
 Display statistics about your source code repository on your documentation website with
 just a few lines of configuration. Simply add the following to your Sphinx ``conf.py`` file:
@@ -129,7 +170,7 @@ statistics in the right sidebar of your documentation pages, including the numbe
 stars, and forks.
 
 Carbon Ads
-----------
+~~~~~~~~~~
 
 Shibuya has built-in native support for `Carbon Ads <https://www.carbonads.net/>`_. By defining
 the Carbon Ads credentials in ``conf.py``, Shibuya theme will display ads on the sidebar.
@@ -144,7 +185,7 @@ the Carbon Ads credentials in ``conf.py``, Shibuya theme will display ads on the
 
 
 Ethical Ads
------------
+~~~~~~~~~~~
 
 When using Read the Docs to host your documentation, Ethical Ads will be injected automatically.
 The default publisher for **Ethical Ads** is ``readthedocs``, you can also use your own publisher:

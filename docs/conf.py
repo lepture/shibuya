@@ -80,6 +80,7 @@ html_theme_options = {
     "twitter_creator": "lepture",
     "twitter_site": "lepture",
 
+    "discussion_url": "https://github.com/lepture/shibuya/discussions",
     "twitter_url": "https://twitter.com/lepture",
     "github_url": "https://github.com/lepture/shibuya",
 

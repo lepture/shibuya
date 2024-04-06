@@ -76,7 +76,7 @@ Shibuya uses date based release segments. For pre-releases, it follows :pep:`440
 - Add an alias template of ``localtoc.html``
 - Add deprecated warning templates of ``relations.html`` and ``searchbox.html``
 - Improve CSS for ``nbsphinx`` extension
-- New feature for :ref:`globaltoc` configuration
+- New feature for global TOC configuration
 - Improve CSS for global TOC
 
 2023.7.28
