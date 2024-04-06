@@ -118,3 +118,14 @@ The YouTube icon will be displayed only on the footer.
     html_theme_options = {
       "youtube_url": "https://youtube.com/@username"
     }
+
+Reddit
+~~~~~~
+
+The Reddit icon will be displayed only on the footer.
+
+.. code-block:: python
+
+    html_theme_options = {
+      "reddit_url": "https://www.reddit.com/r/flask/"
+    }
