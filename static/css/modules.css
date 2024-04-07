@@ -33,4 +33,5 @@
 @import "./extensions/jupyter.css";
 @import "./extensions/nbsphinx.css";
 @import "./extensions/sphinx-gallery.css";
+@import "./extensions/docsearch.css";
 @import "./extensions/misc.css";
