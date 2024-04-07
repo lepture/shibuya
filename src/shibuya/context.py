@@ -67,6 +67,8 @@ def create_edit_source_link(context: Dict[str, Any]):
             url = f"https://gitlab.com/{source_user}/{source_repo}/-/blob"
         elif source_type == "bitbucket":
             url = f"https://bitbucket.org/{source_user}/{source_repo}/src"
+        else:
+            return
 
         return f"{url}/{source_version}{source_docs_path}{filename}"
 
