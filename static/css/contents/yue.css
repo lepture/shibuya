@@ -18,9 +18,11 @@
   --yue-c-code-text: var(--accent-a11);
   --yue-c-code-background: var(--accent-a3);
 
-  --yue-c-th-bg: var(--color-surface-accent);
+  --yue-c-table-border: var(--gray-a5);
+  --yue-c-th-background: var(--color-surface-accent);
   --yue-c-th-border: var(--gray-a5);
   --yue-c-td-border: var(--gray-a4);
+  --yue-c-row-background: var(--sy-c-surface);
 }
 
 .yue {

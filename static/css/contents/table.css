@@ -3,6 +3,8 @@
   overflow-x: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  border: 1px solid var(--yue-c-table-border);
+  border-radius: 6px;
 }
 
 .yue .table-wrapper > table {
@@ -13,33 +15,42 @@
   border-top: 1px solid var(--yue-c-td-border);
 }
 
+.yue .table-wrapper thead tr:first-child {
+  border-top: 0;
+}
+
 .yue .table-wrapper th {
-  background-color: var(--yue-c-th-bg);
+  background-color: var(--yue-c-th-background);
   border-left: 1px solid var(--yue-c-td-border);
-}
-
-.yue .table-wrapper th:last-child {
-  border-right: 1px solid var(--yue-c-td-border);
+  padding: 0.725rem 1rem;
 }
 
 .yue .table-wrapper td {
   border-left: 1px solid var(--yue-c-td-border);
+  padding: 0.5rem 1rem;
 }
 
-.yue .table-wrapper td {
-  border-right: 1px solid var(--yue-c-td-border);
+.yue .table-wrapper tr > th:first-child,
+.yue .table-wrapper tr > td:first-child {
+  border-left: 0;
 }
 
 .yue .table-wrapper tbody tr:first-child {
   border-top: 1px solid var(--yue-c-td-border);
 }
 
-.yue .table-wrapper tbody tr:last-child {
-  border-bottom-width: 1px;
-}
-
 .yue .table-wrapper thead + tbody tr:first-child {
   border-top-width: 0;
+}
+
+.yue .table-wrapper caption {
+  padding: 0.5rem;
+  margin: 0;
+  border-bottom: 1px solid var(--yue-c-th-border);
+}
+
+.yue .table-wrapper tbody tr.row-odd {
+  background-color: var(--yue-c-row-background);
 }
 
 .yue table.hlist td {
@@ -48,7 +59,7 @@
 
 .table-wrapper {
   overflow-x: auto;
-  scrollbar-gutter: stable;
+  scrollbar-gutter: auto;
 }
 
 .table-wrapper::-webkit-scrollbar {
@@ -75,18 +86,17 @@
 .yue table.ghost td {
   border-left: 0;
   border-right: 0;
-  padding: 0.75rem;
   background-color: transparent;
-}
-.yue table.ghost th:last-child {
-  border-right: 0;
 }
 .yue table.ghost caption {
   margin-bottom: 0;
   padding-bottom: 0.5rem;
   border-bottom: 3px solid var(--yue-c-td-border);
 }
-.yue table.ghost thead tr:first-of-type {
+.yue table.ghost thead tr:first-child {
   border-top: 0;
   border-bottom-width: 3px;
+}
+.yue .table-wrapper.ghost {
+  border: 0;
 }
