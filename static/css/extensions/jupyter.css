@@ -70,39 +70,3 @@
 .yue .jupyter_container .stderr .stderr {
   background-color: transparent;
 }
-
-html.light .jupyter_container .cell_output {
-  --syntax-pre-bg: var(--color-surface-accent);
-  --syntax-cap-bg: var(--accent-3);
-  --syntax-highlight-bg: var(--accent-a3);
-  --syntax-text: var(--syntax-light-text);
-  --syntax-meta: var(--syntax-light-meta);
-  --syntax-comment: var(--syntax-light-comment);
-  --syntax-constant: var(--syntax-light-constant);
-  --syntax-entity: var(--syntax-light-entity);
-  --syntax-property: var(--syntax-light-property);
-  --syntax-definition: var(--syntax-light-definition);
-  --syntax-tag: var(--syntax-light-tag);
-  --syntax-builtin: var(--syntax-light-builtin);
-  --syntax-keyword: var(--syntax-light-keyword);
-  --syntax-exception: var(--syntax-light-exception);
-  --syntax-string: var(--syntax-light-string);
-  --syntax-regexp: var(--syntax-light-regexp);
-  --syntax-variable: var(--syntax-light-variable);
-  --syntax-invalid-illegal-text: var(--syntax-light-invalid-illegal-text);
-  --syntax-invalid-illegal-bg: var(--syntax-light-invalid-illegal-bg);
-  --syntax-markup-heading: var(--syntax-light-markup-heading);
-  --syntax-markup-italic: var(--syntax-light-markup-italic);
-  --syntax-markup-bold: var(--syntax-light-markup-bold);
-  --syntax-markup-deleted-text: var(--syntax-light-markup-deleted-text);
-  --syntax-markup-deleted-bg: var(--syntax-light-markup-deleted-bg);
-  --syntax-markup-inserted-text: var(--syntax-light-markup-inserted-text);
-  --syntax-markup-inserted-bg: var(--syntax-light-markup-inserted-bg);
-  --syntax-markup-changed-text: var(--syntax-light-markup-changed-text);
-  --syntax-markup-changed-bg: var(--syntax-light-markup-changed-bg);
-  --syntax-markup-ignored-text: var(--syntax-light-markup-ignored-text);
-  --syntax-markup-ignored-bg: var(--syntax-light-markup-ignored-bg);
-  --syntax-meta-diff-range: var(--syntax-light-meta-diff-range);
-  --syntax-highlight-bg: var(--syntax-light-highlight-bg);
-  --syntax-special-bg: var(--syntax-light-special-bg);
-}
