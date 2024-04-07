@@ -57,7 +57,7 @@ folder.
     <div class="sidebar-links">
       <ul>
         <li>
-          <a href="https://github.com/lepture/shibuya/discussions">
+          <a class="icon-link" href="https://github.com/lepture/shibuya/discussions">
             <span class="icon">
               <svg viewBox="0 0 24 24" fill="none">
                 <path fill="var(--accent-9)" fill-rule="evenodd" clip-rule="evenodd" d="M11 5a6 6 0 0 0-4.687 9.746c.215.27.315.62.231.954l-.514 2.058a1 1 0 0 0 1.485 1.1l2.848-1.71c.174-.104.374-.15.576-.148H13a6 6 0 0 0 0-12h-2Z"/>

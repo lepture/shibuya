@@ -27,28 +27,6 @@
   margin-bottom: 2rem;
 }
 
-.sy-lside .sidebar-links span {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.sy-lside .sidebar-links .icon {
-  padding: 0.1rem;
-  border-radius: 6px;
-  border: 1px solid var(--sy-c-border);
-  margin-right: 0.4rem;
-  opacity: 0.8;
-}
-
-.sy-lside .sidebar-links svg {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-.sy-lside .sidebar-links a:hover .icon {
-  opacity: 1;
-}
-
 @media (min-width: 768px) {
   .sy-lside .sy-lside-inner {
     top: var(--sy-s-offset-top);

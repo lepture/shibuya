@@ -1,0 +1,25 @@
+.icon-link {
+  display: inline-block;
+}
+
+.icon-link span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon-link .icon {
+  padding: 0.1rem;
+  border-radius: 6px;
+  border: 1px solid var(--sy-c-border);
+  margin-right: 0.4rem;
+  opacity: 0.8;
+}
+
+.icon-link svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.icon-link:hover .icon {
+  opacity: 1;
+}
