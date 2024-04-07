@@ -27,10 +27,10 @@ Here shows an example with ``announcement`` configuration.
 
 .. container:: image-1
 
-    .. image:: /_static/screenshots/light-homepage.jpg
+    .. image:: /_static/screenshots/homepage-light.jpg
       :class: light-only
       :align: center
 
-    .. image:: /_static/screenshots/dark-homepage.jpg
+    .. image:: /_static/screenshots/homepage-dark.jpg
       :class: dark-only
       :align: center

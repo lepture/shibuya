@@ -97,10 +97,10 @@ Markup syntax
 How it looks like
 -----------------
 
-.. image:: /_static/screenshots/light-sphinx-tabs.png
+.. image:: /_static/screenshots/sphinx-tabs-light.png
    :class: light-only
    :align: center
 
-.. image:: /_static/screenshots/dark-sphinx-tabs.png
+.. image:: /_static/screenshots/sphinx-tabs-dark.png
    :class: dark-only
    :align: center

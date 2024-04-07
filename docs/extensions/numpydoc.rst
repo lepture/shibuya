@@ -3,7 +3,7 @@
 .. _numpydoc:
 
 numpydoc
-===========
+========
 
 Numpy's Sphinx extensions to power Numpy's docstring syntax.
 

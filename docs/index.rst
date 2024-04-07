@@ -75,6 +75,7 @@ Shibuya
     extensions/nbsphinx
     extensions/numpydoc
     extensions/mermaid
+    extensions/docsearch
 
 .. toctree::
     :caption: Development
