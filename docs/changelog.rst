@@ -5,6 +5,15 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2024.4.8
+--------
+
+- **New**: Added integration with :ref:`docsearch`
+- **New**: Added ``reddit_url`` theme option
+- **New**: Added ``discussion_url`` theme option
+- **Fix**: Improve style for tables
+- **Fix**: Added ``external`` key for nav links
+
 2024.4.4
 --------
 
