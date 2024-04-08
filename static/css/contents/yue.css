@@ -280,6 +280,10 @@
   font-size: 0.9em;
 }
 
+.yue kbd {
+  font-family: var(--sy-f-mono);
+}
+
 .yue video {
   margin-top: 2em;
   margin-bottom: 2em;

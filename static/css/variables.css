@@ -3,7 +3,7 @@
   --sy-f-cjk: PingFang SC, Hiragino Sans GB, Droid Sans Fallback, Microsoft YaHei;
   --sy-f-heading: var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
   --sy-f-text: var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
-  --sy-f-mono: Menlo, Monaco, Consolas, "Courier New", monospace;
+  --sy-f-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --sy-s-banner-height: 0rem;
   --sy-s-navbar-height: 56px;
   --sy-s-offset-top: calc(var(--sy-s-navbar-height) + var(--sy-s-banner-height));
