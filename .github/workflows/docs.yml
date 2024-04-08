@@ -48,6 +48,8 @@ jobs:
 
     - name: Build docs
       run: sphinx-build docs _site -b dirhtml
+      env:
+        USE_DOCSEARCH: True
 
     - name: Upload artifact
       uses: actions/upload-artifact@v3

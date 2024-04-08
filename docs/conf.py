@@ -66,6 +66,12 @@ html_additional_pages = {
     "branding": "branding.html",
 }
 
+if os.getenv('USE_DOCSEARCH'):
+    extensions.append("sphinx_docsearch")
+    docsearch_app_id = "3RU4IG0D1E"
+    docsearch_api_key = "ec63fbf7ade2fa535b0b82c86e7d1463"
+    docsearch_index_name = "shibuya-lepture"
+
 if os.getenv("TRIM_HTML_SUFFIX"):
     html_link_suffix = ""
 
@@ -144,6 +150,9 @@ else:
 DEBUG_RTD = False
 
 if DEBUG_RTD:
+    os.environ['READTHEDOCS_PROJECT'] = 'shibuya'
+    os.environ['READTHEDOCS_VERSION'] = 'latest'
+    html_context["READTHEDOCS"] = True
     html_css_files = [
         "https://assets.readthedocs.org/static/css/readthedocs-doc-embed.css",
         "https://assets.readthedocs.org/static/css/badge_only.css",
@@ -155,8 +164,8 @@ if DEBUG_RTD:
             {"async": "async"},
         ),
     ]
+
     html_theme_options["carbon_ads_code"] = None
-    html_context["READTHEDOCS"] = True
     html_context["current_version"] = "latest"
     html_context["versions"] = [
         ("latest", "/en/latest/"),

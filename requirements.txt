@@ -6,6 +6,7 @@ ipykernel
 jupyter-sphinx
 sphinx-togglebutton
 sphinxcontrib-mermaid
+sphinx-docsearch
 nbsphinx
 myst-parser
 numpy
