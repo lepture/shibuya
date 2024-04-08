@@ -7,7 +7,8 @@ sphinx-docsearch
 
 ``sphinx-docsearch`` replaces Sphinx's built-in search with Algolia DocSearch.
 
-**Documentation**: https://sphinx-docsearch.readthedocs.io/
+- **Documentation**: https://sphinx-docsearch.readthedocs.io/
+- **Source Code**: https://github.com/algolia/sphinx-docsearch
 
 Install
 -------

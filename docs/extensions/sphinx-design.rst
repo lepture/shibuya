@@ -7,7 +7,8 @@ sphinx-design
 
 ``sphinx-design`` extension add many components for Sphinx documentation.
 
-**Documentation**: https://sphinx-design.readthedocs.io/
+- **Documentation**: https://sphinx-design.readthedocs.io/
+- **Source Code**: https://github.com/executablebooks/sphinx-design
 
 Install
 -------

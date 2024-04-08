@@ -7,7 +7,8 @@ numpydoc
 
 Numpy's Sphinx extensions to power Numpy's docstring syntax.
 
-**Documentation**: https://numpydoc.readthedocs.io/
+- **Documentation**: https://numpydoc.readthedocs.io/
+- **Source Code**: https://github.com/numpy/numpydoc
 
 Install
 -------

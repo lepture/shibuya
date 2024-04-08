@@ -8,7 +8,8 @@ sphinx-copybutton
 Add a little “copy” button to the right of your code blocks. This extension
 is maintained by Executable Books.
 
-**Documentation**: https://sphinx-copybutton.readthedocs.io/
+- **Documentation**: https://sphinx-copybutton.readthedocs.io/
+- **Source Code**: https://github.com/executablebooks/sphinx-copybutton
 
 Install
 -------

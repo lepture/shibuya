@@ -8,7 +8,8 @@ sphinx-tabs
 sphinx-tab is an extension maintained by Executable Books.
 This extension can create tabbed content.
 
-**Documentation**: https://sphinx-tabs.readthedocs.io/
+- **Documentation**: https://sphinx-tabs.readthedocs.io/
+- **Source Code**: https://github.com/executablebooks/sphinx-tabs
 
 Install
 -------
