@@ -47,3 +47,26 @@ Screenshots
     :align: center
 
     DocSearch modal in **dark** mode.
+
+Docsearch troubleshoots
+-----------------------
+
+If Algolia Docsearch does not show in the navbar, please check your browser's
+console log. You may encounter an error of requirejs. This error is usually
+caused by conflicts with other sphinx extensions.
+
+1. If using together with :ref:`nbsphinx` extension, you can use
+   ``nbsphinx_requirejs_path`` setting to resolve the issue:
+
+   .. code-block:: python
+      :caption: conf.py
+
+      nbsphinx_requirejs_path = ''
+
+2. If using together with :ref:`sphinx-jupyter` extension, you can
+   resolve the issue with ``jupyter_sphinx_require_url`` setting:
+
+   .. code-block:: python
+      :caption: conf.py
+
+      jupyter_sphinx_require_url = ''

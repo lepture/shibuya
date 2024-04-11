@@ -69,14 +69,17 @@ Theming
 To theme your diagrams you can use ``mermaid_init_js`` setting:
 
 .. code-block:: python
+    :caption: conf.py
 
-  mermaid_init_js = """
-  mermaid.initialize({theme:"forest"});
-  """
+    mermaid_init_js = """
+    mermaid.initialize({theme:"forest"});
+    """
 
-You can find all the options here: `mermaid.js.org/config/schema-docs/config.html`_.
+You can find all the options for ``mermaid.initialize`` method with
+`Mermaid Config Schema <https://mermaid.js.org/config/schema-docs/config.html>`_.
 
-To see the python configuration options checkout: `https://github.com/mgaitan/sphinxcontrib-mermaid?tab=readme-ov-file#config-values`_.
+To see the python configuration options checkout:
+`Sphinx Mermaid Config values <https://github.com/mgaitan/sphinxcontrib-mermaid?tab=readme-ov-file#config-values>`_.
 
 Mermaid not working
 -------------------
