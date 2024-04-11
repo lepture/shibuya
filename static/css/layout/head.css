@@ -120,8 +120,10 @@
   font-weight: 400;
 }
 
-.sy-head-social a {
+.sy-head-socials a {
   padding: 0.5rem;
+  display: flex;
+  align-items: center;
 }
 
 .sy-head-actions button {
@@ -245,11 +247,7 @@
     padding: 0.2rem 0;
   }
 
-  .sy-head-social {
+  .sy-head-socials {
     margin-left: 0.5rem;
-  }
-
-  .sy-head-social a {
-    padding: 0.5rem;
   }
 }

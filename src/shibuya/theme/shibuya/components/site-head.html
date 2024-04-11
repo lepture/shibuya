@@ -26,26 +26,7 @@
         {% include "components/searchbox.html" %}
         {% include "components/nav-versions.html" %}
         {% include "components/nav-languages.html" %}
-        <div class="sy-head-social flex items-center">
-          {%- if theme_github_url %}
-            <a class="flex items-center" href="{{ theme_github_url }}" aria-label="GitHub">
-              <i class="i-icon github"></i>
-            </a>
-          {%- elif theme_gitlab_url %}
-            <a class="flex items-center" href="{{ theme_gitlab_url }}" aria-label="Gitlab">
-              <i class="i-icon gitlab"></i>
-            </a>
-          {%- elif theme_bitbucket_url %}
-            <a class="flex items-center" href="{{ theme_bitbucket_url }}" aria-label="Bitbucket">
-              <i class="i-icon bitbucket"></i>
-            </a>
-          {%- endif %}
-          {%- if theme_discord_url %}
-            <a class="flex items-center" href="{{ theme_discord_url }}" aria-label="Discord">
-              <i class="i-icon discord"></i>
-            </a>
-          {%- endif %}
-        </div>
+        {% include "components/nav-socials.html" %}
       </div>
     </div>
     <div class="sy-head-actions flex items-center shrink-0 print:hidden">
