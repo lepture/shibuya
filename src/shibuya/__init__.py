@@ -22,7 +22,8 @@ THEME_PATH = (ROOT_PATH / "theme" / "shibuya").resolve()
 
 
 def _html_page_context(app: Sphinx, pagename: str, templatename: str, context: Dict[str, Any], doctree):
-    assert isinstance(app.builder, StandaloneHTMLBuilder)
+    if not isinstance(app.builder, StandaloneHTMLBuilder):
+        return
 
     # fixing pageurl, need to submit a PR to sphinx
     if "pageurl" in context:
@@ -48,13 +49,15 @@ def _initialize_builder(app: Sphinx):
     app.add_js_file("shibuya.js")
     app.add_css_file("print.css", media='print')
 
-    edit_source_link = create_edit_source_link(app.config.html_context)
-    app.config.html_context.update({
-        "edit_source_link": edit_source_link,
-        "expandtoc": normalize_globaltoc,
-    })
+    if hasattr(app.config, 'html_context'):
+        edit_source_link = create_edit_source_link(app.config.html_context)
+        app.config.html_context.update({
+            "edit_source_link": edit_source_link,
+            "expandtoc": normalize_globaltoc,
+        })
 
-    app.builder.highlighter.formatter = WrapLineFormatter
+    if isinstance(app.builder, StandaloneHTMLBuilder):
+        app.builder.highlighter.formatter = WrapLineFormatter
 
 
 def setup(app: Sphinx):
