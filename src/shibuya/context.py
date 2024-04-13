@@ -44,10 +44,10 @@ def normalize_globaltoc(toc: str, depth: int = 0):
 
 
 def create_edit_source_link(context: Dict[str, Any]):
-    source_type = context.get("source_type")
-    if not source_type:
-        source_type = _normalize_readthedocs_context(context)
+    if context.get('READTHEDOCS'):
+        _normalize_readthedocs_context(context)
 
+    source_type = context.get("source_type")
     source_user = context.get("source_user")
     source_repo = context.get("source_repo")
     source_docs_path = context.get("source_docs_path", "/docs/")
@@ -83,11 +83,16 @@ def _normalize_readthedocs_context(context: Dict[str, Any]):
     elif context.get("display_bitbucket"):
         source_type = "bitbucket"
     else:
-        return
+        source_type = None
 
-    context["source_type"] = source_type
-    context["source_user"] = context.get(f"{source_type}_user")
-    context["source_repo"] = context.get(f"{source_type}_repo")
-    context["source_version"] = context.get(f"{source_type}_version")
-    context["source_docs_path"] = context.get("conf_py_path")
+    if source_type:
+        context["source_type"] = source_type
+        context["source_user"] = context.get(f"{source_type}_user")
+        context["source_repo"] = context.get(f"{source_type}_repo")
+        context["source_version"] = context.get(f"{source_type}_version")
+        context["source_docs_path"] = context.get("conf_py_path")
+
+    slug = context.get('slug')
+    if slug:
+        context["theme_readthedocs_url"] = f"https://readthedocs.org/projects/{slug}"
     return source_type

@@ -153,6 +153,7 @@ if DEBUG_RTD:
     os.environ['READTHEDOCS_PROJECT'] = 'shibuya'
     os.environ['READTHEDOCS_VERSION'] = 'latest'
     html_context["READTHEDOCS"] = True
+    html_context["slug"] = "shibuya"
     html_css_files = [
         "https://assets.readthedocs.org/static/css/readthedocs-doc-embed.css",
         "https://assets.readthedocs.org/static/css/badge_only.css",

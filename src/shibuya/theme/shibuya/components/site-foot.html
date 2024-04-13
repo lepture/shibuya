@@ -2,44 +2,8 @@
   <div class="sy-foot-inner sy-container mx-auto">
     {% include "partials/footer.html" %}
     <div class="sy-foot-reserved md:flex justify-between items-center">
-      <div class="sy-foot-copyright">
-        {%- if show_copyright -%}
-          <p>{{ copyright }}</p>
-        {% endif %}
-        <p>
-          Made with
-          {% if show_sphinx %}
-          <a href="https://www.sphinx-doc.org/">Sphinx</a> and
-          {% endif %}
-          <a href="https://shibuya.lepture.com">Shibuya theme</a>.
-        </p>
-      </div>
-      <div class="sy-foot-socials">
-        {%- if theme_github_url %}
-          <a href="{{ theme_github_url }}" aria-label="GitHub"><i class="i-icon github"></i></a>
-        {%- endif %}
-        {%- if theme_gitlab_url %}
-          <a href="{{ theme_gitlab_url }}" aria-label="Gitlab"><i class="i-icon gitlab"></i></a>
-        {%- endif %}
-        {%- if theme_bitbucket_url %}
-          <a href="{{ theme_bitbucket_url }}" aria-label="Bitbucket"><i class="i-icon bitbucket"></i></a>
-        {%- endif %}
-        {%- if theme_twitter_url %}
-          <a href="{{ theme_twitter_url }}" aria-label="X (Twitter)"><i class="i-icon x-twitter"></i></a>
-        {%- endif %}
-        {%- if theme_mastodon_url %}
-          <a href="{{ theme_mastodon_url }}" aria-label="Mastodon"><i class="i-icon mastodon"></i></a>
-        {%- endif %}
-        {%- if theme_discord_url %}
-          <a href="{{ theme_discord_url }}" aria-label="Discord"><i class="i-icon discord"></i></a>
-        {%- endif %}
-        {%- if theme_youtube_url %}
-          <a href="{{ theme_youtube_url }}" aria-label="YouTube"><i class="i-icon youtube"></i></a>
-        {%- endif %}
-        {%- if theme_reddit_url %}
-          <a href="{{ theme_reddit_url }}" aria-label="Reddit"><i class="i-icon reddit"></i></a>
-        {%- endif %}
-      </div>
+      {% include "components/foot-copyright.html" %}
+      {% include "components/foot-socials.html" %}
     </div>
   </div>
 </footer>
