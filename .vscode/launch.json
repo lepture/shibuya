@@ -3,7 +3,7 @@
   "configurations": [
     {
       "name": "Sphinx serve",
-      "type": "python",
+      "type": "debugpy",
       "request": "launch",
       "program": "serve.py",
       "console": "integratedTerminal"

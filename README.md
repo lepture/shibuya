@@ -1,9 +1,9 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/_static/logo-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="docs/_static/logo-light.svg">
-  <img alt="Shibuya Sphinx Theme Logo" src="docs/_static/logo-light.svg" width="400">
+  <source media="(prefers-color-scheme: dark)" srcset="https://shibuya.lepture.com/_static/logo-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://shibuya.lepture.com/_static/logo-light.svg">
+  <img alt="Shibuya Sphinx Theme Logo" src="https://shibuya.lepture.com/_static/logo-light.svg" width="400">
 </picture>
 
 <br><br>
