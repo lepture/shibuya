@@ -5,6 +5,14 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2024.4.15
+---------
+
+- **Breaking**: Lucid and Simple Icons are splitted
+- **New**: Added ``404`` layout template
+- **New**: Added ``readthedocs_url`` theme option
+- **Fix**: Improve style for API autosummary tables
+
 2024.4.8
 --------
 
