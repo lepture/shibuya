@@ -2,6 +2,7 @@ from typing import Dict, Any
 from pathlib import Path
 from sphinx.application import Sphinx
 from sphinx.builders.html import StandaloneHTMLBuilder
+from sphinx.builders.dirhtml import DirectoryHTMLBuilder
 from .context import (
     normalize_pageurl,
     normalize_localtoc,
@@ -58,6 +59,16 @@ def _initialize_builder(app: Sphinx):
 
     if isinstance(app.builder, StandaloneHTMLBuilder):
         app.builder.highlighter.formatter = WrapLineFormatter
+
+    if isinstance(app.builder, DirectoryHTMLBuilder):
+        _get_outfilename = app.builder.get_outfilename
+
+        def get_outfilename(pagename: str) -> str:
+            if pagename == '404':
+                return (Path(app.builder.outdir) / '404.html').resolve()
+            return _get_outfilename(pagename)
+
+        app.builder.get_outfilename = get_outfilename
 
 
 def setup(app: Sphinx):

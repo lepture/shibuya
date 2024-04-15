@@ -129,3 +129,6 @@ This template offers a special container for buttons:
 
         `Docs </install/>`_
         `GitHub <https://github.com/lepture/shibuya>`_
+
+404 layout
+~~~~~~~~~~

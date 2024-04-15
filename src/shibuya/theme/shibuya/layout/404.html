@@ -1,0 +1,28 @@
+{%- extends "layout.html" -%}
+
+{% block extrahead %}
+<style>
+  .not-found {
+    padding-top: calc(30vh - var(--sy-s-offset-top));
+    text-align: center;
+  }
+  .not-found-back .i-icon {
+    transform: rotate(180deg);
+  }
+  .yue a.headerlink {
+    display: none;
+  }
+</style>
+{% endblock %}
+
+{% block body %}
+<div class="not-found">
+  {{ body }}
+  <div class="not-found-back">
+    <a href="{{ pathto(root_doc) }}">
+      <i class="i-icon chevron"></i>
+      <span>Back to home</span>
+    </a>
+  </div>
+</div>
+{% endblock %}
