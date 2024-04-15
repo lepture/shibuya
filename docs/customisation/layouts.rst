@@ -132,3 +132,19 @@ This template offers a special container for buttons:
 
 404 layout
 ~~~~~~~~~~
+
+The ``404`` layout is designed for displaying "404 page not found".
+Typically, you would use it in ``404.rst`` file:
+
+.. code-block:: none
+    :caption: docs/404.rst
+
+    :layout: 404
+    :orphan:
+
+    404
+    ===
+
+    This page does not exist.
+
+Shibuya theme has a special fix for 404 page with ``dirhtml`` builder.
