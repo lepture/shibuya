@@ -13,12 +13,12 @@
         {%- if link.url -%}
           <a href="{{ expandURL(link.url) }}">
             <span>{{ link.title }}</span>
-            <i class="i-icon chevron"></i>
+            <i class="i-lucid chevron"></i>
           </a>
         {%- else -%}
           <button type="button">
             <span>{{ link.title }}</span>
-            <i class="i-icon chevron"></i>
+            <i class="i-lucid chevron"></i>
           </button>
         {%- endif %}
         <ul>
@@ -40,7 +40,7 @@
           <a href="{{ link.url }}">
             <span>{{ link.title }}</span>
             {% if link.external %}
-              <i class="i-icon external-link"></i>
+              <i class="i-lucid external-link"></i>
             {% endif %}
           </a>
         </li>

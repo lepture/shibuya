@@ -61,7 +61,7 @@
 
 .globaltoc a.external:after {
   content: '';
-  mask: var(--i-external-link-url) no-repeat;
+  mask: var(--lucid-external-link-url) no-repeat;
   mask-size: 100% 100%;
   width: 0.825rem;
   height: 0.825rem;

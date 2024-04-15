@@ -64,7 +64,8 @@ strong, em {
 }
 
 .i-icon,
-.i-logo {
+.i-lucid,
+.i-simpleicons {
   mask: var(--icon-url) no-repeat;
   mask-size: 100% 100%;
   width: 1em;
@@ -77,11 +78,11 @@ strong, em {
 
 .theme-switch .theme-icon,
 [data-color-mode="auto"] .theme-switch .theme-icon {
-  --icon-url: var(--i-laptop-url);
+  --icon-url: var(--lucid-laptop-url);
 }
 [data-color-mode="light"] .theme-switch .theme-icon {
-  --icon-url: var(--i-sun-url);
+  --icon-url: var(--lucid-sun-url);
 }
 [data-color-mode="dark"] .theme-switch .theme-icon {
-  --icon-url: var(--i-moon-url);
+  --icon-url: var(--lucid-moon-url);
 }

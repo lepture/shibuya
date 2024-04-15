@@ -1,7 +1,10 @@
 const fs = require('fs')
 const path = require('path')
 
-function buildIcons (prefix, iconsDir, output) {
+function buildIcons (prefix) {
+  const iconsDir = path.resolve(`static/${prefix}`)
+  const output = path.resolve(`static/css/${prefix}.css`)
+
   const icons = []
   let css = ':root {\n'
   fs.readdirSync(iconsDir).forEach(name => {
@@ -11,12 +14,12 @@ function buildIcons (prefix, iconsDir, output) {
       let svg = fs.readFileSync(path.resolve(iconsDir, name), 'utf8')
       svg = svg.replace(/#000/g, 'currentColor')
       const url = `url("data:image/svg+xml;utf8,${encodeSvgForCss(svg)}")`
-      css += `  --i-${key}-url:${url};\n`
+      css += `  --${prefix}-${key}-url:${url};\n`
     }
   })
   css += '}\n'
   icons.forEach(key => {
-    css += `.i-${prefix}.${key}{--icon-url:var(--i-${key}-url)}\n`
+    css += `.i-icon.${key},.i-${prefix}.${key}{--icon-url:var(--${prefix}-${key}-url)}\n`
   })
   fs.writeFileSync(output, css)
 }
@@ -45,5 +48,5 @@ function encodeSvgForCss(svg) {
     .replace(/>/g, '%3E');
 }
 
-buildIcons('icon', path.resolve('static/icons'), path.resolve('static/css/icons.css'))
-buildIcons('logo', path.resolve('static/logos'), path.resolve('static/css/logos.css'))
+buildIcons('lucid')
+buildIcons('simpleicons')
