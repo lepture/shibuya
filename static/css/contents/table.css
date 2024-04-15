@@ -35,14 +35,6 @@
   border-left: 0;
 }
 
-.yue .table-wrapper tbody tr:first-child {
-  border-top: 1px solid var(--yue-c-td-border);
-}
-
-.yue .table-wrapper thead + tbody tr:first-child {
-  border-top-width: 0;
-}
-
 .yue .table-wrapper caption {
   padding: 0.5rem;
   margin: 0;

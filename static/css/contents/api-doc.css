@@ -117,6 +117,11 @@ dt.sig > a.internal:before {
 }
 
 /* autosummary table */
+.yue .table-wrapper.autosummary {
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+}
 .yue .table-wrapper table.autosummary td {
   border: none;
   padding-top: 0.25rem;
