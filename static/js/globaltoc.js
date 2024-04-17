@@ -43,9 +43,9 @@ function createToggleButton (el) {
 
   const updateArialLabel = () => {
     if (list.classList.contains("_expand")) {
-      button.setAttribute("arial-label", "Collapse " + title)
+      button.setAttribute("aria-label", "Collapse " + title)
     } else {
-      button.setAttribute("arial-label", "Expand " + title)
+      button.setAttribute("aria-label", "Expand " + title)
     }
   }
   updateArialLabel()
