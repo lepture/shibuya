@@ -30,7 +30,8 @@ def normalize_localtoc(toc: str):
 def normalize_globaltoc(toc: str, depth: int = 0):
     depth = int(depth)
     if not toc or not depth:
-        return toc
+        # fix for accessibility
+        return toc.replace('role="heading">', 'role="heading" aria-level="3">')
 
     root = ET.fromstring('<div>' + toc.strip() + '</div>')
     for i in range(1, depth + 1):
@@ -39,8 +40,9 @@ def normalize_globaltoc(toc: str, depth: int = 0):
             _classname = el.get('class')
             el.set('class', _classname + ' _expand')
 
-    result = ET.tostring(root).decode('utf-8')
-    return result[5:-6]
+    result = ET.tostring(root).decode('utf-8')[5:-6]
+    # fix for accessibility
+    return result.replace('role="heading">', 'role="heading" aria-level="3">')
 
 
 def create_edit_source_link(context: Dict[str, Any]):
