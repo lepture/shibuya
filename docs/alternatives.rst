@@ -3,7 +3,7 @@
 Alternatives
 ============
 
-Here are some other nice themes. If you don't like Shibuya,
+Here are some other nice themes for Sphinx. If you don't like Shibuya,
 you might like these.
 
 Furo
@@ -33,3 +33,12 @@ A clean, Bootstrap-based Sphinx theme by and for the PyData community.
 - Auhtor: PyData
 - Source: https://github.com/pydata/pydata-sphinx-theme
 - Website: https://pydata-sphinx-theme.readthedocs.io/
+
+Read the Docs
+-------------
+
+The default theme for readthedocs hosting service.
+
+- Auhtor: readthedocs
+- Source: https://github.com/readthedocs/sphinx_rtd_theme
+- Website: https://sphinx-rtd-theme.readthedocs.io/en/stable/
