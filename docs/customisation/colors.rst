@@ -66,6 +66,10 @@ utilized by the Shibuya theme:
     --accent-a9: rgba(62, 127, 203, 0.81)
     --accent-a11: rgba(62, 127, 203, 0.92)
 
+.. tip::
+
+    You can generate colors with `radix custom paletteuse <https://www.radix-ui.com/colors/custom>`_.
+
 .. _global-dark-code:
 
 Dark code

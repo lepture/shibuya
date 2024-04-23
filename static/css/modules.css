@@ -34,4 +34,5 @@
 @import "./extensions/nbsphinx.css";
 @import "./extensions/sphinx-gallery.css";
 @import "./extensions/docsearch.css";
+@import "./extensions/sphinx-sqlalchemy.css";
 @import "./extensions/misc.css";

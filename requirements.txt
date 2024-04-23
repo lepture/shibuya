@@ -2,6 +2,7 @@ sphinx
 sphinx-sitemap
 sphinx-copybutton
 sphinx-design
+sphinx_sqlalchemy
 ipykernel
 jupyter-sphinx
 sphinx-togglebutton

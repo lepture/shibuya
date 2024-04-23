@@ -1,12 +1,8 @@
-html.light {
-  --sig-property: var(--syntax-light-keyword);
-  --sig-name: var(--syntax-light-property);
-  --sig-typehint: var(--syntax-light-constant);
-}
-html.dark {
-  --sig-property: var(--syntax-dark-keyword);
-  --sig-name: var(--syntax-dark-property);
-  --sig-typehint: var(--syntax-dark-constant);
+:root {
+  --sig-property: var(--syntax-keyword);
+  --sig-name: var(--syntax-property);
+  --sig-typehint: var(--syntax-constant);
+  --sig-param: var(--syntax-meta);
 }
 
 dt.sig {

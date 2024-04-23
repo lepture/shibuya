@@ -1,0 +1,39 @@
+dl.sqla dt {
+  color: var(--sig-name);
+  margin-bottom: 0.5rem;
+}
+
+dl.sqla dt > em {
+  font-weight: 400;
+  font-style: normal;
+  color: var(--sig-param);
+}
+
+dl.sqla dd > p.rubric {
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  font-size: 0.76rem;
+}
+
+dl.sqla dd > p.rubric + .table-wrapper {
+  margin-top: 0.75rem;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+}
+
+dl.sqla p.rubric + .table-wrapper th,
+dl.sqla p.rubric + .table-wrapper td {
+  border-left: 0;
+  border-right: 0;
+  background-color: transparent;
+}
+dl.sqla p.rubric + .table-wrapper td > p {
+  margin: 0;
+}
+dl.sqla p.rubric + .table-wrapper tr.row-odd {
+  background-color: transparent;
+}
+dl.sqla p.rubric + .table-wrapper tr.row-even {
+  background-color: var(--yue-c-row-background);
+}
