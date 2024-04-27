@@ -1,28 +1,3 @@
-.sy-lside li {
-  margin: 0.6rem 0;
-}
-
-.sy-lside li.link > span {
-  font-size: 0.86rem;
-  font-weight: 500;
-  font-family: var(--sy-f-heading);
-  color: var(--sy-c-light);
-  text-transform: uppercase;
-  letter-spacing: 0.4px;
-}
-
-.sy-lside li.link .i-icon {
-  display: none;
-}
-
-.sy-lside li.link > ul {
-  margin-left: 1rem;
-}
-
-.sy-lside li.link > ul small {
-  display: none;
-}
-
 .sy-lside .sidebar-links {
   margin-bottom: 2rem;
 }

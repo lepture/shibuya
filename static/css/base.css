@@ -64,7 +64,7 @@ strong, em {
 }
 
 .i-icon,
-.i-lucid,
+.i-lucide,
 .i-simpleicons {
   mask: var(--icon-url) no-repeat;
   mask-size: 100% 100%;
@@ -78,11 +78,11 @@ strong, em {
 
 .theme-switch .theme-icon,
 [data-color-mode="auto"] .theme-switch .theme-icon {
-  --icon-url: var(--lucid-laptop-url);
+  --icon-url: var(--lucide-laptop-url);
 }
 [data-color-mode="light"] .theme-switch .theme-icon {
-  --icon-url: var(--lucid-sun-url);
+  --icon-url: var(--lucide-sun-url);
 }
 [data-color-mode="dark"] .theme-switch .theme-icon {
-  --icon-url: var(--lucid-moon-url);
+  --icon-url: var(--lucide-moon-url);
 }

@@ -30,8 +30,8 @@
     color: var(--sy-c-light);
   }
 
-  .nav-versions button .i-icon,
-  .nav-languages button .i-icon {
+  .nav-versions button > i,
+  .nav-languages button > i {
     display: none;
   }
 

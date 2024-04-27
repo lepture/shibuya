@@ -48,5 +48,5 @@ function encodeSvgForCss(svg) {
     .replace(/>/g, '%3E');
 }
 
-buildIcons('lucid')
+buildIcons('lucide')
 buildIcons('simpleicons')

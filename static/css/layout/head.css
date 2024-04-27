@@ -58,10 +58,6 @@
   height: var(--sy-s-navbar-height);
 }
 
-.sy-head .i-icon {
-  font-size: 1.25rem;
-}
-
 .sy-head-brand img {
   height: 28px;
 }

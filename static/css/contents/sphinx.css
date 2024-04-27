@@ -29,7 +29,7 @@
   font-size: 58%;
   font-family: var(--sy-f-mono);
 
-  --icon-url: var(--lucid-link-url);
+  --icon-url: var(--lucide-link-url);
   mask: var(--icon-url) no-repeat;
   mask-size: 100% 100%;
   width: 1em;

@@ -1,9 +1,6 @@
 @import "./css/base.css";
 @import "./css/colors.css";
 @import "./css/variables.css";
-@import "./css/lucid.css";
+@import "./css/lucide.css";
 @import "./css/simpleicons.css";
 @import "./css/modules.css";
-
-/* compatible icons */
-.i-icon.chevron,.i-lucid.chevron{--icon-url:var(--lucid-chevron-right-url)}
