@@ -40,6 +40,7 @@ Make sure it works well with other extensions. Currently integrated with:
 - :bdg-success:`DONE` :ref:`numpydoc`
 - :bdg-success:`DONE` ``sphinx-gallery``
 - :bdg-success:`DONE` :ref:`sphinxcontrib-mermaid`
+- :bdg-success:`DONE` :ref:`sqlalchemy`
 
 Instant search
 --------------
