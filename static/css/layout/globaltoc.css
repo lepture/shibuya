@@ -103,16 +103,16 @@
   display: none;
 }
 
-.globaltoc li > button .chevron {
+.globaltoc li > button > i {
   transform: rotate(0deg);
   transition: transform 0.2s ease;
 }
 
-.globaltoc li.current > button .chevron,
-.globaltoc li._expand > button .chevron {
+.globaltoc li.current > button > i,
+.globaltoc li._expand > button > i {
   transform: rotate(90deg);
 }
 
-.globaltoc li._collapse > button .chevron {
+.globaltoc li._collapse > button > i {
   transform: rotate(0deg);
 }

@@ -35,7 +35,7 @@ function addToggleToc () {
 
 function createToggleButton (el) {
   const button = document.createElement("button")
-  button.innerHTML = '<i class="i-icon chevron"></i>'
+  button.innerHTML = '<i class="i-icon chevron-right"></i>'
 
   const list = el.parentNode
   const link = el.previousSibling

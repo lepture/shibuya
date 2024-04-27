@@ -8,10 +8,7 @@
   white-space: nowrap;
 }
 
-.nav-versions .chevron {
-  font-size: 0.72rem;
-  font-weight: 400;
-  transform: rotate(90deg);
+.nav-versions .chevron-down {
   color: var(--sy-c-light);
 }
 

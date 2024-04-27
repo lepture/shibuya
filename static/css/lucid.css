@@ -6,7 +6,10 @@
   --lucid-bookmark-url:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z'/%3E%3C/svg%3E");
   --lucid-calendar-url:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'/%3E%3Cpath d='M16 2v4M8 2v4M3 10h18'/%3E%3C/svg%3E");
   --lucid-check-url:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
-  --lucid-chevron-url:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m9 18 6-6-6-6'/%3E%3C/svg%3E");
+  --lucid-chevron-down-url:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' class='lucide lucide-chevron-down'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  --lucid-chevron-left-url:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' class='lucide lucide-chevron-left'%3E%3Cpath d='m15 18-6-6 6-6'/%3E%3C/svg%3E");
+  --lucid-chevron-right-url:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' class='lucide lucide-chevron-right'%3E%3Cpath d='m9 18 6-6-6-6'/%3E%3C/svg%3E");
+  --lucid-chevron-up-url:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' class='lucide lucide-chevron-up'%3E%3Cpath d='m18 15-6-6-6 6'/%3E%3C/svg%3E");
   --lucid-close-url:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 6 6 18M6 6l12 12'/%3E%3C/svg%3E");
   --lucid-external-link-url:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Cpath d='M13 5h6v6M19 5 5 19'/%3E%3C/svg%3E");
   --lucid-flame-url:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z'/%3E%3C/svg%3E");
@@ -32,7 +35,10 @@
 .i-icon.bookmark,.i-lucid.bookmark{--icon-url:var(--lucid-bookmark-url)}
 .i-icon.calendar,.i-lucid.calendar{--icon-url:var(--lucid-calendar-url)}
 .i-icon.check,.i-lucid.check{--icon-url:var(--lucid-check-url)}
-.i-icon.chevron,.i-lucid.chevron{--icon-url:var(--lucid-chevron-url)}
+.i-icon.chevron-down,.i-lucid.chevron-down{--icon-url:var(--lucid-chevron-down-url)}
+.i-icon.chevron-left,.i-lucid.chevron-left{--icon-url:var(--lucid-chevron-left-url)}
+.i-icon.chevron-right,.i-lucid.chevron-right{--icon-url:var(--lucid-chevron-right-url)}
+.i-icon.chevron-up,.i-lucid.chevron-up{--icon-url:var(--lucid-chevron-up-url)}
 .i-icon.close,.i-lucid.close{--icon-url:var(--lucid-close-url)}
 .i-icon.external-link,.i-lucid.external-link{--icon-url:var(--lucid-external-link-url)}
 .i-icon.flame,.i-lucid.flame{--icon-url:var(--lucid-flame-url)}

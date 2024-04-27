@@ -4,3 +4,6 @@
 @import "./css/lucid.css";
 @import "./css/simpleicons.css";
 @import "./css/modules.css";
+
+/* compatible icons */
+.i-icon.chevron,.i-lucid.chevron{--icon-url:var(--lucid-chevron-right-url)}
