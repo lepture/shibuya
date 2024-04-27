@@ -107,6 +107,7 @@
 
 .sy-head-nav .link > ul a {
   display: block;
+  white-space: normal;
 }
 
 .sy-head-nav .link > ul a:hover {
@@ -236,6 +237,7 @@
     border: 1px solid var(--sy-c-divider);
     box-shadow: var(--sy-dropdown-shadow);
     z-index: 9;
+    max-width: 320px;
   }
 
   .sy-head-nav .link:hover > ul {

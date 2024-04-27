@@ -42,3 +42,16 @@ html.dark {
   width: 0.875rem !important;
   height: 0.875rem !important;
 }
+
+@media (max-width: 767px) {
+  #docsearch {
+    position: absolute;
+    top: 1rem;
+    left: 1.8rem;
+    right: 1.8rem;
+  }
+  #docsearch .DocSearch-Button {
+    margin-left: 0;
+    width: 100%;
+  }
+}
