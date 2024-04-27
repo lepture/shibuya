@@ -1,3 +1,5 @@
+.. _sqlalchemy:
+
 sphinx-sqlalchemy
 =================
 
