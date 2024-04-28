@@ -50,14 +50,10 @@ def _initialize_builder(app: Sphinx):
     app.add_js_file("shibuya.js")
     app.add_css_file("print.css", media='print')
 
-    if hasattr(app.config, 'html_context'):
-        edit_source_link = create_edit_source_link(app.config.html_context)
-        app.config.html_context.update({
-            "edit_source_link": edit_source_link,
-            "expandtoc": normalize_globaltoc,
-        })
-
     if isinstance(app.builder, StandaloneHTMLBuilder):
+        edit_source_link = create_edit_source_link(app.config.html_context)
+        app.builder.templates.environment.globals['expandtoc'] = normalize_globaltoc
+        app.builder.templates.environment.globals['edit_source_link'] = edit_source_link
         app.builder.highlighter.formatter = WrapLineFormatter
 
     if isinstance(app.builder, DirectoryHTMLBuilder):
