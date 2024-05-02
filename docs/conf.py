@@ -37,6 +37,7 @@ jupyter_sphinx_thebelab_config = {
 }
 jupyter_sphinx_require_url = ''
 nbsphinx_requirejs_path = ''
+sitemap_excludes = ['404/']
 
 extlinks = {
     'pull': ('https://github.com/lepture/shibuya/pull/%s', 'pull request #%s'),
