@@ -52,6 +52,7 @@ for social networks. These icons include:
 - YouTube: ``--simpleicons-youtube-url``
 - X (Twitter): ``--simpleicons-x-twitter-url``
 - Reddit: ``--simpleicons-reddit-url``
+- LinkedIn: ``--simpleicons-linkedin-url``
 
 Custom Icons
 ------------
