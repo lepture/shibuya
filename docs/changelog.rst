@@ -5,6 +5,14 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2024.5.10
+---------
+
+- **New**: Added ``linkedin_url`` theme option
+- **New**: Make theme switch a component
+- **Fix**: Cleanup ``html_context`` to prevent sphinx 7.3 warnings
+
+
 2024.4.27
 ---------
 
