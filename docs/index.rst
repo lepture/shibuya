@@ -76,6 +76,7 @@ Shibuya
     extensions/numpydoc
     extensions/mermaid
     extensions/docsearch
+    extensions/sphinx-click
     extensions/sphinx-sqlalchemy
 
 .. toctree::

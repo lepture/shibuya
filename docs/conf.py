@@ -28,6 +28,7 @@ extensions = [
     "numpydoc",
     "sphinx_sitemap",
     "sphinxcontrib.mermaid",
+    "sphinx_click",
     "sphinx_sqlalchemy",
 ]
 todo_include_todos = True

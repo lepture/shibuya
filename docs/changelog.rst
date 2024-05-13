@@ -16,7 +16,7 @@ Shibuya uses date based release segments. For pre-releases, it follows :pep:`440
 2024.4.27
 ---------
 
-- **New**: Added integration with :ref:`sqlalchemy`.
+- **New**: Added integration with :ref:`sphinx-sqlalchemy`.
 - **Fix**: Improve accessibility with ``aria-label``.
 - **Fix**: Improve style for nav links and docsearch.
 - **Breaking**: Fix typo of ``Lucide`` icons.

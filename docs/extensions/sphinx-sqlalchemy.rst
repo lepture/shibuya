@@ -1,4 +1,4 @@
-.. _sqlalchemy:
+.. _sphinx-sqlalchemy:
 
 sphinx-sqlalchemy
 =================
