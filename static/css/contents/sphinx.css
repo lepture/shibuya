@@ -11,8 +11,7 @@
 .yue p.rubric {
   color: var(--yue-c-heading);
   font-weight: 600;
-  font-size: 1.25em;
-  margin-top: 2em;
+  margin-top: 2rem;
 }
 
 .yue dl.simple > dd > p,

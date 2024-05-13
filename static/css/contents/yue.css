@@ -212,6 +212,11 @@
   color: inherit;
 }
 
+.yue h5, .yue h6 {
+  color: var(--yue-c-heading);
+  font-weight: 600;
+}
+
 .yue img {
   display: inline;
   margin-top: 2em;
