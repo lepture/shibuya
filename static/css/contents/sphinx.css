@@ -14,6 +14,36 @@
   margin-top: 2rem;
 }
 
+.yue .sidebar {
+  background-color: var(--sy-c-surface);
+  border: 1px solid var(--sy-c-border);
+  border-radius: 6px;
+  clear: right;
+  float: right;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 0;
+  width: 30%;
+}
+
+.yue .sidebar > * {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.yue .sidebar img {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.yue .sidebar-title {
+  font-weight: 500;
+  border-bottom: 1px solid var(--sy-c-border);
+  margin: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .yue dl.simple > dd > p,
 .yue ul.simple > li > p,
 .yue ol.simple > li > p {
@@ -68,6 +98,18 @@ h6:hover a.headerlink {
   border-bottom: 1px solid var(--sy-c-divider);
 }
 
+.yue .align-left {
+  clear: left;
+  float: left;
+  margin: 0 1rem 1rem;
+}
+
+.yue .align-right {
+  clear: right;
+  float: right;
+  margin: 0 1rem 1rem;
+}
+
 .yue .align-center {
   display: block;
   margin-left: auto;
@@ -109,6 +151,11 @@ div.citation > p {
   margin-left: 0.25rem;
 }
 
+.yue .menuselection {
+  font-weight: 500;
+  font-size: 0.86rem;
+}
+
 .light .searchbox kbd,
 .light .yue kbd.kbd:not(.compound) {
   border: 0;
@@ -123,12 +170,12 @@ div.citation > p {
 }
 
 /* -- extra -- */
-.hlist td {
-  vertical-align: top;
+.yue p.centered {
+  text-align: center;
 }
 
-p.centered {
-  text-align: center;
+.hlist td {
+  vertical-align: top;
 }
 
 .light .light-hidden,

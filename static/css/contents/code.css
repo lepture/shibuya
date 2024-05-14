@@ -13,6 +13,14 @@ pre.literal-block {
   --radius: 6px;
 }
 
+.literal-block-wrapper div[class^=highlight-] {
+  display: flex;
+}
+
+.literal-block-wrapper .highlight  {
+  width: 100%;
+}
+
 .highlight > pre {
   line-height: 1.48;
   padding: var(--margin);
@@ -43,6 +51,7 @@ pre.literal-block {
 }
 
 .code-block-caption {
+  display: flex;
   font-size: 0.84rem;
   font-weight: 600;
   color: var(--syntax-text);

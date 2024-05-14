@@ -389,6 +389,10 @@
   padding: 0.5rem;
 }
 
+.yue section {
+  clear: both;
+}
+
 .yue section > div {
   margin-bottom: 2rem;
 }

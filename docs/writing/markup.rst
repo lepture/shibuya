@@ -91,6 +91,18 @@ Keyboard
 :kbd:`Tab` means indent, :kbd:`Shift-Tab` means outdent.
 :kbd:`⌘+⇧+P` is power shortcuts in vscode.
 
+Menu Selection
+~~~~~~~~~~~~~~~
+
+Use ``menuselection`` to show menus:
+
+.. code-block:: ReST
+
+    :menuselection:`My --> Software --> Some menu --> Some sub menu 1 --> Some sub menu 2 --> Some sub menu 3`
+
+:menuselection:`My --> Software --> Some menu --> Some sub menu 1 --> Some sub menu 2 --> Some sub menu 3`
+
+
 Thematic break
 --------------
 
@@ -102,6 +114,50 @@ It is created by::
 
     ----
 
+Sidebar
+-------
+
+.. sidebar:: Ch'ien / The Creative
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+    .. image:: https://source.unsplash.com/200x200/daily?cute+puppy
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, sunt
+voluptatum tenetur libero nulla esse veritatis accusantium earum commodi hic
+voluptatem officia culpa optio atque. Quaerat sed quibusdam ratione nam.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, sunt
+voluptatum tenetur libero nulla esse veritatis accusantium earum commodi hic
+voluptatem officia culpa optio atque. Quaerat sed quibusdam ratione nam.
+
+Code with Sidebar
+~~~~~~~~~~~~~~~~~
+
+.. sidebar:: A code example
+
+    With a sidebar on the right.
+
+.. code-block:: python
+    :caption: Code blocks can also have captions.
+    :linenos:
+
+    print("one")
+    print("two")
+    print("three")
+    print("four")
+    print("five")
+    print("six")
+    print("seven")
+    print("eight")
+    print("nine")
+    print("ten")
+    print("eleven")
+    print("twelve")
+    print("thirteen")
+    print("fourteen")
 
 Footnotes
 ---------
