@@ -5,6 +5,15 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2024.5.14
+---------
+
+- **New**: Added integration with :ref:`sphinx-click`.
+- **New**: Added style for menuselection.
+- **New**: Added style for sidebar.
+- **New**: Added style for align images.
+- **Fix**: Updated CSS for h5, h6, and ``.rubric``.
+
 2024.5.10
 ---------
 
