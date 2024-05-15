@@ -68,6 +68,10 @@ excepturi facere, corrupti expedita sit.
    :height: 200
    :width: 200
 
+.. hint::
+
+    You can use ``:align: right`` to float image to the right side.
+
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
 sapiente veritatis doloribus accusantium molestiae modi recusandae
 excepturi facere, corrupti expedita sit.

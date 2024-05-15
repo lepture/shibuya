@@ -80,6 +80,8 @@
   --color-3: var(--accent-9);
   --color-4: var(--accent-a11);
 
+  display: flex;
+  flex-direction: column;
   position: relative;
   padding: 0 16px 0.8rem;
   margin-top: 1rem;
