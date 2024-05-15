@@ -5,6 +5,11 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2024.5.15
+---------
+
+- **Fix**: Update style for floatting image with admonition.
+
 2024.5.14
 ---------
 
