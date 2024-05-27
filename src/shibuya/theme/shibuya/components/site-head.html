@@ -11,13 +11,13 @@
 <div class="sy-head">
   <div class="sy-head-blur"></div>
   <div class="sy-head-inner sy-container mx-auto">
-    <a class="sy-head-brand mr-4" href="{% if theme_logo_target %}{{ theme_logo_target }}{% else %}{{ pathto(root_doc) }}{% endif %}">
+    <a class="sy-head-brand" href="{% if theme_logo_target %}{{ theme_logo_target }}{% else %}{{ pathto(root_doc) }}{% endif %}">
       {{ render_logo(theme_light_logo, 'light-logo') }}
       {{ render_logo(theme_dark_logo, 'dark-logo') }}
       <strong>{{ project }}</strong>
     </a>
-    <div class="sy-head-links" id="NavLinks">
-      <nav class="sy-head-nav">
+    <div class="sy-head-nav" id="HeadNav">
+      <nav class="sy-head-links"{% if theme_nav_links_align %} data-align={{ theme_nav_links_align }}{% endif %}>
         {%- if theme_nav_links -%}
           {% include "components/nav-links.html" %}
         {%- endif -%}
@@ -31,7 +31,7 @@
     </div>
     <div class="sy-head-actions flex items-center shrink-0 print:hidden">
       {% include "components/theme-switch.html" %}
-      <button class="md:hidden flex items-center js-menu" aria-label="Menu" type="button" aria-controls="NavLinks" aria-expanded="false">
+      <button class="md:hidden flex items-center js-menu" aria-label="Menu" type="button" aria-controls="HeadNav" aria-expanded="false">
         <div class="hamburger">
           <span class="hamburger_1"></span>
           <span class="hamburger_2 -translate-x-2"></span>
