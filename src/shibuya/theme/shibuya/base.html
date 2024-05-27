@@ -74,13 +74,13 @@
   <div class="document">
     {%- include "partials/banner.html" -%}
     {%- block header -%}
-      {% include "components/site-head.html" with context %}
+      {% include "partials/site-head.html" with context %}
     {%- endblock -%}
 
     {% block body %}{% endblock %}
 
     {%- block footer -%}
-      {% include "components/site-foot.html" with context %}
+      {% include "partials/site-foot.html" with context %}
     {%- endblock -%}
   </div>
   {%- endblock -%}
