@@ -1,5 +1,5 @@
 {%- if meta and meta.layout -%}
-  {% extends 'layout/' + meta.layout + '.html' %}
-{% else %}
-  {% extends 'layout/' + theme_page_layout + '.html' %}
+  {%- extends 'layout/' + meta.layout + '.html' -%}
+{%- else -%}
+  {%- extends 'layout/' + theme_page_layout + '.html' -%}
 {%- endif -%}
