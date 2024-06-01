@@ -3,7 +3,7 @@ const path = require('path')
 
 function buildIcons (prefix) {
   const iconsDir = path.resolve(`static/${prefix}`)
-  const output = path.resolve(`static/css/${prefix}.css`)
+  const output = path.resolve(`static/css/icons/${prefix}.css`)
 
   const icons = []
   let css = ':root {\n'

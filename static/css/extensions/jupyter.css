@@ -13,7 +13,7 @@
   box-shadow: none;
 }
 
-.document .yue .jupyter_container div[class^="highlight"] {
+.sy-main .yue .jupyter_container div[class^="highlight"] {
   padding: 0;
 }
 
