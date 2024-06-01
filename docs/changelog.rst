@@ -5,6 +5,17 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2024.6.1
+--------
+
+- **New**: Allow customize social network with partial template.
+- **New**: Add ``nav_links_align`` theme option.
+- **Fix**: Improve sidebar style for mobile view.
+- **Fix**: Use localStorage for theme mode state.
+- **Fix**: Hide rtd injected widget on landing page.
+- **Fix**: Lazy load logo to improve page speed.
+- **Fix**: Improve admonition style.
+
 2024.5.15
 ---------
 
