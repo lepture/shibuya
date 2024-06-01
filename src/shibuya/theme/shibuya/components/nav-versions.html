@@ -1,4 +1,4 @@
-{%- if versions %}
+{%- if versions -%}
   <div class="nav-versions">
     <button type="button" aria-label="{{ _("Versions") }}">
       <span class="md:hidden">{{ _("Versions") }}</span>
@@ -6,7 +6,7 @@
       <i class="i-lucide chevron-down"></i>
     </button>
     <div class="nav-versions-choices">
-      {%- if versions %}
+      {%- if versions -%}
       <ul>
         {%- for version in versions -%}
           <li><a href="{{ version[1] }}">{{ version[0] }}</a></li>

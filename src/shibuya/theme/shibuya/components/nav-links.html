@@ -1,10 +1,10 @@
-{% macro expandURL(url) %}
+{%- macro expandURL(url) -%}
 {%- if url.startswith(('https://', 'http://')) -%}
 {{ url }}
 {%- else -%}
 {{ pathto(url) }}
 {%- endif -%}
-{% endmacro %}
+{%- endmacro -%}
 
 <ul>
   {%- for link in theme_nav_links -%}
@@ -22,7 +22,7 @@
           </button>
         {%- endif %}
         <ul>
-          {% for item in link.children %}
+          {%- for item in link.children -%}
             {%- if item.summary -%}
               <li><a href="{{ expandURL(item.url) }}">
                 <span>{{ item.title }}</span>
@@ -39,9 +39,9 @@
         <li class="link">
           <a href="{{ link.url }}">
             <span>{{ link.title }}</span>
-            {% if link.external %}
+            {%- if link.external -%}
               <i class="i-lucide external-link"></i>
-            {% endif %}
+            {%- endif -%}
           </a>
         </li>
       {%- else -%}

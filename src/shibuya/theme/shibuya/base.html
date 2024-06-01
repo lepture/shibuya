@@ -4,18 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {%- block htmltitle -%}
-    {% if not docstitle %}
+    {%- if not docstitle -%}
       <title>{{ title|striptags|e }}</title>
-    {% elif pagename == root_doc %}
+    {%- elif pagename == root_doc -%}
       <title>{{ docstitle|striptags|e }}</title>
-    {% else %}
+    {%- else -%}
       <title>{{ title|striptags|e }} - {{ docstitle|striptags|e }}</title>
-    {% endif %}
+    {%- endif -%}
   {%- endblock -%}
 
   {%- if favicon_url -%}
     <link rel="shortcut icon" href="{{ favicon_url|e }}"/>
-  {%- endif %}
+  {%- endif -%}
 
   {%- block linktags %}
     {%- if hasdoc('about') -%}
@@ -49,7 +49,7 @@
     {%- elif pageurl %}
       <link rel="canonical" href="{{ pageurl|e }}" />
     {%- endif %}
-  {%- endblock %}
+  {%- endblock -%}
 
   <script>
     function setColorMode(t){let e=document.documentElement;e.setAttribute("data-color-mode",t);let a=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,s=t;"auto"===t&&(s=a?"dark":"light"),"light"===s?(e.classList.remove("dark"),e.classList.add("light")):(e.classList.remove("light"),e.classList.add("dark"))}
@@ -71,26 +71,24 @@
 </head>
 <body>
   {%- block document -%}
-  <div class="document">
     {%- include "partials/banner.html" -%}
     {%- block header -%}
       {% include "partials/site-head.html" with context %}
     {%- endblock -%}
 
-    {% block body %}{% endblock %}
+    {%- block body %}{% endblock -%}
 
     {%- block footer -%}
       {% include "partials/site-foot.html" with context %}
     {%- endblock -%}
-  </div>
   {%- endblock -%}
 
   {%- block scripts -%}
     {%- for js in script_files %}
       {{ js_tag(js) }}
     {%- endfor %}
-    {% block theme_scripts %}{% endblock %}
-  {%- endblock %}
+    {%- block theme_scripts %}{% endblock -%}
+  {%- endblock -%}
   {%- include "partials/extra-foot.html" -%}
 </body>
 </html>

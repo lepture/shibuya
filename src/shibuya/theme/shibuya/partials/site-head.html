@@ -23,14 +23,14 @@
         {%- endif -%}
       </nav>
       <div class="sy-head-extra flex items-center print:hidden">
-        {% include "components/searchbox.html" %}
-        {% include "components/nav-versions.html" %}
-        {% include "components/nav-languages.html" %}
-        {% include "components/nav-socials.html" %}
+        {%- include "components/searchbox.html" -%}
+        {%- include "components/nav-versions.html" -%}
+        {%- include "components/nav-languages.html" -%}
+        {%- include "components/nav-socials.html" -%}
       </div>
     </div>
     <div class="sy-head-actions flex items-center shrink-0 print:hidden">
-      {% include "components/theme-switch.html" %}
+      {%- include "components/theme-switch.html" -%}
       <button class="md:hidden flex items-center js-menu" aria-label="Menu" type="button" aria-controls="HeadNav" aria-expanded="false">
         <div class="hamburger">
           <span class="hamburger_1"></span>

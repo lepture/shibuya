@@ -1,20 +1,20 @@
 <div class="navigation flex print:hidden">
-  {% if prev -%}
+  {%- if prev -%}
   <div class="navigation-prev">
     <a href="{{ prev.link }}">
       <i class="i-lucide chevron-left"></i>
       <div class="page-info">
         <span>{{ _("Previous") }}</span>
-        {% if prev.link == pathto(root_doc) %}
+        {%- if prev.link == pathto(root_doc) -%}
         <div class="title">{{ _("Home") }}</div>
-        {% else %}
+        {%- else -%}
         <div class="title">{{ prev.title }}</div>
-        {% endif %}
+        {%- endif -%}
       </div>
     </a>
   </div>
-  {%- endif %}
-  {% if next -%}
+  {%- endif -%}
+  {%- if next -%}
   <div class="navigation-next">
     <a href="{{ next.link }}">
       <div class="page-info">
@@ -24,5 +24,5 @@
       <i class="i-lucide chevron-right"></i>
     </a>
   </div>
-  {%- endif %}
+  {%- endif -%}
 </div>
