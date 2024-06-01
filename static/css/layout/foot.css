@@ -31,3 +31,9 @@
 .sy-foot-socials a + a {
   margin-left: 0.5rem;
 }
+
+.sy-foot-socials a svg {
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
+}

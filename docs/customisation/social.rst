@@ -129,3 +129,30 @@ The Reddit icon will be displayed only on the footer.
     html_theme_options = {
       "reddit_url": "https://www.reddit.com/r/flask/"
     }
+
+LinkedIn
+~~~~~~~~
+
+The LinkedIn icon will be displayed only on the footer.
+
+.. code-block:: python
+
+    html_theme_options = {
+      "linkedin_url": "https://www.linkedin.com/company/microsoft"
+    }
+
+Custom networks
+---------------
+
+If you need to add social networks that Shibuya theme doesn't contain, you can
+custom it with ``partials/foot-socials.html``:
+
+.. code-block:: html
+    :caption: _templates/partials/foot-socials.html
+
+    <div class="sy-foot-socials">
+      {%- include "components/foot-socials.html" -%}
+      <a href="your-social-network-url" aria-label="Your Social network">
+        <svg>...</svg>
+      </a>
+    </div>
