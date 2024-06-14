@@ -32,7 +32,6 @@ extensions = [
     "sphinx_sqlalchemy",
 ]
 todo_include_todos = True
-autosummary_generate = True
 jupyter_sphinx_thebelab_config = {
     'requestKernel': True,
 }

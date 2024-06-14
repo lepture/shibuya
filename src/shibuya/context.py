@@ -17,14 +17,15 @@ def normalize_localtoc(toc: str):
     if not toc:
         return toc
 
+    pattern = re.compile(r'<span class="pre">\w+?\.')
     root = ET.fromstring(toc)
     if len(root) != 1:
-        return toc
+        return pattern.sub('.', toc)
 
     child = root[0]
     if len(child) == 2 and child[1].tag == "ul":
-        return ET.tostring(child[1]).decode("utf-8")
-    return toc
+        toc = ET.tostring(child[1]).decode("utf-8")
+    return pattern.sub('', toc)
 
 
 def normalize_globaltoc(toc: str, depth: int = 0):

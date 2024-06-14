@@ -3,20 +3,38 @@
 API reference
 =============
 
-Here is an example of ``autofunction``, ``autoclass`` directives.
+Here are examples of ``automodule``, ``autoclass``, and ``autofunction`` directives.
+
+automodule
+----------
 
 .. code-block:: ReST
 
-    .. autofunction:: sphinx.versioning.merge_doctrees
-        :noindex:
-
-    .. autoclass:: urllib3.util.Timeout
+    .. automodule:: babel.units
         :members:
         :noindex:
 
-.. autofunction:: sphinx.versioning.merge_doctrees
-    :noindex:
-
-.. autoclass:: urllib3.util.Timeout
+.. automodule:: babel.units
     :members:
+
+autoclass
+---------
+
+.. code-block:: ReST
+
+    .. autoclass:: babel.support.Format
+        :members:
+        :noindex:
+
+.. autoclass:: babel.support.Format
+    :members:
+
+autofunction
+------------
+
+.. code-block:: ReST
+
+    .. autofunction:: babel.util.distinct
+
+.. autofunction:: babel.util.distinct
     :noindex:
