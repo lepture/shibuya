@@ -1,0 +1,31 @@
+.yue details.toggle-details {
+  background-color: var(--slate-a2);
+  padding: 0 1rem;
+  border-radius: .2em;
+}
+
+.yue details.toggle-details summary {
+  border-left-color: var(--accent-a9);
+  background-color: var(--gray-a2);
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.yue details.toggle-details[open] summary {
+  border-radius: .2em .2em 0 0;
+}
+
+.yue .toggle-details__container {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.yue .toggle-details__container :first-child {
+  margin-top: 0;
+}
+
+.yue .toggle-details__container :last-child {
+  margin-bottom: 0;
+}

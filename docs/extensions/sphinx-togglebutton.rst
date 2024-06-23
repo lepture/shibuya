@@ -77,3 +77,20 @@ Usage
 .. toggle::
 
     This is a toggled content block!
+
+
+.. tip::
+
+    The toggle directive can also be nested. For example:
+
+    .. toggle::
+
+        .. code-block:: ReST
+
+            .. tip::
+
+                The toggle directive can also be nested. For example:
+
+                .. toggle::
+
+                    This is a toggled content block!

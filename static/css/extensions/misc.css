@@ -13,8 +13,3 @@
 .yue .xr-array-data pre {
   margin: 0;
 }
-
-/* sphinx-togglebutton */
-.yue details.toggle-details summary {
-  border-left-color: var(--accent-a9);
-}
