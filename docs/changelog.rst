@@ -5,6 +5,13 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2024.6.23
+---------
+
+- **Fix**: Improve style for sphinx togglebutton.
+- **Fix**: Remove prefix in local TOC for API references.
+- **Fix**: Fix table style, avoid extra padding for tables.
+
 2024.6.1
 --------
 

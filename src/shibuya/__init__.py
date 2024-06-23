@@ -14,7 +14,7 @@ from ._sphinx import (
     WrapLineFormatter,
 )
 
-__version__ = "2024.6.1"
+__version__ = "2024.6.23"
 
 shibuya_version = __version__
 
