@@ -75,6 +75,17 @@ The Discord icon will be displayed on the navbar and footer.
       "discord_url": "https://discord.gg/example/"
     }
 
+Slack
+~~~~~~~
+
+The Slack icon will be displayed on the navbar and footer.
+
+.. code-block:: python
+
+    html_theme_options = {
+      "slack_url": "https://example.com/join/slack"
+    }
+
 X (Twitter)
 ~~~~~~~~~~~
 
@@ -145,7 +156,17 @@ Custom networks
 ---------------
 
 If you need to add social networks that Shibuya theme doesn't contain, you can
-custom it with ``partials/foot-socials.html``:
+custom it with ``partials/nav-socials.html`` and ``partials/foot-socials.html``:
+
+.. code-block:: html
+    :caption: _templates/partials/nav-socials.html
+
+    <div class="sy-head-socials">
+      {%- include "components/nav-socials.html" -%}
+      <a href="your-social-network-url" aria-label="Your Social network">
+        <svg>...</svg>
+      </a>
+    </div>
 
 .. code-block:: html
     :caption: _templates/partials/foot-socials.html
