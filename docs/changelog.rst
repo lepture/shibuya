@@ -5,6 +5,13 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2024.7.13
+---------
+
+- **New**: Add ``slack_url`` theme option.
+- **New**: Add ``partials/nav-socials.html`` template.
+- **Fix**: Word break for right sidebar's repository stats component.
+
 2024.6.23
 ---------
 
