@@ -5,6 +5,11 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2024.8.21
+---------
+
+- **Fix**: Fix sphinx-design grid css conflict with admonition.
+
 2024.7.13
 ---------
 
