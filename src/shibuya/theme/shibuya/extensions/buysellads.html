@@ -1,22 +1,40 @@
-<div class="bsa"></div>
+{% if buysellads_container_selector %}
+<script>
+  (function() {
+    const el = document.querySelector('{{ buysellads_container_selector }}');
+    if (el) {
+      const target = document.createElement('div');
+      target.id = 'bsa-custom-container';
+      el.appendChild(target);
+    }
+  })();
+</script>
+{% endif %}
+<div id="bsa-container"></div>
 <script src="//m.servedby-buysellads.com/monetization.custom.js"></script>
 <script>
 (function() {
   if (typeof _bsa !== 'undefined' && _bsa) {
+    let target = '#bsa-container';
+    if (document.querySelector('#bsa-custom-container')) {
+      target = '#bsa-custom-container';
+    }
     _bsa.init('custom', '{{ buysellads_code }}', 'placement:{{ buysellads_placement }}', {
-      target: '.bsa',
-      id: 'bsa-bar',
+      target: target,
       template: `
-<a class="bsa-bar" style="background-color: ##backgroundColor##; color: ##textColor##" href="##link##" rel="sponsored noopener" target="_blank" title="##company## — ##tagline##">
+<div class="bsa">
+<a class="bsa-container bsa__##external_id##" style="background-color: ##backgroundColor##; color: ##textColor##" href="##link##" rel="sponsored noopener" target="_blank" title="##company## — ##tagline##">
   <div class="bsa-main">
     <img class="bsa-img" src="##logo##">
     <div class="bsa-details" style="color: ##textColor##">
-      <span class="bsa-tagline">Sponsored by ##company##</span>
+      <span class="bsa-tagline">##company## — ##tagline##</span>
       <span class="bsa-desc">##description##</span>
     </div>
     <span class="bsa-cta" style="color: ##ctaTextColor##; background-color: ##ctaBackgroundColor##;">##callToAction##</span>
   </div>
 </a>
+<div class="bsa-ad-via"><a title="ad via BuySellAds" href="##ad_via_link##">Ads via BuySellAds</a></div>
+</div>
 `
     });
   }

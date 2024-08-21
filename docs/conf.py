@@ -146,6 +146,9 @@ else:
         "source_type": "github",
         "source_user": "lepture",
         "source_repo": "shibuya",
+        "buysellads_code": "CE7DKK3M",
+        "buysellads_placement": "shibuya",
+        "buysellads_container_selector": ".yue > section > section",
     }
 
 

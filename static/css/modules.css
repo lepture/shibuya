@@ -1,6 +1,14 @@
 @import "./icons/lucide.css";
 @import "./icons/simpleicons.css";
 
+@import "./contents/yue.css";
+@import "./contents/sphinx.css";
+@import "./contents/admonition.css";
+@import "./contents/quote.css";
+@import "./contents/code.css";
+@import "./contents/table.css";
+@import "./contents/api-doc.css";
+
 @import "./components/hamburger.css";
 @import "./components/search.css";
 @import "./components/container.css";
@@ -19,14 +27,6 @@
 @import "./layout/globaltoc.css";
 @import "./layout/rside.css";
 @import "./layout/navigation.css";
-
-@import "./contents/yue.css";
-@import "./contents/sphinx.css";
-@import "./contents/admonition.css";
-@import "./contents/quote.css";
-@import "./contents/code.css";
-@import "./contents/table.css";
-@import "./contents/api-doc.css";
 
 @import "./extensions/rtd.css";
 @import "./extensions/copybutton.css";
