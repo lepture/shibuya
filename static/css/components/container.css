@@ -12,7 +12,8 @@
   padding: 1rem;
 }
 
-.container.image-1 {
+.container.image-1,
+.container.video-1 {
   border: 0.5rem solid var(--accent-a3);
   border-radius: 6px;
 }
@@ -22,13 +23,22 @@
   margin: 0;
 }
 
-.container.image-2 {
+.container.video-1 video,
+.container.video-1 iframe {
+  border-radius: 4px;
+  width: 100%;
+  margin: 0;
+}
+
+.container.image-2,
+.container.video-2 {
   border: 1px solid var(--sy-c-border);
   padding: 1rem;
   border-radius: 6px;
 }
 
-.container.image-2 > img {
+.container.image-2 > img,
+.container.video-2 > video {
   margin: 0;
 }
 

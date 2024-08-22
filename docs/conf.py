@@ -28,6 +28,8 @@ extensions = [
     "numpydoc",
     "sphinx_sitemap",
     "sphinxcontrib.mermaid",
+    "sphinxcontrib.video",
+    "sphinxcontrib.youtube",
     "sphinx_click",
     "sphinx_sqlalchemy",
 ]

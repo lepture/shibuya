@@ -6,6 +6,8 @@ sphinx_sqlalchemy
 ipykernel
 jupyter-sphinx
 sphinx-togglebutton
+sphinxcontrib-video
+sphinxcontrib-youtube
 sphinxcontrib-mermaid
 sphinx-docsearch
 sphinx-click
