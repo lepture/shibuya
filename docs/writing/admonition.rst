@@ -249,6 +249,8 @@ It is possible to add admonitions into admonitions. Take an example:
 
         It can also be confusing.
 
+        - It can contain list.
+
       And it looks pretty weird.
 
 .. note::
@@ -264,6 +266,8 @@ It is possible to add admonitions into admonitions. Take an example:
       It's distracting.
 
     It can also be confusing.
+
+    - It can contain list.
 
   And it looks pretty weird.
 

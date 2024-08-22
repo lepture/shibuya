@@ -220,11 +220,11 @@
   --color-4: var(--todo-4);
 }
 
-.admonition p.admonition-title + p {
+.yue .admonition > * {
   margin-top: 0;
 }
 
-.admonition > :last-child {
+.yue .admonition > :last-child {
   margin-bottom: 0 !important;
 }
 
