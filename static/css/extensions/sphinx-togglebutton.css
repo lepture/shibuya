@@ -29,3 +29,7 @@
 .yue .toggle-details__container :last-child {
   margin-bottom: 0;
 }
+
+.yue .admonition.toggle-hidden .admonition-title ~ * {
+  margin-bottom: 0 !important;
+}
