@@ -5,6 +5,12 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2024.8.26
+---------
+
+- **Fix**: Fix sphinx-design grid css conflict with :ref:`sphinx-togglebutton`.
+- **New**: Add :ref:`buysellads` extension.
+
 2024.8.21
 ---------
 

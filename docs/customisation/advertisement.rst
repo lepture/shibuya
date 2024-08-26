@@ -40,6 +40,8 @@ The default publisher for **Ethical Ads** is ``readthedocs``, you can also use y
 
 Shibuya theme will display the Ethical Ads on the right sidebar.
 
+.. _buysellads:
+
 BuySellAds
 ----------
 
