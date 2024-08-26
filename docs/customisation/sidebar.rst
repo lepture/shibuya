@@ -168,31 +168,3 @@ just a few lines of configuration. Simply add the following to your Sphinx ``con
 With this configuration, Shibuya will automatically display your GitHub/Gitlab repository
 statistics in the right sidebar of your documentation pages, including the number of
 stars, and forks.
-
-Carbon Ads
-~~~~~~~~~~
-
-Shibuya has built-in native support for `Carbon Ads <https://www.carbonads.net/>`_. By defining
-the Carbon Ads credentials in ``conf.py``, Shibuya theme will display ads on the sidebar.
-
-.. code-block:: python
-
-    html_theme_options = {
-        # ...
-        "carbon_ads_code": "your-carbon-code",
-        "carbon_ads_placement": "your-carbon-placement",
-    }
-
-
-Ethical Ads
-~~~~~~~~~~~
-
-When using Read the Docs to host your documentation, Ethical Ads will be injected automatically.
-The default publisher for **Ethical Ads** is ``readthedocs``, you can also use your own publisher:
-
-.. code-block:: python
-
-    html_theme_options = {
-        # ...
-        "ethical_ads_publisher": "your-publisher-id",
-    }

@@ -96,5 +96,6 @@ footer, navbar, and sidebar.
     fonts
     sidebar
     languages
+    advertisement
     icons
     markdown
