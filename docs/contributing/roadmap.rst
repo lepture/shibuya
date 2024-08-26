@@ -42,6 +42,9 @@ Make sure it works well with other extensions. Currently integrated with:
 - :bdg-success:`DONE` :ref:`sphinxcontrib-mermaid`
 - :bdg-success:`DONE` :ref:`sphinx-sqlalchemy`
 - :bdg-success:`DONE` :ref:`sphinx-click`
+- :bdg-success:`DONE` :ref:`sphinx-click`
+- :bdg-success:`DONE` :ref:`sphinxcontrib-video`
+- :bdg-success:`DONE` :ref:`sphinxcontrib-youtube`
 
 Instant search
 --------------

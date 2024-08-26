@@ -183,11 +183,13 @@ Videos
 
 There is no built-in ``video`` directive for Sphinx. But you can use these extensions instead:
 
-- `sphinxcontrib-video <https://sphinxcontrib-video.readthedocs.io/>`_
-- `sphinxcontrib-youtube <https://sphinxcontrib-youtube.readthedocs.io/>`_
+.. _sphinxcontrib-video:
 
-Video
-~~~~~
+sphinxcontrib-video
+~~~~~~~~~~~~~~~~~~~
+
+- **Documentation**: https://sphinxcontrib-video.readthedocs.io/
+- **Source Code**: https://github.com/sphinx-contrib/video
 
 Here is an example of ``video`` directive:
 
@@ -196,14 +198,20 @@ Here is an example of ``video`` directive:
    .. code-block:: none
       :class: demo-code
 
-      .. video:: https://sphinxcontrib-video.readthedocs.io/en/latest/_images/video.mp4
+      .. video:: https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm
 
    .. container:: demo-result
 
-      .. video:: https://sphinxcontrib-video.readthedocs.io/en/latest/_images/video.mp4
+      .. video:: https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm
 
-YouTube
-~~~~~~~
+
+.. _sphinxcontrib-youtube:
+
+sphinxcontrib-youtube
+~~~~~~~~~~~~~~~~~~~~~
+
+- **Documentation**: https://sphinxcontrib-youtube.readthedocs.io/
+- **Source Code**: https://github.com/sphinx-contrib/youtube
 
 Here is an example of ``youtube`` directive:
 
@@ -234,7 +242,7 @@ We offer several container classes to decorate videos:
 
     .. container:: video-1
 
-      .. video:: https://sphinxcontrib-video.readthedocs.io/en/latest/_images/video.mp4
+      .. video:: https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm
 
 .. container:: video-1
 
@@ -243,7 +251,7 @@ We offer several container classes to decorate videos:
 
 .. container:: video-1
 
-  .. video:: https://sphinxcontrib-video.readthedocs.io/en/latest/_images/video.mp4
+  .. video:: https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm
 
 
 .. code-block:: ReST
@@ -255,7 +263,7 @@ We offer several container classes to decorate videos:
 
     .. container:: video-2
 
-      .. video:: https://sphinxcontrib-video.readthedocs.io/en/latest/_images/video.mp4
+      .. video:: https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm
 
 .. container:: video-2
 
@@ -264,4 +272,4 @@ We offer several container classes to decorate videos:
 
 .. container:: video-2
 
-  .. video:: https://sphinxcontrib-video.readthedocs.io/en/latest/_images/video.mp4
+  .. video:: https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm
