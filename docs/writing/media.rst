@@ -273,3 +273,18 @@ We offer several container classes to decorate videos:
 .. container:: video-2
 
   .. video:: https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm
+
+Audio
+-----
+
+There is no extension for audios, you can use ``raw`` directive with ``<audio>`` HTML tag.
+
+.. code-block:: ReST
+
+  .. raw:: html
+
+      <audio controls src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"></audio>
+
+.. raw:: html
+
+    <audio controls src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"></audio>
