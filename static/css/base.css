@@ -63,9 +63,11 @@ strong, em {
   border: 3px solid transparent;
 }
 
-.i-icon,
-.i-lucide,
-.i-simpleicons {
+iconify-icon {
+  vertical-align: middle;
+}
+
+.i-lucide {
   mask: var(--icon-url) no-repeat;
   mask-size: 100% 100%;
   width: 1em;

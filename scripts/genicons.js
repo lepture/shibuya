@@ -19,7 +19,7 @@ function buildIcons (prefix) {
   })
   css += '}\n'
   icons.forEach(key => {
-    css += `.i-icon.${key},.i-${prefix}.${key}{--icon-url:var(--${prefix}-${key}-url)}\n`
+    css += `.i-${prefix}.${key}{--icon-url:var(--${prefix}-${key}-url)}\n`
   })
   fs.writeFileSync(output, css)
 }
@@ -49,4 +49,3 @@ function encodeSvgForCss(svg) {
 }
 
 buildIcons('lucide')
-buildIcons('simpleicons')

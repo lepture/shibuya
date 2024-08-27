@@ -9,17 +9,17 @@
 <a class="js-repo-stats repo-stats flex items-center" href="{{ source_url }}"
   data-type="{{ source_type }}" data-user="{{ source_user }}" data-repo="{{ source_repo }}">
   <span class="w-8 flex items-center justify-around shrink-0 text-3xl">
-    <i class="i-simpleicons {{ source_type }}"></i>
+    <iconify-icon icon="simple-icons:{{ source_type }}"></iconify-icon>
   </span>
   <span class="flex-grow px-2 break-all">
     <span>{{ source_user }}/{{ source_repo }}</span>
     <span class="flex text-sm repo-stats-count">
       <span class="flex items-center pr-3">
-        <i class="i-lucide star"></i>
+        <iconify-icon icon="lucide:star"></iconify-icon>
         <strong class="js-repo-stars ml-1">0</strong>
       </span>
       <span class="flex items-center">
-        <i class="i-lucide git-fork"></i>
+        <iconify-icon icon="lucide:git-fork"></iconify-icon>
         <strong class="js-repo-forks ml-1">0</strong>
       </span>
     </span>

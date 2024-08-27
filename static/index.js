@@ -1,3 +1,4 @@
+import "iconify-icon"
 import "./js/menu"
 import "./js/banner"
 import "./js/theme"
