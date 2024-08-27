@@ -59,6 +59,11 @@
   border-top: 1px solid var(--sy-c-divider);
 }
 
+.sy-lside .rst-versions.shift-up .rst-other-versions {
+  max-height: calc(100vh - 300px);
+  overflow: auto;
+}
+
 .sy-lside .rst-other-versions dt {
   font-size: 0.68rem;
   font-weight: 500;
