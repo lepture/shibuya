@@ -5,6 +5,12 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2024.8.27
+---------
+
+- **Fix**: Update style for admonition, use block instead of flex.
+- **Fix**: Use ``<iconify-icon>`` web component for social icons.
+
 2024.8.26
 ---------
 
