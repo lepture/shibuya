@@ -1,5 +1,7 @@
 :description: Adding social networks of GitHub, Twitter, and etc. on your website.
 
+.. _social:
+
 Social network
 ==============
 
