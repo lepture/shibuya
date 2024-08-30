@@ -16,7 +16,7 @@ babel-init:
 	pybabel init -D sphinx -i src/shibuya/locale/sphinx.pot -d src/shibuya/locale -l ${lang}
 
 babel-update:
-	pybabel update -D sphinx -i src/shibuya/locale/sphinx.pot -d src/shibuya/locale
+	pybabel update -D sphinx -i src/shibuya/locale/sphinx.pot -d src/shibuya/locale -l ${lang}
 
 babel-compile:
 	pybabel compile -D sphinx -d src/shibuya/locale

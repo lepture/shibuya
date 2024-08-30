@@ -35,6 +35,8 @@ Everyone wants a good documentation. There may be mistakes
 or things missing in the documentation, you're welcome to
 help us improving the documentation.
 
+.. _development:
+
 Development
 -----------
 
@@ -101,4 +103,5 @@ Now, your environment is ready for development. Open your browser, and visit
 .. toctree::
    :hidden:
 
+   translations
    roadmap
