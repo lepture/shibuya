@@ -2,6 +2,7 @@ name: Release theme to PyPI
 
 permissions:
   contents: write
+  id-token: write
 
 on:
   push:
@@ -44,6 +45,7 @@ jobs:
   publish:
     environment:
       name: pypi-release
+      url: https://pypi.org/p/shibuya
 
     name: release to pypi
     needs: build
@@ -57,9 +59,6 @@ jobs:
 
     - name: Push build artifacts to PyPI
       uses: pypa/gh-action-pypi-publish@release/v1
-      with:
-        skip-existing: true
-        password: ${{ secrets.PYPI_API_TOKEN }}
 
   release:
     name: write release note
