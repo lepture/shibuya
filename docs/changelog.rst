@@ -5,6 +5,12 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2024.8.30
+---------
+
+- **Fix**: Update translation files.
+- **Fix**: Add ``min-height`` for RTD other versions.
+
 2024.8.27
 ---------
 
