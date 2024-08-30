@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-04-04 18:47+0900\n"
+"POT-Creation-Date: 2024-08-30 23:51+0900\n"
 "PO-Revision-Date: 2023-07-15 18:33+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -16,7 +16,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: src/shibuya/theme/shibuya/components/back-to-top.html:5
 msgid "Back to top"
@@ -43,19 +43,15 @@ msgstr "ホーム"
 msgid "Next"
 msgstr "次へ"
 
-#: src/shibuya/theme/shibuya/components/searchbox.html:3
-msgid "Search"
-msgstr "検索"
-
-#: src/shibuya/theme/shibuya/components/site-head.html:53
+#: src/shibuya/theme/shibuya/components/theme-switch.html:2
 msgid "Switch to light color mode"
 msgstr "ライトカラーモードに切り替える"
 
-#: src/shibuya/theme/shibuya/components/site-head.html:54
+#: src/shibuya/theme/shibuya/components/theme-switch.html:3
 msgid "Switch to dark color mode"
 msgstr "ダークカラーモードに切り替える"
 
-#: src/shibuya/theme/shibuya/components/site-head.html:55
+#: src/shibuya/theme/shibuya/components/theme-switch.html:4
 msgid "Switch to auto color mode"
 msgstr "オートカラーモードに切り替える"
 
@@ -63,6 +59,7 @@ msgstr "オートカラーモードに切り替える"
 msgid "Edit this page"
 msgstr "このページを編集"
 
-#: src/shibuya/theme/shibuya/sidebars/localtoc.html:3
+#: src/shibuya/theme/shibuya/sidebars/localtoc.html:2
 msgid "On this page"
 msgstr "このページについて"
+
