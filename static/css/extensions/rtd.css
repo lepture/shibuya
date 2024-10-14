@@ -1,0 +1,11 @@
+:root {
+  --readthedocs-search-font-family: var(--sy-f-text);
+  --readthedocs-search-color: var(--sy-c-text);
+  --readthedocs-search-input-background-color: var(--gray-3);
+  --readthedocs-search-content-border-color: var(--gray-4);
+  --readthedocs-search-content-background-color: var(--sy-c-background);
+  --readthedocs-search-result-section-color: var(--sy-c-text);
+  --readthedocs-search-result-section-subheading-color: var(--sy-c-heading);
+  --readthedocs-search-result-section-highlight-color: var(--accent-9);
+  --readthedocs-search-result-section-border-color: var(--sy-c-border);
+}
