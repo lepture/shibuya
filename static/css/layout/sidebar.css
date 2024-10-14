@@ -7,7 +7,7 @@
     top: var(--sy-s-offset-top);
   }
   .sy-lside .sy-scrollbar {
-    height: calc(100vh - var(--sy-s-offset-top));
+    max-height: calc(100vh - var(--sy-s-offset-top));
     overflow-x: hidden;
   }
 }
