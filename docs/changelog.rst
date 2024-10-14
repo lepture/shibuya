@@ -5,6 +5,11 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2024.10.15
+----------
+
+- **Fix**: Update integration with Read the Docs Addons.
+
 2024.10.14
 ----------
 

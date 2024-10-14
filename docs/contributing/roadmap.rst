@@ -53,4 +53,4 @@ When searching in the search input, show a popup with instant results.
 This could be done by the bellow extensions:
 
 - :bdg-success:`DONE` :ref:`docsearch`
-- :bdg-warning:`TODO` readthedocs-sphinx-search
+- :bdg-success:`DONE` Read the Docs Search Addons
