@@ -1,4 +1,5 @@
 import re
+import os
 from typing import Dict, Any
 import xml.etree.ElementTree as ET
 
@@ -47,9 +48,6 @@ def normalize_globaltoc(toc: str, depth: int = 0):
 
 
 def create_edit_source_link(context: Dict[str, Any]):
-    if context.get('READTHEDOCS'):
-        _normalize_readthedocs_context(context)
-
     source_type = context.get("source_type")
     source_user = context.get("source_user")
     source_repo = context.get("source_repo")
@@ -78,24 +76,9 @@ def create_edit_source_link(context: Dict[str, Any]):
     return edit_source_link
 
 
-def _normalize_readthedocs_context(context: Dict[str, Any]):
-    if context.get("display_github"):
-        source_type = "github"
-    elif context.get("display_gitlab"):
-        source_type = "gitlab"
-    elif context.get("display_bitbucket"):
-        source_type = "bitbucket"
-    else:
-        source_type = None
-
-    if source_type:
-        context["source_type"] = source_type
-        context["source_user"] = context.get(f"{source_type}_user")
-        context["source_repo"] = context.get(f"{source_type}_repo")
-        context["source_version"] = context.get(f"{source_type}_version")
-        context["source_docs_path"] = context.get("conf_py_path")
-
-    slug = context.get('slug')
-    if slug:
-        context["theme_readthedocs_url"] = f"https://readthedocs.org/projects/{slug}"
-    return source_type
+def generate_readthedocs_context():
+    context = {}
+    project_slug = os.environ.get("READTHEDOCS_PROJECT")
+    if project_slug:
+        context["theme_readthedocs_url"] = f"https://readthedocs.org/projects/{project_slug}"
+    return context

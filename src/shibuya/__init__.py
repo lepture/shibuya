@@ -1,3 +1,4 @@
+import os
 from typing import Dict, Any
 from pathlib import Path
 from sphinx.application import Sphinx
@@ -8,6 +9,7 @@ from .context import (
     normalize_localtoc,
     normalize_globaltoc,
     create_edit_source_link,
+    generate_readthedocs_context,
 )
 from ._sphinx import (
     WrapperPostTransform,
@@ -51,8 +53,9 @@ def _initialize_builder(app: Sphinx):
     app.add_css_file("print.css", media='print')
 
     if isinstance(app.builder, StandaloneHTMLBuilder):
-        edit_source_link = create_edit_source_link(app.config.html_context)
+        app.builder.templates.environment.globals.update(generate_readthedocs_context())
         app.builder.templates.environment.globals['expandtoc'] = normalize_globaltoc
+        edit_source_link = create_edit_source_link(app.config.html_context)
         app.builder.templates.environment.globals['edit_source_link'] = edit_source_link
         app.builder.highlighter.formatter = WrapLineFormatter
 

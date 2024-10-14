@@ -138,6 +138,11 @@ html_theme_options = {
 }
 
 if "READTHEDOCS" in os.environ:
+    html_context = {
+        "source_type": "github",
+        "source_user": "lepture",
+        "source_repo": "shibuya",
+    }
     html_theme_options["carbon_ads_code"] = ""
     html_theme_options["announcement"] = (
         "This documentation is hosted on Read the Docs only for testing. Please use "
@@ -154,37 +159,9 @@ else:
     }
 
 
-DEBUG_RTD = False
+DEBUG_RTD = True
 
 if DEBUG_RTD:
     os.environ['READTHEDOCS_PROJECT'] = 'shibuya'
-    os.environ['READTHEDOCS_VERSION'] = 'latest'
-    html_context["READTHEDOCS"] = True
-    html_context["slug"] = "shibuya"
-    html_css_files = [
-        "https://assets.readthedocs.org/static/css/readthedocs-doc-embed.css",
-        "https://assets.readthedocs.org/static/css/badge_only.css",
-    ]
-    html_js_files = [
-        "rtd-dummy.js",
-        (
-            "https://assets.readthedocs.org/static/javascript/readthedocs-doc-embed.js",
-            {"async": "async"},
-        ),
-    ]
-
+    html_context["DEBUG_READTHEDOCS"] = True
     html_theme_options["carbon_ads_code"] = None
-    html_context["current_version"] = "latest"
-    html_context["versions"] = [
-        ("latest", "/en/latest/"),
-        ("stable", "/en/stable/"),
-        ("v3", "/en/v3/"),
-        ("v2.0.5", "/en/v2.0.5/"),
-        ("v2.0.4", "/en/v2.0.4/"),
-        ("v2", "/en/v2/"),
-        ("v0.8.4", "/en/v0.8.4/"),
-    ]
-    html_context["languages"] = [
-        ("🇺🇸 English", "/en/%s/", "en"),
-        ("🇨🇳 中文", "/zh/%s/", "zh"),
-    ]
