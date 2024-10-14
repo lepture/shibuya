@@ -17,6 +17,10 @@
   padding: 0;
 }
 
+.yue .jupyter_container div.highlight {
+  background-color: var(--syntax-pre-bg);
+}
+
 .yue .jupyter_container div.cell_input {
   background-color: var(--syntax-pre-bg);
   border: 0;
