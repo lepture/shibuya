@@ -1,6 +1,6 @@
 :description: Shibuya Sphinx theme has special design for Jupyter sphinx extension.
 
-.. _sphinx-jupyter:
+.. _jupyter-sphinx:
 
 jupyter-sphinx
 ==============

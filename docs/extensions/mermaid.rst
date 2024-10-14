@@ -98,7 +98,7 @@ Here are some possible fixes:
 
       nbsphinx_requirejs_path = ''
 
-2. Mermaid extension is conflict with :ref:`sphinx-jupyter` too, you can
+2. Mermaid extension is conflict with :ref:`jupyter-sphinx` too, you can
    resolve the issue with ``jupyter_sphinx_require_url`` setting:
 
    .. code-block:: python

@@ -5,6 +5,12 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2024.10.14
+----------
+
+- **Fix**: Set ``max-height`` for the sidebar scroller.
+- **Fix**: Update background color for :ref:`jupyter-sphinx` code blocks, via :issue:`66`.
+
 2024.8.30
 ---------
 
@@ -147,7 +153,7 @@ Shibuya uses date based release segments. For pre-releases, it follows :pep:`440
 - **New**: Added style for ``sphinx-gallery`` and ``xarray``, via :issue:`20`.
 - **New**: Added **simple** and **landing** layout templates.
 - **New**: Added two image containers.
-- **Fix**: Improve style for ``sphinx-design``, ``sphinx-jupyter``, and etc.
+- **Fix**: Improve style for ``sphinx-design``, ``jupyter-sphinx``, and etc.
 - **Fix**: Improve style for search page.
 
 2023.10.26
@@ -245,7 +251,7 @@ Shibuya uses date based release segments. For pre-releases, it follows :pep:`440
 
 - Fix edit this page link
 - Fix nav links style
-- Update style for :ref:`sphinx-jupyter`
+- Update style for :ref:`jupyter-sphinx`
 
 2023.6.8
 --------

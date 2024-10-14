@@ -63,7 +63,7 @@ caused by conflicts with other sphinx extensions.
 
       nbsphinx_requirejs_path = ''
 
-2. If using together with :ref:`sphinx-jupyter` extension, you can
+2. If using together with :ref:`jupyter-sphinx` extension, you can
    resolve the issue with ``jupyter_sphinx_require_url`` setting:
 
    .. code-block:: python

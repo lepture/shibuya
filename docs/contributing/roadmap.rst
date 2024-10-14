@@ -34,7 +34,7 @@ Make sure it works well with other extensions. Currently integrated with:
 - :bdg-success:`DONE` :ref:`sphinx-copybutton`
 - :bdg-success:`DONE` :ref:`sphinx-tabs`
 - :bdg-success:`DONE` :ref:`sphinx-design`
-- :bdg-success:`DONE` :ref:`sphinx-jupyter`
+- :bdg-success:`DONE` :ref:`jupyter-sphinx`
 - :bdg-success:`DONE` :ref:`sphinx-togglebutton`
 - :bdg-success:`DONE` :ref:`nbsphinx`
 - :bdg-success:`DONE` :ref:`numpydoc`
