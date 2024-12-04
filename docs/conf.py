@@ -159,7 +159,7 @@ else:
     }
 
 
-DEBUG_RTD = True
+DEBUG_RTD = False
 
 if DEBUG_RTD:
     os.environ['READTHEDOCS_PROJECT'] = 'shibuya'
