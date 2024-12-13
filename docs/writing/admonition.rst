@@ -213,6 +213,23 @@ admonitions, but in Shibuya theme, they look like admonitions.
       .. versionchanged:: v2
          The ``jose`` module is moved out of Authlib_.
 
+``versionremoved``
+~~~~~~~~~~~~~~~~~~
+
+.. container:: demo
+
+   .. code-block:: none
+      :caption: versionremoved
+      :class: demo-code
+
+      .. versionremoved:: 4.0
+          The :py:func:`spam` function is more flexible, and should be used instead.
+
+   .. container:: demo-result
+
+      .. versionremoved:: 4.0
+          The :py:func:`spam` function is more flexible, and should be used instead.
+
 ``deprecated``
 ~~~~~~~~~~~~~~
 

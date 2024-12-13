@@ -69,6 +69,8 @@
   --versionadded-2: var(--green-9);
   --versionchanged-1: var(--amber-surface);
   --versionchanged-2: var(--amber-9);
+  --versionremoved-1: var(--red-surface);
+  --versionremoved-2: var(--red-9);
   --deprecated-1: var(--red-surface);
   --deprecated-2: var(--red-9);
 }
@@ -234,6 +236,7 @@ span.versionmodified {
 }
 div.versionadded,
 div.versionchanged,
+div.versionremoved,
 div.deprecated {
   position: relative;
   padding: 6px 1rem;
@@ -245,6 +248,7 @@ div.deprecated {
 
 div.versionadded:before,
 div.versionchanged:before,
+div.versionremoved:before,
 div.deprecated:before {
   position: absolute;
   content: var(--version-icon);
@@ -269,6 +273,11 @@ div.versionchanged {
   --color-2: var(--versionchanged-2);
   --version-icon: '%';
 }
+div.versionremoved {
+  --color-1: var(--versionremoved-1);
+  --color-2: var(--versionremoved-2);
+  --version-icon: '*';
+}
 div.deprecated {
   --color-1: var(--deprecated-1);
   --color-2: var(--deprecated-2);
@@ -276,6 +285,7 @@ div.deprecated {
 }
 div.versionadded > p,
 div.versionchanged > p,
+div.versionremoved > p,
 div.deprecated > p {
   margin: 0;
 }
