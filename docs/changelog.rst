@@ -5,6 +5,11 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2024.12.13
+----------
+
+- **Fix**: Add style for ``versionremoved`` directive.
+
 2024.10.15
 ----------
 
