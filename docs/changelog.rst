@@ -5,10 +5,17 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2023.12.15
+----------
+
+- **Fix**: Add ``min-height`` for ``main`` element, via :issue:`68`.
+- **Fix**: Set admonition block to be flex box, via :issue:`69`.
+- **Fix**: Update icons for version related directives.
+
 2024.12.13
 ----------
 
-- **Fix**: Add style for ``versionremoved`` directive.
+- **New**: Add style for ``versionremoved`` directive.
 
 2024.10.15
 ----------
