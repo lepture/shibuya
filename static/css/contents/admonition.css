@@ -65,14 +65,21 @@
   --todo-3: var(--bronze-9);
   --todo-4: var(--bronze-a11);
 
+  --versionadded-icon: var(--lucide-flame-url);
   --versionadded-1: var(--green-surface);
   --versionadded-2: var(--green-9);
+
+  --versionchanged-icon: var(--lucide-zap-url);
   --versionchanged-1: var(--amber-surface);
   --versionchanged-2: var(--amber-9);
+
+  --versionremoved-icon: var(--lucide-skull-url);
   --versionremoved-1: var(--red-surface);
   --versionremoved-2: var(--red-9);
-  --deprecated-1: var(--red-surface);
-  --deprecated-2: var(--red-9);
+
+  --deprecated-icon: var(--lucide-alert-url);
+  --deprecated-1: var(--orange-surface);
+  --deprecated-2: var(--orange-9);
 }
 
 .admonition {
@@ -253,7 +260,7 @@ div.versionchanged:before,
 div.versionremoved:before,
 div.deprecated:before {
   position: absolute;
-  content: var(--version-icon);
+  content: '';
   top: 10px;
   left: -12px;
   color: #fff;
@@ -265,25 +272,41 @@ div.deprecated:before {
   font: normal bold 14px/20px var(--sy-f-mono);
 }
 
+div.versionadded:after,
+div.versionchanged:after,
+div.versionremoved:after,
+div.deprecated:after {
+  position: absolute;
+  content: '';
+  top: 14px;
+  left: -8px;
+  mask: var(--icon-url) no-repeat;
+  mask-size: 100% 100%;
+  font-style: normal;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+}
+
 div.versionadded {
   --color-1: var(--versionadded-1);
   --color-2: var(--versionadded-2);
-  --version-icon: '#';
+  --icon-url: var(--versionadded-icon);
 }
 div.versionchanged {
   --color-1: var(--versionchanged-1);
   --color-2: var(--versionchanged-2);
-  --version-icon: '%';
+  --icon-url: var(--versionchanged-icon);
 }
 div.versionremoved {
   --color-1: var(--versionremoved-1);
   --color-2: var(--versionremoved-2);
-  --version-icon: '*';
+  --icon-url: var(--versionremoved-icon);
 }
 div.deprecated {
   --color-1: var(--deprecated-1);
   --color-2: var(--deprecated-2);
-  --version-icon: '!';
+  --icon-url: var(--deprecated-icon);
 }
 div.versionadded > p,
 div.versionchanged > p,
