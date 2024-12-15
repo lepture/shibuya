@@ -2,6 +2,10 @@
   scroll-margin-top: calc(var(--sy-s-offset-top) + 68px);
 }
 
+.sy-main {
+  min-height: calc(100vh - var(--sy-s-offset-top) - 80px);
+}
+
 .sy-content {
   max-width: 64rem;
   min-height: calc(100vh - var(--sy-s-offset-top) - 80px);
