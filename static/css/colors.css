@@ -157,32 +157,32 @@
 @import '@radix-ui/colors/white-alpha.css';
 
 :root {
-  --tomatot-contrast: white;
-  --redt-contrast: white;
-  --rubyt-contrast: white;
-  --crimsont-contrast: white;
-  --pinkt-contrast: white;
-  --plumt-contrast: white;
-  --purplet-contrast: white;
-  --violett-contrast: white;
-  --irist-contrast: white;
-  --indigot-contrast: white;
-  --bluet-contrast: white;
-  --cyant-contrast: white;
-  --tealt-contrast: white;
-  --jadet-contrast: white;
-  --greent-contrast: white;
-  --grasst-contrast: white;
-  --oranget-contrast: white;
-  --brownt-contrast: white;
-  --skyt-contrast: #1c2024; /* light mode slate 12 */
-  --mintt-contrast: #1a211e; /* light mode sage 12 */
-  --limet-contrast: #1d211c; /* light mode olive 12 */
-  --yellowt-contrast: #21201c; /* light mode sand 12 */
-  --ambert-contrast: #21201c; /* light mode sand 12 */
-  --goldt-contrast: white;
-  --bronzet-contrast: white;
-  --grayt-contrast: white;
+  --tomato-contrast: white;
+  --red-contrast: white;
+  --ruby-contrast: white;
+  --crimson-contrast: white;
+  --pink-contrast: white;
+  --plum-contrast: white;
+  --purple-contrast: white;
+  --violet-contrast: white;
+  --iris-contrast: white;
+  --indigo-contrast: white;
+  --blue-contrast: white;
+  --cyan-contrast: white;
+  --teal-contrast: white;
+  --jade-contrast: white;
+  --green-contrast: white;
+  --grass-contrast: white;
+  --orange-contrast: white;
+  --brown-contrast: white;
+  --sky-contrast: #1c2024; /* light mode slate 12 */
+  --mint-contrast: #1a211e; /* light mode sage 12 */
+  --lime-contrast: #1d211c; /* light mode olive 12 */
+  --yellow-contrast: #21201c; /* light mode sand 12 */
+  --amber-contrast: #21201c; /* light mode sand 12 */
+  --gold-contrast: white;
+  --bronze-contrast: white;
+  --gray-contrast: white;
 }
 
 :root,
@@ -344,7 +344,7 @@
   --accent-7: var(--tomato-7);
   --accent-8: var(--tomato-8);
   --accent-9: var(--tomato-9);
-  --accentt-contrast: var(--tomatot-contrast);
+  --accent-contrast: var(--tomato-contrast);
   --accent-10: var(--tomato-10);
   --accent-11: var(--tomato-11);
   --accent-12: var(--tomato-12);
@@ -375,7 +375,7 @@
   --accent-7: var(--red-7);
   --accent-8: var(--red-8);
   --accent-9: var(--red-9);
-  --accentt-contrast: var(--redt-contrast);
+  --accent-contrast: var(--red-contrast);
   --accent-10: var(--red-10);
   --accent-11: var(--red-11);
   --accent-12: var(--red-12);
@@ -406,7 +406,7 @@
   --accent-7: var(--ruby-7);
   --accent-8: var(--ruby-8);
   --accent-9: var(--ruby-9);
-  --accentt-contrast: var(--rubyt-contrast);
+  --accent-contrast: var(--ruby-contrast);
   --accent-10: var(--ruby-10);
   --accent-11: var(--ruby-11);
   --accent-12: var(--ruby-12);
@@ -437,7 +437,7 @@
   --accent-7: var(--crimson-7);
   --accent-8: var(--crimson-8);
   --accent-9: var(--crimson-9);
-  --accentt-contrast: var(--crimsont-contrast);
+  --accent-contrast: var(--crimson-contrast);
   --accent-10: var(--crimson-10);
   --accent-11: var(--crimson-11);
   --accent-12: var(--crimson-12);
@@ -468,7 +468,7 @@
   --accent-7: var(--pink-7);
   --accent-8: var(--pink-8);
   --accent-9: var(--pink-9);
-  --accentt-contrast: var(--pinkt-contrast);
+  --accent-contrast: var(--pink-contrast);
   --accent-10: var(--pink-10);
   --accent-11: var(--pink-11);
   --accent-12: var(--pink-12);
@@ -499,7 +499,7 @@
   --accent-7: var(--plum-7);
   --accent-8: var(--plum-8);
   --accent-9: var(--plum-9);
-  --accentt-contrast: var(--plumt-contrast);
+  --accent-contrast: var(--plum-contrast);
   --accent-10: var(--plum-10);
   --accent-11: var(--plum-11);
   --accent-12: var(--plum-12);
@@ -530,7 +530,7 @@
   --accent-7: var(--purple-7);
   --accent-8: var(--purple-8);
   --accent-9: var(--purple-9);
-  --accentt-contrast: var(--purplet-contrast);
+  --accent-contrast: var(--purple-contrast);
   --accent-10: var(--purple-10);
   --accent-11: var(--purple-11);
   --accent-12: var(--purple-12);
@@ -561,7 +561,7 @@
   --accent-7: var(--violet-7);
   --accent-8: var(--violet-8);
   --accent-9: var(--violet-9);
-  --accentt-contrast: var(--violett-contrast);
+  --accent-contrast: var(--violet-contrast);
   --accent-10: var(--violet-10);
   --accent-11: var(--violet-11);
   --accent-12: var(--violet-12);
@@ -592,7 +592,7 @@
   --accent-7: var(--iris-7);
   --accent-8: var(--iris-8);
   --accent-9: var(--iris-9);
-  --accentt-contrast: var(--irist-contrast);
+  --accent-contrast: var(--iris-contrast);
   --accent-10: var(--iris-10);
   --accent-11: var(--iris-11);
   --accent-12: var(--iris-12);
@@ -623,7 +623,7 @@
   --accent-7: var(--indigo-7);
   --accent-8: var(--indigo-8);
   --accent-9: var(--indigo-9);
-  --accentt-contrast: var(--indigot-contrast);
+  --accent-contrast: var(--indigo-contrast);
   --accent-10: var(--indigo-10);
   --accent-11: var(--indigo-11);
   --accent-12: var(--indigo-12);
@@ -654,7 +654,7 @@
   --accent-7: var(--blue-7);
   --accent-8: var(--blue-8);
   --accent-9: var(--blue-9);
-  --accentt-contrast: var(--bluet-contrast);
+  --accent-contrast: var(--blue-contrast);
   --accent-10: var(--blue-10);
   --accent-11: var(--blue-11);
   --accent-12: var(--blue-12);
@@ -685,7 +685,7 @@
   --accent-7: var(--cyan-7);
   --accent-8: var(--cyan-8);
   --accent-9: var(--cyan-9);
-  --accentt-contrast: var(--cyant-contrast);
+  --accent-contrast: var(--cyan-contrast);
   --accent-10: var(--cyan-10);
   --accent-11: var(--cyan-11);
   --accent-12: var(--cyan-12);
@@ -716,7 +716,7 @@
   --accent-7: var(--teal-7);
   --accent-8: var(--teal-8);
   --accent-9: var(--teal-9);
-  --accentt-contrast: var(--tealt-contrast);
+  --accent-contrast: var(--teal-contrast);
   --accent-10: var(--teal-10);
   --accent-11: var(--teal-11);
   --accent-12: var(--teal-12);
@@ -747,7 +747,7 @@
   --accent-7: var(--jade-7);
   --accent-8: var(--jade-8);
   --accent-9: var(--jade-9);
-  --accentt-contrast: var(--jadet-contrast);
+  --accent-contrast: var(--jade-contrast);
   --accent-10: var(--jade-10);
   --accent-11: var(--jade-11);
   --accent-12: var(--jade-12);
@@ -778,7 +778,7 @@
   --accent-7: var(--green-7);
   --accent-8: var(--green-8);
   --accent-9: var(--green-9);
-  --accentt-contrast: var(--greent-contrast);
+  --accent-contrast: var(--green-contrast);
   --accent-10: var(--green-10);
   --accent-11: var(--green-11);
   --accent-12: var(--green-12);
@@ -809,7 +809,7 @@
   --accent-7: var(--grass-7);
   --accent-8: var(--grass-8);
   --accent-9: var(--grass-9);
-  --accentt-contrast: var(--grasst-contrast);
+  --accent-contrast: var(--grass-contrast);
   --accent-10: var(--grass-10);
   --accent-11: var(--grass-11);
   --accent-12: var(--grass-12);
@@ -840,7 +840,7 @@
   --accent-7: var(--orange-7);
   --accent-8: var(--orange-8);
   --accent-9: var(--orange-9);
-  --accentt-contrast: var(--oranget-contrast);
+  --accent-contrast: var(--orange-contrast);
   --accent-10: var(--orange-10);
   --accent-11: var(--orange-11);
   --accent-12: var(--orange-12);
@@ -871,7 +871,7 @@
   --accent-7: var(--brown-7);
   --accent-8: var(--brown-8);
   --accent-9: var(--brown-9);
-  --accentt-contrast: var(--brownt-contrast);
+  --accent-contrast: var(--brown-contrast);
   --accent-10: var(--brown-10);
   --accent-11: var(--brown-11);
   --accent-12: var(--brown-12);
@@ -902,7 +902,7 @@
   --accent-7: var(--sky-7);
   --accent-8: var(--sky-8);
   --accent-9: var(--sky-9);
-  --accentt-contrast: var(--skyt-contrast);
+  --accent-contrast: var(--sky-contrast);
   --accent-10: var(--sky-10);
   --accent-11: var(--sky-11);
   --accent-12: var(--sky-12);
@@ -933,7 +933,7 @@
   --accent-7: var(--mint-7);
   --accent-8: var(--mint-8);
   --accent-9: var(--mint-9);
-  --accentt-contrast: var(--mintt-contrast);
+  --accent-contrast: var(--mint-contrast);
   --accent-10: var(--mint-10);
   --accent-11: var(--mint-11);
   --accent-12: var(--mint-12);
@@ -964,7 +964,7 @@
   --accent-7: var(--lime-7);
   --accent-8: var(--lime-8);
   --accent-9: var(--lime-9);
-  --accentt-contrast: var(--limet-contrast);
+  --accent-contrast: var(--lime-contrast);
   --accent-10: var(--lime-10);
   --accent-11: var(--lime-11);
   --accent-12: var(--lime-12);
@@ -995,7 +995,7 @@
   --accent-7: var(--yellow-7);
   --accent-8: var(--yellow-8);
   --accent-9: var(--yellow-9);
-  --accentt-contrast: var(--yellowt-contrast);
+  --accent-contrast: var(--yellow-contrast);
   --accent-10: var(--yellow-10);
   --accent-11: var(--yellow-11);
   --accent-12: var(--yellow-12);
@@ -1026,7 +1026,7 @@
   --accent-7: var(--amber-7);
   --accent-8: var(--amber-8);
   --accent-9: var(--amber-9);
-  --accentt-contrast: var(--ambert-contrast);
+  --accent-contrast: var(--amber-contrast);
   --accent-10: var(--amber-10);
   --accent-11: var(--amber-11);
   --accent-12: var(--amber-12);
@@ -1057,7 +1057,7 @@
   --accent-7: var(--gold-7);
   --accent-8: var(--gold-8);
   --accent-9: var(--gold-9);
-  --accentt-contrast: var(--goldt-contrast);
+  --accent-contrast: var(--gold-contrast);
   --accent-10: var(--gold-10);
   --accent-11: var(--gold-11);
   --accent-12: var(--gold-12);
@@ -1088,7 +1088,7 @@
   --accent-7: var(--bronze-7);
   --accent-8: var(--bronze-8);
   --accent-9: var(--bronze-9);
-  --accentt-contrast: var(--bronzet-contrast);
+  --accent-contrast: var(--bronze-contrast);
   --accent-10: var(--bronze-10);
   --accent-11: var(--bronze-11);
   --accent-12: var(--bronze-12);
@@ -1119,7 +1119,7 @@
   --accent-7: var(--gray-7);
   --accent-8: var(--gray-8);
   --accent-9: var(--gray-9);
-  --accentt-contrast: var(--grayt-contrast);
+  --accent-contrast: var(--gray-contrast);
   --accent-10: var(--gray-10);
   --accent-11: var(--gray-11);
   --accent-12: var(--gray-12);

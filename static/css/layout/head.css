@@ -6,7 +6,7 @@
   padding: 0.8rem 2rem;
   display: flex;
   align-items: center;
-  color: var(--sy-c-banner, var(--accentt-contrast));
+  color: var(--sy-c-banner, var(--accent-contrast));
   background-color: var(--sy-c-banner-bg, var(--accent-a11));
   z-index: 20;
 }
@@ -16,7 +16,7 @@
 }
 
 .announcement ::selection {
-  color: var(--sy-c-banner, var(--accentt-contrast));
+  color: var(--sy-c-banner, var(--accent-contrast));
 }
 
 .announcement-inner {

@@ -9,7 +9,7 @@ html.dark {
   --docsearch-muted-color: var(--sy-c-light);
   --docsearch-hit-color: var(--sy-c-text);
   --docsearch-hit-background: var(--sy-c-surface);
-  --docsearch-hit-active-color: var(--accentt-contrast);
+  --docsearch-hit-active-color: var(--accent-contrast);
   --docsearch-hit-shadow: inset 0 0 1px 0 var(--gray-a11);
   --docsearch-container-background: var(--sy-c-overlay);
 }

@@ -21,7 +21,7 @@
 }
 
 .back-to-top:hover {
-  color: var(--accentt-contrast);
+  color: var(--accent-contrast);
   background: var(--accent-9);
 }
 
