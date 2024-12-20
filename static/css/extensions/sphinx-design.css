@@ -24,12 +24,12 @@
   --sd-color-black-highlight: black;
   --sd-color-white-highlight: #d9d9d9;
 
-  --sd-color-primary-text: var(--accentt-contrast);
-  --sd-color-secondary-text: var(--goldt-contrast);
-  --sd-color-success-text: var(--greent-contrast);
-  --sd-color-info-text: var(--bluet-contrast);
-  --sd-color-warning-text: var(--oranget-contrast);
-  --sd-color-danger-text: var(--redt-contrast);
+  --sd-color-primary-text: var(--accent-contrast);
+  --sd-color-secondary-text: var(--gold-contrast);
+  --sd-color-success-text: var(--green-contrast);
+  --sd-color-info-text: var(--blue-contrast);
+  --sd-color-warning-text: var(--orange-contrast);
+  --sd-color-danger-text: var(--red-contrast);
   --sd-color-light-text: var(--sy-c-text);
   --sd-color-muted-text: #fff;
   --sd-color-dark-text: #fff;
