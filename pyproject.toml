@@ -4,7 +4,7 @@ description = "A clean, responsive, and customizable Sphinx documentation theme 
 dynamic = ["version"]
 readme = "README.md"
 
-requires-python = ">=3.7"
+requires-python = ">=3.8"
 dependencies = [
     "Sphinx"
 ]
@@ -25,6 +25,7 @@ classifiers = [
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "Operating System :: OS Independent",
     "Topic :: Documentation",
     "Topic :: Software Development :: Documentation",

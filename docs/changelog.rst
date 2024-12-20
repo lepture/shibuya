@@ -5,7 +5,12 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
-2023.12.15
+2024.12.20
+---------
+
+- **New**: Added integration with :ref:`sphinx-contributors`.
+
+2024.12.15
 ----------
 
 - **Fix**: Add ``min-height`` for ``main`` element, via :issue:`68`.
