@@ -78,6 +78,7 @@ Shibuya
     extensions/docsearch
     extensions/sphinx-click
     extensions/sphinx-sqlalchemy
+    extensions/sphinx-contributors
 
 .. toctree::
     :caption: Development

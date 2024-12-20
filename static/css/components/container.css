@@ -69,3 +69,7 @@
   border-color: var(--accent-9);
   background-color: var(--sy-c-background);
 }
+
+.container.rounded-image img {
+  border-radius: 99999px;
+}

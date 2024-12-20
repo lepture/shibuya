@@ -11,6 +11,7 @@ sphinxcontrib-youtube
 sphinxcontrib-mermaid
 sphinx-docsearch
 sphinx-click
+sphinx-contributors
 nbsphinx
 myst-parser
 numpy

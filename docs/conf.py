@@ -32,6 +32,7 @@ extensions = [
     "sphinxcontrib.youtube",
     "sphinx_click",
     "sphinx_sqlalchemy",
+    "sphinx_contributors",
 ]
 todo_include_todos = True
 jupyter_sphinx_thebelab_config = {
