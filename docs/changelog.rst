@@ -5,6 +5,11 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2024.12.21
+----------
+
+- **Fix**: Rename css variables from ``{name}t-contrast`` to ``{name}-contrast``, via :pull:`71`.
+
 2024.12.20
 ---------
 
