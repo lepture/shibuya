@@ -71,7 +71,7 @@ server with:
 
 .. code-block:: shell
 
-    python server.py
+    python serve.py
 
 Build static
 ~~~~~~~~~~~~

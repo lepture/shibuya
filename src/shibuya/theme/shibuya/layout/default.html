@@ -20,7 +20,7 @@
       <div class="sy-scrollbar p-6">
         {%- include "partials/globaltoc-above.html" %}
         <div class="globaltoc" data-expand-depth="{{ theme_globaltoc_expand_depth }}">
-          {%- set globaltoc = toctree(collapse=theme_toctree_collapse, titles_only=theme_toctree_titles_only, includehidden=theme_toctree_includehidden) -%}
+          {%- set globaltoc = toctree(collapse=theme_toctree_collapse, titles_only=theme_toctree_titles_only, includehidden=theme_toctree_includehidden, maxdepth=theme_navigation_depth) -%}
           {{ expandtoc(globaltoc, theme_globaltoc_expand_depth) }}
         </div>
       </div>
