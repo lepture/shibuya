@@ -24,6 +24,7 @@ The above configuration will only expand the first level of the global table of 
 Shibuya sphinx theme also provides other options to control the toctree_ function:
 
 - toctree_collapse: equals to ``collapse``, ``False`` by default.
+- toctree_maxdepth: equals to ``maxdepth``, ``4`` by default.
 - toctree_titles_only: equals to ``titles_only``, ``True`` by default
 - toctree_includehidden: equals to ``includehidden``, ``True`` by default
 
