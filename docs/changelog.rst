@@ -5,6 +5,11 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2025.1.29
+---------
+
+- **New**: Add ``toctree_maxdepth`` theme option, via :pull:`74`.
+
 2024.12.21
 ----------
 
