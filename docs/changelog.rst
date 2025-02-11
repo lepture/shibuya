@@ -5,6 +5,12 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+
+2025.2.11
+---------
+
+- **Fix**: Improve fonts for CJK, via :issue:`76`.
+
 2025.1.29
 ---------
 
