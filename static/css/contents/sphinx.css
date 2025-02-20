@@ -182,6 +182,10 @@ div.citation > p {
   text-align: center;
 }
 
+.yue section > img {
+  margin-bottom: 1rem;
+}
+
 .hlist td {
   vertical-align: top;
 }
