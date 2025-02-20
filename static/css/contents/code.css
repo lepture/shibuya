@@ -35,10 +35,14 @@ pre.literal-block {
   font-family: "Twemoji Country Flags", var(--sy-f-mono);
 }
 
+.highlight .gp,
+.highlight .linenos {
+  user-select: none;
+}
+
 .highlight .linenos {
   display: inline-block;
   box-shadow: -0.05rem 0 var(--syntax-linenos-divider) inset;
-  user-select: none;
   margin-right: .8rem;
   padding-right: .8rem;
   opacity: 0.6;
