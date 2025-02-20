@@ -6,6 +6,14 @@ Changelog
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
 
+2015.2.20
+---------
+
+- **Breaking**: Set default ``source_version`` config from ``master`` to ``main``.
+- **Fix**: Skip prompt when selecting code, via :pull:`80`.
+- **Fix**: Add bottom margin for admonition content, via :issue:`77`.
+- **Fix**: Add bottom margin for images.
+
 2025.2.14
 ---------
 
@@ -27,7 +35,7 @@ Shibuya uses date based release segments. For pre-releases, it follows :pep:`440
 - **Fix**: Rename css variables from ``{name}t-contrast`` to ``{name}-contrast``, via :pull:`71`.
 
 2024.12.20
----------
+----------
 
 - **New**: Added integration with :ref:`sphinx-contributors`.
 
