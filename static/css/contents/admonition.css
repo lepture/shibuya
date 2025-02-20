@@ -231,6 +231,7 @@
 
 .yue .admonition > * {
   margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .yue .admonition > :last-child {
