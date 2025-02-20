@@ -21,5 +21,6 @@ docs/_build
 
 node_modules/
 npm-debug.log*
+uv.lock
 
 src/shibuya/theme/shibuya/static/shibuya.*

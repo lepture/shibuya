@@ -60,7 +60,7 @@ Then install the Python requirements:
 
 .. code-block:: shell
 
-    pip install -r requirements.txt
+    pip install -r requirements-dev.lock
     pip install livereload
 
 Run dev server
