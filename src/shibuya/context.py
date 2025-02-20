@@ -52,7 +52,7 @@ def create_edit_source_link(context: Dict[str, Any]):
     source_user = context.get("source_user")
     source_repo = context.get("source_repo")
     source_docs_path = context.get("source_docs_path", "/docs/")
-    source_version = context.get("source_version", "master")
+    source_version = context.get("source_version", "main")
     source_edit_template = context.get("source_edit_template")
 
     def edit_source_link(filename: str) -> str:

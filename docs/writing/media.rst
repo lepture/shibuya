@@ -15,7 +15,7 @@ Images
     :target: https://pypi.python.org/pypi/shibuya
 .. image:: https://img.shields.io/pypi/l/shibuya?color=12A594&style=for-the-badge
     :alt: PyPI - License
-    :target: https://github.com/lepture/shibuya/blob/master/LICENSE
+    :target: https://github.com/lepture/shibuya/blob/main/LICENSE
 .. image:: https://img.shields.io/github/sponsors/lepture?color=8F76D6&style=for-the-badge
     :alt: GitHub Sponsors
     :target: https://github.com/sponsors/lepture
