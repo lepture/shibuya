@@ -1,0 +1,20 @@
+.sphinx-contributors .sphinx-contributors_contributor__username,
+.sphinx-contributors .sphinx-contributors_contributor__contributions {
+  margin: 0;
+}
+
+.sphinx-contributors.sphinx-contributors--avatars .sphinx-contributors_list {
+  justify-content: flex-start;
+  padding-left: 0;
+  gap: 1rem;
+}
+.sphinx-contributors--avatars .sphinx-contributors_contributor__username {
+  margin-top: 0.5rem;
+}
+.sphinx-contributors--avatars .sphinx-contributors_contributor__contributions {
+  font-size: 0.875rem;
+}
+.sphinx-contributors--avatars .sphinx-contributors_contributor__contributions:before {
+  content: '';
+  padding: 0;
+}

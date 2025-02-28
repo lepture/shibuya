@@ -38,4 +38,5 @@
 @import "./extensions/docsearch.css";
 @import "./extensions/sphinx-sqlalchemy.css";
 @import "./extensions/sphinx-togglebutton.css";
+@import "./extensions/sphinx-contributors.css";
 @import "./extensions/misc.css";
