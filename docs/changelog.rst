@@ -6,7 +6,12 @@ Changelog
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
 
-2015.2.20
+2025.2.28
+---------
+
+- **Fix**: Fix style for ``sphinx-contributors``.
+
+2025.2.20
 ---------
 
 - **Breaking**: Set default ``source_version`` config from ``master`` to ``main``.
