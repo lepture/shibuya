@@ -5,6 +5,10 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2025.3.24
+---------
+
+- **Fix**: Remove ``margin-top`` for ``dl.field-list``, via :issue:`81`.
 
 2025.2.28
 ---------
