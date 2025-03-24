@@ -32,6 +32,10 @@ dt.sig > em.property:first-child {
   color: var(--sig-property);
 }
 
+dl.field-list {
+  margin-top: 0;
+}
+
 dl.field-list a {
   font-weight: 400;
 }
