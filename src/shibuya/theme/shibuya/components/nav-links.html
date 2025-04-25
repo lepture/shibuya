@@ -1,8 +1,8 @@
-{%- macro expandURL(url) -%}
+{%- macro expandURL(url, resource=False) -%}
 {%- if url.startswith(('https://', 'http://')) -%}
 {{ url }}
 {%- else -%}
-{{ pathto(url) }}
+{{ pathto(url, resource=resource) }}
 {%- endif -%}
 {%- endmacro -%}
 
@@ -11,7 +11,7 @@
     {%- if link.children %}
       <li class="link">
         {%- if link.url -%}
-          <a href="{{ expandURL(link.url) }}">
+          <a href="{{ expandURL(link.url, link.resource) }}">
             <span>{{ link.title }}</span>
             <i class="i-lucide chevron-down"></i>
           </a>
@@ -24,12 +24,12 @@
         <ul>
           {%- for item in link.children -%}
             {%- if item.summary -%}
-              <li><a href="{{ expandURL(item.url) }}">
+              <li><a href="{{ expandURL(item.url, item.resource) }}">
                 <span>{{ item.title }}</span>
                 <small>{{ item.summary }}</small>
               </a></li>
             {%- else -%}
-              <li><a href="{{ expandURL(item.url) }}">{{ item.title }}</a></li>
+              <li><a href="{{ expandURL(item.url, item.resource) }}">{{ item.title }}</a></li>
             {%- endif -%}
           {%- endfor -%}
         </ul>
@@ -45,7 +45,7 @@
           </a>
         </li>
       {%- else -%}
-        <li class="link"><a href="{{ pathto(link.url) }}">{{ link.title }}</a></li>
+        <li class="link"><a href="{{ pathto(link.url, link.resource) }}">{{ link.title }}</a></li>
       {%- endif -%}
     {%- endif -%}
   {%- endfor -%}

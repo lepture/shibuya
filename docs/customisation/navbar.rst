@@ -105,6 +105,25 @@ You can add an extra ``external`` field to display an external link icon:
         ]
     }
 
+Resource link
+-------------
+
+You can add an extra ``resource`` field to prevent sphinx's built-in HTML builder
+to append html suffix:
+
+.. code-block:: python
+    :caption: conf.py
+
+    html_theme_options = {
+        "nav_links": [
+            {
+                "title": "Download",
+                "url": "_static/readme.pdf",
+                "resource": True,
+            },
+        ]
+    }
+
 Align nav links
 ---------------
 

@@ -5,6 +5,11 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2025.4.25
+---------
+
+- **New**: Add ``resource`` parameter to ``nav_links``, via :issue:`83`.
+
 2025.3.24
 ---------
 
