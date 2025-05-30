@@ -1,3 +1,11 @@
+{%- if meta and meta.hide_breadcrumbs == "true" -%}
+  {% set hide_breadcrumbs = True %}
+{%- elif theme_hide_breadcrumbs -%}
+  {% set hide_breadcrumbs = True %}
+{%- else -%}
+  {% set hide_breadcrumbs = False %}
+{%- endif -%}
+{%- if not hide_breadcrumbs %}
 <div class="sy-breadcrumbs" role="navigation">
   <div class="sy-breadcrumbs-inner flex items-center">
     <div class="md:hidden mr-3">
@@ -40,3 +48,4 @@
     </div>
   </div>
 </div>
+{%- endif -%}

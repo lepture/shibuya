@@ -115,3 +115,16 @@ rendering for code blocks on the current page.
 
 Indeed, as evident, the code blocks on this page are displayed
 in a dark theme.
+
+Breadcrumbs
+-----------
+
+Adding ``:hide_breadcrumbs: true`` meta tag to hide the breadcrumbs
+component on the current page.
+
+.. code-block:: none
+
+   :hide_breadcrumbs: true
+
+   Page title
+   ==========
