@@ -15,6 +15,6 @@
   },
   "dependencies": {
     "@radix-ui/colors": "^3.0.0",
-    "iconify-icon": "^2.1.0"
+    "iconify-icon": "^3.0.0"
   }
 }
