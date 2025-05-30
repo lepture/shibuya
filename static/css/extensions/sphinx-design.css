@@ -109,8 +109,8 @@
   color: var(--sy-c-link-hover);
 }
 
-.yue .sd-card a,
-.yue .sd-card a:hover {
+.yue .sd-card a.sd-hide-link-text,
+.yue .sd-card a.sd-hide-link-text:hover {
   border-bottom: 0;
 }
 
