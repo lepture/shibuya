@@ -79,6 +79,7 @@ Shibuya
     extensions/sphinx-click
     extensions/sphinx-sqlalchemy
     extensions/sphinx-contributors
+    extensions/sphinx-autoapi
 
 .. toctree::
     :caption: Development
