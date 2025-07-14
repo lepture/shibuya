@@ -14,15 +14,27 @@ It is the default documentation generator for Python projects.
 
 .. _Sphinx: https://www.sphinx-doc.org/
 
-pip install
------------
+package install
+---------------
 
 Shibuya is conveniently available as a Python package on PyPI and can be easily
-installed using pip.
+installed using pip and uv.
 
-.. code-block:: shell
+.. tab-set::
 
-    pip install shibuya
+    .. tab-item:: :iconify:`devicon:pypi` pip
+        :class-label: icon-pip
+
+        .. code-block:: shell
+
+            pip install shibuya
+
+    .. tab-item:: :iconify:`material-icon-theme:uv` uv
+        :class-label: icon-uv
+
+        .. code-block:: shell
+
+            uv add shibuya
 
 .. hint::
    If you're new to Sphinx, we recommend reading the

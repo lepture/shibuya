@@ -33,12 +33,14 @@ extensions = [
     "sphinx_click",
     "sphinx_sqlalchemy",
     "sphinx_contributors",
+    "sphinx_iconify",
 ]
 todo_include_todos = True
 jupyter_sphinx_thebelab_config = {
     'requestKernel': True,
 }
 jupyter_sphinx_require_url = ''
+iconify_script_url = ''
 nbsphinx_requirejs_path = ''
 sitemap_excludes = ['404/']
 
