@@ -5,6 +5,12 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2025.7.14
+---------
+
+- **New**: Add ``data-accent-color`` style for :ref:`sphinx-iconify`.
+- **New**: Add ``outline`` variant style for sphinx-design's tab-set.
+
 2025.4.25
 ---------
 

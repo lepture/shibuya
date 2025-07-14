@@ -1,4 +1,3 @@
-import os
 from typing import Dict, Any
 from pathlib import Path
 from sphinx.application import Sphinx
@@ -16,7 +15,7 @@ from ._sphinx import (
     WrapLineFormatter,
 )
 
-__version__ = "2025.5.30"
+__version__ = "2025.7.14"
 
 shibuya_version = __version__
 
