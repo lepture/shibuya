@@ -80,6 +80,7 @@ Shibuya
     extensions/sphinx-sqlalchemy
     extensions/sphinx-contributors
     extensions/sphinx-autoapi
+    extensions/sphinx-iconify
 
 .. toctree::
     :caption: Development

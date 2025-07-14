@@ -13,3 +13,7 @@
 .yue .xr-array-data pre {
   margin: 0;
 }
+
+.yue iconify-icon[data-accent-color] {
+  color: var(--accent-9);
+}

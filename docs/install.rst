@@ -1,5 +1,7 @@
 :description: Here is the guide on how to install Shibuya Sphinx theme.
 
+.. _install:
+
 Installation
 ============
 
@@ -33,7 +35,7 @@ installed using pip and uv.
 
         .. code-block:: shell
 
-            uv add shibuya
+            uv add --dev shibuya
 
 .. hint::
    If you're new to Sphinx, we recommend reading the
