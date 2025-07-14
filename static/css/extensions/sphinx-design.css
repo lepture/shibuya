@@ -70,10 +70,21 @@
 }
 
 /* tabs */
+.yue .sd-tab-set.outline {
+  border: 1px solid var(--sy-c-border);
+  border-radius: 4px;
+  overflow: auto;
+}
+
 .yue .sd-tab-set > label {
   padding: 1rem 0.25rem 0.5rem;
   font-size: 0.84rem;
   font-weight: 500;
+}
+
+.yue .sd-tab-set.outline > label {
+  padding-top: 0.5rem;
+  margin-left: 1rem;
 }
 
 .yue .sd-tab-set > label ~ label {

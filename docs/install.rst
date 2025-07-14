@@ -21,16 +21,15 @@ Shibuya is conveniently available as a Python package on PyPI and can be easily
 installed using pip and uv.
 
 .. tab-set::
+    :class: outline
 
     .. tab-item:: :iconify:`devicon:pypi` pip
-        :class-label: icon-pip
 
         .. code-block:: shell
 
             pip install shibuya
 
     .. tab-item:: :iconify:`material-icon-theme:uv` uv
-        :class-label: icon-uv
 
         .. code-block:: shell
 
