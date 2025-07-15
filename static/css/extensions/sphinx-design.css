@@ -106,7 +106,12 @@
   color: var(--sy-c-text);
 }
 
-.yue .sd-card-title > svg {
+.yue .sd-card-title a {
+  border-bottom: 0;
+}
+
+.yue .sd-card-title > svg,
+.yue .sd-card-title > iconify-icon {
   position: relative;
   top: -1px;
   margin-right: 0.25rem;
