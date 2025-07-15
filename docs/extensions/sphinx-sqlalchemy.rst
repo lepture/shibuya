@@ -28,7 +28,7 @@ Add ``sphinx_sqlalchemy`` to your ``conf.py``:
 Example
 -------
 
-.. code-block:: none
+.. code-block:: reST
 
     .. sqla-model:: sqla_models.User
 

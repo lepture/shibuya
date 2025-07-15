@@ -27,7 +27,7 @@ Here is an example of the ``note`` admonition:
 
 .. container:: demo
 
-   .. code-block:: none
+   .. code-block:: reST
       :caption: note
       :class: demo-code
 
@@ -92,7 +92,7 @@ Generic admonition
 
 A generic ``.. admonition::`` directive accepts a custom title:
 
-.. code-block:: none
+.. code-block:: reST
 
     .. admonition:: Admonition title here
 
@@ -102,7 +102,7 @@ Here is an example of the generic admonition:
 
 .. container:: demo
 
-   .. code-block:: none
+   .. code-block:: reST
       :caption: generic admonition
       :class: demo-code
 
@@ -123,7 +123,7 @@ above admonitions:
 
 .. container:: demo
 
-   .. code-block:: none
+   .. code-block:: reST
       :caption: custom admonition
       :class: demo-code
 
@@ -184,7 +184,7 @@ admonitions, but in Shibuya theme, they look like admonitions.
 
 .. container:: demo
 
-   .. code-block:: none
+   .. code-block:: reST
       :caption: versionadded
       :class: demo-code
 
@@ -201,7 +201,7 @@ admonitions, but in Shibuya theme, they look like admonitions.
 
 .. container:: demo
 
-   .. code-block:: none
+   .. code-block:: reST
       :caption: versionchanged
       :class: demo-code
 
@@ -218,7 +218,7 @@ admonitions, but in Shibuya theme, they look like admonitions.
 
 .. container:: demo
 
-   .. code-block:: none
+   .. code-block:: reST
       :caption: versionremoved
       :class: demo-code
 
@@ -235,7 +235,7 @@ admonitions, but in Shibuya theme, they look like admonitions.
 
 .. container:: demo
 
-   .. code-block:: none
+   .. code-block:: reST
       :caption: deprecated
       :class: demo-code
 
@@ -252,7 +252,7 @@ Nesting admonitions
 
 It is possible to add admonitions into admonitions. Take an example:
 
-.. code-block:: none
+.. code-block:: reST
 
    .. note::
 

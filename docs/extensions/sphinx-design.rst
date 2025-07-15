@@ -277,9 +277,37 @@ Article Info
 Only with Shibuya
 -----------------
 
+Outline tab-set
+~~~~~~~~~~~~~~~
+
+By adding a class of ``outline``, a tab-set would be rendered:
+
+.. code-block:: reST
+
+    .. tab-set::
+        :class: outline
+
+.. tab-set::
+    :class: outline
+
+    .. tab-item:: :iconify:`devicon:pypi` pip
+
+        .. code-block:: shell
+
+            pip install shibuya
+
+    .. tab-item:: :iconify:`material-icon-theme:uv` uv
+
+        .. code-block:: shell
+
+            uv add --dev shibuya
+
+Surface grid cards
+~~~~~~~~~~~~~~~~~~
+
 By adding a class of ``surface``, a card would be rendered:
 
-.. code-block:: none
+.. code-block:: reST
 
     .. grid:: 1 1 2 3
         :class-row: surface

@@ -35,7 +35,7 @@ Description
 A description meta tag provides a summary of the current page
 content, enhancing both SEO and social sharing.
 
-.. code-block:: none
+.. code-block:: reST
 
    :description: A description about this page.
 
@@ -57,7 +57,7 @@ Cover
 Utilize the ``:cover:`` tag to embed a sizable image,
 creating a visually impactful image card on X (Twitter).
 
-.. code-block:: none
+.. code-block:: reST
 
    :cover: https://example.com/a-big-cover-image.png
 
@@ -80,7 +80,7 @@ In addition to ``:cover:``, if you prefer to showcase a smaller
 image rather than a large cover, you can employ the ``:image:``
 meta tag.
 
-.. code-block:: none
+.. code-block:: reST
 
    :image: https://example.com/a-squared-image.png
 
@@ -106,7 +106,7 @@ Dark code
 Apply ``:dark_code: true`` meta tag to enable dark mode
 rendering for code blocks on the current page.
 
-.. code-block:: none
+.. code-block:: reST
 
    :dark_code: true
 
@@ -122,7 +122,7 @@ Breadcrumbs
 Adding ``:hide_breadcrumbs: true`` meta tag to hide the breadcrumbs
 component on the current page.
 
-.. code-block:: none
+.. code-block:: reST
 
    :hide_breadcrumbs: true
 

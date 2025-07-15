@@ -8,7 +8,7 @@ Code blocks
 
 The ``code-block`` directive is defined by Sphinx, the syntax looks like:
 
-.. code-block:: none
+.. code-block:: reST
 
     .. code-block:: language
        :linenos:
@@ -38,7 +38,7 @@ The ``code-block`` directive accepts a program language after its directive name
 
 .. container:: demo
 
-   .. code-block:: none
+   .. code-block:: reST
       :caption: Highlight with a language
       :class: demo-code
 
@@ -150,7 +150,7 @@ used.
 
 .. _code: https://docutils.sourceforge.io/docs/ref/rst/directives.html#code
 
-.. code-block:: none
+.. code-block:: reST
 
    .. code:: python
 

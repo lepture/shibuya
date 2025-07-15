@@ -27,7 +27,7 @@ A simple image with ``image`` directive:
 
 .. container:: demo
 
-   .. code-block:: none
+   .. code-block:: reST
       :class: demo-code
 
       .. image:: /_static/images/cat.jpg
@@ -88,7 +88,7 @@ if ``figure`` directive will be converted to ``<figcaption>``.
 
 .. container:: demo
 
-   .. code-block:: none
+   .. code-block:: reST
       :caption: Image with a caption
       :class: demo-code
 
@@ -114,7 +114,7 @@ We offer several container classes to decorate images:
 
 .. container:: demo
 
-   .. code-block:: none
+   .. code-block:: reST
       :class: demo-code
 
       .. container:: image-1
@@ -130,7 +130,7 @@ We offer several container classes to decorate images:
 
 .. container:: demo
 
-   .. code-block:: none
+   .. code-block:: reST
       :class: demo-code
 
       .. container:: image-2
@@ -152,7 +152,7 @@ example below, it will show a dog in light mode and a cat in dark mode.
 
 .. container:: demo
 
-   .. code-block:: none
+   .. code-block:: reST
       :caption: light and dark mode images
       :class: demo-code
 
@@ -195,14 +195,16 @@ Here is an example of ``video`` directive:
 
 .. container:: demo
 
-   .. code-block:: none
-      :class: demo-code
+    .. code-block:: reST
+        :class: demo-code
 
-      .. video:: https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm
+        .. video:: https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm
+            :align: default
 
-   .. container:: demo-result
+    .. container:: demo-result
 
-      .. video:: https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm
+        .. video:: https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm
+            :align: default
 
 
 .. _sphinxcontrib-youtube:
@@ -217,7 +219,7 @@ Here is an example of ``youtube`` directive:
 
 .. container:: demo
 
-   .. code-block:: none
+   .. code-block:: reST
       :class: demo-code
 
       .. youtube:: j2BdNDTlWbo

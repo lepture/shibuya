@@ -8,7 +8,7 @@ Here shows the results of math rendering.
 Inline math
 -----------
 
-.. code-block:: none
+.. code-block:: reST
 
     Here is an equation: :math:`(a + b)^2 = a^2 + 2ab + b^2`.
 
@@ -18,7 +18,7 @@ Here is an equation: :math:`(a + b)^2 = a^2 + 2ab + b^2`.
 Block math
 ----------
 
-.. code-block:: none
+.. code-block:: reST
 
     .. math::
         :label: block math label
@@ -34,7 +34,7 @@ Block math
 
     (a - b)^2 = a^2 - 2ab + b^2
 
-.. code-block:: none
+.. code-block:: reST
 
     .. math::
         :nowrap:

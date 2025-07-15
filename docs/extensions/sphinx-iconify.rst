@@ -73,11 +73,14 @@ for the "package install" part:
 
             uv add --dev shibuya
 
+Only with Shibuya
+-----------------
+
 Since shibuya theme has built-in accent colors, it is also possible to
 decorate the icon :iconify:`simple-icons:python data-accent-color=indigo`
 with a ``data-accent-color`` attribute:
 
-.. code-block:: none
+.. code-block:: reST
 
     :iconify:`simple-icons:python data-accent-color=indigo`
 

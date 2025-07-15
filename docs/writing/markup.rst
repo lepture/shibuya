@@ -50,7 +50,7 @@ Interpreted text is text that is meant to be related, indexed,
 linked, summarized, or otherwise processed. It is usually used
 together with a **role**:
 
-.. code-block:: none
+.. code-block:: reST
 
     :{role}:`interpreted text`
 
@@ -121,7 +121,7 @@ Sidebar
 
     Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
-    .. image:: https://source.unsplash.com/200x200/daily?cute+puppy
+    .. image:: /_static/icon-light.svg
 
     Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
@@ -164,7 +164,7 @@ Footnotes
 
 There are four ways to create a footnote item:
 
-.. code-block:: none
+.. code-block:: reST
 
    a whole decimal number consisting of one or more digits, like [1]_
 
