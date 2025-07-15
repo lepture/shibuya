@@ -117,8 +117,10 @@ The ``landing`` layout is typically used for the home page
 
     Discover the appearance of the landing page by visiting the
     `Shibuya theme's homepage </>`_. Source code can be found on
-    `GitHub (index.rst)`_.
+    `GitHub (index.rst)`_. Note that the grid layout and cards 
+    require the `sphinx_design` package and extension.
 
+.. _`sphinx_design`: https://sphinx-design.readthedocs.io/en/latest/
 .. _`GitHub (index.rst)`: https://github.com/lepture/shibuya/blob/main/docs/index.rst
 
 This template offers a special container for buttons:
