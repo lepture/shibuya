@@ -8,9 +8,22 @@ in Markdown using the MyST parser for Sphinx.
 To enable Markdown support in your Sphinx documentation, you need to
 install the `myst-parser` package. You can do this using pip:
 
+::::{tab-set}
+:class: outline
+
+:::{tab-item} {iconify}`devicon:pypi` pip
 ```bash
 pip install myst-parser
 ```
+:::
+
+:::{tab-item} {iconify}`material-icon-theme:uv` uv
+```bash
+uv add --dev myst-parser
+```
+:::
+
+::::
 
 ## MyST
 

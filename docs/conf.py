@@ -36,6 +36,7 @@ extensions = [
     "sphinx_iconify",
 ]
 todo_include_todos = True
+myst_enable_extensions = ["colon_fence"]
 jupyter_sphinx_thebelab_config = {
     'requestKernel': True,
 }
