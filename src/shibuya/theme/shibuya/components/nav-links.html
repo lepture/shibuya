@@ -11,17 +11,17 @@
     {%- if link.children %}
       <li class="link">
         {%- if link.url -%}
-          <a href="{{ expandURL(link.url, link.resource) }}">
+          <a class="js-menu" href="{{ expandURL(link.url, link.resource) }}" id="nav-trigger-{{ loop.index }}" aria-controls="nav-children-{{ loop.index }}">
             <span>{{ link.title }}</span>
             <i class="i-lucide chevron-down"></i>
           </a>
         {%- else -%}
-          <button type="button">
+          <button class="js-menu" type="button" id="nav-trigger-{{ loop.index }}" aria-controls="nav-children-{{ loop.index }}">
             <span>{{ link.title }}</span>
             <i class="i-lucide chevron-down"></i>
           </button>
         {%- endif %}
-        <ul>
+        <ul id="nav-children-{{ loop.index }}" aria-labelledby="nav-trigger-{{ loop.index }}">
           {%- for item in link.children -%}
             {%- if item.summary -%}
               <li><a href="{{ expandURL(item.url, item.resource) }}">

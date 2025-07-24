@@ -134,7 +134,7 @@
 }
 
 @media (max-width: 767px) {
-  body[data-expanded-headnav="true"] {
+  body[data-expanded*="head-nav"] {
     overflow: hidden;
   }
 
@@ -153,7 +153,7 @@
     overflow-y: auto;
   }
 
-  .sy-head-nav._expanded {
+  .sy-head-nav[aria-hidden="false"] {
     display: block;
   }
 
@@ -251,6 +251,7 @@
     max-width: 320px;
   }
 
+  .sy-head-links .link > ul[aria-hidden="false"],
   .sy-head-links .link:hover > ul {
     height: auto;
     visibility: visible;
