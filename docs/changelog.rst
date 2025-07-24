@@ -5,6 +5,12 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2025.7.24
+---------
+
+- **Fix**: Improve accessibility for nav links, you can now using keyboard to open sub nav links.
+- **Fix**: Update sphinx-design's style for iconify-icon.
+
 2025.7.14
 ---------
 
