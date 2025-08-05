@@ -32,3 +32,8 @@
 .yue button.copybtn.success:after {
   color: var(--green-a10);
 }
+
+.code-block-caption + div > .highlight .copybtn {
+  top: -2em;
+  opacity: 0.5;
+}
