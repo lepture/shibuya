@@ -1,0 +1,4 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@source "../../src/shibuya/theme/shibuya";
