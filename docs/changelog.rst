@@ -5,6 +5,14 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2025.8.16
+---------
+
+- **Update**: Use tailwindcss v4.
+- **Fix**: Improve copybutton's position in code blocks.
+- **Fix**: Improve style for sphinx-contributors.
+- **Fix**: Fix JS errors when scrolling on landing page.
+
 2025.7.24
 ---------
 
