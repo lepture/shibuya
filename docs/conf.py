@@ -167,5 +167,4 @@ DEBUG_RTD = False
 
 if DEBUG_RTD:
     os.environ['READTHEDOCS_PROJECT'] = 'shibuya'
-    html_context["DEBUG_READTHEDOCS"] = True
     html_theme_options["carbon_ads_code"] = None

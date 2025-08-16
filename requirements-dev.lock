@@ -12,26 +12,27 @@ certifi==2025.7.14
 cffi==1.17.1 ; implementation_name == 'pypy'
 charset-normalizer==3.4.2
 click==8.1.8 ; python_full_version < '3.10'
-click==8.2.1 ; python_full_version >= '3.10'
+click==8.2.2 ; python_full_version >= '3.10'
 colorama==0.4.6 ; sys_platform == 'win32'
-comm==0.2.2
+comm==0.2.3
 contourpy==1.3.0 ; python_full_version < '3.10'
-contourpy==1.3.2 ; python_full_version >= '3.10'
+contourpy==1.3.2 ; python_full_version == '3.10.*'
+contourpy==1.3.3 ; python_full_version >= '3.11'
 cycler==0.12.1
-debugpy==1.8.14
+debugpy==1.8.15
 decorator==5.2.1
 defusedxml==0.7.1
 docutils==0.21.2
 exceptiongroup==1.3.0 ; python_full_version < '3.11'
 executing==2.2.0
 fastjsonschema==2.21.1
-fonttools==4.58.5
+fonttools==4.59.0
 greenlet==3.2.3 ; (python_full_version < '3.14' and platform_machine == 'AMD64') or (python_full_version < '3.14' and platform_machine == 'WIN32') or (python_full_version < '3.14' and platform_machine == 'aarch64') or (python_full_version < '3.14' and platform_machine == 'amd64') or (python_full_version < '3.14' and platform_machine == 'ppc64le') or (python_full_version < '3.14' and platform_machine == 'win32') or (python_full_version < '3.14' and platform_machine == 'x86_64')
 idna==3.10
 imagesize==1.4.1
 importlib-metadata==8.7.0 ; python_full_version < '3.10'
 importlib-resources==6.5.2 ; python_full_version < '3.10'
-ipykernel==6.29.5
+ipykernel==6.30.0
 ipython==8.18.1 ; python_full_version < '3.10'
 ipython==8.37.0 ; python_full_version == '3.10.*'
 ipython==9.4.0 ; python_full_version >= '3.11'
@@ -39,7 +40,7 @@ ipython-pygments-lexers==1.1.1 ; python_full_version >= '3.11'
 ipywidgets==8.1.7
 jedi==0.19.2
 jinja2==3.1.6
-jsonschema==4.24.0
+jsonschema==4.25.0
 jsonschema-specifications==2025.4.1
 jupyter-client==8.6.3
 jupyter-core==5.8.1
@@ -51,7 +52,7 @@ kiwisolver==1.4.8 ; python_full_version >= '3.10'
 markdown-it-py==3.0.0
 markupsafe==3.0.2
 matplotlib==3.9.4 ; python_full_version < '3.10'
-matplotlib==3.10.3 ; python_full_version >= '3.10'
+matplotlib==3.10.5 ; python_full_version >= '3.10'
 matplotlib-inline==0.1.7
 mdit-py-plugins==0.4.2
 mdurl==0.1.2
@@ -65,7 +66,7 @@ nbsphinx==0.9.7
 nest-asyncio==1.6.0
 numpy==2.0.2 ; python_full_version < '3.10'
 numpy==2.2.6 ; python_full_version == '3.10.*'
-numpy==2.3.1 ; python_full_version >= '3.11'
+numpy==2.3.2 ; python_full_version >= '3.11'
 numpydoc==1.9.0
 packaging==25.0
 pandas==2.3.1
@@ -83,7 +84,7 @@ pygments==2.19.2
 pyparsing==3.2.3
 python-dateutil==2.9.0.post0
 pytz==2025.2
-pywin32==310 ; platform_python_implementation != 'PyPy' and sys_platform == 'win32'
+pywin32==311 ; platform_python_implementation != 'PyPy' and sys_platform == 'win32'
 pyyaml==6.0.2
 pyzmq==27.0.0
 referencing==0.36.2
@@ -99,7 +100,7 @@ sphinx-contributors==0.2.7
 sphinx-copybutton==0.5.2
 sphinx-design==0.6.1
 sphinx-docsearch==0.0.8
-sphinx-iconify==0.1.0
+sphinx-iconify==0.2.0
 sphinx-last-updated-by-git==0.3.8
 sphinx-sitemap==2.7.2
 sphinx-sqlalchemy==0.3.0
@@ -113,7 +114,7 @@ sphinxcontrib-qthelp==2.0.0
 sphinxcontrib-serializinghtml==2.0.0
 sphinxcontrib-video==0.4.1
 sphinxcontrib-youtube==1.4.1
-sqlalchemy==2.0.41
+sqlalchemy==2.0.42
 stack-data==0.6.3
 tinycss2==1.4.0
 tomli==2.2.1 ; python_full_version < '3.11'
