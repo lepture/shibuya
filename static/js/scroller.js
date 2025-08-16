@@ -60,9 +60,11 @@ if (backToTop) {
   })
 }
 
-window.addEventListener('scroll', onScroll)
-window.addEventListener('DOMContentLoaded', () => {
-  measureScrollMarginTop()
-  trackLocalToc()
-})
-window.addEventListener('resize', measureScrollMarginTop)
+if (document.querySelector('.localtoc')) {
+  window.addEventListener('scroll', onScroll)
+  window.addEventListener('DOMContentLoaded', () => {
+    measureScrollMarginTop()
+    trackLocalToc()
+  })
+  window.addEventListener('resize', measureScrollMarginTop)
+}
