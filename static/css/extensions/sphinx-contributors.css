@@ -1,3 +1,13 @@
+.sphinx-contributors {
+  container-name: contributors;
+  container-type: inline-size;
+}
+
+.sphinx-contributors .sphinx-contributors_list__item {
+  padding: 0;
+  margin: 0;
+}
+
 .sphinx-contributors .sphinx-contributors_contributor__username,
 .sphinx-contributors .sphinx-contributors_contributor__contributions {
   margin: 0;
@@ -5,8 +15,9 @@
 
 .sphinx-contributors.sphinx-contributors--avatars .sphinx-contributors_list {
   justify-content: flex-start;
-  padding-left: 0;
-  gap: 1rem;
+  padding: 0;
+  row-gap: 1rem;
+  column-gap: 1rem;
 }
 .sphinx-contributors--avatars .sphinx-contributors_contributor__username {
   margin-top: 0.5rem;
@@ -17,4 +28,42 @@
 .sphinx-contributors--avatars .sphinx-contributors_contributor__contributions:before {
   content: '';
   padding: 0;
+}
+
+.sphinx-contributors--avatars .sphinx-contributors_contributor {
+  align-items: center;
+}
+
+@container contributors (max-width: 800px) {
+  .sphinx-contributors.sphinx-contributors--avatars .sphinx-contributors_list {
+    column-gap: 0;
+  }
+
+  .sphinx-contributors--avatars .sphinx-contributors_list__item {
+    flex-basis: 25%;
+  }
+}
+
+@container contributors (max-width: 700px) {
+  .sphinx-contributors--avatars img.sphinx-contributors_contributor__image {
+    width: 120px;
+  }
+}
+
+@container contributors (max-width: 600px) {
+  .sphinx-contributors--avatars .sphinx-contributors_list__item {
+    flex-basis: 33.33%;
+  }
+}
+
+@container contributors (max-width: 500px) {
+  .sphinx-contributors--avatars img.sphinx-contributors_contributor__image {
+    width: 120px;
+  }
+}
+
+@container contributors (max-width: 400px) {
+  .sphinx-contributors--avatars .sphinx-contributors_list__item {
+    flex-basis: 50%;
+  }
 }
