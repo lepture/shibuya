@@ -4,28 +4,36 @@ from pygments.style import Style
 from sphinx.highlighting import PygmentsBridge
 
 
-class WrapLineFormatter(HtmlFormatter):
-    def __init__(self, **options):
-        options.setdefault("linespans", 1)
-        super().__init__(**options)
-
-    def _wrap_linespans(self, inner):
-        i = self.linenostart - 1
-        for t, line in inner:
-            if t:
-                i += 1
-                yield 1, '<span data-line="%d">%s</span>' % (i, line)
-            else:
-                yield 0, line
-
-
 class ShibuyaPygmentsBridge(PygmentsBridge):
-    html_formatter = WrapLineFormatter
     dark_style_name = "a11y-dark"
 
+    @classmethod
+    def _wrap_line_html_formatter(cls):
+        class WrapLineFormatter(cls.html_formatter):
+            def __init__(self, **options):
+                options.setdefault("linespans", 1)
+                super().__init__(**options)
+
+            def _wrap_linespans(self, inner):
+                i = self.linenostart - 1
+                for t, line in inner:
+                    if t:
+                        i += 1
+                        yield 1, '<span data-line="%d">%s</span>' % (i, line)
+                    else:
+                        yield 0, line
+
+        return WrapLineFormatter
+
+    def get_formatter(self, **kwargs: Any):
+        kwargs.update(self.formatter_args)
+        if self.dest == "html":
+            return self._wrap_line_html_formatter()(**kwargs)
+        return self.formatter(**kwargs)
+
     def get_stylesheet(self) -> str:
-        light_formatter: WrapLineFormatter = self.get_formatter()
-        dark_formatter: WrapLineFormatter = self.formatter(style=self.get_style(self.dark_style_name))
+        light_formatter: HtmlFormatter = self.get_formatter()
+        dark_formatter: HtmlFormatter = self.formatter(style=self.get_style(self.dark_style_name))
 
         light_vars = get_pygments_style_colors(light_formatter.style)
         dark_vars = get_pygments_style_colors(dark_formatter.style)

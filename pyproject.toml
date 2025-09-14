@@ -70,6 +70,7 @@ dev = [
     "sphinxcontrib-mermaid>=1.0.0",
     "sphinxcontrib-video>=0.4.1",
     "sphinxcontrib-youtube>=1.4.1",
+    "click-extra[sphinx]>=4.10.0",
 ]
 serve = [
     "livereload>=2.7.1",
