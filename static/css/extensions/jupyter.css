@@ -1,3 +1,8 @@
+html.light .jupyter_container .cell_output {
+  --code-block-background: var(--color-surface-accent);
+  --code-block-caption-background: var(--accent-3);
+}
+
 .yue {
   --jp-widgets-input-border-color: var(--gray-5);
   --jp-widgets-input-focus-border-color: var(--gray-8);
@@ -18,11 +23,11 @@
 }
 
 .yue .jupyter_container div.highlight {
-  background-color: var(--syntax-pre-bg);
+  background-color: var(--code-block-background);
 }
 
 .yue .jupyter_container div.cell_input {
-  background-color: var(--syntax-pre-bg);
+  background-color: var(--code-block-background);
   border: 0;
   border-radius: 0;
 }

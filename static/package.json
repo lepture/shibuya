@@ -4,7 +4,6 @@
   "scripts": {
     "build:js": "esbuild index.js --bundle --outfile=../src/shibuya/theme/shibuya/static/shibuya.js",
     "build:css": "npx @tailwindcss/cli -i index.css -o ../src/shibuya/theme/shibuya/static/shibuya.css",
-    "build:pygments": "esbuild pygments.css --minify --bundle --outfile=../src/shibuya/theme/shibuya/static/pygments.css",
     "build": "npm run build:js -- --minify && npm run build:css -- --minify",
     "dev:js": "npm run build:js -- --watch",
     "dev:css": "npm run build:css -- --watch"

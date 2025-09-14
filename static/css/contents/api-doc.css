@@ -1,8 +1,8 @@
 :root {
-  --sig-property: var(--syntax-keyword);
-  --sig-name: var(--syntax-property);
-  --sig-typehint: var(--syntax-constant);
-  --sig-param: var(--syntax-meta);
+  --sig-property: var(--gray-12);
+  --sig-name: var(--accent-10);
+  --sig-typehint: var(--indigo-9);
+  --sig-param: var(--gray-11);
 }
 
 dt.sig {
@@ -55,10 +55,18 @@ em.sig-param {
 }
 
 em.sig-param {
-  color: var(--sy-c-light);
+  color: var(--sig-param);
 }
 
-span.sig-prename,
+.sig-param a.reference {
+  font-weight: 400;
+}
+
+span.sig-prename {
+  font-weight: 400;
+  color: var(--sig-name);
+}
+
 span.sig-name {
   color: var(--sig-name);
 }

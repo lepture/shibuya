@@ -12,7 +12,7 @@
 }
 
 .yue button.copybtn:hover {
-  color: var(--syntax-meta);
+  color: var(--syntax-comment);
 }
 
 .yue .highlight button.copybtn:hover {

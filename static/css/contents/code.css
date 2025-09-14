@@ -1,8 +1,31 @@
+:root {
+  --code-block-background: var(--accent-a2);
+  --code-block-caption-background: var(--accent-a3);
+  --code-block-highlight: var(--accent-a3);
+  --code-block-linenos-divider: var(--gray-a6);
+}
+
+.light .dark-code {
+  --code-block-background: var(--black-a12);
+  --code-block-caption-background: #1C2024;
+  --code-block-highlight: var(--white-a2);
+  --code-block-linenos-divider: var(--white-a4);
+}
+
+.highlight {
+  color: var(--syntax-text);
+}
+
+.highlight .hll {
+  display: block;
+  background-color: var(--code-block-highlight)
+}
+
 pre.literal-block {
   line-height: 1.48;
   padding: 1rem;
   font-size: 0.96rem;
-  background-color: var(--syntax-pre-bg);
+  background-color: var(--code-block-background);
   border-radius: 6px;
   overflow: auto;
 }
@@ -26,7 +49,7 @@ pre.literal-block {
   padding: var(--margin);
   font-size: 0.96rem;
   font-family: var(--sy-f-mono);
-  background-color: var(--syntax-pre-bg);
+  background-color: var(--code-block-background);
   border-radius: var(--radius);
   overflow: auto;
 }
@@ -42,7 +65,7 @@ pre.literal-block {
 
 .highlight .linenos {
   display: inline-block;
-  box-shadow: -0.05rem 0 var(--syntax-linenos-divider) inset;
+  box-shadow: -0.05rem 0 var(--code-block-linenos-divider) inset;
   margin-right: .8rem;
   padding-right: .8rem;
   opacity: 0.6;
@@ -59,7 +82,7 @@ pre.literal-block {
   font-size: 0.84rem;
   font-weight: 600;
   color: var(--syntax-text);
-  background-color: var(--syntax-cap-bg);
+  background-color: var(--code-block-caption-background);
   padding: 0.4rem var(--margin);
   border-radius: var(--radius) var(--radius) 0 0;
 }

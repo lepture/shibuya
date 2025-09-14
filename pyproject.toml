@@ -74,3 +74,6 @@ dev = [
 serve = [
     "livereload>=2.7.1",
 ]
+
+[tool.ruff]
+line-length = 120

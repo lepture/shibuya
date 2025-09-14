@@ -1,7 +1,7 @@
 .yue {
   --sg-text-color: var(--sy-c-text);
   --sg-background-color: var(--sy-c-background);
-  --sg-code-background-color: var(--syntax-pre-bg);
+  --sg-code-background-color: var(--code-block-background);
   --sg-tr-hover-color: var(--accent-a3);
   --sg-tr-odd-color: var(--sy-c-surface);
 
@@ -11,7 +11,7 @@
   --sg-thumb-box-shadow-color: var(--gray-a4);
   --sg-thumb-hover-border: var(--accent-a9);
   --sg-script-out: var(--sy-c-light);
-  --sg-script-pre: var(--syntax-pre-bg);
+  --sg-script-pre: var(--code-block-background);
   --sg-pytb-foreground: var(--syntax-text);
   --sg-pytb-background: var(--red-a2);
   --sg-pytb-border-color: var(--red-a8);

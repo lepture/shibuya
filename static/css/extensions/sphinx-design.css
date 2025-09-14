@@ -1,3 +1,8 @@
+html.light .sd-tab-content {
+  --code-block-background: var(--color-surface-accent);
+  --code-block-caption-background: var(--accent-3);
+}
+
 /* tweak the style of sphinx-design extension */
 .yue {
   --sd-color-primary: var(--accent-a11);

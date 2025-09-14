@@ -1,22 +1,24 @@
 import re
 import os
 import xml.etree.ElementTree as ET
-from typing import Dict, Any
+from typing import Dict, Any, Optional
 from pathlib import Path
 from sphinx.application import Sphinx
 from sphinx.builders.html import StandaloneHTMLBuilder
 from sphinx.builders.dirhtml import DirectoryHTMLBuilder
-from ._wrapper import WrapLineFormatter
+from ._pygments import ShibuyaPygmentsBridge
 
 
-def patch_app_builder(app: Sphinx):
+def patch_builder_inited(app: Sphinx):
     if isinstance(app.builder, StandaloneHTMLBuilder):
-        app.builder.templates.environment.globals.update(_add_readthedocs_context())
-        app.builder.templates.environment.globals["expandtoc"] = _expandtoc
-        app.builder.templates.environment.globals["edit_source_link"] = (
-            _create_edit_source_link(app.config.html_context)
+        _fix_builder_highlighter(app.builder)
+        _fix_builder_globals(
+            app.builder,
+            {
+                "expandtoc": _expandtoc,
+                "edit_source_link": _create_edit_source_link(app.config.html_context),
+            },
         )
-        app.builder.highlighter.formatter = WrapLineFormatter
 
     if isinstance(app.builder, DirectoryHTMLBuilder):
         _get_outfilename = app.builder.get_outfilename
@@ -48,6 +50,31 @@ def patch_html_page_context(
         return url
 
     context["i18n_link"] = create_i18n_link
+
+
+def _fix_builder_highlighter(builder: StandaloneHTMLBuilder) -> None:
+    # remove dark_highlighter
+    builder.dark_highlighter = None
+
+    default_style = "a11y-light"
+    dark_style = None
+
+    if builder.config.pygments_style is not None:
+        default_style = builder.config.pygments_style
+    elif getattr(builder, "theme", None):
+        dark_style = builder.theme.pygments_style_dark
+        default_style = builder.theme.pygments_style_default or "none"
+
+    highlighter = ShibuyaPygmentsBridge("html", default_style)
+    if dark_style:
+        highlighter.dark_style_name = dark_style
+
+    builder.highlighter = highlighter
+
+
+def _fix_builder_globals(builder: StandaloneHTMLBuilder, context: Dict[str, Any]) -> None:
+    builder.templates.environment.globals.update(_add_readthedocs_context())
+    builder.templates.environment.globals.update(context)
 
 
 def _fix_context_pageurl(app: Sphinx, context: Dict[str, Any]) -> None:
@@ -89,7 +116,8 @@ def _expandtoc(toc: str, depth: int = 0):
         elements = root.findall(f'.//li[@class="toctree-l{i}"]')
         for el in elements:
             _classname = el.get("class")
-            el.set("class", _classname + " _expand")
+            if _classname:
+                el.set("class", _classname + " _expand")
 
     result = ET.tostring(root).decode("utf-8")[5:-6]
     # fix for accessibility
@@ -104,7 +132,7 @@ def _create_edit_source_link(context: Dict[str, Any]):
     source_version = context.get("source_version", "main")
     source_edit_template = context.get("source_edit_template")
 
-    def edit_source_link(filename: str) -> str:
+    def edit_source_link(filename: str) -> Optional[str]:
         if source_edit_template:
             return source_edit_template.format(filename)
 
@@ -126,10 +154,8 @@ def _create_edit_source_link(context: Dict[str, Any]):
 
 
 def _add_readthedocs_context():
-    context = {}
+    context: Dict[str, Any] = {}
     project_slug = os.environ.get("READTHEDOCS_PROJECT")
     if project_slug:
-        context["theme_readthedocs_url"] = (
-            f"https://readthedocs.org/projects/{project_slug}"
-        )
+        context["theme_readthedocs_url"] = f"https://readthedocs.org/projects/{project_slug}"
     return context
