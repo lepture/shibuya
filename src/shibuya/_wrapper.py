@@ -11,14 +11,14 @@ class WrapperPostTransform(SphinxPostTransform):
     def run(self, **kwargs) -> None:
         """Perform the post-transform on `self.document`."""
         elements = self.document.findall(nodes.table)
-        self._wrap(elements, 'table-wrapper')
+        self._wrap(elements, "table-wrapper")
 
         elements = self.document.findall(nodes.math_block)
-        self._wrap(elements, 'math-wrapper')
+        self._wrap(elements, "math-wrapper")
 
         elements = self.document.findall(addnodes.toctree)
         for el in elements:
-            el['titlesonly'] = True
+            el["titlesonly"] = True
 
     @staticmethod
     def _wrap(elements, classname: str):
@@ -31,7 +31,7 @@ class WrapperPostTransform(SphinxPostTransform):
 
 class WrapLineFormatter(HtmlFormatter):
     def __init__(self, **options):
-        options.setdefault('linespans', 1)
+        options.setdefault("linespans", 1)
         super().__init__(**options)
 
     def _wrap_linespans(self, inner):

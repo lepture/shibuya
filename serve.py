@@ -12,14 +12,17 @@ class ProxyHandler(RequestHandler):
         query = self.request.query
         url = self.proxy_url + path
         if query:
-            url += '?' + query
+            url += "?" + query
         client = AsyncHTTPClient()
         response = await client.fetch(url)
         self.set_status(response.code)
         if response.body:
             for header in response.headers:
                 if header.lower() == "content-length":
-                    self.set_header(header, str(max(len(response.body), int(response.headers.get(header)))))
+                    self.set_header(
+                        header,
+                        str(max(len(response.body), int(response.headers.get(header)))),
+                    )
                 elif header.lower() != "transfer-encoding":
                     self.set_header(header, response.headers.get(header))
             self.write(response.body)
