@@ -34,23 +34,24 @@ extensions = [
     "sphinx_sqlalchemy",
     "sphinx_contributors",
     "sphinx_iconify",
+    "click_extra.sphinx",
 ]
 todo_include_todos = True
 myst_enable_extensions = ["colon_fence"]
 jupyter_sphinx_thebelab_config = {
-    'requestKernel': True,
+    "requestKernel": True,
 }
-jupyter_sphinx_require_url = ''
-iconify_script_url = ''
-nbsphinx_requirejs_path = ''
-sitemap_excludes = ['404/']
+jupyter_sphinx_require_url = ""
+iconify_script_url = ""
+nbsphinx_requirejs_path = ""
+sitemap_excludes = ["404/"]
 
 extlinks = {
-    'pull': ('https://github.com/lepture/shibuya/pull/%s', 'pull request #%s'),
-    'issue': ('https://github.com/lepture/shibuya/issues/%s', 'issue #%s'),
+    "pull": ("https://github.com/lepture/shibuya/pull/%s", "pull request #%s"),
+    "issue": ("https://github.com/lepture/shibuya/issues/%s", "issue #%s"),
 }
 
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 intersphinx_mapping = {
     "python": ("https://docs.python.org/3", None),
@@ -74,7 +75,7 @@ html_additional_pages = {
     "branding": "branding.html",
 }
 
-if os.getenv('USE_DOCSEARCH'):
+if os.getenv("USE_DOCSEARCH"):
     extensions.append("sphinx_docsearch")
     docsearch_app_id = "3RU4IG0D1E"
     docsearch_api_key = "ec63fbf7ade2fa535b0b82c86e7d1463"
@@ -89,18 +90,14 @@ html_theme_options = {
     "logo_target": "/",
     "light_logo": "_static/logo-light.svg",
     "dark_logo": "_static/logo-dark.svg",
-
     "og_image_url": "https://shibuya.lepture.com/icon.png",
     "twitter_creator": "lepture",
     "twitter_site": "lepture",
-
     "discussion_url": "https://github.com/lepture/shibuya/discussions",
     "twitter_url": "https://twitter.com/lepture",
     "github_url": "https://github.com/lepture/shibuya",
-
     "carbon_ads_code": "CE7DKK3W",
     "carbon_ads_placement": "shibuya",
-
     "globaltoc_expand_depth": 1,
     "nav_links": [
         {
@@ -117,17 +114,9 @@ html_theme_options = {
                     "url": "writing/code",
                     "summary": "Display code with highlights",
                 },
-                {
-                    "title": "Autodoc",
-                    "url": "writing/api",
-                    "summary": "API documentation automatically"
-                },
-                {
-                    "title": "Jupyter Notebook",
-                    "url": "extensions/nbsphinx",
-                    "summary": "Rendering .ipynb files"
-                },
-            ]
+                {"title": "Autodoc", "url": "writing/api", "summary": "API documentation automatically"},
+                {"title": "Jupyter Notebook", "url": "extensions/nbsphinx", "summary": "Rendering .ipynb files"},
+            ],
         },
         {
             "title": "Branding",
@@ -138,7 +127,7 @@ html_theme_options = {
             "url": "https://github.com/sponsors/lepture",
             "external": True,
         },
-    ]
+    ],
 }
 
 if "READTHEDOCS" in os.environ:
@@ -166,5 +155,5 @@ else:
 DEBUG_RTD = False
 
 if DEBUG_RTD:
-    os.environ['READTHEDOCS_PROJECT'] = 'shibuya'
+    os.environ["READTHEDOCS_PROJECT"] = "shibuya"
     html_theme_options["carbon_ads_code"] = None

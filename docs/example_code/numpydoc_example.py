@@ -10,6 +10,7 @@ a line by itself, preferably preceded by a blank line.
 
 """
 
+
 def foo(var1, var2, *args, long_var_name="hi", only_seldom_used_keyword=0, **kwargs):
     r"""Summarize the function in one line.
 

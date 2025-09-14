@@ -23,8 +23,6 @@ class Address(Base):
     __table_args__ = (CheckConstraint("number>0", name="check1"),)
     pk = Column(types.Integer, primary_key=True)
     number = Column(types.Integer, nullable=False, doc="The number of the address.")
-    postcode = Column(
-        types.String, nullable=False, index=True, doc="The postcode of the address."
-    )
+    postcode = Column(types.String, nullable=False, index=True, doc="The postcode of the address.")
     user_id = Column(types.Integer, ForeignKey("dbusers.pk"))
     user = orm.relationship("User")
