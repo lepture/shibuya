@@ -5,16 +5,23 @@ from sphinx.highlighting import PygmentsBridge
 
 
 class ShibuyaPygmentsBridge(PygmentsBridge):
-    dark_style_name = "a11y-dark"
+    dark_style_name = "github-dark-default"
 
     @classmethod
     def _wrap_line_html_formatter(cls):
         class WrapLineFormatter(cls.html_formatter):
-            def __init__(self, **options):
-                options.setdefault("linespans", 1)
-                super().__init__(**options)
+            def wrap(self, source):
+                output = source
+                if not self.linespans:
+                    output = self._wrap_default_linespans(output)
 
-            def _wrap_linespans(self, inner):
+                if self.wrapcode:
+                    output = self._wrap_code(output)
+
+                output = self._wrap_pre(output)
+                return output
+
+            def _wrap_default_linespans(self, inner):
                 i = self.linenostart - 1
                 for t, line in inner:
                     if t:

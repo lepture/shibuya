@@ -7,7 +7,7 @@ readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
     "Sphinx",
-    "accessible-pygments",
+    "pygments-styles",
 ]
 
 license = {text = "BSD-3-Clause"}

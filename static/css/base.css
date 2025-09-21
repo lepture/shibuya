@@ -5,8 +5,8 @@
 }
 
 ::selection {
-  color: var(--accent-a11);
-  background-color: var(--accent-a3);
+  color: var(--accent-11);
+  background-color: var(--accent-3);
 }
 
 html {

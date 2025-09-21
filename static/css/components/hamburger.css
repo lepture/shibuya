@@ -22,10 +22,12 @@
 
 .hamburger_2 {
   top: 6px;
+  transform: translate(-0.5rem);
 }
 
 .hamburger_3 {
   top: 12px;
+  transform: translate(-0.25rem);
 }
 
 button[aria-expanded=true] .hamburger .hamburger_1 {
