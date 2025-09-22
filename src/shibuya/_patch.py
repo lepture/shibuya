@@ -78,10 +78,10 @@ def _fix_builder_globals(builder: StandaloneHTMLBuilder, context: Dict[str, Any]
 
 
 def _fix_context_pageurl(app: Sphinx, context: Dict[str, Any]) -> None:
-    if "pageurl" not in context:
+    pageurl: str = context.get("pageurl")
+    if not pageurl:
         return
 
-    pageurl: str = context["pageurl"]
     if pageurl.endswith("/index.html"):
         context["pageurl"] = re.sub(r"index\.html$", "", pageurl)
     if isinstance(app.builder, DirectoryHTMLBuilder) and pageurl.endswith(".html"):
