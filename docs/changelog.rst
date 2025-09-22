@@ -5,6 +5,15 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2025.9.22
+---------
+
+- **Refactor**: Update python code structure.
+- **Fix**: Support for Pygments extension, via :issue:`89`.
+- **Fix**: Build pygments styles dynamically.
+- **Fix**: Fix text overflow for math block and pre.
+- **Fix**: Fix style for buysellads.
+
 2025.8.16
 ---------
 
