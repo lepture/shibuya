@@ -5,6 +5,11 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2025.9.23
+---------
+
+- **Fix**: fix ``pageurl`` context when it is ``None``, via :issue:`90`.
+
 2025.9.22
 ---------
 
