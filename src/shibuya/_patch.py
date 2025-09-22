@@ -56,7 +56,7 @@ def _fix_builder_highlighter(builder: StandaloneHTMLBuilder) -> None:
     # remove dark_highlighter
     builder.dark_highlighter = None
 
-    default_style = "a11y-light"
+    default_style = ShibuyaPygmentsBridge.light_style_name
     dark_style = None
 
     if builder.config.pygments_style is not None:

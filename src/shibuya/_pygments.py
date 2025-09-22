@@ -5,6 +5,7 @@ from sphinx.highlighting import PygmentsBridge
 
 
 class ShibuyaPygmentsBridge(PygmentsBridge):
+    light_style_name = "github-light-default"
     dark_style_name = "github-dark-default"
 
     @classmethod
