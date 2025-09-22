@@ -29,7 +29,7 @@ Add ``sphinx_click`` to your ``conf.py``:
 Example
 -------
 
-.. code-block:: reST
+.. code-block:: rst
 
     .. click:: click_demo:greet
         :prog: greet

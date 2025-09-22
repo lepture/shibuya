@@ -33,7 +33,7 @@ Usage
 
 It adds a ``mermaid`` directive to embed mermaid markup. For example:
 
-.. code-block:: reST
+.. code-block:: rst
 
     .. mermaid::
 

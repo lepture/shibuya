@@ -27,13 +27,13 @@ installed using pip and uv.
 
     .. tab-item:: :iconify:`devicon:pypi` pip
 
-        .. code-block:: shell
+        .. code-block:: bash
 
             pip install shibuya
 
     .. tab-item:: :iconify:`material-icon-theme:uv` uv
 
-        .. code-block:: shell
+        .. code-block:: bash
 
             uv add --dev shibuya
 

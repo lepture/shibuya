@@ -33,27 +33,27 @@ Examples
 
 Using the ``:iconify:`` role is very simple :iconify:`simple-icons:python`:
 
-.. code-block:: reST
+.. code-block:: rst
 
     :iconify:`simple-icons:python`
 
 Our :ref:`install` page is using **sphinx-iconify**, the source code
 for the "package install" part:
 
-.. code-block:: reST
+.. code-block:: rst
 
     .. tab-set::
         :class: outline
 
         .. tab-item:: :iconify:`devicon:pypi` pip
 
-            .. code-block:: shell
+            .. code-block:: bash
 
                 pip install shibuya
 
         .. tab-item:: :iconify:`material-icon-theme:uv` uv
 
-            .. code-block:: shell
+            .. code-block:: bash
 
                 uv add --dev shibuya
 
@@ -63,13 +63,13 @@ for the "package install" part:
 
     .. tab-item:: :iconify:`devicon:pypi` pip
 
-        .. code-block:: shell
+        .. code-block:: bash
 
             pip install shibuya
 
     .. tab-item:: :iconify:`material-icon-theme:uv` uv
 
-        .. code-block:: shell
+        .. code-block:: bash
 
             uv add --dev shibuya
 
@@ -80,7 +80,7 @@ Since shibuya theme has built-in accent colors, it is also possible to
 decorate the icon :iconify:`simple-icons:python data-accent-color=indigo`
 with a ``data-accent-color`` attribute:
 
-.. code-block:: reST
+.. code-block:: rst
 
     :iconify:`simple-icons:python data-accent-color=indigo`
 

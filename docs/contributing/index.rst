@@ -48,7 +48,7 @@ venv
 
 I strongly suggest you create a virtual environment with ``venv``:
 
-.. code-block:: shell
+.. code-block:: bash
 
     python -m venv .venv
     source .venv/bin/active
@@ -58,7 +58,7 @@ Install
 
 Then install the Python requirements:
 
-.. code-block:: shell
+.. code-block:: bash
 
     pip install -r requirements-dev.lock
     pip install livereload
@@ -69,7 +69,7 @@ Run dev server
 Once all the requirements are installed, you can run a livereload
 server with:
 
-.. code-block:: shell
+.. code-block:: bash
 
     python serve.py
 
@@ -78,19 +78,19 @@ Build static
 
 Open a new tab of your terminal, and ``cd`` into ``static`` folder:
 
-.. code-block:: shell
+.. code-block:: bash
 
     cd static
 
 Then install all the dependencies with ``npm``:
 
-.. code-block:: shell
+.. code-block:: bash
 
     npm install
 
 Watch CSS changes and build CSS files:
 
-.. code-block:: shell
+.. code-block:: bash
 
     npm run dev:css
 

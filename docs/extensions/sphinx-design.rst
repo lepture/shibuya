@@ -282,7 +282,7 @@ Outline tab-set
 
 By adding a class of ``outline``, a tab-set would be rendered:
 
-.. code-block:: reST
+.. code-block:: rst
 
     .. tab-set::
         :class: outline
@@ -292,13 +292,13 @@ By adding a class of ``outline``, a tab-set would be rendered:
 
     .. tab-item:: :iconify:`devicon:pypi` pip
 
-        .. code-block:: shell
+        .. code-block:: bash
 
             pip install shibuya
 
     .. tab-item:: :iconify:`material-icon-theme:uv` uv
 
-        .. code-block:: shell
+        .. code-block:: bash
 
             uv add --dev shibuya
 
@@ -307,7 +307,7 @@ Surface grid cards
 
 By adding a class of ``surface``, a card would be rendered:
 
-.. code-block:: reST
+.. code-block:: rst
 
     .. grid:: 1 1 2 3
         :class-row: surface

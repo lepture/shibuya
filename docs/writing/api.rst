@@ -8,7 +8,7 @@ Here are examples of ``automodule``, ``autoclass``, and ``autofunction`` directi
 automodule
 ----------
 
-.. code-block:: ReST
+.. code-block:: rst
 
     .. automodule:: babel.units
         :members:
@@ -20,7 +20,7 @@ automodule
 autoclass
 ---------
 
-.. code-block:: ReST
+.. code-block:: rst
 
     .. autoclass:: babel.support.Format
         :members:
@@ -32,7 +32,7 @@ autoclass
 autofunction
 ------------
 
-.. code-block:: ReST
+.. code-block:: rst
 
     .. autofunction:: babel.util.distinct
 

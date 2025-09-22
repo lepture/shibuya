@@ -12,7 +12,7 @@ Adding a new language
 
 First, we need to generate the ``.po`` file in your preferred language:
 
-.. code-block:: shell
+.. code-block:: bash
 
     make babel-init lang=it
 
@@ -24,7 +24,7 @@ Updating languages
 If the language exists, you can update the ``.po`` files using the
 following command:
 
-.. code-block:: shell
+.. code-block:: bash
 
     make babel-update lang=it
 
@@ -41,6 +41,6 @@ Compiling the translations
 Once, the translations are completed. You need to compile the translations
 before validating it.
 
-.. code-block:: shell
+.. code-block:: bash
 
     make babel-compile

@@ -26,7 +26,7 @@ An inline code is surrounded by double ``backticks``::
 Links
 -----
 
-.. code-block:: ReST
+.. code-block:: rst
   :caption: links
   :class: demo-code
 
@@ -50,7 +50,7 @@ Interpreted text is text that is meant to be related, indexed,
 linked, summarized, or otherwise processed. It is usually used
 together with a **role**:
 
-.. code-block:: reST
+.. code-block:: rst
 
     :{role}:`interpreted text`
 
@@ -59,7 +59,7 @@ Subscript and Superscript
 
 A :sub:`subscript` and :sup:`superscript` can be written with:
 
-.. code-block:: ReST
+.. code-block:: rst
 
    :sub:`text in subscript`
 
@@ -71,7 +71,7 @@ A :sub:`subscript` and :sup:`superscript` can be written with:
 Abbreviations
 ~~~~~~~~~~~~~
 
-.. code-block:: ReST
+.. code-block:: rst
 
   You can also include abbreviations like
   :abbr:`HTML (Hyper Text Markup Language)`.
@@ -82,7 +82,7 @@ You can also include abbreviations like
 Keyboard
 ~~~~~~~~
 
-.. code-block:: ReST
+.. code-block:: rst
 
    :kbd:`Tab` means indent, :kbd:`Shift-Tab` means outdent.
    :kbd:`⌘+⇧+P` is power shortcuts in vscode.
@@ -96,7 +96,7 @@ Menu Selection
 
 Use ``menuselection`` to show menus:
 
-.. code-block:: ReST
+.. code-block:: rst
 
     :menuselection:`My --> Software --> Some menu --> Some sub menu 1 --> Some sub menu 2 --> Some sub menu 3`
 
@@ -164,7 +164,7 @@ Footnotes
 
 There are four ways to create a footnote item:
 
-.. code-block:: reST
+.. code-block:: rst
 
    a whole decimal number consisting of one or more digits, like [1]_
 
@@ -194,7 +194,7 @@ Citations
 Citations are identical to footnotes except that they use only non-numeric
 labels such as ``[note]`` or ``[GVR2001]``.
 
-.. code-block:: ReST
+.. code-block:: rst
 
    Here is a citation reference: [CIT2002]_.
 

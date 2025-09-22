@@ -8,7 +8,7 @@ Code blocks
 
 The ``code-block`` directive is defined by Sphinx, the syntax looks like:
 
-.. code-block:: reST
+.. code-block:: rst
 
     .. code-block:: language
        :linenos:
@@ -38,7 +38,7 @@ The ``code-block`` directive accepts a program language after its directive name
 
 .. container:: demo
 
-   .. code-block:: reST
+   .. code-block:: rst
       :caption: Highlight with a language
       :class: demo-code
 
@@ -67,7 +67,9 @@ Captions
 ~~~~~~~~
 
 It is also possible to add a ``caption`` option in ``code-block``. For example,
-here displays the code of ``markdown.py``::
+here displays the code of ``markdown.py``:
+
+.. code-block:: rst
 
     .. code-block:: python
         :caption: markdown.py
@@ -89,7 +91,9 @@ And the final result on Shibuya theme:
 Line numbers
 ~~~~~~~~~~~~
 
-Adding a ``linenos`` option to show the code block's line numbers::
+Adding a ``linenos`` option to show the code block's line numbers:
+
+.. code-block:: rst
 
     .. code-block:: python
         :linenos:
@@ -123,7 +127,9 @@ Emphasize lines
 ~~~~~~~~~~~~~~~
 
 The ``code-block`` directive offers an ``emphasize-lines`` option to highlight
-the chosen lines::
+the chosen lines:
+
+.. code-block:: rst
 
     .. code-block:: python
         :emphasize-lines: 1,5-6,24-29
@@ -150,7 +156,7 @@ used.
 
 .. _code: https://docutils.sourceforge.io/docs/ref/rst/directives.html#code
 
-.. code-block:: reST
+.. code-block:: rst
 
    .. code:: python
 
@@ -173,7 +179,7 @@ a literal block where the text is parsed for inline markup.
 
 For example:
 
-.. code-block:: ReST
+.. code-block:: rst
 
   .. parsed-literal::
 
@@ -193,7 +199,9 @@ Above markup will turn into:
 Dark code
 ---------
 
-Dark code block can be defined with a class ``dark-code``::
+Dark code block can be defined with a class ``dark-code``:
+
+.. code-block:: rst
 
   .. code-block:: python
      :class: dark-code

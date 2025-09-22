@@ -31,7 +31,7 @@ Then, add the extension to your ``conf.py``:
 Markup syntax
 -------------
 
-.. code-block:: reST
+.. code-block:: rst
 
     .. tabs::
 

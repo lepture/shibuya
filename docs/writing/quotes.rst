@@ -167,7 +167,7 @@ often consisting of a list.
 
 .. _Highlights: https://docutils.sourceforge.io/docs/ref/rst/directives.html#highlights
 
-.. code-block:: ReST
+.. code-block:: rst
 
   .. highlights::
 
@@ -191,7 +191,7 @@ especially in long articles.
 No attribution
 ~~~~~~~~~~~~~~
 
-.. code-block:: ReST
+.. code-block:: rst
 
   .. pull-quote::
 
@@ -204,7 +204,7 @@ No attribution
 With attribution
 ~~~~~~~~~~~~~~~~
 
-.. code-block:: ReST
+.. code-block:: rst
 
   .. pull-quote::
 

@@ -31,7 +31,7 @@ Usage
 ``dropdown`` for admonitions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block:: ReST
+.. code-block:: rst
 
     .. admonition:: Click the title to toggle
         :class: dropdown
@@ -56,7 +56,7 @@ Usage
 ``toggle`` class
 ~~~~~~~~~~~~~~~~
 
-.. code-block:: ReST
+.. code-block:: rst
 
     .. image:: https://media.giphy.com/media/FaKV1cVKlVRxC/giphy.gif
         :class: toggle
@@ -68,7 +68,7 @@ Usage
 ``toggle`` directive
 ~~~~~~~~~~~~~~~~~~~~
 
-.. code-block:: ReST
+.. code-block:: rst
 
     .. toggle::
 
@@ -85,7 +85,7 @@ Usage
 
     .. toggle::
 
-        .. code-block:: ReST
+        .. code-block:: rst
 
             .. tip::
 

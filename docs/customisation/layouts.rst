@@ -124,7 +124,7 @@ The ``landing`` layout is typically used for the home page
 
 This template offers a special container for buttons:
 
-.. code-block:: reST
+.. code-block:: rst
 
     .. container:: buttons
 
@@ -137,7 +137,7 @@ This template offers a special container for buttons:
 The ``404`` layout is designed for displaying "404 page not found".
 Typically, you would use it in ``404.rst`` file:
 
-.. code-block:: reST
+.. code-block:: rst
     :caption: docs/404.rst
 
     :layout: 404

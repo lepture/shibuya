@@ -27,7 +27,7 @@ A simple image with ``image`` directive:
 
 .. container:: demo
 
-   .. code-block:: reST
+   .. code-block:: rst
       :class: demo-code
 
       .. image:: /_static/images/cat.jpg
@@ -42,7 +42,7 @@ align image
 
 With ``:align:`` option, you can make the image float to left or right:
 
-.. code-block:: ReST
+.. code-block:: rst
 
     .. image:: /_static/icon-light.svg
       :align: left
@@ -88,7 +88,7 @@ if ``figure`` directive will be converted to ``<figcaption>``.
 
 .. container:: demo
 
-   .. code-block:: reST
+   .. code-block:: rst
       :caption: Image with a caption
       :class: demo-code
 
@@ -114,7 +114,7 @@ We offer several container classes to decorate images:
 
 .. container:: demo
 
-   .. code-block:: reST
+   .. code-block:: rst
       :class: demo-code
 
       .. container:: image-1
@@ -130,7 +130,7 @@ We offer several container classes to decorate images:
 
 .. container:: demo
 
-   .. code-block:: reST
+   .. code-block:: rst
       :class: demo-code
 
       .. container:: image-2
@@ -152,7 +152,7 @@ example below, it will show a dog in light mode and a cat in dark mode.
 
 .. container:: demo
 
-   .. code-block:: reST
+   .. code-block:: rst
       :caption: light and dark mode images
       :class: demo-code
 
@@ -195,7 +195,7 @@ Here is an example of ``video`` directive:
 
 .. container:: demo
 
-    .. code-block:: reST
+    .. code-block:: rst
         :class: demo-code
 
         .. video:: https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm
@@ -219,7 +219,7 @@ Here is an example of ``youtube`` directive:
 
 .. container:: demo
 
-   .. code-block:: reST
+   .. code-block:: rst
       :class: demo-code
 
       .. youtube:: j2BdNDTlWbo
@@ -235,7 +235,7 @@ Containers
 
 We offer several container classes to decorate videos:
 
-.. code-block:: ReST
+.. code-block:: rst
 
     .. container:: video-1
 
@@ -256,7 +256,7 @@ We offer several container classes to decorate videos:
   .. video:: https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm
 
 
-.. code-block:: ReST
+.. code-block:: rst
 
     .. container:: video-2
 
@@ -281,7 +281,7 @@ Audio
 
 There is no extension for audios, you can use ``raw`` directive with ``<audio>`` HTML tag.
 
-.. code-block:: ReST
+.. code-block:: rst
 
   .. raw:: html
 

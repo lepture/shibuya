@@ -11,7 +11,7 @@ Simple Table
 
 Very simple tables can be created with the syntax bellow:
 
-.. code-block:: ReST
+.. code-block:: rst
 
     =====  =====  ======
       A      B    A or B
@@ -33,7 +33,7 @@ True   True   True
 
 And it can be a little complex with multiple headers:
 
-.. code-block:: ReST
+.. code-block:: rst
 
     =====  =====  ======
        Inputs     Output
@@ -64,7 +64,7 @@ Grid Table
 The `grid table <https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#grid-tables>`_
 syntax can create more complex tables:
 
-.. code-block:: ReST
+.. code-block:: rst
 
   +------------+------------+-----------+
   | Header 1   | Header 2   | Header 3  |
@@ -99,7 +99,7 @@ table
 There is also a `table directive <https://docutils.sourceforge.io/docs/ref/rst/directives.html#table>`_,
 which can wrap the above tables with many options.
 
-.. code-block:: ReST
+.. code-block:: rst
 
   .. table:: Truth table for "not"
      :widths: auto
@@ -126,7 +126,7 @@ csv-table
 
 You can also use a ``csv-table`` directive to create tables:
 
-.. code-block:: ReST
+.. code-block:: rst
 
     .. csv-table:: Frozen Delights!
       :header: "Treat", "Quantity", "Description"
@@ -151,7 +151,7 @@ list-table
 
 Or with a ``list-table`` directive:
 
-.. code-block:: ReST
+.. code-block:: rst
 
     .. list-table:: Frozen Delights!
       :widths: 15 10 30
@@ -194,7 +194,7 @@ ghost class
 
 With ``:class: ghost`` option, you can use the "ghost" style of a table.
 
-.. code-block:: ReST
+.. code-block:: rst
 
     .. table::
         :class: ghost

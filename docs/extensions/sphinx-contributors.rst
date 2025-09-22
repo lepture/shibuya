@@ -28,14 +28,14 @@ Add ``sphinx_contributors`` to your ``conf.py``:
 Example
 -------
 
-.. code-block:: reST
+.. code-block:: rst
 
     .. contributors:: lepture/shibuya
 
 .. contributors:: lepture/shibuya
 
 
-.. code-block:: reST
+.. code-block:: rst
 
     .. contributors:: lepture/shibuya
         :avatars:
@@ -43,7 +43,7 @@ Example
 .. contributors:: lepture/shibuya
     :avatars:
 
-.. code-block:: reST
+.. code-block:: rst
 
   .. container:: rounded-image
       .. contributors:: lepture/shibuya
@@ -54,7 +54,7 @@ Example
   .. contributors:: lepture/shibuya
       :avatars:
 
-.. code-block:: reST
+.. code-block:: rst
 
     .. contributors:: lepture/shibuya
         :contributions:
@@ -62,7 +62,7 @@ Example
 .. contributors:: lepture/shibuya
     :contributions:
 
-.. code-block:: reST
+.. code-block:: rst
 
     .. contributors:: lepture/shibuya
         :avatars:

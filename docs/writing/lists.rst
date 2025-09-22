@@ -11,7 +11,7 @@ Bullet list
 A text block which begins with a ``*``, ``+``, ``-``, ``•``, ``‣``,
 followed by whitespace, is an unordered list item.
 
-.. code-block:: ReST
+.. code-block:: rst
 
     - This is the first bullet list item.  The blank line above the
       first list item is required; blank lines between list items
@@ -34,7 +34,7 @@ followed by whitespace, is an unordered list item.
 
 And unlike Markdown, reStructuredText has no tight list. For example:
 
-.. code-block:: ReST
+.. code-block:: rst
 
   - List item 1
   - List item 2
@@ -52,7 +52,7 @@ A text block which begins with a number, a letter or a roman numeral,
 followed by a period ``.``, right bracket ``)`` or surrounded by brackets
 ``( )``, is an ordered (numbered, enumerated) list item.
 
-.. code-block:: ReST
+.. code-block:: rst
 
    1. numbers
 
@@ -115,7 +115,7 @@ Lists can contain lists, here is a more complex list demo:
 Definition list
 ---------------
 
-.. code-block:: ReST
+.. code-block:: rst
 
    Term
       The definition of the term.
@@ -131,7 +131,7 @@ Apple
 Field list
 ----------
 
-.. code-block:: ReST
+.. code-block:: rst
 
     :Date: 2001-08-16
     :Version: 1
@@ -178,7 +178,7 @@ Horizontal list
 
 Using ``hlist`` directive to layout list horizontally.
 
-.. code-block:: ReST
+.. code-block:: rst
 
     .. hlist::
       :columns: 3
