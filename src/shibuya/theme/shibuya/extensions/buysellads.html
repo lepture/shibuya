@@ -22,7 +22,6 @@
     _bsa.init('custom', '{{ buysellads_code }}', 'placement:{{ buysellads_placement }}', {
       target: target,
       template: `
-<div class="bsa">
 <a class="bsa-container bsa__##external_id##" style="background-color: ##backgroundColor##; color: ##textColor##" href="##link##" rel="sponsored noopener" target="_blank" title="##company## — ##tagline##">
   <div class="bsa-main">
     <img class="bsa-img" src="##logo##">
@@ -33,8 +32,7 @@
     <span class="bsa-cta" style="color: ##ctaTextColor##; background-color: ##ctaBackgroundColor##;">##callToAction##</span>
   </div>
 </a>
-<div class="bsa-ad-via"><a title="ad via BuySellAds" href="##ad_via_link##">Ads via BuySellAds</a></div>
-</div>
+<a class="bsa-ad-via" title="ad via BuySellAds" href="##ad_via_link##">Ads via BuySellAds</a>
 `
     });
   }
