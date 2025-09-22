@@ -77,6 +77,13 @@
   background-color: currentColor;
 }
 
+.yue .math-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .yue .math a.headerlink {
   visibility: visible;
 }

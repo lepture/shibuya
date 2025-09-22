@@ -48,6 +48,10 @@
   border-bottom-width: 2px;
 }
 
+.yue pre {
+  overflow: auto;
+}
+
 .yue pre a,
 .yue pre a:hover {
   border-bottom: none;
