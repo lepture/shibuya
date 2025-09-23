@@ -35,6 +35,7 @@ extensions = [
     "sphinx_contributors",
     "sphinx_iconify",
     "click_extra.sphinx",
+    "shibuya.sponsors",
 ]
 todo_include_todos = True
 myst_enable_extensions = ["colon_fence"]
@@ -45,6 +46,7 @@ jupyter_sphinx_require_url = ""
 iconify_script_url = ""
 nbsphinx_requirejs_path = ""
 sitemap_excludes = ["404/"]
+sponsors_json_url = "https://cdn.jsdelivr.net/gh/lepture/lepture/sponsors.json"
 
 extlinks = {
     "pull": ("https://github.com/lepture/shibuya/pull/%s", "pull request #%s"),

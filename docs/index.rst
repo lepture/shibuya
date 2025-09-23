@@ -55,6 +55,36 @@ Shibuya
         Layouts of landing page, simple one page, and three-column
         documentation page.
 
+-----
+
+.. rubric:: Sponsored by
+   :class: centered
+
+.. sponsors:: Gold Sponsors
+    :amount: 100
+    :size: 2xl
+    :rounded:
+    :center:
+    :show-name:
+
+.. sponsors:: Silver Sponsors
+    :amount: 50, 100
+    :size: xl
+    :rounded:
+    :center:
+
+.. sponsors:: Sponsors
+    :amount: 25, 50
+    :size: md
+    :rounded:
+    :center:
+
+.. sponsors:: Backers
+    :amount: 10, 25
+    :size: sm
+    :rounded:
+    :center:
+
 Showcases
 ---------
 

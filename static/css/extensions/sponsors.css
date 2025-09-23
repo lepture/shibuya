@@ -1,0 +1,77 @@
+.sphinx-sponsors--2xl {
+  --sponsor-avatar-size: 120px;
+  --sponsor-item-padding: 20px;
+}
+.sphinx-sponsors--xl {
+  --sponsor-avatar-size: 90px;
+  --sponsor-item-padding: 15px;
+}
+.sphinx-sponsors--lg {
+  --sponsor-avatar-size: 70px;
+  --sponsor-item-padding: 15px;
+}
+.sphinx-sponsors--md {
+  --sponsor-avatar-size: 50px;
+  --sponsor-item-padding: 10px;
+}
+.sphinx-sponsors--base {
+  --sponsor-avatar-size: 40px;
+  --sponsor-item-padding: 6px;
+}
+.sphinx-sponsors--sm {
+  --sponsor-avatar-size: 35px;
+  --sponsor-item-padding: 5px;
+}
+.sphinx-sponsors--xs {
+  --sponsor-avatar-size: 25px;
+  --sponsor-item-padding: 4px;
+}
+
+.sphinx-sponsors {
+  margin: 2rem 0;
+}
+
+.sphinx-sponsors .rubric {
+  font-size: 1.25em;
+}
+
+ul.sphinx-sponsors_container {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sphinx-sponsors li.sphinx-sponsors_item {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  padding: var(--sponsor-item-padding);
+  align-items: center;
+}
+
+.sphinx-sponsors_avatar {
+  display: inline-block;
+  width: var(--sponsor-avatar-size);
+  background: var(--gray-a3);
+}
+
+.sphinx-sponsors_name {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+}
+
+
+.sphinx-sponsors--center {
+  text-align: center;
+}
+
+.sphinx-sponsors--center .sphinx-sponsors_container {
+  justify-content: center;
+}
+
+.sphinx-sponsors--rounded .sphinx-sponsors_avatar,
+.sphinx-sponsors--rounded img {
+  border-radius: 100%;
+}
