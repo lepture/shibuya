@@ -12,7 +12,12 @@
     <iconify-icon icon="simple-icons:{{ source_type }}"></iconify-icon>
   </span>
   <span class="flex-grow px-2 break-all">
-    <span>{{ source_user }}/{{ source_repo }}</span>
+    {% set repo = source_user + "/" + source_repo %}
+    {% if repo|count > 17 %}
+      <span>{{ source_repo }}</span>
+    {% else %}
+      <span>{{ repo }}</span>
+    {% endif %}
     <span class="flex text-sm repo-stats-count">
       <span class="flex items-center pr-3">
         <iconify-icon icon="lucide:star"></iconify-icon>
