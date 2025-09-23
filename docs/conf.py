@@ -103,21 +103,18 @@ html_theme_options = {
     "globaltoc_expand_depth": 1,
     "nav_links": [
         {
-            "title": "Examples",
-            "url": "writing",
+            "title": "Projects",
             "children": [
                 {
-                    "title": "Admonitions",
-                    "url": "writing/admonition",
-                    "summary": "Bring the attention of readers",
+                    "title": "Pygments Styles",
+                    "url": "https://pygments-styles.org/",
+                    "summary": "A curated collection of Pygments styles based on VS Code themes.",
                 },
                 {
-                    "title": "Code Blocks",
-                    "url": "writing/code",
-                    "summary": "Display code with highlights",
+                    "title": "Sphinx Iconify",
+                    "url": "https://sphinx-iconify.lepture.com/",
+                    "summary": "Embedding icons from over 200,000 open-source vector icons.",
                 },
-                {"title": "Autodoc", "url": "writing/api", "summary": "API documentation automatically"},
-                {"title": "Jupyter Notebook", "url": "extensions/nbsphinx", "summary": "Rendering .ipynb files"},
             ],
         },
         {
