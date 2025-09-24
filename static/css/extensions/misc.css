@@ -17,3 +17,8 @@
 .yue iconify-icon[data-accent-color] {
   color: var(--accent-9);
 }
+
+/* sphinxcontrib-mermaid */
+.dark pre.mermaid > svg {
+  filter: brightness(0.8) invert(0.82) contrast(1.2);
+}
