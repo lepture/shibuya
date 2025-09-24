@@ -44,7 +44,7 @@
   width: 100%;
   height: 100%;
   backdrop-filter: blur(12px);
-  background-color: var(--sand-a1);
+  background-color: var(--sy-c-background-dropback);
   box-shadow: 0 0 var(--sy-c-background-contrast), 0 2px 4px var(--gray-a1), 0 1px 0 var(--sy-c-divider);
   z-index: -1;
 }

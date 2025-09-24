@@ -26,6 +26,7 @@
   --sy-c-surface: var(--gray-a2);
   --sy-c-overlay: var(--black-a5);
   --sy-c-background-contrast: black;
+  --sy-c-background-dropback: #fffc;
 
   /* colors for footer */
   --sy-c-foot-text: var(--sy-c-text);
@@ -76,6 +77,7 @@ html.dark {
   --sy-c-background-contrast: var(--white-a10);
   --sy-c-foot-background: var(--black-a11);
   --sy-c-foot-divider: var(--black-a12);
+  --sy-c-background-dropback: #212328cc;
 }
 
 html {
