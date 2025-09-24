@@ -24,6 +24,14 @@ def fetch_sponsors_data(url: str):
     return data
 
 
+def int_list(argument: str):
+    if ',' in argument:
+        entries = argument.split(',')
+    else:
+        entries = argument.split()
+    return [int(entry) for entry in entries]
+
+
 class SponsorsDirective(SphinxDirective):
     optional_arguments = 1
     final_argument_whitespace = True
@@ -33,10 +41,33 @@ class SponsorsDirective(SphinxDirective):
         "rounded": directives.flag,
         "url": directives.uri,
         "container-class": directives.unchanged,
-        "amount": directives.positive_int_list,
+        "amount": int_list,
         "size": directives.unchanged,
     }
     default_class_name = "sphinx-sponsors"
+
+    @property
+    def sponsors_json_url(self):
+        return self.options.get('url', self.config.sponsors_json_url)
+
+    def fetch_sponsors(self):
+        amount = self.options["amount"]
+        all_sponsors = fetch_sponsors_data(self.sponsors_json_url)
+
+        if len(amount) == 1:
+            start = amount[0]
+            if start == 0:
+                sponsors = [item for item in all_sponsors if item["amount"] <= 0]
+            else:
+                sponsors = [item for item in all_sponsors if item["amount"] >= start]
+        else:
+            start, end = amount
+            sponsors = [
+                item for item in all_sponsors
+                if item["amount"] >= start and item["amount"] < end
+            ]
+
+        return sponsors
 
     def build_sponsors(self, sponsors: t.List[SponsorData]):
         list_nodes = nodes.bullet_list(classes=[self.default_class_name + '_container'])
@@ -48,45 +79,32 @@ class SponsorsDirective(SphinxDirective):
         yield list_nodes
 
     def build_sponsor(self, sponsor: SponsorData):
+        name = sponsor["name"]
+        if not name:
+            name = sponsor["login"]
+
         link_node = nodes.reference(
             "", "",
             internal=False,
             refuri=sponsor["link"],
-            classes=[self.default_class_name + '_avatar'],
+            classes=[self.default_class_name + "_avatar"],
         )
         avatar_image = nodes.image(
             uri=sponsor["avatar"],
-            alt=sponsor["name"],
+            alt=name,
         )
         link_node += avatar_image
         yield link_node
 
         if "show-name" in self.options:
             yield nodes.inline(
-                sponsor["name"],
-                sponsor["name"],
+                name,
+                name,
                 classes=[self.default_class_name + "_name"],
             )
 
     def run(self):
-        amount = self.options["amount"]
-        if 'url' in self.options:
-            url = self.options['url']
-            all_sponsors = fetch_sponsors_data(url)
-        else:
-            all_sponsors = fetch_sponsors_data(self.config.sponsors_json_url)
-
-        if not amount:
-            sponsors = [item for item in all_sponsors if item["amount"] <= 0]
-        elif len(amount) == 1:
-            sponsors = [item for item in all_sponsors if item["amount"] >= amount[0]]
-        else:
-            start, end = amount
-            sponsors = [
-                item for item in all_sponsors
-                if item["amount"] >= start and item["amount"] < end
-            ]
-
+        sponsors = self.fetch_sponsors()
         if not sponsors:
             return []
 

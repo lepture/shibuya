@@ -8,7 +8,7 @@ Shibuya uses date based release segments. For pre-releases, it follows :pep:`440
 2025.9.24
 ---------
 
-- **New**: add a ``shibuya.sponsor`` extension.
+- **New**: add a ``shibuya.sponsors`` extension.
 - **Fix**: remove useless pygments css files.
 - **Fix**: hide username when repository name is too long.
 - **Fix**: update head backrop blur style.
