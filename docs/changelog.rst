@@ -5,6 +5,13 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+Unreleased
+----------
+
+- **Fix**: Add dark theme support for sphinxcontrib-mermaid extension.
+- **Fix**: Fix building error when toc is empty, via :issue:`91`.
+- **Fix**: Improve ``shibuya.sponsors`` extension.
+
 2025.9.24
 ---------
 
