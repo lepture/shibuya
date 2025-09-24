@@ -41,18 +41,19 @@ ul.sphinx-sponsors_container {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  gap: var(--sponsor-item-padding);
 }
 
 .sphinx-sponsors li.sphinx-sponsors_item {
   display: flex;
   margin: 0;
   flex-direction: column;
-  padding: var(--sponsor-item-padding);
   align-items: center;
+  padding: 0;
 }
 
 .sphinx-sponsors_avatar {
-  display: inline-block;
+  display: inline-flex;
   width: var(--sponsor-avatar-size);
   background: var(--gray-a3);
 }
@@ -65,6 +66,14 @@ ul.sphinx-sponsors_container {
 
 .sphinx-sponsors--center {
   text-align: center;
+}
+
+.sphinx-sponsors--center ul.sphinx-sponsors_container {
+  gap: 0;
+}
+
+.sphinx-sponsors--center li.sphinx-sponsors_item {
+  padding: var(--sponsor-item-padding);
 }
 
 .sphinx-sponsors--center .sphinx-sponsors_container {
