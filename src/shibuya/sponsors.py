@@ -25,8 +25,8 @@ def fetch_sponsors_data(url: str):
 
 
 def int_list(argument: str):
-    if ',' in argument:
-        entries = argument.split(',')
+    if "," in argument:
+        entries = argument.split(",")
     else:
         entries = argument.split()
     return [int(entry) for entry in entries]
@@ -48,7 +48,7 @@ class SponsorsDirective(SphinxDirective):
 
     @property
     def sponsors_json_url(self):
-        return self.options.get('url', self.config.sponsors_json_url)
+        return self.options.get("url", self.config.sponsors_json_url)
 
     def fetch_sponsors(self):
         amount = self.options["amount"]
@@ -62,17 +62,14 @@ class SponsorsDirective(SphinxDirective):
                 sponsors = [item for item in all_sponsors if item["amount"] >= start]
         else:
             start, end = amount
-            sponsors = [
-                item for item in all_sponsors
-                if item["amount"] >= start and item["amount"] < end
-            ]
+            sponsors = [item for item in all_sponsors if item["amount"] >= start and item["amount"] < end]
 
         return sponsors
 
     def build_sponsors(self, sponsors: t.List[SponsorData]):
-        list_nodes = nodes.bullet_list(classes=[self.default_class_name + '_container'])
+        list_nodes = nodes.bullet_list(classes=[self.default_class_name + "_container"])
         for sponsor in sponsors:
-            item_node = nodes.list_item(classes=[self.default_class_name + '_item'])
+            item_node = nodes.list_item(classes=[self.default_class_name + "_item"])
             for node in self.build_sponsor(sponsor):
                 item_node.append(node)
             list_nodes.append(item_node)
@@ -84,7 +81,8 @@ class SponsorsDirective(SphinxDirective):
             name = sponsor["login"]
 
         link_node = nodes.reference(
-            "", "",
+            "",
+            "",
             internal=False,
             refuri=sponsor["link"],
             classes=[self.default_class_name + "_avatar"],
@@ -109,7 +107,7 @@ class SponsorsDirective(SphinxDirective):
             return []
 
         size = self.options.get("size", "base")
-        classes = [self.default_class_name, self.default_class_name + f'--{size}']
+        classes = [self.default_class_name, self.default_class_name + f"--{size}"]
 
         if "show-name" in self.options:
             classes.append(self.default_class_name + "--show-name")
