@@ -32,7 +32,11 @@ def patch_builder_inited(app: Sphinx):
 
 
 def patch_html_page_context(
-    app: Sphinx, pagename: str, templatename: str, context: Dict[str, Any], doctree: Any
+    app: Sphinx,
+    pagename: str,
+    templatename: str,
+    context: Dict[str, Any],
+    doctree: Any,
 ) -> None:
     if not isinstance(app.builder, StandaloneHTMLBuilder):
         return
@@ -89,10 +93,10 @@ def _fix_context_pageurl(app: Sphinx, context: Dict[str, Any]) -> None:
 
 
 def _fix_context_toc(context: Dict[str, Any]):
-    if "toc" not in context:
+    toc: str = context.get("toc")
+    if not toc:
         return
 
-    toc: str = context["toc"]
     pattern = re.compile(r'<span class="pre">\w+?\.')
     root = ET.fromstring(toc)
     if len(root) != 1:
