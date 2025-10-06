@@ -171,10 +171,6 @@ just a few lines of configuration. Simply add the following to your Sphinx ``con
         "source_repo": "<repository>",
     }
 
-.. note::
-  If you are using Read the Docs to host your documentation, you don't need to add the
-  ``html_context`` configuration since this feature is automatically enabled.
-
 With this configuration, Shibuya will automatically display your GitHub/Gitlab repository
 statistics in the right sidebar of your documentation pages, including the number of
 stars, and forks.
