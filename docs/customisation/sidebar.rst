@@ -136,7 +136,7 @@ configuration. Simply add the following to your Sphinx ``conf.py`` file:
         "source_type": "github|gitlab|bitbucket",
         "source_user": "<username>",
         "source_repo": "<repository>",
-        "source_version": "master",  # Optional
+        "source_version": "main",  # Optional
         "source_docs_path": "/docs/",  # Optional
     }
 
@@ -144,9 +144,18 @@ With this configuration, Shibuya will automatically include an "Edit This Page" 
 the right sidebar of your documentation pages, allowing visitors to easily edit the page
 on GitHub, GitLab or Bitbucket.
 
-.. note::
-  If you are using Read the Docs to host your documentation, you don't need to add the
-  ``html_context`` configuration since this feature is automatically enabled.
+If your documentation resides in a separate repository from the main project source, you
+can use an alternative ``html_context`` configuration:
+
+.. code-block:: python
+    :emphasize-lines: 5
+
+    html_context = {
+        "source_type": "github|gitlab|bitbucket",
+        "source_user": "<username>",
+        "source_repo": "<repository>",
+        "source_edit_template": "https://github.com/<username>/<docs_repository>/blob/main/{0}",
+    }
 
 Source code statistics
 ~~~~~~~~~~~~~~~~~~~~~~
