@@ -71,6 +71,7 @@ dev = [
     "sphinxcontrib-video>=0.4.1",
     "sphinxcontrib-youtube>=1.4.1",
     "click-extra[sphinx]>=4.10.0",
+    "sphinx-datatables>=0.3.1",
 ]
 serve = [
     "livereload>=2.7.1",

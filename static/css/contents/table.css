@@ -92,3 +92,68 @@
 .yue .table-wrapper.ghost {
   border: 0;
 }
+
+/* sphinx-datatables */
+.yue .table-wrapper.sphinx-datatable {
+  overflow-x: hidden;
+}
+.yue .table-wrapper:not(.ghost) .dt-layout-row {
+  margin: 0;
+}
+.table-wrapper .dt-layout-row:not(.dt-layout-table) {
+  padding: 0.5rem 1rem;
+}
+
+.table-wrapper .dt-layout-row.dt-layout-table {
+  border-top: 1px solid var(--yue-c-th-border);
+  border-bottom: 1px solid var(--yue-c-th-border);
+  overflow-x: auto;
+}
+
+.table-wrapper .dt-layout-table th,
+.yue .table-wrapper div.dt-container.dt-empty-footer td {
+  border-bottom: 0;
+}
+
+.yue .table-wrapper .dt-layout-table th:hover {
+  outline-color: var(--accent-a3);
+}
+
+.table-wrapper div.dt-container .dt-search input {
+  border-color: var(--sy-c-border);
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+.table-wrapper div.dt-container .dt-input {
+  border-color: var(--sy-c-border);
+}
+
+.table-wrapper div.dt-container .dt-paging .dt-paging-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.875rem;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+}
+
+.table-wrapper div.dt-container .dt-paging .dt-paging-button:hover {
+  background: var(--accent-a3);
+  color: var(--accent-a11) !important;
+  border-color: var(--accent-a3);
+}
+
+.table-wrapper div.dt-container .dt-paging .dt-paging-button.current {
+  background: transparent;
+  border-color: var(--gray-a4);
+}
+
+.table-wrapper div.dt-container .dt-paging .dt-paging-button.current:hover {
+  background: var(--accent-a3);
+}
+
+.table-wrapper .dt-info {
+  font-size: 0.875rem;
+}

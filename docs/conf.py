@@ -35,6 +35,8 @@ extensions = [
     "sphinx_contributors",
     "sphinx_iconify",
     "click_extra.sphinx",
+    "sphinxcontrib.jquery",
+    "sphinx_datatables",
     "shibuya.sponsors",
 ]
 todo_include_todos = True
