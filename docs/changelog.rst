@@ -5,6 +5,11 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2025.10.20
+----------
+
+- **New**: Support :ref:`sphinx-datatables` extension, via :issue:`96`.
+
 2025.9.25
 ---------
 
