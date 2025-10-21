@@ -15,10 +15,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-node@v4
+    - uses: actions/checkout@v5
+    - uses: actions/setup-node@v6
       with:
-        node-version: 18
+        node-version: 22
 
     - run: npm ci
       working-directory: static
@@ -26,7 +26,7 @@ jobs:
     - run: npm run build
       working-directory: static
 
-    - uses: actions/setup-python@v5
+    - uses: actions/setup-python@v6
       with:
         python-version: 3.11
 
@@ -66,12 +66,12 @@ jobs:
     needs: publish
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
       with:
         fetch-depth: 0
-    - uses: actions/setup-node@v4
+    - uses: actions/setup-node@v6
       with:
-        node-version: 18
+        node-version: 22
     - run: npx changelogithub --no-group
       continue-on-error: true
       env:

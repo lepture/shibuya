@@ -22,10 +22,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-node@v4
+    - uses: actions/checkout@v5
+    - uses: actions/setup-node@v6
       with:
-        node-version: 18
+        node-version: 22
 
     - run: npm ci
       working-directory: static
@@ -33,7 +33,7 @@ jobs:
     - run: npm run build
       working-directory: static
 
-    - uses: actions/setup-python@v5
+    - uses: actions/setup-python@v6
       with:
         python-version: 3.11
 
@@ -49,7 +49,7 @@ jobs:
         USE_DOCSEARCH: True
 
     - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
+      uses: actions/upload-pages-artifact@v4
 
   deploy:
     environment:
