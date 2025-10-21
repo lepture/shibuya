@@ -5,6 +5,12 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2025.10.21
+----------
+
+- **New**: Add ``:content_max_width`` meta configuration, via :issue:`94`.
+- **Fix**: Enhanced ``pygments.css`` to work better in both light and dark modes.
+
 2025.10.20
 ----------
 
