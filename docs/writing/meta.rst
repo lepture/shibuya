@@ -128,3 +128,14 @@ component on the current page.
 
    Page title
    ==========
+
+Max width
+---------
+
+You can customize the maximum content width for the ``landing`` and ``simple``
+layouts using the ``:content_max_width:`` meta configuration.
+
+.. code-block:: rst
+
+   :layout: landing
+   :content_max_width: 960px

@@ -21,6 +21,9 @@
   .yue a.headerlink {
     display: none;
   }
+  {% if meta and meta.content_max_width %}
+  .sy-content { max-width: {{ meta.content_max_width }}; }
+  {% endif %}
 </style>
 {% endblock %}
 

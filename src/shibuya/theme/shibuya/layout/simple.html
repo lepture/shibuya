@@ -5,6 +5,14 @@
   {% include "components/alternate-links.html" %}
 {%- endblock %}
 
+{% block themestyles %}
+{% if meta and meta.content_max_width %}
+<style>
+  .sy-content { max-width: {{ meta.content_max_width }}; }
+</style>
+{% endif %}
+{% endblock %}
+
 {% block body %}{{ body }}{% endblock %}
 
 {% block afterarticle %}
