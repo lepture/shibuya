@@ -1,4 +1,4 @@
-from typing import Dict, Any
+from typing import Dict, Any, Literal
 from pygments.formatters.html import HtmlFormatter
 from pygments.style import Style
 from sphinx.highlighting import PygmentsBridge
@@ -42,27 +42,7 @@ class ShibuyaPygmentsBridge(PygmentsBridge):
     def get_stylesheet(self) -> str:
         light_formatter: HtmlFormatter = self.get_formatter()
         dark_formatter: HtmlFormatter = self.formatter(style=self.get_style(self.dark_style_name))
-
-        light_vars = get_pygments_style_colors(light_formatter.style)
-        dark_vars = get_pygments_style_colors(dark_formatter.style)
-
-        css = build_syntax_variables(light_vars, dark_vars)
-
-        prefix = light_formatter.get_css_prefix(".highlight")
-
-        # build token styles
-        token_styles = [
-            (level, ttype, cls, style)
-            for cls, (style, ttype, level) in light_formatter.class2style.items()
-            if cls and style
-        ]
-        token_styles.sort()
-        for _, ttype, cls, style in token_styles:
-            key = _convert_token_type_name(ttype)
-            if key in light_vars:
-                color = light_vars[key]
-                style = style.replace(f"color: {color}", f"color: var(--syntax-{key})")
-            css += f"{prefix(cls)} {{ {style} }}\n"
+        css = build_highlight_style(light_formatter, "light") + build_highlight_style(dark_formatter, "dark")
         return css
 
 
@@ -78,25 +58,30 @@ def get_pygments_style_colors(style: Style) -> Dict[str, str]:
     return rv
 
 
-def build_syntax_variables(light_vars: Dict[str, str], dark_vars: Dict[str, str]) -> str:
+def build_highlight_style(formatter: HtmlFormatter, color_mode: Literal["light", "dark"]):
+    style_vars = get_pygments_style_colors(formatter.style)
+
     css = ":root {\n"
-    for line in _compile_syntax_variables(light_vars, "--syntax-light"):
+    for line in _compile_syntax_variables(style_vars, f"--syntax-{color_mode}"):
         css += line + "\n"
-
-    for line in _compile_syntax_variables(dark_vars, "--syntax-dark"):
-        css += line + "\n"
-
     css += "}\n"
 
-    css += ":root,html.light{\n"
-    for key in light_vars:
-        css += f"--syntax-{key}: var(--syntax-light-{key});\n"
-    css += "}\n"
+    token_styles = [
+        (level, ttype, cls, style) for cls, (style, ttype, level) in formatter.class2style.items() if cls and style
+    ]
+    token_styles.sort()
 
-    css += "html.dark, html.light .dark-code{\n"
-    for key in dark_vars:
-        css += f"--syntax-{key}: var(--syntax-dark-{key});\n"
-    css += "}\n"
+    if color_mode == "light":
+        prefix = formatter.get_css_prefix(["html.light .highlight"])
+    else:
+        prefix = formatter.get_css_prefix(["html.dark .highlight", "html.light .dark-code .highlight"])
+
+    for _, ttype, cls, style in token_styles:
+        key = _convert_token_type_name(ttype)
+        if key in style_vars:
+            color = style_vars[key]
+            style = style.replace(f"color: {color}", f"color: var(--syntax-{color_mode}-{key})")
+        css += f"{prefix(cls)} {{ {style} }}\n"
     return css
 
 

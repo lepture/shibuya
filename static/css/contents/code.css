@@ -5,6 +5,17 @@
   --code-block-linenos-divider: var(--gray-a6);
 }
 
+html.light {
+  --syntax-text: var(--syntax-light-text);
+  --syntax-comment: var(--syntax-light-comment);
+}
+
+html.dark,
+html.light .dark-code {
+  --syntax-text: var(--syntax-dark-text);
+  --syntax-comment: var(--syntax-dark-comment);
+}
+
 .light .dark-code {
   --code-block-background: var(--black-a12);
   --code-block-caption-background: #1C2024;
