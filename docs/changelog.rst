@@ -5,6 +5,12 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2025.11.4
+---------
+
+- **New**: Support extension ``sphinxext-opengraph``, via :issue:`97`.
+- **Update**: Remove python 3.9, add python 3.14.
+
 2025.10.21
 ----------
 
