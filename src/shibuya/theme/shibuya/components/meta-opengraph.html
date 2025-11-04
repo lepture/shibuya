@@ -1,31 +1,30 @@
-<meta property="og:type" content="website"/>
-
-{%- if pageurl %}
-<meta property="og:url" content="{{ pageurl|e }}"/>
-{% endif -%}
-
-<meta property="og:title" content="{{ title|striptags|e }}"/>
-
-{%- if meta and meta.cover -%}
-<meta name="twitter:card" content="summary_large_image"/>
-{%- else %}
-<meta name="twitter:card" content="summary"/>
+{%- if "sphinxext.opengraph" not in _sphinx_extensions -%}
+  <meta property="og:type" content="website"/>
+  {%- if pageurl %}
+  <meta property="og:url" content="{{ pageurl|e }}"/>
+  {% endif -%}
+  <meta property="og:title" content="{{ title|striptags|e }}"/>
+  {%- if meta and meta.cover -%}
+  <meta property="og:image" content="{{ meta.cover|e }}"/>
+  {%- elif meta and meta.image -%}
+  <meta property="og:image" content="{{ meta.image|e }}"/>
+  {%- elif theme_og_image_url %}
+  <meta property="og:image" content="{{ theme_og_image_url|e }}"/>
+  {%- elif logo_url and logo_url.startswith('https://') %}
+  <meta property="og:image" content="{{ logo_url|e }}"/>
+  {%- endif %}
+  {%- if meta and meta.description %}
+    <meta name="description" content="{{ meta.description|replace('\n', ' ')|e }}"/>
+    <meta property="og:description" content="{{ meta.description|replace('\n', ' ')|e }}"/>
+  {%- endif %}
+  {%- if meta and meta.cover -%}
+    <meta name="twitter:card" content="summary_large_image"/>
+  {%- else %}
+    <meta name="twitter:card" content="summary"/>
+  {%- endif -%}
+{%- elif metatags -%}
+  {{ metatags }}
 {%- endif -%}
-
-{%- if meta and meta.cover -%}
-<meta property="og:image" content="{{ meta.cover|e }}"/>
-{%- elif meta and meta.image -%}
-<meta property="og:image" content="{{ meta.image|e }}"/>
-{%- elif theme_og_image_url %}
-<meta property="og:image" content="{{ theme_og_image_url|e }}"/>
-{%- elif logo_url and logo_url.startswith('https://') %}
-<meta property="og:image" content="{{ logo_url|e }}"/>
-{%- endif %}
-
-{%- if meta and meta.description %}
-<meta name="description" content="{{ meta.description|replace('\n', ' ')|e }}"/>
-<meta property="og:description" content="{{ meta.description|replace('\n', ' ')|e }}"/>
-{%- endif %}
 
 {%- if theme_twitter_creator %}
 <meta name="twitter:creator" content="@{{ theme_twitter_creator }}"/>

@@ -54,6 +54,7 @@ def patch_html_page_context(
         return url
 
     context["i18n_link"] = create_i18n_link
+    context["_sphinx_extensions"] = app.config.extensions
 
 
 def _fix_builder_highlighter(builder: StandaloneHTMLBuilder) -> None:

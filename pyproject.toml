@@ -72,6 +72,7 @@ dev = [
     "sphinxcontrib-youtube>=1.4.1",
     "click-extra[sphinx]>=4.10.0",
     "sphinx-datatables>=0.3.1",
+    "sphinxext-opengraph[social-cards]>=0.13.0",
 ]
 serve = [
     "livereload>=2.7.1",
