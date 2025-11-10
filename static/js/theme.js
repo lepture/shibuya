@@ -13,8 +13,12 @@ function rotateColorMode () {
   updateLabel(mode)
 }
 
+function getCurrentMode () {
+  return document.documentElement.getAttribute('data-color-mode') || 'auto'
+}
+
 function getModeIndex () {
-  return COLOR_MODES.indexOf(document.documentElement.getAttribute('data-color-mode') || 'auto')
+  return COLOR_MODES.indexOf(getCurrentMode())
 }
 
 function updateLabel (mode) {
@@ -25,4 +29,13 @@ function updateLabel (mode) {
 if (el) {
   el.addEventListener('click', rotateColorMode)
   updateLabel(COLOR_MODES[getModeIndex()] || 'auto')
+}
+
+if (window.matchMedia) {
+  const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+  mediaQuery.addEventListener('change', (e) => {
+    if (getCurrentMode() === 'auto') {
+      setColorMode('auto')
+    }
+  })
 }
