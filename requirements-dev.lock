@@ -37,7 +37,7 @@ idna==3.11
 imagesize==1.4.1
 ipykernel==7.1.0
 ipython==8.37.0 ; python_full_version < '3.11'
-ipython==9.6.0 ; python_full_version >= '3.11'
+ipython==9.7.0 ; python_full_version >= '3.11'
 ipython-pygments-lexers==1.1.1 ; python_full_version >= '3.11'
 ipywidgets==8.1.8
 jedi==0.19.2
@@ -83,7 +83,7 @@ pure-eval==0.2.3
 pycparser==2.23 ; implementation_name == 'pypy'
 pygments==2.19.2
 pygments-ansi-color==0.3.0
-pygments-styles==0.2.0
+pygments-styles==0.3.0
 pyparsing==3.2.5
 python-dateutil==2.9.0.post0
 pytz==2025.2
