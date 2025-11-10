@@ -5,6 +5,11 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2025.11.10
+----------
+
+- **Fix**: Follow system theme changes on auto color mode, via :issue:`98`.
+
 2025.11.4
 ---------
 
