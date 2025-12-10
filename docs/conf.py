@@ -37,7 +37,6 @@ extensions = [
     "click_extra.sphinx",
     "sphinxcontrib.jquery",
     "sphinx_datatables",
-    "sphinxext.opengraph",
     "shibuya.sponsors",
 ]
 todo_include_todos = True
@@ -50,10 +49,6 @@ iconify_script_url = ""
 nbsphinx_requirejs_path = ""
 sitemap_excludes = ["404/"]
 sponsors_json_url = "https://cdn.jsdelivr.net/gh/lepture/lepture/sponsors.json"
-ogp_site_url = "https://shibuya.lepture.com/"
-ogp_social_cards = {
-    "image": "_public/icon.png",
-}
 
 extlinks = {
     "pull": ("https://github.com/lepture/shibuya/pull/%s", "pull request #%s"),
