@@ -3,14 +3,14 @@
 -e .
 alabaster==0.7.16
 appnope==0.1.4 ; sys_platform == 'darwin'
-asttokens==3.0.0
+asttokens==3.0.1
 attrs==25.4.0
 babel==2.17.0
-beautifulsoup4==4.14.2
+beautifulsoup4==4.14.3
 bleach==6.3.0
 boltons==24.0.0
 bracex==2.6
-certifi==2025.10.5
+certifi==2025.11.12
 cffi==2.0.0 ; implementation_name == 'pypy'
 charset-normalizer==3.4.4
 click==8.1.8
@@ -27,24 +27,24 @@ decorator==5.2.1
 defusedxml==0.7.1
 distro==1.9.0
 docutils==0.21.2
-exceptiongroup==1.3.0 ; python_full_version < '3.11'
+exceptiongroup==1.3.1 ; python_full_version < '3.11'
 executing==2.2.1
 extra-platforms==1.2.1
 fastjsonschema==2.21.2
-fonttools==4.60.1
-greenlet==3.2.4 ; platform_machine == 'AMD64' or platform_machine == 'WIN32' or platform_machine == 'aarch64' or platform_machine == 'amd64' or platform_machine == 'ppc64le' or platform_machine == 'win32' or platform_machine == 'x86_64'
+fonttools==4.61.0
+greenlet==3.3.0 ; platform_machine == 'AMD64' or platform_machine == 'WIN32' or platform_machine == 'aarch64' or platform_machine == 'amd64' or platform_machine == 'ppc64le' or platform_machine == 'win32' or platform_machine == 'x86_64'
 idna==3.11
 imagesize==1.4.1
 ipykernel==7.1.0
 ipython==8.37.0 ; python_full_version < '3.11'
-ipython==9.7.0 ; python_full_version >= '3.11'
+ipython==9.8.0 ; python_full_version >= '3.11'
 ipython-pygments-lexers==1.1.1 ; python_full_version >= '3.11'
 ipywidgets==8.1.8
 jedi==0.19.2
 jinja2==3.1.6
 jsonschema==4.25.1
 jsonschema-specifications==2025.9.1
-jupyter-client==8.6.3
+jupyter-client==8.7.0
 jupyter-core==5.9.1
 jupyter-sphinx==0.5.3
 jupyterlab-pygments==0.3.0
@@ -63,11 +63,11 @@ myst-parser==4.0.1
 nbclient==0.10.2
 nbconvert==7.16.6
 nbformat==5.10.4
-nbsphinx==0.9.7
+nbsphinx==0.9.8
 nest-asyncio==1.6.0
 numpy==2.2.6 ; python_full_version < '3.11'
-numpy==2.3.4 ; python_full_version >= '3.11'
-numpydoc==1.9.0
+numpy==2.3.5 ; python_full_version >= '3.11'
+numpydoc==1.10.0
 packaging==25.0
 pallets-sphinx-themes==2.1.3
 pandas==2.3.3
@@ -75,7 +75,7 @@ pandocfilters==1.5.1
 parso==0.8.5
 pexpect==4.9.0 ; sys_platform != 'emscripten' and sys_platform != 'win32'
 pillow==12.0.0
-platformdirs==4.5.0
+platformdirs==4.5.1
 prompt-toolkit==3.0.52
 psutil==7.1.3
 ptyprocess==0.7.0 ; sys_platform != 'emscripten' and sys_platform != 'win32'
@@ -91,18 +91,18 @@ pyyaml==6.0.3
 pyzmq==27.1.0
 referencing==0.37.0
 requests==2.32.5
-rpds-py==0.28.0
+rpds-py==0.30.0
 setuptools==80.9.0
 six==1.17.0
 snowballstemmer==3.0.1
 soupsieve==2.8
-sphinx==7.3.7
-sphinx-click==6.1.0
+sphinx==7.4.7
+sphinx-click==6.2.0
 sphinx-contributors==0.2.7
 sphinx-copybutton==0.5.2
 sphinx-datatables==0.3.1
 sphinx-design==0.6.1
-sphinx-docsearch==0.0.8
+sphinx-docsearch==0.2.0
 sphinx-iconify==0.2.1
 sphinx-last-updated-by-git==0.3.8
 sphinx-sitemap==2.9.0
@@ -113,13 +113,13 @@ sphinxcontrib-devhelp==2.0.0
 sphinxcontrib-htmlhelp==2.1.0
 sphinxcontrib-jquery==4.1
 sphinxcontrib-jsmath==1.0.1
-sphinxcontrib-mermaid==1.0.0
+sphinxcontrib-mermaid==1.2.3
 sphinxcontrib-qthelp==2.0.0
 sphinxcontrib-serializinghtml==2.0.0
 sphinxcontrib-video==0.4.1
 sphinxcontrib-youtube==1.4.1
 sphinxext-opengraph==0.13.0
-sqlalchemy==2.0.44
+sqlalchemy==2.0.45
 stack-data==0.6.3
 tabulate==0.9.0
 tinycss2==1.4.0
@@ -128,7 +128,7 @@ tornado==6.5.2
 traitlets==5.14.3
 typing-extensions==4.15.0
 tzdata==2025.2
-urllib3==2.5.0
+urllib3==2.6.1
 wcmatch==9.0
 wcwidth==0.2.14
 webencodings==0.5.1
