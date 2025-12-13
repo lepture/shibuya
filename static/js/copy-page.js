@@ -1,3 +1,5 @@
+const cache = new Map()
+
 /**
  * @param {HTMLButtonElement} button
  */
@@ -19,15 +21,25 @@ function bindButtonEvent(button) {
  * @param {String} url
  */
 function copySource(element, url) {
-  fetch(url).then(resp => {
-    return resp.text()
-  }).then((text) => {
-    return navigator.clipboard.writeText(text)
-  }).then(() => {
-    element.setAttribute('data-icon', 'check')
-    setTimeout(() => {
-      element.setAttribute('data-icon', 'copy')
-    }, 500)
+  const cachedContent = cache.get(url)
+  if (cachedContent) {
+    navigator.clipboard.writeText(cachedContent)
+    copyFinished(element)
+    return
+  }
+
+  navigator.clipboard.write([
+    new ClipboardItem({
+      'text/plain': fetch(url).then(resp => {
+        return resp.text()
+      }).then(content => {
+        cache.set(url, content)
+        copyFinished(element)
+        return content
+      })
+    }),
+  ]).catch(() => {
+    element.setAttribute('data-icon', 'copy')
   })
 }
 
@@ -85,11 +97,18 @@ function copyMarkdown (element) {
     const markdown = turndown.turndown(cleanContent(content))
     return navigator.clipboard.writeText(markdown)
   }).then(() => {
-    element.setAttribute('data-icon', 'check')
-    setTimeout(() => {
-      element.setAttribute('data-icon', 'copy')
-    }, 500)
+    copyFinished(element)
   })
+}
+
+/**
+ * @param {HTMLElement} element
+ */
+function copyFinished (element) {
+  element.setAttribute('data-icon', 'check')
+  setTimeout(() => {
+    element.setAttribute('data-icon', 'copy')
+  }, 500)
 }
 
 /**
