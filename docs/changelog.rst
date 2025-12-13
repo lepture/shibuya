@@ -5,6 +5,11 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2025.12.13
+----------
+
+- **New**: Add a "Copy button" with dropdown of open in AI links.
+
 2025.11.10
 ----------
 
