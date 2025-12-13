@@ -91,6 +91,7 @@ footer, navbar, and sidebar.
     colors
     navbar
     layouts
+    copypage
     announcement
     social
     fonts

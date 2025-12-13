@@ -103,6 +103,7 @@ html_theme_options = {
     "carbon_ads_code": "CE7DKK3W",
     "carbon_ads_placement": "shibuya",
     "globaltoc_expand_depth": 1,
+    "open_in_perplexity": True,
     "nav_links": [
         {
             "title": "Projects",
