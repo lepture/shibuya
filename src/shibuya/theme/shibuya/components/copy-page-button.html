@@ -45,18 +45,24 @@
             <span>{{ _('View Source') }}</span>
           {% endif %}
         </a>
+        {% if theme_open_in_chatgpt %}
         <a role="menuitem" href="https://chatgpt.com/?hints=search&q={{ prompt_text|urlencode }}" target="_blank">
           <iconify-icon icon="bi:openai"></iconify-icon>
           <span>{{ _('Open in ChatGPT') }}</span>
         </a>
+        {% endif %}
+        {% if theme_open_in_claude %}
         <a role="menuitem" href="https://claude.ai/new?q={{ prompt_text|urlencode }}" target="_blank">
           <iconify-icon icon="bi:claude"></iconify-icon>
           <span>{{ _('Open in Claude') }}</span>
         </a>
+        {% endif %}
+        {% if theme_open_in_perplexity %}
         <a role="menuitem" href="https://www.perplexity.ai/search?q={{ prompt_text|urlencode }}" target="_blank">
           <iconify-icon icon="bi:perplexity"></iconify-icon>
           <span>{{ _('Open in Perplexity') }}</span>
         </a>
+        {% endif %}
       </div>
     </div>
   </div>
