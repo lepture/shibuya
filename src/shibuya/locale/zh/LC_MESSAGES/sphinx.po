@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-08-30 23:51+0900\n"
+"POT-Creation-Date: 2025-12-13 20:50+0900\n"
 "PO-Revision-Date: 2023-07-15 18:09+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh\n"
@@ -16,11 +16,40 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: src/shibuya/theme/shibuya/components/back-to-top.html:5
 msgid "Back to top"
 msgstr "回到顶部"
+
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:22
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:37
+msgid "Copy page"
+msgstr "复制页面"
+
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:24
+msgid "More actions"
+msgstr "更多操作"
+
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:42
+msgid "View as Markdown"
+msgstr "查看 Markdown 源代码"
+
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:45
+msgid "View Source"
+msgstr "查看源代码"
+
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:50
+msgid "Open in ChatGPT"
+msgstr "在 ChatGPT 中打开"
+
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:54
+msgid "Open in Claude"
+msgstr "在 Claude 中打开"
+
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:58
+msgid "Open in Perplexity"
+msgstr "在 Perplexity 中打开"
 
 #: src/shibuya/theme/shibuya/components/nav-languages.html:4
 msgid "Translations"

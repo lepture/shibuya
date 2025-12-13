@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-08-30 23:51+0900\n"
+"POT-Creation-Date: 2025-12-13 20:50+0900\n"
 "PO-Revision-Date: 2023-07-15 18:34+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -16,11 +16,40 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: src/shibuya/theme/shibuya/components/back-to-top.html:5
 msgid "Back to top"
 msgstr "Retour au sommet"
+
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:22
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:37
+msgid "Copy page"
+msgstr "Copier la page"
+
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:24
+msgid "More actions"
+msgstr "Plus d’actions"
+
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:42
+msgid "View as Markdown"
+msgstr "Afficher en Markdown"
+
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:45
+msgid "View Source"
+msgstr "Afficher le code source"
+
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:50
+msgid "Open in ChatGPT"
+msgstr "Ouvrir dans ChatGPT"
+
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:54
+msgid "Open in Claude"
+msgstr "Ouvrir dans Claude"
+
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:58
+msgid "Open in Perplexity"
+msgstr "Ouvrir dans Perplexity"
 
 #: src/shibuya/theme/shibuya/components/nav-languages.html:4
 msgid "Translations"

@@ -10,13 +10,13 @@ build-static:
 babel-extract:
 	pybabel extract -F babel.cfg src/shibuya/theme -o src/shibuya/locale/sphinx.pot
 
+babel-update:
+	pybabel update -D sphinx -i src/shibuya/locale/sphinx.pot -d src/shibuya/locale
+
+babel-compile:
+	pybabel compile -D sphinx -d src/shibuya/locale
+
 lang=zh
 
 babel-init:
 	pybabel init -D sphinx -i src/shibuya/locale/sphinx.pot -d src/shibuya/locale -l ${lang}
-
-babel-update:
-	pybabel update -D sphinx -i src/shibuya/locale/sphinx.pot -d src/shibuya/locale -l ${lang}
-
-babel-compile:
-	pybabel compile -D sphinx -d src/shibuya/locale
