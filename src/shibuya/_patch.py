@@ -17,6 +17,7 @@ def patch_builder_inited(app: Sphinx):
             {
                 "expandtoc": _expandtoc,
                 "edit_source_link": _create_edit_source_link(app.config.html_context),
+                "view_source_link": _create_view_source_link(app.config.html_context),
             },
         )
 
@@ -156,6 +157,35 @@ def _create_edit_source_link(context: Dict[str, Any]):
         return f"{url}/{source_version}{source_docs_path}{filename}"
 
     return edit_source_link
+
+
+def _create_view_source_link(context: Dict[str, Any]):
+    source_type = context.get("source_type")
+    source_user = context.get("source_user")
+    source_repo = context.get("source_repo")
+    source_docs_path = context.get("source_docs_path", "/docs/")
+    source_version = context.get("source_version", "main")
+    source_view_template = context.get("source_view_template")
+
+    def view_source_link(filename: str) -> Optional[str]:
+        if source_view_template:
+            return source_view_template.format(filename)
+
+        if not source_user or not source_repo:
+            return
+
+        if source_type == "github":
+            url = f"https://raw.githubusercontent.com/{source_user}/{source_repo}/refs/heads"
+        elif source_type == "gitlab":
+            url = f"https://gitlab.com/{source_user}/{source_repo}/-/raw"
+        elif source_type == "bitbucket":
+            url = f"https://bitbucket.org/{source_user}/{source_repo}/raw"
+        else:
+            return
+
+        return f"{url}/{source_version}{source_docs_path}{filename}"
+
+    return view_source_link
 
 
 def _add_readthedocs_context():

@@ -1,0 +1,64 @@
+{%- if show_source and has_source and sourcename -%}
+  {% set raw_source_url = pathto('_sources/' + sourcename, true)|e %}
+  {% set can_fetch_source = True %}
+{% elif page_source_suffix %}
+  {% set raw_source_url = view_source_link(pagename + page_source_suffix) %}
+  {% set can_fetch_source = raw_source_url.startswith('https://raw.githubusercontent.com/') %}
+{% else %}
+  {% set raw_source_url = None %}
+  {% set can_fetch_source = False %}
+{%- endif -%}
+
+{% if theme_show_ai_links and raw_source_url %}
+{% set prompt_text = theme_ai_prompt_template.format(url=raw_source_url) %}
+<div class="copy-page-wrapper relative pb-4 lg:absolute lg:top-8 lg:right-6 xl:right-12">
+  <div id="copy-page-trigger">
+    <button
+      type="button"
+      class="js-copy px-3 py-1 inline-flex items-center gap-1"
+      {% if can_fetch_source %}data-url="{{ raw_source_url }}"{% endif %}
+    >
+      <i class="i-lucide" data-icon="copy"></i>
+      <span>{{ _('Copy page') }}</span>
+    </button>
+    <button class="js-menu px-2 py-1" type="button" aria-label="{{ _('More actions') }}"
+      aria-haspopup="menu" aria-expanded="false" aria-controls="copy-page-content">
+      <i class="i-lucide chevron-down"></i>
+    </button>
+  </div>
+  <div id="copy-page-content" role="menu" aria-orientation="vertical" aria-hidden="true">
+    <div role="presentation">
+      <div class="flex flex-col" role="group">
+        <button class="js-copy" type="button" role="menuitem"
+          {% if can_fetch_source %}data-url="{{ raw_source_url }}"{% endif %}>
+          <span class="iconify-icon">
+            <i class="i-lucide" data-icon="copy"></i>
+          </span>
+          <span>{{ _('Copy page') }}</span>
+        </button>
+        <a role="menuitem" href="{{ raw_source_url }}" target="_blank">
+          {% if page_source_suffix and page_source_suffix.endswith(".md") %}
+            <iconify-icon icon="bi:markdown"></iconify-icon>
+            <span>{{ _('View as Markdown') }}</span>
+          {% else %}
+            <iconify-icon icon="bi:code-slash"></iconify-icon>
+            <span>{{ _('View Source') }}</span>
+          {% endif %}
+        </a>
+        <a role="menuitem" href="https://chatgpt.com/?hints=search&q={{ prompt_text|urlencode }}" target="_blank">
+          <iconify-icon icon="bi:openai"></iconify-icon>
+          <span>{{ _('Open in ChatGPT') }}</span>
+        </a>
+        <a role="menuitem" href="https://claude.ai/new?q={{ prompt_text|urlencode }}" target="_blank">
+          <iconify-icon icon="bi:claude"></iconify-icon>
+          <span>{{ _('Open in Claude') }}</span>
+        </a>
+        <a role="menuitem" href="https://www.perplexity.ai/search?q={{ prompt_text|urlencode }}" target="_blank">
+          <iconify-icon icon="bi:perplexity"></iconify-icon>
+          <span>{{ _('Open in Perplexity') }}</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}

@@ -1,5 +1,6 @@
 import "iconify-icon"
 import "./js/menu"
+import "./js/copy-page"
 import "./js/banner"
 import "./js/theme"
 import "./js/globaltoc"

@@ -1,0 +1,111 @@
+#copy-page-trigger {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--gray-a4);
+  border-radius: 0.625rem;
+  background-color: var(--sy-c-background);
+  overflow: hidden;
+  font-size: 0.875rem;
+}
+
+#copy-page-trigger i.i-lucide {
+  transition: transform 0.2s ease;
+}
+
+#copy-page-trigger button[aria-expanded="true"] > i {
+  transform: rotate(-180deg);
+}
+
+#copy-page-trigger button {
+  background-color: var(--sy-c-background);
+  transition: background-color 0.2s ease;
+  vertical-align: middle;
+  height: 32px;
+}
+
+#copy-page-trigger button:hover {
+  background-color: var(--sy-c-surface);
+}
+
+#copy-page-trigger button + button {
+  border-left: 1px solid var(--gray-a4);
+}
+
+#copy-page-content {
+  position: absolute;
+  margin-top: 0.25rem;
+  padding: 0.75rem 0.5rem;
+  border: 1px solid var(--gray-a4);
+  box-shadow: var(--sy-dropdown-shadow);
+  background: var(--sy-c-background);
+  border-radius: 0.625rem;
+  min-width: 200px;
+}
+#copy-page-content[aria-hidden="true"] {
+  display: none;
+}
+
+#copy-page-content button,
+#copy-page-content a {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.875rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: 0.25rem;
+  white-space: nowrap;
+}
+
+#copy-page-content button:hover,
+#copy-page-content a:hover {
+  background: var(--gray-a3);
+}
+
+#copy-page-content .iconify-icon,
+#copy-page-content iconify-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  font-size: 0.825rem;
+  border: 1px solid var(--gray-a4);
+  border-radius: 0.25rem;
+  margin-right: 0.5rem;
+}
+
+#copy-page-content a::after {
+  content: '';
+  mask: var(--lucide-external-link-url) no-repeat;
+  mask-size: 100% 100%;
+  width: 0.625em;
+  height: 0.625em;
+  display: inline-block;
+  vertical-align: top;
+  font-style: normal;
+  background-color: var(--gray-a9);
+  margin-left: 0.1rem;
+  position: relative;
+  top: -2px;
+}
+
+#copy-page-trigger .i-lucide[data-icon="copy"],
+#copy-page-content .i-lucide[data-icon="copy"] {
+  --icon-url:var(--lucide-copy-url)
+}
+#copy-page-trigger .i-lucide[data-icon="check"],
+#copy-page-content .i-lucide[data-icon="check"] {
+  --icon-url:var(--lucide-check-url)
+}
+#copy-page-trigger .i-lucide[data-icon="loader"],
+#copy-page-content .i-lucide[data-icon="loader"] {
+  --icon-url:var(--lucide-loader-url)
+}
+
+@media (width >= 64rem) {
+  .copy-page-wrapper + .yue > section > h1:first-of-type {
+    padding-right: 180px;
+  }
+  #copy-page-content {
+    right: 0;
+  }
+}
