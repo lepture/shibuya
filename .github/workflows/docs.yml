@@ -3,7 +3,11 @@ name: Deploy docs to Pages
 on:
   push:
     branches:
-    - main
+      - main
+    paths-ignore:
+      - '.github/**'
+      - 'README.md'
+      - '*.lock'
 
   workflow_dispatch:
 
