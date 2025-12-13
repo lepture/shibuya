@@ -24,9 +24,9 @@ Sphinx versions
 
 Here lists the Sphinx version Shibuya theme supports:
 
-- Sphinx v6
 - Sphinx v7
 - Sphinx v8
+- Sphinx v9
 
 Shibuya Theme may drop support for older versions of Sphinx when
 a new version of Sphinx is released.
