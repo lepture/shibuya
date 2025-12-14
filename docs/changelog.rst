@@ -5,10 +5,17 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2025.12.14
+----------
+
+- **Fix**: Support "Copy page" button on Safari.
+- **Fix**: Update style for Algolia docsearch extension.
+- **New**: Add "Copy page" button on compact layout.
+
 2025.12.13
 ----------
 
-- **New**: Add a "Copy button" with dropdown of open in AI links.
+- **New**: Add a "Copy page" button with dropdown of open in AI links.
 
 2025.11.10
 ----------
