@@ -31,7 +31,8 @@
   <main class="w-full max-sm:max-w-full print:pt-6">
     {% include "components/breadcrumbs.html" %}
     <div class="flex flex-col break-words justify-between">
-      <div class="min-w-0 max-w-6xl px-6 pb-6 pt-8 xl:px-12">
+      <div class="relative min-w-0 max-w-6xl px-6 pb-6 pt-8 xl:px-12">
+        {%- include "components/copy-page-button.html" -%}
         <article class="yue{% if dark_code %} dark-code{% endif %}" role="main">
           {% block content %}{{ body }}{% endblock %}
         </article>
