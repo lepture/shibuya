@@ -1,49 +1,50 @@
+/* fix style for algolia docsearch */
 html.light,
 html.dark {
-  --docsearch-primary-color: var(--accent-9);
-  --docsearch-text-color: var(--sy-c-text);
+  --docsearch-background-color: var(--sy-c-background);
+  --docsearch-icon-color: var(--gray-11);
+  --docsearch-secondary-text-color: var(--gray-11);
   --docsearch-modal-background: var(--sy-c-background);
   --docsearch-footer-background: var(--sy-c-surface);
-  --docsearch-searchbox-background: var(--sy-c-surface);
+
+  --docsearch-primary-color: var(--accent-9);
+  --docsearch-soft-primary-color: var(--accent-a2);
+  --docsearch-subtle-color: var(--gray-4);
+  --docsearch-text-color: var(--sy-c-text);
+  --docsearch-key-background: var(--gray-1);
+
+  --docsearch-searchbox-background: var(--gray-3);
   --docsearch-searchbox-focus-background: var(--sy-c-background);
-  --docsearch-muted-color: var(--sy-c-light);
+  --docsearch-muted-color: var(--gray-10);
+  --docsearch-focus-color: var(--accent-a8);
+  --docsearch-highlight-color: var(--accent-a11);
   --docsearch-hit-color: var(--sy-c-text);
-  --docsearch-hit-background: var(--sy-c-surface);
-  --docsearch-hit-active-color: var(--accent-contrast);
+  --docsearch-hit-background: var(--gray-a2);
+  --docsearch-hit-highlight-color: var(--accent-a3);
   --docsearch-hit-shadow: inset 0 0 1px 0 var(--gray-a11);
-  --docsearch-container-background: var(--sy-c-overlay);
-}
-html.light {
-  --docsearch-key-gradient: linear-gradient(-225deg, #e6e6e6, #f8f8f8);
-  --docsearch-key-shadow:  inset 0 -2px #dbdbdb, inset 0 0 1px 1px #fff, 0 1px 2px 1px #50505066;
+  --docsearch-container-background: var(--gray-a5);
 }
 html.dark {
-  --docsearch-key-gradient: linear-gradient(-225deg, #353434, #141414);
-  --docsearch-key-shadow: inset 0 -2px #373737, inset 0 0 1px 1px #222, 0 1px 2px 1px #000;
-  --docsearch-footer-shadow: 0 -1px 0 0 #373737,0 -3px 6px 0 #141414;
   --docsearch-modal-shadow: inset 1px 1px 0 0 #373737,0 3px 8px 0 #141414;
 }
 
 #docsearch .DocSearch-Button {
-  border-radius: 6px;
-}
-
-#docsearch .DocSearch-Button-Key,
-#docsearch .DocSearch-Button-Placeholder {
-  font-size: 0.825rem;
-}
-
-#docsearch .DocSearch-Button-Placeholder,
-#docsearch .DocSearch-Button-Keys {
-  display: flex !important;
+  box-sizing: border-box;
+  margin: 0;
+  width: auto;
+  height: 32px;
 }
 
 #docsearch .DocSearch-Search-Icon {
-  width: 0.875rem !important;
-  height: 0.875rem !important;
+  width: 1rem;
+  height: 1rem;
 }
 
 @media (max-width: 767px) {
+  html.light,
+  html.dark {
+    --docsearch-searchbox-background: transparent;
+  }
   #docsearch {
     position: absolute;
     top: 1rem;
