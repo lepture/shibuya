@@ -33,6 +33,7 @@
 
 #copy-page-content {
   position: absolute;
+  z-index: 9;
   margin-top: 0.25rem;
   padding: 0.75rem 0.5rem;
   border: 1px solid var(--gray-a4);
