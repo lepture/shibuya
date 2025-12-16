@@ -5,6 +5,11 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2025.12.16
+----------
+
+- **Fix**: Add ``z-index`` for "Copy page" dropdown, via :issue:`102`.
+
 2025.12.14
 ----------
 
