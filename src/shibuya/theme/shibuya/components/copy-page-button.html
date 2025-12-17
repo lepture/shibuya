@@ -1,3 +1,9 @@
+{%- if meta and meta.hide_ai_links == "true" -%}
+  {% set _show_ai_links = False %}
+{%- else -%}
+  {% set _show_ai_links = theme_show_ai_links %}
+{%- endif -%}
+
 {%- if has_source and sourcename -%}
   {% set raw_source_url = view_source_link(sourcename) %}
   {% set can_fetch_source = True %}
@@ -9,7 +15,7 @@
   {% set can_fetch_source = False %}
 {%- endif -%}
 
-{% if theme_show_ai_links and raw_source_url %}
+{% if _show_ai_links and raw_source_url %}
 {% set prompt_text = theme_ai_prompt_template.format(url=raw_source_url) %}
 <div class="copy-page-wrapper relative pb-4 lg:absolute lg:top-8 lg:right-6 xl:right-12">
   <div id="copy-page-trigger">

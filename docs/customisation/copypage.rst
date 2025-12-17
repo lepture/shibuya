@@ -24,6 +24,16 @@ If you prefer not to show the **Copy page button**, you can turn it off in the
       "show_ai_links": False,
     }
 
+It is also possible to disable the **Copy page** button on a certain page with
+a meta tag of ``:hide_ai_links: true``:
+
+.. code-block:: rst
+
+   :hide_ai_links: true
+
+   Page title
+   ==========
+
 Source files
 ------------
 

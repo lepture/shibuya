@@ -1,4 +1,7 @@
 :description: How API documentation looks like on Shibuya Sphinx theme.
+:hide_ai_links: true
+
+.. _api:
 
 API reference
 =============

@@ -129,6 +129,22 @@ component on the current page.
    Page title
    ==========
 
+
+Copy page
+---------
+
+Adding ``:hide_ai_links: true`` meta tag to hide the "Copy page"
+button on the current page.
+
+.. code-block:: rst
+
+   :hide_ai_links: true
+
+   Page title
+   ==========
+
+See :ref:`api` for example.
+
 Max width
 ---------
 
