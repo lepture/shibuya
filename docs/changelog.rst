@@ -5,6 +5,12 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2025.12.17
+----------
+
+- **Fix**: Generate absolute source URL for "Copy page" button, via :issue:`103`.
+- **New**: Add ``hide_ai_links`` meta tag to disable "Copy page" button on current page.
+
 2025.12.16
 ----------
 
