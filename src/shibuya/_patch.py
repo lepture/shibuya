@@ -3,6 +3,7 @@ import os
 import xml.etree.ElementTree as ET
 from typing import Dict, Any, Optional
 from pathlib import Path
+from sphinx.config import Config
 from sphinx.application import Sphinx
 from sphinx.builders.html import StandaloneHTMLBuilder
 from sphinx.builders.dirhtml import DirectoryHTMLBuilder
@@ -17,7 +18,7 @@ def patch_builder_inited(app: Sphinx):
             {
                 "expandtoc": _expandtoc,
                 "edit_source_link": _create_edit_source_link(app.config.html_context),
-                "view_source_link": _create_view_source_link(app.config.html_context),
+                "view_source_link": _create_view_source_link(app.config),
             },
         )
 
@@ -159,7 +160,11 @@ def _create_edit_source_link(context: Dict[str, Any]):
     return edit_source_link
 
 
-def _create_view_source_link(context: Dict[str, Any]):
+def _create_view_source_link(config: Config):
+    site_url = config.html_baseurl
+    copy_source = config.html_copy_source
+
+    context = config.html_context
     source_type = context.get("source_type")
     source_user = context.get("source_user")
     source_repo = context.get("source_repo")
@@ -168,6 +173,9 @@ def _create_view_source_link(context: Dict[str, Any]):
     source_view_template = context.get("source_view_template")
 
     def view_source_link(filename: str) -> Optional[str]:
+        if site_url and copy_source:
+            return site_url.rstrip("/") + "/_sources/" + filename
+
         if source_view_template:
             return source_view_template.format(filename)
 

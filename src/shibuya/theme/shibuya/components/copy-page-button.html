@@ -1,5 +1,5 @@
 {%- if has_source and sourcename -%}
-  {% set raw_source_url = pathto('_sources/' + sourcename, true)|e %}
+  {% set raw_source_url = view_source_link(sourcename) %}
   {% set can_fetch_source = True %}
 {% elif page_source_suffix %}
   {% set raw_source_url = view_source_link(pagename + page_source_suffix) %}

@@ -47,6 +47,8 @@ Use the Sphinx copy source feature for source URL:
 .. code-block:: python
     :caption: conf.py
 
+    # html_baseurl is required to create absolute URL
+    html_baseurl = "https://shibuya.lepture.com/"
     html_copy_source = True
 
 Sphinx will copy the source files into ``_sources`` folder.
