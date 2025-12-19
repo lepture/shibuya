@@ -5,6 +5,11 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2025.12.19
+----------
+
+- **Fix**: Fix "Copy page" button when there is no source URL.
+
 2025.12.17
 ----------
 
