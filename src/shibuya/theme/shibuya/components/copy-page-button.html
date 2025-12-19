@@ -9,7 +9,7 @@
   {% set can_fetch_source = True %}
 {%- elif page_source_suffix -%}
   {% set raw_source_url = view_source_link(pagename + page_source_suffix) %}
-  {% set can_fetch_source = raw_source_url.startswith('https://raw.githubusercontent.com/') %}
+  {% set can_fetch_source = source_type == "github" %}
 {%- else -%}
   {% set raw_source_url = None %}
   {% set can_fetch_source = False %}
