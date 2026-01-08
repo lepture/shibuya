@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-12-13 20:50+0900\n"
+"POT-Creation-Date: 2026-01-09 00:47+0800\n"
 "PO-Revision-Date: 2023-07-15 18:34+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -22,34 +22,38 @@ msgstr ""
 msgid "Back to top"
 msgstr "Reen al supro"
 
-#: src/shibuya/theme/shibuya/components/copy-page-button.html:22
-#: src/shibuya/theme/shibuya/components/copy-page-button.html:37
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:28
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:43
 msgid "Copy page"
 msgstr "Copiar página"
 
-#: src/shibuya/theme/shibuya/components/copy-page-button.html:24
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:30
 msgid "More actions"
 msgstr "Más acciones"
 
-#: src/shibuya/theme/shibuya/components/copy-page-button.html:42
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:48
 msgid "View as Markdown"
 msgstr "Ver como Markdown"
 
-#: src/shibuya/theme/shibuya/components/copy-page-button.html:45
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:51
 msgid "View Source"
 msgstr "Ver código fuente"
 
-#: src/shibuya/theme/shibuya/components/copy-page-button.html:50
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:57
 msgid "Open in ChatGPT"
 msgstr "Abrir en ChatGPT"
 
-#: src/shibuya/theme/shibuya/components/copy-page-button.html:54
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:63
 msgid "Open in Claude"
 msgstr "Abrir en Claude"
 
-#: src/shibuya/theme/shibuya/components/copy-page-button.html:58
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:69
 msgid "Open in Perplexity"
 msgstr "Abrir en Perplexity"
+
+#: src/shibuya/theme/shibuya/components/discussion-link.html:10
+msgid "Discussion"
+msgstr ""
 
 #: src/shibuya/theme/shibuya/components/nav-languages.html:4
 msgid "Translations"

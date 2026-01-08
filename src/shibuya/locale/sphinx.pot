@@ -1,14 +1,14 @@
 # Translations template for PROJECT.
-# Copyright (C) 2025 ORGANIZATION
+# Copyright (C) 2026 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-12-13 20:50+0900\n"
+"POT-Creation-Date: 2026-01-09 00:47+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,33 +21,37 @@ msgstr ""
 msgid "Back to top"
 msgstr ""
 
-#: src/shibuya/theme/shibuya/components/copy-page-button.html:22
-#: src/shibuya/theme/shibuya/components/copy-page-button.html:37
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:28
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:43
 msgid "Copy page"
 msgstr ""
 
-#: src/shibuya/theme/shibuya/components/copy-page-button.html:24
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:30
 msgid "More actions"
 msgstr ""
 
-#: src/shibuya/theme/shibuya/components/copy-page-button.html:42
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:48
 msgid "View as Markdown"
 msgstr ""
 
-#: src/shibuya/theme/shibuya/components/copy-page-button.html:45
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:51
 msgid "View Source"
 msgstr ""
 
-#: src/shibuya/theme/shibuya/components/copy-page-button.html:50
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:57
 msgid "Open in ChatGPT"
 msgstr ""
 
-#: src/shibuya/theme/shibuya/components/copy-page-button.html:54
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:63
 msgid "Open in Claude"
 msgstr ""
 
-#: src/shibuya/theme/shibuya/components/copy-page-button.html:58
+#: src/shibuya/theme/shibuya/components/copy-page-button.html:69
 msgid "Open in Perplexity"
+msgstr ""
+
+#: src/shibuya/theme/shibuya/components/discussion-link.html:10
+msgid "Discussion"
 msgstr ""
 
 #: src/shibuya/theme/shibuya/components/nav-languages.html:4
