@@ -5,6 +5,12 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2026.1.9
+--------
+
+- **Fix**: Add translation for "Discussion" text.
+- **Fix**: Using ``sun-moon`` icon for "auto" color mode.
+
 2025.12.19
 ----------
 
