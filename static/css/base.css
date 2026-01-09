@@ -76,7 +76,7 @@ iconify-icon {
 
 .theme-switch .theme-icon,
 [data-color-mode="auto"] .theme-switch .theme-icon {
-  --icon-url: var(--lucide-laptop-url);
+  --icon-url: var(--lucide-sun-moon-url);
 }
 [data-color-mode="light"] .theme-switch .theme-icon {
   --icon-url: var(--lucide-sun-url);
