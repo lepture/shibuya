@@ -53,7 +53,7 @@ msgstr "Perplexity で開く"
 
 #: src/shibuya/theme/shibuya/components/discussion-link.html:10
 msgid "Discussion"
-msgstr ""
+msgstr "ディスカッション"
 
 #: src/shibuya/theme/shibuya/components/nav-languages.html:4
 msgid "Translations"

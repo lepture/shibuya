@@ -43,18 +43,18 @@ All localizations are stored in the `src/shibuya/locale` directory. To add a new
 `pybabel` to extract the messages:
 
 ```
-pybabel extract -F babel.cfg src/shibuya/theme -o src/shibuya/locale/sphinx.pot
+uv run pybabel extract -F babel.cfg src/shibuya/theme -o src/shibuya/locale/sphinx.pot
 ```
 
 Initialize the translation file:
 
 ```
-pybabel init -D sphinx -i src/shibuya/locale/sphinx.pot -d src/shibuya/locale -l <language>
+uv run pybabel init -D sphinx -i src/shibuya/locale/sphinx.pot -d src/shibuya/locale -l <language>
 ```
 
 Then the new language `.po` file will be created in the `src/shibuya/locale/<language>/LC_MESSAGES` 
 directory. Translate the messages in the `.po` file and compile it:
 
 ```
-pybabel compile -D sphinx -d src/shibuya/locale
+uv run pybabel compile -D sphinx -d src/shibuya/locale
 ```
