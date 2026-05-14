@@ -11,7 +11,7 @@ Shibuya
 
 .. container:: buttons
 
-    `Docs </install/>`_
+    :doc:`Docs <install>`
     `GitHub <https://github.com/lepture/shibuya>`_
 
 .. raw:: html
