@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {%- block htmltitle -%}
-  <title>Branding - Shibuya</title>
+  <title>{% trans %}Branding - Shibuya{% endtrans %}</title>
 {% endblock %}
 
 {% block themestyles %}
@@ -53,10 +53,10 @@
 {% endblock %}
 
 {% block body %}
-<h1 class="headline">Logos & Branding</h1>
+<h1 class="headline">{% trans %}Logos & Branding{% endtrans %}</h1>
 <section class="brand-logos">
-  <h1>Logos</h1>
-  <h2>Get our logos with <strong>Shibuya</strong> text.</h2>
+  <h1>{% trans %}Logos{% endtrans %}</h1>
+  <h2>{% trans %}Get our logos with <strong>Shibuya</strong> text.{% endtrans %}</h2>
   <div class="brand-logo">
     <a style="background:#fff" href="{{ pathto('_static/logo-light.svg', 1) }}" download>
       <img src="{{ pathto('_static/logo-light.svg', 1) }}">
@@ -69,8 +69,8 @@
   </div>
 </section>
 <section class="brand-icons">
-  <h1>Icons</h1>
-  <h2>Get our squared icons.</h2>
+  <h1>{% trans %}Icons{% endtrans %}</h1>
+  <h2>{% trans %}Get our squared icons.{% endtrans %}</h2>
   <div class="flex" style="gap:1rem">
     <div class="brand-icon">
       <a style="background:#fff" href="{{ pathto('_static/icon-light.svg', 1) }}" download>
