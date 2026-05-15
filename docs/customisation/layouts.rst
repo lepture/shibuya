@@ -128,7 +128,7 @@ This template offers a special container for buttons:
 
     .. container:: buttons
 
-        `Docs </install/>`_
+        :doc:`Docs <install>`
         `GitHub <https://github.com/lepture/shibuya>`_
 
 404 layout

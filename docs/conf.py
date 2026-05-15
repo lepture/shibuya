@@ -91,7 +91,6 @@ if os.getenv("TRIM_HTML_SUFFIX"):
 html_favicon = "_static/icon-light.svg"
 
 html_theme_options = {
-    "logo_target": "/",
     "light_logo": "_static/logo-light.svg",
     "dark_logo": "_static/logo-dark.svg",
     "og_image_url": "https://shibuya.lepture.com/icon.png",
@@ -126,7 +125,7 @@ html_theme_options = {
         },
         {
             "title": "Support me",
-            "url": "/sponsors",
+            "url": "sponsors",
         },
     ],
 }
