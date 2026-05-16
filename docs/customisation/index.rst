@@ -30,24 +30,28 @@ option in your Sphinx configuration file.
     :padding: 0
 
     .. grid-item-card:: Logos
-        :link: /customisation/logos/
+        :link: logos
+        :link-type: doc
 
         Add a logo to promote your brand and make your website more recognizable.
 
     .. grid-item-card:: Colors
-        :link: /customisation/colors/
+        :link: colors
+        :link-type: doc
 
         Customize the color scheme to give your website a unique look and feel that
         reflects your brand or personal style.
 
     .. grid-item-card:: Navbar Links
-        :link: /customisation/navbar/
+        :link: navbar
+        :link-type: doc
 
         Improve navigation by adding custom links to the navbar that direct users
         to important content on your website.
 
     .. grid-item-card:: Social Connections
-        :link: /customisation/social/
+        :link: social
+        :link-type: doc
 
         Connect with visitors by including links to your GitHub, Twitter, Discord,
         and etc.
@@ -65,19 +69,22 @@ footer, navbar, and sidebar.
     :padding: 0
 
     .. grid-item-card:: Web Fonts
-        :link: /customisation/fonts/
+        :link: fonts
+        :link-type: doc
 
         Use custom web fonts to give your documentation website a unique typography
         that reflects your brand or personal style.
 
     .. grid-item-card:: Icons
-        :link: /customisation/icons/
+        :link: icons
+        :link-type: doc
 
         Add or change our default icon set to reflect your brand and enhance the
         visual appeal and user experience of your documentation website.
 
     .. grid-item-card:: Sidebar
-        :link: /customisation/sidebar/
+        :link: sidebar
+        :link-type: doc
 
         Customize the elements that appear in the right sidebar of your documentation
         pages; such as table of contents, advertisement, edit this page.

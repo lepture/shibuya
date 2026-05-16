@@ -38,19 +38,22 @@ Shibuya
         preference.
 
     .. grid-item-card:: :octicon:`paintbrush` Customizable Colors
-        :link: /customisation/colors/
+        :link: customisation/colors
+        :link-type: doc
 
         Customize the colors to match your brand or personal preferences
         with radix colors.
 
     .. grid-item-card:: :octicon:`beaker` Jupyter Integration
-        :link: /extensions/nbsphinx/
+        :link: extensions/nbsphinx
+        :link-type: doc
 
         Great CSS/UI for lots of Jupyter related extensions, enhance your
         AI documentation.
 
     .. grid-item-card:: :octicon:`browser` Multiple Layouts
-        :link: /customisation/layouts/
+        :link: customisation/layouts
+        :link-type: doc
 
         Layouts of landing page, simple one page, and three-column
         documentation page.
@@ -96,24 +99,28 @@ Here are some examples of documentation sites that use the Shibuya theme.
 
     .. grid-item-card:: |Vyper| Vyper
         :link: https://docs.vyperlang.org/en/stable/
+        :link-type: url
 
         Vyper is a contract-oriented, Pythonic programming language that
         targets the Ethereum Virtual Machine (EVM).
 
     .. grid-item-card:: :iconify:`devicon:sentry` Sentry
         :link: https://getsentry.github.io/sentry-python/
+        :link-type: url
 
         Sentry is using Shibuya theme for their Python libraries API documentation.
         Including ``sentry-python``, ``arroyo``, ``sentry-kafka-schemas``, and etc.
 
     .. grid-item-card:: |Falco| Falco
         :link: https://falco.oluwatobi.dev/en/latest/
+        :link-type: url
 
         Falco is your Django toolkit for faster prototyping and deployment
         of your Django projects.
 
     .. grid-item-card:: |authlib|
         :link: https://docs.authlib.org
+        :link-type: url
 
         The ultimate Python library in building OAuth and OpenID Connect servers.
         It is designed from low level specifications implementations to high level
@@ -121,6 +128,7 @@ Here are some examples of documentation sites that use the Shibuya theme.
 
     .. grid-item-card:: |joserfc|
         :link: https://jose.authlib.org
+        :link-type: url
 
         ``joserfc`` is a Python library derived from Authlib that provides a
         comprehensive implementation of several essential JSON Object Signing
@@ -128,6 +136,7 @@ Here are some examples of documentation sites that use the Shibuya theme.
 
     .. grid-item-card:: |sphinx-iconify|
         :link: https://sphinx-iconify.lepture.com
+        :link-type: url
 
         ``sphinx-iconify`` provides the ``:iconify:`` role, which allows you
         to use the ``<iconify-icon>`` web component powered by Iconify.
