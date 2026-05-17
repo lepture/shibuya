@@ -1,6 +1,7 @@
 {%- extends "layout.html" -%}
 
 {%- block extrahead %}
+  {{ super() }}
   {% include "components/meta-opengraph.html" %}
   {% include "components/alternate-links.html" %}
 {%- endblock %}
