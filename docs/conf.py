@@ -1,6 +1,7 @@
 import os
 import sys
 import shibuya
+from sphinx.locale import _
 
 # for example source
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "example_code"))
@@ -105,26 +106,26 @@ html_theme_options = {
     "open_in_perplexity": True,
     "nav_links": [
         {
-            "title": "Projects",
+            "title": _("Projects"),
             "children": [
                 {
-                    "title": "Pygments Styles",
+                    "title": _("Pygments Styles"),
                     "url": "https://pygments-styles.org/",
-                    "summary": "A curated collection of Pygments styles based on VS Code themes.",
+                    "summary": _("A curated collection of Pygments styles based on VS Code themes."),
                 },
                 {
-                    "title": "Sphinx Iconify",
+                    "title": _("Sphinx Iconify"),
                     "url": "https://sphinx-iconify.lepture.com/",
-                    "summary": "Embedding icons from over 200,000 open-source vector icons.",
+                    "summary": _("Embedding icons from over 200,000 open-source vector icons."),
                 },
             ],
         },
         {
-            "title": "Branding",
+            "title": _("Branding"),
             "url": "branding",
         },
         {
-            "title": "Support me",
+            "title": _("Support me"),
             "url": "sponsors",
         },
     ],
@@ -137,7 +138,7 @@ if "READTHEDOCS" in os.environ:
         "source_repo": "shibuya",
     }
     html_theme_options["carbon_ads_code"] = ""
-    html_theme_options["announcement"] = (
+    html_theme_options["announcement"] = _(
         "This documentation is hosted on Read the Docs only for testing. Please use "
         "<a href='https://shibuya.lepture.com/'>the main documentation</a> instead."
     )
