@@ -12,6 +12,8 @@ Meta tags
 
 -----
 
+.. _meta-layout:
+
 Layout
 ------
 

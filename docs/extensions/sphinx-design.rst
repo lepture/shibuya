@@ -91,22 +91,26 @@ Grid cards
     :gutter: 2
 
     .. grid-item-card:: Tutorial
-        :link: /install/
+        :link: ../install
+        :link-type: doc
 
         If you're new to Python and Sphinx, this is a great place to start.
 
     .. grid-item-card:: Customisation
-        :link: /customisation/
+        :link: ../customisation/index
+        :link-type: doc
 
         Tailor configurations to meet your specific requirements with customizable settings.
 
     .. grid-item-card:: References
-        :link: /writing/
+        :link: ../writing/index
+        :link-type: doc
 
         Learn the syntax of reStructuredText and examine how it is formatted.
 
     .. grid-item-card:: Contributing
-        :link: /contributing/
+        :link: ../contributing/index
+        :link-type: doc
 
         Your contributions can make a meaningful impact and help drive the project forward!
 
@@ -333,19 +337,22 @@ By adding a class of ``surface``, a card would be rendered:
         preference.
 
     .. grid-item-card:: :octicon:`paintbrush` Customizable Colors
-        :link: /customisation/colors/
+        :link: ../customisation/colors
+        :link-type: doc
 
         Customize the colors to match your brand or personal preferences
         with radix colors.
 
     .. grid-item-card:: :octicon:`beaker` Jupyter Integration
-        :link: /extensions/nbsphinx/
+        :link: ../extensions/nbsphinx
+        :link-type: doc
 
         Great CSS/UI for lots of Jupyter related extensions, enhance your
         AI documentation.
 
     .. grid-item-card:: :octicon:`browser` Multiple Layouts
-        :link: /writing/meta/#layout
+        :link: meta-layout
+        :link-type: ref
 
         Layouts of landing page, simple one page, and three-column
         documentation page.
