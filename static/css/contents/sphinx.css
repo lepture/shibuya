@@ -52,10 +52,14 @@
   padding-bottom: 0.5rem;
 }
 
-.yue dl.simple > dd > p,
-.yue ul.simple > li > p,
-.yue ol.simple > li > p {
+.yue dl.simple > dd > p {
   margin: 0;
+}
+
+.yue ul.simple p,
+.yue ol.simple p {
+  margin-top: 0.85rem;
+  margin-bottom: 0.85rem;
 }
 
 .yue a.headerlink {
