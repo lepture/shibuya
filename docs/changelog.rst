@@ -5,6 +5,13 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2026.5.19
+---------
+
+- **Fix**: Highlight nested local TOC.
+- **Fix**: Fix local TOC highlight for API references.
+- **Fix**: Update style for lists.
+
 2026.1.9
 --------
 
