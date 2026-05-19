@@ -13,7 +13,12 @@ function measureScrollMarginTop () {
 }
 
 function isInSection (section) {
-  const rect = section.getBoundingClientRect()
+  let rect
+  if (section.nodeName === 'DT') {
+    rect = section.parentNode.getBoundingClientRect()
+  } else {
+    rect = section.getBoundingClientRect()
+  }
   return rect.top <= SCROLL_MARGIN_TOP && rect.bottom >= SCROLL_MARGIN_TOP
 }
 
@@ -32,6 +37,9 @@ function setActiveAnchor (id) {
 
   clearActiveAnchors()
   parent.classList.add('active')
+  if (parent.scrollIntoViewIfNeeded) {
+    parent.scrollIntoViewIfNeeded(false)
+  }
 }
 
 function trackLocalToc () {
@@ -76,7 +84,10 @@ if (backToTop) {
 if (document.querySelector('.localtoc')) {
   window.addEventListener('scroll', onScroll)
   window.addEventListener('DOMContentLoaded', () => {
-    allSections = document.querySelectorAll('.yue > section section[id]')
+    allSections = [
+      ...document.querySelectorAll('.yue > section section[id]'),
+      ...document.querySelectorAll('.yue dt.sig[id]')
+    ]
     measureScrollMarginTop()
     trackLocalToc()
   })
