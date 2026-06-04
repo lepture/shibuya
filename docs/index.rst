@@ -149,15 +149,33 @@ Here are some examples of documentation sites that use the Shibuya theme.
    :width: 20
    :target: https://falco.oluwatobi.dev/en/latest/
 
-.. |authlib| image:: https://docs.authlib.org/en/latest/_static/light-logo.svg
+.. |authlib_light| image:: https://docs.authlib.org/en/latest/_static/light-logo.svg
    :width: 160
    :alt: Authlib
    :target: https://docs.authlib.org
+   :class: light-only
 
-.. |joserfc| image:: https://jose.authlib.org/en/_static/light-logo.svg
+.. |authlib_dark| image:: https://docs.authlib.org/en/latest/_static/dark-logo.svg
+   :width: 160
+   :alt: Authlib
+   :target: https://docs.authlib.org
+   :class: dark-only
+
+.. |authlib| replace:: |authlib_light| |authlib_dark|
+
+.. |joserfc_light| image:: https://jose.authlib.org/en/_static/light-logo.svg
    :width: 160
    :alt: JOSE RFC
    :target: https://jose.authlib.org
+   :class: light-only
+
+.. |joserfc_dark| image:: https://jose.authlib.org/en/_static/dark-logo.svg
+   :width: 160
+   :alt: JOSE RFC
+   :target: https://jose.authlib.org
+   :class: dark-only
+
+.. |joserfc| replace:: |joserfc_light| |joserfc_dark|
 
 .. |sphinx-iconify| image:: https://sphinx-iconify.lepture.com/_static/logo.svg
    :width: 140
