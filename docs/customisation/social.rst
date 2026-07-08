@@ -23,6 +23,32 @@ Configure which social networks appear in your navigation bar and footer:
         "foot_socials": ["readthedocs", "github", "slack"]
     }
 
+Alternatives
+~~~~~~~~~~~~
+
+You can also config ``nav_socials`` and ``foot_socials`` with:
+
+.. code-block:: python
+
+    html_theme_options = {
+        "nav_socials": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/lepture/shibuya",
+                "icon": "simple-icons:github",
+            }
+        ],
+        "foot_socials": [
+            {
+                "name": "X",
+                "url": "https://x.com/lepture",
+                "icon": "simple-icons:x",
+            }
+        ]
+    }
+
+In this case, you don't have to configure the bellow network urls.
+
 Supported Networks
 ------------------
 

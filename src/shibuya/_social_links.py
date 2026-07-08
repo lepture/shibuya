@@ -53,8 +53,19 @@ def _fix_social_links(context: Dict[str, Any], key: Literal["theme_nav_socials",
     fields = context.get(key)
     if not fields:
         fields = DEFAULT_SOCIALS[key]
-    for name in fields:
-        url = context.get(f"theme_{name}_url")
+
+    for data in fields:
+        social_link = _normalize_social_link(data, context)
+        if social_link:
+            yield social_link
+
+
+def _normalize_social_link(data: Any, context: Dict[str, Any]):
+    if isinstance(data, str):
+        url = context.get(f"theme_{data}_url")
         if url:
-            label = SOCIAL_LABELS.get(name, name.title())
-            yield dict(icon=f"simple-icons:{name}", url=url, label=label)
+            name = SOCIAL_LABELS.get(data, data.title())
+            return dict(icon=f"simple-icons:{data}", url=url, name=name)
+    elif isinstance(data, dict):
+        if "name" in data and "url" in data and "icon" in data:
+            return data
