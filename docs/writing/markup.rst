@@ -219,3 +219,21 @@ Citations
 
 .. [CIT2002] This is the citation.  It's just like a footnote,
    except the label is textual.
+
+Glossary
+--------
+
+.. glossary::
+
+   Term 1
+      The definition for Term 1 goes here.
+      It must be indented.
+
+   Term 2
+   Alternative Name for Term 2
+      A term can have multiple names.
+      Separate them by putting one per line.
+      The definition applies to all of them.
+
+To learn more, see the section on :term:`Term 1`.
+You can also use an alias like :term:`custom label <Term 1>`.

@@ -64,21 +64,21 @@
 
 .yue a.headerlink {
   visibility: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  opacity: 0.5;
   margin-left: 6px;
   color: var(--sy-c-light);
   font-weight: 300;
-  font-size: 58%;
+  font-size: 85%;
   font-family: var(--sy-f-mono);
-
-  --icon-url: var(--lucide-link-url);
-  mask: var(--icon-url) no-repeat;
-  mask-size: 100% 100%;
-  width: 1em;
-  height: 1em;
-  display: inline-block;
-  vertical-align: middle;
   font-style: normal;
-  background-color: currentColor;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.yue a.headerlink:hover {
+  opacity: 1;
 }
 
 .yue .math-wrapper {
@@ -89,9 +89,12 @@
 }
 
 .yue .math a.headerlink {
+  opacity: 1;
   visibility: visible;
 }
 
+.yue a.headerlink:hover,
+dt:hover a.headerlink,
 h1:hover a.headerlink,
 h2:hover a.headerlink,
 h3:hover a.headerlink,

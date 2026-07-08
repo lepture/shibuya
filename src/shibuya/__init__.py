@@ -18,6 +18,10 @@ THEME_PATH = (ROOT_PATH / "theme" / "shibuya").resolve()
 def _initialize_builder(app: Sphinx) -> None:
     app.add_js_file("shibuya.js")
     app.add_css_file("print.css", media="print")
+    try:
+        app.config.html_permalinks_icon = "#"
+    except AttributeError:
+        pass
     patch_builder_inited(app)
 
 
