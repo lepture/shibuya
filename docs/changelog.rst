@@ -5,6 +5,16 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+2026.7.8
+--------
+
+- **Fix**: Use flex wrap for landing page buttons.
+- **Fix**: Show anchor links for glossary directives.
+- **Update**: Use ``x_url`` instead of ``twitter_url``.
+- **New**: Add ``bluesky_url`` configuration.
+- **New**: Add ``nav_socials`` and ``foot_socials`` configuration.
+- **Deprecated**: ``twitter_url``, ``twitter_site``, ``twitter_creator``.
+
 2026.5.19
 ---------
 

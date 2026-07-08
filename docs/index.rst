@@ -97,12 +97,12 @@ Here are some examples of documentation sites that use the Shibuya theme.
     :gutter: 2
     :padding: 0
 
-    .. grid-item-card:: |Vyper| Vyper
-        :link: https://docs.vyperlang.org/en/stable/
+    .. grid-item-card:: |emscripten|
+        :link: https://emscripten.org/
         :link-type: url
 
-        Vyper is a contract-oriented, Pythonic programming language that
-        targets the Ethereum Virtual Machine (EVM).
+        Emscripten is a complete compiler toolchain to WebAssembly, using LLVM, with
+        a special focus on speed, size, and the Web platform.
 
     .. grid-item-card:: :iconify:`devicon:sentry` Sentry
         :link: https://getsentry.github.io/sentry-python/
@@ -111,12 +111,12 @@ Here are some examples of documentation sites that use the Shibuya theme.
         Sentry is using Shibuya theme for their Python libraries API documentation.
         Including ``sentry-python``, ``arroyo``, ``sentry-kafka-schemas``, and etc.
 
-    .. grid-item-card:: |Falco| Falco
-        :link: https://falco.oluwatobi.dev/en/latest/
+    .. grid-item-card:: |jupyter| Jupyter AI
+        :link: https://jupyter-ai.readthedocs.io/
         :link-type: url
 
-        Falco is your Django toolkit for faster prototyping and deployment
-        of your Django projects.
+        An open source extension that connects AI agents to computational notebooks
+        in JupyterLab.
 
     .. grid-item-card:: |authlib|
         :link: https://docs.authlib.org
@@ -141,22 +141,22 @@ Here are some examples of documentation sites that use the Shibuya theme.
         ``sphinx-iconify`` provides the ``:iconify:`` role, which allows you
         to use the ``<iconify-icon>`` web component powered by Iconify.
 
-.. |Vyper| image:: https://docs.vyperlang.org/en/stable/_images/logo.svg
-   :width: 16
-   :target: https://docs.vyperlang.org/en/stable/
+.. |emscripten| image:: https://emscripten.org/_images/emscripten_logo_full.svg
+   :height: 20
+   :target: https://emscripten.org/
 
-.. |Falco| image:: https://falco.oluwatobi.dev/en/latest/_images/falco-logo.svg
-   :width: 20
-   :target: https://falco.oluwatobi.dev/en/latest/
+.. |jupyter| image:: https://jupyter-ai.readthedocs.io/en/v3/_static/jupyter_logo.png
+   :height: 20
+   :target: https://jupyter-ai.readthedocs.io/
 
 .. |authlib_light| image:: https://docs.authlib.org/en/latest/_static/light-logo.svg
-   :width: 160
+   :height: 20
    :alt: Authlib
    :target: https://docs.authlib.org
    :class: light-only
 
 .. |authlib_dark| image:: https://docs.authlib.org/en/latest/_static/dark-logo.svg
-   :width: 160
+   :height: 20
    :alt: Authlib
    :target: https://docs.authlib.org
    :class: dark-only
@@ -164,13 +164,13 @@ Here are some examples of documentation sites that use the Shibuya theme.
 .. |authlib| replace:: |authlib_light| |authlib_dark|
 
 .. |joserfc_light| image:: https://jose.authlib.org/en/_static/light-logo.svg
-   :width: 160
+   :height: 20
    :alt: JOSE RFC
    :target: https://jose.authlib.org
    :class: light-only
 
 .. |joserfc_dark| image:: https://jose.authlib.org/en/_static/dark-logo.svg
-   :width: 160
+   :height: 20
    :alt: JOSE RFC
    :target: https://jose.authlib.org
    :class: dark-only
@@ -178,7 +178,7 @@ Here are some examples of documentation sites that use the Shibuya theme.
 .. |joserfc| replace:: |joserfc_light| |joserfc_dark|
 
 .. |sphinx-iconify| image:: https://sphinx-iconify.lepture.com/_static/logo.svg
-   :width: 140
+   :height: 20
    :alt: Sphinx Iconify
    :target: https://sphinx-iconify.lepture.com
 
