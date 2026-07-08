@@ -11,148 +11,54 @@ Social network
 
 ----
 
-Connect with visitors by including links to your social media profiles,
-making it easy for them to find and follow you on other platforms.
+Navbar & Footer
+---------------
 
-
-Source code
------------
-
-A link directs you to the repository where you can access the project's
-source code. These links will be visible in both the website's navbar and
-footer.
-
-.. important::
-
-    The shibuya theme will only display one source code link.
-
-GitHub
-~~~~~~
-
-The GitHub icon will be displayed on the navbar and footer.
+Configure which social networks appear in your navigation bar and footer:
 
 .. code-block:: python
 
     html_theme_options = {
-      "github_url": "https://github.com/lepture/shibuya"
+        "nav_socials": ["github", "x"],
+        "foot_socials": ["readthedocs", "github", "slack"]
     }
 
-Gitlab
-~~~~~~
+Supported Networks
+------------------
 
-The Gitlab icon will be displayed on the navbar and footer.
+To activate the links, add the corresponding URLs to your ``html_theme_options`` in ``conf.py``:
 
 .. code-block:: python
 
     html_theme_options = {
-      "gitlab_url": "https://gitlab.com/gitlab-org/gitlab"
+        # Development platforms
+        "github_url": "https://github.com/lepture/shibuya",
+        "gitlab_url": "https://gitlab.com/gitlab-org/gitlab",
+        "bitbucket_url": "https://bitbucket.org/sonarsource/sonarqube-scan",
+
+        # Chat & Community
+        "discord_url": "https://discord.gg/example",
+        "slack_url": "https://example.com/join/slack",
+
+        # Social & Microblogging
+        "x_url": "https://x.com/lepture",
+        "mastodon_url": "https://mas.to/@trumpet",
+        "bluesky_url": "https://bsky.app/profile/lepture.com",
+
+        # Content & Professional
+        "youtube_url": "https://youtube.com/@username",
+        "reddit_url": "https://www.reddit.com/r/flask",
+        "linkedin_url": "https://www.linkedin.com/company/microsoft",
     }
 
-Bitbucket
-~~~~~~~~~
+Deprecated Options
+------------------
 
-The Bitbucket icon will be displayed on the navbar and footer.
+.. deprecated:: 2026.7.8
+    ``twitter_url`` is deprecated. Please use ``x_url`` instead.
 
-.. code-block:: python
-
-    html_theme_options = {
-      "bitbucket_url": "https://bitbucket.org/sonarsource/sonarqube-scan"
-    }
-
-Community
----------
-
-You can also provide links to various social platforms where you can
-interact with the documentation's community, exchange ideas, and stay
-informed about the latest developments.
-
-Discord
-~~~~~~~
-
-The Discord icon will be displayed on the navbar and footer.
-
-.. code-block:: python
-
-    html_theme_options = {
-      "discord_url": "https://discord.gg/example/"
-    }
-
-Slack
-~~~~~~~
-
-The Slack icon will be displayed on the navbar and footer.
-
-.. code-block:: python
-
-    html_theme_options = {
-      "slack_url": "https://example.com/join/slack"
-    }
-
-X (Twitter)
-~~~~~~~~~~~
-
-The X icon will be displayed only on the footer.
-
-.. code-block:: python
-
-    html_theme_options = {
-      "twitter_url": "https://twitter.com/lepture"
-    }
-
-The Shibuya theme also includes support for Twitter cards,
-allowing you to include additional Twitter information:
-
-.. code-block:: python
-
-    html_theme_options = {
-      "twitter_site": "typlog",
-      "twitter_creator": "lepture",
-    }
-
-Mastodon
-~~~~~~~~
-
-The Mastodon icon will be displayed only on the footer.
-
-.. code-block:: python
-
-    html_theme_options = {
-      "mastodon_url": "https://mas.to/@trumpet"
-    }
-
-
-YouTube
-~~~~~~~
-
-The YouTube icon will be displayed only on the footer.
-
-.. code-block:: python
-
-    html_theme_options = {
-      "youtube_url": "https://youtube.com/@username"
-    }
-
-Reddit
-~~~~~~
-
-The Reddit icon will be displayed only on the footer.
-
-.. code-block:: python
-
-    html_theme_options = {
-      "reddit_url": "https://www.reddit.com/r/flask/"
-    }
-
-LinkedIn
-~~~~~~~~
-
-The LinkedIn icon will be displayed only on the footer.
-
-.. code-block:: python
-
-    html_theme_options = {
-      "linkedin_url": "https://www.linkedin.com/company/microsoft"
-    }
+.. deprecated:: 2026.7.8
+    ``twitter_site`` and ``twitter_creator`` (used for Twitter cards) are deprecated and no longer supported.
 
 Custom networks
 ---------------
