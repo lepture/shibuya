@@ -48,6 +48,7 @@
 .container.buttons > p {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 .container.buttons a {
   display: inline-block;
