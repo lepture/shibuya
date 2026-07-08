@@ -50,8 +50,8 @@ def patch_html_page_context(
         context["theme_x_url"] = twitter_url
 
     # extends social links
-    context["theme_nav_socials"] = _fix_social_links(context, "theme_nav_socials")
-    context["theme_foot_socials"] = _fix_social_links(context, "theme_foot_socials")
+    context["theme_nav_socials"] = list(_fix_social_links(context, "theme_nav_socials"))
+    context["theme_foot_socials"] = list(_fix_social_links(context, "theme_foot_socials"))
 
     _fix_context_pageurl(app, context)
     _fix_context_toc(context)
