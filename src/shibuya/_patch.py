@@ -1,7 +1,7 @@
 import re
 import os
 import xml.etree.ElementTree as ET
-from typing import Dict, Any, Optional
+from typing import Dict, Any, Literal, Optional
 from pathlib import Path
 from sphinx.config import Config
 from sphinx.application import Sphinx
@@ -43,6 +43,16 @@ def patch_html_page_context(
     if not isinstance(app.builder, StandaloneHTMLBuilder):
         return
 
+    # patch twitter url
+    twitter_url = context.get("theme_twitter_url")
+    x_url = context.get("theme_x_url")
+    if twitter_url and not x_url:
+        context["theme_x_url"] = twitter_url
+
+    # extends social links
+    context["theme_nav_socials"] = _fix_social_links(context, "theme_nav_socials")
+    context["theme_foot_socials"] = _fix_social_links(context, "theme_foot_socials")
+
     _fix_context_pageurl(app, context)
     _fix_context_toc(context)
 
@@ -57,6 +67,19 @@ def patch_html_page_context(
 
     context["i18n_link"] = create_i18n_link
     context["_sphinx_extensions"] = app.config.extensions
+
+
+def _fix_social_links(context: Dict[str, Any], key: str):
+    label_map = {
+        "x": "X (Twitter)",
+        "github": "GitHub",
+        "youtube": "YouTube",
+    }
+    for name in context[key]:
+        url = context.get(f"theme_{name}_url")
+        if url:
+            label = label_map.get(name, name.title())
+            yield dict(icon=f"simple-icons:{name}", url=url, label=label)
 
 
 def _fix_builder_highlighter(builder: StandaloneHTMLBuilder) -> None:
