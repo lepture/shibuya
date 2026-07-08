@@ -3,10 +3,12 @@ version: 2
 build:
   os: ubuntu-22.04
   tools:
-    python: "3.11"
+    python: "3.13"
+    nodejs: "22"
   jobs:
-    post_install:
-      - pip install shibuya
+    pre_build:
+      - npm ci --prefix static
+      - npm run build --prefix static
 
 sphinx:
   builder: dirhtml
