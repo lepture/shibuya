@@ -10,6 +10,7 @@
 
 [![PyPi](https://img.shields.io/pypi/v/shibuya?style=for-the-badge)](https://pypi.python.org/pypi/shibuya)
 [![Documentation](https://img.shields.io/badge/documentation-6E56CF?style=for-the-badge&logo=python&logoColor=white)](https://shibuya.lepture.com/)
+[![Read the Docs](https://app.readthedocs.org/projects/shibuya/badge/?version=latest&style=for-the-badge)](https://shibuya.readthedocs.io/)
 [![GitHub Sponsors](https://img.shields.io/github/sponsors/lepture?color=E54666&style=for-the-badge)](https://github.com/sponsors/lepture)
 
 </div>
