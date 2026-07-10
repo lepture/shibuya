@@ -7,16 +7,7 @@ SOCIAL_LABELS = {
     "youtube": "YouTube",
 }
 
-DEFAULT_NAV_SOCIALS = [
-    "github",
-    "gitlab",
-    "bitbucket",
-    "x",
-    "discord",
-    "slack",
-]
-
-DEFAULT_FOOT_SOCIALS = [
+DEFAULT_NAV_SOCIALS = DEFAULT_FOOT_SOCIALS = [
     "readthedocs",
     "github",
     "gitlab",
