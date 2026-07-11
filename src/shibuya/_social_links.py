@@ -7,8 +7,7 @@ SOCIAL_LABELS = {
     "youtube": "YouTube",
 }
 
-DEFAULT_NAV_SOCIALS = DEFAULT_FOOT_SOCIALS = [
-    "readthedocs",
+DEFAULT_NAV_SOCIALS = [
     "github",
     "gitlab",
     "bitbucket",
@@ -21,6 +20,8 @@ DEFAULT_NAV_SOCIALS = DEFAULT_FOOT_SOCIALS = [
     "reddit",
     "linkedin",
 ]
+
+DEFAULT_FOOT_SOCIALS = ["readthedocs"] + DEFAULT_NAV_SOCIALS
 
 DEFAULT_SOCIALS = {
     "theme_nav_socials": DEFAULT_NAV_SOCIALS,
@@ -42,7 +43,7 @@ def patch_social_context(context: Dict[str, Any]) -> None:
 
 def _fix_social_links(context: Dict[str, Any], key: Literal["theme_nav_socials", "theme_foot_socials"]):
     fields = context.get(key)
-    if not fields and not isinstance(fields, list):
+    if fields is None:
         fields = DEFAULT_SOCIALS[key]
 
     for data in fields:
