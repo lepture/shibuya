@@ -43,7 +43,7 @@ def patch_social_context(context: Dict[str, Any]) -> None:
 
 def _fix_social_links(context: Dict[str, Any], key: Literal["theme_nav_socials", "theme_foot_socials"]):
     fields = context.get(key)
-    if fields is None:
+    if not fields and not isinstance(fields, list):
         fields = DEFAULT_SOCIALS[key]
 
     for data in fields:
