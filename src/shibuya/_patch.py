@@ -102,16 +102,12 @@ def _fix_context_toc(context: Dict[str, Any]):
     if not toc:
         return
 
-    pattern = re.compile(r'<span class="pre">\w+?\.')
     root = ET.fromstring(toc)
-    if len(root) != 1:
-        context["toc"] = pattern.sub(".", toc)
-        return
-
-    child = root[0]
-    if len(child) == 2 and child[1].tag == "ul":
-        toc = ET.tostring(child[1]).decode("utf-8")
-    context["toc"] = pattern.sub("", toc)
+    if len(root) == 1:
+        child = root[0]
+        if len(child) == 2 and child[1].tag == "ul":
+            toc = ET.tostring(child[1]).decode("utf-8")
+            context["toc"] = toc
 
 
 def _expandtoc(toc: str, depth: int = 0):
