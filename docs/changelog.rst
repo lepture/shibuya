@@ -6,6 +6,12 @@ Changelog
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
 
+2026.7.12
+---------
+
+- **Fix**: Fix social icons display.
+- **Fix**: Use underline for links.
+
 2026.7.11
 ---------
 
