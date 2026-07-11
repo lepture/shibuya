@@ -106,6 +106,7 @@ h6:hover a.headerlink {
 
 .yue a.image-reference,
 .yue .toctree-wrapper a {
+  text-decoration: none;
   border-bottom: none;
 }
 

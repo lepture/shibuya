@@ -59,6 +59,7 @@
   font-weight: 600;
   background-color: var(--sy-c-surface);
   transition: all 0.2s ease;
+  text-decoration: none;
 }
 .container.buttons a:first-child {
   color: var(--accent-contrast);

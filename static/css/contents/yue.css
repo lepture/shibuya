@@ -55,6 +55,7 @@
 
 .yue pre a,
 .yue pre a:hover {
+  text-decoration: none;
   border-bottom: none;
 }
 
