@@ -5,6 +5,14 @@ Changelog
 
 Shibuya uses date based release segments. For pre-releases, it follows :pep:`440`.
 
+
+2026.7.11
+---------
+
+- **Fix**: Normalize navbar and footer social links.
+- **Fix**: Allow empty navbar and footer social icons.
+- **Fix**: Allow codespan in TOC.
+
 2026.7.8
 --------
 

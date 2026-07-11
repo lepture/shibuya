@@ -7,7 +7,7 @@ from ._patch import (
 )
 from ._wrapper import WrapperPostTransform
 
-__version__ = "2026.7.8"
+__version__ = "2026.7.11"
 
 shibuya_version = __version__
 
