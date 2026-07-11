@@ -39,13 +39,14 @@
 .yue a {
   color: var(--yue-c-link-1);
   font-weight: 500;
-  text-decoration: none;
-  border-bottom: 1px solid var(--yue-c-link-border);
+  text-decoration: underline;
+  text-decoration-color: var(--yue-c-link-border);
+  text-decoration-thickness: 1px;
 }
 
 .yue a:hover {
   color: var(--yue-c-link-2);
-  border-bottom-width: 2px;
+  text-decoration-thickness: 2px;
 }
 
 .yue pre {
