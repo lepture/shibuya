@@ -108,6 +108,11 @@ html_theme_options = {
             "title": _("Projects"),
             "children": [
                 {
+                    "title": _("Shibuya"),
+                    "url": "https://shibuya.lepture.com/",
+                    "summary": _("A responsive, good looking with modern design documentation theme for Sphinx."),
+                },
+                {
                     "title": _("Pygments Styles"),
                     "url": "https://pygments-styles.org/",
                     "summary": _("A curated collection of Pygments styles based on VS Code themes."),
@@ -115,7 +120,17 @@ html_theme_options = {
                 {
                     "title": _("Sphinx Iconify"),
                     "url": "https://sphinx-iconify.lepture.com/",
-                    "summary": _("Embedding icons from over 200,000 open-source vector icons."),
+                    "summary": _("A sphinx extension to use <code>&lt;iconify-icon&gt;</code> web component."),
+                },
+                {
+                    "title": _("Mistune"),
+                    "url": "http://mistune.lepture.com/",
+                    "summary": _("A fast yet powerful Python Markdown parser with renderers and plugins."),
+                },
+                {
+                    "title": _("Wenmode"),
+                    "url": "http://wenmode.lepture.com/",
+                    "summary": _("A fast, composable Markdown parser and renderer toolkit."),
                 },
             ],
         },
