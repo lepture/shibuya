@@ -5,7 +5,6 @@
 {%- else -%}
   {% set hide_breadcrumbs = False %}
 {%- endif -%}
-{%- if not hide_breadcrumbs %}
 <div class="sy-breadcrumbs" role="navigation">
   <div class="sy-breadcrumbs-inner flex items-center">
     <div class="md:hidden mr-3">
@@ -13,6 +12,9 @@
         <i class="i-lucide menu"></i>
       </button>
     </div>
+    {%- if hide_breadcrumbs %}
+    <div class="flex-1"></div>
+    {%- else %}
     <ol class="flex-1" itemscope itemtype="https://schema.org/BreadcrumbList">
       {%- block breadcrumbs -%}
       {%- if project == title -%}
@@ -40,6 +42,7 @@
       {%- endif -%}
       {%- endblock -%}
     </ol>
+    {%- endif %}
     <div class="xl:hidden ml-1">
       <button class="js-menu" aria-label="Show table of contents" type="button" aria-controls="rside"
         aria-expanded="false">
@@ -48,4 +51,3 @@
     </div>
   </div>
 </div>
-{%- endif -%}
