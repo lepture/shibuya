@@ -166,12 +166,58 @@
     margin: 0.5rem 0;
   }
 
-  .sy-head-links .link i.chevron {
-    display: none;
+  .sy-head-links .link > a,
+  .sy-head-links .link > button,
+  .sy-head-links .link > .link-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .sy-head-links .link > .link-row > a {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .sy-head-links .link > .js-menu,
+  .sy-head-links .link > .link-row {
+    border-radius: 6px;
+    transition: background-color 0.2s;
+  }
+
+  .sy-head-links .link > .js-menu[aria-expanded="true"],
+  .sy-head-links .link > .link-row:has(.js-menu[aria-expanded="true"]) {
+    background-color: var(--sy-c-surface);
+  }
+
+  .sy-head-links .link > .link-row:has(.js-menu[aria-expanded="true"]) > button {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    border-left: 1px solid var(--sy-c-divider);
+  }
+
+  .sy-head-links .link i.chevron-down {
+    display: inline-block;
+    transition: transform 0.2s ease;
+    transform: rotate(-90deg);
+  }
+
+  .sy-head-links .link > .js-menu[aria-expanded="true"] i.chevron-down,
+  .sy-head-links .link > .link-row:has(.js-menu[aria-expanded="true"]) i.chevron-down {
+    transform: rotate(0deg);
   }
 
   .sy-head-links .link > ul {
+    display: none;
     margin: 0.5rem 0 0.5rem 1rem;
+  }
+
+  .sy-head-links .link > ul[aria-hidden="false"] {
+    display: block;
   }
 
   .sy-head-extra form.searchbox {
@@ -223,11 +269,26 @@
     height: var(--sy-s-navbar-height);
   }
 
+  .sy-head-links .link > .link-row {
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    padding: 0 0.5rem;
+    column-gap: 0.25rem;
+  }
+
+  .sy-head-links .link > .link-row > a,
+  .sy-head-links .link > .link-row > button {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .sy-head-links a:hover {
     color: var(--sy-c-link-hover);
   }
 
-  .sy-head-links .link:hover > a {
+  .sy-head-links .link:hover > a,
+  .sy-head-links .link:hover > .link-row {
     background-color: var(--sy-c-surface);
     border-radius: 6px;
   }
