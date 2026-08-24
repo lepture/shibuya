@@ -11,17 +11,21 @@
     {%- if link.children %}
       <li class="link">
         {%- if link.url -%}
-          <a class="js-menu" href="{{ expandURL(link.url, link.resource) }}" id="nav-trigger-{{ loop.index }}" aria-controls="nav-children-{{ loop.index }}">
-            <span>{{ link.title }}</span>
-            <i class="i-lucide chevron-down"></i>
-          </a>
+          <div class="link-row">
+            <a href="{{ expandURL(link.url, link.resource) }}">
+              <span>{{ link.title }}</span>
+            </a>
+            <button class="js-menu" type="button" id="nav-trigger-{{ loop.index }}" aria-controls="nav-children-{{ loop.index }}" aria-expanded="false" aria-label="{{ link.title }}">
+              <i class="i-lucide chevron-down"></i>
+            </button>
+          </div>
         {%- else -%}
-          <button class="js-menu" type="button" id="nav-trigger-{{ loop.index }}" aria-controls="nav-children-{{ loop.index }}">
+          <button class="js-menu" type="button" id="nav-trigger-{{ loop.index }}" aria-controls="nav-children-{{ loop.index }}" aria-expanded="false">
             <span>{{ link.title }}</span>
             <i class="i-lucide chevron-down"></i>
           </button>
         {%- endif %}
-        <ul id="nav-children-{{ loop.index }}" aria-labelledby="nav-trigger-{{ loop.index }}">
+        <ul id="nav-children-{{ loop.index }}" aria-labelledby="nav-trigger-{{ loop.index }}" aria-hidden="true">
           {%- for item in link.children -%}
             {%- if item.summary -%}
               <li><a href="{{ expandURL(item.url, item.resource) }}">
