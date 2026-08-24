@@ -9,7 +9,7 @@
 }
 
 #copy-page-trigger i.i-lucide {
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease;
 }
 
 #copy-page-trigger button[aria-expanded="true"] > i {
@@ -41,9 +41,15 @@
   background: var(--sy-c-background);
   border-radius: 0.625rem;
   min-width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-0.25rem);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
 }
-#copy-page-content[aria-hidden="true"] {
-  display: none;
+#copy-page-content[aria-hidden="false"] {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 #copy-page-content button,
