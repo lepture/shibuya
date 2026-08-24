@@ -25,8 +25,10 @@ function addToggleToc () {
     const list = el.parentNode
     if (list.classList.contains('current') || shouldExpand(list)) {
       list.classList.add('_expand')
+      el.style.maxHeight = el.scrollHeight + "px"
     } else {
       list.classList.add('_collapse')
+      el.style.maxHeight = "0px"
     }
     const button = createToggleButton(el)
     list.appendChild(button)
@@ -55,9 +57,11 @@ function createToggleButton (el) {
     if (list.classList.contains("_expand")) {
       list.classList.remove("_expand")
       list.classList.add("_collapse")
+      el.style.maxHeight = "0px"
     } else {
       list.classList.remove("_collapse")
       list.classList.add("_expand")
+      el.style.maxHeight = el.scrollHeight + "px"
     }
     updateArialLabel()
   }

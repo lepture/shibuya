@@ -33,6 +33,10 @@
 .globaltoc li > ul {
   margin-left: 0.6rem;
   font-size: 0.96rem;
+  max-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  transition: max-height 0.3s ease, visibility 0.3s ease;
 }
 
 .globaltoc li.toctree-l1 > ul {
@@ -95,17 +99,18 @@
 
 .globaltoc li.current > ul,
 .globaltoc li._expand > ul {
-  display: block;
+  max-height: 1000px;
+  visibility: visible;
 }
 
-.globaltoc li > ul,
 .globaltoc li._collapse > ul {
-  display: none;
+  max-height: 0;
+  visibility: hidden;
 }
 
 .globaltoc li > button > i {
   transform: rotate(0deg);
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease;
 }
 
 .globaltoc li.current > button > i,
