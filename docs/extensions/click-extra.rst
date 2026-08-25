@@ -5,8 +5,12 @@ click-extra
 
 Adding ``click-extra`` support for Sphinx.
 
-- **Documentation**: https://kdeldycke.github.io/click-extra/sphinx.html
-- **Source Code**: https://github.com/kdeldycke/click-extra
+.. list-table:: Project Information
+
+  * - **Documentation**
+    - https://kdeldycke.github.io/click-extra/sphinx.html
+  * - **Source Code**
+    - https://github.com/kdeldycke/click-extra
 
 Usage
 -----

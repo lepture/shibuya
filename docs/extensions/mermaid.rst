@@ -8,8 +8,12 @@ sphinxcontrib-mermaid
 This extension allows you to embed Mermaid graphs in your documents,
 including general flowcharts, sequence diagrams, gantt diagrams and more.
 
-- **Documentation**: https://sphinxcontrib-mermaid-demo.readthedocs.io/
-- **Source Code**: https://github.com/mgaitan/sphinxcontrib-mermaid
+.. list-table:: Project Information
+
+  * - **Documentation**
+    - https://sphinxcontrib-mermaid-demo.readthedocs.io/
+  * - **Source Code**
+    - https://github.com/mgaitan/sphinxcontrib-mermaid
 
 Install
 -------

@@ -7,8 +7,12 @@ Sphinx AutoAPI is a Sphinx extension for generating complete API
 documentation without needing to load, run, or import the project
 being documented.
 
-- **Documentation**: https://sphinx-autoapi.readthedocs.io/
-- **Source Code**: https://github.com/readthedocs/sphinx-autoapi
+.. list-table:: Project Information
+
+  * - **Documentation**
+    - https://sphinx-autoapi.readthedocs.io/
+  * - **Source Code**
+    - https://github.com/readthedocs/sphinx-autoapi
 
 Usage
 -----

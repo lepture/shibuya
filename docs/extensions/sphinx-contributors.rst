@@ -5,8 +5,12 @@ sphinx-contributors
 
 Sphinx extension that helps you recognize the people who have contributed to an open-source project.
 
-- **Documentation**: https://sphinx-contributors.readthedocs.io/
-- **Source Code**: https://github.com/dgarcia360/sphinx-contributors
+.. list-table:: Project Information
+
+  * - **Documentation**
+    - https://sphinx-contributors.readthedocs.io/
+  * - **Source Code**
+    - https://github.com/dgarcia360/sphinx-contributors
 
 Usage
 -----

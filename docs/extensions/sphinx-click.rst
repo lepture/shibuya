@@ -6,8 +6,12 @@ sphinx-click
 sphinx-click is a Sphinx plugin that allows you to automatically extract documentation
 from a click-based application and include it in your docs.
 
-- **Documentation**: https://sphinx-click.readthedocs.io/
-- **Source Code**: https://github.com/click-contrib/sphinx-click
+.. list-table:: Project Information
+
+  * - **Documentation**
+    - https://sphinx-click.readthedocs.io/
+  * - **Source Code**
+    - https://github.com/click-contrib/sphinx-click
 
 Usage
 -----

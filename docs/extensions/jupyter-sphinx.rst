@@ -8,8 +8,12 @@ jupyter-sphinx
 Jupyter-sphinx is a Sphinx extension that executes embedded code
 in a Jupyter kernel, and embeds outputs of that code in the document.
 
-- **Documentation**: https://jupyter-sphinx.readthedocs.io/
-- **Source Code**: https://github.com/jupyter/jupyter-sphinx
+.. list-table:: Project Information
+
+  * - **Documentation**
+    - https://jupyter-sphinx.readthedocs.io/
+  * - **Source Code**
+    - https://github.com/jupyter/jupyter-sphinx
 
 Install
 -------
