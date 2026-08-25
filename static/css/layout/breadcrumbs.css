@@ -39,7 +39,7 @@
 
 @media (min-width: 1280px) {
   .sy-breadcrumbs {
-    display: none;
+    padding: 0 3rem;
   }
 }
 
