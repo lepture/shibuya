@@ -8,8 +8,12 @@ sphinx-iconify
 ``sphinx-iconify`` provides the ``:iconify:`` role, which allows you to use
 the ``<iconify-icon>`` web component
 
-- **Documentation**: https://sphinx-iconify.lepture.com/
-- **Source Code**: https://github.com/lepture/sphinx-iconify
+.. list-table:: Project Information
+
+  * - **Documentation**
+    - https://sphinx-iconify.lepture.com/
+  * - **Source Code**
+    - https://github.com/lepture/sphinx-iconify
 
 Install
 -------

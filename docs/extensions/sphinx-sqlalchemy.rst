@@ -5,8 +5,12 @@ sphinx-sqlalchemy
 
 Sphinx extension for documenting SQLAlchemy ORMs.
 
-- **Documentation**: https://sphinx-sqlalchemy.readthedocs.io/
-- **Source Code**: https://github.com/sphinx-extensions2/sphinx-sqlalchemy
+.. list-table:: Project Information
+
+  * - **Documentation**
+    - https://sphinx-sqlalchemy.readthedocs.io/
+  * - **Source Code**
+    - https://github.com/sphinx-extensions2/sphinx-sqlalchemy
 
 Usage
 -----

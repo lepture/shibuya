@@ -5,8 +5,12 @@ sphinx-datatables
 
 This extension makes it easy to use more expressive tables in Sphinx documentation with DataTables.
 
-- **Documentation**: https://sharm294.github.io/sphinx-datatables/
-- **Source Code**: https://github.com/sharm294/sphinx-datatables/
+.. list-table:: Project Information
+
+  * - **Documentation**
+    - https://sharm294.github.io/sphinx-datatables/
+  * - **Source Code**
+    - https://github.com/sharm294/sphinx-datatables/
 
 Usage
 -----
