@@ -5,7 +5,7 @@
 {%- else -%}
   {% set hide_breadcrumbs = False %}
 {%- endif -%}
-<div class="sy-breadcrumbs{% if hide_breadcrumbs %} sy-breadcrumbs-hidden{% endif %}" role="navigation">
+<div class="sy-breadcrumbs{% if hide_breadcrumbs %} xl:hidden{% endif %}" role="navigation">
   <div class="sy-breadcrumbs-inner flex items-center">
     <div class="md:hidden mr-3">
       <button class="js-menu" aria-label="Menu" type="button" aria-controls="lside" aria-expanded="false">
