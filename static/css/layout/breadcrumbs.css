@@ -41,6 +41,9 @@
   .sy-breadcrumbs {
     padding: 0 3rem;
   }
+  .sy-breadcrumbs-hidden {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
