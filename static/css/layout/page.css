@@ -118,7 +118,12 @@
   .sy-rside .sy-scrollbar {
     max-height: calc(100vh - var(--sy-s-offset-top) - env(safe-area-inset-bottom));
   }
-  .yue * {
+  /* Breadcrumbs hidden: offset anchors below the banner/navbar. */
+  body:has(.sy-breadcrumbs.xl\:hidden) .yue * {
     scroll-margin-top: calc(var(--sy-s-offset-top) + 24px);
+  }
+  /* Breadcrumbs showed: offset anchors below the banner/navbar and the breadcrumbs. */
+  body:not(:has(.sy-breadcrumbs.xl\:hidden)) .yue * {
+    scroll-margin-top: calc(var(--sy-s-offset-top) + var(--sy-s-breadcrumbs-height) + 24px);
   }
 }

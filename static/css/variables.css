@@ -6,6 +6,7 @@
   --sy-f-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --sy-s-banner-height: 0rem;
   --sy-s-navbar-height: 56px;
+  --sy-s-breadcrumbs-height: 4rem;
   --sy-s-offset-top: calc(var(--sy-s-navbar-height) + var(--sy-s-banner-height));
 
   --sy-c-divider: var(--gray-4);
