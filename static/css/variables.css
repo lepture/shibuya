@@ -9,6 +9,9 @@
   --sy-s-breadcrumbs-height: 4rem;
   --sy-s-offset-top: calc(var(--sy-s-navbar-height) + var(--sy-s-banner-height));
 
+  --sy-s-globaltoc-gap: 0.3rem;
+  --sy-s-localtoc-gap: 0.3rem;
+
   --sy-c-divider: var(--gray-4);
   --sy-c-border: var(--gray-5);
 
@@ -21,6 +24,10 @@
   /* colors for link */
   --sy-c-link: var(--accent-9);
   --sy-c-link-hover: var(--accent-a11);
+
+  /* colors for current items */
+  --sy-c-current-text: var(--accent-a11);
+  --sy-c-current-background: var(--accent-a3);
 
   /* colors for background */
   --sy-c-background: white;
