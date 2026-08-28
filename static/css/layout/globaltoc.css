@@ -30,6 +30,10 @@
   margin: var(--sy-s-globaltoc-gap) 0;
 }
 
+.globaltoc li > ul > li:last-child {
+  margin-bottom: 0;
+}
+
 .globaltoc li > ul {
   margin-left: 0.6rem;
   font-size: 0.96rem;
