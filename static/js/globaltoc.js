@@ -35,6 +35,15 @@ function addToggleToc () {
   })
 }
 
+function propagateDelta (list, delta) {
+  let ul = list.parentNode
+  while (ul && ul.nodeName === 'UL' && ul.parentNode && ul.parentNode.nodeName === 'LI') {
+    const current = parseFloat(ul.style.maxHeight) || 0
+    ul.style.maxHeight = Math.max(0, current + delta) + 'px'
+    ul = ul.parentNode.parentNode
+  }
+}
+
 function createToggleButton (el) {
   const button = document.createElement("button")
   button.innerHTML = '<i class="i-lucide chevron-right"></i>'
@@ -54,6 +63,7 @@ function createToggleButton (el) {
 
   const toggleExpand = (e) => {
     e.preventDefault()
+    const oldHeight = parseFloat(el.style.maxHeight) || 0
     if (list.classList.contains("_expand")) {
       list.classList.remove("_expand")
       list.classList.add("_collapse")
@@ -63,6 +73,7 @@ function createToggleButton (el) {
       list.classList.add("_expand")
       el.style.maxHeight = el.scrollHeight + "px"
     }
+    propagateDelta(list, (parseFloat(el.style.maxHeight) || 0) - oldHeight)
     updateArialLabel()
   }
 
