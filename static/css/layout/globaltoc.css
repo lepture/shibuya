@@ -91,6 +91,7 @@
   width: 1.2rem;
   height: 1.2rem;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .globaltoc li > button:hover {
