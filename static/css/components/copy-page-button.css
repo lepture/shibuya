@@ -21,6 +21,7 @@
   transition: background-color 0.2s ease;
   vertical-align: middle;
   height: 32px;
+  cursor: pointer;
 }
 
 #copy-page-trigger button:hover {
