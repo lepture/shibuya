@@ -27,40 +27,45 @@
 }
 
 .globaltoc li {
-  margin: 0.6rem 0;
+  margin: var(--sy-s-globaltoc-gap) 0;
+}
+
+.globaltoc li > ul > li:last-child {
+  margin-bottom: 0;
 }
 
 .globaltoc li > ul {
-  margin-left: 0.6rem;
-  font-size: 0.96rem;
+  margin-left: 0.2rem;
+  padding-left: 0.6rem;
+  border-left: 1px solid var(--gray-3);
   max-height: 0;
   overflow: hidden;
   visibility: hidden;
   transition: max-height 0.3s ease, visibility 0.3s ease;
 }
 
-.globaltoc li.toctree-l1 > ul {
-  margin-left: 0.2rem;
-  border-left: 1px solid var(--gray-3);
-}
-
-.globaltoc li.toctree-l2 {
-  padding-left: 0.9rem;
-  margin-left: -1px;
-  border-left: 1px solid transparent;
-}
-
-.globaltoc li.toctree-l2.current {
-  border-color: var(--sy-c-link);
-}
-
-.globaltoc > ul a.current {
-  font-weight: 500;
-  color: var(--sy-c-link);
+.globaltoc > ul a {
+  display: block;
+  width: 100%;
+  padding: .25rem .5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.15s ease, color 0.15s ease;
 }
 
 .globaltoc > ul a:hover {
   color: var(--sy-c-link-hover);
+  background-color: var(--sy-c-surface);
+}
+
+.globaltoc li:has(> ul) > a {
+  width: calc(100% - 2rem - var(--sy-s-globaltoc-gap));
+}
+
+.globaltoc > ul a.current {
+  font-weight: 500;
+  color: var(--sy-c-current-text);
+  background-color: var(--sy-c-current-background);
 }
 
 .globaltoc a.external:after {
@@ -83,18 +88,19 @@
 
 .globaltoc li > button {
   position: absolute;
-  top: 0.2rem;
+  top: 0;
   right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1.2rem;
-  height: 1.2rem;
-  border-radius: 3px;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 6px;
   cursor: pointer;
 }
 
 .globaltoc li > button:hover {
+  color: var(--sy-c-link-hover);
   background-color: var(--sy-c-surface);
 }
 
@@ -112,6 +118,11 @@
 .globaltoc li > button > i {
   transform: rotate(0deg);
   transition: transform 0.3s ease;
+}
+
+.globaltoc li.current > button {
+  color: var(--sy-c-current-text);
+  background-color: var(--sy-c-current-background);
 }
 
 .globaltoc li.current > button > i,

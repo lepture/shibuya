@@ -39,27 +39,31 @@ Default variables
 Below is a list of CSS variables that you can customize to change fonts and colors
 used in your documentation:
 
-==========================  ============================================================
-Variable Name               Description
-==========================  ============================================================
-``--sy-f-heading``          Font family for headings
-``--sy-f-text``             Font family for text
-``--sy-f-mono``             Font family for code
-``--sy-s-banner-height``    Height of the banner
-``--sy-s-navbar-height``    Height of the navbar
-``--sy-c-divider``          Divider color
-``--sy-c-border``           Border color
-``--sy-c-text``             Default text color
-``--sy-c-light``            Light text color
-``--sy-c-bold``             Bold text color
-``--sy-c-heading``          Heading text color
-``--sy-c-link``             Color for links
-``--sy-c-link-hover``       Color for links when hovering
-``--sy-c-background``       Background color for elements
-``--sy-c-foot-text``        Footer text color
-``--sy-c-foot-background``  Footer background color
-``--sy-c-foot-divider``     Footer divider color
-==========================  ============================================================
+=============================  ============================================================
+Variable Name                  Description
+=============================  ============================================================
+``--sy-f-heading``             Font family for headings
+``--sy-f-text``                Font family for text
+``--sy-f-mono``                Font family for code
+``--sy-s-banner-height``       Height of the banner
+``--sy-s-navbar-height``       Height of the navbar
+``--sy-s-globaltoc-gap``       Gap between global TOC items
+``--sy-s-localtoc-gap``        Gap between local TOC items
+``--sy-c-divider``             Divider color
+``--sy-c-border``              Border color
+``--sy-c-text``                Default text color
+``--sy-c-light``               Light text color
+``--sy-c-bold``                Bold text color
+``--sy-c-heading``             Heading text color
+``--sy-c-link``                Color for links
+``--sy-c-link-hover``          Color for links when hovering
+``--sy-c-current-text``        Text color for the current item
+``--sy-c-current-background``  Background color for the current item
+``--sy-c-background``          Background color for elements
+``--sy-c-foot-text``           Footer text color
+``--sy-c-foot-background``     Footer background color
+``--sy-c-foot-divider``        Footer divider color
+=============================  ============================================================
 
 Using a ``custom.css``
 ----------------------
