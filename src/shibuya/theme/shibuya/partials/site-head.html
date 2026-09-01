@@ -17,6 +17,7 @@
       <strong>{{ project }}</strong>
     </a>
     <div class="sy-head-nav" id="head-nav">
+    <div class="sy-head-nav-inner">
       <nav class="sy-head-links"{% if theme_nav_links_align %} data-align={{ theme_nav_links_align }}{% endif %}>
         {%- if theme_nav_links -%}
           {% include "components/nav-links.html" %}
@@ -28,6 +29,7 @@
         {%- include "components/nav-languages.html" -%}
         {%- include "partials/nav-socials.html" -%}
       </div>
+    </div>
     </div>
     <div class="sy-head-actions flex items-center shrink-0 print:hidden">
       {%- include "components/theme-switch.html" -%}
