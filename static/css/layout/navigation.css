@@ -1,36 +1,110 @@
 .navigation {
-  gap: 2rem;
+  gap: 1rem;
   margin-top: 2rem;
-  padding-top: 1rem;
+  padding-top: 2rem;
   border-top: 1px solid var(--sy-c-divider);
 }
 
 .navigation > div {
-  width: 100%;
+  width: 50%;
+  min-width: 0;
 }
 
 .navigation a {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  gap: 0.75rem;
+  height: 100%;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--sy-c-border);
+  border-radius: 0.5rem;
+  background-color: var(--sy-c-surface);
+  color: var(--sy-c-text);
+  text-decoration: none;
+  transition: border-color 0.2s ease, color 0.2s ease;
 }
 
 .navigation a:hover {
+  border-color: var(--accent-a9);
+}
+
+.navigation .i-lucide {
+  flex-shrink: 0;
+  width: 1.25em;
+  height: 1.25em;
+  color: var(--sy-c-light);
+}
+
+.navigation .page-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0;
+  min-width: 0;
+}
+
+.navigation .page-info > span {
+  font-size: 0.75rem;
+  line-height: 1;
+  color: var(--sy-c-light);
+}
+
+.navigation .page-info .title {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--sy-c-text);
+  overflow-wrap: break-word;
+}
+
+.navigation a:hover .page-info .title {
   color: var(--sy-c-link-hover);
+}
+
+.navigation-prev {
+  text-align: left;
+}
+
+.navigation-prev:only-child {
+  margin-right: auto;
+}
+
+.navigation-prev a {
+  justify-content: flex-start;
+}
+
+.navigation-prev .page-info {
+  text-align: left;
 }
 
 .navigation-next {
   text-align: right;
 }
 
+.navigation-next:only-child {
+  margin-left: auto;
+}
+
 .navigation-next a {
-  justify-content: end;
+  justify-content: flex-end;
 }
 
-.navigation .page-info {
-  padding: 0 8px;
+.navigation-next .page-info {
+  text-align: right;
 }
 
-.navigation .page-info > span {
-  font-size: 0.8rem;
-  color: var(--sy-c-light);
+.navigation-container {
+  container-type: inline-size;
+}
+
+@container (max-width: 600px) {
+  .navigation {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .navigation > div {
+    width: 100%;
+  }
 }
