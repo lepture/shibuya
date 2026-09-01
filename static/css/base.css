@@ -13,6 +13,12 @@ html {
   scroll-behavior: smooth;
 }
 
+.no-transitions *,
+.no-transitions *::before,
+.no-transitions *::after {
+  transition: none !important;
+}
+
 body {
   font-family: var(--sy-f-text);
   color: var(--sy-c-text);

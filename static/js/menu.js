@@ -63,3 +63,14 @@ document.body.addEventListener('click', () => {
     setButtonExpanded(id, 'false')
   })
 })
+
+// Prevent transitions from flashing when the viewport crosses a breakpoint
+// (e.g. resizing into mobile would briefly animate the head-nav overlay).
+let resizeTimer
+window.addEventListener('resize', () => {
+  document.documentElement.classList.add('no-transitions')
+  clearTimeout(resizeTimer)
+  resizeTimer = setTimeout(() => {
+    document.documentElement.classList.remove('no-transitions')
+  }, 200)
+})
