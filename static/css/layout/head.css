@@ -139,7 +139,6 @@
   }
 
   .sy-head-nav {
-    display: none;
     position: fixed;
     top: var(--sy-s-offset-top);
     bottom: 0;
@@ -151,10 +150,16 @@
     border-top: 1px solid var(--sy-c-divider);
     background-color: var(--sy-c-background);
     overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
   }
 
   .sy-head-nav[aria-hidden="false"] {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
   }
 
   .sy-head-links {
