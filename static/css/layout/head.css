@@ -330,4 +330,9 @@
   .sy-head-socials {
     margin-left: 0.5rem;
   }
+
+  .sy-head-actions .theme-switch {
+    height: auto;
+    padding: 0.5rem;
+  }
 }
