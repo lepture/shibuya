@@ -23,6 +23,7 @@
 .back-to-top:hover {
   color: var(--accent-contrast);
   background: var(--accent-9);
+  cursor: pointer;
 }
 
 .back-to-top svg {
