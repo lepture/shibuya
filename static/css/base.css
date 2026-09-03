@@ -74,6 +74,10 @@ iconify-icon {
   background-color: currentColor;
 }
 
+.theme-switch {
+  cursor: pointer;
+}
+
 .theme-switch .theme-icon,
 [data-color-mode="auto"] .theme-switch .theme-icon {
   --icon-url: var(--lucide-sun-moon-url);
