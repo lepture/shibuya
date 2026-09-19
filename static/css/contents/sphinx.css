@@ -68,6 +68,7 @@
   vertical-align: middle;
   opacity: 0.5;
   margin-left: 6px;
+  text-indent: 0;
   color: var(--sy-c-light);
   font-weight: 300;
   font-size: 85%;
