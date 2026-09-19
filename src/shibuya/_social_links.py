@@ -1,10 +1,55 @@
 from typing import Dict, Literal, Any
 
 
-SOCIAL_LABELS = {
-    "x": "X (Twitter)",
-    "github": "GitHub",
-    "youtube": "YouTube",
+DEFAULT_SOCIALS_DICT = {
+    "github": {
+        "name": "GitHub",
+        "icon": "simple-icons:github",
+    },
+    "gitlab": {
+        "name": "GitLab",
+        "icon": "simple-icons:gitlab",
+    },
+    "bitbucket": {
+        "name": "Bitbucket",
+        "icon": "simple-icons:bitbucket",
+    },
+    "x": {
+        "name": "X (Twitter)",
+        "icon": "simple-icons:x",
+    },
+    "bluesky": {
+        "name": "Bluesky",
+        "icon": "simple-icons:bluesky",
+    },
+    "mastodon": {
+        "name": "Mastodon",
+        "icon": "simple-icons:mastodon",
+    },
+    "slack": {
+        "name": "Slack",
+        "icon": "simple-icons:slack",
+    },
+    "discord": {
+        "name": "Discord",
+        "icon": "simple-icons:discord",
+    },
+    "youtube": {
+        "name": "YouTube",
+        "icon": "simple-icons:youtube",
+    },
+    "reddit": {
+        "name": "Reddit",
+        "icon": "simple-icons:reddit",
+    },
+    "linkedin": {
+        "name": "LinkedIn",
+        "icon": "simple-icons:linkedin",
+    },
+    "readthedocs": {
+        "name": "Read the Docs",
+        "icon": "simple-icons:readthedocs",
+    },
 }
 
 DEFAULT_NAV_SOCIALS = [
@@ -56,8 +101,10 @@ def _normalize_social_link(data: Any, context: Dict[str, Any]):
     if isinstance(data, str):
         url = context.get(f"theme_{data}_url")
         if url:
-            name = SOCIAL_LABELS.get(data, data.title())
-            return dict(icon=f"simple-icons:{data}", url=url, name=name)
+            social = DEFAULT_SOCIALS_DICT.get(data, {})
+            name = context.get(f"theme_{data}_name") or social.get("name", data.title())
+            icon = context.get(f"theme_{data}_icon") or social.get("icon", f"simple-icons:{data}")
+            return dict(name=name, icon=icon, url=url)
     elif isinstance(data, dict):
         if "name" in data and "url" in data and "icon" in data:
             return data
