@@ -24,12 +24,17 @@
 }
 
 .sy-foot-socials a {
+  display: inline-flex;
+  align-items: center;
   font-size: 1.4rem;
   color: var(--sy-c-foot-text);
+  padding: 0.25rem;
 }
 
-.sy-foot-socials a + a {
-  margin-left: 0.5rem;
+.sy-foot-socials a:hover {
+  color: var(--sy-c-link-hover);
+  background-color: var(--sy-c-surface);
+  border-radius: 6px;
 }
 
 .sy-foot-socials a svg {
