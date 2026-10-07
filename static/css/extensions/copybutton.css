@@ -4,6 +4,7 @@
   background-color: transparent;
   border: none;
   color: var(--syntax-text);
+  cursor: pointer;
 }
 
 .yue button.copybtn > svg {
