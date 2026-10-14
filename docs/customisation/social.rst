@@ -2,8 +2,8 @@
 
 .. _social:
 
-Social network
-==============
+Social networks
+===============
 
 .. rst-class:: lead
 
@@ -14,45 +14,26 @@ Social network
 Navbar & Footer
 ---------------
 
-Configure which social networks appear in your navigation bar and footer:
+Social networks can be shown in two places: the navigation bar and the footer.
+Use ``nav_socials`` and ``foot_socials`` to choose which networks to display:
 
 .. code-block:: python
 
     html_theme_options = {
         "nav_socials": ["github", "x"],
-        "foot_socials": ["readthedocs", "github", "slack"]
+        "foot_socials": ["readthedocs", "github", "slack"],
     }
 
-Alternatives
-~~~~~~~~~~~~
+Each item refers to a built-in network (see :ref:`supported-networks`). Only
+networks whose URL is configured are rendered. When these options are left
+unset, the theme falls back to its default list.
 
-You can also config ``nav_socials`` and ``foot_socials`` with:
+.. _supported-networks:
 
-.. code-block:: python
-
-    html_theme_options = {
-        "nav_socials": [
-            {
-                "name": "GitHub",
-                "url": "https://github.com/lepture/shibuya",
-                "icon": "simple-icons:github",
-            }
-        ],
-        "foot_socials": [
-            {
-                "name": "X",
-                "url": "https://x.com/lepture",
-                "icon": "simple-icons:x",
-            }
-        ]
-    }
-
-In this case, you don't have to configure the bellow network urls.
-
-Supported Networks
+Supported networks
 ------------------
 
-To activate the links, add the corresponding URLs to your ``html_theme_options`` in ``conf.py``:
+To activate a network, set its URL in ``html_theme_options`` in ``conf.py``:
 
 .. code-block:: python
 
@@ -77,20 +58,55 @@ To activate the links, add the corresponding URLs to your ``html_theme_options``
         "linkedin_url": "https://www.linkedin.com/company/microsoft",
     }
 
-Deprecated Options
-------------------
-
-.. deprecated:: 2026.7.8
-    ``twitter_url`` is deprecated. Please use ``x_url`` instead.
-
-.. deprecated:: 2026.7.8
-    ``twitter_site`` and ``twitter_creator`` (used for Twitter cards) are deprecated and no longer supported.
-
 Custom networks
 ---------------
 
-If you need to add social networks that Shibuya theme doesn't contain, you can
-custom it with ``partials/nav-socials.html`` and ``partials/foot-socials.html``:
+You can customize social networks in three ways, depending on how much control
+you need:
+
+Built-in options
+~~~~~~~~~~~~~~~~
+
+When a network is listed as a string, its display name and icon come from the
+built-in defaults. Override them with ``<name>_name`` and ``<name>_icon``:
+
+.. code-block:: python
+
+    html_theme_options = {
+        "github_name": "GitHub Repository",
+        "github_icon": "fa-brands:github-square",
+        "github_url": "https://github.com/lepture/shibuya",
+    }
+
+Dictionary entries
+~~~~~~~~~~~~~~~~~~
+
+Alternatively, list full dictionaries to bypass the URL options entirely:
+
+.. code-block:: python
+
+    html_theme_options = {
+        "nav_socials": [
+            {
+                "name": "GitHub",
+                "icon": "simple-icons:github",
+                "url": "https://github.com/lepture/shibuya",
+            }
+        ],
+        "foot_socials": [
+            {
+                "name": "X",
+                "icon": "simple-icons:x",
+                "url": "https://x.com/lepture",
+            }
+        ],
+    }
+
+Template overrides
+~~~~~~~~~~~~~~~~~~
+
+If you need to add social networks that Shibuya theme doesn't contain, directly
+edit the ``partials/nav-socials.html`` and ``partials/foot-socials.html`` templates:
 
 .. code-block:: html
     :caption: _templates/partials/nav-socials.html
@@ -111,3 +127,13 @@ custom it with ``partials/nav-socials.html`` and ``partials/foot-socials.html``:
         <svg>...</svg>
       </a>
     </div>
+
+Deprecated options
+------------------
+
+.. deprecated:: 2026.7.8
+    ``twitter_url`` is deprecated. Please use ``x_url`` instead.
+
+.. deprecated:: 2026.7.8
+    ``twitter_site`` and ``twitter_creator`` (used for Twitter cards) are deprecated and no longer supported.
+
