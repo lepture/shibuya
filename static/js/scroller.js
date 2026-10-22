@@ -1,3 +1,5 @@
+import { scrollSidebarTo } from './sidebar-scroll'
+
 let PREVIOUS_SCROLLY = 0
 let SCROLL_MARGIN_TOP = 200
 
@@ -37,9 +39,7 @@ function setActiveAnchor (id) {
 
   clearActiveAnchors()
   parent.classList.add('active')
-  if (parent.scrollIntoViewIfNeeded) {
-    parent.scrollIntoViewIfNeeded(false)
-  }
+  scrollSidebarTo(parent, false)
 }
 
 function trackLocalToc () {

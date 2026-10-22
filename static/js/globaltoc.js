@@ -1,3 +1,5 @@
+import { scrollSidebarTo } from './sidebar-scroll'
+
 function addToggleToc () {
   const globaltoc = document.querySelector(".globaltoc")
   if (!globaltoc) {
@@ -85,8 +87,8 @@ function createToggleButton (el) {
 }
 
 const currentLink = document.querySelector('.globaltoc a.current')
-if (currentLink && currentLink.scrollIntoViewIfNeeded) {
-  currentLink.scrollIntoViewIfNeeded()
+if (currentLink) {
+  scrollSidebarTo(currentLink, true)
 }
 
 addToggleToc()
