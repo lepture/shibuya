@@ -18,6 +18,9 @@
     </a>
     <div class="sy-head-nav" id="head-nav">
       <nav class="sy-head-links"{% if theme_nav_links_align %} data-align={{ theme_nav_links_align }}{% endif %}>
+        {%- if theme_navigation_scope == "section" and section_nav_items is defined and section_nav_items -%}
+          {% include "components/nav-sections.html" %}
+        {%- endif -%}
         {%- if theme_nav_links -%}
           {% include "components/nav-links.html" %}
         {%- endif -%}

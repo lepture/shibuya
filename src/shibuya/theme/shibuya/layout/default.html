@@ -21,8 +21,12 @@
       <div class="sy-scrollbar p-6">
         {%- include "partials/globaltoc-above.html" %}
         <div class="globaltoc" data-expand-depth="{{ theme_globaltoc_expand_depth }}">
-          {%- set globaltoc = toctree(collapse=theme_toctree_collapse, maxdepth=theme_toctree_maxdepth, titles_only=theme_toctree_titles_only, includehidden=theme_toctree_includehidden) -%}
-          {{ expandtoc(globaltoc, theme_globaltoc_expand_depth) }}
+          {%- if theme_navigation_scope == "section" and section_toctree is defined and section_toctree -%}
+            {{ expandtoc(section_toctree, theme_globaltoc_expand_depth) }}
+          {%- else -%}
+            {%- set globaltoc = toctree(collapse=theme_toctree_collapse, maxdepth=theme_toctree_maxdepth, titles_only=theme_toctree_titles_only, includehidden=theme_toctree_includehidden) -%}
+            {{ expandtoc(globaltoc, theme_globaltoc_expand_depth) }}
+          {%- endif -%}
         </div>
       </div>
     </div>

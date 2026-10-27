@@ -1,7 +1,7 @@
 import re
 import os
 import xml.etree.ElementTree as ET
-from typing import Dict, Any, Optional
+from typing import Dict, Any, List, Optional
 from pathlib import Path
 from sphinx.config import Config
 from sphinx.application import Sphinx
@@ -60,6 +60,11 @@ def patch_html_page_context(
     context["i18n_link"] = create_i18n_link
     context["_sphinx_extensions"] = app.config.extensions
 
+    # Section-scoped navigation support
+    theme_options = context.get("theme_navigation_scope", "")
+    if theme_options == "section":
+        _patch_section_navigation(app, context)
+
 
 def _fix_builder_highlighter(builder: StandaloneHTMLBuilder) -> None:
     # remove dark_highlighter
@@ -110,6 +115,40 @@ def _fix_context_toc(context: Dict[str, Any]):
             context["toc"] = toc
 
 
+def _patch_section_navigation(app: Sphinx, context: Dict[str, Any]) -> None:
+    """Inject section-scoped navigation data into the template context.
+
+    When ``navigation_scope`` is ``"section"``, this function:
+    - Generates the full global toctree
+    - Extracts L1 items for the top navbar (``section_nav_items``)
+    - Extracts L2+ subtree for the active section (``section_toctree``)
+    """
+    toctree_func = context.get("toctree")
+    if toctree_func is None:
+        return
+
+    # Generate the full global toctree with the same options used by default.html
+    collapse = context.get("theme_toctree_collapse", "")
+    maxdepth = int(context.get("theme_toctree_maxdepth", 4) or 4)
+    titles_only = context.get("theme_toctree_titles_only", True)
+    includehidden = context.get("theme_toctree_includehidden", True)
+
+    full_toc = toctree_func(
+        collapse=collapse,
+        maxdepth=maxdepth,
+        titles_only=titles_only,
+        includehidden=includehidden,
+    )
+
+    if not full_toc:
+        context["section_nav_items"] = []
+        context["section_toctree"] = ""
+        return
+
+    context["section_nav_items"] = _get_section_nav_items(full_toc)
+    context["section_toctree"] = _get_section_toctree(full_toc)
+
+
 def _expandtoc(toc: str, depth: int = 0):
     depth = int(depth)
     if not toc or not depth:
@@ -127,6 +166,94 @@ def _expandtoc(toc: str, depth: int = 0):
     result = ET.tostring(root).decode("utf-8")[5:-6]
     # fix for accessibility
     return result.replace('role="heading">', 'role="heading" aria-level="3">')
+
+
+
+def _check_toctree_contains_page(li_element, pagename: str) -> bool:
+    """Check if a toctree <li> element or any of its descendants links to the given pagename."""
+    for a in li_element.iter("a"):
+        href = a.get("href", "")
+        # Normalize: strip anchors, trailing slashes, and .html extension
+        href_clean = href.split("#")[0].rstrip("/")
+        if href_clean.endswith(".html"):
+            href_clean = href_clean[:-5]
+        # Also strip leading path segments like ../ for relative links
+        href_clean = href_clean.rsplit("/", 1)[-1] if "/" in href_clean else href_clean
+        page_clean = pagename.rsplit("/", 1)[-1] if "/" in pagename else pagename
+        if href_clean == page_clean:
+            return True
+    # Also check "current" class which Sphinx adds to the active item
+    classname = li_element.get("class", "")
+    if "current" in classname:
+        return True
+    return False
+
+
+def _get_section_nav_items(toc: str) -> List[Dict[str, str]]:
+    """Extract L1 navigation items from the global toctree HTML.
+
+    Returns a list of dicts with 'title', 'url', and 'current' keys.
+    """
+    if not toc:
+        return []
+
+    root = ET.fromstring("<div>" + toc.strip() + "</div>")
+    items = []
+    # Find all top-level <li> elements (toctree-l1)
+    for li in root.findall('.//li[@class]'):
+        classname = li.get("class", "")
+        if not classname.startswith("toctree-l1"):
+            continue
+        # Get the first <a> child for the link
+        a = li.find("a")
+        if a is None:
+            continue
+        title = a.text or ""
+        # If the <a> has child elements (e.g. <span>), get full text
+        if not title:
+            title = "".join(a.itertext())
+        url = a.get("href", "")
+        is_current = "current" in classname
+        items.append({
+            "title": title.strip(),
+            "url": url,
+            "current": is_current,
+        })
+    return items
+
+
+def _get_section_toctree(toc: str) -> str:
+    """Extract the L2+ subtree for the currently active L1 section.
+
+    Returns the inner HTML of the active section's <ul> subtree,
+    or an empty string if no section is active.
+    """
+    if not toc:
+        return ""
+
+    root = ET.fromstring("<div>" + toc.strip() + "</div>")
+    # Find the L1 <li> that has the "current" class
+    for li in root.findall('.//li[@class]'):
+        classname = li.get("class", "")
+        if not classname.startswith("toctree-l1"):
+            continue
+        if "current" not in classname:
+            continue
+        # Found the active section — get its child <ul> (L2+ items)
+        sub_ul = li.find("ul")
+        if sub_ul is None:
+            return ""
+        # Re-wrap as a top-level toctree so the existing CSS classes work.
+        # Remap toctree-l2 -> toctree-l1, toctree-l3 -> toctree-l2, etc.
+        for sub_li in sub_ul.iter("li"):
+            sub_class = sub_li.get("class", "")
+            for level in range(9, 1, -1):
+                sub_class = sub_class.replace(
+                    f"toctree-l{level}", f"toctree-l{level - 1}"
+                )
+            sub_li.set("class", sub_class)
+        return ET.tostring(sub_ul).decode("utf-8")
+    return ""
 
 
 def _create_edit_source_link(context: Dict[str, Any]):
